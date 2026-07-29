@@ -20,7 +20,8 @@
     "skipRule": "23:30に間に合わない時／工事・閉鎖時／満車時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD",
-    "searchText": "羽田・航空機ショート 足湯／空港展望／飛行機 通常 haneda innovation city 足湯スカイデッキ 羽田空港 第3ターミナル展望デッキ 京浜島つばさ公園 hic p1で足湯を短時間利用し、t3を経て京浜島へ。京浜島満車時はt3で終了。 羽田・航空"
+    "searchText": "羽田・航空機ショート 足湯／空港展望／飛行機 通常 haneda innovation city 足湯スカイデッキ 羽田空港 第3ターミナル展望デッキ 京浜島つばさ公園 hic p1で足湯を短時間利用し、t3を経て京浜島へ。京浜島満車時はt3で終了。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R002",
@@ -43,7 +44,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／満車時／21:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92%7C%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92",
-    "searchText": "大森海岸から飛行機へ 海苔story／飛行機／海 通常 大森ふるさとの浜辺公園 京浜島つばさ公園 城南島海浜公園 浜辺エリアと城南島駐車場は21時まで。20時以降は大森を省略し、京浜島→城南島へ短縮。 羽田・航空"
+    "searchText": "大森海岸から飛行機へ 海苔story／飛行機／海 通常 大森ふるさとの浜辺公園 京浜島つばさ公園 城南島海浜公園 浜辺エリアと城南島駐車場は21時まで。20時以降は大森を省略し、京浜島→城南島へ短縮。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R003",
@@ -66,7 +68,8 @@
     "skipRule": "満車時／臨時閉鎖・イベント混雑時／満車時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9A%81%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%99%B4%E6%B5%B7%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92%7C%E8%B1%8A%E6%B4%B2%E3%81%90%E3%82%8B%E3%82%8A%E5%85%AC%E5%9C%92",
-    "searchText": "東京港最奥ナイト 港／行き止まり／都市夜景 通常 晴海ふ頭公園 豊洲ぐるり公園 暁ふ頭公園 強風時は暁ふ頭を潮風公園へ変更。 東京港・水辺"
+    "searchText": "東京港最奥ナイト 港／行き止まり／都市夜景 通常 晴海ふ頭公園 豊洲ぐるり公園 暁ふ頭公園 強風時は暁ふ頭を潮風公園へ変更。 東京港・水辺",
+    "timeBucket": "120"
   },
   {
     "id": "R004",
@@ -89,7 +92,8 @@
     "skipRule": "工事・閉鎖時／渋滞・通行規制時は走行演出を省略／満車時／22:00に間に合わない時／強風・高潮・増水時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%8B%A5%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%BD%AE%E9%A2%A8%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%88%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
-    "searchText": "ゲートブリッジ夜景ショート 都市夜景／橋の走行演出／海 走行演出あり 潮風公園 東京ゲートブリッジ 若洲海浜公園 東京ゲートブリッジは停車せず走行演出として通過。若洲駐車場は6:00～22:00で、一部工事情報を当日確認。 東京港・水辺"
+    "searchText": "ゲートブリッジ夜景ショート 都市夜景／橋の走行演出／海 走行演出あり 潮風公園 東京ゲートブリッジ 若洲海浜公園 東京ゲートブリッジは停車せず走行演出として通過。若洲駐車場は6:00～22:00で、一部工事情報を当日確認。 東京港・水辺",
+    "timeBucket": "120"
   },
   {
     "id": "R005",
@@ -112,7 +116,8 @@
     "skipRule": "17:00に間に合わない時／満車時／22:00に間に合わない時／強風・高潮・増水時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%8B%A5%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E9%87%8E%E9%B3%A5%E5%85%AC%E5%9C%92%7C%E6%B5%B7%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
-    "searchText": "東京港・環境再生ライン 湿地／埋立地再生／橋景観 昼専用 東京港野鳥公園 海の森公園 若洲海浜公園 昼専用。野鳥公園と海の森は17時まで。若洲駐車場は22時までだが、工事による一部利用休止を確認。 東京港・水辺"
+    "searchText": "東京港・環境再生ライン 湿地／埋立地再生／橋景観 昼専用 東京港野鳥公園 海の森公園 若洲海浜公園 昼専用。野鳥公園と海の森は17時まで。若洲駐車場は22時までだが、工事による一部利用休止を確認。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R006",
@@ -135,7 +140,8 @@
     "skipRule": "満車時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92%7C%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3",
-    "searchText": "京浜島から東扇島西端へ 飛行機／高所展望／港の行き止まり 通常 京浜島つばさ公園 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ直行。 羽田・航空"
+    "searchText": "京浜島から東扇島西端へ 飛行機／高所展望／港の行き止まり 通常 京浜島つばさ公園 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ直行。 羽田・航空",
+    "timeBucket": "120"
   },
   {
     "id": "R008",
@@ -158,7 +164,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E5%A4%A7%E3%81%95%E3%82%93%E6%A9%8B%7C%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92",
-    "searchText": "本牧ふ頭の行き止まり 横浜港／ふ頭／船 通常 横浜港大さん橋 本牧山頂公園 横浜港シンボルタワー 季節別閉場時間に合わせる夕方専用。 東京港・水辺"
+    "searchText": "本牧ふ頭の行き止まり 横浜港／ふ頭／船 通常 横浜港大さん橋 本牧山頂公園 横浜港シンボルタワー 季節別閉場時間に合わせる夕方専用。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R009",
@@ -181,7 +188,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／工事・閉鎖時／23:00に間に合わない時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%87%8E%E5%B3%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92%7C%E6%B5%B7%E3%81%AE%E5%85%AC%E5%9C%92",
-    "searchText": "金沢シーサイド 人工海浜／島／静けさ 通常 本牧山頂公園 海の公園 野島公園 野島公園23時閉鎖。潮干狩り期は避ける。 東京港・水辺"
+    "searchText": "金沢シーサイド 人工海浜／島／静けさ 通常 本牧山頂公園 海の公園 野島公園 野島公園23時閉鎖。潮干狩り期は避ける。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R025",
@@ -204,7 +212,8 @@
     "skipRule": "工事・閉鎖時／満車時／工事・閉鎖時",
     "family": "PA・高速",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%BE%B0%E5%B7%B3%E7%AC%AC%E4%B8%80PA&travelmode=driving&waypoints=%E5%B9%B3%E5%92%8C%E5%B3%B6PA%EF%BC%88%E4%B8%8A%E3%82%8A%EF%BC%89%7C%E8%8A%9D%E6%B5%A6PA",
-    "searchText": "首都高ミニマム・ナイト pa／近距離／高架 高速方向制約 平和島pa（上り） 芝浦pa 辰巳第一pa 各paの臨時閉鎖確認。短時間休憩だけに限定。 pa・高速"
+    "searchText": "首都高ミニマム・ナイト pa／近距離／高架 高速方向制約 平和島pa（上り） 芝浦pa 辰巳第一pa 各paの臨時閉鎖確認。短時間休憩だけに限定。 pa・高速",
+    "timeBucket": "90"
   },
   {
     "id": "R037",
@@ -227,7 +236,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時",
     "family": "河川・多摩川",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%AF%A0%E5%B4%8E%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9C%A8%E5%A0%B4%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92",
-    "searchText": "東東京・水辺ナイト 都市公園／河川／夜間 通常 木場公園 大島小松川公園 篠崎公園 24時間駐車場をつなぐ夜間用。木場公園の重複採用は湾岸から東東京へ切り替える休憩点として有効。 河川・多摩川"
+    "searchText": "東東京・水辺ナイト 都市公園／河川／夜間 通常 木場公園 大島小松川公園 篠崎公園 24時間駐車場をつなぐ夜間用。木場公園の重複採用は湾岸から東東京へ切り替える休憩点として有効。 河川・多摩川",
+    "timeBucket": "half"
   },
   {
     "id": "R048",
@@ -250,7 +260,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／22:00に間に合わない時",
     "family": "都市公園・休憩",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%81%93%E3%81%AE%E9%A7%85%20%E3%81%84%E3%81%A1%E3%81%8B%E3%82%8F&travelmode=driving&waypoints=%E6%9C%A8%E5%A0%B4%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92",
-    "searchText": "東側・確実な休憩ルート 公園／道の駅／夜間 通常 木場公園 大島小松川公園 道の駅 いちかわ 木場・大島小松川の重複は、都心から外環方面へ段階的に休息を入れるため。 都市公園・休憩"
+    "searchText": "東側・確実な休憩ルート 公園／道の駅／夜間 通常 木場公園 大島小松川公園 道の駅 いちかわ 木場・大島小松川の重複は、都心から外環方面へ段階的に休息を入れるため。 都市公園・休憩",
+    "timeBucket": "half"
   },
   {
     "id": "R049",
@@ -273,7 +284,8 @@
     "skipRule": "23:30に間に合わない時／満車時／強風・高潮・増水時／工事・閉鎖時／工事・閉鎖時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
-    "searchText": "羽田河口から川崎港へ 足湯／河口／工場夜景 通常 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 川崎マリエン hic p1に駐車し、足湯とソラムナードは徒歩連結。川崎マリエン展望室は21時まで。 川崎・工場夜景"
+    "searchText": "羽田河口から川崎港へ 足湯／河口／工場夜景 通常 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 川崎マリエン hic p1に駐車し、足湯とソラムナードは徒歩連結。川崎マリエン展望室は21時まで。 川崎・工場夜景",
+    "timeBucket": "90"
   },
   {
     "id": "R050",
@@ -296,7 +308,8 @@
     "skipRule": "満車時／工事・閉鎖時／19:00に間に合わない時／22:00に間に合わない時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%94%9F%E7%94%B0%E7%B7%91%E5%9C%B0%E3%83%BB%E6%9E%A1%E5%BD%A2%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E4%B8%89%E3%83%84%E6%B1%A0%E5%85%AC%E5%9C%92%7C%E7%9C%8C%E7%AB%8B%E6%9D%B1%E9%AB%98%E6%A0%B9%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92",
-    "searchText": "鶴見から生田へ丘陵公園線 池／森林／高台展望 昼専用 県立三ツ池公園 県立東高根森林公園 生田緑地・枡形山展望台 昼～夕方専用。東高根森林公園は19時まで。枡形山展望台は日没前の到着を推奨。 森林・高台"
+    "searchText": "鶴見から生田へ丘陵公園線 池／森林／高台展望 昼専用 県立三ツ池公園 県立東高根森林公園 生田緑地・枡形山展望台 昼～夕方専用。東高根森林公園は19時まで。枡形山展望台は日没前の到着を推奨。 森林・高台",
+    "timeBucket": "half"
   },
   {
     "id": "R055",
@@ -319,7 +332,8 @@
     "skipRule": "満車時／工事・閉鎖時／工事・閉鎖時／強風・高潮・増水時",
     "family": "河川・多摩川",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%BE%A1%E5%B9%B8%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E4%B8%89%E3%83%84%E6%B1%A0%E5%85%AC%E5%9C%92%7C%E5%AF%8C%E5%A3%AB%E8%A6%8B%E5%85%AC%E5%9C%92",
-    "searchText": "鶴見・川崎近距離回復 池／都市公園／河川 通常 県立三ツ池公園 富士見公園 御幸公園 三ツ池公園駐車場閉鎖時刻を確認。 河川・多摩川"
+    "searchText": "鶴見・川崎近距離回復 池／都市公園／河川 通常 県立三ツ池公園 富士見公園 御幸公園 三ツ池公園駐車場閉鎖時刻を確認。 河川・多摩川",
+    "timeBucket": "120"
   },
   {
     "id": "R056",
@@ -342,7 +356,8 @@
     "skipRule": "ふれーゆ休館・最終入庫超過時は大さん橋から開始／シンボルタワー閉場時は大さん橋で終了",
     "family": "横浜港・丘陵",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%AB%98%E9%BD%A2%E8%80%85%E4%BF%9D%E9%A4%8A%E7%A0%94%E4%BF%AE%E6%96%BD%E8%A8%AD%20%E3%81%B5%E3%82%8C%E3%83%BC%E3%82%86%7C%E6%A8%AA%E6%B5%9C%E6%B8%AF%E5%A4%A7%E3%81%95%E3%82%93%E6%A9%8B",
-    "searchText": "鶴見から本牧・港の三景 雨天港湾展望／都市港／行き止まり 昼～夕方専用 横浜市高齢者保養研修施設 ふれーゆ 横浜港大さん橋 横浜港シンボルタワー 昼～夕方専用。ふれーゆの最終入庫とシンボルタワーの季節閉場を優先。雨天時はふれーゆ滞在を長くする。 横浜港・丘陵"
+    "searchText": "鶴見から本牧・港の三景 雨天港湾展望／都市港／行き止まり 昼～夕方専用 横浜市高齢者保養研修施設 ふれーゆ 横浜港大さん橋 横浜港シンボルタワー 昼～夕方専用。ふれーゆの最終入庫とシンボルタワーの季節閉場を優先。雨天時はふれーゆ滞在を長くする。 横浜港・丘陵",
+    "timeBucket": "half"
   },
   {
     "id": "R059",
@@ -365,7 +380,8 @@
     "skipRule": "17時以降はちどり公園を省略／マリエン展望室入館20:30超過時は中公園で終了",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3&travelmode=driving&waypoints=%E3%81%A1%E3%81%A9%E3%82%8A%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E6%89%87%E5%B3%B6%E4%B8%AD%E5%85%AC%E5%9C%92",
-    "searchText": "川崎港・運河から高所へ 運河／芝生休憩／高所港湾展望 昼～夕方専用 ちどり公園 東扇島中公園 川崎マリエン ちどり公園の駐車場は18時まで。東扇島中公園と川崎マリエンは1回駐車で徒歩連結。 川崎・工場夜景"
+    "searchText": "川崎港・運河から高所へ 運河／芝生休憩／高所港湾展望 昼～夕方専用 ちどり公園 東扇島中公園 川崎マリエン ちどり公園の駐車場は18時まで。東扇島中公園と川崎マリエンは1回駐車で徒歩連結。 川崎・工場夜景",
+    "timeBucket": "120"
   },
   {
     "id": "R073",
@@ -388,7 +404,8 @@
     "skipRule": "工事・閉鎖時／臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A1%9C%E3%83%B6%E4%B8%98%E5%85%AC%E5%9C%92%20%E3%82%86%E3%81%86%E3%81%B2%E3%81%AE%E4%B8%98&travelmode=driving&waypoints=%E6%AD%A6%E8%94%B5%E9%87%8E%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%7C%E5%BA%9C%E4%B8%AD%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
-    "searchText": "調布航空ナイト 飛行機／航空史／24時間駐車 通常 武蔵野の森公園 府中の森公園 桜ヶ丘公園 ゆうひの丘 武蔵野の森・府中の森は駐車場24時間。北南プロムナードは16:30閉鎖、ゆうひの丘は20時閉鎖。 羽田・航空"
+    "searchText": "調布航空ナイト 飛行機／航空史／24時間駐車 通常 武蔵野の森公園 府中の森公園 桜ヶ丘公園 ゆうひの丘 武蔵野の森・府中の森は駐車場24時間。北南プロムナードは16:30閉鎖、ゆうひの丘は20時閉鎖。 羽田・航空",
+    "timeBucket": "half"
   },
   {
     "id": "R080",
@@ -411,7 +428,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%BA%9C%E4%B8%AD%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%A5%9E%E4%BB%A3%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92%E3%83%BB%E6%B7%B1%E5%A4%A7%E5%AF%BA%7C%E6%AD%A6%E8%94%B5%E9%87%8E%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
-    "searchText": "深大寺から調布飛行場へ 寺社story／植物／飛行場 昼専用 神代植物公園・深大寺 武蔵野の森公園 府中の森公園 昼～夕方専用。植物園閉園後は深大寺門前のみとし、武蔵野の森公園ではプロムナード16:30閉鎖に注意。 羽田・航空"
+    "searchText": "深大寺から調布飛行場へ 寺社story／植物／飛行場 昼専用 神代植物公園・深大寺 武蔵野の森公園 府中の森公園 昼～夕方専用。植物園閉園後は深大寺門前のみとし、武蔵野の森公園ではプロムナード16:30閉鎖に注意。 羽田・航空",
+    "timeBucket": "half"
   },
   {
     "id": "R089",
@@ -434,7 +452,8 @@
     "skipRule": "19:00に間に合わない時／臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E7%A3%AF%E5%AD%90%E6%B5%B7%E3%81%A5%E3%82%8A%E6%96%BD%E8%A8%AD%7C%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92",
-    "searchText": "根岸湾工業景観 工業湾岸／高台／港 通常 磯子海づり施設 本牧山頂公園 横浜港シンボルタワー 各施設の閉場時刻を確認。工場岸壁・私道へ入らない。 川崎・工場夜景"
+    "searchText": "根岸湾工業景観 工業湾岸／高台／港 通常 磯子海づり施設 本牧山頂公園 横浜港シンボルタワー 各施設の閉場時刻を確認。工場岸壁・私道へ入らない。 川崎・工場夜景",
+    "timeBucket": "half"
   },
   {
     "id": "R093",
@@ -457,7 +476,8 @@
     "skipRule": "満車時／臨時閉鎖・イベント混雑時",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E7%B6%BE%E7%80%AC%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%9F%8E%E5%8C%97%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%7C%E8%88%8E%E4%BA%BA%E5%85%AC%E5%9C%92",
-    "searchText": "東京北東24時間公園線 遺跡／池／夜間 通常 城北中央公園 舎人公園 東綾瀬公園 住宅地への騒音配慮。イベント時の満車は次地点へ進む。 story・文化"
+    "searchText": "東京北東24時間公園線 遺跡／池／夜間 通常 城北中央公園 舎人公園 東綾瀬公園 住宅地への騒音配慮。イベント時の満車は次地点へ進む。 story・文化",
+    "timeBucket": "half"
   },
   {
     "id": "R097",
@@ -481,7 +501,8 @@
     "skipRule": "強風・高潮・増水時／臨時閉鎖・イベント混雑時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%BD%AE%E9%A2%A8%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E9%AB%98%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E6%B5%A6%E5%AE%89%E5%B8%82%E7%B7%8F%E5%90%88%E5%85%AC%E5%9C%92%7C%E8%91%9B%E8%A5%BF%E8%87%A8%E6%B5%B7%E5%85%AC%E5%9C%92",
-    "searchText": "浦安ベイ・24時間海辺線 海／芝生／都市夜景 通常 高洲海浜公園 浦安市総合公園 葛西臨海公園 潮風公園 高洲と浦安総合は終日駐車可能。海風が強い日は各地点の滞在を短縮。 東京港・水辺"
+    "searchText": "浦安ベイ・24時間海辺線 海／芝生／都市夜景 通常 高洲海浜公園 浦安市総合公園 葛西臨海公園 潮風公園 高洲と浦安総合は終日駐車可能。海風が強い日は各地点の滞在を短縮。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R113",
@@ -504,7 +525,8 @@
     "skipRule": "19:00に間に合わない時／22:00に間に合わない時／満車時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A2%E8%A6%8B%E3%83%B6%E5%B4%8E%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E6%9D%B1%E9%AB%98%E6%A0%B9%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%7C%E7%94%9F%E7%94%B0%E7%B7%91%E5%9C%B0%E3%83%BB%E6%9E%A1%E5%BD%A2%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0",
-    "searchText": "川崎丘陵・古代と現代 遺跡／森林／展望 通常 県立東高根森林公園 生田緑地・枡形山展望台 夢見ヶ崎動物公園 東高根19時閉場。日没前に枡形山へ上がり、最後は近距離夜景。 森林・高台"
+    "searchText": "川崎丘陵・古代と現代 遺跡／森林／展望 通常 県立東高根森林公園 生田緑地・枡形山展望台 夢見ヶ崎動物公園 東高根19時閉場。日没前に枡形山へ上がり、最後は近距離夜景。 森林・高台",
+    "timeBucket": "half"
   },
   {
     "id": "R119",
@@ -527,7 +549,8 @@
     "skipRule": "17:00に間に合わない時／臨時閉鎖・イベント混雑時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%87%91%E6%B2%A2%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E4%B8%89%E6%BA%AA%E5%9C%92%7C%E6%A0%B9%E5%B2%B8%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92",
-    "searchText": "横浜・庭園と丘陵三層 日本庭園／競馬場跡／丘陵 昼専用 三溪園 根岸森林公園 金沢自然公園 午前開始の昼専用。三溪園の最終入園16:30と金沢自然公園の入庫締切を優先。 森林・高台"
+    "searchText": "横浜・庭園と丘陵三層 日本庭園／競馬場跡／丘陵 昼専用 三溪園 根岸森林公園 金沢自然公園 午前開始の昼専用。三溪園の最終入園16:30と金沢自然公園の入庫締切を優先。 森林・高台",
+    "timeBucket": "half"
   },
   {
     "id": "R121",
@@ -551,7 +574,8 @@
     "skipRule": "臨時閉鎖・イベント混雑時／満車時／工事・閉鎖時／21:00に間に合わない時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E8%91%9B%E8%A5%BF%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E8%91%9B%E8%A5%BF%E8%87%A8%E6%B5%B7%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E5%93%81%E5%B7%9D%E6%B5%B7%E4%B8%8A%E5%85%AC%E5%9C%92",
-    "searchText": "湾岸・干潟から運河へ 干潟／海／運河 通常 葛西海浜公園 葛西臨海公園 東品川海上公園 城南島海浜公園 葛西駐車場混雑時は高洲海浜公園へ差替え。東品川は時間貸し駐車場利用。 東京港・水辺"
+    "searchText": "湾岸・干潟から運河へ 干潟／海／運河 通常 葛西海浜公園 葛西臨海公園 東品川海上公園 城南島海浜公園 葛西駐車場混雑時は高洲海浜公園へ差替え。東品川は時間貸し駐車場利用。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R131",
@@ -575,7 +599,8 @@
     "skipRule": "満車時／工事・閉鎖時／22:00に間に合わない時／強風・高潮・増水時／臨時閉鎖・イベント混雑時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%91%9B%E8%A5%BF%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9D%B1%E5%93%81%E5%B7%9D%E6%B5%B7%E4%B8%8A%E5%85%AC%E5%9C%92%7C%E9%81%93%E3%81%AE%E9%A7%85%20%E3%81%84%E3%81%A1%E3%81%8B%E3%82%8F%7C%E9%AB%98%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92",
-    "searchText": "東京近距離・運河と市場 運河／道の駅／海 通常 東品川海上公園 道の駅 いちかわ 高洲海浜公園 葛西海浜公園 東品川は専用駐車場なし。葛西の海浜立入時間・潮位を確認。 東京港・水辺"
+    "searchText": "東京近距離・運河と市場 運河／道の駅／海 通常 東品川海上公園 道の駅 いちかわ 高洲海浜公園 葛西海浜公園 東品川は専用駐車場なし。葛西の海浜立入時間・潮位を確認。 東京港・水辺",
+    "timeBucket": "half"
   },
   {
     "id": "R133",
@@ -598,7 +623,8 @@
     "skipRule": "23:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
-    "searchText": "羽田・足湯から河口へ 飛行機／足湯／河口 共有駐車・徒歩連結 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 羽田空港 第3ターミナル展望デッキ 平日夜の主力。hic p1を利用し、ソラムナードは徒歩を含む。 羽田・航空"
+    "searchText": "羽田・足湯から河口へ 飛行機／足湯／河口 共有駐車・徒歩連結 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 羽田空港 第3ターミナル展望デッキ 平日夜の主力。hic p1を利用し、ソラムナードは徒歩を含む。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R134",
@@ -621,7 +647,8 @@
     "skipRule": "22:00に間に合わない時／工事・閉鎖時／23:00に間に合わない時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%EF%BC%8FFLIGHT%20DECK%20TOKYO",
-    "searchText": "羽田3ターミナル比較 飛行機／空港建築／雨天 空港内移動 羽田空港 第1ターミナル展望デッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ p3/p4等に1回駐車し、ターミナル間は無料連絡バスを基本とする。駐車場を3回入り直さない。 羽田・航空"
+    "searchText": "羽田3ターミナル比較 飛行機／空港建築／雨天 空港内移動 羽田空港 第1ターミナル展望デッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ p3/p4等に1回駐車し、ターミナル間は無料連絡バスを基本とする。駐車場を3回入り直さない。 羽田・航空",
+    "timeBucket": "120"
   },
   {
     "id": "R135",
@@ -644,7 +671,8 @@
     "skipRule": "満車時／臨時閉鎖・イベント混雑時／21:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%B9%B3%E5%92%8C%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92",
-    "searchText": "大森・海苔の海辺線 平和story／人工海浜／飛行機 通常 平和の森公園 大森ふるさとの浜辺公園 城南島海浜公園 浜辺21時閉門。公園共用駐車場の混雑時は城南島へ直行。 羽田・航空"
+    "searchText": "大森・海苔の海辺線 平和story／人工海浜／飛行機 通常 平和の森公園 大森ふるさとの浜辺公園 城南島海浜公園 浜辺21時閉門。公園共用駐車場の混雑時は城南島へ直行。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R136",
@@ -667,7 +695,8 @@
     "skipRule": "21:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／23:30に間に合わない時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E6%A3%AE%E3%82%B1%E5%B4%8E%E5%85%AC%E5%9C%92%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
-    "searchText": "森ケ崎・屋上から足湯へ 屋上公園／飛行機／足湯 共有駐車・徒歩連結 森ケ崎公園 ソラムナード羽田緑地 haneda innovation city 足湯スカイデッキ 森ケ崎の閉園時刻がhard gate。最後は23:30まで。 羽田・航空"
+    "searchText": "森ケ崎・屋上から足湯へ 屋上公園／飛行機／足湯 共有駐車・徒歩連結 森ケ崎公園 ソラムナード羽田緑地 haneda innovation city 足湯スカイデッキ 森ケ崎の閉園時刻がhard gate。最後は23:30まで。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R137",
@@ -690,7 +719,8 @@
     "skipRule": "満車時／19:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／16:00に間に合わない時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%9A%E6%91%A9%E5%B7%9D%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E5%85%AD%E9%83%B7%E6%A9%8B%E7%B7%91%E5%9C%B0%7C%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%AC%E3%82%B9%E6%A9%8B%E7%B7%91%E5%9C%B0",
-    "searchText": "多摩川・休日ショート 河川敷／橋／高台 休日専用 多摩川六郷橋緑地 多摩川ガス橋緑地 多摩川浅間神社 河川敷駐車場は土日祝のみ。閉鎖時刻と増水情報を確認。 東京港・水辺"
+    "searchText": "多摩川・休日ショート 河川敷／橋／高台 休日専用 多摩川六郷橋緑地 多摩川ガス橋緑地 多摩川浅間神社 河川敷駐車場は土日祝のみ。閉鎖時刻と増水情報を確認。 東京港・水辺",
+    "timeBucket": "90"
   },
   {
     "id": "R138",
@@ -713,7 +743,8 @@
     "skipRule": "池上梅園満車・閉園時は平和島公園から開始／浜辺21時超過時は広場のみ",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%B1%A0%E4%B8%8A%E6%A2%85%E5%9C%92%7C%E5%B9%B3%E5%92%8C%E5%B3%B6%E5%85%AC%E5%9C%92",
-    "searchText": "池上から大森・海の記憶へ 庭園story／24時間公園／人工海浜 昼～夕方専用 池上梅園 平和島公園 大森ふるさとの浜辺公園 池上梅園16:30閉園の昼専用。池上終了後は24時間駐車の平和島公園を挟み、浜辺21時まで。 story・文化"
+    "searchText": "池上から大森・海の記憶へ 庭園story／24時間公園／人工海浜 昼～夕方専用 池上梅園 平和島公園 大森ふるさとの浜辺公園 池上梅園16:30閉園の昼専用。池上終了後は24時間駐車の平和島公園を挟み、浜辺21時まで。 story・文化",
+    "timeBucket": "90"
   },
   {
     "id": "R139",
@@ -736,7 +767,8 @@
     "skipRule": "20時以降はしながわ区民公園を省略／大井ふ頭大会・工事時は平和島へ直行",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B9%B3%E5%92%8C%E5%B3%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E3%81%97%E3%81%AA%E3%81%8C%E3%82%8F%E5%8C%BA%E6%B0%91%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E4%BA%95%E3%81%B5%E9%A0%AD%E4%B8%AD%E5%A4%AE%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92",
-    "searchText": "勝島・大井ふ頭ウォーターフロント 人工湖／京浜運河／24時間公園 夕方専用 しながわ区民公園 大井ふ頭中央海浜公園 平和島公園 しながわ区民公園20:30閉園。大井ふ頭第1駐車場は工事閉鎖中で、第2駐車場を利用。遅い時間は大井ふ頭→平和島へ短縮。 東京港・水辺"
+    "searchText": "勝島・大井ふ頭ウォーターフロント 人工湖／京浜運河／24時間公園 夕方専用 しながわ区民公園 大井ふ頭中央海浜公園 平和島公園 しながわ区民公園20:30閉園。大井ふ頭第1駐車場は工事閉鎖中で、第2駐車場を利用。遅い時間は大井ふ頭→平和島へ短縮。 東京港・水辺",
+    "timeBucket": "90"
   },
   {
     "id": "R140",
@@ -759,7 +791,8 @@
     "skipRule": "工事・閉鎖時／臨時閉鎖・イベント混雑時／満車時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%99%B4%E6%B5%B7%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E3%81%8A%E5%8F%B0%E5%A0%B4%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E8%B1%8A%E6%B4%B2%E3%81%90%E3%82%8B%E3%82%8A%E5%85%AC%E5%9C%92",
-    "searchText": "お台場から豊洲の水際夜景 海浜／運河／都市夜景 通常 お台場海浜公園 豊洲ぐるり公園 晴海ふ頭公園 24時間駐車地点中心。イベント開催時はお台場を潮風公園へ、豊洲を晴海へ即時差替え。 東京港・水辺"
+    "searchText": "お台場から豊洲の水際夜景 海浜／運河／都市夜景 通常 お台場海浜公園 豊洲ぐるり公園 晴海ふ頭公園 24時間駐車地点中心。イベント開催時はお台場を潮風公園へ、豊洲を晴海へ即時差替え。 東京港・水辺",
+    "timeBucket": "90"
   },
   {
     "id": "R141",
@@ -782,7 +815,8 @@
     "skipRule": "23:30に間に合わない時／23:00に間に合わない時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%EF%BC%8FFLIGHT%20DECK%20TOKYO",
-    "searchText": "雨天・羽田インドア線 足湯／屋内展望／空港 雨天・空港内移動 haneda innovation city 足湯スカイデッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ 雨天はt2屋内flight deckを主役にする。hic足湯は強雨時に省略し、空港内移動を優先。 羽田・航空"
+    "searchText": "雨天・羽田インドア線 足湯／屋内展望／空港 雨天・空港内移動 haneda innovation city 足湯スカイデッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ 雨天はt2屋内flight deckを主役にする。hic足湯は強雨時に省略し、空港内移動を優先。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R142",
@@ -804,7 +838,8 @@
     "skipRule": "東扇島西公園満車・臨時閉鎖時は川崎マリエン外周へ",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD",
-    "searchText": "深夜2時間・空港から港の端へ 24時間空港／工業島／海の行き止まり 深夜専用 羽田空港 第3ターミナル展望デッキ 東扇島西公園 t3展望デッキと東扇島西公園は24時間利用可能。東扇島西公園は釣り利用で混雑するため、満車時は川崎マリエン外周へ変更。 川崎・工場夜景"
+    "searchText": "深夜2時間・空港から港の端へ 24時間空港／工業島／海の行き止まり 深夜専用 羽田空港 第3ターミナル展望デッキ 東扇島西公園 t3展望デッキと東扇島西公園は24時間利用可能。東扇島西公園は釣り利用で混雑するため、満車時は川崎マリエン外周へ変更。 川崎・工場夜景",
+    "timeBucket": "90"
   },
   {
     "id": "R143",
@@ -827,7 +862,8 @@
     "skipRule": "23:30に間に合わない時／工事・閉鎖時／満車時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3",
-    "searchText": "羽田から川崎工場夜景へ 足湯／高所工場夜景／港の行き止まり 通常 haneda innovation city 足湯スカイデッキ 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ。 川崎・工場夜景"
+    "searchText": "羽田から川崎工場夜景へ 足湯／高所工場夜景／港の行き止まり 通常 haneda innovation city 足湯スカイデッキ 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ。 川崎・工場夜景",
+    "timeBucket": "120"
   },
   {
     "id": "R144",
@@ -850,7 +886,8 @@
     "skipRule": "19:30を過ぎたら大森を省略／森ケ崎閉場時はT3直行",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92%7C%E6%A3%AE%E3%82%B1%E5%B4%8E%E5%85%AC%E5%9C%92",
-    "searchText": "平日夕方90分・大森から羽田へ 海苔story／屋上公園／空港夜景 夕方専用 大森ふるさとの浜辺公園 森ケ崎公園 羽田空港 第3ターミナル展望デッキ 19時前後の出発を推奨。森ケ崎は季節により20:30または21:30、浜辺は21時閉門。遅れたら大森を省略。 羽田・航空"
+    "searchText": "平日夕方90分・大森から羽田へ 海苔story／屋上公園／空港夜景 夕方専用 大森ふるさとの浜辺公園 森ケ崎公園 羽田空港 第3ターミナル展望デッキ 19時前後の出発を推奨。森ケ崎は季節により20:30または21:30、浜辺は21時閉門。遅れたら大森を省略。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R145",
@@ -873,7 +910,8 @@
     "skipRule": "東糀谷満車時は省略／23時以降はT3展望へ変更",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E8%90%A9%E4%B8%AD%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E7%B3%80%E8%B0%B7%E9%98%B2%E7%81%BD%E5%85%AC%E5%9C%92",
-    "searchText": "羽田手前・交通と防災の短時間線 交通story／防災／足湯 平日夜・家族 萩中公園 東糀谷防災公園 haneda innovation city 足湯スカイデッキ 萩中公園の駐車場は24時間だが、交通公園貸出は16時、ガラクタ公園は17時、スケート場は20時まで。夜出発では保存車両storyを目的にしない。東糀谷一般枠9台が満車なら省略。 羽田・航空"
+    "searchText": "羽田手前・交通と防災の短時間線 交通story／防災／足湯 平日夜・家族 萩中公園 東糀谷防災公園 haneda innovation city 足湯スカイデッキ 萩中公園の駐車場は24時間だが、交通公園貸出は16時、ガラクタ公園は17時、スケート場は20時まで。夜出発では保存車両storyを目的にしない。東糀谷一般枠9台が満車なら省略。 羽田・航空",
+    "timeBucket": "90"
   },
   {
     "id": "R146",
@@ -896,7 +934,8 @@
     "skipRule": "博物館満車時は海苔館から開始／17時超過時は昭和島へ直行",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%98%AD%E5%92%8C%E5%B3%B6%E4%BA%8C%E4%B8%81%E7%9B%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A7%E7%94%B0%E5%8C%BA%E7%AB%8B%E9%83%B7%E5%9C%9F%E5%8D%9A%E7%89%A9%E9%A4%A8%7C%E5%A4%A7%E6%A3%AE%20%E6%B5%B7%E8%8B%94%E3%81%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E9%A4%A8",
-    "searchText": "大田・郷土史から工業島へ 地域史／海苔産業／工業島 昼専用 大田区立郷土博物館 大森 海苔のふるさと館 昭和島二丁目公園 昼専用。博物館は17時、海苔館も通常17時。昭和島は季節により21時または22時閉場。 story・文化"
+    "searchText": "大田・郷土史から工業島へ 地域史／海苔産業／工業島 昼専用 大田区立郷土博物館 大森 海苔のふるさと館 昭和島二丁目公園 昼専用。博物館は17時、海苔館も通常17時。昭和島は季節により21時または22時閉場。 story・文化",
+    "timeBucket": "half"
   },
   {
     "id": "R147",
@@ -918,7 +957,8 @@
     "skipRule": "歴史館満車なら競馬場直行／非開催日はR139へ変更",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E7%AB%B6%E9%A6%AC%20%E5%A4%A7%E4%BA%95%E7%AB%B6%E9%A6%AC%E5%A0%B4&travelmode=driving&waypoints=%E5%93%81%E5%B7%9D%E5%8C%BA%E7%AB%8B%20%E5%93%81%E5%B7%9D%E6%AD%B4%E5%8F%B2%E9%A4%A8",
-    "searchText": "品川・東海道からナイターへ 東海道story／競馬場／都市照明 開催日専用 品川区立 品川歴史館 東京シティ競馬 大井競馬場 競馬開催日専用。歴史館は16:30最終入館。競馬場駐車料金・予約制・開門時刻を当日確認。 story・文化"
+    "searchText": "品川・東海道からナイターへ 東海道story／競馬場／都市照明 開催日専用 品川区立 品川歴史館 東京シティ競馬 大井競馬場 競馬開催日専用。歴史館は16:30最終入館。競馬場駐車料金・予約制・開門時刻を当日確認。 story・文化",
+    "timeBucket": "half"
   },
   {
     "id": "R148",
@@ -941,7 +981,8 @@
     "skipRule": "大会・満車時は八潮省略／23時超過時は天王洲で終了",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%93%81%E5%B7%9D%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%83%86%E3%83%A9%E3%82%B9%EF%BC%8F%E8%8A%9D%E6%B5%A6%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A9%E7%8E%8B%E6%B4%B2%E5%85%AC%E5%9C%92%7C%E5%85%AB%E6%BD%AE%E5%8C%97%E5%85%AC%E5%9C%92",
-    "searchText": "品川湾岸・運河と高架の三景 運河／高架インフラ／水再生センター 夕方～夜 天王洲公園 八潮北公園 品川シーズンテラス／芝浦中央公園 天王洲・八潮の大会日を確認。東品川1丁目の路上枠は昼の短時間代替のみで、夜は路外駐車。品川シーズンテラスは23時まで。 東京港・水辺"
+    "searchText": "品川湾岸・運河と高架の三景 運河／高架インフラ／水再生センター 夕方～夜 天王洲公園 八潮北公園 品川シーズンテラス／芝浦中央公園 天王洲・八潮の大会日を確認。東品川1丁目の路上枠は昼の短時間代替のみで、夜は路外駐車。品川シーズンテラスは23時まで。 東京港・水辺",
+    "timeBucket": "120"
   },
   {
     "id": "R149",
@@ -963,7 +1004,8 @@
     "skipRule": "22時以降は東京タワー外観鑑賞へ変更",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E5%93%81%E5%B7%9D%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%83%86%E3%83%A9%E3%82%B9%EF%BC%8F%E8%8A%9D%E6%B5%A6%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92",
-    "searchText": "品川から東京タワーへ都市インフラ線 水再生センター／高層街／放送塔 平日夜 品川シーズンテラス／芝浦中央公園 東京タワー 港南3丁目の時間制限駐車区間は昼の短時間観察用。東京タワー展望利用は地上・近隣駐車場を使用。最終入場22:30。 都市夜景・建築"
+    "searchText": "品川から東京タワーへ都市インフラ線 水再生センター／高層街／放送塔 平日夜 品川シーズンテラス／芝浦中央公園 東京タワー 港南3丁目の時間制限駐車区間は昼の短時間観察用。東京タワー展望利用は地上・近隣駐車場を使用。最終入場22:30。 都市夜景・建築",
+    "timeBucket": "120"
   },
   {
     "id": "R150",
@@ -985,7 +1027,8 @@
     "skipRule": "シティビュー休館時は東京タワーへ変更",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%20%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%EF%BC%8F%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%E3%83%BB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
-    "searchText": "六本木・庭園から空中都市へ 庭園／現代建築／高層展望 8月1日以降・夜 東京ミッドタウン／ミッドタウン・ガーデン 六本木ヒルズ 東京シティビュー 東京シティビューは2026年7月31日まで休館。8月1日以降に使用。企画展・貸切を確認。 都市夜景・建築"
+    "searchText": "六本木・庭園から空中都市へ 庭園／現代建築／高層展望 8月1日以降・夜 東京ミッドタウン／ミッドタウン・ガーデン 六本木ヒルズ 東京シティビュー 東京シティビューは2026年7月31日まで休館。8月1日以降に使用。企画展・貸切を確認。 都市夜景・建築",
+    "timeBucket": "120"
   },
   {
     "id": "R151",
@@ -1007,7 +1050,8 @@
     "skipRule": "絵画館休館時は都庁展望室へ／花見期は片方に絞る",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%98%8E%E6%B2%BB%E7%A5%9E%E5%AE%AE%E5%A4%96%E8%8B%91%20%E8%81%96%E5%BE%B3%E8%A8%98%E5%BF%B5%E7%B5%B5%E7%94%BB%E9%A4%A8&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BF%E5%BE%A1%E8%8B%91",
-    "searchText": "新宿・庭園と明治建築 大庭園／近代建築／明治史 休日半日・昼 新宿御苑 明治神宮外苑 聖徳記念絵画館 新宿3丁目37の路上枠は40分限定で、御苑内観光には使用不可。御苑駐車場と絵画館駐車場を基本とする。 story・文化"
+    "searchText": "新宿・庭園と明治建築 大庭園／近代建築／明治史 休日半日・昼 新宿御苑 明治神宮外苑 聖徳記念絵画館 新宿3丁目37の路上枠は40分限定で、御苑内観光には使用不可。御苑駐車場と絵画館駐車場を基本とする。 story・文化",
+    "timeBucket": "half"
   },
   {
     "id": "R152",
@@ -1029,6 +1073,7 @@
     "skipRule": "都庁休室・22時超過時はNSビルで終了",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BFNS%E3%83%93%E3%83%AB%20%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A6%E3%83%A0%E3%83%BB%E5%A4%A7%E6%99%82%E8%A8%88",
-    "searchText": "西新宿・巨大空間から都庁夜景へ 巨大アトリウム／超高層街／無料展望 平日夜・雨天 新宿nsビル アトリウム・大時計 東京都庁展望室 西新宿6丁目の路上枠は昼の短時間建築観察用。夜はnsビルまたは都庁駐車場を使用し、都庁は21:30入庫・22:00出庫期限。 都市夜景・建築"
+    "searchText": "西新宿・巨大空間から都庁夜景へ 巨大アトリウム／超高層街／無料展望 平日夜・雨天 新宿nsビル アトリウム・大時計 東京都庁展望室 西新宿6丁目の路上枠は昼の短時間建築観察用。夜はnsビルまたは都庁駐車場を使用し、都庁は21:30入庫・22:00出庫期限。 都市夜景・建築",
+    "timeBucket": "90"
   }
 ]
