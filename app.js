@@ -2,6 +2,7 @@ const $=s=>document.querySelector(s);
 let routes=[],selectedTime="90",lastId=null,map=null,mapLayers=[],activeRoute=null;
 const START_NAME="蒲田駅";
 const START_COORD=[35.5625,139.7160];
+const GOOD_STORAGE_KEY="projectCruiseGoodHistoryV1";
 const geocodeCache=JSON.parse(localStorage.getItem("pcGeocodeCache")||"{}");
 
 fetch("data/routes.json")
@@ -19,6 +20,11 @@ document.querySelectorAll(".time-btn").forEach(btn=>{
 $("#draw").addEventListener("click",draw);
 $("#redraw").addEventListener("click",draw);
 $("#about-toggle").addEventListener("click",()=>$("#about").classList.toggle("hidden"));
+$("#good-route").addEventListener("click",()=>saveGood("route"));
+$("#good-story").addEventListener("click",()=>saveGood("story"));
+$("#export-good").addEventListener("click",exportGoodHistory);
+
+refreshGoodSummary();
 
 function draw(){
  const pool=routes.filter(r=>r.timeBucket===selectedTime);
@@ -51,10 +57,114 @@ function show(r){
  $("#gmap").href=r.googleMaps||"#";
  $("#map-link").href=r.googleMaps||"#";
  $("#waypoints").innerHTML=(r.waypoints||[]).map((x,i)=>`<div class="route-stop"><span>STOP ${i+1}</span><strong>${escapeHtml(x)}</strong></div>`).join("");
+ resetGoodButtons();
+ refreshCurrentGoodCounts();
  $("#result").classList.remove("hidden");
  $("#result").scrollIntoView({behavior:"smooth",block:"start"});
  setTimeout(()=>renderMap(r),100);
 }
+
+function getGoodHistory(){
+ try{
+  const data=JSON.parse(localStorage.getItem(GOOD_STORAGE_KEY)||"[]");
+  return Array.isArray(data)?data:[];
+ }catch(e){
+  return [];
+ }
+}
+
+function routeSignature(r){
+ return [r.id,r.destination,(r.waypoints||[]).join(" > ")].join("|");
+}
+
+function storySignature(r){
+ return [r.id,r.intent||""].join("|");
+}
+
+function saveGood(type){
+ if(!activeRoute)return;
+ const history=getGoodHistory();
+ const signature=type==="route"?routeSignature(activeRoute):storySignature(activeRoute);
+ const entry={
+  feedbackId:`${Date.now()}-${Math.random().toString(36).slice(2,8)}`,
+  type,
+  routeId:activeRoute.id||"",
+  destination:activeRoute.destination||"",
+  routeTitle:activeRoute.title||"",
+  waypoints:[...(activeRoute.waypoints||[])],
+  story:activeRoute.intent||"",
+  theme:activeRoute.theme||activeRoute.type||"",
+  duration:activeRoute.duration||timeLabel(selectedTime),
+  timeBucket:activeRoute.timeBucket||selectedTime,
+  signature,
+  createdAt:new Date().toISOString()
+ };
+ history.push(entry);
+ localStorage.setItem(GOOD_STORAGE_KEY,JSON.stringify(history));
+
+ const button=type==="route"?$("#good-route"):$("#good-story");
+ button.classList.add("saved");
+ button.setAttribute("aria-pressed","true");
+ $("#good-message").textContent=type==="route"
+  ?"このルートをGOOD履歴へ保存しました。"
+  :"このStoryをGOOD履歴へ保存しました。";
+ refreshGoodSummary();
+ refreshCurrentGoodCounts();
+}
+
+function refreshGoodSummary(){
+ const history=getGoodHistory();
+ const routeCount=history.filter(x=>x.type==="route").length;
+ const storyCount=history.filter(x=>x.type==="story").length;
+ $("#good-total").textContent=history.length;
+ $("#good-breakdown").textContent=`ルート ${routeCount} / Story ${storyCount}`;
+ $("#export-good").disabled=history.length===0;
+}
+
+function refreshCurrentGoodCounts(){
+ if(!activeRoute){
+  $("#route-good-count").textContent="0";
+  $("#story-good-count").textContent="0";
+  return;
+ }
+ const history=getGoodHistory();
+ const routeKey=routeSignature(activeRoute);
+ const storyKey=storySignature(activeRoute);
+ $("#route-good-count").textContent=history.filter(x=>x.type==="route"&&x.signature===routeKey).length;
+ $("#story-good-count").textContent=history.filter(x=>x.type==="story"&&x.signature===storyKey).length;
+}
+
+function resetGoodButtons(){
+ ["#good-route","#good-story"].forEach(selector=>{
+  const button=$(selector);
+  button.classList.remove("saved");
+  button.setAttribute("aria-pressed","false");
+ });
+ $("#good-message").textContent="この端末のブラウザに保存されます。";
+}
+
+function exportGoodHistory(){
+ const history=getGoodHistory();
+ if(!history.length)return;
+ const payload={
+  exportedAt:new Date().toISOString(),
+  app:"Project Cruise",
+  version:1,
+  total:history.length,
+  records:history
+ };
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");
+ a.href=url;
+ a.download=`project-cruise-good-${new Date().toISOString().slice(0,10)}.json`;
+ document.body.appendChild(a);
+ a.click();
+ a.remove();
+ URL.revokeObjectURL(url);
+ $("#good-message").textContent="GOOD履歴をJSONで書き出しました。";
+}
+
 function initMap(){
  if(map)return;
  map=L.map("map",{zoomControl:true,attributionControl:true,scrollWheelZoom:false}).setView(START_COORD,11);

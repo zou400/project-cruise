@@ -12,7 +12,7 @@ body{margin:0;min-height:100vh;background:radial-gradient(circle at 82% 7%,#236f
 .time-btn{border:1px solid #c9d7df;background:#eef3f6;color:#16364a;border-radius:14px;padding:14px 8px;font-size:16px;font-weight:800;cursor:pointer}
 .time-btn.active{background:var(--deep);color:white;border-color:var(--deep)}
 .draw-btn{width:100%;margin-top:18px;border:0;border-radius:16px;padding:19px;background:var(--blue);color:#fff;font-size:21px;font-weight:900;cursor:pointer;box-shadow:0 8px 20px rgba(14,116,144,.28)}
-.draw-btn:active,.secondary:active{transform:scale(.99)}
+.draw-btn:active,.secondary:active,.good-btn:active{transform:scale(.99)}
 .hint{text-align:center;color:#718590;font-size:13px;margin:12px 0 0}
 .hidden{display:none!important}
 
@@ -36,6 +36,25 @@ body{margin:0;min-height:100vh;background:radial-gradient(circle at 82% 7%,#236f
 .intent{line-height:1.72}
 .dwell{font-size:13px;line-height:1.65;color:#536d7c;background:#edf4f7;border-radius:12px;padding:12px}
 .caution{font-size:13px;color:#745b19;background:#fff4ce;border-radius:12px;padding:12px}
+
+.good-panel{margin-top:18px;padding:15px;border:1px solid #d8e6ec;border-radius:16px;background:#f8fbfc}
+.good-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.good-head>div{display:flex;flex-direction:column;gap:3px}
+.beta-label{font-size:9px;font-weight:900;letter-spacing:.15em;color:var(--blue)}
+.good-head strong{font-size:15px}
+.good-total-label{font-size:11px;color:#6b808d;white-space:nowrap}
+.good-total-label b{font-size:16px;color:var(--deep)}
+.good-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.good-btn{display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;border:1px solid #bad1db;background:#fff;color:var(--deep);border-radius:12px;padding:12px 8px;font-weight:900;cursor:pointer;transition:.15s ease}
+.good-btn:hover{border-color:var(--blue);box-shadow:0 5px 15px rgba(14,116,144,.12)}
+.good-btn.saved{background:#dff4e5;border-color:#76bd8c;color:#195b2c}
+.good-btn small{font-size:10px;font-weight:700;color:#718590}
+.good-btn.saved small{color:#3d7650}
+.good-message{min-height:18px;margin:10px 0 0;text-align:center;font-size:11px;color:#617786}
+.good-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px;padding-top:9px;border-top:1px solid #e0eaee;font-size:10px;color:#718590}
+.export-good{border:0;background:transparent;color:var(--blue);font-weight:800;text-decoration:underline;cursor:pointer;padding:4px}
+.export-good:disabled{color:#aab8bf;cursor:not-allowed;text-decoration:none}
+
 .actions{display:grid;gap:10px;margin-top:20px}
 .primary,.secondary{display:block;text-align:center;text-decoration:none;border:0;border-radius:14px;padding:16px;font-size:16px;font-weight:900;cursor:pointer}
 .primary{background:var(--deep);color:#fff}
@@ -78,4 +97,6 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
  .map-head{align-items:start}
  .map-head strong{font-size:18px}
  .map-cta{font-size:11px;padding:9px 13px}
+ .good-actions{grid-template-columns:1fr}
+ .good-footer{align-items:flex-start;flex-direction:column}
 }
