@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071b2c">
 <title>Project Cruise</title>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,39 +24,62 @@
       <button class="time-btn" data-time="120">2時間</button>
       <button class="time-btn" data-time="half">半日</button>
     </div>
-
     <button id="draw" class="draw-btn">どこにいく？</button>
     <p class="hint">押すたびに、別のルートが出ます。</p>
   </section>
 
-  <section id="result" class="result hidden" aria-live="polite">
-    <div class="result-top">
-      <span id="duration" class="pill"></span>
-      <span id="theme" class="pill muted"></span>
-    </div>
-    <p class="label">今日の行先</p>
-    <h2 id="destination"></h2>
-    <p id="title" class="route-title"></p>
-
-    <div class="route-line">
-      <div>
-        <span>START</span>
-        <strong>大田区</strong>
+  <section id="result" class="result-shell hidden" aria-live="polite">
+    <article class="result-card">
+      <div class="result-top">
+        <span id="duration" class="pill"></span>
+        <span id="theme" class="pill muted"></span>
       </div>
-      <div id="waypoints"></div>
-      <div>
-        <span>GOAL</span>
-        <strong id="goal"></strong>
+
+      <p class="label">今日の行先</p>
+      <h2 id="destination"></h2>
+      <p id="title" class="route-title"></p>
+
+      <div class="route-line">
+        <div class="route-stop start">
+          <span>START</span>
+          <strong>大田区・蒲田</strong>
+        </div>
+        <div id="waypoints"></div>
+        <div class="route-stop goal">
+          <span>GOAL</span>
+          <strong id="goal"></strong>
+        </div>
       </div>
-    </div>
 
-    <p id="intent" class="intent"></p>
-    <p id="caution" class="caution"></p>
+      <p id="intent" class="intent"></p>
+      <p id="dwell" class="dwell"></p>
+      <p id="caution" class="caution"></p>
 
-    <div class="actions">
-      <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
-      <button id="redraw" class="secondary">ほかの行先にする</button>
-    </div>
+      <div class="actions">
+        <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
+        <button id="redraw" class="secondary">ほかの行先にする</button>
+      </div>
+    </article>
+
+    <aside class="map-card">
+      <div class="map-head">
+        <div>
+          <span class="map-label">ROUTE PREVIEW</span>
+          <strong>今日はこう走る</strong>
+        </div>
+        <span id="map-status">地点を読み込み中</span>
+      </div>
+      <a id="map-link" target="_blank" rel="noopener" aria-label="Googleマップでルートを開く">
+        <div id="map"></div>
+        <div class="map-cta">地図を押してGoogleマップへ</div>
+      </a>
+      <div class="legend">
+        <span><i class="dot blue"></i>出発</span>
+        <span><i class="dot yellow"></i>経由地</span>
+        <span><i class="dot red"></i>目的地</span>
+      </div>
+      <p class="map-note">地図はルートの全体像を示すプレビューです。実際の道路・渋滞・規制はGoogleマップで確認してください。</p>
+    </aside>
   </section>
 
   <footer>
@@ -62,6 +87,8 @@
     <p id="about" class="about hidden">Project Cruiseは、大田区発着で無理なく戻れる近距離ルートを提案します。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
   </footer>
 </main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
