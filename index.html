@@ -129,7 +129,7 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
     <p class="eyebrow">OTA, TOKYO / DRIVE DISCOVERY</p>
     <h1>Project Cruise</h1>
     <p class="lead">行先が決まらない夜に、行先を決める。</p>
-    <p id="db-version" class="db-version">MAX DB v0.8.1 読み込み中</p>
+    <p id="db-version" class="db-version">MAX DB v0.8.2 読み込み中</p>
   </header>
 
   <section class="selector">
@@ -184,16 +184,6 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
       <p id="dwell" class="dwell"></p>
       <p id="caution" class="caution"></p>
 
-      <details id="story-details" class="db-details">
-        <summary>目的地・経由地のうんちく</summary>
-        <div id="story-content" class="db-detail-content"></div>
-      </details>
-
-      <details id="ops-details" class="db-details">
-        <summary>成立条件・短縮案・代替先</summary>
-        <div id="ops-content" class="db-detail-content"></div>
-      </details>
-
       <div class="actions">
         <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
         <button id="redraw" class="secondary">ほかの行先にする</button>
@@ -223,7 +213,7 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
 
   <footer>
     <button id="about-toggle">このサービスについて</button>
-    <p id="about" class="about hidden">Project Cruiseの候補最大化テスト版です。全275地点・152ルートの既存DBを活用し、条件付き候補も表示します。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
+    <p id="about" class="about hidden">Project Cruiseの候補最大化テスト版です。全275地点・152ルートの既存DBを活用します。同じ目的地の再登場は禁止せず、直近に出た場所ほど抽選確率を下げます。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
   </footer>
 </main>
 
@@ -236,9 +226,10 @@ window.PROJECT_CRUISE_ROUTES = [{"id":"R001","title":"羽田・航空機ショ�
 <script>
 const $=s=>document.querySelector(s);
 let routes=[],destinations=[],destinationByName=new Map(),selectedTime="90",lastId=null,map=null,mapLayers=[],activeRoute=null;
-const shownDestinationsByTime={90:new Set(),120:new Set(),half:new Set()};
+const recentDestinationsByTime={90:[],120:[],half:[]};
+const destinationCountsByTime={90:new Map(),120:new Map(),half:new Map()};
 const variantCursor=new Map();
-let completedCycles={90:0,120:0,half:0};
+const RECENT_HISTORY_LIMIT=24;
 let config=null;
 let originMode="preset";
 let activeOrigin={name:"登録済み起点",query:"",coords:[35.5625,139.7160]};
@@ -256,7 +247,7 @@ $("#start-label").textContent=p.name;
 setOriginMode(originMode,false);
 updatePoolStatus();
 const versionEl=document.querySelector("#db-version");
-if(versionEl)versionEl.textContent=`MAX DB v0.8.1｜${destinations.length}地点・${routes.length}結果を読込済み`;
+if(versionEl)versionEl.textContent=`MAX DB v0.8.2｜${destinations.length}地点・${routes.length}結果を読込済み`;
 
 document.querySelectorAll(".time-btn").forEach(btn=>{
  btn.addEventListener("click",()=>{
@@ -331,19 +322,43 @@ function destinationGroups(pool){
  });
  return groups;
 }
+function recencyWeight(destinationKey,history){
+ const lastIndex=history.lastIndexOf(destinationKey);
+ if(lastIndex<0)return 1;
+ const age=history.length-1-lastIndex;
+ // 直前は通常候補の2.5%。時間が経つほど段階的に復帰する。
+ const weights=[0.025,0.06,0.12,0.22,0.35,0.50,0.65,0.78,0.88,0.94];
+ return weights[Math.min(age,weights.length-1)];
+}
+function frequencyWeight(destinationKey){
+ const count=destinationCountsByTime[selectedTime].get(destinationKey)||0;
+ // 長期的な偏りも軽く抑える。ただし再登場は禁止しない。
+ return 1/Math.sqrt(1+count*0.18);
+}
+function weightedDestination(entries){
+ const history=recentDestinationsByTime[selectedTime];
+ const weighted=entries.map(entry=>({entry,weight:recencyWeight(entry[0],history)*frequencyWeight(entry[0])}));
+ const total=weighted.reduce((sum,x)=>sum+x.weight,0);
+ let cursor=Math.random()*total;
+ for(const item of weighted){
+  cursor-=item.weight;
+  if(cursor<=0)return item.entry;
+ }
+ return weighted[weighted.length-1].entry;
+}
+function rememberDestination(destinationKey){
+ const history=recentDestinationsByTime[selectedTime];
+ history.push(destinationKey);
+ if(history.length>RECENT_HISTORY_LIMIT)history.splice(0,history.length-RECENT_HISTORY_LIMIT);
+ const counts=destinationCountsByTime[selectedTime];
+ counts.set(destinationKey,(counts.get(destinationKey)||0)+1);
+}
 function draw(){
  const pool=eligiblePool();
  if(!pool.length){alert("この時間帯の候補は準備中です。");return}
  const groups=destinationGroups(pool);
- const shown=shownDestinationsByTime[selectedTime];
- let fresh=[...groups.entries()].filter(([key])=>!shown.has(key));
- if(!fresh.length){
-  shown.clear();
-  completedCycles[selectedTime]+=1;
-  fresh=[...groups.entries()];
- }
- const [destinationKey,variants]=fresh[Math.floor(Math.random()*fresh.length)];
- shown.add(destinationKey);
+ const [destinationKey,variants]=weightedDestination([...groups.entries()]);
+ rememberDestination(destinationKey);
  const route=pickVariant(destinationKey,variants);
  lastId=route.id;activeRoute=route;show(route);
  updatePoolStatus();
@@ -367,9 +382,9 @@ function updatePoolStatus(){
  if(!el||!routes.length)return;
  const pool=eligiblePool();
  const unique=destinationGroups(pool).size;
- const shown=shownDestinationsByTime[selectedTime].size;
- const cycle=completedCycles[selectedTime];
- el.textContent=`候補最大化テスト：${unique}種類の最終目的地／${pool.length}通りの結果。現在 ${shown}/${unique}種類を表示済み${cycle?`・${cycle}巡完了`:""}。同じ目的地は一巡するまで原則出ません。`;
+ const history=recentDestinationsByTime[selectedTime];
+ const recentUnique=new Set(history.slice(-10)).size;
+ el.textContent=`候補最大化テスト：${unique}種類の最終目的地／${pool.length}通りの結果。重複は禁止せず、直近に出た目的地ほど低確率にしています${history.length?`（直近10件で${recentUnique}種類）`:""}。`;
 }
 function show(r){
  $("#duration").textContent=`移動 ${timeLabel(selectedTime)}`;
@@ -385,51 +400,10 @@ function show(r){
  $("#caution").textContent=r.caution?`注意：${r.caution}`:"";
  $("#caution").style.display=r.caution?"block":"none";
  $("#waypoints").innerHTML=(r.waypoints||[]).map((x,i)=>`<div class="route-stop"><span>STOP ${i+1}</span><strong>${escapeHtml(x)}</strong></div>`).join("");
- renderStories(r);
- renderOperations(r);
  updateGoogleLinks(r);
  $("#result").classList.remove("hidden");
- $("#story-details").open=false;
- $("#ops-details").open=false;
  $("#result").scrollIntoView({behavior:"smooth",block:"start"});
  setTimeout(()=>renderMap(r),100);
-}
-function renderStories(r){
- const names=[...(r.waypoints||[]),r.destination].filter(Boolean);
- const blocks=names.map((name,index)=>{
-  const d=destinationByName.get(normalizeName(name));
-  const role=index===names.length-1?"目的地":`経由地 ${index+1}`;
-  if(!d)return `<h3>${escapeHtml(role)}｜${escapeHtml(name)}</h3><p>詳細情報は確認中です。</p>`;
-  const reason=d.reason||d.operational?.establishmentReason||"";
-  const story=d.story||"";
-  return `<h3>${escapeHtml(role)}｜${escapeHtml(name)}</h3>${reason?`<p>${escapeHtml(reason)}</p>`:""}${story?`<p>${escapeHtml(story)}</p>`:""}`;
- }).join("");
- $("#story-content").innerHTML=blocks||"<p>うんちく情報は準備中です。</p>";
-}
-function renderOperations(r){
- const f=r.feasibility||{};
- const t=r.timeConditions||{};
- const a=r.routeAssessment||{};
- const chips=[
-  ["成立性",f.score!=null?`${f.score}/100`:"確認中"],
-  ["駐車確度",f.minimumParkingCertainty!=null?`${f.minimumParkingCertainty}/5`:"確認中"],
-  ["深夜",t.lateNight||"未評価"],
-  ["雨天",t.rain||"未評価"],
-  ["ルート総合",a.overallScore!=null?`${a.overallScore}/100`:"確認中"],
-  ["所要幅",f.minMinutes!=null?`${f.minMinutes}〜${f.maxMinutes}分`:r.duration],
-  ["候補種別",r.candidateSource==="canonical_route"?"監査ルート":"目的地DB直行"],
-  ["確認状態",r.verificationStatus||"確認中"]
- ];
- let html=`<div class="db-grid">${chips.map(([k,v])=>`<div class="db-chip"><span>${escapeHtml(k)}</span><strong>${escapeHtml(v)}</strong></div>`).join("")}</div>`;
- if(t.latestRecommendedDeparture)html+=`<p><strong>推奨最終出発：</strong>${escapeHtml(t.latestRecommendedDeparture)}</p>`;
- if(f.hardGate?.place)html+=`<p><strong>Hard Gate：</strong>${escapeHtml(f.hardGate.place)}${f.hardGate.time?`（${escapeHtml(f.hardGate.time)}）`:""}</p>`;
- if(t.shortPattern)html+=`<p><strong>時間不足時：</strong>${escapeHtml(t.shortPattern)}</p>`;
- if(f.planBDestination)html+=`<p><strong>代替先：</strong>${escapeHtml(f.planBDestination)}</p>`;
- if(f.failureConditions)html+=`<div class="db-alert"><strong>主な失敗条件：</strong>${escapeHtml(f.failureConditions)}</div>`;
- if((r.stopOperations||[]).length){
-  html+=`<h3>滞在運用</h3>`+(r.stopOperations||[]).map(o=>`<p><strong>${escapeHtml(o.name||"")}</strong>｜${escapeHtml(o.role||"")}｜標準${escapeHtml(o.standardStayMinutes??"-")}分・最大${escapeHtml(o.maximumStayMinutes??"-")}分<br>${escapeHtml(o.firstFiveMinutes||"")}${o.skipCondition?`<br><small>省略条件：${escapeHtml(o.skipCondition)}</small>`:""}</p>`).join("");
- }
- $("#ops-content").innerHTML=html;
 }
 function normalizeName(s){return String(s||"").replace(/[\s　]+/g," ").trim().toLowerCase()}
 function isNight(){const h=new Date().getHours();return h>=18||h<5}
