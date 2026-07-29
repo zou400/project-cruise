@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071b2c">
-<title>Project Cruise</title>
+<title>（仮）サービス名</title>
 <link rel="preconnect" href="https://unpkg.com">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
@@ -12,9 +12,9 @@
 :root{--navy:#071b2c;--blue:#0e7490;--deep:#143d59;--text:#102536;--muted:#667d8b;--paper:#fff;--line:#dce7ed}
 body{margin:0;min-height:100vh;background:radial-gradient(circle at 82% 7%,#236f92 0,#0b2d43 38%,#061725 100%);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif}
 .app{width:min(1220px,100%);margin:auto;padding:30px 20px 48px}
-.brand{text-align:center;padding:10px 0 26px}
+.brand{text-align:center;padding:10px 0 22px}
 .eyebrow{font-size:11px;letter-spacing:.22em;opacity:.7}
-.brand h1{margin:8px 0 7px;font-size:clamp(42px,8vw,76px);line-height:.95}
+.brand h1{margin:8px 0 14px;font-size:clamp(42px,8vw,76px);line-height:.95}
 .lead{opacity:.88;margin-bottom:0}
 .selector{width:min(660px,100%);margin:auto;background:rgba(255,255,255,.97);color:var(--text);border-radius:24px;padding:25px;box-shadow:0 20px 60px rgba(0,0,0,.22)}
 .step{text-align:center;margin:0 0 14px;font-weight:800}
@@ -126,10 +126,8 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
 <body>
 <main class="app">
   <header class="brand">
-    <p class="eyebrow">OTA, TOKYO / DRIVE DISCOVERY</p>
-    <h1>Project Cruise</h1>
-    <p class="lead">行先が決まらない夜に、行先を決める。</p>
-    <p id="db-version" class="db-version">MAX DB v0.8.2 読み込み中</p>
+    <h1>（仮）サービス名</h1>
+    <p id="db-version" class="db-version">MAX DB v0.8.3 読み込み中</p>
   </header>
 
   <section class="selector">
@@ -213,7 +211,7 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
 
   <footer>
     <button id="about-toggle">このサービスについて</button>
-    <p id="about" class="about hidden">Project Cruiseの候補最大化テスト版です。全275地点・152ルートの既存DBを活用します。同じ目的地の再登場は禁止せず、直近に出た場所ほど抽選確率を下げます。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
+    <p id="about" class="about hidden">候補最大化テスト版です。全275地点・152ルートの既存DBを活用します。同じ目的地の再登場は禁止せず、直近に出た場所ほど抽選確率を下げます。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
   </footer>
 </main>
 
@@ -247,7 +245,7 @@ $("#start-label").textContent=p.name;
 setOriginMode(originMode,false);
 updatePoolStatus();
 const versionEl=document.querySelector("#db-version");
-if(versionEl)versionEl.textContent=`MAX DB v0.8.2｜${destinations.length}地点・${routes.length}結果を読込済み`;
+if(versionEl)versionEl.textContent=`MAX DB v0.8.3｜${destinations.length}地点・${routes.length}結果を読込済み`;
 
 document.querySelectorAll(".time-btn").forEach(btn=>{
  btn.addEventListener("click",()=>{
