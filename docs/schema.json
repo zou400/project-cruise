@@ -6,6 +6,13 @@
       "area",
       "distanceTier",
       "googleMaps"
+    ],
+    "enrichedOptional": [
+      "verification",
+      "operational",
+      "scenarioScores",
+      "checkedDate",
+      "verificationStatus"
     ]
   },
   "route": {
@@ -14,6 +21,13 @@
       "title",
       "destination",
       "googleMaps"
+    ],
+    "enrichedOptional": [
+      "routeAssessment",
+      "feasibility",
+      "timeConditions",
+      "stopOperations",
+      "routeFreshness"
     ]
   },
   "legalCurbAccess": {
@@ -22,5 +36,6 @@
       "location",
       "confidence"
     ]
-  }
+  },
+  "schemaVersion": "2.0-db-merged"
 }

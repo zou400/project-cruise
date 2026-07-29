@@ -1,0 +1,35 @@
+{
+  "version": "v07",
+  "createdAt": "2026-07-29T17:50:00+09:00",
+  "sourcePackage": "project-cruise-travel-time-budget-v06.zip",
+  "sourceWorkbook": "Project_Cruise_GitHubテスト準備版.xlsx",
+  "canonicalCatalog": {
+    "destinations": 275,
+    "routes": 152
+  },
+  "webCatalog": {
+    "destinations": 93,
+    "routes": 45
+  },
+  "coverage": {
+    "routeScore": 45,
+    "feasibility": 37,
+    "timeAudit": 37,
+    "stopOperations": 15
+  },
+  "addedDestinationFields": [
+    "verification",
+    "operational",
+    "scenarioScores",
+    "checkedDate",
+    "verificationStatus"
+  ],
+  "addedRouteFields": [
+    "routeAssessment",
+    "feasibility",
+    "timeConditions",
+    "stopOperations",
+    "routeFreshness"
+  ],
+  "policy": "Web公開候補93地点・45ルートは維持し、正本の運用情報を追加。長距離・未監査候補は自動公開しない。"
+}

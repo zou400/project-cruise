@@ -5,5 +5,13 @@
   "destinationIdsUnique": true,
   "routeIdsUnique": true,
   "missingDestinationNames": 0,
-  "missingRouteDestinations": 0
+  "missingRouteDestinations": 0,
+  "schemaVersion": "2.0-db-merged",
+  "canonicalDestinationCount": 275,
+  "canonicalRouteCount": 152,
+  "routeAssessmentCoverage": 45,
+  "feasibilityCoverage": 37,
+  "timeAuditCoverage": 37,
+  "stopOperationsRouteCoverage": 15,
+  "dbIntegrationErrors": 0
 }

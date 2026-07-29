@@ -6,5 +6,18 @@
   "routeCount": 45,
   "legalCurbAccessCount": 10,
   "sourceWorkbook": "Project_Cruise_合法路上駐車統合版.xlsx",
-  "schemaVersion": "0.2.0"
+  "schemaVersion": "2.0-db-merged",
+  "canonicalDestinationCount": 275,
+  "canonicalRouteCount": 152,
+  "publicDestinationCount": 93,
+  "publicRouteCount": 45,
+  "dbIntegrationVersion": "v07",
+  "dbIntegrationDate": "2026-07-29",
+  "enrichmentCoverage": {
+    "routeScore": 45,
+    "feasibility": 37,
+    "timeAudit": 37,
+    "stopOperations": 15
+  },
+  "enrichedFrom": "Project_Cruise_GitHubテスト準備版.xlsx"
 }

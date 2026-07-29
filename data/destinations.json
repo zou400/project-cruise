@@ -34,7 +34,33 @@
       "港",
       "飛行機"
     ],
-    "searchText": "城南島海浜公園 大田区・城南島 飛行機・海・港 飛行機 羽田の航空機、東京湾、コンテナ港を同時に味わえる大田区起点の基準ending。 城南島は東京湾を埋め立てて造られた人工島で、大井ふ頭の物流機能を補う工業・港湾地区として整備された。"
+    "searchText": "城南島海浜公園 大田区・城南島 飛行機・海・港 飛行機 羽田の航空機、東京湾、コンテナ港を同時に味わえる大田区起点の基準ending。 城南島は東京湾を埋め立てて造られた人工島で、大井ふ頭の物流機能を補う工業・港湾地区として整備された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 74,
+      "recommendedUse": "飛行機／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "羽田の航空機、東京湾、コンテナ港を同時に味わえる大田区起点の基準Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 82,
+      "lateNight120": 79,
+      "rain": 60,
+      "aircraft": 91,
+      "seaPort": 90,
+      "factoryNight": 59,
+      "quiet": 63,
+      "holidayHalfDay": 61
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D002",
@@ -70,7 +96,33 @@
       "工業島",
       "飛行機"
     ],
-    "searchText": "京浜島つばさ公園 大田区・京浜島 飛行機・工業島 飛行機 滑走路を横から眺め、工業島の行き止まり感と航空機の迫力を味わえる。 京浜島も東京湾の人工島で、工場・倉庫地区と羽田空港が至近距離で隣り合う、東京らしい埋立地景観を持つ。"
+    "searchText": "京浜島つばさ公園 大田区・京浜島 飛行機・工業島 飛行機 滑走路を横から眺め、工業島の行き止まり感と航空機の迫力を味わえる。 京浜島も東京湾の人工島で、工場・倉庫地区と羽田空港が至近距離で隣り合う、東京らしい埋立地景観を持つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 80,
+      "recommendedUse": "工場夜景／飛行機",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "強い候補",
+      "establishmentReason": "滑走路を横から眺め、工業島の行き止まり感と航空機の迫力を味わえる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 93,
+      "lateNight120": 93,
+      "rain": 71,
+      "aircraft": 94,
+      "seaPort": 66,
+      "factoryNight": 95,
+      "quiet": 65,
+      "holidayHalfDay": 64
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D003",
@@ -106,7 +158,33 @@
       "展望",
       "飛行機"
     ],
-    "searchText": "羽田空港 第3ターミナル展望デッキ 大田区・羽田 飛行機・展望 飛行機 深夜でも滑走路灯火と航空機を楽しめる、安定性の高いending。 現在の第3ターミナルは2010年に国際線ターミナルとして開業し、2020年に現在の名称へ変更された。"
+    "searchText": "羽田空港 第3ターミナル展望デッキ 大田区・羽田 飛行機・展望 飛行機 深夜でも滑走路灯火と航空機を楽しめる、安定性の高いending。 現在の第3ターミナルは2010年に国際線ターミナルとして開業し、2020年に現在の名称へ変更された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 68,
+      "recommendedUse": "飛行機／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "深夜でも滑走路灯火と航空機を楽しめる、安定性の高いEnding。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 83,
+      "lateNight120": 83,
+      "rain": 59,
+      "aircraft": 86,
+      "seaPort": 58,
+      "factoryNight": 57,
+      "quiet": 51,
+      "holidayHalfDay": 54
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D004",
@@ -142,7 +220,33 @@
       "Story",
       "高台"
     ],
-    "searchText": "多摩川浅間神社 大田区・田園調布 高台・story story 多摩川と武蔵小杉方面を見下ろし、『シン・ゴジラ』の物語性も重ねられる。 社伝では源頼朝の時代に北条政子が富士浅間大神を勧請したとされ、『シン・ゴジラ』のロケ地としても知られる。"
+    "searchText": "多摩川浅間神社 大田区・田園調布 高台・story story 多摩川と武蔵小杉方面を見下ろし、『シン・ゴジラ』の物語性も重ねられる。 社伝では源頼朝の時代に北条政子が富士浅間大神を勧請したとされ、『シン・ゴジラ』のロケ地としても知られる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 54,
+      "recommendedUse": "休日半日／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩川と武蔵小杉方面を見下ろし、『シン・ゴジラ』の物語性も重ねられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 58,
+      "lateNight120": 52,
+      "rain": 48,
+      "aircraft": 50,
+      "seaPort": 47,
+      "factoryNight": 45,
+      "quiet": 55,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D005",
@@ -179,7 +283,33 @@
       "港",
       "都市夜景"
     ],
-    "searchText": "潮風公園 港区・台場 海・都市夜景 海・港 海辺でレインボーブリッジと都心の灯りを眺め、余韻を作りやすい。 『お台場』の名は、江戸幕府が黒船来航に備えて東京湾に築いた砲台＝台場に由来する。"
+    "searchText": "潮風公園 港区・台場 海・都市夜景 海・港 海辺でレインボーブリッジと都心の灯りを眺め、余韻を作りやすい。 『お台場』の名は、江戸幕府が黒船来航に備えて東京湾に築いた砲台＝台場に由来する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 70,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "海辺でレインボーブリッジと都心の灯りを眺め、余韻を作りやすい。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 84,
+      "lateNight120": 87,
+      "rain": 57,
+      "aircraft": 59,
+      "seaPort": 88,
+      "factoryNight": 58,
+      "quiet": 57,
+      "holidayHalfDay": 59
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D006",
@@ -216,7 +346,33 @@
       "海",
       "港"
     ],
-    "searchText": "若洲海浜公園 江東区・若洲 橋・海・港 海・港 東京ゲートブリッジを間近に感じ、東京港の最奥へ走る感覚が強い。 東京ゲートブリッジはトラス部分の形から『恐竜橋』とも呼ばれ、羽田空港の航空制限を避けるため吊橋ではなくトラス橋になった。"
+    "searchText": "若洲海浜公園 江東区・若洲 橋・海・港 海・港 東京ゲートブリッジを間近に感じ、東京港の最奥へ走る感覚が強い。 東京ゲートブリッジはトラス部分の形から『恐竜橋』とも呼ばれ、羽田空港の航空制限を避けるため吊橋ではなくトラス橋になった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 4,
+      "destinationStrength": 65,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "東京ゲートブリッジを間近に感じ、東京港の最奥へ走る感覚が強い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 76,
+      "lateNight120": 77,
+      "rain": 55,
+      "aircraft": 56,
+      "seaPort": 84,
+      "factoryNight": 54,
+      "quiet": 55,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D007",
@@ -254,7 +410,33 @@
       "港",
       "観覧車"
     ],
-    "searchText": "葛西臨海公園 江戸川区・臨海町 海・観覧車・公園 海・港 湾岸道路の先に海辺と観覧車が現れ、東側の安定endingになる。 園内の葛西臨海水族園は、ドーナツ形の大型水槽でクロマグロを群泳展示したことで世界的にも知られた。"
+    "searchText": "葛西臨海公園 江戸川区・臨海町 海・観覧車・公園 海・港 湾岸道路の先に海辺と観覧車が現れ、東側の安定endingになる。 園内の葛西臨海水族園は、ドーナツ形の大型水槽でクロマグロを群泳展示したことで世界的にも知られた。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 64,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "湾岸道路の先に海辺と観覧車が現れ、東側の安定Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 77,
+      "rain": 52,
+      "aircraft": 51,
+      "seaPort": 80,
+      "factoryNight": 51,
+      "quiet": 75,
+      "holidayHalfDay": 53
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D008",
@@ -291,7 +473,33 @@
       "公園",
       "静かな休憩"
     ],
-    "searchText": "夢の島公園 江東区・夢の島 静かな休憩・公園 休日半日 派手さはないが、湾岸走行後に静かに休むendingとして使いやすい。 夢の島は戦前に新空港建設地として計画され、戦後は海水浴場を経てごみ埋立地となったという劇的な履歴を持つ。"
+    "searchText": "夢の島公園 江東区・夢の島 静かな休憩・公園 休日半日 派手さはないが、湾岸走行後に静かに休むendingとして使いやすい。 夢の島は戦前に新空港建設地として計画され、戦後は海水浴場を経てごみ埋立地となったという劇的な履歴を持つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 56,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "派手さはないが、湾岸走行後に静かに休むEndingとして使いやすい。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 60,
+      "lateNight120": 56,
+      "rain": 47,
+      "aircraft": 50,
+      "seaPort": 49,
+      "factoryNight": 46,
+      "quiet": 85,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D009",
@@ -327,7 +535,33 @@
       "展望",
       "工場夜景"
     ],
-    "searchText": "川崎マリエン 川崎市・東扇島 工場夜景・展望 工場夜景 川崎港、工場、大型船、東京湾を高所から360度眺められる主力ending。 『マリエン』はmarineとentranceを組み合わせた愛称で、川崎港の交流拠点として造られた。"
+    "searchText": "川崎マリエン 川崎市・東扇島 工場夜景・展望 工場夜景 川崎港、工場、大型船、東京湾を高所から360度眺められる主力ending。 『マリエン』はmarineとentranceを組み合わせた愛称で、川崎港の交流拠点として造られた。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 74,
+      "recommendedUse": "工場夜景／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "川崎港、工場、大型船、東京湾を高所から360度眺められる主力Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 88,
+      "lateNight120": 90,
+      "rain": 68,
+      "aircraft": 62,
+      "seaPort": 63,
+      "factoryNight": 92,
+      "quiet": 61,
+      "holidayHalfDay": 62
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D010",
@@ -364,7 +598,33 @@
       "海",
       "港"
     ],
-    "searchText": "東扇島東公園 川崎市・東扇島 人工海浜・港 海・港 人工海浜、航空機、港湾設備を低い目線で眺める夕方ending。 東扇島は川崎港の人工島で、公園の人工海浜は京浜工業地帯の中に造られた珍しい砂浜である。"
+    "searchText": "東扇島東公園 川崎市・東扇島 人工海浜・港 海・港 人工海浜、航空機、港湾設備を低い目線で眺める夕方ending。 東扇島は川崎港の人工島で、公園の人工海浜は京浜工業地帯の中に造られた珍しい砂浜である。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 62,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "人工海浜、航空機、港湾設備を低い目線で眺める夕方Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 70,
+      "lateNight120": 68,
+      "rain": 55,
+      "aircraft": 54,
+      "seaPort": 81,
+      "factoryNight": 50,
+      "quiet": 57,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D013",
@@ -401,7 +661,33 @@
       "港",
       "都市夜景"
     ],
-    "searchText": "横浜港大さん橋 横浜市・中区 港・都市夜景 海・港 みなとみらいとベイブリッジを受け止める完成度の高い都市型ending。 大さん橋の起源は1894年完成の鉄桟橋で、現在の客船ターミナルは波打つ屋上デッキを持つ建築として評価が高い。"
+    "searchText": "横浜港大さん橋 横浜市・中区 港・都市夜景 海・港 みなとみらいとベイブリッジを受け止める完成度の高い都市型ending。 大さん橋の起源は1894年完成の鉄桟橋で、現在の客船ターミナルは波打つ屋上デッキを持つ建築として評価が高い。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 64,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "みなとみらいとベイブリッジを受け止める完成度の高い都市型Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 82,
+      "rain": 57,
+      "aircraft": 53,
+      "seaPort": 83,
+      "factoryNight": 55,
+      "quiet": 45,
+      "holidayHalfDay": 54
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D021",
@@ -439,7 +725,33 @@
       "行き止まり",
       "静かな休憩"
     ],
-    "searchText": "暁ふ頭公園 江東区・青海 港・行き止まり・静かな休憩 海・港 東京港最奥まで走り切る感覚があり、船と海を近距離で眺める穴場ending。 暁ふ頭周辺は東京港の埋立地の最奥部にあり、都市のごみ処理・物流・港湾拡張の歴史とつながっている。"
+    "searchText": "暁ふ頭公園 江東区・青海 港・行き止まり・静かな休憩 海・港 東京港最奥まで走り切る感覚があり、船と海を近距離で眺める穴場ending。 暁ふ頭周辺は東京港の埋立地の最奥部にあり、都市のごみ処理・物流・港湾拡張の歴史とつながっている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 69,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "東京港最奥まで走り切る感覚があり、船と海を近距離で眺める穴場Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 76,
+      "lateNight120": 73,
+      "rain": 60,
+      "aircraft": 61,
+      "seaPort": 90,
+      "factoryNight": 58,
+      "quiet": 65,
+      "holidayHalfDay": 64
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D022",
@@ -477,7 +789,33 @@
       "深夜",
       "都市夜景"
     ],
-    "searchText": "豊洲ぐるり公園 江東区・豊洲 都市夜景・水辺 平日夜・深夜 レインボーブリッジと都心の高層群を水辺越しに眺め、歩いて余韻を作れる。 豊洲は関東大震災の瓦礫なども利用して造成された埋立地で、工業地から住宅・市場地区へ大転換した。"
+    "searchText": "豊洲ぐるり公園 江東区・豊洲 都市夜景・水辺 平日夜・深夜 レインボーブリッジと都心の高層群を水辺越しに眺め、歩いて余韻を作れる。 豊洲は関東大震災の瓦礫なども利用して造成された埋立地で、工業地から住宅・市場地区へ大転換した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 71,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "レインボーブリッジと都心の高層群を水辺越しに眺め、歩いて余韻を作れる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 84,
+      "lateNight120": 87,
+      "rain": 64,
+      "aircraft": 59,
+      "seaPort": 88,
+      "factoryNight": 58,
+      "quiet": 57,
+      "holidayHalfDay": 60
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D023",
@@ -515,7 +853,33 @@
       "港",
       "都市夜景"
     ],
-    "searchText": "晴海ふ頭公園 中央区・晴海 港・都市夜景・story 海・港 東京港とtokyoモニュメントが重なる都市型ending。 晴海は戦後の東京国際見本市会場として発展し、近年は東京2020大会の選手村が置かれた。"
+    "searchText": "晴海ふ頭公園 中央区・晴海 港・都市夜景・story 海・港 東京港とtokyoモニュメントが重なる都市型ending。 晴海は戦後の東京国際見本市会場として発展し、近年は東京2020大会の選手村が置かれた。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 75,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "東京港とTOKYOモニュメントが重なる都市型Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 86,
+      "lateNight120": 88,
+      "rain": 66,
+      "aircraft": 60,
+      "seaPort": 89,
+      "factoryNight": 58,
+      "quiet": 61,
+      "holidayHalfDay": 78
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D024",
@@ -552,7 +916,33 @@
       "水辺",
       "自然"
     ],
-    "searchText": "東京港野鳥公園 大田区・東海 自然・水辺 休日半日 物流・空港エリアの中に湿地が残り、昼の静かな終点になる。 東京港野鳥公園は埋立地に自然発生した池や湿地へ鳥が集まったことから、その環境を保全して公園化された。"
+    "searchText": "東京港野鳥公園 大田区・東海 自然・水辺 休日半日 物流・空港エリアの中に湿地が残り、昼の静かな終点になる。 東京港野鳥公園は埋立地に自然発生した池や湿地へ鳥が集まったことから、その環境を保全して公園化された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 54,
+      "recommendedUse": "海・港／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "物流・空港エリアの中に湿地が残り、昼の静かな終点になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 55,
+      "lateNight120": 47,
+      "rain": 57,
+      "aircraft": 48,
+      "seaPort": 72,
+      "factoryNight": 41,
+      "quiet": 57,
+      "holidayHalfDay": 56
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D025",
@@ -591,7 +981,33 @@
       "港",
       "高台"
     ],
-    "searchText": "海の森公園 江東区・海の森 高台・東京港・新景観 海・港 東京港の埋立地を高い視点から眺め、空の広さを体験できる。 海の森は中央防波堤内側埋立地を森へ変える事業で、市民が育てた苗木も植えられている。"
+    "searchText": "海の森公園 江東区・海の森 高台・東京港・新景観 海・港 東京港の埋立地を高い視点から眺め、空の広さを体験できる。 海の森は中央防波堤内側埋立地を森へ変える事業で、市民が育てた苗木も植えられている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 55,
+      "recommendedUse": "海・港／静かな場所",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "東京港の埋立地を高い視点から眺め、空の広さを体験できる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 56,
+      "lateNight120": 49,
+      "rain": 53,
+      "aircraft": 49,
+      "seaPort": 74,
+      "factoryNight": 42,
+      "quiet": 57,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D044",
@@ -630,7 +1046,33 @@
       "深夜",
       "高台"
     ],
-    "searchText": "桜ヶ丘公園 ゆうひの丘 多摩市・連光寺 高台・夕景・夜景 平日夜・深夜 多摩丘陵から市街地を見下ろす夕景が強く、都心湾岸とは別系統の高台endingになる。 ゆうひの丘は多摩丘陵の高低差を生かした展望地で、テレビドラマや映像作品のロケ地としても使われてきた。"
+    "searchText": "桜ヶ丘公園 ゆうひの丘 多摩市・連光寺 高台・夕景・夜景 平日夜・深夜 多摩丘陵から市街地を見下ろす夕景が強く、都心湾岸とは別系統の高台endingになる。 ゆうひの丘は多摩丘陵の高低差を生かした展望地で、テレビドラマや映像作品のロケ地としても使われてきた。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 59,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩丘陵から市街地を見下ろす夕景が強く、都心湾岸とは別系統の高台Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 70,
+      "lateNight120": 71,
+      "rain": 52,
+      "aircraft": 53,
+      "seaPort": 54,
+      "factoryNight": 51,
+      "quiet": 55,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D058",
@@ -668,7 +1110,33 @@
       "港",
       "芝生"
     ],
-    "searchText": "浦安市総合公園 浦安市・明海 海・芝生・夜間公園 海・港 海沿いの広い芝生と新浦安の灯りがあり、深夜にも使える穏やかな湾岸ending。 浦安の海側は大規模埋立地で、漁村だった浦安が住宅・リゾート都市へ変わった歴史を象徴する。"
+    "searchText": "浦安市総合公園 浦安市・明海 海・芝生・夜間公園 海・港 海沿いの広い芝生と新浦安の灯りがあり、深夜にも使える穏やかな湾岸ending。 浦安の海側は大規模埋立地で、漁村だった浦安が住宅・リゾート都市へ変わった歴史を象徴する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 71,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "海沿いの広い芝生と新浦安の灯りがあり、深夜にも使える穏やかな湾岸Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 81,
+      "lateNight120": 85,
+      "rain": 56,
+      "aircraft": 56,
+      "seaPort": 86,
+      "factoryNight": 55,
+      "quiet": 85,
+      "holidayHalfDay": 59
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D062",
@@ -707,7 +1175,33 @@
       "首都高",
       "高層夜景"
     ],
-    "searchText": "辰巳第一pa 江東区・辰巳 pa・高層夜景・首都高 平日夜・深夜 湾岸線から都心高層群を見渡せ、短時間で首都高ドライブを締められる。 辰巳は東京湾の埋立地で、paから見える高層住宅群は湾岸部の都市化を象徴する景観である。"
+    "searchText": "辰巳第一pa 江東区・辰巳 pa・高層夜景・首都高 平日夜・深夜 湾岸線から都心高層群を見渡せ、短時間で首都高ドライブを締められる。 辰巳は東京湾の埋立地で、paから見える高層住宅群は湾岸部の都市化を象徴する景観である。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 71,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "湾岸線から都心高層群を見渡せ、短時間で首都高ドライブを締められる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 86,
+      "lateNight120": 89,
+      "rain": 80,
+      "aircraft": 61,
+      "seaPort": 62,
+      "factoryNight": 60,
+      "quiet": 57,
+      "holidayHalfDay": 62
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D063",
@@ -746,7 +1240,33 @@
       "都市夜景",
       "高架"
     ],
-    "searchText": "芝浦pa 港区・海岸 pa・高架・都市夜景 平日夜・深夜 レインボーブリッジ手前の高架空間で、都心湾岸ルートの余韻を短く残せる。 芝浦paはレインボーブリッジへ続く11号台場線上にあり、都心高架と港湾景観が交差する。"
+    "searchText": "芝浦pa 港区・海岸 pa・高架・都市夜景 平日夜・深夜 レインボーブリッジ手前の高架空間で、都心湾岸ルートの余韻を短く残せる。 芝浦paはレインボーブリッジへ続く11号台場線上にあり、都心高架と港湾景観が交差する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 67,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "レインボーブリッジ手前の高架空間で、都心湾岸ルートの余韻を短く残せる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 81,
+      "lateNight120": 83,
+      "rain": 80,
+      "aircraft": 58,
+      "seaPort": 58,
+      "factoryNight": 56,
+      "quiet": 55,
+      "holidayHalfDay": 60
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D064",
@@ -785,7 +1305,33 @@
       "湾岸",
       "近距離休憩"
     ],
-    "searchText": "大井pa（東行き） 品川区・八潮 pa・湾岸・近距離休憩 平日夜・深夜 大田区から近く、短時間だけ湾岸を走りたい夜のミニマムendingになる。 大井pa周辺の八潮・大井ふ頭は東京港の主要物流拠点で、巨大な倉庫・コンテナ施設が集まる。"
+    "searchText": "大井pa（東行き） 品川区・八潮 pa・湾岸・近距離休憩 平日夜・深夜 大田区から近く、短時間だけ湾岸を走りたい夜のミニマムendingになる。 大井pa周辺の八潮・大井ふ頭は東京港の主要物流拠点で、巨大な倉庫・コンテナ施設が集まる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 72,
+      "recommendedUse": "平日夜90分／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "大田区から近く、短時間だけ湾岸を走りたい夜のミニマムEndingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 88,
+      "lateNight120": 87,
+      "rain": 85,
+      "aircraft": 63,
+      "seaPort": 62,
+      "factoryNight": 59,
+      "quiet": 63,
+      "holidayHalfDay": 64
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D065",
@@ -824,7 +1370,33 @@
       "深夜",
       "近距離"
     ],
-    "searchText": "平和島pa（上り） 大田区・平和島 pa・近距離・夜間休憩 平日夜・深夜 大田区内で最短の首都高体験を作れ、出発後すぐに気分転換したい夜に使える。 平和島は昭和期に造成された人工島で、『平和』を願う名称が町名として採用された。"
+    "searchText": "平和島pa（上り） 大田区・平和島 pa・近距離・夜間休憩 平日夜・深夜 大田区内で最短の首都高体験を作れ、出発後すぐに気分転換したい夜に使える。 平和島は昭和期に造成された人工島で、『平和』を願う名称が町名として採用された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 72,
+      "recommendedUse": "平日夜90分／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "大田区内で最短の首都高体験を作れ、出発後すぐに気分転換したい夜に使える。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 88,
+      "lateNight120": 87,
+      "rain": 85,
+      "aircraft": 63,
+      "seaPort": 62,
+      "factoryNight": 59,
+      "quiet": 63,
+      "holidayHalfDay": 64
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D075",
@@ -862,7 +1434,33 @@
       "池",
       "谷戸"
     ],
-    "searchText": "県立四季の森公園 横浜市・緑区 谷戸・池・森林 水辺 横浜市内ながら谷戸と水田、森が残り、昼の回復系endingに向く。 四季の森公園は横浜に残る谷戸の地形と雑木林を保全し、水田や炭焼きの里山文化を伝える。"
+    "searchText": "県立四季の森公園 横浜市・緑区 谷戸・池・森林 水辺 横浜市内ながら谷戸と水田、森が残り、昼の回復系endingに向く。 四季の森公園は横浜に残る谷戸の地形と雑木林を保全し、水田や炭焼きの里山文化を伝える。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 50,
+      "recommendedUse": "静かな場所／休日半日",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "横浜市内ながら谷戸と水田、森が残り、昼の回復系Endingに向く。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 50,
+      "lateNight120": 47,
+      "rain": 44,
+      "aircraft": 43,
+      "seaPort": 42,
+      "factoryNight": 39,
+      "quiet": 79,
+      "holidayHalfDay": 53
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D080",
@@ -901,7 +1499,33 @@
       "都市近郊",
       "高台"
     ],
-    "searchText": "根岸森林公園 横浜市・中区 高台・芝生・都市近郊 平日夜・深夜 広い芝生と旧競馬場の高台景観があり、横浜中心部の後に静けさを作れる。 根岸森林公園は日本初の本格的な洋式競馬場・横浜競馬場の跡地で、旧一等馬見所が今も残る。"
+    "searchText": "根岸森林公園 横浜市・中区 高台・芝生・都市近郊 平日夜・深夜 広い芝生と旧競馬場の高台景観があり、横浜中心部の後に静けさを作れる。 根岸森林公園は日本初の本格的な洋式競馬場・横浜競馬場の跡地で、旧一等馬見所が今も残る。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 60,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "広い芝生と旧競馬場の高台景観があり、横浜中心部の後に静けさを作れる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 70,
+      "lateNight120": 74,
+      "rain": 50,
+      "aircraft": 48,
+      "seaPort": 49,
+      "factoryNight": 47,
+      "quiet": 79,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D096",
@@ -939,7 +1563,33 @@
       "河川",
       "高台"
     ],
-    "searchText": "大島小松川公園 江戸川区・小松川 河川・高台・夜間公園 水辺 旧中川と荒川に挟まれた高台公園で、都心東側を静かに終える24時間候補になる。 大島小松川公園は荒川と旧中川に挟まれた防災拠点で、災害時には避難・救援空間として機能する。"
+    "searchText": "大島小松川公園 江戸川区・小松川 河川・高台・夜間公園 水辺 旧中川と荒川に挟まれた高台公園で、都心東側を静かに終える24時間候補になる。 大島小松川公園は荒川と旧中川に挟まれた防災拠点で、災害時には避難・救援空間として機能する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 65,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "旧中川と荒川に挟まれた高台公園で、都心東側を静かに終える24時間候補になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 75,
+      "rain": 52,
+      "aircraft": 49,
+      "seaPort": 78,
+      "factoryNight": 47,
+      "quiet": 83,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D097",
@@ -977,7 +1627,33 @@
       "水辺",
       "河川敷"
     ],
-    "searchText": "篠崎公園 江戸川区・上篠崎 河川敷・公園・夜間休憩 水辺 江戸川に近い広い公園で、東東京方面の長い一般道ドライブを落ち着かせられる。 篠崎公園は江戸川沿いの防災公園として計画され、広いオープンスペースを確保している。"
+    "searchText": "篠崎公園 江戸川区・上篠崎 河川敷・公園・夜間休憩 水辺 江戸川に近い広い公園で、東東京方面の長い一般道ドライブを落ち着かせられる。 篠崎公園は江戸川沿いの防災公園として計画され、広いオープンスペースを確保している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 65,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "江戸川に近い広い公園で、東東京方面の長い一般道ドライブを落ち着かせられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 75,
+      "rain": 52,
+      "aircraft": 49,
+      "seaPort": 78,
+      "factoryNight": 47,
+      "quiet": 83,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D098",
@@ -1016,7 +1692,33 @@
       "深夜",
       "都市公園"
     ],
-    "searchText": "木場公園 江東区・木場 都市公園・橋・夜間休憩 平日夜・深夜 木場公園大橋と広い芝生があり、湾岸・都心走行を緑の空間で終えられる。 木場という地名は、江戸時代に材木を保管・取引した『木場』が置かれたことに由来する。"
+    "searchText": "木場公園 江東区・木場 都市公園・橋・夜間休憩 平日夜・深夜 木場公園大橋と広い芝生があり、湾岸・都心走行を緑の空間で終えられる。 木場という地名は、江戸時代に材木を保管・取引した『木場』が置かれたことに由来する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 63,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "木場公園大橋と広い芝生があり、湾岸・都心走行を緑の空間で終えられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 77,
+      "rain": 53,
+      "aircraft": 52,
+      "seaPort": 52,
+      "factoryNight": 50,
+      "quiet": 83,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D101",
@@ -1054,7 +1756,33 @@
       "河川",
       "草地"
     ],
-    "searchText": "武蔵野公園 府中市・小金井市 河川・草地・夜間公園 水辺 野川沿いの広い草地と樹林があり、西東京方面の長い一般道ドライブを静かに終えられる。 武蔵野公園には東京都の街路樹を育てる苗圃があり、園内に多様な樹種が並ぶ理由になっている。"
+    "searchText": "武蔵野公園 府中市・小金井市 河川・草地・夜間公園 水辺 野川沿いの広い草地と樹林があり、西東京方面の長い一般道ドライブを静かに終えられる。 武蔵野公園には東京都の街路樹を育てる苗圃があり、園内に多様な樹種が並ぶ理由になっている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 65,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "野川沿いの広い草地と樹林があり、西東京方面の長い一般道ドライブを静かに終えられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 75,
+      "rain": 52,
+      "aircraft": 49,
+      "seaPort": 78,
+      "factoryNight": 47,
+      "quiet": 83,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D102",
@@ -1092,7 +1820,33 @@
       "芝生",
       "近距離"
     ],
-    "searchText": "砧公園 世田谷区・砧公園 芝生・樹林・近距離 休日半日 大田区から短距離で到達でき、広い芝生と樹林で都市走行の緊張を落とせる。 砧公園は紀元2600年記念事業の都市計画緑地を起源とし、戦後はゴルフ場を経て家族向け公園へ転換した。"
+    "searchText": "砧公園 世田谷区・砧公園 芝生・樹林・近距離 休日半日 大田区から短距離で到達でき、広い芝生と樹林で都市走行の緊張を落とせる。 砧公園は紀元2600年記念事業の都市計画緑地を起源とし、戦後はゴルフ場を経て家族向け公園へ転換した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 56,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "大田区から短距離で到達でき、広い芝生と樹林で都市走行の緊張を落とせる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 58,
+      "lateNight120": 55,
+      "rain": 52,
+      "aircraft": 49,
+      "seaPort": 48,
+      "factoryNight": 46,
+      "quiet": 81,
+      "holidayHalfDay": 56
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D103",
@@ -1131,7 +1885,33 @@
       "深夜",
       "高台"
     ],
-    "searchText": "夢見ヶ崎動物公園 川崎市・幸区 高台・動物公園・夜景 平日夜・深夜 小高い丘の展望広場から住宅地の灯りを眺められ、近距離の静かな夜景endingになる。 夢見ヶ崎の名は、太田道灌が城を築こうとした際に不吉な夢を見て断念したという伝説に由来する。"
+    "searchText": "夢見ヶ崎動物公園 川崎市・幸区 高台・動物公園・夜景 平日夜・深夜 小高い丘の展望広場から住宅地の灯りを眺められ、近距離の静かな夜景endingになる。 夢見ヶ崎の名は、太田道灌が城を築こうとした際に不吉な夢を見て断念したという伝説に由来する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 73,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "小高い丘の展望広場から住宅地の灯りを眺められ、近距離の静かな夜景Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 86,
+      "lateNight120": 85,
+      "rain": 62,
+      "aircraft": 61,
+      "seaPort": 60,
+      "factoryNight": 57,
+      "quiet": 91,
+      "holidayHalfDay": 73
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D104",
@@ -1168,7 +1948,33 @@
       "河川敷",
       "飛行機"
     ],
-    "searchText": "殿町緑地 川崎市・川崎区 多摩川・飛行機・河川敷 飛行機 羽田空港対岸の多摩川沿いで、橋・航空機・広い空を近距離で味わえる。 殿町周辺は現在『キングスカイフロント』と呼ばれる研究開発拠点へ変貌し、羽田対岸の国際戦略地区となった。"
+    "searchText": "殿町緑地 川崎市・川崎区 多摩川・飛行機・河川敷 飛行機 羽田空港対岸の多摩川沿いで、橋・航空機・広い空を近距離で味わえる。 殿町周辺は現在『キングスカイフロント』と呼ばれる研究開発拠点へ変貌し、羽田対岸の国際戦略地区となった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 73,
+      "recommendedUse": "飛行機／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "羽田空港対岸の多摩川沿いで、橋・航空機・広い空を近距離で味わえる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 78,
+      "lateNight120": 72,
+      "rain": 58,
+      "aircraft": 92,
+      "seaPort": 91,
+      "factoryNight": 59,
+      "quiet": 67,
+      "holidayHalfDay": 63
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D105",
@@ -1205,7 +2011,33 @@
       "都市展望",
       "高台"
     ],
-    "searchText": "鷺沼北公園 川崎市・宮前区 高台・都市展望 休日半日 東京タワーやスカイツリー方面を望める小規模な展望公園で、近隣型穴場endingになる。 鷺沼という地名は、かつてサギが集まる沼地だったという説に結び付けられている。"
+    "searchText": "鷺沼北公園 川崎市・宮前区 高台・都市展望 休日半日 東京タワーやスカイツリー方面を望める小規模な展望公園で、近隣型穴場endingになる。 鷺沼という地名は、かつてサギが集まる沼地だったという説に結び付けられている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 1,
+      "closingMargin": 1,
+      "destinationStrength": 42,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "東京タワーやスカイツリー方面を望める小規模な展望公園で、近隣型穴場Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 48,
+      "lateNight120": 39,
+      "rain": 37,
+      "aircraft": 39,
+      "seaPort": 37,
+      "factoryNight": 33,
+      "quiet": 50,
+      "holidayHalfDay": 48
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D106",
@@ -1243,7 +2075,33 @@
       "里山",
       "高台"
     ],
-    "searchText": "菅生緑地 川崎市・宮前区 高台・展望・里山 休日半日 高台の展望デッキと里山的な緑があり、川崎北部で静かな昼endingになる。 菅生は多摩丘陵の谷戸と雑木林が残る地域で、都市化した川崎北部の中に里山景観を保つ。"
+    "searchText": "菅生緑地 川崎市・宮前区 高台・展望・里山 休日半日 高台の展望デッキと里山的な緑があり、川崎北部で静かな昼endingになる。 菅生は多摩丘陵の谷戸と雑木林が残る地域で、都市化した川崎北部の中に里山景観を保つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 50,
+      "recommendedUse": "平日夜90分／静かな場所",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "高台の展望デッキと里山的な緑があり、川崎北部で静かな昼Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 55,
+      "lateNight120": 50,
+      "rain": 47,
+      "aircraft": 47,
+      "seaPort": 45,
+      "factoryNight": 42,
+      "quiet": 55,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D108",
@@ -1281,7 +2139,33 @@
       "池",
       "都市公園"
     ],
-    "searchText": "千葉公園 千葉市・中央区 池・都市公園・夜間散歩 水辺 池とモノレール、市街地の灯りが重なり、千葉市中心部の落ち着いたendingになる。 千葉公園の大賀ハスは、植物学者・大賀一郎が約2000年前とされる種子から発芽させた古代ハスである。"
+    "searchText": "千葉公園 千葉市・中央区 池・都市公園・夜間散歩 水辺 池とモノレール、市街地の灯りが重なり、千葉市中心部の落ち着いたendingになる。 千葉公園の大賀ハスは、植物学者・大賀一郎が約2000年前とされる種子から発芽させた古代ハスである。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 63,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "池とモノレール、市街地の灯りが重なり、千葉市中心部の落ち着いたEndingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 77,
+      "rain": 53,
+      "aircraft": 52,
+      "seaPort": 52,
+      "factoryNight": 50,
+      "quiet": 83,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D109",
@@ -1318,7 +2202,33 @@
       "城址",
       "高台"
     ],
-    "searchText": "亥鼻公園 千葉市・中央区 城址・高台・story story 千葉城と歴史公園の高台景観があり、都市ドライブに物語性を加えられる。 亥鼻公園の模擬天守は千葉市立郷土博物館で、中世に千葉氏が拠点とした亥鼻城をイメージしている。"
+    "searchText": "亥鼻公園 千葉市・中央区 城址・高台・story story 千葉城と歴史公園の高台景観があり、都市ドライブに物語性を加えられる。 亥鼻公園の模擬天守は千葉市立郷土博物館で、中世に千葉氏が拠点とした亥鼻城をイメージしている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "休日半日／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "千葉城と歴史公園の高台景観があり、都市ドライブに物語性を加えられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 72,
+      "rain": 55,
+      "aircraft": 50,
+      "seaPort": 49,
+      "factoryNight": 46,
+      "quiet": 57,
+      "holidayHalfDay": 73
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D112",
@@ -1356,7 +2266,33 @@
       "水辺",
       "池"
     ],
-    "searchText": "県立三ツ池公園 横浜市・鶴見区 池・丘陵・大規模公園 水辺 三つの池と丘陵があり、大田区から近いのに都市感を切れる。 三ツ池公園は上・中・下の三つの池に由来する名称で、『日本さくら名所100選』にも選ばれている。"
+    "searchText": "県立三ツ池公園 横浜市・鶴見区 池・丘陵・大規模公園 水辺 三つの池と丘陵があり、大田区から近いのに都市感を切れる。 三ツ池公園は上・中・下の三つの池に由来する名称で、『日本さくら名所100選』にも選ばれている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 53,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "三つの池と丘陵があり、大田区から近いのに都市感を切れる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 64,
+      "lateNight120": 63,
+      "rain": 45,
+      "aircraft": 43,
+      "seaPort": 42,
+      "factoryNight": 40,
+      "quiet": 75,
+      "holidayHalfDay": 49
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D116",
@@ -1393,7 +2329,33 @@
       "大規模公園",
       "近距離"
     ],
-    "searchText": "大師公園 川崎市・川崎区 大規模公園・story・近距離 story 川崎大師周辺の街並みと公園を組み合わせ、短距離のstory layerとして使える。 大師公園は川崎大師平間寺に隣接し、正月の初詣文化と中国庭園『瀋秀園』を同時に楽しめる。"
+    "searchText": "大師公園 川崎市・川崎区 大規模公園・story・近距離 story 川崎大師周辺の街並みと公園を組み合わせ、短距離のstory layerとして使える。 大師公園は川崎大師平間寺に隣接し、正月の初詣文化と中国庭園『瀋秀園』を同時に楽しめる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 66,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "川崎大師周辺の街並みと公園を組み合わせ、短距離のStory Layerとして使える。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 74,
+      "rain": 56,
+      "aircraft": 53,
+      "seaPort": 51,
+      "factoryNight": 49,
+      "quiet": 85,
+      "holidayHalfDay": 73
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D117",
@@ -1431,7 +2393,33 @@
       "夜間休憩",
       "都市公園"
     ],
-    "searchText": "富士見公園 川崎市・川崎区 都市公園・スポーツ・夜間休憩 休日半日 川崎中心部で広い公園に切り替えられ、工場夜景前後の休憩地点になる。 富士見公園一帯にはかつて川崎球場があり、大洋ホエールズやロッテオリオンズの本拠地として使われた。"
+    "searchText": "富士見公園 川崎市・川崎区 都市公園・スポーツ・夜間休憩 休日半日 川崎中心部で広い公園に切り替えられ、工場夜景前後の休憩地点になる。 富士見公園一帯にはかつて川崎球場があり、大洋ホエールズやロッテオリオンズの本拠地として使われた。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 58,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "川崎中心部で広い公園に切り替えられ、工場夜景前後の休憩地点になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 63,
+      "lateNight120": 58,
+      "rain": 48,
+      "aircraft": 53,
+      "seaPort": 51,
+      "factoryNight": 49,
+      "quiet": 85,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D118",
@@ -1469,7 +2457,33 @@
       "水辺",
       "河川景観"
     ],
-    "searchText": "御幸公園 川崎市・幸区 多摩川・梅林・河川景観 水辺 多摩川沿いの開放感と梅林があり、川崎北側の穏やかな昼endingになる。 『御幸』の名は、明治天皇が当地の梅林へ行幸したことに由来する。"
+    "searchText": "御幸公園 川崎市・幸区 多摩川・梅林・河川景観 水辺 多摩川沿いの開放感と梅林があり、川崎北側の穏やかな昼endingになる。 『御幸』の名は、明治天皇が当地の梅林へ行幸したことに由来する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 57,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩川沿いの開放感と梅林があり、川崎北側の穏やかな昼Endingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 60,
+      "lateNight120": 53,
+      "rain": 50,
+      "aircraft": 51,
+      "seaPort": 76,
+      "factoryNight": 45,
+      "quiet": 59,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D119",
@@ -1506,7 +2520,33 @@
       "小展望",
       "飛行機"
     ],
-    "searchText": "殿町第2公園 川崎市・川崎区 飛行機・多摩川・小展望 飛行機 羽田空港、多摩川、橋を望む小規模公園で、近距離の航空機経由地として面白い。 殿町は羽田空港対岸という立地を生かし、医療・生命科学分野の研究拠点へ再編された。"
+    "searchText": "殿町第2公園 川崎市・川崎区 飛行機・多摩川・小展望 飛行機 羽田空港、多摩川、橋を望む小規模公園で、近距離の航空機経由地として面白い。 殿町は羽田空港対岸という立地を生かし、医療・生命科学分野の研究拠点へ再編された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 1,
+      "closingMargin": 1,
+      "destinationStrength": 54,
+      "recommendedUse": "飛行機／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "羽田空港、多摩川、橋を望む小規模公園で、近距離の航空機経由地として面白い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 59,
+      "lateNight120": 48,
+      "rain": 53,
+      "aircraft": 77,
+      "seaPort": 46,
+      "factoryNight": 42,
+      "quiet": 54,
+      "holidayHalfDay": 51
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D143",
@@ -1545,7 +2585,33 @@
       "深夜",
       "高台"
     ],
-    "searchText": "桜ヶ丘公園 ゆうひの丘 多摩市・連光寺 高台・夕景・夜景 平日夜・深夜 多摩丘陵の高台から市街地の夕景を眺められ、短い徒歩で到達感が得られる。 園内には旧多摩聖蹟記念館があり、『聖蹟』は明治天皇が当地を訪れたことに由来する。"
+    "searchText": "桜ヶ丘公園 ゆうひの丘 多摩市・連光寺 高台・夕景・夜景 平日夜・深夜 多摩丘陵の高台から市街地の夕景を眺められ、短い徒歩で到達感が得られる。 園内には旧多摩聖蹟記念館があり、『聖蹟』は明治天皇が当地を訪れたことに由来する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 57,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩丘陵の高台から市街地の夕景を眺められ、短い徒歩で到達感が得られる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 68,
+      "lateNight120": 70,
+      "rain": 50,
+      "aircraft": 52,
+      "seaPort": 53,
+      "factoryNight": 51,
+      "quiet": 51,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D144",
@@ -1582,7 +2648,33 @@
       "広い空",
       "飛行機"
     ],
-    "searchText": "武蔵野の森公園 府中市・調布市・三鷹市 飛行機・広い空・24時間駐車 飛行機 調布飛行場に隣接し、小型機の離着陸と広い空を眺められる航空系の安定候補。 調布飛行場は戦時中に陸軍飛行場として整備され、現在は伊豆諸島への定期便が発着する。"
+    "searchText": "武蔵野の森公園 府中市・調布市・三鷹市 飛行機・広い空・24時間駐車 飛行機 調布飛行場に隣接し、小型機の離着陸と広い空を眺められる航空系の安定候補。 調布飛行場は戦時中に陸軍飛行場として整備され、現在は伊豆諸島への定期便が発着する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 62,
+      "recommendedUse": "飛行機／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "調布飛行場に隣接し、小型機の離着陸と広い空を眺められる航空系の安定候補。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 78,
+      "rain": 55,
+      "aircraft": 79,
+      "seaPort": 53,
+      "factoryNight": 51,
+      "quiet": 47,
+      "holidayHalfDay": 52
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D145",
@@ -1621,7 +2713,33 @@
       "建築",
       "深夜"
     ],
-    "searchText": "駒沢オリンピック公園 世田谷区・駒沢 オリンピック・建築・24時間駐車 平日夜・深夜 1964年東京大会の競技施設群を夜間でも眺められ、建築と都市史のstory layerが強い。 1964年東京オリンピックではレスリングやバレーボールなどの会場となった。"
+    "searchText": "駒沢オリンピック公園 世田谷区・駒沢 オリンピック・建築・24時間駐車 平日夜・深夜 1964年東京大会の競技施設群を夜間でも眺められ、建築と都市史のstory layerが強い。 1964年東京オリンピックではレスリングやバレーボールなどの会場となった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 62,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "1964年東京大会の競技施設群を夜間でも眺められ、建築と都市史のStory Layerが強い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 73,
+      "lateNight120": 76,
+      "rain": 58,
+      "aircraft": 51,
+      "seaPort": 51,
+      "factoryNight": 50,
+      "quiet": 51,
+      "holidayHalfDay": 72
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D146",
@@ -1659,7 +2777,33 @@
       "行き止まり",
       "釣り"
     ],
-    "searchText": "東扇島西公園 川崎市・東扇島 港・行き止まり・釣り 海・港 東扇島の西端まで走り切り、東京湾・船舶・工業港湾を眺める行き止まり型ending。 東扇島は川崎港の物流機能拡張のため造成された人工島で、首都圏の国際物流拠点の一つ。"
+    "searchText": "東扇島西公園 川崎市・東扇島 港・行き止まり・釣り 海・港 東扇島の西端まで走り切り、東京湾・船舶・工業港湾を眺める行き止まり型ending。 東扇島は川崎港の物流機能拡張のため造成された人工島で、首都圏の国際物流拠点の一つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 76,
+      "recommendedUse": "深夜2時間／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "東扇島の西端まで走り切り、東京湾・船舶・工業港湾を眺める行き止まり型Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 89,
+      "lateNight120": 92,
+      "rain": 70,
+      "aircraft": 63,
+      "seaPort": 92,
+      "factoryNight": 61,
+      "quiet": 64,
+      "holidayHalfDay": 65
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D147",
@@ -1697,7 +2841,33 @@
       "里山",
       "風致公園"
     ],
-    "searchText": "北八朔公園 横浜市・緑区 谷戸・里山・風致公園 休日半日 谷戸地形と樹林が残る横浜北部の静かな公園で、都市部から自然へ切り替える経由地になる。 『八朔』は旧暦8月1日を指し、地名には農村の年中行事や旧村名の記憶が残る場合がある。"
+    "searchText": "北八朔公園 横浜市・緑区 谷戸・里山・風致公園 休日半日 谷戸地形と樹林が残る横浜北部の静かな公園で、都市部から自然へ切り替える経由地になる。 『八朔』は旧暦8月1日を指し、地名には農村の年中行事や旧村名の記憶が残る場合がある。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 58,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "谷戸地形と樹林が残る横浜北部の静かな公園で、都市部から自然へ切り替える経由地になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 67,
+      "lateNight120": 69,
+      "rain": 52,
+      "aircraft": 46,
+      "seaPort": 46,
+      "factoryNight": 43,
+      "quiet": 81,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D152",
@@ -1736,7 +2906,33 @@
       "文化施設",
       "深夜"
     ],
-    "searchText": "府中の森公園 府中市・浅間町 並木・文化施設・24時間駐車 平日夜・深夜 整った並木と文化施設があり、西東京の夜間休憩地点として安定する。 周辺は旧米軍府中基地跡地を含む公共施設集積地で、戦後の土地利用転換を感じられる。"
+    "searchText": "府中の森公園 府中市・浅間町 並木・文化施設・24時間駐車 平日夜・深夜 整った並木と文化施設があり、西東京の夜間休憩地点として安定する。 周辺は旧米軍府中基地跡地を含む公共施設集積地で、戦後の土地利用転換を感じられる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "整った並木と文化施設があり、西東京の夜間休憩地点として安定する。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 73,
+      "lateNight120": 78,
+      "rain": 61,
+      "aircraft": 51,
+      "seaPort": 52,
+      "factoryNight": 50,
+      "quiet": 54,
+      "holidayHalfDay": 59
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D154",
@@ -1773,7 +2969,33 @@
       "寺社",
       "植物園"
     ],
-    "searchText": "神代植物公園・深大寺 調布市・深大寺 植物園・寺社・story story 植物園と深大寺の門前町を組み合わせられ、季節景観と歴史を一度に楽しめる。 深大寺は東京都内では浅草寺に次ぐ古刹とされ、門前の深大寺そばでも知られる。"
+    "searchText": "神代植物公園・深大寺 調布市・深大寺 植物園・寺社・story story 植物園と深大寺の門前町を組み合わせられ、季節景観と歴史を一度に楽しめる。 深大寺は東京都内では浅草寺に次ぐ古刹とされ、門前の深大寺そばでも知られる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 57,
+      "recommendedUse": "休日半日／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "植物園と深大寺の門前町を組み合わせられ、季節景観と歴史を一度に楽しめる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 63,
+      "lateNight120": 67,
+      "rain": 55,
+      "aircraft": 44,
+      "seaPort": 44,
+      "factoryNight": 43,
+      "quiet": 45,
+      "holidayHalfDay": 80
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D156",
@@ -1811,7 +3033,33 @@
       "多摩川",
       "近距離"
     ],
-    "searchText": "稲田公園 川崎市・多摩区 多摩川・くじら遊具・近距離 休日半日 多摩川沿いの開放感と象徴的なくじらモニュメントがあり、近距離のstory系公園になる。 稲田堤は多摩川の堤防と渡河の歴史を背景に発展し、現在も河川景観が地域の骨格。"
+    "searchText": "稲田公園 川崎市・多摩区 多摩川・くじら遊具・近距離 休日半日 多摩川沿いの開放感と象徴的なくじらモニュメントがあり、近距離のstory系公園になる。 稲田堤は多摩川の堤防と渡河の歴史を背景に発展し、現在も河川景観が地域の骨格。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 51,
+      "recommendedUse": "休日半日／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩川沿いの開放感と象徴的なくじらモニュメントがあり、近距離のStory系公園になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 55,
+      "lateNight120": 53,
+      "rain": 51,
+      "aircraft": 46,
+      "seaPort": 46,
+      "factoryNight": 43,
+      "quiet": 53,
+      "holidayHalfDay": 56
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D157",
@@ -1850,7 +3098,33 @@
       "深夜",
       "都市史"
     ],
-    "searchText": "川崎市役所 展望ロビー・スカイデッキ 川崎市・川崎区 市役所・展望・都市史 平日夜・深夜 無料の高層展望から川崎・東京・横浜方面を一望し、旧庁舎復元部の歴史展示も見られる。 復元棟は旧川崎市役所本庁舎の象徴的外観を再現し、都市の記憶を新庁舎へ継承している。"
+    "searchText": "川崎市役所 展望ロビー・スカイデッキ 川崎市・川崎区 市役所・展望・都市史 平日夜・深夜 無料の高層展望から川崎・東京・横浜方面を一望し、旧庁舎復元部の歴史展示も見られる。 復元棟は旧川崎市役所本庁舎の象徴的外観を再現し、都市の記憶を新庁舎へ継承している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 60,
+      "recommendedUse": "平日夜90分／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "無料の高層展望から川崎・東京・横浜方面を一望し、旧庁舎復元部の歴史展示も見られる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 68,
+      "lateNight120": 64,
+      "rain": 55,
+      "aircraft": 56,
+      "seaPort": 55,
+      "factoryNight": 53,
+      "quiet": 59,
+      "holidayHalfDay": 60
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D159",
@@ -1889,7 +3163,33 @@
       "文化施設",
       "深夜"
     ],
-    "searchText": "青葉の森公園 千葉市・中央区 大規模公園・文化施設・夜間 平日夜・深夜 広い芝生、博物館、芸術文化ホールが集まり、千葉市内の文化系endingとして安定する。 園内の千葉県立中央博物館は房総の自然と歴史を総合的に扱う県立博物館。"
+    "searchText": "青葉の森公園 千葉市・中央区 大規模公園・文化施設・夜間 平日夜・深夜 広い芝生、博物館、芸術文化ホールが集まり、千葉市内の文化系endingとして安定する。 園内の千葉県立中央博物館は房総の自然と歴史を総合的に扱う県立博物館。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 55,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "広い芝生、博物館、芸術文化ホールが集まり、千葉市内の文化系Endingとして安定する。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 67,
+      "lateNight120": 68,
+      "rain": 43,
+      "aircraft": 45,
+      "seaPort": 45,
+      "factoryNight": 44,
+      "quiet": 73,
+      "holidayHalfDay": 49
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D164",
@@ -1928,7 +3228,33 @@
       "都市展望",
       "高台"
     ],
-    "searchText": "本牧山頂公園 横浜市・中区 高台・港・草地・都市展望 海・港 本牧の尾根上を歩きながら横浜港と住宅地を見下ろせ、港湾ドライブの最後に地形の高さを加えられる。 本牧はかつて海沿いの景勝地だったが、戦後の接収と埋立・再開発で現在の港湾都市景観へ変化した。"
+    "searchText": "本牧山頂公園 横浜市・中区 高台・港・草地・都市展望 海・港 本牧の尾根上を歩きながら横浜港と住宅地を見下ろせ、港湾ドライブの最後に地形の高さを加えられる。 本牧はかつて海沿いの景勝地だったが、戦後の接収と埋立・再開発で現在の港湾都市景観へ変化した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "当日再確認",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 56,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "本牧の尾根上を歩きながら横浜港と住宅地を見下ろせ、港湾ドライブの最後に地形の高さを加えられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 59,
+      "lateNight120": 57,
+      "rain": 48,
+      "aircraft": 50,
+      "seaPort": 78,
+      "factoryNight": 47,
+      "quiet": 53,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "当日再確認"
   },
   {
     "id": "D181",
@@ -1966,7 +3292,33 @@
       "海",
       "港"
     ],
-    "searchText": "高洲海浜公園 浦安市・高洲 海・展望の丘・24時間駐車 海・港 芝生、展望の丘、テラス式海岸を備え、東京湾の風と新浦安の街明かりを安全な駐車場から楽しめる。 高洲は東京湾岸の埋立地として形成され、新浦安の住宅地と海辺の公共空間が隣り合う地区である。"
+    "searchText": "高洲海浜公園 浦安市・高洲 海・展望の丘・24時間駐車 海・港 芝生、展望の丘、テラス式海岸を備え、東京湾の風と新浦安の街明かりを安全な駐車場から楽しめる。 高洲は東京湾岸の埋立地として形成され、新浦安の住宅地と海辺の公共空間が隣り合う地区である。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 68,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "芝生、展望の丘、テラス式海岸を備え、東京湾の風と新浦安の街明かりを安全な駐車場から楽しめる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 81,
+      "lateNight120": 85,
+      "rain": 56,
+      "aircraft": 56,
+      "seaPort": 86,
+      "factoryNight": 55,
+      "quiet": 57,
+      "holidayHalfDay": 59
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D205",
@@ -2003,7 +3355,33 @@
       "古建築",
       "日本庭園"
     ],
-    "searchText": "三溪園 横浜市・中区本牧 日本庭園・古建築・story story 池、谷戸、三重塔、移築古建築を巡り、横浜港の近代都市景観とは別の時間軸へ入れる文化系ending。 実業家・原三溪が京都や鎌倉などから歴史的建造物を移築して公開した庭園で、近代日本の美術家支援の舞台にもなった。"
+    "searchText": "三溪園 横浜市・中区本牧 日本庭園・古建築・story story 池、谷戸、三重塔、移築古建築を巡り、横浜港の近代都市景観とは別の時間軸へ入れる文化系ending。 実業家・原三溪が京都や鎌倉などから歴史的建造物を移築して公開した庭園で、近代日本の美術家支援の舞台にもなった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 45,
+      "recommendedUse": "静かな場所／休日半日",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "池、谷戸、三重塔、移築古建築を巡り、横浜港の近代都市景観とは別の時間軸へ入れる文化系Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 41,
+      "lateNight120": 39,
+      "rain": 40,
+      "aircraft": 38,
+      "seaPort": 36,
+      "factoryNight": 35,
+      "quiet": 69,
+      "holidayHalfDay": 63
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D207",
@@ -2042,7 +3420,33 @@
       "深夜",
       "高台"
     ],
-    "searchText": "生田緑地・枡形山展望台 川崎市・多摩区 高台・展望・文化施設 平日夜・深夜 枡形山の展望、民家園、岡本太郎美術館、プラネタリウムを組み合わせ、自然と文化の両方で目的地化できる。 多摩丘陵の自然を残す川崎市最大級の緑地で、日本民家園や岡本太郎美術館など複数の文化施設が集まる。"
+    "searchText": "生田緑地・枡形山展望台 川崎市・多摩区 高台・展望・文化施設 平日夜・深夜 枡形山の展望、民家園、岡本太郎美術館、プラネタリウムを組み合わせ、自然と文化の両方で目的地化できる。 多摩丘陵の自然を残す川崎市最大級の緑地で、日本民家園や岡本太郎美術館など複数の文化施設が集まる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 4,
+      "destinationStrength": 54,
+      "recommendedUse": "深夜2時間／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "枡形山の展望、民家園、岡本太郎美術館、プラネタリウムを組み合わせ、自然と文化の両方で目的地化できる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 65,
+      "lateNight120": 69,
+      "rain": 46,
+      "aircraft": 47,
+      "seaPort": 48,
+      "factoryNight": 47,
+      "quiet": 47,
+      "holidayHalfDay": 53
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D208",
@@ -2080,7 +3484,33 @@
       "森林",
       "遺跡"
     ],
-    "searchText": "県立東高根森林公園 川崎市・宮前区 森林・遺跡・シラカシ林 休日半日 古代遺跡の上に広がるシラカシ林と湿生植物園を歩き、住宅地の中で急に深い森へ入れる。 園内には県指定史跡の東高根遺跡と、県指定天然記念物のシラカシ林が共存している。"
+    "searchText": "県立東高根森林公園 川崎市・宮前区 森林・遺跡・シラカシ林 休日半日 古代遺跡の上に広がるシラカシ林と湿生植物園を歩き、住宅地の中で急に深い森へ入れる。 園内には県指定史跡の東高根遺跡と、県指定天然記念物のシラカシ林が共存している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 2,
+      "destinationStrength": 54,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "古代遺跡の上に広がるシラカシ林と湿生植物園を歩き、住宅地の中で急に深い森へ入れる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 58,
+      "lateNight120": 54,
+      "rain": 49,
+      "aircraft": 47,
+      "seaPort": 45,
+      "factoryNight": 42,
+      "quiet": 83,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D221",
@@ -2119,7 +3549,33 @@
       "海浜",
       "港"
     ],
-    "searchText": "葛西海浜公園 東京都江戸川区 干潟・海浜・東京湾 海・港 都心近くで干潟と東京湾の水平線を感じられ、臨海公園の人工景観から自然海浜へ抜けるendingになる。 葛西沖の干潟を保全・再生した海浜公園で、西なぎさは東京23区内で海へ直接近づける数少ない公共海浜。"
+    "searchText": "葛西海浜公園 東京都江戸川区 干潟・海浜・東京湾 海・港 都心近くで干潟と東京湾の水平線を感じられ、臨海公園の人工景観から自然海浜へ抜けるendingになる。 葛西沖の干潟を保全・再生した海浜公園で、西なぎさは東京23区内で海へ直接近づける数少ない公共海浜。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "都心近くで干潟と東京湾の水平線を感じられ、臨海公園の人工景観から自然海浜へ抜けるEndingになる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 77,
+      "rain": 52,
+      "aircraft": 51,
+      "seaPort": 80,
+      "factoryNight": 51,
+      "quiet": 47,
+      "holidayHalfDay": 53
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D222",
@@ -2156,7 +3612,33 @@
       "屋上庭園",
       "運河"
     ],
-    "searchText": "東品川海上公園 東京都品川区 運河・屋上庭園・story story 目黒川が天王洲南運河へ注ぐ河口で、運河、橋、ポンプ場屋上庭園、ミッフィー花壇を短時間で巡れる。 天王洲の運河景観に、下水ポンプ場上部の屋上庭園を重ねた立体的な都市公園。ディック・ブルーナの意匠もある。"
+    "searchText": "東品川海上公園 東京都品川区 運河・屋上庭園・story story 目黒川が天王洲南運河へ注ぐ河口で、運河、橋、ポンプ場屋上庭園、ミッフィー花壇を短時間で巡れる。 天王洲の運河景観に、下水ポンプ場上部の屋上庭園を重ねた立体的な都市公園。ディック・ブルーナの意匠もある。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "条件付き採用",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 76,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "目黒川が天王洲南運河へ注ぐ河口で、運河、橋、ポンプ場屋上庭園、ミッフィー花壇を短時間で巡れる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 83,
+      "lateNight120": 84,
+      "rain": 60,
+      "aircraft": 59,
+      "seaPort": 86,
+      "factoryNight": 56,
+      "quiet": 90,
+      "holidayHalfDay": 78
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "条件付き採用"
   },
   {
     "id": "D231",
@@ -2194,7 +3676,33 @@
       "湧水",
       "草地"
     ],
-    "searchText": "野川公園 東京都調布市・小金井市・三鷹市 湧水・河川・草地 水辺 国分寺崖線の湧水と野川、広い草地がつながり、都市西部で水と地形を感じる静かなending。 国際基督教大学のゴルフ場跡を公園化し、国分寺崖線の湧水と野川の自然を保全している。"
+    "searchText": "野川公園 東京都調布市・小金井市・三鷹市 湧水・河川・草地 水辺 国分寺崖線の湧水と野川、広い草地がつながり、都市西部で水と地形を感じる静かなending。 国際基督教大学のゴルフ場跡を公園化し、国分寺崖線の湧水と野川の自然を保全している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 55,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "国分寺崖線の湧水と野川、広い草地がつながり、都市西部で水と地形を感じる静かなEnding。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 63,
+      "lateNight120": 67,
+      "rain": 48,
+      "aircraft": 44,
+      "seaPort": 72,
+      "factoryNight": 43,
+      "quiet": 45,
+      "holidayHalfDay": 51
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D241",
@@ -2233,7 +3741,33 @@
       "平日夜",
       "海苔Story"
     ],
-    "searchText": "大森ふるさとの浜辺公園 大田区・大森東 人工海浜・干潟・海苔story 平日夜・休日短時間 蒲田から短時間で、砂浜・干潟・芝生・運河を味わえる。遠出せず『海へ来た感覚』を得られる近距離の主力ending。 かつて海苔養殖で栄えた大森海岸の記憶を、人工海浜と隣接する海苔のふるさと館が伝えている。"
+    "searchText": "大森ふるさとの浜辺公園 大田区・大森東 人工海浜・干潟・海苔story 平日夜・休日短時間 蒲田から短時間で、砂浜・干潟・芝生・運河を味わえる。遠出せず『海へ来た感覚』を得られる近距離の主力ending。 かつて海苔養殖で栄えた大森海岸の記憶を、人工海浜と隣接する海苔のふるさと館が伝えている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 73,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "蒲田から短時間で、砂浜・干潟・芝生・運河を味わえる。遠出せず『海へ来た感覚』を得られる近距離の主力Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 83,
+      "lateNight120": 85,
+      "rain": 60,
+      "aircraft": 60,
+      "seaPort": 87,
+      "factoryNight": 58,
+      "quiet": 58,
+      "holidayHalfDay": 76
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D242",
@@ -2272,7 +3806,33 @@
       "平日夜",
       "池"
     ],
-    "searchText": "平和の森公園 大田区・平和の森公園 大規模公園・池・平和story 平日夜・休日半日 区内最大級の公園で、ひょうたん池、梅、広場、アスレチックを近距離で選べる。浜辺公園とのセット性能が高い。 名称には大田区の恒久平和への願いが込められ、平和都市宣言を象徴する像が置かれている。"
+    "searchText": "平和の森公園 大田区・平和の森公園 大規模公園・池・平和story 平日夜・休日半日 区内最大級の公園で、ひょうたん池、梅、広場、アスレチックを近距離で選べる。浜辺公園とのセット性能が高い。 名称には大田区の恒久平和への願いが込められ、平和都市宣言を象徴する像が置かれている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "区内最大級の公園で、ひょうたん池、梅、広場、アスレチックを近距離で選べる。浜辺公園とのセット性能が高い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 72,
+      "lateNight120": 71,
+      "rain": 46,
+      "aircraft": 49,
+      "seaPort": 48,
+      "factoryNight": 47,
+      "quiet": 77,
+      "holidayHalfDay": 67
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D243",
@@ -2311,7 +3871,33 @@
       "平日夜",
       "飛行機"
     ],
-    "searchText": "森ケ崎公園 大田区・大森南 屋上公園・飛行機・富士山 夕景・飛行機・平日夜 水再生センター屋上という特殊な立地から、羽田空港と富士山方向を望める。近いのに地上から切り離された感覚がある。 森ケ崎水再生センターの屋上を公園として再利用した都市インフラ上の緑地である。"
+    "searchText": "森ケ崎公園 大田区・大森南 屋上公園・飛行機・富士山 夕景・飛行機・平日夜 水再生センター屋上という特殊な立地から、羽田空港と富士山方向を望める。近いのに地上から切り離された感覚がある。 森ケ崎水再生センターの屋上を公園として再利用した都市インフラ上の緑地である。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 4,
+      "destinationStrength": 72,
+      "recommendedUse": "静かな場所／飛行機",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "水再生センター屋上という特殊な立地から、羽田空港と富士山方向を望める。近いのに地上から切り離された感覚がある。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 81,
+      "lateNight120": 79,
+      "rain": 58,
+      "aircraft": 87,
+      "seaPort": 58,
+      "factoryNight": 55,
+      "quiet": 91,
+      "holidayHalfDay": 61
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D244",
@@ -2349,7 +3935,33 @@
       "工場夜景",
       "飛行機"
     ],
-    "searchText": "ソラムナード羽田緑地 大田区・羽田空港 飛行機・多摩川0km・工場夜景 飛行機・夕景・工場夜景 多摩川河口、離着陸機、対岸の川崎工場夜景、日の出と夕日を一本の遊歩道で切り替えられる。 全長約2km。多摩川0km地点標、干潟、約14,600株のスカシユリなど、空港と河口環境が同居する。"
+    "searchText": "ソラムナード羽田緑地 大田区・羽田空港 飛行機・多摩川0km・工場夜景 飛行機・夕景・工場夜景 多摩川河口、離着陸機、対岸の川崎工場夜景、日の出と夕日を一本の遊歩道で切り替えられる。 全長約2km。多摩川0km地点標、干潟、約14,600株のスカシユリなど、空港と河口環境が同居する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 1,
+      "closingMargin": 5,
+      "destinationStrength": 69,
+      "recommendedUse": "平日夜90分／飛行機",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "多摩川河口、離着陸機、対岸の川崎工場夜景、日の出と夕日を一本の遊歩道で切り替えられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 82,
+      "lateNight120": 78,
+      "rain": 50,
+      "aircraft": 82,
+      "seaPort": 54,
+      "factoryNight": 82,
+      "quiet": 60,
+      "holidayHalfDay": 56
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D245",
@@ -2388,7 +4000,33 @@
       "雨上がり",
       "飛行機"
     ],
-    "searchText": "haneda innovation city 足湯スカイデッキ 大田区・天空橋 足湯・飛行機・夜景 平日夜・雨上がり・飛行機 無料の足湯に浸かりながら飛行機を眺められ、短時間でも『出かけた満足感』が非常に高い。 羽田空港跡地に整備されたイノベーション拠点の屋上施設で、足湯と航空機撮影を組み合わせた珍しい公共的空間。"
+    "searchText": "haneda innovation city 足湯スカイデッキ 大田区・天空橋 足湯・飛行機・夜景 平日夜・雨上がり・飛行機 無料の足湯に浸かりながら飛行機を眺められ、短時間でも『出かけた満足感』が非常に高い。 羽田空港跡地に整備されたイノベーション拠点の屋上施設で、足湯と航空機撮影を組み合わせた珍しい公共的空間。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 78,
+      "recommendedUse": "深夜2時間／飛行機",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "無料の足湯に浸かりながら飛行機を眺められ、短時間でも『出かけた満足感』が非常に高い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 92,
+      "lateNight120": 94,
+      "rain": 78,
+      "aircraft": 94,
+      "seaPort": 66,
+      "factoryNight": 64,
+      "quiet": 64,
+      "holidayHalfDay": 66
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D246",
@@ -2427,7 +4065,33 @@
       "飛行機",
       "食事"
     ],
-    "searchText": "羽田空港 第1ターミナル展望デッキ 大田区・羽田空港 飛行機・国内線・空港 飛行機・雨天・食事 jal系の国内線機材や滑走路運用を見ながら、空港飲食と組み合わせられる雨天対応の近距離ending。 1955年開業の旧国内線ターミナルを起源に持ち、現在も羽田国内線の主要拠点の一つ。"
+    "searchText": "羽田空港 第1ターミナル展望デッキ 大田区・羽田空港 飛行機・国内線・空港 飛行機・雨天・食事 jal系の国内線機材や滑走路運用を見ながら、空港飲食と組み合わせられる雨天対応の近距離ending。 1955年開業の旧国内線ターミナルを起源に持ち、現在も羽田国内線の主要拠点の一つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 4,
+      "destinationStrength": 76,
+      "recommendedUse": "飛行機／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "JAL系の国内線機材や滑走路運用を見ながら、空港飲食と組み合わせられる雨天対応の近距離Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 82,
+      "lateNight120": 83,
+      "rain": 82,
+      "aircraft": 88,
+      "seaPort": 88,
+      "factoryNight": 59,
+      "quiet": 57,
+      "holidayHalfDay": 63
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D247",
@@ -2465,7 +4129,33 @@
       "雨天",
       "飛行機"
     ],
-    "searchText": "羽田空港 第2ターミナル展望デッキ／flight deck tokyo 大田区・羽田空港 飛行機・屋内展望・雨天 飛行機・雨天・夜 屋外デッキと屋内展望フロアを使い分けられ、雨天や強風でも航空機を目的地化しやすい。 第2ターミナルはana系国内線の拠点として開業し、現在は国際線機能も備える。"
+    "searchText": "羽田空港 第2ターミナル展望デッキ／flight deck tokyo 大田区・羽田空港 飛行機・屋内展望・雨天 飛行機・雨天・夜 屋外デッキと屋内展望フロアを使い分けられ、雨天や強風でも航空機を目的地化しやすい。 第2ターミナルはana系国内線の拠点として開業し、現在は国際線機能も備える。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 74,
+      "recommendedUse": "飛行機／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "屋外デッキと屋内展望フロアを使い分けられ、雨天や強風でも航空機を目的地化しやすい。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 85,
+      "lateNight120": 87,
+      "rain": 84,
+      "aircraft": 88,
+      "seaPort": 60,
+      "factoryNight": 59,
+      "quiet": 57,
+      "holidayHalfDay": 63
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D248",
@@ -2504,7 +4194,33 @@
       "茶室Story",
       "静かな昼"
     ],
-    "searchText": "池上梅園 大田区・池上 日本庭園・梅・茶室story 静かな昼・季節story 丘陵斜面を使った小さな庭園で、短時間でも季節と静けさを得られる。近距離の昼endingとして密度が高い。 園内の聴雨庵は、戦時中に東条内閣打倒の密議が行われたとされる茶室を移築したもの。"
+    "searchText": "池上梅園 大田区・池上 日本庭園・梅・茶室story 静かな昼・季節story 丘陵斜面を使った小さな庭園で、短時間でも季節と静けさを得られる。近距離の昼endingとして密度が高い。 園内の聴雨庵は、戦時中に東条内閣打倒の密議が行われたとされる茶室を移築したもの。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 1,
+      "destinationStrength": 50,
+      "recommendedUse": "静かな場所／休日半日",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "丘陵斜面を使った小さな庭園で、短時間でも季節と静けさを得られる。近距離の昼Endingとして密度が高い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 49,
+      "lateNight120": 39,
+      "rain": 49,
+      "aircraft": 42,
+      "seaPort": 38,
+      "factoryNight": 35,
+      "quiet": 79,
+      "holidayHalfDay": 66
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D249",
@@ -2543,7 +4259,33 @@
       "河川",
       "河川敷"
     ],
-    "searchText": "多摩川六郷橋緑地 大田区・東六郷 河川敷・橋・広い空 休日朝夕・河川 蒲田から極めて近く、六郷橋と多摩川の広い空を車で気軽に取りに行ける週末型ending。 六郷は東海道の多摩川渡河点として栄え、六郷橋は東京と川崎を結ぶ歴史的な交通軸に位置する。"
+    "searchText": "多摩川六郷橋緑地 大田区・東六郷 河川敷・橋・広い空 休日朝夕・河川 蒲田から極めて近く、六郷橋と多摩川の広い空を車で気軽に取りに行ける週末型ending。 六郷は東海道の多摩川渡河点として栄え、六郷橋は東京と川崎を結ぶ歴史的な交通軸に位置する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 2,
+      "destinationStrength": 61,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "蒲田から極めて近く、六郷橋と多摩川の広い空を車で気軽に取りに行ける週末型Ending。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 67,
+      "lateNight120": 61,
+      "rain": 56,
+      "aircraft": 55,
+      "seaPort": 80,
+      "factoryNight": 49,
+      "quiet": 59,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D250",
@@ -2582,7 +4324,33 @@
       "河川敷",
       "芝生"
     ],
-    "searchText": "多摩川ガス橋緑地 大田区・下丸子 河川敷・橋・芝生 休日朝夕・河川 ガス橋の構造、武蔵小杉方面の空、広い河川敷を近距離で楽しめる。休日の短時間リセットに向く。 ガス橋は東京ガスのガス管を通す橋として架けられ、現在は道路橋として多摩川両岸を結ぶ。"
+    "searchText": "多摩川ガス橋緑地 大田区・下丸子 河川敷・橋・芝生 休日朝夕・河川 ガス橋の構造、武蔵小杉方面の空、広い河川敷を近距離で楽しめる。休日の短時間リセットに向く。 ガス橋は東京ガスのガス管を通す橋として架けられ、現在は道路橋として多摩川両岸を結ぶ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 2,
+      "destinationStrength": 57,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "ガス橋の構造、武蔵小杉方面の空、広い河川敷を近距離で楽しめる。休日の短時間リセットに向く。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 61,
+      "lateNight120": 53,
+      "rain": 48,
+      "aircraft": 49,
+      "seaPort": 74,
+      "factoryNight": 43,
+      "quiet": 81,
+      "holidayHalfDay": 51
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D251",
@@ -2621,7 +4389,33 @@
       "第三台場",
       "都市夜景"
     ],
-    "searchText": "お台場海浜公園 港区・台場 海浜・第三台場・都市夜景 平日夜・海・都市夜景 レインボーブリッジ、砂浜、第三台場、都心夜景が一つにまとまり、近距離でも王道の到達感を得られる。 第三台場はペリー来航後に江戸幕府が東京湾防備のため築いた砲台跡で、公園から徒歩で入れる。"
+    "searchText": "お台場海浜公園 港区・台場 海浜・第三台場・都市夜景 平日夜・海・都市夜景 レインボーブリッジ、砂浜、第三台場、都心夜景が一つにまとまり、近距離でも王道の到達感を得られる。 第三台場はペリー来航後に江戸幕府が東京湾防備のため築いた砲台跡で、公園から徒歩で入れる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 73,
+      "recommendedUse": "深夜2時間／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "レインボーブリッジ、砂浜、第三台場、都心夜景が一つにまとまり、近距離でも王道の到達感を得られる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 83,
+      "lateNight120": 89,
+      "rain": 64,
+      "aircraft": 60,
+      "seaPort": 89,
+      "factoryNight": 61,
+      "quiet": 52,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D252",
@@ -2661,7 +4455,33 @@
       "湾岸",
       "湾岸展望"
     ],
-    "searchText": "豊洲市場 屋上緑化広場 江東区・豊洲 屋上芝生・市場・湾岸展望 平日夜・市場story・湾岸 市場建築の屋上に広い芝生と東京湾の眺望があり、食・産業・夜景を一地点でつなげられる。 築地市場から移転した中央卸売市場の屋上を緑化し、巨大な物流施設を公共的な展望空間として開放している。"
+    "searchText": "豊洲市場 屋上緑化広場 江東区・豊洲 屋上芝生・市場・湾岸展望 平日夜・市場story・湾岸 市場建築の屋上に広い芝生と東京湾の眺望があり、食・産業・夜景を一地点でつなげられる。 築地市場から移転した中央卸売市場の屋上を緑化し、巨大な物流施設を公共的な展望空間として開放している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 1,
+      "closingMargin": 5,
+      "destinationStrength": 58,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "市場建築の屋上に広い芝生と東京湾の眺望があり、食・産業・夜景を一地点でつなげられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 71,
+      "lateNight120": 71,
+      "rain": 48,
+      "aircraft": 46,
+      "seaPort": 47,
+      "factoryNight": 45,
+      "quiet": 76,
+      "holidayHalfDay": 51
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D253",
@@ -2700,7 +4520,33 @@
       "総合公園",
       "防災"
     ],
-    "searchText": "平和島公園 大田区・平和島 総合公園・防災・24時間駐車 平日夜・短時間休憩 蒲田から近く、80台の24時間駐車場がある。遠出する気力がない夜でも、緑・広場・水施設で短時間のリセット先になる。 京浜運河沿いの埋立地に整備された公園で、スポーツ・レクリエーションと防災機能を兼ねる。"
+    "searchText": "平和島公園 大田区・平和島 総合公園・防災・24時間駐車 平日夜・短時間休憩 蒲田から近く、80台の24時間駐車場がある。遠出する気力がない夜でも、緑・広場・水施設で短時間のリセット先になる。 京浜運河沿いの埋立地に整備された公園で、スポーツ・レクリエーションと防災機能を兼ねる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 71,
+      "recommendedUse": "静かな場所／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "蒲田から近く、80台の24時間駐車場がある。遠出する気力がない夜でも、緑・広場・水施設で短時間のリセット先になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 85,
+      "lateNight120": 86,
+      "rain": 62,
+      "aircraft": 61,
+      "seaPort": 60,
+      "factoryNight": 58,
+      "quiet": 90,
+      "holidayHalfDay": 62
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D254",
@@ -2740,7 +4586,33 @@
       "防災公園",
       "静かな散歩"
     ],
-    "searchText": "しながわ区民公園 品川区・勝島 人工湖・松並木・防災公園 夕方・水辺・静かな散歩 人工湖『勝島の海』、松並木、広場がまとまり、大森海岸からすぐに水と緑へ切り替えられる近距離の昼～夕方候補。 勝島運河を埋め立てて整備され、約6,500平方メートルの海水人工湖『勝島の海』を持つ。"
+    "searchText": "しながわ区民公園 品川区・勝島 人工湖・松並木・防災公園 夕方・水辺・静かな散歩 人工湖『勝島の海』、松並木、広場がまとまり、大森海岸からすぐに水と緑へ切り替えられる近距離の昼～夕方候補。 勝島運河を埋め立てて整備され、約6,500平方メートルの海水人工湖『勝島の海』を持つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 62,
+      "recommendedUse": "静かな場所／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "人工湖『勝島の海』、松並木、広場がまとまり、大森海岸からすぐに水と緑へ切り替えられる近距離の昼～夕方候補。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 67,
+      "lateNight120": 65,
+      "rain": 50,
+      "aircraft": 52,
+      "seaPort": 78,
+      "factoryNight": 49,
+      "quiet": 81,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D255",
@@ -2780,7 +4652,33 @@
       "短時間散歩",
       "運河"
     ],
-    "searchText": "大井ふ頭中央海浜公園 品川区・八潮／大田区・東海 運河・干潟・スポーツ・産業景観 夕方・運河・短時間散歩 スポーツの森となぎさの森を使い分けられ、京浜運河、人工なぎさ、物流地帯の景観を近距離で回収できる。 公園は『スポーツの森』と『なぎさの森』に分かれ、東京湾岸のスポーツ拠点と水辺環境を一体化している。"
+    "searchText": "大井ふ頭中央海浜公園 品川区・八潮／大田区・東海 運河・干潟・スポーツ・産業景観 夕方・運河・短時間散歩 スポーツの森となぎさの森を使い分けられ、京浜運河、人工なぎさ、物流地帯の景観を近距離で回収できる。 公園は『スポーツの森』と『なぎさの森』に分かれ、東京湾岸のスポーツ拠点と水辺環境を一体化している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 65,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "スポーツの森となぎさの森を使い分けられ、京浜運河、人工なぎさ、物流地帯の景観を近距離で回収できる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 76,
+      "lateNight120": 74,
+      "rain": 50,
+      "aircraft": 52,
+      "seaPort": 79,
+      "factoryNight": 49,
+      "quiet": 53,
+      "holidayHalfDay": 69
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D256",
@@ -2819,7 +4717,33 @@
       "昼",
       "運河"
     ],
-    "searchText": "ちどり公園 川崎市川崎区・千鳥町 川崎港・運河・小展望台 昼・川崎港story 高さ約7mの展望台から京浜運河、船、東扇島を眺められ、工場夜景へ入る前の昼間導入地点として機能する。 川崎港の運河に面する約4万平方メートルの臨海公園で、船舶と港湾施設を見渡せる展望台を持つ。"
+    "searchText": "ちどり公園 川崎市川崎区・千鳥町 川崎港・運河・小展望台 昼・川崎港story 高さ約7mの展望台から京浜運河、船、東扇島を眺められ、工場夜景へ入る前の昼間導入地点として機能する。 川崎港の運河に面する約4万平方メートルの臨海公園で、船舶と港湾施設を見渡せる展望台を持つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 60,
+      "recommendedUse": "海・港／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "高さ約7mの展望台から京浜運河、船、東扇島を眺められ、工場夜景へ入る前の昼間導入地点として機能する。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 69,
+      "lateNight120": 68,
+      "rain": 57,
+      "aircraft": 49,
+      "seaPort": 75,
+      "factoryNight": 44,
+      "quiet": 55,
+      "holidayHalfDay": 55
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D257",
@@ -2857,7 +4781,33 @@
       "港湾休憩",
       "芝生"
     ],
-    "searchText": "東扇島中公園 川崎市川崎区・東扇島 芝生・港湾休憩・共有駐車 夕方・港湾休憩・共有駐車 川崎マリエンに隣接し、芝生・港湾の空・休憩を短時間で取り込める。マリエンと1回の駐車で組み合わせられる。 川崎マリエンに隣接する港湾公園で、芝生広場、バーベキュー場、キャンプサイトを備える。"
+    "searchText": "東扇島中公園 川崎市川崎区・東扇島 芝生・港湾休憩・共有駐車 夕方・港湾休憩・共有駐車 川崎マリエンに隣接し、芝生・港湾の空・休憩を短時間で取り込める。マリエンと1回の駐車で組み合わせられる。 川崎マリエンに隣接する港湾公園で、芝生広場、バーベキュー場、キャンプサイトを備える。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 73,
+      "recommendedUse": "静かな場所／工場夜景",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "川崎マリエンに隣接し、芝生・港湾の空・休憩を短時間で取り込める。マリエンと1回の駐車で組み合わせられる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 79,
+      "lateNight120": 80,
+      "rain": 57,
+      "aircraft": 55,
+      "seaPort": 83,
+      "factoryNight": 84,
+      "quiet": 87,
+      "holidayHalfDay": 59
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D258",
@@ -2897,7 +4847,33 @@
       "港湾Story",
       "雨天"
     ],
-    "searchText": "横浜市高齢者保養研修施設 ふれーゆ 横浜市鶴見区・末広町 大浴場・プール・横浜港展望・雨天 雨天・入浴・港湾story 大浴場やプールで天候に左右されず滞在でき、大窓からベイブリッジ、鶴見つばさ橋、横浜港を望める。 横浜市の保養研修施設として整備され、港湾最奥部の大窓から横浜港と二つの大型橋を見渡せる。"
+    "searchText": "横浜市高齢者保養研修施設 ふれーゆ 横浜市鶴見区・末広町 大浴場・プール・横浜港展望・雨天 雨天・入浴・港湾story 大浴場やプールで天候に左右されず滞在でき、大窓からベイブリッジ、鶴見つばさ橋、横浜港を望める。 横浜市の保養研修施設として整備され、港湾最奥部の大窓から横浜港と二つの大型橋を見渡せる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 64,
+      "recommendedUse": "雨天／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "大浴場やプールで天候に左右されず滞在でき、大窓からベイブリッジ、鶴見つばさ橋、横浜港を望める。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 65,
+      "lateNight120": 62,
+      "rain": 83,
+      "aircraft": 51,
+      "seaPort": 77,
+      "factoryNight": 46,
+      "quiet": 55,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D259",
@@ -2937,7 +4913,33 @@
       "産業遺産",
       "雨天"
     ],
-    "searchText": "大森 海苔のふるさと館 大田区・平和の森公園 産業遺産・海苔・博物館story 昼・産業story・雨天 大森の海苔養殖と加工の歴史を、実物資料と復元展示で短時間に理解できる。大森海岸ルートの物語密度を一気に上げる経由地。 大森は東京湾を代表する海苔養殖地で、館内ではかつての海苔船や乾燥作業の道具を保存する。"
+    "searchText": "大森 海苔のふるさと館 大田区・平和の森公園 産業遺産・海苔・博物館story 昼・産業story・雨天 大森の海苔養殖と加工の歴史を、実物資料と復元展示で短時間に理解できる。大森海岸ルートの物語密度を一気に上げる経由地。 大森は東京湾を代表する海苔養殖地で、館内ではかつての海苔船や乾燥作業の道具を保存する。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 2,
+      "destinationStrength": 63,
+      "recommendedUse": "休日半日／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "大森の海苔養殖と加工の歴史を、実物資料と復元展示で短時間に理解できる。大森海岸ルートの物語密度を一気に上げる経由地。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 58,
+      "lateNight120": 51,
+      "rain": 80,
+      "aircraft": 48,
+      "seaPort": 72,
+      "factoryNight": 41,
+      "quiet": 57,
+      "holidayHalfDay": 87
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D260",
@@ -2978,7 +4980,33 @@
       "家族Story",
       "短時間"
     ],
-    "searchText": "萩中公園 大田区・萩中 交通公園・sl・プール・家族story 家族・交通story・短時間 蒸気機関車や路面電車、交通公園、屋内外プールがまとまり、飛行機以外の羽田周辺storyを作れる近距離の大型公園。 園内には蒸気機関車と都電車両が保存され、戦後の交通史を身近に感じられる。"
+    "searchText": "萩中公園 大田区・萩中 交通公園・sl・プール・家族story 家族・交通story・短時間 蒸気機関車や路面電車、交通公園、屋内外プールがまとまり、飛行機以外の羽田周辺storyを作れる近距離の大型公園。 園内には蒸気機関車と都電車両が保存され、戦後の交通史を身近に感じられる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 66,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "蒸気機関車や路面電車、交通公園、屋内外プールがまとまり、飛行機以外の羽田周辺Storyを作れる近距離の大型公園。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 76,
+      "lateNight120": 74,
+      "rain": 64,
+      "aircraft": 52,
+      "seaPort": 51,
+      "factoryNight": 49,
+      "quiet": 81,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D261",
@@ -3018,7 +5046,33 @@
       "郷土史",
       "雨天"
     ],
-    "searchText": "大田区立郷土博物館 大田区・南馬込 郷土史・考古・民俗・雨天 雨天・歴史story・昼 大田区の地形、古墳、馬込文士村、海苔産業まで横断できる。project cruiseのstory layerを補強する雨天向け拠点。 馬込文士村や大森貝塚、古墳群など、大田区の複数の歴史層をまとめて扱う地域博物館。"
+    "searchText": "大田区立郷土博物館 大田区・南馬込 郷土史・考古・民俗・雨天 雨天・歴史story・昼 大田区の地形、古墳、馬込文士村、海苔産業まで横断できる。project cruiseのstory layerを補強する雨天向け拠点。 馬込文士村や大森貝塚、古墳群など、大田区の複数の歴史層をまとめて扱う地域博物館。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 1,
+      "destinationStrength": 52,
+      "recommendedUse": "休日半日／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "大田区の地形、古墳、馬込文士村、海苔産業まで横断できる。Project CruiseのStory Layerを補強する雨天向け拠点。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 49,
+      "lateNight120": 39,
+      "rain": 70,
+      "aircraft": 42,
+      "seaPort": 38,
+      "factoryNight": 35,
+      "quiet": 51,
+      "holidayHalfDay": 81
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D262",
@@ -3059,7 +5113,33 @@
       "行き止まり",
       "運河"
     ],
-    "searchText": "昭和島二丁目公園 大田区・昭和島 工業島・運河・スポーツ・行き止まり 夕方・産業景観・穴場 工業専用島の奥まで走る到達感があり、運河、モノレール、工場の気配を近距離で味わえる。羽田系とは違う産業景観の終点。 昭和島は東京湾の埋立地で、機械・金属加工などの工場が集積する工業島として整備された。"
+    "searchText": "昭和島二丁目公園 大田区・昭和島 工業島・運河・スポーツ・行き止まり 夕方・産業景観・穴場 工業専用島の奥まで走る到達感があり、運河、モノレール、工場の気配を近距離で味わえる。羽田系とは違う産業景観の終点。 昭和島は東京湾の埋立地で、機械・金属加工などの工場が集積する工業島として整備された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 4,
+      "destinationStrength": 69,
+      "recommendedUse": "海・港／工場夜景",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "工業専用島の奥まで走る到達感があり、運河、モノレール、工場の気配を近距離で味わえる。羽田系とは違う産業景観の終点。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 79,
+      "lateNight120": 74,
+      "rain": 54,
+      "aircraft": 56,
+      "seaPort": 83,
+      "factoryNight": 83,
+      "quiet": 61,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D263",
@@ -3098,7 +5178,33 @@
       "防災Story",
       "防災公園"
     ],
-    "searchText": "東糀谷防災公園 大田区・東糀谷 防災公園・ビオトープ・都市インフラ 深夜短時間・防災story 24時間駐車できる小規模防災公園で、羽田周辺の短時間経由地として使いやすい。防災設備とビオトープという明確なstoryがある。 大田区で初めて防災機能を前面に設計した公園で、かまどベンチやマンホールトイレなどを備える。"
+    "searchText": "東糀谷防災公園 大田区・東糀谷 防災公園・ビオトープ・都市インフラ 深夜短時間・防災story 24時間駐車できる小規模防災公園で、羽田周辺の短時間経由地として使いやすい。防災設備とビオトープという明確なstoryがある。 大田区で初めて防災機能を前面に設計した公園で、かまどベンチやマンホールトイレなどを備える。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 66,
+      "recommendedUse": "静かな場所／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "24時間駐車できる小規模防災公園で、羽田周辺の短時間経由地として使いやすい。防災設備とビオトープという明確なStoryがある。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 82,
+      "lateNight120": 78,
+      "rain": 56,
+      "aircraft": 56,
+      "seaPort": 55,
+      "factoryNight": 51,
+      "quiet": 89,
+      "holidayHalfDay": 57
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D264",
@@ -3138,7 +5244,33 @@
       "東海道Story",
       "雨天"
     ],
-    "searchText": "品川区立 品川歴史館 品川区・大井 東海道・大森貝塚・地域史・雨天 雨天・東海道story・昼 東海道品川宿、大森貝塚、品川の地形と産業を一館で理解できる。大田区から近い雨天story経由地として優秀。 1985年開館、2024年に全面改修を終え、原始から現代までの品川の歴史を模型・映像で再構成した。"
+    "searchText": "品川区立 品川歴史館 品川区・大井 東海道・大森貝塚・地域史・雨天 雨天・東海道story・昼 東海道品川宿、大森貝塚、品川の地形と産業を一館で理解できる。大田区から近い雨天story経由地として優秀。 1985年開館、2024年に全面改修を終え、原始から現代までの品川の歴史を模型・映像で再構成した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 1,
+      "destinationStrength": 52,
+      "recommendedUse": "雨天／海・港",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "東海道品川宿、大森貝塚、品川の地形と産業を一館で理解できる。大田区から近い雨天Story経由地として優秀。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 49,
+      "lateNight120": 39,
+      "rain": 70,
+      "aircraft": 42,
+      "seaPort": 66,
+      "factoryNight": 35,
+      "quiet": 51,
+      "holidayHalfDay": 65
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D265",
@@ -3179,7 +5311,33 @@
       "建築",
       "運河"
     ],
-    "searchText": "天王洲公園 品川区・東品川 運河・倉庫街・スポーツ・アート街区 夜・運河・建築・アート 天王洲運河と倉庫街再生の空気を味わえ、都心湾岸へ入る前の短時間経由地として使える。夜は橋・運河・高層建築の対比が出る。 物流倉庫街だった天王洲は、運河沿いの再開発とアート施設の集積で文化地区へ転換した。"
+    "searchText": "天王洲公園 品川区・東品川 運河・倉庫街・スポーツ・アート街区 夜・運河・建築・アート 天王洲運河と倉庫街再生の空気を味わえ、都心湾岸へ入る前の短時間経由地として使える。夜は橋・運河・高層建築の対比が出る。 物流倉庫街だった天王洲は、運河沿いの再開発とアート施設の集積で文化地区へ転換した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 66,
+      "recommendedUse": "海・港／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "天王洲運河と倉庫街再生の空気を味わえ、都心湾岸へ入る前の短時間経由地として使える。夜は橋・運河・高層建築の対比が出る。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 77,
+      "lateNight120": 79,
+      "rain": 62,
+      "aircraft": 54,
+      "seaPort": 82,
+      "factoryNight": 52,
+      "quiet": 55,
+      "holidayHalfDay": 58
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D266",
@@ -3219,7 +5377,33 @@
       "穴場",
       "都市インフラ"
     ],
-    "searchText": "八潮北公園 品川区・八潮 スケート・湾岸高架・工業景観 夜・都市インフラ・穴場 首都高と物流街区の下でスケート施設や運動施設が成立する、東京湾岸らしい都市インフラ型の穴場経由地。 八潮は東京湾の埋立地に計画された住宅・物流地区で、高架道路と公園が近接する独特の都市景観を持つ。"
+    "searchText": "八潮北公園 品川区・八潮 スケート・湾岸高架・工業景観 夜・都市インフラ・穴場 首都高と物流街区の下でスケート施設や運動施設が成立する、東京湾岸らしい都市インフラ型の穴場経由地。 八潮は東京湾の埋立地に計画された住宅・物流地区で、高架道路と公園が近接する独特の都市景観を持つ。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 3,
+      "destinationStrength": 67,
+      "recommendedUse": "工場夜景／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "首都高と物流街区の下でスケート施設や運動施設が成立する、東京湾岸らしい都市インフラ型の穴場経由地。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 77,
+      "lateNight120": 75,
+      "rain": 57,
+      "aircraft": 58,
+      "seaPort": 58,
+      "factoryNight": 86,
+      "quiet": 63,
+      "holidayHalfDay": 61
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D267",
@@ -3258,7 +5442,33 @@
       "照明",
       "開催日夜"
     ],
-    "searchText": "東京シティ競馬 大井競馬場 品川区・勝島 ナイター競馬・照明・昭和娯楽story 開催日夜・照明・娯楽story 照明、歓声、厩舎文化、運河沿いの巨大施設が一体となる。開催日は単なる観光地ではない強い夜の最終目的地になる。 大井競馬場は『東京シティ競馬』の名称で夜間開催を定着させ、都市型ナイター競馬の代表例になった。"
+    "searchText": "東京シティ競馬 大井競馬場 品川区・勝島 ナイター競馬・照明・昭和娯楽story 開催日夜・照明・娯楽story 照明、歓声、厩舎文化、運河沿いの巨大施設が一体となる。開催日は単なる観光地ではない強い夜の最終目的地になる。 大井競馬場は『東京シティ競馬』の名称で夜間開催を定着させ、都市型ナイター競馬の代表例になった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 1,
+      "destinationStrength": 68,
+      "recommendedUse": "休日半日／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "照明、歓声、厩舎文化、運河沿いの巨大施設が一体となる。開催日は単なる観光地ではない強い夜の最終目的地になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 73,
+      "lateNight120": 71,
+      "rain": 62,
+      "aircraft": 60,
+      "seaPort": 60,
+      "factoryNight": 59,
+      "quiet": 57,
+      "holidayHalfDay": 89
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D268",
@@ -3297,7 +5507,33 @@
       "放送塔Story",
       "雨天"
     ],
-    "searchText": "東京タワー 港区・芝公園 展望・建築・放送塔story・夜景 夜景・建築・雨天 大田区から1時間以内で、東京の象徴的建築と360度夜景を確実に回収できる。王道だが最終目的地力は非常に高い。 1958年完成、高さ333mの総合電波塔で、戦後東京の復興と放送技術の象徴になった。"
+    "searchText": "東京タワー 港区・芝公園 展望・建築・放送塔story・夜景 夜景・建築・雨天 大田区から1時間以内で、東京の象徴的建築と360度夜景を確実に回収できる。王道だが最終目的地力は非常に高い。 1958年完成、高さ333mの総合電波塔で、戦後東京の復興と放送技術の象徴になった。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 68,
+      "recommendedUse": "深夜2時間／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "大田区から1時間以内で、東京の象徴的建築と360度夜景を確実に回収できる。王道だが最終目的地力は非常に高い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 78,
+      "lateNight120": 83,
+      "rain": 79,
+      "aircraft": 55,
+      "seaPort": 56,
+      "factoryNight": 56,
+      "quiet": 49,
+      "holidayHalfDay": 75
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D269",
@@ -3338,7 +5574,33 @@
       "雨天",
       "食事"
     ],
-    "searchText": "東京ミッドタウン／ミッドタウン・ガーデン 港区・赤坂 現代建築・庭園・美術・雨天 雨天・建築・夜・食事 地下駐車から建築、庭園、美術館、飲食へ切り替えられ、天候と時間に合わせて滞在内容を調整しやすい。 旧防衛庁跡地を再開発した複合街区で、檜町公園と現代建築・デザイン施設を一体化している。"
+    "searchText": "東京ミッドタウン／ミッドタウン・ガーデン 港区・赤坂 現代建築・庭園・美術・雨天 雨天・建築・夜・食事 地下駐車から建築、庭園、美術館、飲食へ切り替えられ、天候と時間に合わせて滞在内容を調整しやすい。 旧防衛庁跡地を再開発した複合街区で、檜町公園と現代建築・デザイン施設を一体化している。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 5,
+      "destinationStrength": 76,
+      "recommendedUse": "休日半日／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "条件が合えば有力",
+      "establishmentReason": "地下駐車から建築、庭園、美術館、飲食へ切り替えられ、天候と時間に合わせて滞在内容を調整しやすい。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 81,
+      "lateNight120": 87,
+      "rain": 83,
+      "aircraft": 58,
+      "seaPort": 59,
+      "factoryNight": 59,
+      "quiet": 80,
+      "holidayHalfDay": 90
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D270",
@@ -3377,7 +5639,33 @@
       "美術",
       "高層展望"
     ],
-    "searchText": "六本木ヒルズ 東京シティビュー 港区・六本木 高層展望・現代都市・美術 夜景・建築・美術 52階から東京タワーと都心を正面に見る構図が強く、建築・展望・美術を一体化した夜の最終目的地になる。 森タワー52階の展望施設で、美術館と都市眺望を同じ高層階で体験できる。"
+    "searchText": "六本木ヒルズ 東京シティビュー 港区・六本木 高層展望・現代都市・美術 夜景・建築・美術 52階から東京タワーと都心を正面に見る構図が強く、建築・展望・美術を一体化した夜の最終目的地になる。 森タワー52階の展望施設で、美術館と都市眺望を同じ高層階で体験できる。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 5,
+      "closingMargin": 4,
+      "destinationStrength": 66,
+      "recommendedUse": "深夜2時間／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "52階から東京タワーと都心を正面に見る構図が強く、建築・展望・美術を一体化した夜の最終目的地になる。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 76,
+      "lateNight120": 81,
+      "rain": 79,
+      "aircraft": 56,
+      "seaPort": 57,
+      "factoryNight": 57,
+      "quiet": 52,
+      "holidayHalfDay": 62
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D271",
@@ -3417,7 +5705,33 @@
       "都市インフラ",
       "高層建築"
     ],
-    "searchText": "品川シーズンテラス／芝浦中央公園 港区・港南 水再生センター・屋上緑地・高層建築 夕方・都市インフラ・建築 水再生センター上部の広大な緑地と高層オフィスを同時に体験でき、都市インフラstoryが強い。品川・港区ルートの接続点。 芝浦水再生センターの上部空間を活用し、巨大な下水処理インフラの上に緑地と業務施設を整備した。"
+    "searchText": "品川シーズンテラス／芝浦中央公園 港区・港南 水再生センター・屋上緑地・高層建築 夕方・都市インフラ・建築 水再生センター上部の広大な緑地と高層オフィスを同時に体験でき、都市インフラstoryが強い。品川・港区ルートの接続点。 芝浦水再生センターの上部空間を活用し、巨大な下水処理インフラの上に緑地と業務施設を整備した。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "平日夜90分／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "水再生センター上部の広大な緑地と高層オフィスを同時に体験でき、都市インフラStoryが強い。品川・港区ルートの接続点。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 73,
+      "lateNight120": 72,
+      "rain": 63,
+      "aircraft": 49,
+      "seaPort": 49,
+      "factoryNight": 46,
+      "quiet": 53,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D272",
@@ -3456,7 +5770,33 @@
       "超高層建築",
       "都市夜景"
     ],
-    "searchText": "東京都庁展望室 新宿区・西新宿 無料展望・超高層建築・都市夜景 夜景・建築・無料展望 無料で高層夜景を得られ、西新宿の建築群そのものがstoryになる。大田区からの都市ドライブの明確な終点。 丹下健三設計の東京都庁第一本庁舎は1991年開庁で、西新宿超高層街を代表するポストモダン建築。"
+    "searchText": "東京都庁展望室 新宿区・西新宿 無料展望・超高層建築・都市夜景 夜景・建築・無料展望 無料で高層夜景を得られ、西新宿の建築群そのものがstoryになる。大田区からの都市ドライブの明確な終点。 丹下健三設計の東京都庁第一本庁舎は1991年開庁で、西新宿超高層街を代表するポストモダン建築。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 4,
+      "destinationStrength": 69,
+      "recommendedUse": "休日半日／深夜2時間",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "無料で高層夜景を得られ、西新宿の建築群そのものがStoryになる。大田区からの都市ドライブの明確な終点。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 75,
+      "lateNight120": 78,
+      "rain": 77,
+      "aircraft": 54,
+      "seaPort": 55,
+      "factoryNight": 54,
+      "quiet": 53,
+      "holidayHalfDay": 89
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D273",
@@ -3496,7 +5836,33 @@
       "都市の静けさ",
       "雨天温室"
     ],
-    "searchText": "新宿御苑 新宿区・内藤町 庭園・温室・都市の静けさ・story 休日半日・庭園・雨天温室 日本庭園、風景式庭園、温室を大都市中心部で体験でき、休日半日の最終目的地として密度が高い。 江戸期の内藤家屋敷地を起源とし、皇室庭園を経て戦後に国民公園として公開された。"
+    "searchText": "新宿御苑 新宿区・内藤町 庭園・温室・都市の静けさ・story 休日半日・庭園・雨天温室 日本庭園、風景式庭園、温室を大都市中心部で体験でき、休日半日の最終目的地として密度が高い。 江戸期の内藤家屋敷地を起源とし、皇室庭園を経て戦後に国民公園として公開された。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 4,
+      "closingMargin": 5,
+      "destinationStrength": 57,
+      "recommendedUse": "休日半日／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "日本庭園、風景式庭園、温室を大都市中心部で体験でき、休日半日の最終目的地として密度が高い。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 56,
+      "lateNight120": 57,
+      "rain": 70,
+      "aircraft": 41,
+      "seaPort": 38,
+      "factoryNight": 38,
+      "quiet": 69,
+      "holidayHalfDay": 78
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D274",
@@ -3536,7 +5902,33 @@
       "絵画",
       "近代建築"
     ],
-    "searchText": "明治神宮外苑 聖徳記念絵画館 新宿区・霞ヶ丘町 近代建築・絵画・明治史story 建築・歴史story・昼 重厚な石造建築と明治史を描く大壁画群があり、庭園・建築・歴史を一度に回収できる昼の経由地。 1926年竣工の絵画館には、明治天皇の生涯と明治期の出来事を描く大型絵画が展示される。"
+    "searchText": "明治神宮外苑 聖徳記念絵画館 新宿区・霞ヶ丘町 近代建築・絵画・明治史story 建築・歴史story・昼 重厚な石造建築と明治史を描く大壁画群があり、庭園・建築・歴史を一度に回収できる昼の経由地。 1926年竣工の絵画館には、明治天皇の生涯と明治期の出来事を描く大型絵画が展示される。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": false
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 1,
+      "destinationStrength": 49,
+      "recommendedUse": "休日半日／雨天",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "重厚な石造建築と明治史を描く大壁画群があり、庭園・建築・歴史を一度に回収できる昼の経由地。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 47,
+      "lateNight120": 41,
+      "rain": 58,
+      "aircraft": 40,
+      "seaPort": 38,
+      "factoryNight": 36,
+      "quiet": 45,
+      "holidayHalfDay": 78
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   },
   {
     "id": "D275",
@@ -3576,6 +5968,32 @@
       "超高層建築",
       "雨天"
     ],
-    "searchText": "新宿nsビル アトリウム・大時計 新宿区・西新宿 巨大吹抜け・大時計・超高層建築・雨天 雨天・建築・夜 巨大アトリウムと大時計を短時間で見られ、雨天でも西新宿の超高層建築体験を作れる。都庁前の実用的な経由地。 西新宿超高層街を代表する建築の一つで、中央の巨大吹抜けと大時計が内部空間の象徴になっている。"
+    "searchText": "新宿nsビル アトリウム・大時計 新宿区・西新宿 巨大吹抜け・大時計・超高層建築・雨天 雨天・建築・夜 巨大アトリウムと大時計を短時間で見られ、雨天でも西新宿の超高層建築体験を作れる。都庁前の実用的な経由地。 西新宿超高層街を代表する建築の一つで、中央の巨大吹抜けと大時計が内部空間の象徴になっている。",
+    "verification": {
+      "checkedDate": "2026-07-29",
+      "status": "一次確認済",
+      "fieldCheckRequired": true
+    },
+    "operational": {
+      "parkingCertainty": 2,
+      "closingMargin": 5,
+      "destinationStrength": 61,
+      "recommendedUse": "雨天／平日夜90分",
+      "recommendedArrival": "出発前に閉場確認",
+      "editorialVerdict": "用途限定で有効",
+      "establishmentReason": "巨大アトリウムと大時計を短時間で見られ、雨天でも西新宿の超高層建築体験を作れる。都庁前の実用的な経由地。"
+    },
+    "scenarioScores": {
+      "weekdayNight90": 71,
+      "lateNight120": 71,
+      "rain": 75,
+      "aircraft": 48,
+      "seaPort": 48,
+      "factoryNight": 46,
+      "quiet": 49,
+      "holidayHalfDay": 71
+    },
+    "checkedDate": "2026-07-29",
+    "verificationStatus": "一次確認済"
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "presetOrigin": {
+    "name": "蒲田駅",
+    "query": "蒲田駅",
+    "coordinates": [
+      35.5625,
+      139.716
+    ]
+  },
+  "currentLocationLabel": "現在地",
+  "defaultOriginMode": "preset",
+  "routePolicy": {
+    "timeMeans": "driving_time",
+    "standardStayPerStopMinutes": 20,
+    "maximumStayPerStopMinutes": 25,
+    "drivingBudgetsMinutes": {
+      "90": 90,
+      "120": 120,
+      "half": 240
+    }
+  }
+}

@@ -15,13 +15,74 @@
     "quality": 80,
     "diversity": 49,
     "intent": "足湯で身体を切り替え、空港建築と航空機を見た後、工業島の低い視点で飛行機の迫力を回収する。",
-    "dwell": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／羽田空港 第3ターミナル展望デッキ:25分／京浜島つばさ公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "23:30に間に合わない時／工事・閉鎖時／満車時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD",
     "searchText": "羽田・航空機ショート 足湯／空港展望／飛行機 通常 haneda innovation city 足湯スカイデッキ 羽田空港 第3ターミナル展望デッキ 京浜島つばさ公園 hic p1で足湯を短時間利用し、t3を経て京浜島へ。京浜島満車時はt3で終了。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／羽田空港 第3ターミナル展望デッキ:25分／京浜島つばさ公園:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 120,
+      "scenarioScores": {
+        "weekdayNight90": 79,
+        "lateNight120": 81,
+        "rain": 83,
+        "aircraft": 85,
+        "seaPort": 85,
+        "factoryNight": 57,
+        "quiet": 50,
+        "holidayHalfDay": 60
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 64,
+      "minMinutes": 85,
+      "medianMinutes": 102,
+      "maxMinutes": 120,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "time": "23:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "23:30までに「HANEDA INNOVATION CITY 足湯スカイデッキ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+      "closingTime": "23:30",
+      "latestRecommendedDeparture": "22:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "○",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "HANEDA INNOVATION CITY 足湯スカイデッキを省略 → 京浜島つばさ公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 49,
+      "overusePenalty": 30,
+      "experienceTransition": "飛行機・都市夜景 → 飛行機・都市夜景 → 飛行機・都市夜景 → 飛行機・工場夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R002",
@@ -39,13 +100,108 @@
     "quality": 79,
     "diversity": 67,
     "intent": "大森の海苔・人工海浜から工業島の航空機へ進み、城南島の海と飛行機で終える一方向の流れ。",
-    "dwell": "大森ふるさとの浜辺公園:20分／京浜島つばさ公園:25分／城南島海浜公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "臨時閉鎖・イベント混雑時／満車時／21:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92%7C%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92",
     "searchText": "大森海岸から飛行機へ 海苔story／飛行機／海 通常 大森ふるさとの浜辺公園 京浜島つばさ公園 城南島海浜公園 浜辺エリアと城南島駐車場は21時まで。20時以降は大森を省略し、京浜島→城南島へ短縮。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "大森ふるさとの浜辺公園:20分／京浜島つばさ公園:25分／城南島海浜公園:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 130,
+      "scenarioScores": {
+        "weekdayNight90": 77,
+        "lateNight120": 77,
+        "rain": 61,
+        "aircraft": 84,
+        "seaPort": 84,
+        "factoryNight": 56,
+        "quiet": 61,
+        "holidayHalfDay": 80
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 68,
+      "minMinutes": 90,
+      "medianMinutes": 110,
+      "maxMinutes": 130,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "城南島海浜公園",
+        "time": "21:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "21:00までに「城南島海浜公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "城南島海浜公園",
+      "closingTime": "21:00",
+      "latestRecommendedDeparture": "19:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "大森ふるさとの浜辺公園を省略 → 城南島海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "大森ふるさとの浜辺公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "共用駐車場・平日121台／土日祝142台・30分100円・24時間",
+        "skipCondition": "浜辺は21時閉門。休日は駐車待ちが発生。遊泳・釣り・火気は禁止。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "京浜島つばさ公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "あり・小規模有料",
+        "skipCondition": "台数が少ない。満車時の路上待機・路上駐車は禁止。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "城南島海浜公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 30,
+        "maximumStayMinutes": 50,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "21時以降は入出庫不可。臨時閉鎖と高さ制限を当日確認。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 67,
+      "overusePenalty": 18,
+      "experienceTransition": "海・港・Story → 飛行機・工場夜景 → 飛行機・工場夜景 → 飛行機・海・港",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R003",
@@ -63,13 +219,108 @@
     "quality": 77,
     "diversity": 85,
     "intent": "晴海ふ頭公園 → 豊洲ぐるり公園 → 暁ふ頭公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "晴海ふ頭公園:20分／豊洲ぐるり公園:18分／暁ふ頭公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／臨時閉鎖・イベント混雑時／満車時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9A%81%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%99%B4%E6%B5%B7%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92%7C%E8%B1%8A%E6%B4%B2%E3%81%90%E3%82%8B%E3%82%8A%E5%85%AC%E5%9C%92",
     "searchText": "東京港最奥ナイト 港／行き止まり／都市夜景 通常 晴海ふ頭公園 豊洲ぐるり公園 暁ふ頭公園 強風時は暁ふ頭を潮風公園へ変更。 東京港・水辺",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "晴海ふ頭公園:20分／豊洲ぐるり公園:18分／暁ふ頭公園:45分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 69,
+      "certainty": 4,
+      "maxMinutes": 160,
+      "scenarioScores": {
+        "weekdayNight90": 81,
+        "lateNight120": 84,
+        "rain": 64,
+        "aircraft": 62,
+        "seaPort": 88,
+        "factoryNight": 63,
+        "quiet": 54,
+        "holidayHalfDay": 56
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 72,
+      "minMinutes": 120,
+      "medianMinutes": 140,
+      "maxMinutes": 160,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "○",
+      "rain": "△",
+      "operationDecision": "深夜主力",
+      "shortPattern": "晴海ふ頭公園を省略 → 暁ふ頭公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "晴海ふ頭公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・小規模有料",
+        "skipCondition": "台数が少なくイベント時は入庫待ちに注意。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "豊洲ぐるり公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 25,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "市場周辺イベント時は混雑。駐車位置と見たい景色の位置関係を確認。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "暁ふ頭公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "あり・小規模有料",
+        "skipCondition": "港湾部で風が強い。工事・駐車運用変更を当日確認。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 85,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・都市夜景 → 都市夜景 → 都市夜景 → 海・港・休息",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R004",
@@ -87,13 +338,108 @@
     "quality": 80,
     "diversity": 68,
     "intent": "お台場の都市夜景から橋を走り抜け、若洲側で橋そのものを海越しに見返して終える。",
-    "dwell": "潮風公園:20分／東京ゲートブリッジ:0分／若洲海浜公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／停車しない／小規模。満車なら待たずに省略",
     "skipRule": "工事・閉鎖時／渋滞・通行規制時は走行演出を省略／満車時／22:00に間に合わない時／強風・高潮・増水時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%8B%A5%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%BD%AE%E9%A2%A8%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%88%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
     "searchText": "ゲートブリッジ夜景ショート 都市夜景／橋の走行演出／海 走行演出あり 潮風公園 東京ゲートブリッジ 若洲海浜公園 東京ゲートブリッジは停車せず走行演出として通過。若洲駐車場は6:00～22:00で、一部工事情報を当日確認。 東京港・水辺",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "潮風公園:20分／東京ゲートブリッジ:0分／若洲海浜公園:45分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 67,
+      "certainty": 4,
+      "maxMinutes": 145,
+      "scenarioScores": {
+        "weekdayNight90": 78,
+        "lateNight120": 82,
+        "rain": 62,
+        "aircraft": 60,
+        "seaPort": 86,
+        "factoryNight": 61,
+        "quiet": 51,
+        "holidayHalfDay": 54
+      },
+      "improvementState": "差替え済",
+      "routeType": "走行演出あり"
+    },
+    "feasibility": {
+      "score": 69,
+      "minMinutes": 105,
+      "medianMinutes": 125,
+      "maxMinutes": 145,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "若洲海浜公園",
+        "time": "22:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "22:00までに「若洲海浜公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "若洲海浜公園",
+      "closingTime": "22:00",
+      "latestRecommendedDeparture": "20:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "潮風公園を省略 → 若洲海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "潮風公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "イベント・工事による部分閉鎖を当日確認。集会や騒音行為は禁止。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "東京ゲートブリッジ",
+        "role": "景観転換",
+        "firstFiveMinutes": "停車しない。走行中に橋と東京港の高度変化を味わう",
+        "standardStayMinutes": 0,
+        "maximumStayMinutes": 0,
+        "parkingFlow": "停車禁止・走行演出",
+        "skipCondition": "渋滞・通行規制時は省略",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "若洲海浜公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "東京都立若洲海浜公園駐車場322台・有料",
+        "skipCondition": "江東区立若洲公園はリニューアル工事中で、駐車場の一部・キャンプ場・貸自転車等が利用休止。強風時は滞在短縮。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 68,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・都市夜景 → 海・港 → 海・港 → 海・港",
+      "drivingDirection": "東京ゲートブリッジを停車せず通過"
+    }
   },
   {
     "id": "R005",
@@ -111,13 +457,108 @@
     "quality": 80,
     "diversity": 79,
     "intent": "埋立地に生まれた湿地、廃棄物処分場から育てた森、巨大橋と海という東京港の環境変化を順に読む。",
-    "dwell": "東京港野鳥公園:25分／海の森公園:20分／若洲海浜公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "17:00に間に合わない時／満車時／22:00に間に合わない時／強風・高潮・増水時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%8B%A5%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E9%87%8E%E9%B3%A5%E5%85%AC%E5%9C%92%7C%E6%B5%B7%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
     "searchText": "東京港・環境再生ライン 湿地／埋立地再生／橋景観 昼専用 東京港野鳥公園 海の森公園 若洲海浜公園 昼専用。野鳥公園と海の森は17時まで。若洲駐車場は22時までだが、工事による一部利用休止を確認。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "東京港野鳥公園:25分／海の森公園:20分／若洲海浜公園:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 50,
+      "certainty": 4,
+      "maxMinutes": 210,
+      "scenarioScores": {
+        "weekdayNight90": 57,
+        "lateNight120": 55,
+        "rain": 52,
+        "aircraft": 48,
+        "seaPort": 48,
+        "factoryNight": 47,
+        "quiet": 51,
+        "holidayHalfDay": 45
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼専用"
+    },
+    "feasibility": {
+      "score": 72,
+      "minMinutes": 150,
+      "medianMinutes": 180,
+      "maxMinutes": 210,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "東京港野鳥公園",
+        "time": "17:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "17:00までに「東京港野鳥公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "東京港野鳥公園",
+      "closingTime": "17:00",
+      "latestRecommendedDeparture": "15:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "東京港野鳥公園を省略 → 若洲海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "東京港野鳥公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 25,
+        "parkingFlow": "あり・無料",
+        "skipCondition": "休園日を確認。夕方以降は使用不可。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "海の森公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・普通車268台・有料",
+        "skipCondition": "時間外は出庫不可。イベント・団体利用・公式ページの当日案内を確認。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "若洲海浜公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "東京都立若洲海浜公園駐車場322台・有料",
+        "skipCondition": "江東区立若洲公園はリニューアル工事中で、駐車場の一部・キャンプ場・貸自転車等が利用休止。強風時は滞在短縮。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 79,
+      "overusePenalty": 0,
+      "experienceTransition": "飛行機・海・港 → 海・港・都市夜景 → 海・港・都市夜景 → 海・港",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R006",
@@ -135,13 +576,108 @@
     "quality": 75,
     "diversity": 70,
     "intent": "低い目線の航空機→高所の港湾展望→24時間の島端Endingへ、景観高度と到達感を段階的に変える。",
-    "dwell": "京浜島つばさ公園:25分／川崎マリエン:25分／東扇島西公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫／車の経由地には不向き。合法駐車から徒歩のみ",
     "skipRule": "満車時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E4%BA%AC%E6%B5%9C%E5%B3%B6%E3%81%A4%E3%81%B0%E3%81%95%E5%85%AC%E5%9C%92%7C%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3",
     "searchText": "京浜島から東扇島西端へ 飛行機／高所展望／港の行き止まり 通常 京浜島つばさ公園 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ直行。 羽田・航空",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "京浜島つばさ公園:25分／川崎マリエン:25分／東扇島西公園:45分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 70,
+      "certainty": 4,
+      "maxMinutes": 170,
+      "scenarioScores": {
+        "weekdayNight90": 77,
+        "lateNight120": 81,
+        "rain": 61,
+        "aircraft": 85,
+        "seaPort": 85,
+        "factoryNight": 60,
+        "quiet": 51,
+        "holidayHalfDay": 60
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 63,
+      "minMinutes": 120,
+      "medianMinutes": 145,
+      "maxMinutes": 170,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 1,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "○",
+      "rain": "△",
+      "operationDecision": "深夜主力",
+      "shortPattern": "京浜島つばさ公園を省略 → 東扇島西公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "京浜島つばさ公園",
+        "role": "導入",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "あり・小規模有料",
+        "skipCondition": "台数が少ない。満車時の路上待機・路上駐車は禁止。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "川崎マリエン",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 25,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "最終入場、休館日、工事情報を当日確認。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "東扇島西公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "第1・第2駐車場 合計172台・有料・24時間",
+        "skipCondition": "土日祝・釣り時間帯は混雑。路上駐車・アイドリング禁止。臨時閉鎖を当日確認。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 70,
+      "overusePenalty": 9,
+      "experienceTransition": "飛行機・工場夜景 → 海・港・工場夜景 → 海・港・工場夜景 → 海・港・工場夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R008",
@@ -159,13 +695,74 @@
     "quality": 78,
     "diversity": 68,
     "intent": "横浜港大さん橋 → 本牧山頂公園 → 横浜港シンボルタワー の順に、景観と滞在強度を変化させる。",
-    "dwell": "横浜港大さん橋:20分／本牧山頂公園:25分／横浜港シンボルタワー:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E5%A4%A7%E3%81%95%E3%82%93%E6%A9%8B%7C%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92",
     "searchText": "本牧ふ頭の行き止まり 横浜港／ふ頭／船 通常 横浜港大さん橋 本牧山頂公園 横浜港シンボルタワー 季節別閉場時間に合わせる夕方専用。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "横浜港大さん橋:20分／本牧山頂公園:25分／横浜港シンボルタワー:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 58,
+      "certainty": 4,
+      "maxMinutes": 200,
+      "scenarioScores": {
+        "weekdayNight90": 64,
+        "lateNight120": 66,
+        "rain": 55,
+        "aircraft": 52,
+        "seaPort": 77,
+        "factoryNight": 52,
+        "quiet": 49,
+        "holidayHalfDay": 52
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 76,
+      "minMinutes": 150,
+      "medianMinutes": 175,
+      "maxMinutes": 200,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "横浜港シンボルタワー",
+        "time": "20:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "20:00までに「横浜港シンボルタワー」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "通常運用",
+      "shortPattern": "横浜港大さん橋を省略 → 横浜港シンボルタワー",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 68,
+      "overusePenalty": 3,
+      "experienceTransition": "海・港・都市夜景 → 海・港・工場夜景 → 海・港・工場夜景 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R009",
@@ -183,13 +780,74 @@
     "quality": 77,
     "diversity": 76,
     "intent": "本牧山頂公園 → 海の公園 → 野島公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "本牧山頂公園:25分／海の公園:20分／野島公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "臨時閉鎖・イベント混雑時／工事・閉鎖時／23:00に間に合わない時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%87%8E%E5%B3%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92%7C%E6%B5%B7%E3%81%AE%E5%85%AC%E5%9C%92",
     "searchText": "金沢シーサイド 人工海浜／島／静けさ 通常 本牧山頂公園 海の公園 野島公園 野島公園23時閉鎖。潮干狩り期は避ける。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "本牧山頂公園:25分／海の公園:20分／野島公園:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 66,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 70,
+        "lateNight120": 74,
+        "rain": 58,
+        "aircraft": 56,
+        "seaPort": 81,
+        "factoryNight": 58,
+        "quiet": 75,
+        "holidayHalfDay": 60
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 77,
+      "minMinutes": 170,
+      "medianMinutes": 195,
+      "maxMinutes": 220,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "野島公園",
+        "time": "23:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "23:00までに「野島公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "野島公園",
+      "closingTime": "23:00",
+      "latestRecommendedDeparture": "21:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "本牧山頂公園を省略 → 野島公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 76,
+      "overusePenalty": 3,
+      "experienceTransition": "海・港・工場夜景 → 海・港 → 海・港 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R025",
@@ -207,13 +865,108 @@
     "quality": 81,
     "diversity": 71,
     "intent": "平和島PA（上り） → 芝浦PA → 辰巳第一PA の順に、景観と滞在強度を変化させる。",
-    "dwell": "平和島PA（上り）:12分／芝浦PA:12分／辰巳第一PA:20分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "工事・閉鎖時／満車時／工事・閉鎖時",
     "family": "PA・高速",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%BE%B0%E5%B7%B3%E7%AC%AC%E4%B8%80PA&travelmode=driving&waypoints=%E5%B9%B3%E5%92%8C%E5%B3%B6PA%EF%BC%88%E4%B8%8A%E3%82%8A%EF%BC%89%7C%E8%8A%9D%E6%B5%A6PA",
     "searchText": "首都高ミニマム・ナイト pa／近距離／高架 高速方向制約 平和島pa（上り） 芝浦pa 辰巳第一pa 各paの臨時閉鎖確認。短時間休憩だけに限定。 pa・高速",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "平和島PA（上り）:12分／芝浦PA:12分／辰巳第一PA:20分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 67,
+      "certainty": 4,
+      "maxMinutes": 110,
+      "scenarioScores": {
+        "weekdayNight90": 87,
+        "lateNight120": 87,
+        "rain": 66,
+        "aircraft": 65,
+        "seaPort": 65,
+        "factoryNight": 62,
+        "quiet": 56,
+        "holidayHalfDay": 50
+      },
+      "improvementState": "維持",
+      "routeType": "高速方向制約"
+    },
+    "feasibility": {
+      "score": 70,
+      "minMinutes": 75,
+      "medianMinutes": 92,
+      "maxMinutes": 110,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 2,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "上り・下りを公式ルートで確認",
+      "lateNight": "○",
+      "rain": "○",
+      "operationDecision": "通常運用",
+      "shortPattern": "平和島PA（上り）を省略 → 辰巳第一PA",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "平和島PA（上り）",
+        "role": "導入",
+        "firstFiveMinutes": "進行方向を確認→トイレ・飲み物だけ済ませる",
+        "standardStayMinutes": 10,
+        "maximumStayMinutes": 20,
+        "parkingFlow": "あり・首都高PA",
+        "skipCondition": "上り線専用。短時間休憩に限定し、周回目的の走行はしない。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "芝浦PA",
+        "role": "景観転換",
+        "firstFiveMinutes": "進行方向を確認→トイレ・飲み物だけ済ませる",
+        "standardStayMinutes": 10,
+        "maximumStayMinutes": 20,
+        "parkingFlow": "あり・小規模",
+        "skipCondition": "閉鎖措置が入りやすい。満車時は通過し、待機しない。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "辰巳第一PA",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "進行方向を確認→トイレ・飲み物だけ済ませる",
+        "standardStayMinutes": 10,
+        "maximumStayMinutes": 20,
+        "parkingFlow": "あり・普通車29台",
+        "skipCondition": "夜間閉鎖や入口規制を確認。撮影・滞留・騒音行為は避ける。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 71,
+      "overusePenalty": 0,
+      "experienceTransition": "休息 → 海・港・都市夜景 → 海・港・都市夜景 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R037",
@@ -231,13 +984,74 @@
     "quality": 87,
     "diversity": 79,
     "intent": "木場公園 → 大島小松川公園 → 篠崎公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "木場公園:20分／大島小松川公園:20分／篠崎公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "臨時閉鎖・イベント混雑時",
     "family": "河川・多摩川",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%AF%A0%E5%B4%8E%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9C%A8%E5%A0%B4%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92",
     "searchText": "東東京・水辺ナイト 都市公園／河川／夜間 通常 木場公園 大島小松川公園 篠崎公園 24時間駐車場をつなぐ夜間用。木場公園の重複採用は湾岸から東東京へ切り替える休憩点として有効。 河川・多摩川",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "木場公園:20分／大島小松川公園:20分／篠崎公園:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 68,
+      "certainty": 4,
+      "maxMinutes": 210,
+      "scenarioScores": {
+        "weekdayNight90": 72,
+        "lateNight120": 76,
+        "rain": 60,
+        "aircraft": 58,
+        "seaPort": 83,
+        "factoryNight": 60,
+        "quiet": 77,
+        "holidayHalfDay": 62
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 88,
+      "minMinutes": 150,
+      "medianMinutes": 180,
+      "maxMinutes": 210,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 5,
+      "strongWindRisk": 2,
+      "planBDestination": "多摩川浅間神社",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "通常運用",
+      "shortPattern": "木場公園を省略 → 篠崎公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 79,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・自然 → 都市夜景・自然 → 都市夜景・自然 → 自然・休息",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R048",
@@ -255,13 +1069,74 @@
     "quality": 85,
     "diversity": 88,
     "intent": "木場公園 → 大島小松川公園 → 道の駅 いちかわ の順に、景観と滞在強度を変化させる。",
-    "dwell": "木場公園:20分／大島小松川公園:20分／道の駅 いちかわ:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "臨時閉鎖・イベント混雑時／22:00に間に合わない時",
     "family": "都市公園・休憩",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%81%93%E3%81%AE%E9%A7%85%20%E3%81%84%E3%81%A1%E3%81%8B%E3%82%8F&travelmode=driving&waypoints=%E6%9C%A8%E5%A0%B4%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92",
     "searchText": "東側・確実な休憩ルート 公園／道の駅／夜間 通常 木場公園 大島小松川公園 道の駅 いちかわ 木場・大島小松川の重複は、都心から外環方面へ段階的に休息を入れるため。 都市公園・休憩",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "木場公園:20分／大島小松川公園:20分／道の駅 いちかわ:35分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 66,
+      "certainty": 4,
+      "maxMinutes": 200,
+      "scenarioScores": {
+        "weekdayNight90": 74,
+        "lateNight120": 77,
+        "rain": 61,
+        "aircraft": 59,
+        "seaPort": 59,
+        "factoryNight": 61,
+        "quiet": 78,
+        "holidayHalfDay": 55
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 85,
+      "minMinutes": 140,
+      "medianMinutes": 170,
+      "maxMinutes": 200,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "道の駅 いちかわ",
+        "time": "22:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 2,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "22:00までに「道の駅 いちかわ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "道の駅 いちかわ",
+      "closingTime": "22:00",
+      "latestRecommendedDeparture": "20:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "木場公園を省略 → 道の駅 いちかわ",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 88,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・自然 → 都市夜景・自然 → 都市夜景・自然 → その他",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R049",
@@ -279,13 +1154,74 @@
     "quality": 83,
     "diversity": 58,
     "intent": "足湯で旅を始め、多摩川河口を歩き、川を越えて川崎港の工場夜景を高所から見る。",
-    "dwell": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／ソラムナード羽田緑地:25分／川崎マリエン:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／車の経由地には不向き。合法駐車から徒歩のみ",
     "skipRule": "23:30に間に合わない時／満車時／強風・高潮・増水時／工事・閉鎖時／工事・閉鎖時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
     "searchText": "羽田河口から川崎港へ 足湯／河口／工場夜景 通常 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 川崎マリエン hic p1に駐車し、足湯とソラムナードは徒歩連結。川崎マリエン展望室は21時まで。 川崎・工場夜景",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／ソラムナード羽田緑地:25分／川崎マリエン:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 67,
+      "certainty": 4,
+      "maxMinutes": 135,
+      "scenarioScores": {
+        "weekdayNight90": 81,
+        "lateNight120": 83,
+        "rain": 63,
+        "aircraft": 61,
+        "seaPort": 62,
+        "factoryNight": 88,
+        "quiet": 52,
+        "holidayHalfDay": 47
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 64,
+      "minMinutes": 90,
+      "medianMinutes": 112,
+      "maxMinutes": 135,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "time": "23:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 1,
+      "strongWindRisk": 5,
+      "planBDestination": "川崎マリエン",
+      "failureConditions": "23:30までに「HANEDA INNOVATION CITY 足湯スカイデッキ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+      "closingTime": "23:30",
+      "latestRecommendedDeparture": "22:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "HANEDA INNOVATION CITY 足湯スカイデッキを省略 → 川崎マリエン",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 58,
+      "overusePenalty": 24,
+      "experienceTransition": "飛行機・都市夜景 → 飛行機・海・港 → 飛行機・海・港 → 海・港・工場夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R050",
@@ -303,13 +1239,74 @@
     "quality": 77,
     "diversity": 71,
     "intent": "鶴見の大池から川崎北部の森林へ入り、最後に多摩丘陵の展望へ上がる地形変化ルート。",
-    "dwell": "県立三ツ池公園:20分／県立東高根森林公園:45分／生田緑地・枡形山展望台:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／工事・閉鎖時／19:00に間に合わない時／22:00に間に合わない時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%94%9F%E7%94%B0%E7%B7%91%E5%9C%B0%E3%83%BB%E6%9E%A1%E5%BD%A2%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E4%B8%89%E3%83%84%E6%B1%A0%E5%85%AC%E5%9C%92%7C%E7%9C%8C%E7%AB%8B%E6%9D%B1%E9%AB%98%E6%A0%B9%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92",
     "searchText": "鶴見から生田へ丘陵公園線 池／森林／高台展望 昼専用 県立三ツ池公園 県立東高根森林公園 生田緑地・枡形山展望台 昼～夕方専用。東高根森林公園は19時まで。枡形山展望台は日没前の到着を推奨。 森林・高台",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "県立三ツ池公園:20分／県立東高根森林公園:45分／生田緑地・枡形山展望台:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 56,
+      "certainty": 4,
+      "maxMinutes": 210,
+      "scenarioScores": {
+        "weekdayNight90": 60,
+        "lateNight120": 60,
+        "rain": 53,
+        "aircraft": 49,
+        "seaPort": 49,
+        "factoryNight": 49,
+        "quiet": 74,
+        "holidayHalfDay": 52
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼専用"
+    },
+    "feasibility": {
+      "score": 68,
+      "minMinutes": 150,
+      "medianMinutes": 180,
+      "maxMinutes": 210,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "県立東高根森林公園",
+        "time": "19:00",
+        "position": 2
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "19:00までに「県立東高根森林公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "県立東高根森林公園",
+      "closingTime": "19:00",
+      "latestRecommendedDeparture": "17:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "県立三ツ池公園を省略 → 生田緑地・枡形山展望台",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 71,
+      "overusePenalty": 0,
+      "experienceTransition": "自然 → 自然・Story → 自然・Story → 都市夜景・自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R055",
@@ -327,13 +1324,74 @@
     "quality": 73,
     "diversity": 79,
     "intent": "県立三ツ池公園 → 富士見公園 → 御幸公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "県立三ツ池公園:20分／富士見公園:20分／御幸公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫／公式駐車場の満空確認後に入庫",
     "skipRule": "満車時／工事・閉鎖時／工事・閉鎖時／強風・高潮・増水時",
     "family": "河川・多摩川",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%BE%A1%E5%B9%B8%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E4%B8%89%E3%83%84%E6%B1%A0%E5%85%AC%E5%9C%92%7C%E5%AF%8C%E5%A3%AB%E8%A6%8B%E5%85%AC%E5%9C%92",
     "searchText": "鶴見・川崎近距離回復 池／都市公園／河川 通常 県立三ツ池公園 富士見公園 御幸公園 三ツ池公園駐車場閉鎖時刻を確認。 河川・多摩川",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "県立三ツ池公園:20分／富士見公園:20分／御幸公園:45分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 66,
+      "certainty": 4,
+      "maxMinutes": 170,
+      "scenarioScores": {
+        "weekdayNight90": 70,
+        "lateNight120": 70,
+        "rain": 57,
+        "aircraft": 55,
+        "seaPort": 80,
+        "factoryNight": 54,
+        "quiet": 77,
+        "holidayHalfDay": 62
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 68,
+      "minMinutes": 120,
+      "medianMinutes": 145,
+      "maxMinutes": 170,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 2,
+      "planBDestination": "多摩川浅間神社",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "通常運用",
+      "shortPattern": "県立三ツ池公園を省略 → 御幸公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 79,
+      "overusePenalty": 0,
+      "experienceTransition": "自然 → 工場夜景・都市夜景 → 工場夜景・都市夜景 → 自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R056",
@@ -351,13 +1409,74 @@
     "quality": 91,
     "diversity": 94,
     "intent": "港湾最奥の屋内施設から都心港、最後に本牧ふ頭の端へ進み、横浜港のスケールを段階的に広げる。",
-    "dwell": "ふれーゆ:75分／横浜港大さん橋:25分／横浜港シンボルタワー:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "全地点に公式・専用駐車場",
     "skipRule": "ふれーゆ休館・最終入庫超過時は大さん橋から開始／シンボルタワー閉場時は大さん橋で終了",
     "family": "横浜港・丘陵",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%AB%98%E9%BD%A2%E8%80%85%E4%BF%9D%E9%A4%8A%E7%A0%94%E4%BF%AE%E6%96%BD%E8%A8%AD%20%E3%81%B5%E3%82%8C%E3%83%BC%E3%82%86%7C%E6%A8%AA%E6%B5%9C%E6%B8%AF%E5%A4%A7%E3%81%95%E3%82%93%E6%A9%8B",
     "searchText": "鶴見から本牧・港の三景 雨天港湾展望／都市港／行き止まり 昼～夕方専用 横浜市高齢者保養研修施設 ふれーゆ 横浜港大さん橋 横浜港シンボルタワー 昼～夕方専用。ふれーゆの最終入庫とシンボルタワーの季節閉場を優先。雨天時はふれーゆ滞在を長くする。 横浜港・丘陵",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "ふれーゆ:75分／横浜港大さん橋:25分／横浜港シンボルタワー:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 68,
+      "certainty": 4,
+      "maxMinutes": 240,
+      "scenarioScores": {
+        "weekdayNight90": 67,
+        "lateNight120": 67,
+        "rain": 81,
+        "aircraft": 55,
+        "seaPort": 80,
+        "factoryNight": 83,
+        "quiet": 56,
+        "holidayHalfDay": 57
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼～夕方専用"
+    },
+    "feasibility": {
+      "score": 81,
+      "minMinutes": 150,
+      "medianMinutes": 180,
+      "maxMinutes": 210,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "多摩川浅間神社",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "通常運用",
+      "shortPattern": "横浜港大さん橋を省略 → 久良岐公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 94,
+      "overusePenalty": 0,
+      "experienceTransition": "屋内港湾展望 → 都市港の水面 → 本牧ふ頭の行き止まり",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R059",
@@ -375,13 +1494,74 @@
     "quality": 94,
     "diversity": 93,
     "intent": "川崎港を低い運河目線、地上の休憩、高所展望の三段階で体験する。",
-    "dwell": "ちどり公園:20分／東扇島中公園:15分／川崎マリエン:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "ちどり公園公式駐車→マリエン1回駐車で中公園を徒歩連結",
     "skipRule": "17時以降はちどり公園を省略／マリエン展望室入館20:30超過時は中公園で終了",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3&travelmode=driving&waypoints=%E3%81%A1%E3%81%A9%E3%82%8A%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E6%89%87%E5%B3%B6%E4%B8%AD%E5%85%AC%E5%9C%92",
     "searchText": "川崎港・運河から高所へ 運河／芝生休憩／高所港湾展望 昼～夕方専用 ちどり公園 東扇島中公園 川崎マリエン ちどり公園の駐車場は18時まで。東扇島中公園と川崎マリエンは1回駐車で徒歩連結。 川崎・工場夜景",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "ちどり公園:20分／東扇島中公園:15分／川崎マリエン:35分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 71,
+      "certainty": 4,
+      "maxMinutes": 160,
+      "scenarioScores": {
+        "weekdayNight90": 76,
+        "lateNight120": 76,
+        "rain": 63,
+        "aircraft": 60,
+        "seaPort": 85,
+        "factoryNight": 88,
+        "quiet": 58,
+        "holidayHalfDay": 59
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼～夕方専用"
+    },
+    "feasibility": {
+      "score": 74,
+      "minMinutes": 100,
+      "medianMinutes": 125,
+      "maxMinutes": 150,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "平和の森公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "通常運用",
+      "shortPattern": "大師公園を省略 → 夢見ヶ崎動物公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 93,
+      "overusePenalty": 0,
+      "experienceTransition": "低い運河展望 → 芝生と港湾休憩 → 地上51mの高所展望",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R073",
@@ -399,13 +1579,74 @@
     "quality": 82,
     "diversity": 91,
     "intent": "武蔵野の森公園 → 府中の森公園 → 桜ヶ丘公園 ゆうひの丘 の順に、景観と滞在強度を変化させる。",
-    "dwell": "武蔵野の森公園:25分／府中の森公園:18分／桜ヶ丘公園 ゆうひの丘:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "工事・閉鎖時／臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A1%9C%E3%83%B6%E4%B8%98%E5%85%AC%E5%9C%92%20%E3%82%86%E3%81%86%E3%81%B2%E3%81%AE%E4%B8%98&travelmode=driving&waypoints=%E6%AD%A6%E8%94%B5%E9%87%8E%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%7C%E5%BA%9C%E4%B8%AD%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
     "searchText": "調布航空ナイト 飛行機／航空史／24時間駐車 通常 武蔵野の森公園 府中の森公園 桜ヶ丘公園 ゆうひの丘 武蔵野の森・府中の森は駐車場24時間。北南プロムナードは16:30閉鎖、ゆうひの丘は20時閉鎖。 羽田・航空",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "武蔵野の森公園:25分／府中の森公園:18分／桜ヶ丘公園 ゆうひの丘:35分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 65,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 74,
+        "lateNight120": 77,
+        "rain": 61,
+        "aircraft": 84,
+        "seaPort": 59,
+        "factoryNight": 61,
+        "quiet": 54,
+        "holidayHalfDay": 53
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 84,
+      "minMinutes": 160,
+      "medianMinutes": 190,
+      "maxMinutes": 220,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "桜ヶ丘公園 ゆうひの丘",
+        "time": "20:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 2,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "20:00までに「桜ヶ丘公園 ゆうひの丘」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "桜ヶ丘公園 ゆうひの丘",
+      "closingTime": "20:00",
+      "latestRecommendedDeparture": "18:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "武蔵野の森公園を省略 → 桜ヶ丘公園 ゆうひの丘",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 91,
+      "overusePenalty": 0,
+      "experienceTransition": "飛行機 → 休息 → 休息 → 都市夜景・自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R080",
@@ -423,13 +1664,74 @@
     "quality": 88,
     "diversity": 91,
     "intent": "深大寺の歴史と植物から、調布飛行場の開けた空へ切り替え、24時間駐車の府中の森で終了する。",
-    "dwell": "神代植物公園・深大寺:45分／武蔵野の森公園:25分／府中の森公園:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "臨時閉鎖・イベント混雑時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%BA%9C%E4%B8%AD%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%A5%9E%E4%BB%A3%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92%E3%83%BB%E6%B7%B1%E5%A4%A7%E5%AF%BA%7C%E6%AD%A6%E8%94%B5%E9%87%8E%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92",
     "searchText": "深大寺から調布飛行場へ 寺社story／植物／飛行場 昼専用 神代植物公園・深大寺 武蔵野の森公園 府中の森公園 昼～夕方専用。植物園閉園後は深大寺門前のみとし、武蔵野の森公園ではプロムナード16:30閉鎖に注意。 羽田・航空",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "神代植物公園・深大寺:45分／武蔵野の森公園:25分／府中の森公園:35分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 60,
+      "certainty": 4,
+      "maxMinutes": 200,
+      "scenarioScores": {
+        "weekdayNight90": 66,
+        "lateNight120": 65,
+        "rain": 57,
+        "aircraft": 54,
+        "seaPort": 54,
+        "factoryNight": 54,
+        "quiet": 63,
+        "holidayHalfDay": 66
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼専用"
+    },
+    "feasibility": {
+      "score": 91,
+      "minMinutes": 145,
+      "medianMinutes": 172,
+      "maxMinutes": 200,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 5,
+      "strongWindRisk": 2,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "通常運用",
+      "shortPattern": "神代植物公園・深大寺を省略 → 府中の森公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 91,
+      "overusePenalty": 0,
+      "experienceTransition": "自然・Story → 飛行機 → 飛行機 → 休息",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R089",
@@ -447,13 +1749,74 @@
     "quality": 81,
     "diversity": 68,
     "intent": "磯子海づり施設 → 本牧山頂公園 → 横浜港シンボルタワー の順に、景観と滞在強度を変化させる。",
-    "dwell": "磯子海づり施設:18分／本牧山頂公園:25分／横浜港シンボルタワー:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "19:00に間に合わない時／臨時閉鎖・イベント混雑時／20:00に間に合わない時／工事・閉鎖時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E6%B8%AF%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E7%A3%AF%E5%AD%90%E6%B5%B7%E3%81%A5%E3%82%8A%E6%96%BD%E8%A8%AD%7C%E6%9C%AC%E7%89%A7%E5%B1%B1%E9%A0%82%E5%85%AC%E5%9C%92",
     "searchText": "根岸湾工業景観 工業湾岸／高台／港 通常 磯子海づり施設 本牧山頂公園 横浜港シンボルタワー 各施設の閉場時刻を確認。工場岸壁・私道へ入らない。 川崎・工場夜景",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "磯子海づり施設:18分／本牧山頂公園:25分／横浜港シンボルタワー:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 62,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 64,
+        "lateNight120": 66,
+        "rain": 55,
+        "aircraft": 52,
+        "seaPort": 77,
+        "factoryNight": 81,
+        "quiet": 49,
+        "holidayHalfDay": 52
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 78,
+      "minMinutes": 160,
+      "medianMinutes": 190,
+      "maxMinutes": 220,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "磯子海づり施設",
+        "time": "19:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "19:00までに「磯子海づり施設」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "磯子海づり施設",
+      "closingTime": "19:00",
+      "latestRecommendedDeparture": "17:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "磯子海づり施設を省略 → 横浜港シンボルタワー",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 68,
+      "overusePenalty": 3,
+      "experienceTransition": "海・港・工場夜景 → 海・港・工場夜景 → 海・港・工場夜景 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R093",
@@ -471,13 +1834,74 @@
     "quality": 78,
     "diversity": 79,
     "intent": "城北中央公園 → 舎人公園 → 東綾瀬公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "城北中央公園:20分／舎人公園:18分／東綾瀬公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／臨時閉鎖・イベント混雑時",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E7%B6%BE%E7%80%AC%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%9F%8E%E5%8C%97%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%7C%E8%88%8E%E4%BA%BA%E5%85%AC%E5%9C%92",
     "searchText": "東京北東24時間公園線 遺跡／池／夜間 通常 城北中央公園 舎人公園 東綾瀬公園 住宅地への騒音配慮。イベント時の満車は次地点へ進む。 story・文化",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "城北中央公園:20分／舎人公園:18分／東綾瀬公園:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 59,
+      "certainty": 4,
+      "maxMinutes": 210,
+      "scenarioScores": {
+        "weekdayNight90": 71,
+        "lateNight120": 74,
+        "rain": 59,
+        "aircraft": 56,
+        "seaPort": 57,
+        "factoryNight": 58,
+        "quiet": 51,
+        "holidayHalfDay": 45
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 71,
+      "minMinutes": 150,
+      "medianMinutes": 180,
+      "maxMinutes": 210,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 2,
+      "planBDestination": "平和の森公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "通常運用",
+      "shortPattern": "城北中央公園を省略 → 東綾瀬公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 79,
+      "overusePenalty": 0,
+      "experienceTransition": "自然・Story → 都市夜景・自然 → 都市夜景・自然 → 自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R097",
@@ -496,13 +1920,74 @@
     "quality": 88,
     "diversity": 77,
     "intent": "高洲海浜公園 → 浦安市総合公園 → 葛西臨海公園 → 潮風公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "高洲海浜公園:25分／浦安市総合公園:20分／葛西臨海公園:20分／潮風公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約80分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "強風・高潮・増水時／臨時閉鎖・イベント混雑時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%BD%AE%E9%A2%A8%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E9%AB%98%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E6%B5%A6%E5%AE%89%E5%B8%82%E7%B7%8F%E5%90%88%E5%85%AC%E5%9C%92%7C%E8%91%9B%E8%A5%BF%E8%87%A8%E6%B5%B7%E5%85%AC%E5%9C%92",
     "searchText": "浦安ベイ・24時間海辺線 海／芝生／都市夜景 通常 高洲海浜公園 浦安市総合公園 葛西臨海公園 潮風公園 高洲と浦安総合は終日駐車可能。海風が強い日は各地点の滞在を短縮。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 80,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "高洲海浜公園:25分／浦安市総合公園:20分／葛西臨海公園:20分／潮風公園:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 67,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 77,
+        "lateNight120": 82,
+        "rain": 63,
+        "aircraft": 61,
+        "seaPort": 86,
+        "factoryNight": 64,
+        "quiet": 52,
+        "holidayHalfDay": 54
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 88,
+      "minMinutes": 150,
+      "medianMinutes": 185,
+      "maxMinutes": 220,
+      "stopCount": 4,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 5,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "○",
+      "rain": "△",
+      "operationDecision": "深夜主力",
+      "shortPattern": "高洲海浜公園を省略 → 潮風公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 77,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・都市夜景 → 海・港・自然 → 海・港・自然 → 海・港・自然 → 海・港・自然 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R113",
@@ -520,13 +2005,74 @@
     "quality": 74,
     "diversity": 71,
     "intent": "県立東高根森林公園 → 生田緑地・枡形山展望台 → 夢見ヶ崎動物公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "県立東高根森林公園:45分／生田緑地・枡形山展望台:25分／夢見ヶ崎動物公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "19:00に間に合わない時／22:00に間に合わない時／満車時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A2%E8%A6%8B%E3%83%B6%E5%B4%8E%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%9C%8C%E7%AB%8B%E6%9D%B1%E9%AB%98%E6%A0%B9%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%7C%E7%94%9F%E7%94%B0%E7%B7%91%E5%9C%B0%E3%83%BB%E6%9E%A1%E5%BD%A2%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0",
     "searchText": "川崎丘陵・古代と現代 遺跡／森林／展望 通常 県立東高根森林公園 生田緑地・枡形山展望台 夢見ヶ崎動物公園 東高根19時閉場。日没前に枡形山へ上がり、最後は近距離夜景。 森林・高台",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "県立東高根森林公園:45分／生田緑地・枡形山展望台:25分／夢見ヶ崎動物公園:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 58,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 64,
+        "lateNight120": 66,
+        "rain": 54,
+        "aircraft": 52,
+        "seaPort": 52,
+        "factoryNight": 52,
+        "quiet": 74,
+        "holidayHalfDay": 51
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 66,
+      "minMinutes": 150,
+      "medianMinutes": 185,
+      "maxMinutes": 220,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "県立東高根森林公園",
+        "time": "19:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "平和の森公園",
+      "failureConditions": "19:00までに「県立東高根森林公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "県立東高根森林公園",
+      "closingTime": "19:00",
+      "latestRecommendedDeparture": "17:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "県立東高根森林公園を省略 → 夢見ヶ崎動物公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 71,
+      "overusePenalty": 0,
+      "experienceTransition": "自然・Story → 都市夜景・自然 → 都市夜景・自然 → 都市夜景・自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R119",
@@ -544,13 +2090,74 @@
     "quality": 85,
     "diversity": 88,
     "intent": "古建築の日本庭園→近代競馬場跡→横浜南部の丘陵へ南下し、駐車と進行方向を安定させる。",
-    "dwell": "三溪園:45分／根岸森林公園:18分／金沢自然公園:75分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫",
     "skipRule": "17:00に間に合わない時／臨時閉鎖・イベント混雑時",
     "family": "森林・高台",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%87%91%E6%B2%A2%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E4%B8%89%E6%BA%AA%E5%9C%92%7C%E6%A0%B9%E5%B2%B8%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92",
     "searchText": "横浜・庭園と丘陵三層 日本庭園／競馬場跡／丘陵 昼専用 三溪園 根岸森林公園 金沢自然公園 午前開始の昼専用。三溪園の最終入園16:30と金沢自然公園の入庫締切を優先。 森林・高台",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "三溪園:45分／根岸森林公園:18分／金沢自然公園:75分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 57,
+      "certainty": 4,
+      "maxMinutes": 250,
+      "scenarioScores": {
+        "weekdayNight90": 60,
+        "lateNight120": 58,
+        "rain": 54,
+        "aircraft": 50,
+        "seaPort": 50,
+        "factoryNight": 49,
+        "quiet": 78,
+        "holidayHalfDay": 55
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼専用"
+    },
+    "feasibility": {
+      "score": 85,
+      "minMinutes": 180,
+      "medianMinutes": 215,
+      "maxMinutes": 250,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "三溪園",
+        "time": "17:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 2,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "17:00までに「三溪園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "三溪園",
+      "closingTime": "16:30",
+      "latestRecommendedDeparture": "15:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "三溪園を省略 → 金沢自然公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 88,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・自然 → 都市夜景・Story → 都市夜景・Story → 海・港・自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R121",
@@ -569,13 +2176,74 @@
     "quality": 78,
     "diversity": 76,
     "intent": "葛西海浜公園 → 葛西臨海公園 → 東品川海上公園 → 城南島海浜公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "葛西海浜公園:20分／葛西臨海公園:20分／東品川海上公園:45分／城南島海浜公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約80分",
     "parkingMode": "専用・公式駐車場へ直接入庫／車の経由地には不向き。合法駐車から徒歩のみ",
     "skipRule": "臨時閉鎖・イベント混雑時／満車時／工事・閉鎖時／21:00に間に合わない時／工事・閉鎖時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E8%91%9B%E8%A5%BF%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E8%91%9B%E8%A5%BF%E8%87%A8%E6%B5%B7%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E5%93%81%E5%B7%9D%E6%B5%B7%E4%B8%8A%E5%85%AC%E5%9C%92",
     "searchText": "湾岸・干潟から運河へ 干潟／海／運河 通常 葛西海浜公園 葛西臨海公園 東品川海上公園 城南島海浜公園 葛西駐車場混雑時は高洲海浜公園へ差替え。東品川は時間貸し駐車場利用。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 80,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "葛西海浜公園:20分／葛西臨海公園:20分／東品川海上公園:45分／城南島海浜公園:40分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 62,
+      "certainty": 4,
+      "maxMinutes": 220,
+      "scenarioScores": {
+        "weekdayNight90": 70,
+        "lateNight120": 74,
+        "rain": 58,
+        "aircraft": 56,
+        "seaPort": 81,
+        "factoryNight": 58,
+        "quiet": 50,
+        "holidayHalfDay": 53
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 66,
+      "minMinutes": 150,
+      "medianMinutes": 185,
+      "maxMinutes": 220,
+      "stopCount": 4,
+      "hardGate": {
+        "place": "城南島海浜公園",
+        "time": "21:00",
+        "position": 4
+      },
+      "minimumParkingCertainty": 1,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "21:00までに「城南島海浜公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "城南島海浜公園",
+      "closingTime": "21:00",
+      "latestRecommendedDeparture": "19:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "葛西海浜公園を省略 → 城南島海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 76,
+      "overusePenalty": 9,
+      "experienceTransition": "海・港・自然 → 海・港・自然 → 海・港・自然 → 海・港・自然 → 海・港・自然 → 飛行機・海・港",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R131",
@@ -594,13 +2262,74 @@
     "quality": 82,
     "diversity": 100,
     "intent": "東品川海上公園 → 道の駅 いちかわ → 高洲海浜公園 → 葛西海浜公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "東品川海上公園:45分／道の駅 いちかわ:18分／高洲海浜公園:25分／葛西海浜公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約80分",
     "parkingMode": "車の経由地には不向き。合法駐車から徒歩のみ／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／工事・閉鎖時／22:00に間に合わない時／強風・高潮・増水時／臨時閉鎖・イベント混雑時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E8%91%9B%E8%A5%BF%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%9D%B1%E5%93%81%E5%B7%9D%E6%B5%B7%E4%B8%8A%E5%85%AC%E5%9C%92%7C%E9%81%93%E3%81%AE%E9%A7%85%20%E3%81%84%E3%81%A1%E3%81%8B%E3%82%8F%7C%E9%AB%98%E6%B4%B2%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92",
     "searchText": "東京近距離・運河と市場 運河／道の駅／海 通常 東品川海上公園 道の駅 いちかわ 高洲海浜公園 葛西海浜公園 東品川は専用駐車場なし。葛西の海浜立入時間・潮位を確認。 東京港・水辺",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 80,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "東品川海上公園:45分／道の駅 いちかわ:18分／高洲海浜公園:25分／葛西海浜公園:45分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 67,
+      "certainty": 4,
+      "maxMinutes": 240,
+      "scenarioScores": {
+        "weekdayNight90": 75,
+        "lateNight120": 79,
+        "rain": 63,
+        "aircraft": 60,
+        "seaPort": 86,
+        "factoryNight": 63,
+        "quiet": 55,
+        "holidayHalfDay": 56
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 74,
+      "minMinutes": 170,
+      "medianMinutes": 205,
+      "maxMinutes": 240,
+      "stopCount": 4,
+      "hardGate": {
+        "place": "道の駅 いちかわ",
+        "time": "22:00",
+        "position": 2
+      },
+      "minimumParkingCertainty": 1,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "22:00までに「道の駅 いちかわ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "道の駅 いちかわ",
+      "closingTime": "22:00",
+      "latestRecommendedDeparture": "20:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "東品川海上公園を省略 → 葛西海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 100,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・自然 → その他 → その他 → 海・港・都市夜景 → 海・港・都市夜景 → 海・港・自然",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R133",
@@ -618,13 +2347,108 @@
     "quality": 84,
     "diversity": 52,
     "intent": "HIC P1に車を置いたまま、足湯とソラムナードを徒歩で連結。2地点間の再駐車は不要。",
-    "dwell": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／ソラムナード羽田緑地:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／HIC P1に1回駐車したまま徒歩連結",
     "skipRule": "23:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
     "searchText": "羽田・足湯から河口へ 飛行機／足湯／河口 共有駐車・徒歩連結 haneda innovation city 足湯スカイデッキ ソラムナード羽田緑地 羽田空港 第3ターミナル展望デッキ 平日夜の主力。hic p1を利用し、ソラムナードは徒歩を含む。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／ソラムナード羽田緑地:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 69,
+      "certainty": 4,
+      "maxMinutes": 110,
+      "scenarioScores": {
+        "weekdayNight90": 84,
+        "lateNight120": 84,
+        "rain": 64,
+        "aircraft": 88,
+        "seaPort": 63,
+        "factoryNight": 59,
+        "quiet": 53,
+        "holidayHalfDay": 55
+      },
+      "improvementState": "役割明記",
+      "routeType": "共有駐車・徒歩連結"
+    },
+    "feasibility": {
+      "score": 79,
+      "minMinutes": 70,
+      "medianMinutes": 90,
+      "maxMinutes": 110,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "time": "23:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 5,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "23:30までに「HANEDA INNOVATION CITY 足湯スカイデッキ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+      "closingTime": "23:30",
+      "latestRecommendedDeparture": "22:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "HANEDA INNOVATION CITY 足湯スカイデッキを省略 → 羽田空港 第3ターミナル展望デッキ",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を確認→足湯の空き確認→飛行機方向を決める",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "HIC P1 190台・24時間／P2 18台・7:00～23:00",
+        "skipCondition": "貸切利用時は入場不可。食事は禁止。深夜帯は静粛にし、P2は営業時間外出庫不可。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "ソラムナード羽田緑地",
+        "role": "景観転換",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "専用駐車場なし／HIC P1等の合法駐車場から徒歩",
+        "skipCondition": "路上駐車禁止。HICなど合法駐車場から徒歩。強風・高潮・増水時は利用を避ける。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "羽田空港 第3ターミナル展望デッキ",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 30,
+        "maximumStayMinutes": 50,
+        "parkingFlow": "P5 2,910台・24時間・有料",
+        "skipCondition": "保安・悪天候・イベントで一時閉鎖の場合あり。多客期は駐車場混雑。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "役割明記",
+      "diversity": 52,
+      "overusePenalty": 30,
+      "experienceTransition": "飛行機・都市夜景 → 飛行機・海・港 → 飛行機・海・港 → 飛行機・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R134",
@@ -642,13 +2466,74 @@
     "quality": 80,
     "diversity": 59,
     "intent": "T1・T2・T3は駐車場混雑時に無料連絡バスを利用し、ターミナルごとの再入庫を避ける。",
-    "dwell": "羽田空港 第1ターミナル展望デッキ:25分／羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "P3/P4等に1回駐車し、ターミナル間は無料連絡バス",
     "skipRule": "22:00に間に合わない時／工事・閉鎖時／23:00に間に合わない時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%EF%BC%8FFLIGHT%20DECK%20TOKYO",
     "searchText": "羽田3ターミナル比較 飛行機／空港建築／雨天 空港内移動 羽田空港 第1ターミナル展望デッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ p3/p4等に1回駐車し、ターミナル間は無料連絡バスを基本とする。駐車場を3回入り直さない。 羽田・航空",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "羽田空港 第1ターミナル展望デッキ:25分／羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 75,
+      "certainty": 4,
+      "maxMinutes": 150,
+      "scenarioScores": {
+        "weekdayNight90": 76,
+        "lateNight120": 80,
+        "rain": 83,
+        "aircraft": 84,
+        "seaPort": 84,
+        "factoryNight": 59,
+        "quiet": 58,
+        "holidayHalfDay": 77
+      },
+      "improvementState": "役割明記",
+      "routeType": "空港内移動"
+    },
+    "feasibility": {
+      "score": 75,
+      "minMinutes": 100,
+      "medianMinutes": 125,
+      "maxMinutes": 150,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "羽田空港 第1ターミナル展望デッキ",
+        "time": "22:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "22:00までに「羽田空港 第1ターミナル展望デッキ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "羽田空港 第1ターミナル展望デッキ",
+      "closingTime": "20:00",
+      "latestRecommendedDeparture": "18:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "○",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "羽田空港 第1ターミナル展望デッキを省略 → 羽田空港 第3ターミナル展望デッキ",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "役割明記",
+      "diversity": 59,
+      "overusePenalty": 12,
+      "experienceTransition": "飛行機・海・港 → 飛行機・都市夜景 → 飛行機・都市夜景 → 飛行機・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R135",
@@ -666,13 +2551,74 @@
     "quality": 79,
     "diversity": 67,
     "intent": "平和の森公園 → 大森ふるさとの浜辺公園 → 城南島海浜公園 の順に、景観と滞在強度を変化させる。",
-    "dwell": "平和の森公園:20分／大森ふるさとの浜辺公園:20分／城南島海浜公園:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／臨時閉鎖・イベント混雑時／21:00に間に合わない時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%9F%8E%E5%8D%97%E5%B3%B6%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%B9%B3%E5%92%8C%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92",
     "searchText": "大森・海苔の海辺線 平和story／人工海浜／飛行機 通常 平和の森公園 大森ふるさとの浜辺公園 城南島海浜公園 浜辺21時閉門。公園共用駐車場の混雑時は城南島へ直行。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "平和の森公園:20分／大森ふるさとの浜辺公園:20分／城南島海浜公園:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 130,
+      "scenarioScores": {
+        "weekdayNight90": 77,
+        "lateNight120": 77,
+        "rain": 61,
+        "aircraft": 84,
+        "seaPort": 84,
+        "factoryNight": 56,
+        "quiet": 61,
+        "holidayHalfDay": 80
+      },
+      "improvementState": "維持",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 68,
+      "minMinutes": 80,
+      "medianMinutes": 105,
+      "maxMinutes": 130,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "城南島海浜公園",
+        "time": "21:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "21:00までに「城南島海浜公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "城南島海浜公園",
+      "closingTime": "21:00",
+      "latestRecommendedDeparture": "19:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "平和の森公園を省略 → 城南島海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "維持",
+      "diversity": 67,
+      "overusePenalty": 12,
+      "experienceTransition": "自然・Story → 海・港・Story → 海・港・Story → 飛行機・海・港",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R136",
@@ -690,13 +2636,108 @@
     "quality": 84,
     "diversity": 61,
     "intent": "森ケ崎からHICへ車移動後、ソラムナード散歩と足湯をHIC P1の1回駐車で成立させる。",
-    "dwell": "森ケ崎公園:25分／ソラムナード羽田緑地:25分／HANEDA INNOVATION CITY 足湯スカイデッキ:25分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／HIC P1に1回駐車したまま徒歩連結",
     "skipRule": "21:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／23:30に間に合わない時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E6%A3%AE%E3%82%B1%E5%B4%8E%E5%85%AC%E5%9C%92%7C%E3%82%BD%E3%83%A9%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E7%BE%BD%E7%94%B0%E7%B7%91%E5%9C%B0",
     "searchText": "森ケ崎・屋上から足湯へ 屋上公園／飛行機／足湯 共有駐車・徒歩連結 森ケ崎公園 ソラムナード羽田緑地 haneda innovation city 足湯スカイデッキ 森ケ崎の閉園時刻がhard gate。最後は23:30まで。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "森ケ崎公園:25分／ソラムナード羽田緑地:25分／HANEDA INNOVATION CITY 足湯スカイデッキ:25分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 120,
+      "scenarioScores": {
+        "weekdayNight90": 82,
+        "lateNight120": 83,
+        "rain": 63,
+        "aircraft": 87,
+        "seaPort": 62,
+        "factoryNight": 60,
+        "quiet": 77,
+        "holidayHalfDay": 62
+      },
+      "improvementState": "役割明記",
+      "routeType": "共有駐車・徒歩連結"
+    },
+    "feasibility": {
+      "score": 77,
+      "minMinutes": 70,
+      "medianMinutes": 95,
+      "maxMinutes": 120,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "森ケ崎公園",
+        "time": "21:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 2,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "21:30までに「森ケ崎公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "森ケ崎公園",
+      "closingTime": "20:30",
+      "latestRecommendedDeparture": "19:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "森ケ崎公園を省略 → HANEDA INNOVATION CITY 足湯スカイデッキ",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "森ケ崎公園",
+        "role": "導入",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "あり・47台・30分100円",
+        "skipCondition": "利用時間外は入出庫不可。土日祝は入場待ちが発生しやすく、急ぐ場合は近隣民間駐車場へ切替。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "ソラムナード羽田緑地",
+        "role": "景観転換",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "専用駐車場なし／HIC P1等の合法駐車場から徒歩",
+        "skipCondition": "路上駐車禁止。HICなど合法駐車場から徒歩。強風・高潮・増水時は利用を避ける。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を確認→足湯の空き確認→飛行機方向を決める",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "HIC P1 190台・24時間／P2 18台・7:00～23:00",
+        "skipCondition": "貸切利用時は入場不可。食事は禁止。深夜帯は静粛にし、P2は営業時間外出庫不可。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "役割明記",
+      "diversity": 61,
+      "overusePenalty": 21,
+      "experienceTransition": "飛行機・海・港 → 飛行機・海・港 → 飛行機・海・港 → 飛行機・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R137",
@@ -714,13 +2755,108 @@
     "quality": 79,
     "diversity": 85,
     "intent": "六郷橋とガス橋は同じ河川敷でも、下流の橋景観・中流の芝生・高台の浅間神社という3視点で役割分離。",
-    "dwell": "多摩川六郷橋緑地:20分／多摩川ガス橋緑地:20分／多摩川浅間神社:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模。満車なら待たずに省略／専用・公式駐車場へ直接入庫",
     "skipRule": "満車時／19:30に間に合わない時／強風・高潮・増水時／工事・閉鎖時／16:00に間に合わない時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%9A%E6%91%A9%E5%B7%9D%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E5%85%AD%E9%83%B7%E6%A9%8B%E7%B7%91%E5%9C%B0%7C%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%AC%E3%82%B9%E6%A9%8B%E7%B7%91%E5%9C%B0",
     "searchText": "多摩川・休日ショート 河川敷／橋／高台 休日専用 多摩川六郷橋緑地 多摩川ガス橋緑地 多摩川浅間神社 河川敷駐車場は土日祝のみ。閉鎖時刻と増水情報を確認。 東京港・水辺",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "多摩川六郷橋緑地:20分／多摩川ガス橋緑地:20分／多摩川浅間神社:35分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 62,
+      "certainty": 4,
+      "maxMinutes": 120,
+      "scenarioScores": {
+        "weekdayNight90": 72,
+        "lateNight120": 68,
+        "rain": 59,
+        "aircraft": 55,
+        "seaPort": 80,
+        "factoryNight": 52,
+        "quiet": 56,
+        "holidayHalfDay": 58
+      },
+      "improvementState": "役割明記",
+      "routeType": "休日専用"
+    },
+    "feasibility": {
+      "score": 73,
+      "minMinutes": 70,
+      "medianMinutes": 95,
+      "maxMinutes": 120,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "多摩川浅間神社",
+        "time": "16:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "羽田空港 第3ターミナル展望デッキ",
+      "failureConditions": "16:00までに「多摩川浅間神社」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "多摩川浅間神社",
+      "closingTime": "16:00",
+      "latestRecommendedDeparture": "14:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "多摩川六郷橋緑地を省略 → 多摩川浅間神社",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "多摩川六郷橋緑地",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・195台・土日祝のみ・1日500円",
+        "skipCondition": "平日は駐車場閉鎖。閉鎖時刻後は出庫不可。台風・増水・イベント時は閉鎖。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "多摩川ガス橋緑地",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・196台・土日祝のみ・1日500円",
+        "skipCondition": "平日は駐車場閉鎖。閉鎖時刻後は出庫不可。増水・台風・イベント時は閉鎖。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "多摩川浅間神社",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 30,
+        "maximumStayMinutes": 50,
+        "parkingFlow": "あり・約20台",
+        "skipCondition": "住宅地と神社のため静粛必須。夜遅くより夕暮れ向け。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "役割明記",
+      "diversity": 85,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・自然 → 海・港・自然 → 海・港・自然 → 都市夜景・Story",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R138",
@@ -738,13 +2874,108 @@
     "quality": 91,
     "diversity": 91,
     "intent": "大田区の丘陵、埋立地、海岸の三つの地形と歴史を短距離でつなぐ。",
-    "dwell": "池上梅園:40分／平和島公園:20分／大森ふるさとの浜辺公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "小規模庭園駐車→80台24時間→共用24時間",
     "skipRule": "池上梅園満車・閉園時は平和島公園から開始／浜辺21時超過時は広場のみ",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E6%B1%A0%E4%B8%8A%E6%A2%85%E5%9C%92%7C%E5%B9%B3%E5%92%8C%E5%B3%B6%E5%85%AC%E5%9C%92",
     "searchText": "池上から大森・海の記憶へ 庭園story／24時間公園／人工海浜 昼～夕方専用 池上梅園 平和島公園 大森ふるさとの浜辺公園 池上梅園16:30閉園の昼専用。池上終了後は24時間駐車の平和島公園を挟み、浜辺21時まで。 story・文化",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "池上梅園:40分／平和島公園:20分／大森ふるさとの浜辺公園:45分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 73,
+      "certainty": 4,
+      "maxMinutes": 130,
+      "scenarioScores": {
+        "weekdayNight90": 75,
+        "lateNight120": 71,
+        "rain": 62,
+        "aircraft": 58,
+        "seaPort": 83,
+        "factoryNight": 55,
+        "quiet": 92,
+        "holidayHalfDay": 87
+      },
+      "improvementState": "差替え済",
+      "routeType": "昼～夕方専用"
+    },
+    "feasibility": {
+      "score": 70,
+      "minMinutes": 80,
+      "medianMinutes": 105,
+      "maxMinutes": 130,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "池上梅園",
+        "time": "16:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "平和の森公園",
+      "failureConditions": "16:30までに「池上梅園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "池上梅園",
+      "closingTime": "16:00",
+      "latestRecommendedDeparture": "14:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "×",
+      "rain": "×",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "池上梅園を省略 → 大森ふるさとの浜辺公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "池上梅園",
+        "role": "導入",
+        "firstFiveMinutes": "閉門時刻を再確認→5分だけ歩く方向を決める",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・一般6台＋身障者1台・30分100円",
+        "skipCondition": "梅見頃の2月・3月上旬の土日祝は駐車場利用不可。月曜休園期あり。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "平和の森公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "閉門時刻を再確認→5分だけ歩く方向を決める",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "あり・186台・30分100円",
+        "skipCondition": "施設利用時間は個別。休日は大森ふるさとの浜辺公園と共用で混雑する。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "大森ふるさとの浜辺公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "共用駐車場・平日121台／土日祝142台・30分100円・24時間",
+        "skipCondition": "浜辺は21時閉門。休日は駐車待ちが発生。遊泳・釣り・火気は禁止。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 91,
+      "overusePenalty": 3,
+      "experienceTransition": "丘陵庭園と茶室Story → 埋立地の防災公園 → 大森海苔の人工海浜",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R139",
@@ -762,13 +2993,74 @@
     "quality": 95,
     "diversity": 96,
     "intent": "蒲田から近い勝島・八潮・平和島を北から南へ戻り、異なる三つの人工水辺と公園を比較する。",
-    "dwell": "しながわ区民公園:30分／大井ふ頭中央海浜公園:30分／平和島公園:30分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "50台有料→第2駐車場110台→80台24時間",
     "skipRule": "20時以降はしながわ区民公園を省略／大井ふ頭大会・工事時は平和島へ直行",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B9%B3%E5%92%8C%E5%B3%B6%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E3%81%97%E3%81%AA%E3%81%8C%E3%82%8F%E5%8C%BA%E6%B0%91%E5%85%AC%E5%9C%92%7C%E5%A4%A7%E4%BA%95%E3%81%B5%E9%A0%AD%E4%B8%AD%E5%A4%AE%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92",
     "searchText": "勝島・大井ふ頭ウォーターフロント 人工湖／京浜運河／24時間公園 夕方専用 しながわ区民公園 大井ふ頭中央海浜公園 平和島公園 しながわ区民公園20:30閉園。大井ふ頭第1駐車場は工事閉鎖中で、第2駐車場を利用。遅い時間は大井ふ頭→平和島へ短縮。 東京港・水辺",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "しながわ区民公園:30分／大井ふ頭中央海浜公園:30分／平和島公園:30分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 74,
+      "certainty": 4,
+      "maxMinutes": 135,
+      "scenarioScores": {
+        "weekdayNight90": 81,
+        "lateNight120": 79,
+        "rain": 66,
+        "aircraft": 62,
+        "seaPort": 88,
+        "factoryNight": 60,
+        "quiet": 86,
+        "holidayHalfDay": 69
+      },
+      "improvementState": "差替え済",
+      "routeType": "夕方専用"
+    },
+    "feasibility": {
+      "score": 64,
+      "minMinutes": 80,
+      "medianMinutes": 105,
+      "maxMinutes": 130,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "東京港野鳥公園",
+        "time": "17:00",
+        "position": 1
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "17:00までに「東京港野鳥公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "東京港野鳥公園",
+      "closingTime": "17:00",
+      "latestRecommendedDeparture": "15:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "東京港野鳥公園を省略 → 城南島海浜公園",
+      "coverage": "full"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 96,
+      "overusePenalty": 3,
+      "experienceTransition": "勝島の人工湖 → 京浜運河となぎさ → 24時間の緑と広場",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R140",
@@ -786,13 +3078,108 @@
     "quality": 83,
     "diversity": 71,
     "intent": "砂浜とレインボーブリッジ→豊洲の水際遊歩道→晴海の港湾夜景へ、東京湾の内側を連続的に走る。",
-    "dwell": "お台場海浜公園:20分／豊洲ぐるり公園:18分／晴海ふ頭公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／小規模。満車なら待たずに省略",
     "skipRule": "工事・閉鎖時／臨時閉鎖・イベント混雑時／満車時",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%99%B4%E6%B5%B7%E3%81%B5%E9%A0%AD%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E3%81%8A%E5%8F%B0%E5%A0%B4%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%7C%E8%B1%8A%E6%B4%B2%E3%81%90%E3%82%8B%E3%82%8A%E5%85%AC%E5%9C%92",
     "searchText": "お台場から豊洲の水際夜景 海浜／運河／都市夜景 通常 お台場海浜公園 豊洲ぐるり公園 晴海ふ頭公園 24時間駐車地点中心。イベント開催時はお台場を潮風公園へ、豊洲を晴海へ即時差替え。 東京港・水辺",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "お台場海浜公園:20分／豊洲ぐるり公園:18分／晴海ふ頭公園:45分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 70,
+      "certainty": 4,
+      "maxMinutes": 140,
+      "scenarioScores": {
+        "weekdayNight90": 83,
+        "lateNight120": 85,
+        "rain": 65,
+        "aircraft": 63,
+        "seaPort": 88,
+        "factoryNight": 62,
+        "quiet": 54,
+        "holidayHalfDay": 57
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 71,
+      "minMinutes": 90,
+      "medianMinutes": 115,
+      "maxMinutes": 140,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": 2,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "明確なHard Gateなし。満車・天候・臨時閉鎖を確認。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "○",
+      "rain": "△",
+      "operationDecision": "深夜主力",
+      "shortPattern": "お台場海浜公園を省略 → 晴海ふ頭公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "お台場海浜公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "中央101台／北口244台・有料・24時間",
+        "skipCondition": "大規模イベント時は駐車場閉鎖・交通規制あり。北口のみ24時間最大料金設定。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "豊洲ぐるり公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 25,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "市場周辺イベント時は混雑。駐車位置と見たい景色の位置関係を確認。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "晴海ふ頭公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "あり・小規模有料",
+        "skipCondition": "台数が少なくイベント時は入庫待ちに注意。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 71,
+      "overusePenalty": 0,
+      "experienceTransition": "海・港・都市夜景 → 都市夜景 → 都市夜景 → 海・港・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R141",
@@ -810,13 +3197,108 @@
     "quality": 83,
     "diversity": 41,
     "intent": "T2の屋内FLIGHT DECKを主役とし、強雨時は足湯を省略。空港内移動で雨天耐性を確保。",
-    "dwell": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／P3/P4等に1回駐車し、ターミナル間は無料連絡バス",
     "skipRule": "23:30に間に合わない時／23:00に間に合わない時／工事・閉鎖時／工事・閉鎖時",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD%EF%BC%8FFLIGHT%20DECK%20TOKYO",
     "searchText": "雨天・羽田インドア線 足湯／屋内展望／空港 雨天・空港内移動 haneda innovation city 足湯スカイデッキ 羽田空港 第2ターミナル展望デッキ／flight deck tokyo 羽田空港 第3ターミナル展望デッキ 雨天はt2屋内flight deckを主役にする。hic足湯は強雨時に省略し、空港内移動を優先。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO:25分／羽田空港 第3ターミナル展望デッキ:40分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 130,
+      "scenarioScores": {
+        "weekdayNight90": 78,
+        "lateNight120": 80,
+        "rain": 83,
+        "aircraft": 84,
+        "seaPort": 84,
+        "factoryNight": 56,
+        "quiet": 49,
+        "holidayHalfDay": 59
+      },
+      "improvementState": "役割明記",
+      "routeType": "雨天・空港内移動"
+    },
+    "feasibility": {
+      "score": 72,
+      "minMinutes": 80,
+      "medianMinutes": 105,
+      "maxMinutes": 130,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO",
+        "time": "23:00",
+        "position": 2
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "23:00までに「羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO",
+      "closingTime": "22:00",
+      "latestRecommendedDeparture": "20:45",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "○",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "HANEDA INNOVATION CITY 足湯スカイデッキを省略 → 羽田空港 第3ターミナル展望デッキ",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を確認→足湯の空き確認→飛行機方向を決める",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "HIC P1 190台・24時間／P2 18台・7:00～23:00",
+        "skipCondition": "貸切利用時は入場不可。食事は禁止。深夜帯は静粛にし、P2は営業時間外出庫不可。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO",
+        "role": "景観転換",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "P3 2,449台／P4 3,087台・有料",
+        "skipCondition": "悪天候時は屋外閉鎖。多客期は駐車場混雑。雨天ルートでは屋内FLIGHT DECKを優先。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "羽田空港 第3ターミナル展望デッキ",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 30,
+        "maximumStayMinutes": 50,
+        "parkingFlow": "P5 2,910台・24時間・有料",
+        "skipCondition": "保安・悪天候・イベントで一時閉鎖の場合あり。多客期は駐車場混雑。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "役割明記",
+      "diversity": 41,
+      "overusePenalty": 30,
+      "experienceTransition": "飛行機・都市夜景 → 飛行機・都市夜景 → 飛行機・都市夜景 → 飛行機・都市夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R142",
@@ -833,13 +3315,97 @@
     "quality": 92,
     "diversity": 88,
     "intent": "空港の明るい24時間空間から川崎港を横断し、東扇島西端の暗く広い海へ到達する。",
-    "dwell": "羽田空港 第3ターミナル展望デッキ:30分／東扇島西公園:35分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "両地点とも24時間公式駐車場",
     "skipRule": "東扇島西公園満車・臨時閉鎖時は川崎マリエン外周へ",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD",
     "searchText": "深夜2時間・空港から港の端へ 24時間空港／工業島／海の行き止まり 深夜専用 羽田空港 第3ターミナル展望デッキ 東扇島西公園 t3展望デッキと東扇島西公園は24時間利用可能。東扇島西公園は釣り利用で混雑するため、満車時は川崎マリエン外周へ変更。 川崎・工場夜景",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "羽田空港 第3ターミナル展望デッキ:30分／東扇島西公園:35分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 84,
+      "certainty": 4,
+      "maxMinutes": 135,
+      "scenarioScores": {
+        "weekdayNight90": 88,
+        "lateNight120": 90,
+        "rain": 91,
+        "aircraft": 92,
+        "seaPort": 92,
+        "factoryNight": 94,
+        "quiet": 59,
+        "holidayHalfDay": 66
+      },
+      "improvementState": "差替え済",
+      "routeType": "深夜専用"
+    },
+    "feasibility": {
+      "score": 73,
+      "minMinutes": 80,
+      "medianMinutes": 100,
+      "maxMinutes": 120,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "城南島海浜公園",
+        "time": "21:00",
+        "position": 3
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "21:00までに「城南島海浜公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "○",
+      "rain": "○",
+      "operationDecision": "深夜主力",
+      "shortPattern": "東扇島西公園へ直行",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "羽田空港 第3ターミナル展望デッキ",
+        "role": "導入",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "P5 2,910台・24時間・有料",
+        "skipCondition": "保安・悪天候・イベントで一時閉鎖の場合あり。多客期は駐車場混雑。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "東扇島西公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "第1・第2駐車場 合計172台・有料・24時間",
+        "skipCondition": "土日祝・釣り時間帯は混雑。路上駐車・アイドリング禁止。臨時閉鎖を当日確認。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 88,
+      "overusePenalty": 3,
+      "experienceTransition": "24時間空港 → 港湾走行 → 工業島西端の海",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R143",
@@ -857,13 +3423,108 @@
     "quality": 82,
     "diversity": 61,
     "intent": "羽田の足湯と航空機から川崎港の高所展望へ移り、最後は東扇島西端の広い空で余韻を作る。",
-    "dwell": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／川崎マリエン:25分／東扇島西公園:45分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "専用・公式駐車場へ直接入庫／車の経由地には不向き。合法駐車から徒歩のみ",
     "skipRule": "23:30に間に合わない時／工事・閉鎖時／満車時",
     "family": "川崎・工場夜景",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E6%89%87%E5%B3%B6%E8%A5%BF%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD%7C%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3",
     "searchText": "羽田から川崎工場夜景へ 足湯／高所工場夜景／港の行き止まり 通常 haneda innovation city 足湯スカイデッキ 川崎マリエン 東扇島西公園 川崎マリエン展望室は21時まで。遅れた場合はマリエンを省略し、24時間利用可能な東扇島西公園へ。 川崎・工場夜景",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "HANEDA INNOVATION CITY 足湯スカイデッキ:25分／川崎マリエン:25分／東扇島西公園:45分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 69,
+      "certainty": 4,
+      "maxMinutes": 150,
+      "scenarioScores": {
+        "weekdayNight90": 77,
+        "lateNight120": 81,
+        "rain": 61,
+        "aircraft": 59,
+        "seaPort": 85,
+        "factoryNight": 88,
+        "quiet": 50,
+        "holidayHalfDay": 53
+      },
+      "improvementState": "差替え済",
+      "routeType": "通常"
+    },
+    "feasibility": {
+      "score": 64,
+      "minMinutes": 100,
+      "medianMinutes": 125,
+      "maxMinutes": 150,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "time": "23:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 1,
+      "strongWindRisk": 5,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "23:30までに「HANEDA INNOVATION CITY 足湯スカイデッキ」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+      "closingTime": "23:30",
+      "latestRecommendedDeparture": "22:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "△",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "HANEDA INNOVATION CITY 足湯スカイデッキを省略 → 東扇島西公園",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "HANEDA INNOVATION CITY 足湯スカイデッキ",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を確認→足湯の空き確認→飛行機方向を決める",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "HIC P1 190台・24時間／P2 18台・7:00～23:00",
+        "skipCondition": "貸切利用時は入場不可。食事は禁止。深夜帯は静粛にし、P2は営業時間外出庫不可。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "川崎マリエン",
+        "role": "景観転換",
+        "firstFiveMinutes": "駐車位置と出口方向を確認→主景観を1つ見る",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 25,
+        "parkingFlow": "あり・有料",
+        "skipCondition": "最終入場、休館日、工事情報を当日確認。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "東扇島西公園",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 35,
+        "maximumStayMinutes": 60,
+        "parkingFlow": "第1・第2駐車場 合計172台・有料・24時間",
+        "skipCondition": "土日祝・釣り時間帯は混雑。路上駐車・アイドリング禁止。臨時閉鎖を当日確認。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 61,
+      "overusePenalty": 21,
+      "experienceTransition": "飛行機・都市夜景 → 海・港・工場夜景 → 海・港・工場夜景 → 海・港・工場夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R144",
@@ -881,13 +3542,108 @@
     "quality": 89,
     "diversity": 91,
     "intent": "大森の海苔と人工海浜から、水再生センター屋上の展望へ上がり、24時間の空港夜景で終える。",
-    "dwell": "大森ふるさとの浜辺公園:15分／森ケ崎公園:20分／羽田空港 第3ターミナル展望デッキ:30分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "公式駐車場へ直接入庫",
     "skipRule": "19:30を過ぎたら大森を省略／森ケ崎閉場時はT3直行",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%B1%95%E6%9C%9B%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E5%A4%A7%E6%A3%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E3%81%AE%E6%B5%9C%E8%BE%BA%E5%85%AC%E5%9C%92%7C%E6%A3%AE%E3%82%B1%E5%B4%8E%E5%85%AC%E5%9C%92",
     "searchText": "平日夕方90分・大森から羽田へ 海苔story／屋上公園／空港夜景 夕方専用 大森ふるさとの浜辺公園 森ケ崎公園 羽田空港 第3ターミナル展望デッキ 19時前後の出発を推奨。森ケ崎は季節により20:30または21:30、浜辺は21時閉門。遅れたら大森を省略。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "大森ふるさとの浜辺公園:15分／森ケ崎公園:20分／羽田空港 第3ターミナル展望デッキ:30分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 85,
+      "certainty": 4,
+      "maxMinutes": 120,
+      "scenarioScores": {
+        "weekdayNight90": 84,
+        "lateNight120": 84,
+        "rain": 89,
+        "aircraft": 89,
+        "seaPort": 89,
+        "factoryNight": 63,
+        "quiet": 92,
+        "holidayHalfDay": 93
+      },
+      "improvementState": "差替え済",
+      "routeType": "夕方専用"
+    },
+    "feasibility": {
+      "score": 74,
+      "minMinutes": 75,
+      "medianMinutes": 92,
+      "maxMinutes": 110,
+      "stopCount": 3,
+      "hardGate": {
+        "place": "森ケ崎公園",
+        "time": "21:30",
+        "position": 1
+      },
+      "minimumParkingCertainty": 4,
+      "strongWindRisk": 2,
+      "planBDestination": "城南島海浜公園",
+      "failureConditions": "21:30までに「森ケ崎公園」へ到達。遅れたら経由地を省略。",
+      "coverage": "full"
+    },
+    "timeConditions": {
+      "firstClosingPlace": "森ケ崎公園",
+      "closingTime": "20:30",
+      "latestRecommendedDeparture": "19:15",
+      "directionConstraint": "一般道・方向制約なし",
+      "lateNight": "△",
+      "rain": "○",
+      "operationDecision": "出発時刻管理",
+      "shortPattern": "大森ふるさとの浜辺公園を省略 → 羽田空港 第3ターミナル展望デッキ",
+      "coverage": "full"
+    },
+    "stopOperations": [
+      {
+        "order": 1,
+        "name": "大森ふるさとの浜辺公園",
+        "role": "導入",
+        "firstFiveMinutes": "駐車位置を記録→水際まで歩く→風と混雑を確認",
+        "standardStayMinutes": 15,
+        "maximumStayMinutes": 30,
+        "parkingFlow": "共用駐車場・平日121台／土日祝142台・30分100円・24時間",
+        "skipCondition": "浜辺は21時閉門。休日は駐車待ちが発生。遊泳・釣り・火気は禁止。",
+        "googleMaps": null
+      },
+      {
+        "order": 2,
+        "name": "森ケ崎公園",
+        "role": "景観転換",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 20,
+        "maximumStayMinutes": 35,
+        "parkingFlow": "あり・47台・30分100円",
+        "skipCondition": "利用時間外は入出庫不可。土日祝は入場待ちが発生しやすく、急ぐ場合は近隣民間駐車場へ切替。",
+        "googleMaps": null
+      },
+      {
+        "order": 3,
+        "name": "羽田空港 第3ターミナル展望デッキ",
+        "role": "最終目的地・余韻",
+        "firstFiveMinutes": "滑走路運用と風向を確認→見る方向を1つに絞る",
+        "standardStayMinutes": 30,
+        "maximumStayMinutes": 50,
+        "parkingFlow": "P5 2,910台・24時間・有料",
+        "skipCondition": "保安・悪天候・イベントで一時閉鎖の場合あり。多客期は駐車場混雑。",
+        "googleMaps": null
+      }
+    ],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "差替え済",
+      "diversity": 91,
+      "overusePenalty": 6,
+      "experienceTransition": "海苔・海浜 → 都市インフラ・高所 → 空港夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R145",
@@ -905,13 +3661,74 @@
     "quality": 91,
     "diversity": 93,
     "intent": "保存車両と交通公園→防災設備→足湯と航空機へ、羽田周辺の生活インフラを三段階で見る。",
-    "dwell": "萩中公園:20分／東糀谷防災公園:15分／HIC足湯:30分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "24時間公式駐車→10台24時間→HIC P1",
     "skipRule": "東糀谷満車時は省略／23時以降はT3展望へ変更",
     "family": "羽田・航空",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=HANEDA%20INNOVATION%20CITY%20%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E8%90%A9%E4%B8%AD%E5%85%AC%E5%9C%92%7C%E6%9D%B1%E7%B3%80%E8%B0%B7%E9%98%B2%E7%81%BD%E5%85%AC%E5%9C%92",
     "searchText": "羽田手前・交通と防災の短時間線 交通story／防災／足湯 平日夜・家族 萩中公園 東糀谷防災公園 haneda innovation city 足湯スカイデッキ 萩中公園の駐車場は24時間だが、交通公園貸出は16時、ガラクタ公園は17時、スケート場は20時まで。夜出発では保存車両storyを目的にしない。東糀谷一般枠9台が満車なら省略。 羽田・航空",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "萩中公園:20分／東糀谷防災公園:15分／HIC足湯:30分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 71,
+      "certainty": 4,
+      "maxMinutes": 125,
+      "scenarioScores": {
+        "weekdayNight90": 84,
+        "lateNight120": 84,
+        "rain": 67,
+        "aircraft": 64,
+        "seaPort": 65,
+        "factoryNight": 63,
+        "quiet": 68,
+        "holidayHalfDay": 71
+      },
+      "improvementState": "新規",
+      "routeType": "平日夜・家族"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 93,
+      "overusePenalty": 0,
+      "experienceTransition": "交通史 → 防災インフラ → 空港・足湯",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R146",
@@ -929,13 +3746,74 @@
     "quality": 94,
     "diversity": 96,
     "intent": "大田区全体の歴史→海苔産業→現在の工業島へ、産業構造の変化を時系列でたどる。",
-    "dwell": "郷土博物館:55分／海苔館:55分／昭和島:25分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "6台→平和の森公園→43台",
     "skipRule": "博物館満車時は海苔館から開始／17時超過時は昭和島へ直行",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%98%AD%E5%92%8C%E5%B3%B6%E4%BA%8C%E4%B8%81%E7%9B%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A7%E7%94%B0%E5%8C%BA%E7%AB%8B%E9%83%B7%E5%9C%9F%E5%8D%9A%E7%89%A9%E9%A4%A8%7C%E5%A4%A7%E6%A3%AE%20%E6%B5%B7%E8%8B%94%E3%81%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E9%A4%A8",
     "searchText": "大田・郷土史から工業島へ 地域史／海苔産業／工業島 昼専用 大田区立郷土博物館 大森 海苔のふるさと館 昭和島二丁目公園 昼専用。博物館は17時、海苔館も通常17時。昭和島は季節により21時または22時閉場。 story・文化",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "郷土博物館:55分／海苔館:55分／昭和島:25分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 69,
+      "certainty": 4,
+      "maxMinutes": 200,
+      "scenarioScores": {
+        "weekdayNight90": 68,
+        "lateNight120": 67,
+        "rain": 59,
+        "aircraft": 55,
+        "seaPort": 80,
+        "factoryNight": 84,
+        "quiet": 65,
+        "holidayHalfDay": 76
+      },
+      "improvementState": "新規",
+      "routeType": "昼専用"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 96,
+      "overusePenalty": 0,
+      "experienceTransition": "郷土史 → 海苔産業 → 現代工業島",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R147",
@@ -952,13 +3830,74 @@
     "quality": 90,
     "diversity": 95,
     "intent": "東海道・大森貝塚の歴史を見た後、昭和以降の都市型娯楽であるナイター競馬へ移る。",
-    "dwell": "品川歴史館:60分／大井競馬場:120分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "3台→開催日駐車場",
     "skipRule": "歴史館満車なら競馬場直行／非開催日はR139へ変更",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E7%AB%B6%E9%A6%AC%20%E5%A4%A7%E4%BA%95%E7%AB%B6%E9%A6%AC%E5%A0%B4&travelmode=driving&waypoints=%E5%93%81%E5%B7%9D%E5%8C%BA%E7%AB%8B%20%E5%93%81%E5%B7%9D%E6%AD%B4%E5%8F%B2%E9%A4%A8",
     "searchText": "品川・東海道からナイターへ 東海道story／競馬場／都市照明 開催日専用 品川区立 品川歴史館 東京シティ競馬 大井競馬場 競馬開催日専用。歴史館は16:30最終入館。競馬場駐車料金・予約制・開門時刻を当日確認。 story・文化",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "品川歴史館:60分／大井競馬場:120分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 71,
+      "certainty": 4,
+      "maxMinutes": 240,
+      "scenarioScores": {
+        "weekdayNight90": 76,
+        "lateNight120": 79,
+        "rain": 63,
+        "aircraft": 61,
+        "seaPort": 86,
+        "factoryNight": 63,
+        "quiet": 64,
+        "holidayHalfDay": 75
+      },
+      "improvementState": "新規",
+      "routeType": "開催日専用"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 2,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 95,
+      "overusePenalty": 0,
+      "experienceTransition": "地域史 → 都市型夜間娯楽",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R148",
@@ -976,13 +3915,74 @@
     "quality": 93,
     "diversity": 97,
     "intent": "倉庫街再生の運河→高架と埋立地→水再生センター上の緑地へ、湾岸都市インフラの種類を変える。",
-    "dwell": "天王洲:25分／八潮北:20分／品川シーズンテラス:40分",
+    "dwell": "各地点20分程度（最長25分）／合計約60分",
     "parkingMode": "各公式有料駐車場",
     "skipRule": "大会・満車時は八潮省略／23時超過時は天王洲で終了",
     "family": "東京港・水辺",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%93%81%E5%B7%9D%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%83%86%E3%83%A9%E3%82%B9%EF%BC%8F%E8%8A%9D%E6%B5%A6%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&travelmode=driving&waypoints=%E5%A4%A9%E7%8E%8B%E6%B4%B2%E5%85%AC%E5%9C%92%7C%E5%85%AB%E6%BD%AE%E5%8C%97%E5%85%AC%E5%9C%92",
     "searchText": "品川湾岸・運河と高架の三景 運河／高架インフラ／水再生センター 夕方～夜 天王洲公園 八潮北公園 品川シーズンテラス／芝浦中央公園 天王洲・八潮の大会日を確認。東品川1丁目の路上枠は昼の短時間代替のみで、夜は路外駐車。品川シーズンテラスは23時まで。 東京港・水辺",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 60,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "天王洲:25分／八潮北:20分／品川シーズンテラス:40分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 70,
+      "certainty": 4,
+      "maxMinutes": 155,
+      "scenarioScores": {
+        "weekdayNight90": 81,
+        "lateNight120": 83,
+        "rain": 66,
+        "aircraft": 63,
+        "seaPort": 89,
+        "factoryNight": 64,
+        "quiet": 59,
+        "holidayHalfDay": 59
+      },
+      "improvementState": "新規",
+      "routeType": "夕方～夜"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 3,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 97,
+      "overusePenalty": 0,
+      "experienceTransition": "運河・アート → 高架・物流 → 水処理・高層建築",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R149",
@@ -999,13 +3999,74 @@
     "quality": 95,
     "diversity": 94,
     "intent": "下水処理施設上の緑地から戦後東京の放送塔へ移り、都市インフラを地上と空から見る。",
-    "dwell": "品川シーズンテラス:30分／東京タワー:70分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "319台→東京タワー地上駐車",
     "skipRule": "22時以降は東京タワー外観鑑賞へ変更",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC&travelmode=driving&waypoints=%E5%93%81%E5%B7%9D%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%83%86%E3%83%A9%E3%82%B9%EF%BC%8F%E8%8A%9D%E6%B5%A6%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92",
     "searchText": "品川から東京タワーへ都市インフラ線 水再生センター／高層街／放送塔 平日夜 品川シーズンテラス／芝浦中央公園 東京タワー 港南3丁目の時間制限駐車区間は昼の短時間観察用。東京タワー展望利用は地上・近隣駐車場を使用。最終入場22:30。 都市夜景・建築",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "品川シーズンテラス:30分／東京タワー:70分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 69,
+      "certainty": 4,
+      "maxMinutes": 145,
+      "scenarioScores": {
+        "weekdayNight90": 86,
+        "lateNight120": 89,
+        "rain": 68,
+        "aircraft": 66,
+        "seaPort": 67,
+        "factoryNight": 68,
+        "quiet": 58,
+        "holidayHalfDay": 51
+      },
+      "improvementState": "新規",
+      "routeType": "平日夜"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 2,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 94,
+      "overusePenalty": 0,
+      "experienceTransition": "水再生インフラ → 放送塔・夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R150",
@@ -1022,13 +4083,74 @@
     "quality": 92,
     "diversity": 90,
     "intent": "地上の庭園・デザイン街区から、52階の都市展望へ垂直に体験を引き上げる。",
-    "dwell": "東京ミッドタウン:50分／東京シティビュー:75分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "両施設24時間系駐車場",
     "skipRule": "シティビュー休館時は東京タワーへ変更",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%20%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%EF%BC%8F%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%E3%83%BB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
     "searchText": "六本木・庭園から空中都市へ 庭園／現代建築／高層展望 8月1日以降・夜 東京ミッドタウン／ミッドタウン・ガーデン 六本木ヒルズ 東京シティビュー 東京シティビューは2026年7月31日まで休館。8月1日以降に使用。企画展・貸切を確認。 都市夜景・建築",
-    "timeBucket": "120"
+    "timeBucket": "120",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "東京ミッドタウン:50分／東京シティビュー:75分",
+    "drivingBudgetMinutes": 120,
+    "routeAssessment": {
+      "overallScore": 76,
+      "certainty": 4,
+      "maxMinutes": 160,
+      "scenarioScores": {
+        "weekdayNight90": 84,
+        "lateNight120": 88,
+        "rain": 67,
+        "aircraft": 65,
+        "seaPort": 66,
+        "factoryNight": 67,
+        "quiet": 90,
+        "holidayHalfDay": 77
+      },
+      "improvementState": "新規",
+      "routeType": "8月1日以降・夜"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 2,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 90,
+      "overusePenalty": 0,
+      "experienceTransition": "庭園・デザイン → 高層美術・夜景",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R151",
@@ -1045,13 +4167,74 @@
     "quality": 94,
     "diversity": 96,
     "intent": "江戸期から皇室庭園へ続く緑地の歴史と、明治を描く近代建築を一続きにする。",
-    "dwell": "新宿御苑:110分／聖徳記念絵画館:60分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "200台→396台",
     "skipRule": "絵画館休館時は都庁展望室へ／花見期は片方に絞る",
     "family": "Story・文化",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%98%8E%E6%B2%BB%E7%A5%9E%E5%AE%AE%E5%A4%96%E8%8B%91%20%E8%81%96%E5%BE%B3%E8%A8%98%E5%BF%B5%E7%B5%B5%E7%94%BB%E9%A4%A8&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BF%E5%BE%A1%E8%8B%91",
     "searchText": "新宿・庭園と明治建築 大庭園／近代建築／明治史 休日半日・昼 新宿御苑 明治神宮外苑 聖徳記念絵画館 新宿3丁目37の路上枠は40分限定で、御苑内観光には使用不可。御苑駐車場と絵画館駐車場を基本とする。 story・文化",
-    "timeBucket": "half"
+    "timeBucket": "half",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "新宿御苑:110分／聖徳記念絵画館:60分",
+    "drivingBudgetMinutes": 240,
+    "routeAssessment": {
+      "overallScore": 63,
+      "certainty": 4,
+      "maxMinutes": 230,
+      "scenarioScores": {
+        "weekdayNight90": 63,
+        "lateNight120": 61,
+        "rain": 57,
+        "aircraft": 52,
+        "seaPort": 52,
+        "factoryNight": 52,
+        "quiet": 89,
+        "holidayHalfDay": 76
+      },
+      "improvementState": "新規",
+      "routeType": "休日半日・昼"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 2,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 96,
+      "overusePenalty": 0,
+      "experienceTransition": "庭園史 → 近代国家・建築Story",
+      "drivingDirection": null
+    }
   },
   {
     "id": "R152",
@@ -1068,12 +4251,73 @@
     "quality": 96,
     "diversity": 98,
     "intent": "屋内の巨大吹抜けと大時計を見てから、都庁展望室で西新宿全体を上空から捉える。",
-    "dwell": "NSビル:35分／都庁展望室:55分",
+    "dwell": "各地点20分程度（最長25分）／合計約40分",
     "parkingMode": "336台→都庁来庁者駐車場",
     "skipRule": "都庁休室・22時超過時はNSビルで終了",
     "family": "都市夜景・建築",
     "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BFNS%E3%83%93%E3%83%AB%20%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A6%E3%83%A0%E3%83%BB%E5%A4%A7%E6%99%82%E8%A8%88",
     "searchText": "西新宿・巨大空間から都庁夜景へ 巨大アトリウム／超高層街／無料展望 平日夜・雨天 新宿nsビル アトリウム・大時計 東京都庁展望室 西新宿6丁目の路上枠は昼の短時間建築観察用。夜はnsビルまたは都庁駐車場を使用し、都庁は21:30入庫・22:00出庫期限。 都市夜景・建築",
-    "timeBucket": "90"
+    "timeBucket": "90",
+    "stayPerStopMinutes": 20,
+    "stayPerStopMaxMinutes": 25,
+    "suggestedStayMinutes": 20,
+    "totalSuggestedStayMinutes": 40,
+    "timeInterpretation": "driving_budget",
+    "originalDwellText": "NSビル:35分／都庁展望室:55分",
+    "drivingBudgetMinutes": 90,
+    "routeAssessment": {
+      "overallScore": 72,
+      "certainty": 4,
+      "maxMinutes": 140,
+      "scenarioScores": {
+        "weekdayNight90": 91,
+        "lateNight120": 93,
+        "rain": 71,
+        "aircraft": 69,
+        "seaPort": 70,
+        "factoryNight": 69,
+        "quiet": 61,
+        "holidayHalfDay": 54
+      },
+      "improvementState": "新規",
+      "routeType": "平日夜・雨天"
+    },
+    "feasibility": {
+      "score": null,
+      "minMinutes": null,
+      "medianMinutes": null,
+      "maxMinutes": null,
+      "stopCount": 2,
+      "hardGate": {
+        "place": null,
+        "time": null,
+        "position": null
+      },
+      "minimumParkingCertainty": null,
+      "strongWindRisk": null,
+      "planBDestination": null,
+      "failureConditions": null,
+      "coverage": "pending"
+    },
+    "timeConditions": {
+      "firstClosingPlace": null,
+      "closingTime": null,
+      "latestRecommendedDeparture": null,
+      "directionConstraint": null,
+      "lateNight": null,
+      "rain": null,
+      "operationDecision": null,
+      "shortPattern": null,
+      "coverage": "pending"
+    },
+    "stopOperations": [],
+    "routeFreshness": {
+      "updatedDate": "2026-07-29",
+      "improvementState": "新規",
+      "diversity": 98,
+      "overusePenalty": 0,
+      "experienceTransition": "巨大内部空間 → 超高層展望",
+      "drivingDirection": null
+    }
   }
 ]

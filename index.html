@@ -18,14 +18,27 @@
   </header>
 
   <section class="selector">
-    <p class="step">1. 使える時間を選ぶ</p>
+    <p class="step">1. スタート地点を選ぶ</p>
+    <div class="origin-options" role="radiogroup" aria-label="スタート地点">
+      <button id="origin-current" class="origin-btn" data-origin="current">
+        <span class="origin-icon">◎</span>
+        <span>現在地</span>
+      </button>
+      <button id="origin-preset" class="origin-btn active" data-origin="preset">
+        <span class="origin-icon">●</span>
+        <span id="preset-origin-label">登録済み起点</span>
+      </button>
+    </div>
+    <p id="origin-status" class="origin-status">登録済み起点を使用します。</p>
+
+    <p class="step second-step">2. 移動に使える時間を選ぶ</p>
     <div class="time-options" role="radiogroup" aria-label="使える時間">
-      <button class="time-btn active" data-time="90">90分</button>
-      <button class="time-btn" data-time="120">2時間</button>
-      <button class="time-btn" data-time="half">半日</button>
+      <button class="time-btn active" data-time="90">移動90分</button>
+      <button class="time-btn" data-time="120">移動2時間</button>
+      <button class="time-btn" data-time="half">移動半日</button>
     </div>
     <button id="draw" class="draw-btn">どこにいく？</button>
-    <p class="hint">押すたびに、別のルートが出ます。</p>
+    <p class="hint">選択時間は運転時間の目安です。各地点の滞在は20分程度、最長25分で提案します。</p>
   </section>
 
   <section id="result" class="result-shell hidden" aria-live="polite">
@@ -42,7 +55,7 @@
       <div class="route-line">
         <div class="route-stop start">
           <span>START</span>
-          <strong>大田区・蒲田</strong>
+          <strong id="start-label">登録済み起点</strong>
         </div>
         <div id="waypoints"></div>
         <div class="route-stop goal">
@@ -54,6 +67,16 @@
       <p id="intent" class="intent"></p>
       <p id="dwell" class="dwell"></p>
       <p id="caution" class="caution"></p>
+
+      <details id="story-details" class="db-details">
+        <summary>目的地・経由地のうんちく</summary>
+        <div id="story-content" class="db-detail-content"></div>
+      </details>
+
+      <details id="ops-details" class="db-details">
+        <summary>成立条件・短縮案・代替先</summary>
+        <div id="ops-content" class="db-detail-content"></div>
+      </details>
 
       <div class="actions">
         <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
