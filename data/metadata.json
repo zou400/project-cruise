@@ -2,22 +2,25 @@
   "project": "Project Cruise",
   "generatedAt": "2026-07-29",
   "origin": "大田区・蒲田周辺",
-  "destinationCount": 93,
-  "routeCount": 45,
-  "legalCurbAccessCount": 10,
-  "sourceWorkbook": "Project_Cruise_合法路上駐車統合版.xlsx",
-  "schemaVersion": "2.0-db-merged",
+  "destinationCount": 275,
+  "routeCount": 427,
   "canonicalDestinationCount": 275,
   "canonicalRouteCount": 152,
-  "publicDestinationCount": 93,
-  "publicRouteCount": 45,
-  "dbIntegrationVersion": "v07",
-  "dbIntegrationDate": "2026-07-29",
-  "enrichmentCoverage": {
-    "routeScore": 45,
-    "feasibility": 37,
-    "timeAudit": 37,
-    "stopOperations": 15
-  },
-  "enrichedFrom": "Project_Cruise_GitHubテスト準備版.xlsx"
+  "directDestinationCandidates": 275,
+  "schemaVersion": "3.0-max-exposure-test",
+  "maxExposureMode": true,
+  "timeBucketSummary": {
+    "90": {
+      "resultCount": 144,
+      "uniqueDestinationCount": 112
+    },
+    "120": {
+      "resultCount": 208,
+      "uniqueDestinationCount": 139
+    },
+    "half": {
+      "resultCount": 427,
+      "uniqueDestinationCount": 265
+    }
+  }
 }

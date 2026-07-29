@@ -107,3 +107,5 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
 .db-chip strong{font-size:13px;color:#17384b}
 .db-alert{background:#fff4ce;color:#745b19;border-radius:10px;padding:10px;margin-top:8px}
 @media(max-width:480px){.db-grid{grid-template-columns:1fr}}
+
+.pool-status{margin:8px 0 0;font-size:12px;line-height:1.55;color:#0e7490;font-weight:700;text-align:center}

@@ -38,7 +38,8 @@
       <button class="time-btn" data-time="half">移動半日</button>
     </div>
     <button id="draw" class="draw-btn">どこにいく？</button>
-    <p class="hint">選択時間は運転時間の目安です。各地点の滞在は20分程度、最長25分で提案します。</p>
+    <p class="hint">候補最大化テスト版です。監査済みルートに加え、登録済み地点を最終目的地にした直行候補も表示します。</p>
+    <p id="pool-status" class="pool-status">候補数を読み込み中です。</p>
   </section>
 
   <section id="result" class="result-shell hidden" aria-live="polite">
@@ -107,7 +108,7 @@
 
   <footer>
     <button id="about-toggle">このサービスについて</button>
-    <p id="about" class="about hidden">Project Cruiseは、大田区発着で無理なく戻れる近距離ルートを提案します。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
+    <p id="about" class="about hidden">Project Cruiseの候補最大化テスト版です。全275地点・152ルートの既存DBを活用し、条件付き候補も表示します。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
   </footer>
 </main>
 

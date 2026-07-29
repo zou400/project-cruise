@@ -1,5 +1,8 @@
 const $=s=>document.querySelector(s);
 let routes=[],destinations=[],destinationByName=new Map(),selectedTime="90",lastId=null,map=null,mapLayers=[],activeRoute=null;
+const shownDestinationsByTime={90:new Set(),120:new Set(),half:new Set()};
+const variantCursor=new Map();
+let completedCycles={90:0,120:0,half:0};
 let config=null;
 let originMode="preset";
 let activeOrigin={name:"登録済み起点",query:"",coords:[35.5625,139.7160]};
@@ -20,6 +23,7 @@ Promise.all([
  $("#preset-origin-label").textContent=p.name;
  $("#start-label").textContent=p.name;
  setOriginMode(originMode,false);
+ updatePoolStatus();
 }).catch(()=>alert("設定またはルートデータを読み込めませんでした。"));
 
 document.querySelectorAll(".time-btn").forEach(btn=>{
@@ -27,6 +31,7 @@ document.querySelectorAll(".time-btn").forEach(btn=>{
   document.querySelectorAll(".time-btn").forEach(x=>x.classList.remove("active"));
   btn.classList.add("active");
   selectedTime=btn.dataset.time;
+  updatePoolStatus();
  });
 });
 $("#origin-current").addEventListener("click",()=>setOriginMode("current",true));
@@ -78,31 +83,61 @@ function getCurrentPosition(){
   navigator.geolocation.getCurrentPosition(resolve,reject,{enableHighAccuracy:true,timeout:10000,maximumAge:300000});
  });
 }
-function draw(){
- let pool=routes.filter(r=>r.timeBucket===selectedTime);
- if(isNight()){
-  const safe=pool.filter(r=>r.timeConditions?.lateNight!=="×");
-  if(safe.length)pool=safe;
- }
- if(!pool.length){alert("この時間帯のルートは準備中です。");return}
- let choices=pool.filter(r=>r.id!==lastId);
- if(!choices.length)choices=pool;
- const route=weightedPick(choices);
- lastId=route.id;activeRoute=route;show(route);
-}
-function weightedPick(pool){
- const weighted=[];
- pool.forEach(r=>{
-  const q=Number(r.routeAssessment?.overallScore||r.quality||70);
-  const feasibility=Number(r.feasibility?.score||70);
-  const certainty=Number(r.routeAssessment?.certainty||3);
-  let score=q*.55+feasibility*.35+certainty*2;
-  if(isNight()&&r.timeConditions?.lateNight==="○")score+=8;
-  if(isNight()&&r.timeConditions?.lateNight==="△")score-=5;
-  const copies=Math.max(1,Math.round((score-45)/7));
-  for(let i=0;i<copies;i++)weighted.push(r);
+function eligiblePool(){
+ return routes.filter(r=>{
+  const buckets=Array.isArray(r.timeBuckets)?r.timeBuckets:[r.timeBucket];
+  return buckets.includes(selectedTime);
  });
- return weighted[Math.floor(Math.random()*weighted.length)];
+}
+function destinationGroups(pool){
+ const groups=new Map();
+ pool.forEach(r=>{
+  const key=normalizeName(r.destination);
+  if(!key)return;
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(r);
+ });
+ return groups;
+}
+function draw(){
+ const pool=eligiblePool();
+ if(!pool.length){alert("この時間帯の候補は準備中です。");return}
+ const groups=destinationGroups(pool);
+ const shown=shownDestinationsByTime[selectedTime];
+ let fresh=[...groups.entries()].filter(([key])=>!shown.has(key));
+ if(!fresh.length){
+  shown.clear();
+  completedCycles[selectedTime]+=1;
+  fresh=[...groups.entries()];
+ }
+ const [destinationKey,variants]=fresh[Math.floor(Math.random()*fresh.length)];
+ shown.add(destinationKey);
+ const route=pickVariant(destinationKey,variants);
+ lastId=route.id;activeRoute=route;show(route);
+ updatePoolStatus();
+}
+function pickVariant(destinationKey,variants){
+ const ordered=[...variants].sort((a,b)=>{
+  const sourceRank=x=>x.candidateSource==="canonical_route"?0:1;
+  const sr=sourceRank(a)-sourceRank(b);
+  if(sr)return sr;
+  const qa=Number(a.routeAssessment?.overallScore||a.quality||60);
+  const qb=Number(b.routeAssessment?.overallScore||b.quality||60);
+  return qb-qa;
+ });
+ const cursor=variantCursor.get(destinationKey)||0;
+ const route=ordered[cursor%ordered.length];
+ variantCursor.set(destinationKey,cursor+1);
+ return route;
+}
+function updatePoolStatus(){
+ const el=$("#pool-status");
+ if(!el||!routes.length)return;
+ const pool=eligiblePool();
+ const unique=destinationGroups(pool).size;
+ const shown=shownDestinationsByTime[selectedTime].size;
+ const cycle=completedCycles[selectedTime];
+ el.textContent=`候補最大化テスト：${unique}種類の最終目的地／${pool.length}通りの結果。現在 ${shown}/${unique}種類を表示済み${cycle?`・${cycle}巡完了`:""}。同じ目的地は一巡するまで原則出ません。`;
 }
 function show(r){
  $("#duration").textContent=`移動 ${timeLabel(selectedTime)}`;
@@ -111,7 +146,8 @@ function show(r){
  $("#goal").textContent=r.destination||"";
  $("#start-label").textContent=activeOrigin.name;
  $("#title").textContent=r.title||"";
- $("#intent").textContent=(r.intent||"無理なく戻れるルートです。")+" 選択時間は移動時間として扱い、各地点は短時間滞在でつなぎます。";
+ const sourceNote=r.candidateSource==="destination_direct"?" これは登録地点を最終目的地として最大限に試す直行候補です。":"";
+ $("#intent").textContent=(r.intent||"無理なく戻れるルートです。")+sourceNote+" 選択時間は移動時間の概算です。条件付き候補を含むため、出発前に営業時間・駐車条件を確認してください。";
  $("#dwell").textContent=`滞在目安：${r.totalSuggestedStayMinutes||"各地点20分程度"}${r.totalSuggestedStayMinutes?"分前後":"（最長25分）"}／移動時間とは別枠`;
  $("#dwell").style.display="block";
  $("#caution").textContent=r.caution?`注意：${r.caution}`:"";
@@ -148,7 +184,9 @@ function renderOperations(r){
   ["深夜",t.lateNight||"未評価"],
   ["雨天",t.rain||"未評価"],
   ["ルート総合",a.overallScore!=null?`${a.overallScore}/100`:"確認中"],
-  ["所要幅",f.minMinutes!=null?`${f.minMinutes}〜${f.maxMinutes}分`:r.duration]
+  ["所要幅",f.minMinutes!=null?`${f.minMinutes}〜${f.maxMinutes}分`:r.duration],
+  ["候補種別",r.candidateSource==="canonical_route"?"監査ルート":"目的地DB直行"],
+  ["確認状態",r.verificationStatus||"確認中"]
  ];
  let html=`<div class="db-grid">${chips.map(([k,v])=>`<div class="db-chip"><span>${escapeHtml(k)}</span><strong>${escapeHtml(v)}</strong></div>`).join("")}</div>`;
  if(t.latestRecommendedDeparture)html+=`<p><strong>推奨最終出発：</strong>${escapeHtml(t.latestRecommendedDeparture)}</p>`;
