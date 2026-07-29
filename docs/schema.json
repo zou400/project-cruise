@@ -1,0 +1,26 @@
+{
+  "destination": {
+    "required": [
+      "id",
+      "name",
+      "area",
+      "distanceTier",
+      "googleMaps"
+    ]
+  },
+  "route": {
+    "required": [
+      "id",
+      "title",
+      "destination",
+      "googleMaps"
+    ]
+  },
+  "legalCurbAccess": {
+    "required": [
+      "id",
+      "location",
+      "confidence"
+    ]
+  }
+}

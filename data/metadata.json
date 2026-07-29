@@ -1,0 +1,10 @@
+{
+  "project": "Project Cruise",
+  "generatedAt": "2026-07-29",
+  "origin": "大田区・蒲田周辺",
+  "destinationCount": 93,
+  "routeCount": 45,
+  "legalCurbAccessCount": 10,
+  "sourceWorkbook": "Project_Cruise_合法路上駐車統合版.xlsx",
+  "schemaVersion": "0.2.0"
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b2c">
+<title>Project Cruise</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <p class="eyebrow">OTA, TOKYO / DRIVE DISCOVERY</p>
+    <h1>Project Cruise</h1>
+    <p>行先が決まらない夜に、近くて濃い場所を。</p>
+  </div>
+  <div id="meta" class="meta"></div>
+</header>
+<main>
+<section class="hero">
+  <button id="surprise">今すぐ行先を決める</button>
+  <p id="surprise-note">条件を選んでから押すと、その条件内で1件提案します。</p>
+</section>
+<section class="controls">
+  <input id="search" type="search" placeholder="地点、Story、エリアを検索">
+  <select id="area"><option value="">全エリア</option></select>
+  <select id="distance"><option value="">全距離帯</option><option>0〜10km</option><option>10〜20km</option><option>20〜25km</option></select>
+  <select id="usecase"><option value="">用途指定なし</option><option>飛行機</option><option>海・港</option><option>工場夜景</option><option>静かな場所</option><option>Story</option><option>雨天</option></select>
+  <select id="parking"><option value="all">駐車条件すべて</option><option value="offstreet">専用・路外駐車を優先</option><option value="curb">合法な路上短時間アクセスあり</option></select>
+  <select id="sort"><option value="recommended">おすすめ順</option><option value="night">夜間適性順</option><option value="hidden">穴場順</option><option value="rain">雨天適性順</option><option value="name">名称順</option></select>
+</section>
+<nav class="tabs">
+<button class="tab active" data-tab="spots">候補地</button>
+<button class="tab" data-tab="routes">ルート</button>
+<button class="tab" data-tab="curb">合法路上アクセス</button>
+</nav>
+<section id="spots-panel" class="panel active"><div id="spot-count" class="count"></div><div id="spots" class="grid"></div></section>
+<section id="routes-panel" class="panel"><div id="route-count" class="count"></div><div id="routes" class="grid"></div></section>
+<section id="curb-panel" class="panel"><div class="notice">現地の標識・白線・機器表示が最終判断です。慣行駐車だけの場所は掲載していません。</div><div id="curb-list" class="grid"></div></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
