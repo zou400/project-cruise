@@ -1,0 +1,27 @@
+{
+  "version": "v0.10.3",
+  "policy": "Original AI-generated Project Cruise category visuals. They establish mood and do not claim to depict an exact destination. Replace or override with owned or licensed destination photography when available.",
+  "dimensions": "1672x941",
+  "assets": {
+    "airport": "airport-bluehour-v3.webp",
+    "bridge": "bay-bridge-dusk-v3.webp",
+    "industry": "industrial-night-v3.webp",
+    "city": "urban-architecture-v3.webp"
+  },
+  "legacyAssets": {
+    "airport": "airport-bluehour.webp",
+    "bridge": "bay-bridge-dusk.webp",
+    "industry": "industrial-night.webp",
+    "city": "urban-architecture.webp"
+  },
+  "destinationOverrides": {},
+  "nextPriorityDestinations": [
+    "HANEDA INNOVATION CITY 足湯スカイデッキ",
+    "京浜島つばさ公園",
+    "城南島海浜公園",
+    "若洲海浜公園",
+    "東京ゲートブリッジ",
+    "川崎マリエン",
+    "東京タワー"
+  ]
+}
