@@ -1,0 +1,20 @@
+{
+  "release": "Project Cruise Visual Reveal v0.10.2.1",
+  "base": "Project_Cruise_Canonical_v0.10.0_2026-08-01",
+  "status": "passed_with_environment_note",
+  "preserved": {
+    "destinations": 320,
+    "canonicalRoutes": 181,
+    "totalResults": 501,
+    "dataFilesByteIdenticalToBase": true
+  },
+  "checks": {
+    "javascriptSyntax": "passed",
+    "visualManifestJson": "passed",
+    "duplicateHtmlIds": "passed",
+    "localVisualAssetsPresent": 4,
+    "googleMapsLinksPreserved": true,
+    "mobileCssBreakpoint": "present"
+  },
+  "environmentNote": "Headless browser executable was unavailable in the runtime, so final screenshot rendering must be confirmed after deployment. Static, syntax, identity, and asset checks passed."
+}

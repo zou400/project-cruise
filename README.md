@@ -1,36 +1,73 @@
-# Project Cruise GitHub Pages Prototype
+# Project Cruise v0.10.0 — 現在の正本
 
-大田区・蒲田周辺を起点にした「近くて濃い」ドライブ候補検索の静的プロトタイプです。
+このフォルダは、2026年8月1日時点で公開中の **Project Cruise v0.10.0** と、その内部データを独立JSON化した正本一式です。
 
-## データ
-- 近距離コア地点: 93件
-- 用途別近距離ルート: 45件
-- 合法な路上短時間アクセス: 10件
-- Excel正本: `Project_Cruise_合法路上駐車統合版.xlsx`
+## 現在の収録内容
 
-## GitHub Pages公開手順
-1. ZIPを展開
-2. 展開した中身をGitHubリポジトリ直下へアップロード
-3. Settings → Pages
-4. Source: Deploy from a branch
-5. Branch: main / Folder: /(root)
-6. Save
+| 内容 | 件数 |
+|---|---:|
+| 地点 | 320件 |
+| 完成ルート | 181件 |
+| 目的地直行候補 | 320件 |
+| 選択可能な結果 | 501件 |
 
-公開URL例:
-`https://zou400.github.io/project-cruise/`
+## ファイル構成
+
+| ファイル | 役割 |
+|---|---|
+| `index.html` | 現在公開中のv0.10.0本体。GitHub Pagesへそのまま配置できる単一HTML版 |
+| `destinations.json` | `index.html`から抽出した最新の地点320件 |
+| `routes.json` | 完成ルート181件＋目的地直行候補320件を含む、最新の選択候補501件 |
+| `project-cruise.json` | リリース情報・件数・出典・地点・ルートを1つにまとめた結合マスター |
+| `VALIDATION.md` | JSON構文、ID、欠番、件数、既知事項、SHA-256の検証記録 |
+| `README.md` | 本書。構成、更新履歴、運用ルールを記録 |
+| `docs/RELEASE_README_v0.10.0.md` | 受領した公開版ZIPに入っていたREADMEの原本 |
+| `docs/RELEASE_VALIDATION_v0.10.0.md` | 受領した公開版ZIPに入っていた検証記録の原本 |
+
+## 正本の扱い
+
+- **公開アプリの正本:** `index.html`
+- **データ全体の正本:** `project-cruise.json`
+- **用途別の分離データ:** `destinations.json` と `routes.json`
+- このパッケージ作成時点では、3つのJSONと `index.html` 内の埋込配列は同一内容です。
+- `routes.json` はルートだけでなく全選択候補を収録しています。完成ルートだけが必要な場合は、`candidateSource === "canonical_route"` または `R001〜R181` で抽出します。
+
+## 公開方法
+
+現在と同じ単一HTML構成で公開する場合は、GitHub Pages対象ブランチのルートへ `index.html` を配置します。JSONと文書も同じ場所へ置くと、GitHub上で正本を確認・引き継ぎやすくなります。
+
+## 更新履歴
+
+### 2026-08-01 — 正本パッケージ化
+
+- 公開中のv0.10.0一式を基準に正本を確定
+- `index.html` 埋込データから `destinations.json` と `routes.json` を機械抽出
+- 結合マスター `project-cruise.json` を作成
+- 件数、ID、欠番、構文、参照上の既知事項、SHA-256を検証
+
+### 2026-07-31 — v0.10.0
+
+- 320地点・181完成ルート・501結果のデータ基盤を維持
+- Destination Value、Context Fit、Route Readinessを内部的に分離
+- `verified_route`、`final_destination`、`rain_destination`、`waypoint`、`experimental_destination` の役割を追加
+- 提案キャラクター表示、決定時間、再抽選回数を学習イベントへ追加
+- 既存localStorage学習キーを維持
+
+### 2026-07-31 — v29統合
+
+- 地点をD001〜D320へ拡張
+- 完成ルートをR001〜R181へ拡張
+- 目的地直行候補を加え、選択可能な結果を501件へ拡張
+
+## 今後の更新ルール
+
+1. バージョン番号と更新日を先に決める。
+2. `project-cruise.json` をデータ変更の基準にする。
+3. 同じ内容から `destinations.json`、`routes.json`、`index.html` の埋込データを再生成する。
+4. D/R/P-DのID重複と欠番、JSON/JavaScript構文、件数を検証する。
+5. iPhone Safari、3つの時間枠、再抽選、Google Maps遷移、帰還評価、学習データ互換を確認する。
+6. `README.md` と `VALIDATION.md` を更新し、検証済みZIPを新しい正本にする。
 
 ## 注意
-`index.html`をPCで直接開くとJSONを読み込めない場合があります。GitHub Pages上では動作します。
 
-
-## UI 0.3
-一覧表示を廃止し、時間選択→ルートガチャ→Googleマップ起動の単一導線に変更。
-
-## UI 0.4
-- 行先カードとルート地図を同時表示
-- OpenStreetMap + Leafletによるルートプレビュー
-- 出発・経由地・目的地を色分け
-- OSRMで道路ルートを取得し、線をアニメーション表示
-- 地図クリックでGoogleマップへ移動
-- スマホではカード→地図の縦並び
-- 外部地図取得に失敗してもGoogleマップリンクは利用可能
+営業時間、駐車条件、工事、臨時閉鎖などは変動します。各候補の確認日と公式情報を参照し、出発前に最新条件を再確認してください。

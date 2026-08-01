@@ -1,0 +1,20 @@
+{
+  "version": "v0.10.2.1",
+  "policy": "Generated prototype fallbacks. Replace with owned or licensed destination photography without changing UI code.",
+  "assets": {
+    "airport": "airport-bluehour.webp",
+    "bridge": "bay-bridge-dusk.webp",
+    "industry": "industrial-night.webp",
+    "city": "urban-architecture.webp"
+  },
+  "destinationOverrides": {},
+  "nextPriorityDestinations": [
+    "HANEDA INNOVATION CITY 足湯スカイデッキ",
+    "京浜島つばさ公園",
+    "城南島海浜公園",
+    "若洲海浜公園",
+    "東京ゲートブリッジ",
+    "川崎マリエン",
+    "東京タワー"
+  ]
+}
