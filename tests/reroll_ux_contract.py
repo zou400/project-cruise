@@ -17,6 +17,6 @@ checks = {
     "sessionProgressShown": 'sessionDestinations.size' in js,
     "safeAreaDock": 'safe-area-inset-bottom' in css,
 }
-result = {"release": "v0.11.0-rc3", "checks": checks, "passed": all(checks.values())}
+result = {"release": "v0.11.0-rc4", "checks": checks, "passed": all(checks.values())}
 print(json.dumps(result, ensure_ascii=False, indent=2))
 raise SystemExit(0 if result["passed"] else 1)

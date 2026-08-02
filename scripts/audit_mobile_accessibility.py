@@ -20,7 +20,7 @@ checks = {
     "focus_visible": ":focus-visible" in css,
     "skip_link": 'class="pc-skip-link"' in html and 'id="main-content"' in html,
     "reduced_motion": "prefers-reduced-motion" in css,
-    "reduced_data": "prefers-reduced-data" in css and "navigator.connection?.saveData" in js,
+    "reduced_data": "prefers-reduced-data" in css and 'params.get("pcData") === "low"' in js,
     "radio_semantics": 'role="radiogroup"' in html and 'role="radio"' in html and "syncChoiceGroup" in js,
     "dialog_focus_trap": "focusableElements" in js and 'event.key === "Escape"' in js,
     "dialog_keyboard_safe": "max-height:calc(100dvh" in css and "font-size:16px" in css,
@@ -31,7 +31,7 @@ checks = {
     "status_live_regions": html.count('role="status"') >= 4,
 }
 report = {
-    "release": "v0.11.0-rc3",
+    "release": "v0.11.0-rc4",
     "deepening": 7,
     "target": ["iPhone Safari", "touch", "keyboard", "reduced motion", "low data"],
     "checks": checks,

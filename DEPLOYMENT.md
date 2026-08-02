@@ -1,10 +1,10 @@
-# Project Cruise v0.11.0-rc3 — GitHub Pages deployment
+# Project Cruise v0.11.0-rc4 — GitHub Pages deployment
 
 ## Recommended branch
 
 Create and test on:
 
-`release/v0.11.0-rc3`
+`release/v0.11.0-rc4`
 
 Do not replace the current production branch during the first test.
 
@@ -36,7 +36,7 @@ Open `http://localhost:8080/` and verify the normal flow before pushing.
 
 ## GitHub Pages steps
 
-1. Push this folder to `release/v0.11.0-rc3`.
+1. Push this folder to `release/v0.11.0-rc4`.
 2. Open the repository's **Actions** tab and confirm `Validate Project Cruise RC` passes.
 3. In **Settings → Pages**, publish from the test branch root, or use the repository's existing Pages deployment method.
 4. Open the deployed HTTPS URL on desktop and iPhone Safari.

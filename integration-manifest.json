@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "release": "v0.11.0-rc3",
+  "release": "v0.11.0-rc4",
   "immutableBaseline": {
     "destinations": 320,
     "canonicalRoutes": 181,
@@ -195,7 +195,7 @@
     "githubPagesWorkflow": ".github/workflows/deploy-pages.yml",
     "publishNowGuide": "GITHUB_PUBLISH_NOW.md",
     "rollbackGuide": "ROLLBACK.md",
-    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc3.md"
+    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc4.md"
   },
   "integrationEvents": {
     "pc:route-shown": "route and destination are available before asynchronous map estimation",

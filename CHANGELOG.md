@@ -1,6 +1,13 @@
 # Changelog
 
-## v0.11.0-rc3 — exact Hero 30 integrated
+## v0.11.0-rc4 — Hero display reliability
+
+- Added a real image layer for Hero rendering.
+- Removed automatic save-data suppression from the normal URL.
+- Increased load timeout and cache-busted Hero assets.
+- Preserved exact Hero 30, reroll diversity and mobile decision dock.
+
+## v0.11.0-rc4 — exact Hero 30 integrated
 
 ### Added
 

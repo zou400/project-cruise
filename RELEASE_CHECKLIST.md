@@ -1,8 +1,8 @@
-# Project Cruise v0.11.0-rc3 — Release checklist
+# Project Cruise v0.11.0-rc4 — Release checklist
 
 ## Build identity
 
-- [ ] Branch: `release/v0.11.0-rc3`
+- [ ] Branch: `release/v0.11.0-rc4`
 - [ ] Commit SHA recorded: `________________`
 - [ ] GitHub Pages URL recorded: `________________`
 - [ ] Test date/time (JST): `________________`

@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc3 — GitHub Integration Candidate
+# Project Cruise v0.11.0-rc4 — GitHub Integration Candidate
 
 ## GitHubへ今すぐ公開する場合
 
@@ -27,7 +27,7 @@ Then open `http://localhost:8080/`.
 ## GitHub test order
 
 1. Read `DEPLOYMENT.md`.
-2. Push to `release/v0.11.0-rc3`.
+2. Push to `release/v0.11.0-rc4`.
 3. Confirm the GitHub Actions validation passes.
 4. Complete `RELEASE_CHECKLIST.md` on the deployed HTTPS URL and iPhone Safari.
 5. Keep status at **HOLD** until the both deployed browser gates are complete.

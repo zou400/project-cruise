@@ -27,7 +27,7 @@ checks = {
     'overlayFirstPolicy': registry.get('policy', {}).get('overlayFirst') is True,
 }
 report = {
-    'release': 'v0.11.0-rc3',
+    'release': 'v0.11.0-rc4',
     'deepening': 8,
     'required': required,
     'missing': missing,

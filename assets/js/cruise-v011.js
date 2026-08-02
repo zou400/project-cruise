@@ -1,4 +1,4 @@
-/* Project Cruise GitHub Integration v0.11.0-rc3
+/* Project Cruise GitHub Integration v0.11.0-rc4
  * UI shell only. Canonical selection, learning, Maps, feedback and issue-report
  * behavior remains owned by the inline v0.10.0 engine.
  */
@@ -13,10 +13,11 @@
     lastDetail: null,
     currentWeatherState: "unknown",
     visualHistoryKey: "pcHeroHistoryV1",
-    build: "v0.11.0-rc3",
+    build: "v0.11.0-rc4",
     activeModal: null,
     modalReturnFocus: null,
-    lowData: params.get("pcData") === "low" || navigator.connection?.saveData === true,
+    lowData: params.get("pcData") === "low",
+    heroAssetVersion: "v0.11.0-rc4",
     sessionDestinations: new Set(),
     candidateTotal: null
   };
@@ -289,7 +290,9 @@
     hero.className = "pc-scene-hero";
     hero.setAttribute("aria-live", "polite");
     hero.innerHTML = `
-      <div class="pc-scene-media" aria-hidden="true"></div>
+      <div class="pc-scene-media" aria-hidden="true">
+        <img class="pc-scene-image" alt="" decoding="async" fetchpriority="high">
+      </div>
       <div class="pc-scene-content">
         <span class="pc-scene-kicker">DESTINATION REVEAL</span>
         <h2 class="pc-scene-destination">今夜の一本</h2>
@@ -335,7 +338,7 @@
       route.type,
       route.experienceDNA?.category
     ].filter(Boolean).join(" ").toLowerCase();
-    if (/pa|高速|首都高|サービスエリア|パーキングエリア/.test(source)) return "highway";
+    if (/pa|高速|首都高|サービスエリア|パーキングエリア/.test(source)) return "pa";
     if (/空港|飛行機|航空|滑走路/.test(source)) return "airport";
     if (/工場|industrial|コンビナート/.test(source)) return "industrial";
     if (/海|港|水辺|湾岸|河川|湖|water/.test(source)) return "water";
@@ -379,8 +382,8 @@
     return new Promise(resolve => {
       const image = new Image();
       image.decoding = "async";
-      image.fetchPriority = "low";
-      const timer = setTimeout(() => resolve(false), 900);
+      image.fetchPriority = "high";
+      const timer = setTimeout(() => resolve(false), 8000);
       image.onload = () => { clearTimeout(timer); resolve(true); };
       image.onerror = () => { clearTimeout(timer); resolve(false); };
       image.src = src;
@@ -388,7 +391,7 @@
   }
 
   async function pickAvailableVisual(route, destination, category, time, seed) {
-    if (params.get("pcVisual") === "off" || state.lowData) return null;
+    if (params.get("pcVisual") === "off") return null;
     const precision = window.ProjectCruiseHeroPrecision?.select?.({
       route,
       destination,
@@ -413,7 +416,9 @@
         return { assetPath: src, imageId: src, source: "category-fallback", disclosure: "体験イメージ" };
       }
     }
-    return precision ? { ...precision, assetPath: null, source: "hero-precision-css-fallback" } : null;
+    if (precision?.assetPath) return { ...precision, source: "hero-precision-direct-load" };
+    const direct = ordered[0];
+    return direct ? { assetPath: direct, imageId: direct, source: "category-direct-load", disclosure: "体験イメージ" } : null;
   }
 
   function compactStory() {
@@ -447,8 +452,34 @@
     const choice = await pickAvailableVisual(route, destination, category, visualTime(), routeId);
     if (state.lastRouteId !== routeId) return;
     const media = $(".pc-scene-media", hero);
-    if (media && choice?.assetPath) media.style.setProperty("--pc-hero-image", `url("${escapeCssUrl(choice.assetPath)}")`);
-    else if (media) media.style.removeProperty("--pc-hero-image");
+    const image = $(".pc-scene-image", hero);
+    media?.classList.remove("has-image", "image-error");
+    if (media) media.style.removeProperty("--pc-hero-image");
+
+    if (image && choice?.assetPath) {
+      const assetUrl = new URL(choice.assetPath, document.baseURI);
+      assetUrl.searchParams.set("v", state.heroAssetVersion);
+      const expectedRouteId = routeId;
+      image.onload = () => {
+        if (state.lastRouteId !== expectedRouteId) return;
+        media?.classList.add("has-image");
+        media?.classList.remove("image-error");
+        hero.dataset.heroLoad = "loaded";
+      };
+      image.onerror = () => {
+        if (state.lastRouteId !== expectedRouteId) return;
+        media?.classList.remove("has-image");
+        media?.classList.add("image-error");
+        hero.dataset.heroLoad = "error";
+      };
+      image.src = assetUrl.href;
+      hero.dataset.heroLoad = image.complete && image.naturalWidth > 0 ? "loaded" : "loading";
+      if (image.complete && image.naturalWidth > 0) media?.classList.add("has-image");
+    } else if (image) {
+      image.removeAttribute("src");
+      hero.dataset.heroLoad = "fallback";
+    }
+
     hero.dataset.heroImageId = choice?.imageId || "css-fallback";
     hero.dataset.heroSource = choice?.source || "category-css-fallback";
     const disclosure = $(".pc-scene-disclosure", hero);

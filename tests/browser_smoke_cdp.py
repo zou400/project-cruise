@@ -121,7 +121,7 @@ def main() -> int:
         nav_result = cdp.command('Page.navigate', {'url': target_url})
         if nav_result.get('errorText') == 'net::ERR_BLOCKED_BY_ADMINISTRATOR':
             report = {
-                'release': 'v0.11.0-rc3',
+                'release': 'v0.11.0-rc4',
                 'status': 'skipped',
                 'reason': 'The current execution environment blocks Chromium navigation with ERR_BLOCKED_BY_ADMINISTRATOR.',
                 'nextAction': 'Run this same test on GitHub Actions or a local browser-enabled environment.',
@@ -220,11 +220,11 @@ def main() -> int:
             'weather_demo_populated': bool(result.get('weatherSummary')),
             'weather_attribution_present': 'Open-Meteo' in result.get('weatherSource', ''),
             'no_shadow_or_rank_labels': not result.get('shadowVisible'),
-            'ui_version_exposed': result.get('uiVersion') == 'v0.11.0-rc3',
+            'ui_version_exposed': result.get('uiVersion') == 'v0.11.0-rc4',
             'no_runtime_exceptions_before_map_stub': len(exceptions) == 0,
         }
         report = {
-            'release': 'v0.11.0-rc3',
+            'release': 'v0.11.0-rc4',
             'initial': initial,
             'result': result,
             'exceptions': exceptions,

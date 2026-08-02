@@ -1,7 +1,7 @@
 {
-  "release": "v0.11.0-rc3",
+  "release": "v0.11.0-rc4",
   "deepening": 9,
-  "mode": "pending-tolerant",
+  "mode": "strict",
   "status": "accepted",
   "expectedAssetCount": 30,
   "presentAssetCount": 30,

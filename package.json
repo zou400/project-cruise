@@ -1,6 +1,6 @@
 {
   "name": "project-cruise",
-  "version": "0.11.0-rc3",
+  "version": "0.11.0-rc4",
   "private": true,
   "description": "Project Cruise GitHub integration release candidate with exact 30 Hero WebP assets",
   "scripts": {

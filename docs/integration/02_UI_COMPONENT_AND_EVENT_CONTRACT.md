@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc3｜UIコンポーネント・イベント契約
+# Project Cruise v0.11.0-rc4｜UIコンポーネント・イベント契約
 
 ## 1. この深化で固定した原則
 

@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc3
+# Project Cruise v0.11.0-rc4
 
 ## Exact Hero 30 integrated
 
