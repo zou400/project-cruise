@@ -1,0 +1,34 @@
+{
+  "patch_name": "Project Cruise Overnight Data Patch",
+  "generated_at": "2026-08-03T08:34:00+09:00",
+  "target": "zou400/project-cruise",
+  "patch_mode": "additive_non_public",
+  "safe_to_apply": true,
+  "changes": [
+    {
+      "id": "midnight_airport_flow_v0_7",
+      "action": "add_incubator_data",
+      "status": "pre_audit_frozen_not_public",
+      "public_catalog_changed": false,
+      "reason": "実走3回前のため公開ルートへは追加しない"
+    },
+    {
+      "id": "cruise_receipt_v1_rc2",
+      "action": "not_included",
+      "status": "manual_iphone_qa_pending",
+      "reason": "GitHub投入候補だが、iPhone Safari・Google Maps往復・共有シートの実機確認前"
+    },
+    {
+      "id": "weather_narrative",
+      "action": "not_included",
+      "status": "already_present_in_v0_11_rc_line_or_preview_only",
+      "reason": "二重統合と版衝突を避ける"
+    }
+  ],
+  "explicit_exclusions": [
+    "未来日付のサンプル実走を実績として扱わない",
+    "routes.jsonへ公開候補を自動追加しない",
+    "index.htmlを上書きしない",
+    "既存320地点・181完成ルート・501結果を変更しない"
+  ]
+}

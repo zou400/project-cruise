@@ -1,0 +1,208 @@
+{
+  "schema_version": "0.7.0",
+  "definition_version": "0.7.0",
+  "route_id": "tokyo_midnight_airport_flow",
+  "legacy_route_ids": [
+    "tokyo_midnight_airport_flow_v0_6",
+    "tokyo_midnight_airport_flow_v0_5"
+  ],
+  "status": "pre_audit_frozen_not_public",
+  "title": "MIDNIGHT AIRPORT FLOW",
+  "subtitle": "空港都市を抜け、二つの橋で東京へ戻る。",
+  "product_truth": "目的地へ行くことより、東京で走る快感を取り戻すことを優先する。",
+  "scope_lock": {
+    "route_count": 1,
+    "vehicle_count": 1,
+    "primary_user_count": 1,
+    "required_completed_runs": 3,
+    "unlock_condition": "3回の有効な実走監査を終え、publication_gateがpublishableまたはrevise_and_retestになるまで次の看板ルートを開発しない"
+  },
+  "target_duration": {
+    "state": "unmeasured",
+    "expected_range_min": [
+      60,
+      90
+    ],
+    "naming_rule": "3回の有効な実走中央値を15分単位に丸め、退屈区間を足さずに商品時間を決める"
+  },
+  "time_window": {
+    "recommended_start": "22:00-00:30",
+    "reassess_after": "00:30",
+    "preflight_recheck_required": true
+  },
+  "target_user": {
+    "drive_intent": "目的地より走行そのものを楽しみたい",
+    "sleepiness_max_5": 1,
+    "fatigue_max_5": 2,
+    "toll_required": false,
+    "vehicle_scope": "一般乗用車。車幅・車高適合は車両ごとに確認"
+  },
+  "navigation": {
+    "strategy": "two_leg",
+    "leg_break_node_id": "hic_p1_east",
+    "driver_interaction_rule": "ナビ操作は駐車中のみ",
+    "provider": "google_maps_external_handoff",
+    "route_preview_required": true
+  },
+  "gps_audit": {
+    "movement_threshold_kmh": 3,
+    "stop_event_min_seconds": 20,
+    "max_accepted_gap_seconds": 120,
+    "minimum_coverage_ratio": 0.9,
+    "maximum_plausible_speed_kmh": 180,
+    "minimum_points": 3
+  },
+  "nodes": [
+    {
+      "node_id": "bigfun_heiwajima",
+      "name": "ドン・キホーテ BIGFUN平和島店",
+      "role": [
+        "launch_pit",
+        "return_anchor"
+      ],
+      "stop_required": false,
+      "access_status": "verified_with_vehicle_fit_pending"
+    },
+    {
+      "node_id": "hic_p1_east",
+      "name": "HANEDA INNOVATION CITY P1 東側平面駐車場",
+      "role": [
+        "legal_arrival",
+        "leg_break",
+        "reset_node"
+      ],
+      "stop_required": true,
+      "standard_stop_min": [
+        8,
+        12
+      ],
+      "access_status": "officially_verified_2026_08_02"
+    },
+    {
+      "node_id": "tamagawa_skybridge",
+      "name": "多摩川スカイブリッジ",
+      "role": [
+        "experience_reveal",
+        "required_pass_through"
+      ],
+      "stop_required": false,
+      "access_status": "officially_verified_general_passenger_vehicle"
+    },
+    {
+      "node_id": "route_409_trunk",
+      "name": "国道409号系統の幹線道路",
+      "role": [
+        "kawasaki_trunk_flow",
+        "required_pass_through"
+      ],
+      "stop_required": false,
+      "access_status": "route_alignment_requires_drive_audit"
+    },
+    {
+      "node_id": "daishi_bridge",
+      "name": "大師橋",
+      "role": [
+        "second_bridge",
+        "required_pass_through"
+      ],
+      "stop_required": false,
+      "access_status": "route_alignment_requires_drive_audit"
+    }
+  ],
+  "legs": [
+    {
+      "leg_id": "leg_1_airport_approach",
+      "origin_node_id": "bigfun_heiwajima",
+      "destination_node_id": "hic_p1_east",
+      "required_pass_through_node_ids": [],
+      "forbidden_traits": [
+        "jonanjima_after_restriction_time",
+        "keihinjima_after_restriction_time",
+        "haneda_terminal_roadside_stop",
+        "residential_shortcut",
+        "private_property_shortcut"
+      ],
+      "audit_focus": [
+        "signal_stop_count",
+        "heavy_vehicle_pressure",
+        "lane_change_load",
+        "hic_entry_visibility",
+        "navigation_route_stability"
+      ]
+    },
+    {
+      "leg_id": "leg_2_skybridge_daishi_loop",
+      "origin_node_id": "hic_p1_east",
+      "destination_node_id": "bigfun_heiwajima",
+      "required_pass_through_node_ids": [
+        "tamagawa_skybridge",
+        "route_409_trunk",
+        "daishi_bridge"
+      ],
+      "forbidden_traits": [
+        "king_skyfront_internal_loop",
+        "residential_shortcut",
+        "roadside_stop",
+        "private_property_shortcut",
+        "jonanjima_after_restriction_time",
+        "keihinjima_after_restriction_time"
+      ],
+      "audit_focus": [
+        "skybridge_transition_value",
+        "trunk_route_maintenance",
+        "route_409_stop_and_go",
+        "daishi_bridge_return_value",
+        "natural_return_to_heiwajima"
+      ]
+    }
+  ],
+  "preflight_gate": {
+    "all_required": true,
+    "checks": {
+      "sleepiness_max_5": 1,
+      "fatigue_max_5": 2,
+      "severe_weather_absent": true,
+      "visibility_ok": true,
+      "live_closure_check_completed": true,
+      "route_preview_completed": true,
+      "forbidden_area_absent_from_preview": true,
+      "phone_mounted": true,
+      "gps_logging_started": true
+    }
+  },
+  "publication_criteria": {
+    "required_completed_runs": 3,
+    "hard_zero_every_run": {
+      "restricted_area_entries": 0,
+      "roadside_stops": 0,
+      "residential_shortcuts": 0,
+      "private_property_shortcuts": 0,
+      "unnecessary_u_turns": 0,
+      "unsafe_events": 0
+    },
+    "max_every_run": {
+      "difficult_junctions": 2,
+      "route_deviations": 1
+    },
+    "median_thresholds": {
+      "stopped_time_ratio_max": 0.2,
+      "longest_continuous_drive_min": 10,
+      "driving_satisfaction_min_5": 4,
+      "repeat_intention_min_5": 4,
+      "skybridge_transition_min_5": 4,
+      "daishi_bridge_return_value_min_5": 3
+    },
+    "qualitative_blockers": [
+      "route_409_is_only_stop_and_go",
+      "hic_breaks_experience",
+      "daishi_bridge_is_pure_detour",
+      "navigation_requires_dangerous_lane_change",
+      "official_legality_unresolved"
+    ]
+  },
+  "source_audit": {
+    "checked_at": "2026-08-02T23:20:00+09:00",
+    "live_status_rule": "事故・工事・通行止め・気象は出発直前に再確認する",
+    "fact_expiry_policy": "営業時間・料金・通行規制は30日または変更告知時に再監査"
+  }
+}
