@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Project Cruise — Visual QA</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0910;--panel:#15111b;--line:#34293b;--text:#f8f4f8;--muted:#a99cac;--accent:#ff3e5f;--accent2:#c42a86;--ok:#6bd49f;--warn:#ffcc67}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#3d0e2b 0,transparent 35%),var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:max(20px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(30px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}
+header{max-width:1400px;margin:auto;padding:24px 0 20px}h1{font-size:clamp(28px,5vw,62px);letter-spacing:-.04em;margin:0}.eyebrow{color:#ff7a86;letter-spacing:.22em;text-transform:uppercase;font-weight:800}.note{max-width:850px;color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:20px 0}.controls label{display:grid;gap:5px;color:var(--muted)}select,a.button{min-height:44px;border:1px solid var(--line);border-radius:10px;background:#17121d;color:var(--text);padding:10px 14px;text-decoration:none}a.button.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));border:0;font-weight:800}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.stat{padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.card{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#201523,#0e0c12);min-width:0}.frame{aspect-ratio:16/9;position:relative;background:linear-gradient(135deg,#35182c,#11141f);display:grid;place-items:center}.frame img{width:100%;height:100%;object-fit:cover;display:block}.missing{position:absolute;inset:0;display:grid;place-items:center;color:var(--warn);font-weight:900;letter-spacing:.18em;background:repeating-linear-gradient(135deg,rgba(255,255,255,.02) 0 12px,transparent 12px 24px)}.meta{padding:13px}.id{font-weight:900;overflow-wrap:anywhere}.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.badge{border:1px solid var(--line);border-radius:999px;padding:3px 8px;color:var(--muted);font-size:12px}.path{margin-top:8px;color:#817484;font:11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.fixtures{max-width:1400px;margin:34px auto 0;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.fixtures h2{margin-top:0}.fixture-links{display:flex;gap:8px;flex-wrap:wrap}.fixture-links a{color:#ffd4dd}
+@media(max-width:600px){body{padding-inline:14px}.controls{display:grid;grid-template-columns:1fr}.controls select,.controls a{width:100%}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Project Cruise / Release Candidate QA</div>
+<h1>Hero Precision Visual QA</h1>
+<p class="note">このページは30枚の正確な上流WebPを受け入れるためのコンタクトシートです。画像がない場合はMISSINGを表示し、代替画像を捏造しません。画像の意味・クロップ・文字可読性・昼夜整合を人間が確認してください。</p>
+<div class="controls">
+<label>Category<select id="category-filter"><option value="">ALL</option></select></label>
+<label>Phase<select id="phase-filter"><option value="">ALL</option></select></label>
+<a class="button primary" href="./index.html?weatherDemoState=live">通常画面を開く</a>
+<a class="button" href="./index.html?heroPhase=rain&heroWeather=rain&weatherDemoState=caution">雨天Fixture</a>
+<a class="button" href="./index.html?pcData=low&pcWeather=off">低通信量Fixture</a>
+</div>
+<div class="stats" id="stats"></div>
+</header>
+<main class="grid" id="grid" aria-live="polite"></main>
+<section class="fixtures">
+<h2>公開前Fixture</h2>
+<div class="fixture-links">
+<a href="./index.html?heroPhase=day">DAY</a>
+<a href="./index.html?heroPhase=twilight">TWILIGHT</a>
+<a href="./index.html?heroPhase=night">NIGHT</a>
+<a href="./index.html?heroPhase=rain&heroWeather=rain">RAIN</a>
+<a href="./index.html?pcUi=classic">CLASSIC UI</a>
+<a href="./index.html?pcVisual=off">VISUAL OFF</a>
+<a href="./index.html?pcWeather=off">WEATHER OFF</a>
+<a href="./index.html?pcOps=off">OPS OFF</a>
+<a href="./index.html?pcArrival=off">ARRIVAL OFF</a>
+<a href="./index.html?pcData=low">LOW DATA</a>
+</div>
+</section>
+<script>
+(async()=>{
+ const catalog=await fetch('data/hero/hero-image-catalog.v1.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
+ const entries=catalog.entries||[]; const grid=document.querySelector('#grid'); const cf=document.querySelector('#category-filter'); const pf=document.querySelector('#phase-filter');
+ const options=(sel,values)=>[...new Set(values)].sort().forEach(v=>sel.insertAdjacentHTML('beforeend',`<option value="${v}">${v}</option>`));
+ options(cf,entries.map(x=>x.category)); options(pf,entries.map(x=>x.phase));
+ let missing=0;
+ function render(){missing=0;grid.textContent='';const visible=entries.filter(x=>(!cf.value||x.category===cf.value)&&(!pf.value||x.phase===pf.value));
+  visible.forEach(x=>{const card=document.createElement('article');card.className='card';const frame=document.createElement('div');frame.className='frame';const img=new Image();img.alt=`${x.imageId} 体験イメージ`;img.loading='lazy';img.src=x.assetPath;const miss=document.createElement('div');miss.className='missing';miss.textContent='MISSING';miss.hidden=true;img.onerror=()=>{img.remove();miss.hidden=false;missing++;updateStats(visible.length)};frame.append(img,miss);card.append(frame);const meta=document.createElement('div');meta.className='meta';meta.innerHTML=`<div class="id">${x.imageId}</div><div class="badges"><span class="badge">${x.category}</span><span class="badge">${x.phase}</span>${(x.sceneTraits||[]).map(t=>`<span class="badge">${t}</span>`).join('')}</div><div class="path">${x.assetPath}</div>`;card.append(meta);grid.append(card)});updateStats(visible.length)}
+ function updateStats(visible){document.querySelector('#stats').innerHTML=`<span class="stat">CATALOG ${entries.length}</span><span class="stat">VISIBLE ${visible}</span><span class="stat">MISSING ${missing}</span><span class="stat">SOURCE: EXACT UPSTREAM ONLY</span>`}
+ cf.addEventListener('change',render);pf.addEventListener('change',render);render();
+})().catch(err=>{document.querySelector('#grid').textContent='Catalog load failed: '+err.message});
+</script>
+</body>
+</html>

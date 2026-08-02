@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "release": {
+    "name": "Project Cruise GitHub Integration",
+    "version": "v0.11.0-rc1",
+    "status": "github-publish-candidate-10-of-10",
+    "generatedAt": "2026-08-02T16:06:00+09:00",
+    "canonicalBase": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
+    "canonicalZipSha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e"
+  },
+  "immutableBaseline": {
+    "destinations": 320,
+    "canonicalRoutes": 181,
+    "directDestinationCandidates": 320,
+    "selectableResults": 501,
+    "destinationIdRange": "D001-D320",
+    "routeIdRange": "R001-R181",
+    "directCandidateIdRange": "P-D001-P-D320",
+    "dataMaster": "project-cruise.json",
+    "legacyLocalStorageKeys": [
+      "pcSelectionProfileV1",
+      "pcRouteStatsV1",
+      "pcLearningEventsV1",
+      "pcPendingCruiseV1",
+      "pcRerollCounterV1",
+      "pcGeocodeCacheV2Kanto",
+      "pcIssueReportsV1"
+    ]
+  },
+  "integrationTracks": [
+    {
+      "id": "cinematic-ui",
+      "decision": "adopt-and-refactor",
+      "source": "Integrated RC v0.10.4-rc1 candidate",
+      "requirements": [
+        "preserve all baseline behaviors",
+        "compress input form",
+        "use cinematic hero as the visual focal point",
+        "remove development tags from user-facing result view",
+        "connect draw action to destination reveal"
+      ]
+    },
+    {
+      "id": "visual-library-30",
+      "decision": "adopt-with-disclosure",
+      "source": "Project Cruise Visual Library 30 RC1",
+      "requirements": [
+        "30 WebP images at 1440x810",
+        "category and time-aware selection",
+        "recent image suppression via pcHeroHistoryV1",
+        "show 体験イメージ disclosure",
+        "do not present generated images as documentary destination photos"
+      ]
+    },
+    {
+      "id": "hero-precision-v1",
+      "decision": "adopt-schema-runtime-and-exact-asset-gate",
+      "source": "Project Cruise Hero Precision v0.10.4-rc3 / Hero Precision Patch v1",
+      "sourceHashes": {
+        "fullPackageSha256": "7cd1f52c2641bd23eef6b80a7d59d45c1860546d57fea27707f20602a297e3a0",
+        "patchSha256": "4a026b882325eb55dded3869269c1c143110437156b111c34c4abe5878c19ac3"
+      },
+      "requirements": [
+        "320 destination visual profiles",
+        "501 route hero affinities",
+        "4-6 candidates per route",
+        "four visual phases and six weather states",
+        "recent image suppression via pcHeroHistoryV1",
+        "do not regenerate or substitute the 30 upstream images",
+        "CSS fallback keeps destination selection and Maps handoff usable",
+        "GitHub Pages visual smoke test required after exact asset import"
+      ],
+      "workspaceState": "selection contract integrated; exact ZIP/WebP bytes pending import"
+    },
+    {
+      "id": "weather-shadow",
+      "decision": "adopt-display-only",
+      "source": "Project Cruise Weather v1.0.0-rc1",
+      "requirements": [
+        "arrival-area forecast heading",
+        "remove 順位未反映 and SHADOW from normal user-facing UI",
+        "weather must not change ranking, learning, exclusion, or official-warning blocking in this RC",
+        "retain pcWeather=off kill switch",
+        "show source attribution and graceful unavailable state"
+      ],
+      "workspaceState": "arrival-time Open-Meteo display adapter integrated with cache, attribution, failure fallback, and no ranking writes"
+    },
+    {
+      "id": "weather-narrative",
+      "decision": "adopt-local-safe-subset",
+      "source": "Weather Narrative Engine v0.2.0",
+      "requirements": [
+        "photo remains primary and copy remains supporting",
+        "use original midnight-noir voice without direct imitation",
+        "never invent numeric weather facts",
+        "fallback to deterministic local copy when AI is unavailable"
+      ]
+    },
+    {
+      "id": "spot-operational-overlay",
+      "decision": "adopt-as-non-destructive-overlay",
+      "source": "Spot v0.11 handoff plus U1-B operational overlay",
+      "requirements": [
+        "do not overwrite canonical records",
+        "resolve hard gates before scoring",
+        "support multiple arrival anchors per spotEntityKey",
+        "never invent Place IDs",
+        "walking extensions must not be inserted as driving waypoints",
+        "overlay can be disabled to restore v0.10.0 behavior"
+      ],
+      "workspaceState": "15 decisions, 28 critical anchors, and 22 tests integrated; full exact 149-anchor source byte import remains gated"
+    },
+    {
+      "id": "learning-engine",
+      "decision": "preserve-current-production-behavior",
+      "source": "canonical v0.10.0 plus verified v0.10.4-rc1 compatibility",
+      "requirements": [
+        "preserve existing localStorage keys",
+        "retain reroll reason and return feedback",
+        "do not allow weather to write learning signals in this RC"
+      ]
+    }
+  ],
+  "releaseGates": [
+    "canonical data counts unchanged",
+    "inline JavaScript syntax passes",
+    "all three time buckets produce valid results",
+    "reroll, Maps handoff, return feedback, and issue report work",
+    "visual assets have fallbacks",
+    "weather failure never blocks the 10-second decision flow",
+    "operational overlay can be disabled",
+    "iPhone Safari manual QA remains required before canonical promotion",
+    "npm test passes on Node.js 20",
+    "consolidated release-candidate audit passes",
+    "promotionReady remains false until exact Hero assets and manual browser gates pass",
+    "npm test passes from a clean checkout with Node 20 and Python 3.12",
+    "local HTTP smoke returns entry page and required assets",
+    "GitHub Actions validation artifact is retained for review",
+    "all interactive targets are at least 44 CSS pixels",
+    "no duplicate DOM ids remain",
+    "safe-area and dynamic viewport CSS are present",
+    "keyboard radio groups and modal focus management pass static audit",
+    "cross-chat source authority registry passes documentation audit",
+    "deployment and rollback steps are documented before GitHub push",
+    "unmounted upstream bytes are explicitly gated rather than reconstructed",
+    "GitHub Pages deployment workflow is included",
+    "final upload ZIP contains repository-root contents",
+    "SHA256SUMS.txt is generated after final validation"
+  ],
+  "deepeningProgress": {
+    "completed": 10,
+    "total": 10,
+    "currentTrack": "final-github-publish-package",
+    "nextTrack": "github-pages-and-iphone-safari-live-qa"
+  },
+  "implementationArtifacts": {
+    "uiCss": "assets/css/cruise-v011.css",
+    "uiJavaScript": "assets/js/cruise-v011.js",
+    "uiContract": "docs/integration/02_UI_COMPONENT_AND_EVENT_CONTRACT.md",
+    "uiAudit": "records/ui-contract-audit.json",
+    "browserSmoke": "records/browser-smoke.json",
+    "heroCatalog": "data/hero/hero-image-catalog.v1.json",
+    "destinationVisualProfiles": "data/hero/destination-visual-profile.v1.json",
+    "routeHeroAffinities": "data/hero/route-hero-affinity.v1.json",
+    "heroPrecisionData": "assets/js/hero/hero-precision-data.js",
+    "heroPrecisionRuntime": "assets/js/hero/hero-precision-runtime.js",
+    "heroPrecisionContract": "docs/integration/03_HERO_PRECISION_INTEGRATION.md",
+    "heroPrecisionAudit": "records/hero-precision-audit.json",
+    "heroPrecisionSamples": "records/hero-precision-samples.json",
+    "externalHeroPackageRecord": "records/external-hero-package.json",
+    "operationalOverlay": "data/operational/canonical-operational-overlay-u1b.v0.11.json",
+    "arrivalAnchorDisplay": "data/operational/arrival-anchor-display.v0.11.json",
+    "operationalTestVectors": "data/operational/implementation-test-vectors.v0.11.json",
+    "operationalCore": "assets/js/arrival/operational-core.js",
+    "arrivalRuntime": "assets/js/arrival/arrival-runtime.js",
+    "weatherRuntime": "assets/js/weather/weather-runtime.js",
+    "arrivalWeatherContract": "docs/integration/04_ARRIVAL_WEATHER_OPERATIONAL_INTEGRATION.md",
+    "arrivalOperationalAudit": "records/arrival-operational-audit.json",
+    "operationalCoreTest": "records/operational-core-test.json",
+    "resultStateMachine": "assets/js/arrival/result-state-machine.js",
+    "resultStateMachineContract": "docs/integration/05_OPERATIONAL_RESULT_STATE_MACHINE.md",
+    "resultStateMachineTest": "records/result-state-machine-test.json",
+    "operationalSelectionMatrix": "records/operational-selection-matrix.json",
+    "packageManifest": "package.json",
+    "githubValidationWorkflow": ".github/workflows/validate.yml",
+    "releaseAuditScript": "scripts/audit_release_candidate.py",
+    "releaseAudit": "records/release-candidate-audit.json",
+    "releaseReproducibilityContract": "docs/integration/06_RELEASE_REPRODUCIBILITY_AND_CI.md",
+    "packageScripts": "package.json",
+    "httpSmokeTest": "tests/http_smoke.py",
+    "httpSmokeRecord": "records/http-smoke.json",
+    "releaseCandidateAudit": "records/release-candidate-audit.json",
+    "mobileAccessibilityContract": "docs/integration/07_IPHONE_SAFARI_ACCESSIBILITY_PERFORMANCE.md",
+    "mobileAccessibilityAuditScript": "scripts/audit_mobile_accessibility.py",
+    "mobileAccessibilityAudit": "records/mobile-accessibility-audit.json",
+    "sourceAuthorityRegistry": "data/integration/source-authority-registry.v0.11.json",
+    "crossChatReconciliation": "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
+    "deploymentGuide": "DEPLOYMENT.md",
+    "releaseChecklist": "RELEASE_CHECKLIST.md",
+    "changeLog": "CHANGELOG.md",
+    "releaseDocumentationAudit": "records/release-documentation-audit.json",
+    "githubPagesWorkflow": ".github/workflows/deploy-pages.yml",
+    "publishNowGuide": "GITHUB_PUBLISH_NOW.md",
+    "rollbackGuide": "ROLLBACK.md",
+    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc1.md"
+  },
+  "integrationEvents": {
+    "pc:route-shown": "route and destination are available before asynchronous map estimation",
+    "pc:route-estimate": "road duration/distance is available or null after map estimation",
+    "pc:operational-state": "published after each preliminary or estimated operational assessment",
+    "pc:operational-reselect-request": "requests bounded automatic reselection without user-rejection learning",
+    "pc:operational-exhausted": "announces that no safe automatic fallback was found within the attempt limit"
+  },
+  "killSwitches": {
+    "pcUi=classic": "disable v0.11 presentation overlay",
+    "pcVisual=off": "disable visual assets but keep CSS hero fallback",
+    "pcWeather=off": "disable display-only weather adapter without changing route selection",
+    "pcOps=off": "disable operational hard-gate and arrival overlay, restoring canonical v0.10.0 selection/Maps behavior",
+    "heroPhase=day|twilight|night|rain": "GitHub test override for Hero Precision phase",
+    "heroWeather=clear|cloudy|rain|fog|wind|unknown": "GitHub test override for visual weather state only",
+    "pcArrival=off": "disable arrival/parking presentation runtime",
+    "weatherDemoState=live|caution|avoid": "manual visual test fixture; never production weather data",
+    "pcData=low": "disable Hero image probing and high-cost cinematic movement for low-data testing"
+  },
+  "deepening": 10,
+  "tracks": [
+    "final-github-publish-package-handoff"
+  ]
+}

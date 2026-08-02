@@ -1,0 +1,807 @@
+{
+  "release": "v0.11.0-rc1",
+  "baseline": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
+  "baselineSha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e",
+  "apply": "Extract the canonical package, then overwrite it with this patch while preserving paths.",
+  "changedFileCount": 114,
+  "entries": [
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "state": "added",
+      "bytes": 1403,
+      "sha256": "14a65d70140b0c23364b90e7af6997fe30f0e1068b1e55616c64655f1209df23",
+      "baselineSha256": null
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "state": "added",
+      "bytes": 2806,
+      "sha256": "5bc714b5025dc10aec0d5a551bc51aef09437e1a7e1455babf9427fa2ff9c28c",
+      "baselineSha256": null
+    },
+    {
+      "path": ".gitignore",
+      "state": "added",
+      "bytes": 75,
+      "sha256": "aa6f29414d856e4b118c4fcb5e8179208f4ce4c9c1fafd01569191ebfe461bba",
+      "baselineSha256": null
+    },
+    {
+      "path": ".nojekyll",
+      "state": "added",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baselineSha256": null
+    },
+    {
+      "path": "CHANGELOG.md",
+      "state": "added",
+      "bytes": 1632,
+      "sha256": "34c59118ca46cf62bbd230814ff3df3787ba18daed586c507bc9edb6f76bd0f2",
+      "baselineSha256": null
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "state": "added",
+      "bytes": 3010,
+      "sha256": "46eae2cef0666d2a98a1a994ffd864d3bac70f79896672ba310a716a34803a43",
+      "baselineSha256": null
+    },
+    {
+      "path": "FINAL_QA_REPORT.md",
+      "state": "added",
+      "bytes": 1393,
+      "sha256": "3b64c8b35d37d70be97af335e5974c496b33c1079b1b406cf47bd1f1720bccc6",
+      "baselineSha256": null
+    },
+    {
+      "path": "GITHUB_PUBLISH_NOW.md",
+      "state": "added",
+      "bytes": 2095,
+      "sha256": "5f3029d95c8a1453c5291297785657ad582cc6a9fc8caefedbd47d18c07cb06c",
+      "baselineSha256": null
+    },
+    {
+      "path": "README.md",
+      "state": "modified",
+      "bytes": 5735,
+      "sha256": "b6c36e9d67f39860f60bd65f90590104605ad7d40ce643c23d4cb34807847374",
+      "baselineSha256": "c8fc50102658ce8c0a05d669cb663ed92e52ddcde85a408469035d0110512367"
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "state": "added",
+      "bytes": 2917,
+      "sha256": "2968336d5a342324842a18332b35f26690dbbe764a56ed1ad120d97c36e90f1f",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc1.md",
+      "state": "added",
+      "bytes": 1414,
+      "sha256": "f3e7270ff042be93aafaa0bf8c745755149e73cceb4f76f75fc089d5315d5d5c",
+      "baselineSha256": null
+    },
+    {
+      "path": "ROLLBACK.md",
+      "state": "added",
+      "bytes": 787,
+      "sha256": "9452f61eab3469a682bdf563a9967bc66d22a93b4e26ea958fe67da98ffd05eb",
+      "baselineSha256": null
+    },
+    {
+      "path": "VALIDATION.md",
+      "state": "modified",
+      "bytes": 3692,
+      "sha256": "f879a34bc27486cab9a101714a571be6977937ec6eec8ab82cd2e7b9b087db8b",
+      "baselineSha256": "3ed25eeaae01a52a122ca91e12cebf95f38cf23838efccdded0e36bd97b6e8c4"
+    },
+    {
+      "path": "VERSION",
+      "state": "added",
+      "bytes": 12,
+      "sha256": "a56ed4ed0d56e0d5e6ac7535e9bdb2cf5234031fe2ddba1e2f7726d40cccf058",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "state": "added",
+      "bytes": 23073,
+      "sha256": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/.gitkeep",
+      "state": "added",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/README.md",
+      "state": "added",
+      "bytes": 600,
+      "sha256": "9c9bb6b7bc1c53b1bce512ee5dfab05832db1e4640b53a0c3aaf14574e344f3c",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/arrival/arrival-data.js",
+      "state": "added",
+      "bytes": 228786,
+      "sha256": "a05790c5193b610bdfb88545aed5a4818b788b036485884b9fa1da4f20d9a6b0",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/arrival/arrival-runtime.js",
+      "state": "added",
+      "bytes": 12520,
+      "sha256": "e5b4ce368158b2ecb16643fce353bdc9bb439101b70332d9db57f81816a89685",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/arrival/operational-core.js",
+      "state": "added",
+      "bytes": 12211,
+      "sha256": "0429f220c6f4df4ba33289779412ca29e20dcacd11671b80d0da0675bcf19007",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/arrival/result-state-machine.js",
+      "state": "added",
+      "bytes": 5950,
+      "sha256": "0de3dc0de4da412f6d4c1238fde34a084ef4c7fba027e6c3bb7f7c11db936706",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "state": "added",
+      "bytes": 18148,
+      "sha256": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/hero/hero-precision-data.js",
+      "state": "added",
+      "bytes": 751559,
+      "sha256": "fc08232067cf4a504074c91c56a7aeaa438edb34b4a838417ea3e5578315c04c",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/hero/hero-precision-runtime.js",
+      "state": "added",
+      "bytes": 5052,
+      "sha256": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/weather/weather-runtime.js",
+      "state": "added",
+      "bytes": 10967,
+      "sha256": "008b86d6ddc750d5ed6db47aec8368a834c0fc214dfd54af1b79e086869bb378",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/hero/destination-visual-profile.v1.json",
+      "state": "added",
+      "bytes": 183029,
+      "sha256": "797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/hero/hero-image-catalog.v1.json",
+      "state": "added",
+      "bytes": 12481,
+      "sha256": "c1186e686a654aa37829f4e9f3b7fd780407509d7644d6a83cacaf690e57c635",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/hero/route-hero-affinity.v1.json",
+      "state": "added",
+      "bytes": 1042040,
+      "sha256": "f3ac429522b694ce2237c1e001c68ecf67f8a435179abee9560262a560c00f41",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/integration/source-authority-registry.v0.11.json",
+      "state": "added",
+      "bytes": 6080,
+      "sha256": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/operational/arrival-anchor-display.v0.11.json",
+      "state": "added",
+      "bytes": 282170,
+      "sha256": "f92c6ec9964d5700555ccee1bc8e49c22a89b47c2d440024b452223a24dabc47",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/operational/canonical-operational-overlay-u1b.v0.11.json",
+      "state": "added",
+      "bytes": 7711,
+      "sha256": "b342332d4832e39e43d5bb0a6bede6ffe760cb2ee4fe6d68efc6c32185410e82",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/operational/implementation-test-vectors.v0.11.json",
+      "state": "added",
+      "bytes": 7426,
+      "sha256": "cf4106f830d1a2060820eac87759f1680eed72bb63c02905c4cefbadebee97e7",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/operational/resolution-lanes.v0.11.json",
+      "state": "added",
+      "bytes": 775,
+      "sha256": "0dee232397e7184cc198df4aa422a24c764338d0e91818255f0f3c9ac278a38b",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/operational/route-operational-index.v0.11.json",
+      "state": "added",
+      "bytes": 19715,
+      "sha256": "7f6a077c5e9d1bcd0aca686f73439d4b9291d6b65b89b2ce160f86cb391efc66",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/01_BASELINE_AND_PROMOTION_POLICY.md",
+      "state": "added",
+      "bytes": 2835,
+      "sha256": "34c14d8c58a7833a25fefc1c419ab8f0ec1363995d44d0c75fb7b6fb3ce34ae1",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/02_UI_COMPONENT_AND_EVENT_CONTRACT.md",
+      "state": "added",
+      "bytes": 6429,
+      "sha256": "89d057457296a2ab0612b978b161c2bf5abdc53f8b72a4179a16172e791bfbf7",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/03_HERO_PRECISION_INTEGRATION.md",
+      "state": "added",
+      "bytes": 1649,
+      "sha256": "c33049136a3be9f7d3f716944e9518db1203dcd3608a6222af2b4df3aa849739",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/04_ARRIVAL_WEATHER_OPERATIONAL_INTEGRATION.md",
+      "state": "added",
+      "bytes": 4950,
+      "sha256": "5029ea4f484cca179e4bb021f20da32f8bcd440f62d1e7d6608852ba9b6e5faa",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/05_OPERATIONAL_RESULT_STATE_MACHINE.md",
+      "state": "added",
+      "bytes": 2239,
+      "sha256": "923d77c78405a68795ef71c15d5f5f73a8c73841ff578fb85d520bdfcb7b5c35",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/06_RELEASE_REPRODUCIBILITY_AND_CI.md",
+      "state": "added",
+      "bytes": 1780,
+      "sha256": "e008d3a01121e455b7db840f935626dc1830a9770fa21fe3d1a518cf5a200291",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/07_IPHONE_SAFARI_ACCESSIBILITY_PERFORMANCE.md",
+      "state": "added",
+      "bytes": 1922,
+      "sha256": "a27156207c21e8ec286f81f8c07f340eecc1273d8ef2776de28ba7277dffc46b",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
+      "state": "added",
+      "bytes": 2738,
+      "sha256": "1ff24897d742cb8689e0734350dee39403bd70b78f7628a5907fb910c3792c5e",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/09_VISUAL_QA_ASSET_ACCEPTANCE_AND_FINAL_REPORT.md",
+      "state": "added",
+      "bytes": 3179,
+      "sha256": "3fbc191562854c316365270fa101c9fded4cc621442f743c52e98bda82c1ec19",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/integration/10_FINAL_GITHUB_PUBLISH_PACKAGE.md",
+      "state": "added",
+      "bytes": 819,
+      "sha256": "7b90b1fcbfd5bd55b004ee8cf0e2856eb645e84d9f94b002e526fd90b750b3f7",
+      "baselineSha256": null
+    },
+    {
+      "path": "index.html",
+      "state": "modified",
+      "bytes": 2538331,
+      "sha256": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
+      "baselineSha256": "8812231efa7fdbe6821906d187d9ef464c8359a26b62451006130e0585706b51"
+    },
+    {
+      "path": "integration-manifest.json",
+      "state": "added",
+      "bytes": 11284,
+      "sha256": "90deba99b537850666fd81dc09492e6a12c9228a0f332ee8a23a9d63b7f74dcf",
+      "baselineSha256": null
+    },
+    {
+      "path": "package.json",
+      "state": "added",
+      "bytes": 1465,
+      "sha256": "4f2895262a1495a2caf8fa2ae82a6657b1705e09282d0082551dd6aefb3db929",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/arrival-operational-audit.deepening05.json",
+      "state": "added",
+      "bytes": 1848,
+      "sha256": "a6ffc571a1f11ce4bfc6428d50a7c0729aec350047d96b61deae3c9a611f7104",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/arrival-operational-audit.json",
+      "state": "added",
+      "bytes": 2068,
+      "sha256": "598e83e61dbfb3580268c9f6e30f4147838e4dec06fa843e8a9a387b73673c6d",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/baseline-audit.deepening05.json",
+      "state": "added",
+      "bytes": 1346,
+      "sha256": "b245a1bd120a02d6ab2f4cf4859ff8ccf389da43e3692d32aab70659ca1ab51f",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/baseline-audit.json",
+      "state": "added",
+      "bytes": 1346,
+      "sha256": "9c5391cb40e1dec6c4b65f633a5092fbebe622996a8b19427f9248815a2f52db",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/baseline-audit.pre-ui.json",
+      "state": "added",
+      "bytes": 1216,
+      "sha256": "89fac1fb34466be3a75cbb9bb5c033112c4fe32b49e1daf65423147b7de37f26",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/browser-smoke.json",
+      "state": "added",
+      "bytes": 279,
+      "sha256": "966baf987345233f83f9ecb6a1d6621d3ce5c346bc9095aaa07d9016c4b78ff5",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/canonical-index-sha256.txt",
+      "state": "added",
+      "bytes": 77,
+      "sha256": "9743e11c6b5942f58ca257f9c875e57690f69d7c51186549085aab3451f1bd9e",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-02-files.json",
+      "state": "added",
+      "bytes": 1837,
+      "sha256": "b7f84f42313438887de6331220f5151197d09b0990ebd68629d1f0db141734d3",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-03-files.json",
+      "state": "added",
+      "bytes": 2710,
+      "sha256": "10cfeb3984efaf7c52bd6681d6c5e769bee5ab0bfacc4b37b5ea4079e56064f0",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-04-files.json",
+      "state": "added",
+      "bytes": 4156,
+      "sha256": "46d07336cac4d2ffe6e8dc4d159c7efc055552eb90e697747a378002763bc733",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-05-files.json",
+      "state": "added",
+      "bytes": 1744,
+      "sha256": "ba0ab89c0d93a86ac7d398b5016b69d6bd8c3eb4d0be28a19decb7c300ecd468",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-06-files.json",
+      "state": "added",
+      "bytes": 2091,
+      "sha256": "4c34ebcb1cea5859d741675f106e3106a2646037434d2e8e5893d17253b40eab",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-07-files.json",
+      "state": "added",
+      "bytes": 2311,
+      "sha256": "e8b9589cbbafd7f698250154f551f7823123213a4408ee240eb560f74c897396",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-08-files.json",
+      "state": "added",
+      "bytes": 2191,
+      "sha256": "ede94086a2f04bafac53baf7667be81bf21a22e3d4e175354a2db00d92603a9c",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-09-files.json",
+      "state": "added",
+      "bytes": 3331,
+      "sha256": "c8dd360314b3984f418b170e2f0c23918b6dd67134075d590c07a91503689d76",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/deepening-10-files.json",
+      "state": "added",
+      "bytes": 2030,
+      "sha256": "9837c65f2302dbd29434c004ab2eccda1248ed2ac576524842dac22ffc7033df",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/external-hero-package.json",
+      "state": "added",
+      "bytes": 964,
+      "sha256": "41bd2ead8ac4a46b0d1f3b53cf719b8aded571cd620126d5343961376331040a",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/final-qa-generate.deepening10.log",
+      "state": "added",
+      "bytes": 291,
+      "sha256": "dd78f3318080cbf6b0acbdbf8d3f495aa42140b3b1fe402941c5803746adc90e",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/final-qa-report.json",
+      "state": "added",
+      "bytes": 79213,
+      "sha256": "d59489a4ef17bb52dadc0ef0836f21efd5f2e91ae649b500e18899813bfe7138",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/hero-asset-acceptance.json",
+      "state": "added",
+      "bytes": 10760,
+      "sha256": "3ca6ef2fc98f2771120b69d4a649de7ff30533995656c5f4e697d54efe2b5ad1",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/hero-precision-audit.deepening05.json",
+      "state": "added",
+      "bytes": 2236,
+      "sha256": "5ba65232998e3665258bb5f657f35f76582ff7a92a95225031a51748e85799bc",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/hero-precision-audit.json",
+      "state": "added",
+      "bytes": 2236,
+      "sha256": "dc08b2dc958669f3e5f961e65caa1103e3fda465a8874b7de9467e4a0f814b15",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/hero-precision-samples.json",
+      "state": "added",
+      "bytes": 28887,
+      "sha256": "a781ecff2689880bdbbec876a5790f1cb8c0a3f4105525c9651a24d2d4943276",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/http-smoke.json",
+      "state": "added",
+      "bytes": 1047,
+      "sha256": "e35e40eece7fb287b1731f763d653697776317e68ddef41b96ae870ace6c3b2a",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/iphone-safari-qa.template.json",
+      "state": "added",
+      "bytes": 886,
+      "sha256": "dc7dcceca0c671e894d1e5bf809d35d0bde8c3dae831f6c0c4a120fde9475caa",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/mobile-accessibility-audit.json",
+      "state": "added",
+      "bytes": 694,
+      "sha256": "f7a4a6b0e6fc71802a1dbedaedf77c30a89c614128533206620d03b5e3846bd4",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.deepening06.log",
+      "state": "added",
+      "bytes": 3617,
+      "sha256": "1640210b118621681fddc1f5442fe5f0907f755aa5735d6ba2ab0c04418b0a1d",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.deepening07.log",
+      "state": "added",
+      "bytes": 4424,
+      "sha256": "e4a9278907d89bbf96886adf91b124a57afdbbe6598b6e8abf12362fc982cc05",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.deepening08.log",
+      "state": "added",
+      "bytes": 5102,
+      "sha256": "f7861141ad040038b2e4bb52804060a5f323c4875f7759f149e8faa1e4afc94d",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.deepening09.log",
+      "state": "added",
+      "bytes": 16535,
+      "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.deepening10.log",
+      "state": "added",
+      "bytes": 16535,
+      "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/operational-core-test.deepening05.json",
+      "state": "added",
+      "bytes": 63,
+      "sha256": "d0c55b3d2447abe1938f60e2c9780b618074aab100798999bece64342c66423d",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/operational-core-test.json",
+      "state": "added",
+      "bytes": 63,
+      "sha256": "d0c55b3d2447abe1938f60e2c9780b618074aab100798999bece64342c66423d",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/operational-route-coverage-test.json",
+      "state": "added",
+      "bytes": 751,
+      "sha256": "e77754d8f98224088fb46029970a0c77f8ecebc2c60fa3493a14386ffacdc6b3",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/operational-selection-matrix.json",
+      "state": "added",
+      "bytes": 1565,
+      "sha256": "4086ced7d95dc38b80fc39bd4f6c973c1695a725b86848fb56d59719ca1c5667",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/reference/blocked-environment/ui-smoke-desktop.png",
+      "state": "added",
+      "bytes": 17959,
+      "sha256": "260af1c0df1835a90ff9c56ea3aa95e416b8a02d044d188e6fd3a8149ea2b378",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/reference/blocked-environment/ui-smoke-mobile.png",
+      "state": "added",
+      "bytes": 29650,
+      "sha256": "001c5066f0283ec25ff74889ffe65bfa25501eee162a40ef115d801a60ee75b5",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/reference/hero-precision-cross-chat.png",
+      "state": "added",
+      "bytes": 141585,
+      "sha256": "0c05cd1b68a27b9a760d2b0422cf9412f1e995f89f23938589a7abd074aa43e7",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-audit.deepening08.log",
+      "state": "added",
+      "bytes": 334,
+      "sha256": "7ff2efd706f83c7996c29bb17452717833594d3c744eb252a3c0b1da9515ee33",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-audit.deepening09.log",
+      "state": "added",
+      "bytes": 436,
+      "sha256": "af852967d242231c5a0164886728dfd012e5b457c1c492bffd64546b8dcaec03",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-audit.deepening10.log",
+      "state": "added",
+      "bytes": 436,
+      "sha256": "af852967d242231c5a0164886728dfd012e5b457c1c492bffd64546b8dcaec03",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-candidate-audit.json",
+      "state": "added",
+      "bytes": 57951,
+      "sha256": "bfbf652bd53eb80616fc8277a3dd91d1112d5eb062d72bbfd459e3e4ea18adac",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-candidate-audit.summary.json",
+      "state": "added",
+      "bytes": 334,
+      "sha256": "6c26ddce744f1cb3dfecfc9707e5b7fa55cc22f7a16417c82ea37591140a89ae",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-documentation-audit.json",
+      "state": "added",
+      "bytes": 568,
+      "sha256": "ea96bbb221847cfbec158096daec11d768ca19d07a6617852e0411cfd350333f",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/result-state-machine-test.json",
+      "state": "added",
+      "bytes": 45,
+      "sha256": "bf603a28458abc8eaf06894e890bcd5306e2a6be94098e230c20bf0f86efde3a",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/source-reconciliation.json",
+      "state": "added",
+      "bytes": 6080,
+      "sha256": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/ui-boundary-audit.json",
+      "state": "added",
+      "bytes": 1231,
+      "sha256": "119613bbf5eea9466b8b3a72f95e119c76eff8c816b71875e2345e404a1995f4",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/ui-contract-audit.deepening05.json",
+      "state": "added",
+      "bytes": 1067,
+      "sha256": "0d8911b6503376074428224d5b6a55005bd437990fce31b74e0b2e4e814b0eaa",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/ui-contract-audit.json",
+      "state": "added",
+      "bytes": 1067,
+      "sha256": "c8e8de370ddd11b32d7bf723506504a7ab99522709a5fe7de2ab78877471df9b",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/visual-qa-contract.json",
+      "state": "added",
+      "bytes": 530,
+      "sha256": "5950fb532e62fc9eab2a397539e4a04cc3666d027eca17b9670e3e2475019290",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_arrival_integration.py",
+      "state": "added",
+      "bytes": 6908,
+      "sha256": "7237d8118fe723f71fc625b62f3b9c54b8ec94401ff487559c036741b76d72bd",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_canonical.py",
+      "state": "added",
+      "bytes": 3434,
+      "sha256": "9077a2bd6ea3d25a3c0e8563da1cb3afc5de4ea9576d8d0850882cf131d1d8ab",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_hero_assets.py",
+      "state": "added",
+      "bytes": 8302,
+      "sha256": "1008ac1160f818c9eddeea05661c9a67ece11a53f30ed6c000b17fe11ca937b8",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_hero_precision.py",
+      "state": "added",
+      "bytes": 5025,
+      "sha256": "3a33a180b4f67749dc8ba23c8beaf78bd808fa905beed873064e2b05f39d92f5",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_mobile_accessibility.py",
+      "state": "added",
+      "bytes": 2160,
+      "sha256": "17994b01c5f1c250e1c458eb5419f907de731e9321543eb8cb9f33d6bd5bfed6",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_release_candidate.py",
+      "state": "added",
+      "bytes": 5864,
+      "sha256": "c344c2b642b64c2616fdd81b57f13d40a80b9749af578598e2ef977237d3bb8e",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_release_documentation.py",
+      "state": "added",
+      "bytes": 1805,
+      "sha256": "30d107cf1663f0875c473e87d59108418e787d4c9128dae11c2f66a1580b6737",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_ui_contract.py",
+      "state": "added",
+      "bytes": 2969,
+      "sha256": "5738b24d0eb67f72b1e3451e7cbc4203eb96d23735bf81627efe7334dcf7aa2a",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/generate_release_qa_report.py",
+      "state": "added",
+      "bytes": 3989,
+      "sha256": "0f1e382236577cd005bf0a04b5190de73a6c6658b71297b8d1cbd6f053fa1e6b",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/browser_smoke_cdp.py",
+      "state": "added",
+      "bytes": 11296,
+      "sha256": "0947003afc66e2bf6a9c7538d69e1441f22bcbd3d41604612f84006c69996e38",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/http_smoke.py",
+      "state": "added",
+      "bytes": 2403,
+      "sha256": "76c7408a0b0ead8d2fb8842aec0c0e35057189f6b7198ba970e263d2c655af38",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/operational_core.test.js",
+      "state": "added",
+      "bytes": 1749,
+      "sha256": "f28f06e597ea0092aaffac56b6e2ea47a3a47872808b32a77d94d1189ed985fb",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/operational_route_coverage.test.js",
+      "state": "added",
+      "bytes": 2818,
+      "sha256": "d8c7d8a897d373d67e48814922c9d301e3b4c6a9749d2054aed4258435ea8803",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/operational_selection_integration.test.js",
+      "state": "added",
+      "bytes": 3850,
+      "sha256": "aacecdec3c33766b49674c6517fb170c62b3df055d9c483fbd5958e458d4911a",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/result_state_machine.test.js",
+      "state": "added",
+      "bytes": 2130,
+      "sha256": "410a6f6c16b214cf722c875651a59a9200d3ab626970307d2a38c0c476414e7c",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/visual_qa_contract.py",
+      "state": "added",
+      "bytes": 1570,
+      "sha256": "09ca6f27fefb8d578a021fd3bb122ab55e2a40ffc15672fa42af19f2231e8b1a",
+      "baselineSha256": null
+    },
+    {
+      "path": "visual-qa.html",
+      "state": "added",
+      "bytes": 6719,
+      "sha256": "0a84f6dbf3a4a19a296227105fce4e335ce8db1978578fd7d15597bc2c25be8b",
+      "baselineSha256": null
+    }
+  ]
+}
