@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.13",
+  "productionIdPolicy": "3探索ラウンド完了後にD321以降を一括採番",
+  "groups": {
+    "A_priority_for_next_rc": [
+      "N020",
+      "N021",
+      "N022",
+      "N024",
+      "N025",
+      "N026",
+      "N034",
+      "N035",
+      "N036"
+    ],
+    "B_promote_after_parking_or_dimensions": [
+      "N016",
+      "N017",
+      "N023",
+      "N027",
+      "N028",
+      "N029",
+      "N030"
+    ],
+    "C_special_lane_only": [
+      "N031",
+      "N032",
+      "N037"
+    ],
+    "D_hold_until_legal_anchor": [
+      "N018",
+      "N019",
+      "N033"
+    ]
+  },
+  "minimumPromotionConditions": {
+    "A_priority_for_next_rc": [
+      "official source retained",
+      "route distance <=25km or explicit boundary allowance",
+      "legal parking anchor",
+      "vehicle gate"
+    ],
+    "B_promote_after_parking_or_dimensions": [
+      "parking dimensions verified",
+      "entrance coordinate verified",
+      "Google Maps URL regenerated"
+    ],
+    "C_special_lane_only": [
+      "reservation/event/vehicle condition true"
+    ],
+    "D_hold_until_legal_anchor": [
+      "legal car anchor selected",
+      "walk endpoint separated"
+    ]
+  },
+  "expectedProductionAdditionAfterRound3": {
+    "targetNewDestinations": "20-35",
+    "targetNewDirectCandidates": "same as accepted destination count",
+    "targetNewCompletedRoutes": "25-45",
+    "avoidGuaranteeUntil": "Routes API and browser tests complete"
+  }
+}

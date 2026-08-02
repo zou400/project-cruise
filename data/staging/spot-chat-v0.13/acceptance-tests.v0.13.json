@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "0.13",
+  "tests": [
+    {
+      "id": "T01",
+      "case": "車幅2.05mで東京国際フォーラム",
+      "expected": "excluded_vehicle_width"
+    },
+    {
+      "id": "T02",
+      "case": "車幅2.05mで羽田エアポートガーデン",
+      "expected": "eligible_if_other_dimensions_ok"
+    },
+    {
+      "id": "T03",
+      "case": "車幅2.05mで横浜ハンマーヘッド",
+      "expected": "excluded_vehicle_width"
+    },
+    {
+      "id": "T04",
+      "case": "雨天・平日19時・KITTE",
+      "expected": "intermediatheque_open_only_if_fri_or_other_applicable_schedule"
+    },
+    {
+      "id": "T05",
+      "case": "月曜・旧新橋停車場",
+      "expected": "excluded_closed"
+    },
+    {
+      "id": "T06",
+      "case": "平日昼・容器文化ミュージアム・駐車場未解決",
+      "expected": "not_promoted"
+    },
+    {
+      "id": "T07",
+      "case": "A PIT 21:30到着",
+      "expected": "parking_only_or_other_open_services_not_store_experience"
+    },
+    {
+      "id": "T08",
+      "case": "有明ガーデン・重量2.1t・制限区画",
+      "expected": "select_compatible_anchor_or_exclude"
+    },
+    {
+      "id": "T09",
+      "case": "東京都庭園美術館・レストランのみ",
+      "expected": "onsite_parking_not_allowed"
+    },
+    {
+      "id": "T10",
+      "case": "日本科学未来館 2026-10-15",
+      "expected": "excluded_long_term_closure"
+    },
+    {
+      "id": "T11",
+      "case": "東京国際クルーズターミナル寄港イベントで駐車規制",
+      "expected": "dynamic_exclude_or_alternate"
+    },
+    {
+      "id": "T12",
+      "case": "東京ビッグサイト・イベントなし",
+      "expected": "event_lane_not_selected"
+    },
+    {
+      "id": "T13",
+      "case": "キリン工場・予約なし",
+      "expected": "not_selected"
+    },
+    {
+      "id": "T14",
+      "case": "キリン工場・運転者",
+      "expected": "alcohol_tasting_warning"
+    },
+    {
+      "id": "T15",
+      "case": "水の科学館・共有駐車場未選定",
+      "expected": "not_selected"
+    },
+    {
+      "id": "T16",
+      "case": "直近5件で商業施設2件表示済み",
+      "expected": "generic_commercial_candidate_penalized"
+    },
+    {
+      "id": "T17",
+      "case": "雨天モード",
+      "expected": "indoor_category_boosted"
+    },
+    {
+      "id": "T18",
+      "case": "feature flag off",
+      "expected": "existing_RC_selection_unchanged"
+    }
+  ]
+}

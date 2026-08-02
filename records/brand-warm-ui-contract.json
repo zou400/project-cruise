@@ -1,0 +1,10 @@
+{
+  "release": "v0.11.0-rc7",
+  "checks": {
+    "logoSvg": true,
+    "topRightCopyRemoved": true,
+    "warmPalette": true,
+    "heroAssets": true
+  },
+  "passed": true
+}

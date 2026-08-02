@@ -31,7 +31,7 @@ checks = {
     "status_live_regions": html.count('role="status"') >= 4,
 }
 report = {
-    "release": "v0.11.0-rc5",
+    "release": "v0.11.0-rc6",
     "deepening": 7,
     "target": ["iPhone Safari", "touch", "keyboard", "reduced motion", "low data"],
     "checks": checks,

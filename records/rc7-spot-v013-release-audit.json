@@ -1,0 +1,33 @@
+{
+  "release": "v0.11.0-rc7",
+  "generatedAt": "2026-08-02T19:13:39+09:00",
+  "automatedValidation": "PASS",
+  "npmTest": "PASS",
+  "spotV013": {
+    "integrationMode": "staging_overlay_plus_feature_flagged_existing_pool_policy",
+    "explorationRound": "1/3",
+    "stagedCandidates": 22,
+    "acceptanceTests": 18,
+    "productionIdsAssigned": false,
+    "canonicalDestinationMutation": false,
+    "canonicalRouteMutation": false,
+    "mapsGeneratedForStaging": false,
+    "featureFlags": [
+      "pcBreadth",
+      "pcNewDestinations"
+    ],
+    "rollbackQuery": "?pcBreadth=off&pcNewDestinations=off"
+  },
+  "canonicalPreserved": {
+    "destinations": 320,
+    "completedRoutes": 181,
+    "selectableResults": 501,
+    "heroImages": 30
+  },
+  "manualGatesRemaining": [
+    "Routes API distance confirmation for N016-N037",
+    "unresolved vehicle and parking verification",
+    "exploration rounds 2 and 3",
+    "iPhone Safari 50-reroll review before production promotion"
+  ]
+}

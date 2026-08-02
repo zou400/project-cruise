@@ -1,5 +1,5 @@
 {
-  "release": "v0.11.0-rc5",
+  "release": "v0.11.0-rc7",
   "track": "hero-precision-v1-compatible-integration",
   "externalPackageStatus": "exact 30 WebP assets imported and source-map verified; no regeneration performed",
   "counts": {
@@ -55,8 +55,8 @@
     "data/hero/route-hero-affinity.v1.json": "bdd9108148f98d17ee00497178446356a5d39f5cc6fa8fd9d314a96a66ae6982",
     "assets/js/hero/hero-precision-data.js": "9b11f3244fea3eb02d2f6a6c8c9e0953a4665c0748deae87604ff8387fcbd374",
     "assets/js/hero/hero-precision-runtime.js": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31",
-    "assets/js/cruise-v011.js": "55aee99bb7e7a68a95226c590bcccc42f853f1f88b917ff585a1502a30ca5507",
-    "index.html": "7f6e96c76f03fc12ba88dc77e978c7e4d7f135cd96ab7a38abbcddd6d06c0756"
+    "assets/js/cruise-v011.js": "0daae76098423e819ba33c8758abf11073a84131bfa8e0b9a455fae5a1576100",
+    "index.html": "a81cd62c0ea8aa6d2f3b1df2ca545f68b6f296c979cf6f636d7363d21ec4962a"
   },
   "passed": true
 }

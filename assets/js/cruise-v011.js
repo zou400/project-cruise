@@ -1,4 +1,4 @@
-/* Project Cruise GitHub Integration v0.11.0-rc5
+/* Project Cruise GitHub Integration v0.11.0-rc7
  * UI shell only. Canonical selection, learning, Maps, feedback and issue-report
  * behavior remains owned by the inline v0.10.0 engine.
  */
@@ -13,11 +13,12 @@
     lastDetail: null,
     currentWeatherState: "unknown",
     visualHistoryKey: "pcHeroHistoryV1",
-    build: "v0.11.0-rc5",
+    build: "v0.11.0-rc7",
     activeModal: null,
     modalReturnFocus: null,
     lowData: params.get("pcData") === "low",
-    heroAssetVersion: "v0.11.0-rc5",
+    heroAssetVersion: "v0.11.0-rc7",
+    brandAssetVersion: "v0.11.0-rc7",
     sessionDestinations: new Set(),
     candidateTotal: null
   };
@@ -215,15 +216,10 @@
     const version = $("#db-version", brand);
     const versionNode = version ? version.cloneNode(true) : null;
     brand.innerHTML = `
-      <div class="pc-brand-row">
-        <div class="pc-wordmark">
-          <small>PROJECT CRUISE / TOKYO DRIVE SYSTEM</small>
-          <h1>CRUISE</h1>
-        </div>
-        <div class="pc-brand-copy">
-          <strong>今夜の一本を、10秒で。</strong>
-          <span>DESTINATION SELECTION / LOCAL LEARNING / MAPS HANDOFF</span>
-        </div>
+      <div class="pc-brand-row pc-brand-row--v2">
+        <a class="pc-brand-logo-link" href="./" aria-label="Project Cruise ホーム">
+          <img class="pc-logo-v2" src="assets/brand/project-cruise-mark-v2.svg?v=${state.brandAssetVersion}" alt="PROJECT CRUISE — TOKYO DRIVE SYSTEM">
+        </a>
       </div>`;
     if (versionNode) {
       versionNode.textContent = `INTEGRATION RC ${state.build}｜320地点・501結果`;

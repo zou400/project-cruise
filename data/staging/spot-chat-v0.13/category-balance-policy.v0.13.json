@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "0.13",
+  "objective": "最終目的地の種類を増やしつつ、商業施設だけに偏らせない",
+  "selectionLanes": {
+    "quality": 0.35,
+    "discovery": 0.25,
+    "breadth": 0.2,
+    "categoryRotation": 0.15,
+    "wildcard": 0.05
+  },
+  "categoryRotation": {
+    "targetCategories": [
+      "海・港",
+      "夜景",
+      "公園・自然",
+      "都市建築",
+      "食",
+      "産業遺産",
+      "自動車文化",
+      "雨天屋内"
+    ],
+    "maxSamePrimaryCategoryInLast5": 2,
+    "genericCommercialCapInLast5": 1,
+    "commercialDistinctivenessRequired": true,
+    "distinctiveHooks": [
+      "建築",
+      "港湾",
+      "産業史",
+      "自動車文化",
+      "市場",
+      "温浴",
+      "体験展示",
+      "夜景"
+    ]
+  },
+  "rainMode": {
+    "enabledWhen": [
+      "降水確率>=40%",
+      "現在降雨",
+      "路面状況が悪い"
+    ],
+    "indoorCandidateBoost": 1.7,
+    "outdoorOnlyPenalty": 0.35,
+    "requiresLegalParkingAnchor": true
+  },
+  "hardGatesBeforeRanking": [
+    "temporary_closure",
+    "facility_or_parking_closed",
+    "exit_before_lock_with_margin",
+    "vehicle_width_height_length_weight",
+    "reservation_required",
+    "legal_parking_anchor",
+    "walking_endpoint_not_in_driving_waypoints"
+  ],
+  "recentHistory": {
+    "destinationEntityCooldown": 12,
+    "sameAreaCooldown": 4,
+    "sameCategoryCooldown": 3
+  },
+  "rollback": "?pcBreadth=off"
+}

@@ -1,804 +1,1365 @@
 {
-  "release": "v0.11.0-rc5",
+  "release": "v0.11.0-rc7",
+  "generatedAt": "2026-08-02T19:13:39+09:00",
   "baseline": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
   "baselineSha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e",
-  "apply": "Extract the canonical package, then overwrite it with this patch while preserving paths.",
-  "changedFileCount": 114,
+  "apply": "Full replacement package; deploy repository root as provided.",
+  "changedFileCount": 194,
   "entries": [
     {
+      "path": ".gitattributes",
+      "state": "replace_or_add",
+      "bytes": 126,
+      "sha256": "37d14715c7473e6735d699dc0c748bbcaeeac6c92a9ed742508cb941e0ceae7f",
+      "baselineSha256": null
+    },
+    {
       "path": ".github/workflows/deploy-pages.yml",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1403,
       "sha256": "14a65d70140b0c23364b90e7af6997fe30f0e1068b1e55616c64655f1209df23",
       "baselineSha256": null
     },
     {
       "path": ".github/workflows/validate.yml",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2806,
       "sha256": "5bc714b5025dc10aec0d5a551bc51aef09437e1a7e1455babf9427fa2ff9c28c",
       "baselineSha256": null
     },
     {
       "path": ".gitignore",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 75,
       "sha256": "aa6f29414d856e4b118c4fcb5e8179208f4ce4c9c1fafd01569191ebfe461bba",
       "baselineSha256": null
     },
     {
       "path": ".nojekyll",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "baselineSha256": null
     },
     {
       "path": "CHANGELOG.md",
-      "state": "added",
-      "bytes": 1632,
-      "sha256": "34c59118ca46cf62bbd230814ff3df3787ba18daed586c507bc9edb6f76bd0f2",
+      "state": "replace_or_add",
+      "bytes": 2986,
+      "sha256": "516ba13f74382505e0fcbb5ab0042e09be67f3898458f9bc65aa3f1c7f9ef515",
       "baselineSha256": null
     },
     {
       "path": "DEPLOYMENT.md",
-      "state": "added",
-      "bytes": 3010,
-      "sha256": "46eae2cef0666d2a98a1a994ffd864d3bac70f79896672ba310a716a34803a43",
+      "state": "replace_or_add",
+      "bytes": 3009,
+      "sha256": "7167c92631dc4986cdcf7aae052528201f6c6b8a534ffd64d5c9967698a6c6c3",
       "baselineSha256": null
     },
     {
       "path": "FINAL_QA_REPORT.md",
-      "state": "added",
-      "bytes": 1393,
-      "sha256": "3b64c8b35d37d70be97af335e5974c496b33c1079b1b406cf47bd1f1720bccc6",
+      "state": "replace_or_add",
+      "bytes": 1394,
+      "sha256": "61c1ed9fff4ba4cf896d57a11a281d496960ee36111b9ac1e8e0c320acda28c7",
       "baselineSha256": null
     },
     {
       "path": "GITHUB_PUBLISH_NOW.md",
-      "state": "added",
-      "bytes": 2095,
-      "sha256": "5f3029d95c8a1453c5291297785657ad582cc6a9fc8caefedbd47d18c07cb06c",
+      "state": "replace_or_add",
+      "bytes": 2107,
+      "sha256": "f31e3651feef247864b49bc43d3921f37b1fba898201fee873803eee89fe694e",
       "baselineSha256": null
     },
     {
       "path": "README.md",
-      "state": "modified",
-      "bytes": 5735,
-      "sha256": "b6c36e9d67f39860f60bd65f90590104605ad7d40ce643c23d4cb34807847374",
-      "baselineSha256": "c8fc50102658ce8c0a05d669cb663ed92e52ddcde85a408469035d0110512367"
-    },
-    {
-      "path": "RELEASE_CHECKLIST.md",
-      "state": "added",
-      "bytes": 2917,
-      "sha256": "2968336d5a342324842a18332b35f26690dbbe764a56ed1ad120d97c36e90f1f",
+      "state": "replace_or_add",
+      "bytes": 6002,
+      "sha256": "dbb751a280801857d63fe1dd4bbc5d4b4b9dffbab6f6a39c0ad71d224d1d33ec",
       "baselineSha256": null
     },
     {
-      "path": "RELEASE_NOTES_v0.11.0-rc5.md",
-      "state": "added",
+      "path": "RELEASE_CHECKLIST.md",
+      "state": "replace_or_add",
+      "bytes": 2917,
+      "sha256": "f4d9e95010d338e782751da330682b2ca6830dd3a9d2043685f96bde4134e6a7",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc1.md",
+      "state": "replace_or_add",
       "bytes": 1414,
       "sha256": "f3e7270ff042be93aafaa0bf8c745755149e73cceb4f76f75fc089d5315d5d5c",
       "baselineSha256": null
     },
     {
+      "path": "RELEASE_NOTES_v0.11.0-rc2.md",
+      "state": "replace_or_add",
+      "bytes": 788,
+      "sha256": "eaa8946e62c8678d5e7d06bf6396c54586525f393a6adc9ba757bed0b48af399",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc3.md",
+      "state": "replace_or_add",
+      "bytes": 612,
+      "sha256": "376d1b13696e16997462f7055ed6e45f7f6d87f7021c964c40c2d98494679643",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc4.md",
+      "state": "replace_or_add",
+      "bytes": 606,
+      "sha256": "852f7de3a8e15e430c5d7c496ca2f33b24ce651dee59dbf905f7f2e84beeb063",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc5.md",
+      "state": "replace_or_add",
+      "bytes": 551,
+      "sha256": "8eeece355cd7bae2770d8975c5a4d68bb6b06ea19442d2a2d71e631043b0a653",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc6.md",
+      "state": "replace_or_add",
+      "bytes": 880,
+      "sha256": "611e71228cfc62e9aae7d586a0601a6831d588c9c303e9d712334b5f6ee3d90f",
+      "baselineSha256": null
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc7.md",
+      "state": "replace_or_add",
+      "bytes": 1075,
+      "sha256": "e98654132f6e45b7bc78dbe539d2dce3fd5a4a4b6134928f8479261abb7902d8",
+      "baselineSha256": null
+    },
+    {
+      "path": "REPLACE_ALL_AT_ONCE_JA.md",
+      "state": "replace_or_add",
+      "bytes": 1011,
+      "sha256": "9d3722f3310cbf4f9b65f56f11dae2d62579ae9fc3eb4439682b63747fe2d0c0",
+      "baselineSha256": null
+    },
+    {
       "path": "ROLLBACK.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 787,
       "sha256": "9452f61eab3469a682bdf563a9967bc66d22a93b4e26ea958fe67da98ffd05eb",
       "baselineSha256": null
     },
     {
+      "path": "SPOT_V013_INTEGRATION_STATUS.md",
+      "state": "replace_or_add",
+      "bytes": 868,
+      "sha256": "a1e0350b38b42c935ca6e564dfd963b0203ac054584bf70bb037783988a941a5",
+      "baselineSha256": null
+    },
+    {
       "path": "VALIDATION.md",
-      "state": "modified",
-      "bytes": 3692,
-      "sha256": "f879a34bc27486cab9a101714a571be6977937ec6eec8ab82cd2e7b9b087db8b",
-      "baselineSha256": "3ed25eeaae01a52a122ca91e12cebf95f38cf23838efccdded0e36bd97b6e8c4"
+      "state": "replace_or_add",
+      "bytes": 3698,
+      "sha256": "eb4671b373b1a0e832ea91e2da756b3337469cd4fd32f904ef52078aab2d22a5",
+      "baselineSha256": null
     },
     {
       "path": "VERSION",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 12,
-      "sha256": "a56ed4ed0d56e0d5e6ac7535e9bdb2cf5234031fe2ddba1e2f7726d40cccf058",
+      "sha256": "527caf7684ab96dfdc27224d107e3688274cd142239a280e0dde65d9d641201c",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/brand/project-cruise-mark-v2.svg",
+      "state": "replace_or_add",
+      "bytes": 1345,
+      "sha256": "272e1a851fb4e76e989254898d8d60f5fd9f8cc6a29ab93a89cb5ae62c25fda0",
       "baselineSha256": null
     },
     {
       "path": "assets/css/cruise-v011.css",
-      "state": "added",
-      "bytes": 23073,
-      "sha256": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e",
+      "state": "replace_or_add",
+      "bytes": 31835,
+      "sha256": "006cd73bcd4ac27d93cbaa664d86b55d8377eeaf6ce1cd0da1062d70d6693a41",
       "baselineSha256": null
     },
     {
       "path": "assets/hero/precision/.gitkeep",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "baselineSha256": null
     },
     {
       "path": "assets/hero/precision/README.md",
-      "state": "added",
-      "bytes": 600,
-      "sha256": "9c9bb6b7bc1c53b1bce512ee5dfab05832db1e4640b53a0c3aaf14574e344f3c",
+      "state": "replace_or_add",
+      "bytes": 402,
+      "sha256": "10101737910c9e25869362db8278effb812c2e7e9ba53affd096dc64db56d843",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/airport_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 65418,
+      "sha256": "ad4a9c09a908a0679684c22a61e94e81cce27561e8bc197cd2e1314dd282a72a",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/airport_twilight_01.webp",
+      "state": "replace_or_add",
+      "bytes": 52972,
+      "sha256": "91ca984f31923e2793e9b9efd77ab3d99ddff722fd0cfceedca6880b833f592e",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/airport_twilight_02.webp",
+      "state": "replace_or_add",
+      "bytes": 104482,
+      "sha256": "f2c0230c60fa590f6a0558c4f64d812684399501dae5623780e44a82be7d8285",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/airport_twilight_03.webp",
+      "state": "replace_or_add",
+      "bytes": 85168,
+      "sha256": "67dac5f31bed14c1d9a95fee67f28a87547f21eba6c326d0486ec4871a9d0cfc",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/city_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 139334,
+      "sha256": "53ffea557569879e81cfd3c73ceb8d88e68adafae96e39220d515eb42178db36",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/culture_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 140456,
+      "sha256": "f3b9dc2575f6c45188dabaeabbe26547192d374a497cc2f56c1150526f7e10be",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/industrial_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 114804,
+      "sha256": "d8ca1966747f0bb9f7cd3a5d60ae85c39d5a749a75605ab8bda4eb2f30dcd49d",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_day_01.webp",
+      "state": "replace_or_add",
+      "bytes": 138046,
+      "sha256": "59c27a1a0ff0b6359dabdf9c724d4a218e52d1a60500dee3dd0688cbe4121be9",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_day_02.webp",
+      "state": "replace_or_add",
+      "bytes": 176750,
+      "sha256": "8f1f799b4b999289f1e5cda6f2ae40c57733dbc913fbd6e967045be7396da3bf",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_day_03.webp",
+      "state": "replace_or_add",
+      "bytes": 123708,
+      "sha256": "e1d63503dd639eeed774b9e0d647e67fa815ef317213f9a4db2cae320a798422",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 108370,
+      "sha256": "c08142d1cb53025b3112b9710c865f00b5a84e5062e761d857da8c87739ac5e6",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_night_02.webp",
+      "state": "replace_or_add",
+      "bytes": 142422,
+      "sha256": "79fc046110a1771320eadc2fd5bcef2a7aa5f9e747bc14d5855d0a01a15f360b",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_night_03.webp",
+      "state": "replace_or_add",
+      "bytes": 171746,
+      "sha256": "01192314d85d08d5bd11e992835b23fab80c628ffbe2d70469538b7285ce8b48",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_night_04.webp",
+      "state": "replace_or_add",
+      "bytes": 97752,
+      "sha256": "40b0e2d6741c9effafa084239a1fe1057eb2483e3dfb07997855cad41146b876",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_twilight_01.webp",
+      "state": "replace_or_add",
+      "bytes": 92406,
+      "sha256": "da22c2f72a7b52c48c1bf840e3d9815c0bac489d04a21ed6fe5432b1145f1a52",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_twilight_02.webp",
+      "state": "replace_or_add",
+      "bytes": 82430,
+      "sha256": "0bdc5125bcf4b0054c1bd7e1d60acc800f219360d559b053a4c1e09258e2c425",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/pa_twilight_03.webp",
+      "state": "replace_or_add",
+      "bytes": 83954,
+      "sha256": "ff1ebc9619d3df06cf2264e279acaf069a59399e468c635e1ca401ff5446c0d2",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_day_01.webp",
+      "state": "replace_or_add",
+      "bytes": 331942,
+      "sha256": "3e2a9cb114849484934a13b00e071c750ccd8f4d145c50ce8d59d85afbd3b32e",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_morning_01.webp",
+      "state": "replace_or_add",
+      "bytes": 226792,
+      "sha256": "1ba829df0115e3d451a54c9fb5eda24a44a704ffcb99749bfbba62a00545bdc1",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 138070,
+      "sha256": "4ef6cb6a259c15a146169b0292e12bb29d2f6705808ac73c07f033d2ab52124d",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_night_02.webp",
+      "state": "replace_or_add",
+      "bytes": 176092,
+      "sha256": "76181ff0db08ec7fb10fd784b3cebf0de6a7e50a15ec1a8f6a69f2e7264546d7",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_rain_01.webp",
+      "state": "replace_or_add",
+      "bytes": 312778,
+      "sha256": "fc563a79417c366bfcd6646979f2f386c4dfaddd7d3df35a78881dbe08970335",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_rain_02.webp",
+      "state": "replace_or_add",
+      "bytes": 409292,
+      "sha256": "0c6d77de7b98a42dbd48fcffefc676aa0084c14fc54738570a72b6548ef5271e",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_water_01.webp",
+      "state": "replace_or_add",
+      "bytes": 172374,
+      "sha256": "0f5e9af86448b7a94621950f8dd04160f4808b53daa086e7e3bf855a1c6d498d",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/park_water_02.webp",
+      "state": "replace_or_add",
+      "bytes": 274348,
+      "sha256": "17063e0a9bbaf4924efcec6fdd4c4fee0bab80446c36e40414ae692965a48985",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/water_day_01.webp",
+      "state": "replace_or_add",
+      "bytes": 138228,
+      "sha256": "ae8dcff1b52ca8ac5ac0d0f42e9dabaa1d4b2a2a7813c3c333624cd49c815ac6",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/water_night_01.webp",
+      "state": "replace_or_add",
+      "bytes": 97290,
+      "sha256": "274bb200295f743134f31e9b2492c2ce527697e52c7bbb856ee5bfa6584eb731",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/water_night_02.webp",
+      "state": "replace_or_add",
+      "bytes": 101248,
+      "sha256": "8eed8675f7e06ee88ca1c0d45a50a43f524fb9ca3bf80a45aead404530b4b611",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/water_twilight_01.webp",
+      "state": "replace_or_add",
+      "bytes": 67316,
+      "sha256": "fc2f2d16ea5a41049a4b111ff216c76273338a96c3c17491bd876055ccbb7238",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/hero/precision/water_twilight_02.webp",
+      "state": "replace_or_add",
+      "bytes": 127088,
+      "sha256": "b17864a06d319462b7104b486872d4770b9047f7aee5c6b416cc000253a7b1f5",
       "baselineSha256": null
     },
     {
       "path": "assets/js/arrival/arrival-data.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 228786,
       "sha256": "a05790c5193b610bdfb88545aed5a4818b788b036485884b9fa1da4f20d9a6b0",
       "baselineSha256": null
     },
     {
       "path": "assets/js/arrival/arrival-runtime.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 12520,
       "sha256": "e5b4ce368158b2ecb16643fce353bdc9bb439101b70332d9db57f81816a89685",
       "baselineSha256": null
     },
     {
       "path": "assets/js/arrival/operational-core.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 12211,
       "sha256": "0429f220c6f4df4ba33289779412ca29e20dcacd11671b80d0da0675bcf19007",
       "baselineSha256": null
     },
     {
       "path": "assets/js/arrival/result-state-machine.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 5950,
       "sha256": "0de3dc0de4da412f6d4c1238fde34a084ef4c7fba027e6c3bb7f7c11db936706",
       "baselineSha256": null
     },
     {
       "path": "assets/js/cruise-v011.js",
-      "state": "added",
-      "bytes": 18148,
-      "sha256": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9",
+      "state": "replace_or_add",
+      "bytes": 21853,
+      "sha256": "e00940831e32d3029f1b0594c2a5d7e458ceec9b3732519f8b4bf91082403d8f",
       "baselineSha256": null
     },
     {
       "path": "assets/js/hero/hero-precision-data.js",
-      "state": "added",
-      "bytes": 751559,
-      "sha256": "fc08232067cf4a504074c91c56a7aeaa438edb34b4a838417ea3e5578315c04c",
+      "state": "replace_or_add",
+      "bytes": 757485,
+      "sha256": "9b11f3244fea3eb02d2f6a6c8c9e0953a4665c0748deae87604ff8387fcbd374",
       "baselineSha256": null
     },
     {
       "path": "assets/js/hero/hero-precision-runtime.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 5052,
       "sha256": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31",
       "baselineSha256": null
     },
     {
+      "path": "assets/js/staging/spot-v013-policy.js",
+      "state": "replace_or_add",
+      "bytes": 3772,
+      "sha256": "114081e5028d3425279f312dc7e86c0cc47e8ea7ccdfa0b4fb2d627bf9013046",
+      "baselineSha256": null
+    },
+    {
+      "path": "assets/js/staging/spot-v013-runtime.js",
+      "state": "replace_or_add",
+      "bytes": 1638,
+      "sha256": "0b2a26da9e1a1f60585007a100527801cc1d1794030b50b6a5f62a82f16d3852",
+      "baselineSha256": null
+    },
+    {
       "path": "assets/js/weather/weather-runtime.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 10967,
       "sha256": "008b86d6ddc750d5ed6db47aec8368a834c0fc214dfd54af1b79e086869bb378",
       "baselineSha256": null
     },
     {
       "path": "data/hero/destination-visual-profile.v1.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 183029,
       "sha256": "797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e",
       "baselineSha256": null
     },
     {
+      "path": "data/hero/exact-generated-source-map.v1.json",
+      "state": "replace_or_add",
+      "bytes": 26791,
+      "sha256": "8e3ca7c114672220a7d9c83146b81cffdb966affa4938dcd43e1c3981a37928e",
+      "baselineSha256": null
+    },
+    {
       "path": "data/hero/hero-image-catalog.v1.json",
-      "state": "added",
-      "bytes": 12481,
-      "sha256": "c1186e686a654aa37829f4e9f3b7fd780407509d7644d6a83cacaf690e57c635",
+      "state": "replace_or_add",
+      "bytes": 21674,
+      "sha256": "5929fa51da307b85b290389f46154f9e635795ec1bb5d4cd9e658a0b1a546dca",
       "baselineSha256": null
     },
     {
       "path": "data/hero/route-hero-affinity.v1.json",
-      "state": "added",
-      "bytes": 1042040,
-      "sha256": "f3ac429522b694ce2237c1e001c68ecf67f8a435179abee9560262a560c00f41",
+      "state": "replace_or_add",
+      "bytes": 1040842,
+      "sha256": "bdd9108148f98d17ee00497178446356a5d39f5cc6fa8fd9d314a96a66ae6982",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/hero/visual-library-exact30.v1.json",
+      "state": "replace_or_add",
+      "bytes": 8664,
+      "sha256": "18df99f3b01db112f4246923a4a7977fc07fc9ffb1d7ae6f98f82ad8333aad45",
       "baselineSha256": null
     },
     {
       "path": "data/integration/source-authority-registry.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 6080,
-      "sha256": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4",
+      "sha256": "a73b140dabd294d36a5c3ea2559a1bc8eebef1aa279b2eb73890392b99b00449",
       "baselineSha256": null
     },
     {
       "path": "data/operational/arrival-anchor-display.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 282170,
       "sha256": "f92c6ec9964d5700555ccee1bc8e49c22a89b47c2d440024b452223a24dabc47",
       "baselineSha256": null
     },
     {
       "path": "data/operational/canonical-operational-overlay-u1b.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 7711,
       "sha256": "b342332d4832e39e43d5bb0a6bede6ffe760cb2ee4fe6d68efc6c32185410e82",
       "baselineSha256": null
     },
     {
       "path": "data/operational/implementation-test-vectors.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 7426,
       "sha256": "cf4106f830d1a2060820eac87759f1680eed72bb63c02905c4cefbadebee97e7",
       "baselineSha256": null
     },
     {
       "path": "data/operational/resolution-lanes.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 775,
       "sha256": "0dee232397e7184cc198df4aa422a24c764338d0e91818255f0f3c9ac278a38b",
       "baselineSha256": null
     },
     {
       "path": "data/operational/route-operational-index.v0.11.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 19715,
       "sha256": "7f6a077c5e9d1bcd0aca686f73439d4b9291d6b65b89b2ce160f86cb391efc66",
       "baselineSha256": null
     },
     {
+      "path": "data/staging/spot-chat-v0.13/IMPLEMENTATION_START_HERE_v0.13.md",
+      "state": "replace_or_add",
+      "bytes": 1070,
+      "sha256": "cb08190a2a530ef70c96b05633040c083b8804e84ca35896fae7c44c563b057a",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/SPOT_CHAT_DEEPENING_v0.13.md",
+      "state": "replace_or_add",
+      "bytes": 2453,
+      "sha256": "df5a58b3316f9a5bec9448248ed5d36263a7695b37c4ef275409c37a68f7231f",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/acceptance-tests.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 2499,
+      "sha256": "8b5ea226a0c3cd19abb3e0615aa63aae0452ac47b1205e6ce0cb7bfb6052f2d5",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/category-balance-policy.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 1458,
+      "sha256": "61420cd5b95a52a390452184d50242edd421e4da411e3888d52868286892a36c",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/exploration-roadmap-to-public-implementation.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 1434,
+      "sha256": "8a4543001c4f7ef3734f4ed239717c1d6475ea6caefda48189e5981c77bfa1bc",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/new-destination-candidates-batch2.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 31333,
+      "sha256": "85f2ed4a3ab11507b0d3200af96534644a5e3922e9a6921c79c7013396895d4a",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/staging-promotion-plan.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 1456,
+      "sha256": "06afd04d33ef96aa92908ac28c140743b8fe1d9252303a5130ef03f282fcc5c7",
+      "baselineSha256": null
+    },
+    {
+      "path": "data/staging/spot-chat-v0.13/wide-vehicle-compatibility-batch2.v0.13.json",
+      "state": "replace_or_add",
+      "bytes": 5871,
+      "sha256": "51091f4c9d573484a9652ef6b8c1abf90c178fc96cf4b3603e0060f4571a0e28",
+      "baselineSha256": null
+    },
+    {
+      "path": "destinations.json",
+      "state": "replace_or_add",
+      "bytes": 1010008,
+      "sha256": "ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/RELEASE_README_v0.10.0.md",
+      "state": "replace_or_add",
+      "bytes": 2495,
+      "sha256": "0f5c0cb5a77dac82325eef8df82fc6f3f13b03482aaaa07fae89cc59e7bff8dc",
+      "baselineSha256": null
+    },
+    {
+      "path": "docs/RELEASE_VALIDATION_v0.10.0.md",
+      "state": "replace_or_add",
+      "bytes": 1792,
+      "sha256": "2e14a7e26e5f62c825f7c45156b036b100c83bfdb9bae5857895bd924452764d",
+      "baselineSha256": null
+    },
+    {
       "path": "docs/integration/01_BASELINE_AND_PROMOTION_POLICY.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2835,
-      "sha256": "34c14d8c58a7833a25fefc1c419ab8f0ec1363995d44d0c75fb7b6fb3ce34ae1",
+      "sha256": "1638529a7d479eda768a1b6bfe29e1fe7670d0b2256ea6486db4f3595188929a",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/02_UI_COMPONENT_AND_EVENT_CONTRACT.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 6429,
-      "sha256": "89d057457296a2ab0612b978b161c2bf5abdc53f8b72a4179a16172e791bfbf7",
+      "sha256": "d23eda04929cad3b1e57d4dbac5382eb2bb89f0a13e659dc5c764323ef46edd2",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/03_HERO_PRECISION_INTEGRATION.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1649,
       "sha256": "c33049136a3be9f7d3f716944e9518db1203dcd3608a6222af2b4df3aa849739",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/04_ARRIVAL_WEATHER_OPERATIONAL_INTEGRATION.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 4950,
-      "sha256": "5029ea4f484cca179e4bb021f20da32f8bcd440f62d1e7d6608852ba9b6e5faa",
+      "sha256": "2e5609ea9501c06bedc35fddb7483f44fcbf4d8e621848fddac69d36c1917cfd",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/05_OPERATIONAL_RESULT_STATE_MACHINE.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2239,
       "sha256": "923d77c78405a68795ef71c15d5f5f73a8c73841ff578fb85d520bdfcb7b5c35",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/06_RELEASE_REPRODUCIBILITY_AND_CI.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1780,
       "sha256": "e008d3a01121e455b7db840f935626dc1830a9770fa21fe3d1a518cf5a200291",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/07_IPHONE_SAFARI_ACCESSIBILITY_PERFORMANCE.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1922,
-      "sha256": "a27156207c21e8ec286f81f8c07f340eecc1273d8ef2776de28ba7277dffc46b",
+      "sha256": "2a1f7b86c4460424a898f963c0b3513a8eefd52c453faf2ef32d948b6727d8ee",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2738,
-      "sha256": "1ff24897d742cb8689e0734350dee39403bd70b78f7628a5907fb910c3792c5e",
+      "sha256": "e97af155e7cdde14ab0fdd585202074f933dd508dca4dd9167b31fc2798dd600",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/09_VISUAL_QA_ASSET_ACCEPTANCE_AND_FINAL_REPORT.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3179,
       "sha256": "3fbc191562854c316365270fa101c9fded4cc621442f743c52e98bda82c1ec19",
       "baselineSha256": null
     },
     {
       "path": "docs/integration/10_FINAL_GITHUB_PUBLISH_PACKAGE.md",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 819,
       "sha256": "7b90b1fcbfd5bd55b004ee8cf0e2856eb645e84d9f94b002e526fd90b750b3f7",
       "baselineSha256": null
     },
     {
+      "path": "docs/integration/11_WARM_BRAND_AND_HEADER_REFINEMENT.md",
+      "state": "replace_or_add",
+      "bytes": 503,
+      "sha256": "3634ba1666931685ed7a0d0f8e555f3ae4d2bb06b0bc427627866f406a2e705d",
+      "baselineSha256": null
+    },
+    {
+      "path": "engine_excerpt.txt",
+      "state": "replace_or_add",
+      "bytes": 2503843,
+      "sha256": "0e1dd8f21f6a674ac7a0157b4b12fc31a181442f5382ce80d784a8b4f32b47cf",
+      "baselineSha256": null
+    },
+    {
       "path": "index.html",
-      "state": "modified",
-      "bytes": 2538331,
-      "sha256": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
-      "baselineSha256": "8812231efa7fdbe6821906d187d9ef464c8359a26b62451006130e0585706b51"
+      "state": "replace_or_add",
+      "bytes": 2541694,
+      "sha256": "af87806863f72495534af82d36579e7da0574aedd771fd6f21c580554d4a0070",
+      "baselineSha256": null
     },
     {
       "path": "integration-manifest.json",
-      "state": "added",
-      "bytes": 11284,
-      "sha256": "90deba99b537850666fd81dc09492e6a12c9228a0f332ee8a23a9d63b7f74dcf",
+      "state": "replace_or_add",
+      "bytes": 11335,
+      "sha256": "20c43c1dc42fdb8d30b686acaa8d6cd7ead9ab8bce9030955ea5977f0b9bd561",
       "baselineSha256": null
     },
     {
       "path": "package.json",
-      "state": "added",
-      "bytes": 1465,
-      "sha256": "4f2895262a1495a2caf8fa2ae82a6657b1705e09282d0082551dd6aefb3db929",
+      "state": "replace_or_add",
+      "bytes": 2074,
+      "sha256": "f171d2646a91a82b075fd15426f65850a606c70241dfc006b7d6ccf30a4241be",
+      "baselineSha256": null
+    },
+    {
+      "path": "project-cruise.json",
+      "state": "replace_or_add",
+      "bytes": 3300395,
+      "sha256": "cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b",
       "baselineSha256": null
     },
     {
       "path": "records/arrival-operational-audit.deepening05.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1848,
       "sha256": "a6ffc571a1f11ce4bfc6428d50a7c0729aec350047d96b61deae3c9a611f7104",
       "baselineSha256": null
     },
     {
       "path": "records/arrival-operational-audit.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2068,
-      "sha256": "598e83e61dbfb3580268c9f6e30f4147838e4dec06fa843e8a9a387b73673c6d",
+      "sha256": "dba07d11e595f28cd414f21ce374d66f0ad5aedfb4d29b82b68427badf546e21",
       "baselineSha256": null
     },
     {
       "path": "records/baseline-audit.deepening05.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1346,
       "sha256": "b245a1bd120a02d6ab2f4cf4859ff8ccf389da43e3692d32aab70659ca1ab51f",
       "baselineSha256": null
     },
     {
       "path": "records/baseline-audit.json",
-      "state": "added",
-      "bytes": 1346,
-      "sha256": "9c5391cb40e1dec6c4b65f633a5092fbebe622996a8b19427f9248815a2f52db",
+      "state": "replace_or_add",
+      "bytes": 1286,
+      "sha256": "3109a2d73a3c3fb4cb766937d19c56f60e72ef661d6a84fa948fd6d43ba3a4de",
       "baselineSha256": null
     },
     {
       "path": "records/baseline-audit.pre-ui.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1216,
       "sha256": "89fac1fb34466be3a75cbb9bb5c033112c4fe32b49e1daf65423147b7de37f26",
       "baselineSha256": null
     },
     {
+      "path": "records/brand-warm-ui-contract.json",
+      "state": "replace_or_add",
+      "bytes": 170,
+      "sha256": "659cbe95d86a29ea7da7097c893ce58bdc43de98237cee32394674e7921c5762",
+      "baselineSha256": null
+    },
+    {
       "path": "records/browser-smoke.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 279,
-      "sha256": "966baf987345233f83f9ecb6a1d6621d3ce5c346bc9095aaa07d9016c4b78ff5",
+      "sha256": "21c0b3b748c04aa0c0589e7509f1f3405d927b7e63e0286700e8c91a076702e5",
       "baselineSha256": null
     },
     {
       "path": "records/canonical-index-sha256.txt",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 77,
       "sha256": "9743e11c6b5942f58ca257f9c875e57690f69d7c51186549085aab3451f1bd9e",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-02-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1837,
       "sha256": "b7f84f42313438887de6331220f5151197d09b0990ebd68629d1f0db141734d3",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-03-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2710,
       "sha256": "10cfeb3984efaf7c52bd6681d6c5e769bee5ab0bfacc4b37b5ea4079e56064f0",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-04-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 4156,
       "sha256": "46d07336cac4d2ffe6e8dc4d159c7efc055552eb90e697747a378002763bc733",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-05-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1744,
       "sha256": "ba0ab89c0d93a86ac7d398b5016b69d6bd8c3eb4d0be28a19decb7c300ecd468",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-06-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2091,
       "sha256": "4c34ebcb1cea5859d741675f106e3106a2646037434d2e8e5893d17253b40eab",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-07-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2311,
       "sha256": "e8b9589cbbafd7f698250154f551f7823123213a4408ee240eb560f74c897396",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-08-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2191,
       "sha256": "ede94086a2f04bafac53baf7667be81bf21a22e3d4e175354a2db00d92603a9c",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-09-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3331,
       "sha256": "c8dd360314b3984f418b170e2f0c23918b6dd67134075d590c07a91503689d76",
       "baselineSha256": null
     },
     {
       "path": "records/deepening-10-files.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2030,
       "sha256": "9837c65f2302dbd29434c004ab2eccda1248ed2ac576524842dac22ffc7033df",
       "baselineSha256": null
     },
     {
       "path": "records/external-hero-package.json",
-      "state": "added",
-      "bytes": 964,
-      "sha256": "41bd2ead8ac4a46b0d1f3b53cf719b8aded571cd620126d5343961376331040a",
+      "state": "replace_or_add",
+      "bytes": 949,
+      "sha256": "80948bbdd225db0fe119202e0ea88c18a5a8efe3e13de5eed5fdb3904e818381",
       "baselineSha256": null
     },
     {
       "path": "records/final-qa-generate.deepening10.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 291,
       "sha256": "dd78f3318080cbf6b0acbdbf8d3f495aa42140b3b1fe402941c5803746adc90e",
       "baselineSha256": null
     },
     {
       "path": "records/final-qa-report.json",
-      "state": "added",
-      "bytes": 79213,
-      "sha256": "d59489a4ef17bb52dadc0ef0836f21efd5f2e91ae649b500e18899813bfe7138",
+      "state": "replace_or_add",
+      "bytes": 98645,
+      "sha256": "1d1531ff17dbd6cb60a329a86f7b3840c16d7b324c87b893853f439ec1fc95b7",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/final-qa-report.rc3-final.log",
+      "state": "replace_or_add",
+      "bytes": 177,
+      "sha256": "27b973c15738076e1fa00472168d84d4750ab35077e324bbcc5a8153269178e7",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/final-qa-report.rc3.log",
+      "state": "replace_or_add",
+      "bytes": 177,
+      "sha256": "27b973c15738076e1fa00472168d84d4750ab35077e324bbcc5a8153269178e7",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/final-qa-report.rc6.log",
+      "state": "replace_or_add",
+      "bytes": 171,
+      "sha256": "8f907af1c1fb851f9f729d015db6b3e72c9cfc51ea949155650229ce4ad1b354",
       "baselineSha256": null
     },
     {
       "path": "records/hero-asset-acceptance.json",
-      "state": "added",
-      "bytes": 10760,
-      "sha256": "3ca6ef2fc98f2771120b69d4a649de7ff30533995656c5f4e697d54efe2b5ad1",
+      "state": "replace_or_add",
+      "bytes": 16873,
+      "sha256": "9079c2e6a17f629f2a5662382a98bff9ab8120fe13fc1dcdde47366636b07b55",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/hero-exact30-import.json",
+      "state": "replace_or_add",
+      "bytes": 2750,
+      "sha256": "7f0ede008ae46ddde801ed4c7e5ecc7f285b2fe81d4d1f4caf761b4234149779",
       "baselineSha256": null
     },
     {
       "path": "records/hero-precision-audit.deepening05.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2236,
       "sha256": "5ba65232998e3665258bb5f657f35f76582ff7a92a95225031a51748e85799bc",
       "baselineSha256": null
     },
     {
       "path": "records/hero-precision-audit.json",
-      "state": "added",
-      "bytes": 2236,
-      "sha256": "dc08b2dc958669f3e5f961e65caa1103e3fda465a8874b7de9467e4a0f814b15",
+      "state": "replace_or_add",
+      "bytes": 2322,
+      "sha256": "c94bc13ab5d2ae2fef4ea1d95155a4f7fb80f382216052acdf327756bce0dd8c",
       "baselineSha256": null
     },
     {
       "path": "records/hero-precision-samples.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 28887,
       "sha256": "a781ecff2689880bdbbec876a5790f1cb8c0a3f4105525c9651a24d2d4943276",
       "baselineSha256": null
     },
     {
       "path": "records/http-smoke.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1047,
       "sha256": "e35e40eece7fb287b1731f763d653697776317e68ddef41b96ae870ace6c3b2a",
       "baselineSha256": null
     },
     {
       "path": "records/iphone-safari-qa.template.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 886,
       "sha256": "dc7dcceca0c671e894d1e5bf809d35d0bde8c3dae831f6c0c4a120fde9475caa",
       "baselineSha256": null
     },
     {
       "path": "records/mobile-accessibility-audit.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 694,
-      "sha256": "f7a4a6b0e6fc71802a1dbedaedf77c30a89c614128533206620d03b5e3846bd4",
+      "sha256": "9388df6e9af850306014f6a9dbeb9153bf7e335fc5179d0a509069c43f95abb8",
       "baselineSha256": null
     },
     {
       "path": "records/npm-test.deepening06.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3617,
       "sha256": "1640210b118621681fddc1f5442fe5f0907f755aa5735d6ba2ab0c04418b0a1d",
       "baselineSha256": null
     },
     {
       "path": "records/npm-test.deepening07.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 4424,
       "sha256": "e4a9278907d89bbf96886adf91b124a57afdbbe6598b6e8abf12362fc982cc05",
       "baselineSha256": null
     },
     {
       "path": "records/npm-test.deepening08.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 5102,
       "sha256": "f7861141ad040038b2e4bb52804060a5f323c4875f7759f149e8faa1e4afc94d",
       "baselineSha256": null
     },
     {
       "path": "records/npm-test.deepening09.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 16535,
       "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567",
       "baselineSha256": null
     },
     {
       "path": "records/npm-test.deepening10.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 16535,
       "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567",
       "baselineSha256": null
     },
     {
+      "path": "records/npm-test.rc2.log",
+      "state": "replace_or_add",
+      "bytes": 17054,
+      "sha256": "82b5402ba9a2d1da21779a1a79aac1a738f8710ec04e26df50e2604f25fb3aed",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.rc3-final.log",
+      "state": "replace_or_add",
+      "bytes": 23186,
+      "sha256": "9b915e396c14f6d90c58651cfd185fe3a8d1f7758bf18c4a927ae6d35191e0c4",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.rc3.log",
+      "state": "replace_or_add",
+      "bytes": 23186,
+      "sha256": "3c9bbd46509b1de36becb26e43d2700ecda3867381515d94454811eeaa9dc593",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/npm-test.rc6.log",
+      "state": "replace_or_add",
+      "bytes": 23924,
+      "sha256": "4bcef51e4b82a1a0d68f4b4695a8240c6117606cdf896ffaa90a53b745cddd1e",
+      "baselineSha256": null
+    },
+    {
       "path": "records/operational-core-test.deepening05.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 63,
       "sha256": "d0c55b3d2447abe1938f60e2c9780b618074aab100798999bece64342c66423d",
       "baselineSha256": null
     },
     {
       "path": "records/operational-core-test.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 63,
       "sha256": "d0c55b3d2447abe1938f60e2c9780b618074aab100798999bece64342c66423d",
       "baselineSha256": null
     },
     {
       "path": "records/operational-route-coverage-test.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 751,
       "sha256": "e77754d8f98224088fb46029970a0c77f8ecebc2c60fa3493a14386ffacdc6b3",
       "baselineSha256": null
     },
     {
       "path": "records/operational-selection-matrix.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1565,
       "sha256": "4086ced7d95dc38b80fc39bd4f6c973c1695a725b86848fb56d59719ca1c5667",
       "baselineSha256": null
     },
     {
+      "path": "records/rc7-spot-v013-release-audit.json",
+      "state": "replace_or_add",
+      "bytes": 982,
+      "sha256": "7e3005d7501d8fa22913140f195d6cd313b30235253332a30b50e6ec26dd591b",
+      "baselineSha256": null
+    },
+    {
       "path": "records/reference/blocked-environment/ui-smoke-desktop.png",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 17959,
       "sha256": "260af1c0df1835a90ff9c56ea3aa95e416b8a02d044d188e6fd3a8149ea2b378",
       "baselineSha256": null
     },
     {
       "path": "records/reference/blocked-environment/ui-smoke-mobile.png",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 29650,
       "sha256": "001c5066f0283ec25ff74889ffe65bfa25501eee162a40ef115d801a60ee75b5",
       "baselineSha256": null
     },
     {
       "path": "records/reference/hero-precision-cross-chat.png",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 141585,
       "sha256": "0c05cd1b68a27b9a760d2b0422cf9412f1e995f89f23938589a7abd074aa43e7",
       "baselineSha256": null
     },
     {
       "path": "records/release-audit.deepening08.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 334,
       "sha256": "7ff2efd706f83c7996c29bb17452717833594d3c744eb252a3c0b1da9515ee33",
       "baselineSha256": null
     },
     {
       "path": "records/release-audit.deepening09.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 436,
       "sha256": "af852967d242231c5a0164886728dfd012e5b457c1c492bffd64546b8dcaec03",
       "baselineSha256": null
     },
     {
       "path": "records/release-audit.deepening10.log",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 436,
       "sha256": "af852967d242231c5a0164886728dfd012e5b457c1c492bffd64546b8dcaec03",
       "baselineSha256": null
     },
     {
       "path": "records/release-candidate-audit.json",
-      "state": "added",
-      "bytes": 57951,
-      "sha256": "bfbf652bd53eb80616fc8277a3dd91d1112d5eb062d72bbfd459e3e4ea18adac",
+      "state": "replace_or_add",
+      "bytes": 70655,
+      "sha256": "5a8d5c77e76b0a89c8451fb1b45c2c2790102013eacde58f9c95966cdaca5292",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-candidate-audit.rc3-final.log",
+      "state": "replace_or_add",
+      "bytes": 435,
+      "sha256": "c68ffb0ede52d39de45fe8aac1cde2e57c95710a83caec607215ce083dd52b20",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-candidate-audit.rc3.log",
+      "state": "replace_or_add",
+      "bytes": 435,
+      "sha256": "c68ffb0ede52d39de45fe8aac1cde2e57c95710a83caec607215ce083dd52b20",
+      "baselineSha256": null
+    },
+    {
+      "path": "records/release-candidate-audit.rc6.log",
+      "state": "replace_or_add",
+      "bytes": 435,
+      "sha256": "ae943cb956e189cdbf83de76c06e5c473a80a1249356d3adcb9fd0372e25021c",
       "baselineSha256": null
     },
     {
       "path": "records/release-candidate-audit.summary.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 334,
       "sha256": "6c26ddce744f1cb3dfecfc9707e5b7fa55cc22f7a16417c82ea37591140a89ae",
       "baselineSha256": null
     },
     {
       "path": "records/release-documentation-audit.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 568,
-      "sha256": "ea96bbb221847cfbec158096daec11d768ca19d07a6617852e0411cfd350333f",
+      "sha256": "15c9217faf3958b8495fd4f7cd33c851203e715622e49dbf7c8db84674526dbd",
       "baselineSha256": null
     },
     {
       "path": "records/result-state-machine-test.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 45,
       "sha256": "bf603a28458abc8eaf06894e890bcd5306e2a6be94098e230c20bf0f86efde3a",
       "baselineSha256": null
     },
     {
       "path": "records/source-reconciliation.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 6080,
       "sha256": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4",
       "baselineSha256": null
     },
     {
       "path": "records/ui-boundary-audit.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1231,
       "sha256": "119613bbf5eea9466b8b3a72f95e119c76eff8c816b71875e2345e404a1995f4",
       "baselineSha256": null
     },
     {
       "path": "records/ui-contract-audit.deepening05.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1067,
       "sha256": "0d8911b6503376074428224d5b6a55005bd437990fce31b74e0b2e4e814b0eaa",
       "baselineSha256": null
     },
     {
       "path": "records/ui-contract-audit.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1067,
-      "sha256": "c8e8de370ddd11b32d7bf723506504a7ab99522709a5fe7de2ab78877471df9b",
+      "sha256": "d1c6b88ef61a131c167fab162e805c622fbc8f90d356b75808c289fc3797fe8c",
       "baselineSha256": null
     },
     {
       "path": "records/visual-qa-contract.json",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 530,
-      "sha256": "5950fb532e62fc9eab2a397539e4a04cc3666d027eca17b9670e3e2475019290",
+      "sha256": "72c65d5d51aa8452a12a9fffb5bddb61119b7547051bb5ef8fcf90534ddbed80",
+      "baselineSha256": null
+    },
+    {
+      "path": "routes.json",
+      "state": "replace_or_add",
+      "bytes": 1983292,
+      "sha256": "d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_arrival_integration.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 6908,
-      "sha256": "7237d8118fe723f71fc625b62f3b9c54b8ec94401ff487559c036741b76d72bd",
+      "sha256": "58dfb41a0ece27b0e185d415ecf6cc7cec84257573a07d93ef067320078e79b6",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_canonical.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3434,
-      "sha256": "9077a2bd6ea3d25a3c0e8563da1cb3afc5de4ea9576d8d0850882cf131d1d8ab",
+      "sha256": "7381d93658bc867d809f47da7412bad44cb0f34cf2e69ccaed8ee37512ffdd56",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_hero_assets.py",
-      "state": "added",
-      "bytes": 8302,
-      "sha256": "1008ac1160f818c9eddeea05661c9a67ece11a53f30ed6c000b17fe11ca937b8",
+      "state": "replace_or_add",
+      "bytes": 9247,
+      "sha256": "b45ac2333e9002aa19303c379be9fd827a4db4f36468e1f3d99b773e31b64558",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_hero_precision.py",
-      "state": "added",
-      "bytes": 5025,
-      "sha256": "3a33a180b4f67749dc8ba23c8beaf78bd808fa905beed873064e2b05f39d92f5",
+      "state": "replace_or_add",
+      "bytes": 5258,
+      "sha256": "d5a6d58c985e6b70c24e845c88a539c2892dada8b38de9c0823975d483cf86be",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_mobile_accessibility.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2160,
-      "sha256": "17994b01c5f1c250e1c458eb5419f907de731e9321543eb8cb9f33d6bd5bfed6",
+      "sha256": "8fee4e3249f5398cd9c7680f6713bdf63ad4740d09ae366cbba1057ac8dac56a",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_release_candidate.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 5864,
-      "sha256": "c344c2b642b64c2616fdd81b57f13d40a80b9749af578598e2ef977237d3bb8e",
+      "sha256": "afa06d4f077294e455772901a9e2555751bad2ab97caa1355f5d1bcf5e85bfd6",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_release_documentation.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1805,
-      "sha256": "30d107cf1663f0875c473e87d59108418e787d4c9128dae11c2f66a1580b6737",
+      "sha256": "055e3dcdda2dad6a610b08e3c2c614edf6ea10610e1f048025066c2bbf260c28",
+      "baselineSha256": null
+    },
+    {
+      "path": "scripts/audit_spot_v013.py",
+      "state": "replace_or_add",
+      "bytes": 1158,
+      "sha256": "8a872acca90e31c9571c54c83f2e23a6cc5f5c6a7cf674ccdcd553a916fdfb66",
       "baselineSha256": null
     },
     {
       "path": "scripts/audit_ui_contract.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2969,
-      "sha256": "5738b24d0eb67f72b1e3451e7cbc4203eb96d23735bf81627efe7334dcf7aa2a",
+      "sha256": "b4061234db6243975f65a6736d7100b6093dfd52a9982fe7ddbd03deeb74c991",
       "baselineSha256": null
     },
     {
       "path": "scripts/generate_release_qa_report.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3989,
-      "sha256": "0f1e382236577cd005bf0a04b5190de73a6c6658b71297b8d1cbd6f053fa1e6b",
+      "sha256": "7adf2b558ad1bd3c2c12dff1d5be22e6814f0538df5d198dd1dc576e5512e7fe",
+      "baselineSha256": null
+    },
+    {
+      "path": "spot-staging-v013.html",
+      "state": "replace_or_add",
+      "bytes": 2512,
+      "sha256": "6182c1a7bdac7523be0263f53a47727964085ceecac885ac6b6868480f79be53",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/brand_warm_ui_contract.py",
+      "state": "replace_or_add",
+      "bytes": 909,
+      "sha256": "dc14b025e1644586b66d50e5e683d471e9b5eed0acc5c5e7d520ca7d54e54b34",
       "baselineSha256": null
     },
     {
       "path": "tests/browser_smoke_cdp.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 11296,
-      "sha256": "0947003afc66e2bf6a9c7538d69e1441f22bcbd3d41604612f84006c69996e38",
+      "sha256": "1d524e27d5847baff08ac3f53f8809cc6220e4e8cf270266278bbdfc1dafff34",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/compact_reveal_contract.py",
+      "state": "replace_or_add",
+      "bytes": 830,
+      "sha256": "7c9db664119809f500d2d05980f0d20f12cd69b39e12da32c10d48f199670657",
+      "baselineSha256": null
+    },
+    {
+      "path": "tests/hero_render_contract.py",
+      "state": "replace_or_add",
+      "bytes": 858,
+      "sha256": "0beeedc0db3b6b94809d4decd44df54e9b1aad793696c00ed46645c460ee7329",
       "baselineSha256": null
     },
     {
       "path": "tests/http_smoke.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2403,
       "sha256": "76c7408a0b0ead8d2fb8842aec0c0e35057189f6b7198ba970e263d2c655af38",
       "baselineSha256": null
     },
     {
       "path": "tests/operational_core.test.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1749,
       "sha256": "f28f06e597ea0092aaffac56b6e2ea47a3a47872808b32a77d94d1189ed985fb",
       "baselineSha256": null
     },
     {
       "path": "tests/operational_route_coverage.test.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2818,
       "sha256": "d8c7d8a897d373d67e48814922c9d301e3b4c6a9749d2054aed4258435ea8803",
       "baselineSha256": null
     },
     {
       "path": "tests/operational_selection_integration.test.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 3850,
       "sha256": "aacecdec3c33766b49674c6517fb170c62b3df055d9c483fbd5958e458d4911a",
       "baselineSha256": null
     },
     {
+      "path": "tests/reroll_ux_contract.py",
+      "state": "replace_or_add",
+      "bytes": 1175,
+      "sha256": "21d30fdd999c20f8b7e16e04de004b037cb81a5acf60ed851f14b61fdf1dc8b6",
+      "baselineSha256": null
+    },
+    {
       "path": "tests/result_state_machine.test.js",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 2130,
       "sha256": "410a6f6c16b214cf722c875651a59a9200d3ab626970307d2a38c0c476414e7c",
       "baselineSha256": null
     },
     {
+      "path": "tests/spot_v013_policy.test.js",
+      "state": "replace_or_add",
+      "bytes": 2605,
+      "sha256": "ed242da52cf757544ac899a61e6ce828237fe1d415d44aad1c58a35dd6bada81",
+      "baselineSha256": null
+    },
+    {
       "path": "tests/visual_qa_contract.py",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 1570,
-      "sha256": "09ca6f27fefb8d578a021fd3bb122ab55e2a40ffc15672fa42af19f2231e8b1a",
+      "sha256": "f74b47c9fd290d2ce67eed4b4769fe005bdbb048c7d05b550e21c0ed6dd2171f",
+      "baselineSha256": null
+    },
+    {
+      "path": "visual-library.json",
+      "state": "replace_or_add",
+      "bytes": 8664,
+      "sha256": "18df99f3b01db112f4246923a4a7977fc07fc9ffb1d7ae6f98f82ad8333aad45",
       "baselineSha256": null
     },
     {
       "path": "visual-qa.html",
-      "state": "added",
+      "state": "replace_or_add",
       "bytes": 6719,
       "sha256": "0a84f6dbf3a4a19a296227105fce4e335ce8db1978578fd7d15597bc2c25be8b",
       "baselineSha256": null

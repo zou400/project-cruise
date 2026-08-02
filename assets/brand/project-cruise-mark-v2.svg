@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 230" role="img" aria-labelledby="title desc">
+  <title id="title">Project Cruise</title>
+  <desc id="desc">Outlined Project Cruise wordmark with a restrained warm accent.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e46a43"/>
+      <stop offset="0.58" stop-color="#d95a48"/>
+      <stop offset="1" stop-color="#b94368"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linejoin="round">
+    <text x="47" y="37" fill="#d95a48" stroke="none" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" font-style="italic" letter-spacing="8">PROJECT</text>
+    <text x="38" y="158" fill="none" stroke="#f3ede5" stroke-width="3.2" font-family="Arial Narrow, Arial, Helvetica, sans-serif" font-size="142" font-weight="700" font-style="italic" letter-spacing="-4">CRUISE</text>
+    <path d="M575 98 H790" stroke="url(#accent)" stroke-width="5"/>
+    <path d="M610 112 H756" stroke="url(#accent)" stroke-width="2" opacity=".72"/>
+    <path d="M635 126 H724" stroke="url(#accent)" stroke-width="1.5" opacity=".55"/>
+    <text x="49" y="207" fill="#d7a36a" stroke="none" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing="8">TOKYO DRIVE SYSTEM</text>
+  </g>
+</svg>

@@ -1,0 +1,922 @@
+{
+  "schemaVersion": "0.13",
+  "generatedAt": "2026-08-02T19:20:00+09:00",
+  "round": {
+    "index": 1,
+    "totalPlanned": 3,
+    "scope": "蒲田から概ね25km圏・公園偏重を避ける"
+  },
+  "policy": {
+    "focus": [
+      "都市建築",
+      "食",
+      "産業遺産",
+      "雨天でも成立"
+    ],
+    "doNotAssignProductionIdsYet": true,
+    "distanceVerification": "Google Routes APIで最終確定",
+    "vehicleProfile": "全幅2m超の車両を別ゲートで評価"
+  },
+  "summary": {
+    "newCandidates": 22,
+    "priorStagedCandidates": 15,
+    "totalStagedCandidates": 37,
+    "primaryCategoryCounts": {
+      "都市建築": 8,
+      "産業遺産": 6,
+      "自動車文化": 2,
+      "食": 5,
+      "雨天": 1
+    },
+    "duplicateCountAgainstD001D320": 0,
+    "highRainCandidates": 22,
+    "priorityOrConditionalPromotion": 19
+  },
+  "candidates": [
+    {
+      "candidateId": "N016",
+      "name": "東京国際フォーラム",
+      "area": "千代田区・丸の内",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "雨天",
+        "夜間建築",
+        "食"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "ガラス棟と地上広場を目的に、都市建築そのものを見に行く。雨天時は館内動線中心。",
+      "parking": {
+        "type": "onsite",
+        "hours": "7:00-23:30",
+        "capacity": 417,
+        "limits": {
+          "heightM": 2.2,
+          "widthM": 1.9,
+          "lengthM": 5.4
+        },
+        "exitLock": true
+      },
+      "wideVehicleStatus": "incompatible_over_1_9m",
+      "rainStrength": 5,
+      "nightStrength": 4,
+      "destinationStrength": 86,
+      "promotionLane": "conditional_promote",
+      "condition": "車幅1.9m以下。イベント混雑を動的確認。",
+      "arrivalResolution": "places_api_then_entrance_review",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.t-i-forum.co.jp/access/parking/",
+        "https://www.t-i-forum.co.jp/visitors/facilities/square/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N017",
+      "name": "インターメディアテク＋KITTE丸の内",
+      "area": "千代田区・丸の内",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "博物館",
+        "雨天",
+        "知的体験"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "旧東京中央郵便局の建築と、東京大学コレクションを一つの都市体験として組み合わせる。",
+      "parking": {
+        "type": "same_building",
+        "hours": "6:00-23:00",
+        "capacity": null,
+        "limits": {},
+        "exitLock": true
+      },
+      "facilityHours": "11:00-18:00、金土20:00まで。月曜休館（祝日の場合は翌日）",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 3,
+      "destinationStrength": 88,
+      "promotionLane": "promote_after_vehicle_check",
+      "condition": "KITTE駐車場の車幅・機械式区画をWorkで確認。",
+      "arrivalResolution": "places_api_then_parking_dimension_check",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.intermediatheque.jp/ja/info/guide",
+        "https://www.intermediatheque.jp/ja/info/access",
+        "https://marunouchi.jp-kitte.jp/guide/access.jsp"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N018",
+      "name": "旧新橋停車場 鉄道歴史展示室",
+      "area": "港区・汐留",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "鉄道史",
+        "都市建築",
+        "雨天"
+      ],
+      "roleProposal": "conditional_final_destination",
+      "timeFit": [
+        "90"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "日本の鉄道起点を再現駅舎と発掘資料で見る、短時間の都市産業史目的地。",
+      "parking": {
+        "type": "nearby_selection_required",
+        "hours": null,
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "10:00-17:00、入館16:45まで。月曜休館（祝日の場合は翌火曜）",
+      "wideVehicleStatus": "anchor_pending",
+      "rainStrength": 4,
+      "nightStrength": 1,
+      "destinationStrength": 77,
+      "promotionLane": "hold_until_anchor",
+      "condition": "汐留側の合法駐車場を1件選定後に昇格。",
+      "arrivalResolution": "parking_selection_then_walk_endpoint",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://www.ejrcf.or.jp/shinbashi/",
+        "https://www.ejrcf.or.jp/shinbashi/access.html"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N019",
+      "name": "容器文化ミュージアム",
+      "area": "品川区・大崎",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "ものづくり",
+        "雨天",
+        "無料"
+      ],
+      "roleProposal": "conditional_final_destination",
+      "timeFit": [
+        "90"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "缶・瓶・包装の技術史を、身近な製品から辿る平日限定の小型産業ミュージアム。",
+      "parking": {
+        "type": "nearby_selection_required",
+        "hours": null,
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "平日9:00-17:00、入場無料",
+      "wideVehicleStatus": "anchor_pending",
+      "rainStrength": 5,
+      "nightStrength": 0,
+      "destinationStrength": 73,
+      "promotionLane": "hold_until_anchor",
+      "condition": "大崎フォレストビル周辺の駐車場を確定。平日昼のみ。",
+      "arrivalResolution": "parking_selection_then_walk_endpoint",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://package-museum.jp/",
+        "https://package-museum.jp/access/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N020",
+      "name": "A PIT AUTOBACS SHINONOME",
+      "area": "江東区・東雲",
+      "primaryCategory": "自動車文化",
+      "secondaryCategories": [
+        "都市建築",
+        "雨天",
+        "食",
+        "買い物"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "クルマで行くこと自体に意味がある大型カーライフ拠点。雨の日や深夜前の短時間利用にも強い。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間入出庫",
+        "capacity": 209,
+        "limits": {
+          "heightM": 2.1
+        },
+        "exitLock": false
+      },
+      "facilityHours": "店舗9:00-21:00",
+      "wideVehicleStatus": "width_visual_check_required",
+      "rainStrength": 5,
+      "nightStrength": 3,
+      "destinationStrength": 92,
+      "promotionLane": "priority_promote",
+      "condition": "立体入口の実幅と平面区画を目視確認。",
+      "arrivalResolution": "places_api_then_entrance_review",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.apit-autobacs.com/shinonome/shopinfo/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N021",
+      "name": "羽田エアポートガーデン",
+      "area": "大田区・羽田空港",
+      "primaryCategory": "食",
+      "secondaryCategories": [
+        "雨天",
+        "空港",
+        "温浴",
+        "夜間"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・確実",
+      "experience": "空港直結の食・買い物・温浴を一体化した、雨でも深夜でも成立しやすい近距離目的地。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間",
+        "capacity": 443,
+        "limits": {
+          "heightM": 2.3,
+          "widthM": 2.1,
+          "lengthM": 5.5
+        },
+        "exitLock": false
+      },
+      "wideVehicleStatus": "compatible_up_to_2_1m",
+      "rainStrength": 5,
+      "nightStrength": 5,
+      "destinationStrength": 95,
+      "promotionLane": "priority_promote",
+      "condition": "多客期の料金・満空を動的確認。車幅2.1m超は除外。",
+      "arrivalResolution": "places_api_direct",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.shopping-sumitomo-rd.com/haneda/parkingsite/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N022",
+      "name": "有明ガーデン",
+      "area": "江東区・有明",
+      "primaryCategory": "食",
+      "secondaryCategories": [
+        "雨天",
+        "温浴",
+        "都市複合施設"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "食・買い物・温浴を一箇所で完結できる、雨天用の大型複合目的地。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間",
+        "capacity": 1800,
+        "limits": {
+          "heightM": 2.1,
+          "widthM": 2.3,
+          "lengthM": 5.0,
+          "weightT": 2.0
+        },
+        "exitLock": false
+      },
+      "facilityHours": "物販10:00-21:00、飲食11:00-23:00",
+      "wideVehicleStatus": "compatible_width_pending_weight",
+      "rainStrength": 5,
+      "nightStrength": 4,
+      "destinationStrength": 88,
+      "promotionLane": "priority_promote",
+      "condition": "一部区画は総重量2.0tまで。車両重量をゲート化。",
+      "arrivalResolution": "places_api_then_entrance_review",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.shopping-sumitomo-rd.com/ariake/gaikumap/parking/",
+        "https://www.shopping-sumitomo-rd.com/ariake/facility/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N023",
+      "name": "豊洲 千客万来",
+      "area": "江東区・豊洲",
+      "primaryCategory": "食",
+      "secondaryCategories": [
+        "市場",
+        "温浴",
+        "雨天",
+        "水辺"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "市場の食と温浴を組み合わせる。観光地というより『食べに走る』目的地として使う。",
+      "parking": {
+        "type": "onsite",
+        "hours": "要API・公式最終確認",
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "主要食エリア9:00-22:00、店舗別",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 4,
+      "nightStrength": 4,
+      "destinationStrength": 91,
+      "promotionLane": "promote_after_parking_validation",
+      "condition": "一般車駐車場の入口・寸法・満空取得を確定。",
+      "arrivalResolution": "places_api_then_parking_validation",
+      "officialStatus": "official_partial",
+      "sourceUrls": [
+        "https://www.toyosu-senkyakubanrai.jp/access",
+        "https://www.toyosu-senkyakubanrai.jp/facilities"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N024",
+      "name": "ラ チッタデッラ",
+      "area": "川崎市・川崎駅東口",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "食",
+        "映画",
+        "雨天",
+        "夜間"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・確実",
+      "experience": "イタリア街風の街区、飲食、映画を近距離でまとめる。夜の短時間目的地として強い。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間",
+        "capacity": 282,
+        "limits": {
+          "heightM": 2.1
+        },
+        "exitLock": false
+      },
+      "wideVehicleStatus": "width_pending",
+      "rainStrength": 4,
+      "nightStrength": 5,
+      "destinationStrength": 87,
+      "promotionLane": "priority_promote",
+      "condition": "車幅・全長を駐車場運営ページで追加確認。",
+      "arrivalResolution": "places_api_then_dimension_check",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://lacittadella.co.jp/access/parking",
+        "https://lacittadella.co.jp/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N025",
+      "name": "東京都庭園美術館",
+      "area": "港区・白金台",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "アールデコ",
+        "美術館",
+        "雨天",
+        "庭園"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "90",
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・確実",
+      "experience": "旧朝香宮邸のアールデコ建築を主役にする、建築目的のドライブ。",
+      "parking": {
+        "type": "onsite",
+        "hours": "美術館開館時間内",
+        "capacity": null,
+        "limits": {},
+        "exitLock": true
+      },
+      "facilityHours": "10:00-18:00、入館券保持者のみ駐車可",
+      "wideVehicleStatus": "entrance_visual_check_required",
+      "rainStrength": 4,
+      "nightStrength": 1,
+      "destinationStrength": 93,
+      "promotionLane": "priority_promote_daytime",
+      "condition": "展覧会・庭園入場が必要。右折進入制限と入口をMapsに反映。",
+      "arrivalResolution": "places_api_then_entrance_review",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.teien-art-museum.ne.jp/visit/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N026",
+      "name": "横浜ハンマーヘッド",
+      "area": "横浜市・新港ふ頭",
+      "primaryCategory": "食",
+      "secondaryCategories": [
+        "港湾建築",
+        "産業遺産",
+        "雨天",
+        "夜間"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km境界・要Routes確認",
+      "experience": "客船ターミナル、食、港の夜景をまとめる。ハンマーヘッドクレーンの産業史も核にする。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間",
+        "capacity": 350,
+        "limits": {
+          "heightM": 2.1,
+          "widthM": 1.9,
+          "lengthM": 5.0,
+          "weightT": 2.5
+        },
+        "exitLock": false
+      },
+      "wideVehicleStatus": "incompatible_over_1_9m",
+      "rainStrength": 4,
+      "nightStrength": 5,
+      "destinationStrength": 94,
+      "promotionLane": "conditional_promote",
+      "condition": "ユーザーの2m超車両では除外。イベント時閉鎖・混雑を動的確認。",
+      "arrivalResolution": "places_api_direct",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.hammerhead.co.jp/access/",
+        "https://www.hammerhead.co.jp/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N027",
+      "name": "横浜ベイクォーター",
+      "area": "横浜市・横浜駅東口",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "食",
+        "水辺",
+        "雨天",
+        "夜間"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "水辺に張り出す商業建築と飲食を目的化する、横浜駅周辺では車で到達しやすい都市目的地。",
+      "parking": {
+        "type": "onsite",
+        "hours": "8:00-23:00、出庫24:00まで",
+        "capacity": 730,
+        "limits": {
+          "heightM": 2.2,
+          "widthM": 1.95,
+          "lengthM": 5.3,
+          "weightT": 2.3
+        },
+        "exitLock": true
+      },
+      "wideVehicleStatus": "incompatible_over_1_95m",
+      "rainStrength": 4,
+      "nightStrength": 4,
+      "destinationStrength": 84,
+      "promotionLane": "conditional_promote",
+      "condition": "2m超車両は除外。北出口制限と混雑を動的確認。",
+      "arrivalResolution": "places_api_then_correct_entrance",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.yokohama-bayquarter.com/access/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N028",
+      "name": "日産グローバル本社ギャラリー",
+      "area": "横浜市・高島",
+      "primaryCategory": "自動車文化",
+      "secondaryCategories": [
+        "産業",
+        "雨天",
+        "カフェ"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "最新車両と日産のブランド体験を、クルマ好き向けの雨天目的地として使う。",
+      "parking": {
+        "type": "partner_parking",
+        "name": "横浜三井ビルディング駐車場",
+        "hours": "要確認",
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "平日10:00-18:00、土日祝10:00-20:00",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 3,
+      "destinationStrength": 92,
+      "promotionLane": "promote_after_partner_parking_validation",
+      "condition": "提携駐車場の車幅・入口・割引条件を確認。",
+      "arrivalResolution": "partner_parking_resolution",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://www.nissan.co.jp/GALLERY/HQ/",
+        "https://www.nissan.co.jp/GALLERY/HQ/ACCESS/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N029",
+      "name": "三菱みなとみらい技術館",
+      "area": "横浜市・みなとみらい",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "科学技術",
+        "雨天",
+        "ものづくり"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km境界・要Routes確認",
+      "experience": "航空・宇宙・海洋・エネルギーを、重工業の視点で見る産業技術目的地。",
+      "parking": {
+        "type": "same_building_or_nearby",
+        "hours": "要確認",
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "開館日は公式カレンダー。平日短縮・土日祝中心",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 0,
+      "destinationStrength": 90,
+      "promotionLane": "promote_after_parking_validation",
+      "condition": "KDX横浜みなとみらいタワー駐車場の平置き区画を優先確認。",
+      "arrivalResolution": "parking_selection_then_places_api",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://www.mhi.com/jp/company/overview/museum/minatomirai"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N030",
+      "name": "横浜市役所・ラクシスフロント",
+      "area": "横浜市・馬車道",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "食",
+        "水辺",
+        "雨天",
+        "公共建築"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km境界・要Routes確認",
+      "experience": "高層市庁舎の吹抜け、公共空間、フードホール、大岡川沿いを一つにまとめる。",
+      "parking": {
+        "type": "onsite",
+        "hours": "24時間",
+        "capacity": 170,
+        "limits": {},
+        "exitLock": false
+      },
+      "facilityHours": "商業施設は概ね7:00-23:00、アトリウム9:00-21:00",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 4,
+      "destinationStrength": 85,
+      "promotionLane": "promote_after_dimension_check",
+      "condition": "自動車駐車場の寸法と市民ラウンジ利用時間を最終確認。",
+      "arrivalResolution": "places_api_then_dimension_check",
+      "officialStatus": "official_confirmed_partial",
+      "sourceUrls": [
+        "https://www.city.yokohama.lg.jp/city-info/yokohamashi/shichosha/park.html",
+        "https://www.city.yokohama.lg.jp/city-info/yokohamashi/shichosha/teisou.html"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N031",
+      "name": "新横浜ラーメン博物館",
+      "area": "横浜市・新横浜",
+      "primaryCategory": "食",
+      "secondaryCategories": [
+        "昭和街並み",
+        "雨天",
+        "博物館"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km境界・要Routes確認",
+      "experience": "食事だけでなく、昭和の街並み演出まで含めて目的地化できる雨天向けスポット。",
+      "parking": {
+        "type": "onsite",
+        "hours": "0:00-6:00入出庫不可",
+        "capacity": 175,
+        "limits": {
+          "heightM": 2.1,
+          "widthM": 1.8,
+          "lengthM": 5.0
+        },
+        "exitLock": true
+      },
+      "wideVehicleStatus": "incompatible_over_1_8m",
+      "rainStrength": 5,
+      "nightStrength": 3,
+      "destinationStrength": 91,
+      "promotionLane": "conditional_promote",
+      "condition": "ユーザー車両では除外。公共駐車場代替は採用しない。",
+      "arrivalResolution": "places_api_direct",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.raumen.co.jp/guidance/parking.html",
+        "https://www.raumen.co.jp/access/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N032",
+      "name": "キリンビール横浜工場",
+      "area": "横浜市・生麦",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "食",
+        "工場見学",
+        "雨天"
+      ],
+      "roleProposal": "reservation_only_final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "現役工場の製造工程とレストランを組み合わせる予約制の産業体験。",
+      "parking": {
+        "type": "onsite_reservation_context",
+        "hours": "予約枠依存",
+        "capacity": null,
+        "limits": {}
+      },
+      "facilityHours": "見学は予約制、月曜休館（祝日の場合は次の平日）",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 1,
+      "destinationStrength": 89,
+      "promotionLane": "reservation_lane_only",
+      "condition": "運転者はアルコール試飲不可を明示。予約成立時だけ候補化。",
+      "arrivalResolution": "booking_check_then_parking_validation",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://www.kirin.co.jp/experience/factory/yokohama/",
+        "https://www.kirin.co.jp/experience/factory/yokohama/access/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N033",
+      "name": "東京都水の科学館",
+      "area": "江東区・有明",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "インフラ",
+        "科学館",
+        "雨天",
+        "無料"
+      ],
+      "roleProposal": "conditional_final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "都市の水道インフラを体験型展示で理解する無料の雨天目的地。",
+      "parking": {
+        "type": "no_public_parking",
+        "hours": null,
+        "capacity": 0,
+        "limits": {}
+      },
+      "facilityHours": "9:30-17:00、入館16:30まで。月曜休館",
+      "wideVehicleStatus": "anchor_pending",
+      "rainStrength": 5,
+      "nightStrength": 0,
+      "destinationStrength": 79,
+      "promotionLane": "hold_until_shared_anchor",
+      "condition": "有明ガーデン等の合法駐車場との徒歩接続が成立する場合のみ採用。",
+      "arrivalResolution": "shared_parking_then_walk_endpoint",
+      "officialStatus": "official_confirmed_facility",
+      "sourceUrls": [
+        "https://www.mizunokagaku.jp/",
+        "https://www.mizunokagaku.jp/access/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N034",
+      "name": "TOKYOミナトリエ",
+      "area": "江東区・青海",
+      "primaryCategory": "産業遺産",
+      "secondaryCategories": [
+        "港湾",
+        "展望",
+        "雨天",
+        "無料"
+      ],
+      "roleProposal": "final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "東京港の構造と埋立史を学び、20階から臨海部を俯瞰する。",
+      "parking": {
+        "type": "same_building",
+        "hours": "要最終確認",
+        "capacity": 60,
+        "limits": {
+          "largeVehicle": false
+        }
+      },
+      "facilityHours": "火-木・日10:00-18:00、金土祝前日10:00-21:00、月曜休館",
+      "wideVehicleStatus": "dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 4,
+      "destinationStrength": 90,
+      "promotionLane": "promote_after_dimension_check",
+      "condition": "テレコムセンター駐車場の車幅・入口を確認。",
+      "arrivalResolution": "places_api_then_dimension_check",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.tokyoport.or.jp/minatorie/",
+        "https://www.waterfront.or.jp/portmuseum/museum/view/74"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N035",
+      "name": "日本科学未来館",
+      "area": "江東区・青海",
+      "primaryCategory": "雨天",
+      "secondaryCategories": [
+        "科学技術",
+        "未来",
+        "建築"
+      ],
+      "roleProposal": "temporary_final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "大規模科学館を雨天の主力目的地として使う。施設休館期間は完全除外。",
+      "parking": {
+        "type": "onsite",
+        "hours": "7:00-23:00",
+        "capacity": 167,
+        "limits": {
+          "heightM": 2.1,
+          "widthM": 1.9,
+          "lengthM": 5.0,
+          "weightT": 2.5
+        },
+        "exitLock": true
+      },
+      "facilityHours": "10:00-17:00。2026-10-01から2027-04-22まで休館予定",
+      "wideVehicleStatus": "incompatible_over_1_9m",
+      "rainStrength": 5,
+      "nightStrength": 0,
+      "destinationStrength": 94,
+      "promotionLane": "temporary_conditional_promote",
+      "condition": "2m超車両は除外。長期休館overrideを必須化。",
+      "arrivalResolution": "places_api_direct",
+      "officialStatus": "official_confirmed_with_future_closure",
+      "sourceUrls": [
+        "https://www.miraikan.jst.go.jp/visit/admission/",
+        "https://www.miraikan.jst.go.jp/visit/location-directions/",
+        "https://www.miraikan.jst.go.jp/news/general/202503273938.html"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N036",
+      "name": "東京国際クルーズターミナル",
+      "area": "江東区・青海",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "港湾",
+        "雨天",
+        "大型公共建築"
+      ],
+      "roleProposal": "conditional_final_destination",
+      "timeFit": [
+        "120"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "巨大な客船ターミナル建築と東京港を眺める、寄港状況で表情が変わる目的地。",
+      "parking": {
+        "type": "onsite",
+        "hours": "9:00-17:15",
+        "capacity": 25,
+        "limits": {
+          "heightM": 2.5,
+          "widthM": 2.3,
+          "lengthM": 5.0
+        },
+        "exitLock": true
+      },
+      "facilityHours": "通常9:00-17:00。客船寄港・催事時は変更",
+      "wideVehicleStatus": "compatible_up_to_2_3m",
+      "rainStrength": 4,
+      "nightStrength": 0,
+      "destinationStrength": 87,
+      "promotionLane": "conditional_promote",
+      "condition": "寄港日・催事による駐車規制を動的確認。",
+      "arrivalResolution": "places_api_direct_with_event_gate",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.tptc.co.jp/terminal/guide/cruise/parking",
+        "https://www.tptc.co.jp/terminal/guide/cruise/facility"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    },
+    {
+      "candidateId": "N037",
+      "name": "東京ビッグサイト",
+      "area": "江東区・有明",
+      "primaryCategory": "都市建築",
+      "secondaryCategories": [
+        "展示会",
+        "雨天",
+        "巨大建築"
+      ],
+      "roleProposal": "event_linked_final_destination",
+      "timeFit": [
+        "120",
+        "half"
+      ],
+      "distanceScope": "蒲田25km圏・暫定",
+      "experience": "逆三角形の会議棟と大規模展示イベントをセットで目的化する。",
+      "parking": {
+        "type": "multi_anchor",
+        "hours": "原則8:00-22:00・駐車場別",
+        "capacity": 600,
+        "limits": {},
+        "exitLock": true
+      },
+      "facilityHours": "イベントに依存",
+      "wideVehicleStatus": "anchor_specific_dimensions_pending",
+      "rainStrength": 5,
+      "nightStrength": 1,
+      "destinationStrength": 82,
+      "promotionLane": "event_lane_only",
+      "condition": "イベント開催・駐車場営業を確認できた日だけ候補化。留め置き不可。",
+      "arrivalResolution": "event_check_then_anchor_selection",
+      "officialStatus": "official_confirmed",
+      "sourceUrls": [
+        "https://www.bigsight.jp/visitor/parking/"
+      ],
+      "duplicateCheck": "not_found_in_D001-D320"
+    }
+  ]
+}

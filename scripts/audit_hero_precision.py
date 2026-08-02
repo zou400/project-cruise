@@ -68,7 +68,7 @@ def main():
       'visual_history_key_preserved':'pcHeroHistoryV1' in (ROOT/'assets/js/hero/hero-precision-runtime.js').read_text(encoding='utf-8')
     }
     report={
-      'release':'v0.11.0-rc5',
+      'release':'v0.11.0-rc6',
       'track':'hero-precision-v1-compatible-integration',
       'externalPackageStatus':'exact 30 WebP assets imported and source-map verified; no regeneration performed',
       'counts':{

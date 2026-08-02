@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.11.0-rc7 — Spot v0.13 staging
+
+- Integrated 22-candidate Spot Chat v0.13 package as non-production staging data.
+- Added feature-flagged breadth/category rotation policy and 18 policy tests.
+- Preserved canonical 320 destinations, 181 completed routes and 501 results.
+
+## v0.11.0-rc7 — warm editorial brand refresh
+
+- Adopted outlined logo direction 02 as an SVG wordmark.
+- Removed the redundant top-right header copy.
+- Added warmer orange, sunset, streetlight and wood tones.
+- Fixed long drive-note wrapping and persistent reroll-dock overlap.
+
+
 ## v0.11.0-rc5 — compact destination reveal
 
 - Moved Destination Reveal into the selector right pane.

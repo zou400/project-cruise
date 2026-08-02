@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "release": "v0.11.0-rc5",
+  "release": "v0.11.0-rc7",
   "immutableBaseline": {
     "destinations": 320,
     "canonicalRoutes": 181,
@@ -195,7 +195,7 @@
     "githubPagesWorkflow": ".github/workflows/deploy-pages.yml",
     "publishNowGuide": "GITHUB_PUBLISH_NOW.md",
     "rollbackGuide": "ROLLBACK.md",
-    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc5.md"
+    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc7.md"
   },
   "integrationEvents": {
     "pc:route-shown": "route and destination are available before asynchronous map estimation",
@@ -223,5 +223,13 @@
     "count": 30,
     "status": "integrated",
     "sourcePackageSha256": "99de29368ebe6cdadfccf1bd59592663cfe5ef007b5b44a132884a87913af019"
-  }
+  },
+  "presentationOverlays": [],
+  "rc6Changes": [
+    "selected outlined logo direction 02",
+    "top-right copy removed",
+    "warm editorial palette",
+    "long-text wrapping hardening",
+    "decision dock clearance"
+  ]
 }

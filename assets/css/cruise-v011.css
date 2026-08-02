@@ -1,26 +1,26 @@
-/* Project Cruise GitHub Integration v0.11.0-rc5
+/* Project Cruise GitHub Integration v0.11.0-rc7
  * Non-destructive cinematic shell over canonical v0.10.0.
  * Disable with ?pcUi=classic.
  */
 :root{
-  --pc-bg:#0b0710;
-  --pc-panel:#111018;
-  --pc-panel-2:#17141d;
-  --pc-text:#f6f1f5;
-  --pc-muted:#a59aa7;
-  --pc-line:rgba(255,255,255,.13);
-  --pc-hot:#ee4057;
-  --pc-pink:#b92778;
-  --pc-gold:#d9ae43;
-  --pc-green:#63b790;
+  --pc-bg:#0d0908;
+  --pc-panel:#12100f;
+  --pc-panel-2:#1b1612;
+  --pc-text:#f6f0e8;
+  --pc-muted:#aa9c90;
+  --pc-line:rgba(255,226,202,.14);
+  --pc-hot:#e46643;
+  --pc-pink:#bd416a;
+  --pc-gold:#d5a04f;
+  --pc-green:#72af8b;
   --pc-radius:18px;
 }
 html{background:var(--pc-bg)}
 body.pc-v011{
   background:
-    radial-gradient(circle at 93% 12%,rgba(142,17,91,.42),transparent 38%),
-    radial-gradient(circle at 20% -15%,rgba(49,23,59,.42),transparent 43%),
-    linear-gradient(125deg,#09070c 0%,#120914 58%,#2c0d22 100%);
+    radial-gradient(circle at 92% 10%,rgba(170,64,44,.30),transparent 38%),
+    radial-gradient(circle at 14% -12%,rgba(106,62,35,.30),transparent 42%),
+    linear-gradient(125deg,#0b0908 0%,#17100d 58%,#31150f 100%);
   color:var(--pc-text);
   overflow-x:hidden;
 }
@@ -314,7 +314,7 @@ html[data-pc-data="low"] .pc-v011 .pc-preview-stage:before{display:none}
 html[data-pc-data="low"] .pc-v011 .pc-scene-media{background-image:linear-gradient(135deg,#25101f,#08080c)!important}
 
 
-/* v0.11.0-rc5 — persistent mobile destination switcher */
+/* v0.11.0-rc7 — persistent mobile destination switcher */
 .pc-decision-dock{
   position:fixed;left:50%;bottom:max(14px,calc(env(safe-area-inset-bottom) + 10px));z-index:85;
   width:min(760px,calc(100vw - 28px));display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;
@@ -338,7 +338,7 @@ body.pc-decision-dock-visible .app{padding-bottom:max(122px,calc(env(safe-area-i
 @media(prefers-reduced-motion:reduce){.pc-decision-dock{transition:none}}
 
 
-/* v0.11.0-rc5 — reliable Hero rendering */
+/* v0.11.0-rc7 — reliable Hero rendering */
 .pc-v011 .pc-scene-media{overflow:hidden;background-image:radial-gradient(circle at 72% 26%,#8f2459,#24111f 42%,#09090d 76%)}
 .pc-v011 .pc-scene-image{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transform:scale(1.025);transition:opacity .45s ease,transform 1.1s cubic-bezier(.2,.8,.2,1)}
 .pc-v011 .pc-scene-media.has-image .pc-scene-image{opacity:1;transform:scale(1.005)}
@@ -353,7 +353,7 @@ html[data-pc-data="low"] .pc-v011 .pc-scene-image{display:none}
 @media(prefers-reduced-data:reduce){.pc-v011 .pc-scene-image{display:block}}
 
 
-/* v0.11.0-rc5 — compact reveal: the selector's right pane becomes the destination Hero. */
+/* v0.11.0-rc7 — compact reveal: the selector's right pane becomes the destination Hero. */
 .pc-v011 .pc-preview-stage--hero{min-height:420px;background:#0b0a0f}
 .pc-v011 .pc-preview-stage--hero:before,.pc-v011 .pc-preview-stage--hero:after{display:none}
 .pc-v011 .pc-preview-stage--hero .pc-scene-hero--embedded{
@@ -377,4 +377,57 @@ body.pc-v011[data-operational-state="ready"] .pc-preview-stage--hero .pc-scene-c
   .pc-v011 .pc-preview-stage--hero .pc-scene-content{padding:22px 18px 25px}
   .pc-v011 .pc-preview-stage--hero .pc-scene-destination{font-size:clamp(34px,11vw,48px)}
   .pc-v011 .pc-preview-stage--hero .pc-scene-story{font-size:12px;line-height:1.5}
+}
+
+
+/* v0.11.0-rc7 — mature outlined brand, warmer dusk palette, and text-collision hardening. */
+.pc-v011 .brand{padding-bottom:20px}
+.pc-v011 .pc-brand-row--v2{display:flex;align-items:center;justify-content:flex-start;min-height:88px}
+.pc-v011 .pc-brand-logo-link{display:inline-flex;align-items:center;max-width:min(390px,72vw);text-decoration:none}
+.pc-v011 .pc-logo-v2{display:block;width:100%;height:auto;max-height:112px;object-fit:contain;object-position:left center}
+.pc-v011 .pc-brand-copy,.pc-v011 .pc-wordmark{display:none!important}
+.pc-v011 .db-version{margin-top:8px;border-color:rgba(225,154,104,.28);background:rgba(24,16,13,.64);color:#d9c3b1}
+
+.pc-v011 .selector{background:rgba(15,12,11,.88);box-shadow:0 28px 90px rgba(0,0,0,.40)}
+.pc-v011 .pc-selector-eyebrow,.pc-v011 .pc-scene-kicker,.pc-v011 .map-label,.pc-decision-dock-copy span{color:#e8754c}
+.pc-v011 .origin-btn.active,.pc-v011 .time-btn.active,.pc-v011 .draw-btn,.pc-v011 .primary,#pc-decision-reroll{
+  background:linear-gradient(105deg,#e56a43 0%,#d5534d 52%,#b93e68 100%);
+  box-shadow:0 13px 32px rgba(175,69,50,.26)
+}
+.pc-v011 .result-card:before{background:linear-gradient(90deg,#e36d43,#c34a61,#d5a04f)}
+.pc-v011 .trip-estimate{background:#261b15;border-left-color:#df6b43}
+.pc-v011 .caution{background:rgba(113,73,27,.31);border-left-color:#d59a43}
+.pc-v011 #map{filter:saturate(.62) sepia(.09) brightness(.62) contrast(1.12)}
+
+.pc-v011 .pc-scene-media{background-image:radial-gradient(circle at 72% 24%,#7f3f29,#291712 43%,#0a0909 76%)}
+.pc-v011 .pc-scene-media:after{background:linear-gradient(90deg,rgba(10,8,7,.84) 0%,rgba(18,12,9,.48) 43%,rgba(18,10,8,.08) 76%),linear-gradient(to top,rgba(8,6,5,.90),transparent 59%)}
+.pc-v011 .pc-scene-hero:after{background:linear-gradient(110deg,transparent 64%,rgba(224,111,63,.16))}
+.pc-v011 .pc-scene-image{filter:saturate(.92) contrast(1.035) sepia(.045)}
+body.pc-v011[data-weather="clear"] .pc-scene-image{filter:saturate(1.01) contrast(1.035) sepia(.035)}
+
+.pc-v011 .destination-head,.pc-v011 .trip-estimate,.pc-v011 .trip-estimate *,.pc-v011 .route-title,.pc-v011 .intent{
+  min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal
+}
+.pc-v011 .trip-estimate strong,.pc-v011 .trip-estimate small{white-space:normal;overflow:visible;text-overflow:clip}
+.pc-v011 .destination-head{gap:14px}
+.pc-v011 .result-card h2{white-space:normal;text-wrap:balance}
+.pc-v011 .pc-scene-story{max-width:72ch}
+
+.pc-decision-dock{border-color:rgba(231,166,116,.24);background:rgba(18,13,11,.93)}
+body.pc-decision-dock-visible .app{padding-bottom:max(142px,calc(env(safe-area-inset-bottom) + 124px))}
+
+@media(max-width:900px){
+  .pc-v011 .pc-brand-row--v2{min-height:70px}
+  .pc-v011 .pc-brand-logo-link{max-width:min(330px,78vw)}
+}
+@media(max-width:560px){
+  .pc-v011 .brand{padding-bottom:14px}
+  .pc-v011 .pc-brand-row--v2{min-height:56px}
+  .pc-v011 .pc-brand-logo-link{max-width:min(265px,82vw)}
+  .pc-v011 .db-version{margin-top:5px;font-size:8px}
+  .pc-v011 .trip-estimate{grid-template-columns:1fr!important;row-gap:5px}
+  .pc-v011 .trip-estimate strong{text-align:left!important}
+  .pc-v011 .pc-scene-story{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+  .pc-decision-dock-copy strong{white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+  body.pc-decision-dock-visible .app{padding-bottom:max(154px,calc(env(safe-area-inset-bottom) + 136px))}
 }

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "0.13",
+  "vehicleProfile": {
+    "name": "wide_vehicle",
+    "widthRule": "2000mm超を想定",
+    "failClosed": true
+  },
+  "summary": {
+    "hardIncompatible": 5,
+    "verifiedCompatible": 2,
+    "verificationRequired": 15
+  },
+  "items": [
+    {
+      "candidateId": "N016",
+      "name": "東京国際フォーラム",
+      "status": "incompatible_over_1_9m",
+      "parkingLimits": {
+        "heightM": 2.2,
+        "widthM": 1.9,
+        "lengthM": 5.4
+      },
+      "recommendedAction": "hard_exclude_for_user_vehicle"
+    },
+    {
+      "candidateId": "N017",
+      "name": "インターメディアテク＋KITTE丸の内",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N018",
+      "name": "旧新橋停車場 鉄道歴史展示室",
+      "status": "anchor_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N019",
+      "name": "容器文化ミュージアム",
+      "status": "anchor_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N020",
+      "name": "A PIT AUTOBACS SHINONOME",
+      "status": "width_visual_check_required",
+      "parkingLimits": {
+        "heightM": 2.1
+      },
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N021",
+      "name": "羽田エアポートガーデン",
+      "status": "compatible_up_to_2_1m",
+      "parkingLimits": {
+        "heightM": 2.3,
+        "widthM": 2.1,
+        "lengthM": 5.5
+      },
+      "recommendedAction": "eligible_if_vehicle_width<=2.1m"
+    },
+    {
+      "candidateId": "N022",
+      "name": "有明ガーデン",
+      "status": "compatible_width_pending_weight",
+      "parkingLimits": {
+        "heightM": 2.1,
+        "widthM": 2.3,
+        "lengthM": 5.0,
+        "weightT": 2.0
+      },
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N023",
+      "name": "豊洲 千客万来",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N024",
+      "name": "ラ チッタデッラ",
+      "status": "width_pending",
+      "parkingLimits": {
+        "heightM": 2.1
+      },
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N025",
+      "name": "東京都庭園美術館",
+      "status": "entrance_visual_check_required",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N026",
+      "name": "横浜ハンマーヘッド",
+      "status": "incompatible_over_1_9m",
+      "parkingLimits": {
+        "heightM": 2.1,
+        "widthM": 1.9,
+        "lengthM": 5.0,
+        "weightT": 2.5
+      },
+      "recommendedAction": "hard_exclude_for_user_vehicle"
+    },
+    {
+      "candidateId": "N027",
+      "name": "横浜ベイクォーター",
+      "status": "incompatible_over_1_95m",
+      "parkingLimits": {
+        "heightM": 2.2,
+        "widthM": 1.95,
+        "lengthM": 5.3,
+        "weightT": 2.3
+      },
+      "recommendedAction": "hard_exclude_for_user_vehicle"
+    },
+    {
+      "candidateId": "N028",
+      "name": "日産グローバル本社ギャラリー",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N029",
+      "name": "三菱みなとみらい技術館",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N030",
+      "name": "横浜市役所・ラクシスフロント",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N031",
+      "name": "新横浜ラーメン博物館",
+      "status": "incompatible_over_1_8m",
+      "parkingLimits": {
+        "heightM": 2.1,
+        "widthM": 1.8,
+        "lengthM": 5.0
+      },
+      "recommendedAction": "hard_exclude_for_user_vehicle"
+    },
+    {
+      "candidateId": "N032",
+      "name": "キリンビール横浜工場",
+      "status": "dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N033",
+      "name": "東京都水の科学館",
+      "status": "anchor_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N034",
+      "name": "TOKYOミナトリエ",
+      "status": "dimensions_pending",
+      "parkingLimits": {
+        "largeVehicle": false
+      },
+      "recommendedAction": "verify_before_promotion"
+    },
+    {
+      "candidateId": "N035",
+      "name": "日本科学未来館",
+      "status": "incompatible_over_1_9m",
+      "parkingLimits": {
+        "heightM": 2.1,
+        "widthM": 1.9,
+        "lengthM": 5.0,
+        "weightT": 2.5
+      },
+      "recommendedAction": "hard_exclude_for_user_vehicle"
+    },
+    {
+      "candidateId": "N036",
+      "name": "東京国際クルーズターミナル",
+      "status": "compatible_up_to_2_3m",
+      "parkingLimits": {
+        "heightM": 2.5,
+        "widthM": 2.3,
+        "lengthM": 5.0
+      },
+      "recommendedAction": "eligible_if_vehicle_width<=2.3m"
+    },
+    {
+      "candidateId": "N037",
+      "name": "東京ビッグサイト",
+      "status": "anchor_specific_dimensions_pending",
+      "parkingLimits": {},
+      "recommendedAction": "verify_before_promotion"
+    }
+  ],
+  "nextRoundRequirement": "第2ラウンドは全幅2m超でも使える平面・大型区画を持つ候補を優先する"
+}

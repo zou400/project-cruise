@@ -47,7 +47,7 @@ def main() -> int:
     }
 
     report = {
-        'release': 'v0.11.0-rc5',
+        'release': 'v0.11.0-rc6',
         'track': 'ui-component-and-event-contract',
         'checks': checks,
         'missingCanonicalIds': sorted(required_ids - found_ids),

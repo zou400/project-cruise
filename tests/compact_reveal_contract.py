@@ -11,5 +11,5 @@ checks={
  'duplicate_result_hero_hidden':'.result-shell>.pc-scene-hero{display:none!important}' in css,
  'scrolls_to_compact_reveal':'document.querySelector("#pc-scene-hero")' in idx,
 }
-print({'release':'v0.11.0-rc5','checks':checks,'passed':all(checks.values())})
+print({'release':'v0.11.0-rc6','checks':checks,'passed':all(checks.values())})
 raise SystemExit(0 if all(checks.values()) else 1)

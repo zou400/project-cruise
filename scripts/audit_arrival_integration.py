@@ -78,7 +78,7 @@ def main() -> int:
     }
 
     report = {
-        "release": "v0.11.0-rc5",
+        "release": "v0.11.0-rc6",
         "deepening": 5,
         "scope": {
             "overlayDecisionCount": len(overlay.get("items", [])),

@@ -56,7 +56,7 @@ def main() -> int:
     }
 
     report = {
-        'release': 'v0.11.0-rc5-build',
+        'release': 'v0.11.0-rc6-build',
         'root': str(ROOT),
         'counts': {
             'destinations': len(destinations),
