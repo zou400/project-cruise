@@ -100,7 +100,7 @@ def main() -> int:
         "iphoneSafariManualQA": iphone_record.get("passed") is True and iphone_record.get("signed") is True,
     }
     report = {
-        "release": "v0.11.0-rc4",
+        "release": "v0.11.0-rc5",
         "deepening": 9,
         "automatedPassed": automated_pass and not missing,
         "promotionReady": automated_pass and not missing and all(external_gates.values()),

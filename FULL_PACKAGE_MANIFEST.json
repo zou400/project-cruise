@@ -1,5 +1,5 @@
 {
-  "release": "v0.11.0-rc4",
+  "release": "v0.11.0-rc5",
   "fileCount": 169,
   "heroWebpCount": 30,
   "entries": [
@@ -79,7 +79,7 @@
       "sha256": "a0f67b41ba5ce62b63d026e5259c23cb20764ca38b6026569562127df74a0eb9"
     },
     {
-      "path": "RELEASE_NOTES_v0.11.0-rc4.md",
+      "path": "RELEASE_NOTES_v0.11.0-rc5.md",
       "bytes": 606,
       "sha256": "5691c0ec7a8e900aa132fdce4457472a3f26afa6a9b1744241ea4fc074fce3c9"
     },

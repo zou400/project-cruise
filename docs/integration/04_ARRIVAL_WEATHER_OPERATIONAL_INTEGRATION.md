@@ -1,6 +1,6 @@
 # Deepening 04 — Arrival, Weather, and Operational Truth Integration
 
-Release target: `Project_Cruise_GitHub_Integration_v0.11.0-rc4`
+Release target: `Project_Cruise_GitHub_Integration_v0.11.0-rc5`
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc4
+# Project Cruise v0.11.0-rc5
 
 ## Hero display reliability fix
 

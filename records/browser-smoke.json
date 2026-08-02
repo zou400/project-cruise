@@ -1,5 +1,5 @@
 {
-  "release": "v0.11.0-rc4",
+  "release": "v0.11.0-rc5",
   "status": "skipped",
   "reason": "The current execution environment blocks Chromium navigation with ERR_BLOCKED_BY_ADMINISTRATOR.",
   "nextAction": "Run this same test on GitHub Actions or a local browser-enabled environment.",

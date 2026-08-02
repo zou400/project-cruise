@@ -43,7 +43,7 @@ promotion_ready = automated and all(external_gates.values())
 status = "PROMOTE" if promotion_ready else "HOLD"
 
 summary = {
-    "release": "v0.11.0-rc4",
+    "release": "v0.11.0-rc5",
     "deepening": 9,
     "generatedAt": datetime.now(timezone.utc).isoformat(),
     "status": status,
@@ -55,7 +55,7 @@ summary = {
 OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 mark = lambda v: "PASS" if v else "HOLD"
-md = f"""# Project Cruise v0.11.0-rc4 — Final QA report
+md = f"""# Project Cruise v0.11.0-rc5 — Final QA report
 
 **Decision: {status}**  
 **Deepening: 9/10**

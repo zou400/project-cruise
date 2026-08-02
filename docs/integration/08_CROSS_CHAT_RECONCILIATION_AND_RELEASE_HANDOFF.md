@@ -63,4 +63,4 @@ The GitHub operator should use these documents in order:
 4. `VALIDATION.md`
 5. `CHANGELOG.md`
 
-The RC should be pushed to `release/v0.11.0-rc4` first. Do not overwrite the production branch until all manual promotion gates have evidence.
+The RC should be pushed to `release/v0.11.0-rc5` first. Do not overwrite the production branch until all manual promotion gates have evidence.

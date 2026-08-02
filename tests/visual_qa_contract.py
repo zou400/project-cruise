@@ -23,7 +23,7 @@ checks = {
     "githubWorkflowUploadsScreenshots": "ui-smoke-*.png" in workflow,
 }
 report = {
-    "release": "v0.11.0-rc4",
+    "release": "v0.11.0-rc5",
     "deepening": 9,
     "checks": checks,
     "passed": all(checks.values()),

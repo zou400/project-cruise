@@ -1,13 +1,19 @@
 # Changelog
 
-## v0.11.0-rc4 — Hero display reliability
+## v0.11.0-rc5 — compact destination reveal
+
+- Moved Destination Reveal into the selector right pane.
+- Removed the duplicated full-width Hero below the selector.
+- Kept destination name and reroll action together above the fold.
+
+## v0.11.0-rc5 — Hero display reliability
 
 - Added a real image layer for Hero rendering.
 - Removed automatic save-data suppression from the normal URL.
 - Increased load timeout and cache-busted Hero assets.
 - Preserved exact Hero 30, reroll diversity and mobile decision dock.
 
-## v0.11.0-rc4 — exact Hero 30 integrated
+## v0.11.0-rc5 — exact Hero 30 integrated
 
 ### Added
 

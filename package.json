@@ -1,14 +1,14 @@
 {
   "name": "project-cruise",
-  "version": "0.11.0-rc4",
+  "version": "0.11.0-rc5",
   "private": true,
-  "description": "Project Cruise GitHub integration release candidate with exact 30 Hero WebP assets",
+  "description": "Project Cruise compact Destination Reveal with exact 30 Hero WebP assets",
   "scripts": {
     "check:js": "node --check assets/js/cruise-v011.js && node --check assets/js/hero/hero-precision-data.js && node --check assets/js/hero/hero-precision-runtime.js && node --check assets/js/arrival/operational-core.js && node --check assets/js/arrival/result-state-machine.js && node --check assets/js/arrival/arrival-runtime.js && node --check assets/js/weather/weather-runtime.js",
     "test:operational": "node tests/operational_core.test.js",
     "test:state": "node tests/result_state_machine.test.js",
     "test:selection": "node tests/operational_selection_integration.test.js",
-    "test": "npm run check:js && npm run test:operational && npm run test:state && npm run test:selection && npm run test:reroll && npm run test:mobile && npm run test:docs && npm run test:visual && npm run test:http",
+    "test": "npm run check:js && npm run test:operational && npm run test:state && npm run test:selection && npm run test:reroll && npm run test:compact && npm run test:mobile && npm run test:docs && npm run test:visual && npm run test:http",
     "validate": "python3 scripts/audit_release_candidate.py",
     "test:http": "python3 tests/http_smoke.py",
     "test:mobile": "python3 scripts/audit_mobile_accessibility.py",
@@ -16,7 +16,8 @@
     "test:visual": "python3 tests/visual_qa_contract.py && python3 scripts/audit_hero_assets.py --require-complete",
     "audit:hero-assets": "python3 scripts/audit_hero_assets.py",
     "report:qa": "python3 scripts/generate_release_qa_report.py",
-    "test:reroll": "python3 tests/reroll_ux_contract.py"
+    "test:reroll": "python3 tests/reroll_ux_contract.py",
+    "test:compact": "python3 tests/compact_reveal_contract.py"
   },
   "engines": {
     "node": ">=20"

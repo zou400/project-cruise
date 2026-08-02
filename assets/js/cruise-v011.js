@@ -1,4 +1,4 @@
-/* Project Cruise GitHub Integration v0.11.0-rc4
+/* Project Cruise GitHub Integration v0.11.0-rc5
  * UI shell only. Canonical selection, learning, Maps, feedback and issue-report
  * behavior remains owned by the inline v0.10.0 engine.
  */
@@ -13,11 +13,11 @@
     lastDetail: null,
     currentWeatherState: "unknown",
     visualHistoryKey: "pcHeroHistoryV1",
-    build: "v0.11.0-rc4",
+    build: "v0.11.0-rc5",
     activeModal: null,
     modalReturnFocus: null,
     lowData: params.get("pcData") === "low",
-    heroAssetVersion: "v0.11.0-rc4",
+    heroAssetVersion: "v0.11.0-rc5",
     sessionDestinations: new Set(),
     candidateTotal: null
   };
@@ -245,15 +245,8 @@
     [...selector.children].forEach(child => controls.append(child));
 
     const preview = document.createElement("aside");
-    preview.className = "pc-preview-stage";
-    preview.setAttribute("aria-label", "選択前ビジュアルプレビュー");
-    preview.innerHTML = `
-      <span class="pc-preview-meter">PC / 0104</span>
-      <div class="pc-preview-copy">
-        <span>TONIGHT'S ROUTE</span>
-        <strong>条件を選ぶ。<br>あとは、夜に任せる。</strong>
-        <p>検索結果を並べるのではなく、今この時間に成立する一本を静かに開きます。</p>
-      </div>`;
+    preview.className = "pc-preview-stage pc-preview-stage--hero";
+    preview.setAttribute("aria-label", "目的地ビジュアル");
 
     selector.append(controls, preview);
     const draw = $("#draw");
@@ -269,38 +262,38 @@
   }
 
   function updatePreviewCopy() {
-    const stage = $(".pc-preview-stage");
-    if (!stage) return;
+    const hero = $("#pc-scene-hero");
+    if (!hero || state.lastRouteId) return;
     const activeTime = $(".time-btn.active")?.dataset.time || "90";
     const origin = $(".origin-btn.active span:last-child")?.textContent || "現在地";
     const timeCopy = activeTime === "half" ? "半日" : activeTime === "120" ? "2時間" : "90分";
-    const strong = $("strong", stage);
-    const paragraph = $("p", stage);
-    if (strong) strong.innerHTML = `${origin}から、<br>${timeCopy}の夜を開く。`;
-    if (paragraph) paragraph.textContent = "選択後は目的地を全面リビールし、ルート・到着時情報・Google Mapsへの出発導線を一画面にまとめます。";
+    $(".pc-scene-kicker", hero).textContent = "TONIGHT'S ROUTE";
+    $(".pc-scene-destination", hero).textContent = `${origin}から、${timeCopy}の夜。`;
+    $(".pc-scene-story", hero).textContent = "一本を開くと、ここが目的地の景色へ切り替わります。";
+    $(".pc-scene-index", hero).textContent = "PC / 0104";
   }
 
   function ensureHero() {
-    const result = $("#result");
-    if (!result) return null;
-    let hero = $("#pc-scene-hero", result);
+    const stage = $(".pc-preview-stage");
+    if (!stage) return null;
+    let hero = $("#pc-scene-hero", stage);
     if (hero) return hero;
     hero = document.createElement("article");
     hero.id = "pc-scene-hero";
-    hero.className = "pc-scene-hero";
+    hero.className = "pc-scene-hero pc-scene-hero--embedded is-placeholder";
     hero.setAttribute("aria-live", "polite");
     hero.innerHTML = `
       <div class="pc-scene-media" aria-hidden="true">
         <img class="pc-scene-image" alt="" decoding="async" fetchpriority="high">
       </div>
       <div class="pc-scene-content">
-        <span class="pc-scene-kicker">DESTINATION REVEAL</span>
+        <span class="pc-scene-kicker">TONIGHT'S ROUTE</span>
         <h2 class="pc-scene-destination">今夜の一本</h2>
         <p class="pc-scene-story">条件を選ぶと、ここに目的地が現れます。</p>
-        <span class="pc-scene-index">PC / REVEAL</span>
+        <span class="pc-scene-index">PC / 0104</span>
         <span class="pc-scene-disclosure">体験イメージ</span>
       </div>`;
-    result.prepend(hero);
+    stage.replaceChildren(hero);
     return hero;
   }
 
@@ -436,7 +429,10 @@
     const destinationName = text(route.destination || $("#destination")?.textContent, "今夜の目的地");
     const routeId = text(route.id, destinationName);
     state.lastRouteId = routeId;
+    hero.classList.remove("is-placeholder");
+    document.body.classList.add("pc-has-result");
 
+    $(".pc-scene-kicker", hero).textContent = "DESTINATION REVEAL";
     $(".pc-scene-destination", hero).textContent = destinationName;
     $(".pc-scene-story", hero).textContent = compactStory();
     $(".pc-scene-index", hero).textContent = `PC / ${text(route.id, "REVEAL")}`;
@@ -525,6 +521,7 @@
       const status = event.detail?.assessment?.state || "idle";
       const result = $("#result");
       if (result) result.dataset.operationalState = status;
+      document.body.dataset.operationalState = status;
     });
   }
 

@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#0b0710">
-<title>Project Cruise｜GitHub Integration v0.11.0-rc4</title>
+<title>Project Cruise｜GitHub Integration v0.11.0-rc5</title>
 <link rel="preconnect" href="https://unpkg.com">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
@@ -173,7 +173,7 @@ footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:unde
 .feedback-skip{border:0;background:transparent;color:#6d808a;text-decoration:underline;text-underline-offset:3px;padding:10px;cursor:pointer;justify-self:center}
 .learning-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:4000;background:#173f55;color:#fff;border-radius:4px;padding:11px 16px;font-size:12px;font-weight:800;box-shadow:0 12px 35px rgba(0,0,0,.3)}
 </style>
-<link rel="stylesheet" href="assets/css/cruise-v011.css?v=0.11.0-rc4">
+<link rel="stylesheet" href="assets/css/cruise-v011.css?v=0.11.0-rc5">
 </head>
 <body>
 <a class="pc-skip-link" href="#main-content">本文へ移動</a>
@@ -940,7 +940,8 @@ function show(r){
  updateGoogleLinks(r);
  $("#result").classList.remove("hidden");
  document.dispatchEvent(new CustomEvent("pc:route-shown",{detail:{route:r,destination:destinationMeta,selectedTime,origin:{name:activeOrigin.name,query:activeOrigin.query,coords:[...(activeOrigin.coords||[])]}}}));
- $("#result").scrollIntoView({behavior:"smooth",block:"start"});
+ const reveal=document.querySelector("#pc-scene-hero");
+ if(reveal)reveal.scrollIntoView({behavior:"smooth",block:window.matchMedia("(max-width:900px)").matches?"start":"nearest"});
  setTimeout(()=>renderMap(r),100);
 }
 function setDestinationTitle(name){
@@ -1165,13 +1166,13 @@ function timeLabel(v){return v==="90"?"90分":v==="120"?"2時間":"半日"}
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 
 </script>
-<script src="assets/js/hero/hero-precision-data.js?v=0.11.0-rc4"></script>
-<script src="assets/js/hero/hero-precision-runtime.js?v=0.11.0-rc4"></script>
-<script src="assets/js/arrival/arrival-data.js?v=0.11.0-rc4"></script>
-<script src="assets/js/arrival/operational-core.js?v=0.11.0-rc4"></script>
-<script src="assets/js/arrival/result-state-machine.js?v=0.11.0-rc4"></script>
-<script src="assets/js/arrival/arrival-runtime.js?v=0.11.0-rc4"></script>
-<script src="assets/js/weather/weather-runtime.js?v=0.11.0-rc4"></script>
-<script src="assets/js/cruise-v011.js?v=0.11.0-rc4"></script>
+<script src="assets/js/hero/hero-precision-data.js?v=0.11.0-rc5"></script>
+<script src="assets/js/hero/hero-precision-runtime.js?v=0.11.0-rc5"></script>
+<script src="assets/js/arrival/arrival-data.js?v=0.11.0-rc5"></script>
+<script src="assets/js/arrival/operational-core.js?v=0.11.0-rc5"></script>
+<script src="assets/js/arrival/result-state-machine.js?v=0.11.0-rc5"></script>
+<script src="assets/js/arrival/arrival-runtime.js?v=0.11.0-rc5"></script>
+<script src="assets/js/weather/weather-runtime.js?v=0.11.0-rc5"></script>
+<script src="assets/js/cruise-v011.js?v=0.11.0-rc5"></script>
 </body>
 </html>

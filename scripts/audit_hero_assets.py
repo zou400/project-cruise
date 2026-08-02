@@ -175,7 +175,7 @@ def main() -> int:
         ))
 
     report = {
-        "release": "v0.11.0-rc4",
+        "release": "v0.11.0-rc5",
         "deepening": 9,
         "mode": "strict" if args.require_complete else "pending-tolerant",
         "status": "accepted" if strict_ok else ("pending" if hard_contract_ok and not args.require_complete else "rejected"),

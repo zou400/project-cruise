@@ -11,8 +11,8 @@ checks={
  'direct_load_fallback':'hero-precision-direct-load' in js,
  'image_css':'.pc-v011 .pc-scene-image{' in css,
  'loaded_class':'.pc-v011 .pc-scene-media.has-image .pc-scene-image' in css,
- 'rc4_css_bust':'cruise-v011.css?v=0.11.0-rc4' in idx,
- 'rc4_js_bust':'cruise-v011.js?v=0.11.0-rc4' in idx,
+ 'rc4_css_bust':'cruise-v011.css?v=0.11.0-rc5' in idx,
+ 'rc4_js_bust':'cruise-v011.js?v=0.11.0-rc5' in idx,
 }
 print(checks)
 if not all(checks.values()): raise SystemExit(1)
