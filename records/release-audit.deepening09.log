@@ -1,0 +1,18 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 9,
+  "automatedPassed": true,
+  "promotionReady": false,
+  "missingRequiredFiles": [],
+  "externalPromotionGates": {
+    "exactHeroWebpAssetsImported": false,
+    "githubPagesBrowserSmoke": false,
+    "iphoneSafariManualQA": false
+  },
+  "browserEvidence": {
+    "status": "skipped",
+    "passed": null,
+    "screenshotsPresent": []
+  },
+  "record": "records/release-candidate-audit.json"
+}

@@ -1,0 +1,430 @@
+{
+  "version": "hero-image-catalog-v1-adapter",
+  "sourceContract": "Project Cruise Hero Precision v0.10.4-rc3 / Hero Precision Patch v1",
+  "sourceImageCount": 30,
+  "knownObservedImageIds": 29,
+  "adapterSlots": 1,
+  "entries": [
+    {
+      "imageId": "airport_night_01",
+      "category": "airport",
+      "phase": "night",
+      "sceneTraits": [
+        "aircraft-observation",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/airport_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "airport_twilight_01",
+      "category": "airport",
+      "phase": "twilight",
+      "sceneTraits": [
+        "aircraft-observation",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "airport_twilight_02",
+      "category": "airport",
+      "phase": "twilight",
+      "sceneTraits": [
+        "aircraft-observation",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "airport_twilight_03",
+      "category": "airport",
+      "phase": "twilight",
+      "sceneTraits": [
+        "aircraft-observation",
+        "factory-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "culture_night_01",
+      "category": "culture",
+      "phase": "night",
+      "sceneTraits": [
+        "architecture-story",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/culture_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "industrial_night_01",
+      "category": "industrial",
+      "phase": "night",
+      "sceneTraits": [
+        "factory-night",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/industrial_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_day_01",
+      "category": "pa",
+      "phase": "day",
+      "sceneTraits": [
+        "road-journey"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_day_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_day_02",
+      "category": "pa",
+      "phase": "day",
+      "sceneTraits": [
+        "road-journey",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_day_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_day_03",
+      "category": "pa",
+      "phase": "day",
+      "sceneTraits": [
+        "road-journey",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_day_03.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_night_01",
+      "category": "pa",
+      "phase": "night",
+      "sceneTraits": [
+        "road-journey",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_night_02",
+      "category": "pa",
+      "phase": "night",
+      "sceneTraits": [
+        "road-journey",
+        "factory-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_night_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_night_03",
+      "category": "pa",
+      "phase": "night",
+      "sceneTraits": [
+        "road-journey",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_night_03.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_night_04",
+      "category": "pa",
+      "phase": "night",
+      "sceneTraits": [
+        "road-journey",
+        "quiet-park"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_night_04.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_twilight_01",
+      "category": "pa",
+      "phase": "twilight",
+      "sceneTraits": [
+        "road-journey",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_twilight_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_twilight_02",
+      "category": "pa",
+      "phase": "twilight",
+      "sceneTraits": [
+        "road-journey",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_twilight_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "pa_twilight_03",
+      "category": "pa",
+      "phase": "twilight",
+      "sceneTraits": [
+        "road-journey",
+        "factory-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/pa_twilight_03.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_day_01",
+      "category": "park",
+      "phase": "day",
+      "sceneTraits": [
+        "quiet-park"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/park_day_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_night_01",
+      "category": "park",
+      "phase": "night",
+      "sceneTraits": [
+        "quiet-park",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/park_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_night_02",
+      "category": "park",
+      "phase": "night",
+      "sceneTraits": [
+        "quiet-park",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/park_night_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_rain_01",
+      "category": "park",
+      "phase": "rain",
+      "sceneTraits": [
+        "quiet-park",
+        "rain-compatible"
+      ],
+      "weatherAffinity": [
+        "rain"
+      ],
+      "assetPath": "assets/hero/precision/park_rain_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_rain_02",
+      "category": "park",
+      "phase": "rain",
+      "sceneTraits": [
+        "quiet-park",
+        "waterfront",
+        "rain-compatible"
+      ],
+      "weatherAffinity": [
+        "rain"
+      ],
+      "assetPath": "assets/hero/precision/park_rain_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_water_01",
+      "category": "park",
+      "phase": "day",
+      "sceneTraits": [
+        "quiet-park",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/park_water_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "park_water_02",
+      "category": "park",
+      "phase": "twilight",
+      "sceneTraits": [
+        "quiet-park",
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/park_water_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "water_day_01",
+      "category": "water",
+      "phase": "day",
+      "sceneTraits": [
+        "waterfront"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/water_day_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "water_night_01",
+      "category": "water",
+      "phase": "night",
+      "sceneTraits": [
+        "waterfront",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "water_night_02",
+      "category": "water",
+      "phase": "night",
+      "sceneTraits": [
+        "waterfront",
+        "factory-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/water_night_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "water_twilight_01",
+      "category": "water",
+      "phase": "twilight",
+      "sceneTraits": [
+        "waterfront",
+        "quiet-park"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/water_twilight_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "water_twilight_02",
+      "category": "water",
+      "phase": "twilight",
+      "sceneTraits": [
+        "waterfront",
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/water_twilight_02.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "city_night_01",
+      "category": "city",
+      "phase": "night",
+      "sceneTraits": [
+        "urban-night",
+        "architecture-story"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/city_night_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    },
+    {
+      "imageId": "city_twilight_01",
+      "category": "city",
+      "phase": "twilight",
+      "sceneTraits": [
+        "urban-night"
+      ],
+      "weatherAffinity": [],
+      "assetPath": "assets/hero/precision/city_twilight_01.webp",
+      "disclosure": "体験イメージ",
+      "sourcePolicy": "exact-upstream-binary-only",
+      "availability": "pending-exact-import"
+    }
+  ]
+}

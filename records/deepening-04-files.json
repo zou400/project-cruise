@@ -1,0 +1,126 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 4,
+  "generatedAt": "2026-08-02T15:32:00+09:00",
+  "focus": "arrival-weather-operational-truth-integration",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2534668,
+      "sha256": "15521c286d500152e80c959ba6d60da25dcd08503bb20e91fb3dc6e14ae7a735"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 8125,
+      "sha256": "ca84d09ffd7979d151f234f86d605dc38e949697e559e236569d2bb779d5f6bd"
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "bytes": 14091,
+      "sha256": "af675346a865aeddcf2072b17403d89c61ab55a4a5c39e884d9faf831e8b2e5f"
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "bytes": 12598,
+      "sha256": "e156ab9be0af693853e099988600d65d947e125774e0b1e159bddd2996fa081b"
+    },
+    {
+      "path": "assets/js/arrival/arrival-data.js",
+      "bytes": 228786,
+      "sha256": "a05790c5193b610bdfb88545aed5a4818b788b036485884b9fa1da4f20d9a6b0"
+    },
+    {
+      "path": "assets/js/arrival/operational-core.js",
+      "bytes": 11447,
+      "sha256": "7ed1450483f27a24ef027b2156ac7a8a38c9dee5a0f57d5f3cf7f7089611b456"
+    },
+    {
+      "path": "assets/js/arrival/arrival-runtime.js",
+      "bytes": 9025,
+      "sha256": "e1d5f3e8be755048d2c76e58b8f701bb176d5152d6943e0a9d6c357e8f7d5e4c"
+    },
+    {
+      "path": "assets/js/weather/weather-runtime.js",
+      "bytes": 10967,
+      "sha256": "008b86d6ddc750d5ed6db47aec8368a834c0fc214dfd54af1b79e086869bb378"
+    },
+    {
+      "path": "data/operational/canonical-operational-overlay-u1b.v0.11.json",
+      "bytes": 7711,
+      "sha256": "b342332d4832e39e43d5bb0a6bede6ffe760cb2ee4fe6d68efc6c32185410e82"
+    },
+    {
+      "path": "data/operational/arrival-anchor-display.v0.11.json",
+      "bytes": 282170,
+      "sha256": "f92c6ec9964d5700555ccee1bc8e49c22a89b47c2d440024b452223a24dabc47"
+    },
+    {
+      "path": "data/operational/implementation-test-vectors.v0.11.json",
+      "bytes": 7426,
+      "sha256": "cf4106f830d1a2060820eac87759f1680eed72bb63c02905c4cefbadebee97e7"
+    },
+    {
+      "path": "data/operational/resolution-lanes.v0.11.json",
+      "bytes": 775,
+      "sha256": "0dee232397e7184cc198df4aa422a24c764338d0e91818255f0f3c9ac278a38b"
+    },
+    {
+      "path": "docs/integration/04_ARRIVAL_WEATHER_OPERATIONAL_INTEGRATION.md",
+      "bytes": 4950,
+      "sha256": "5029ea4f484cca179e4bb021f20da32f8bcd440f62d1e7d6608852ba9b6e5faa"
+    },
+    {
+      "path": "scripts/audit_arrival_integration.py",
+      "bytes": 5904,
+      "sha256": "9fa7f2fcbeb07606f9854aa715caa87d7bbc3ffad05a5553e616f5bc19df27fa"
+    },
+    {
+      "path": "tests/operational_core.test.js",
+      "bytes": 1749,
+      "sha256": "f28f06e597ea0092aaffac56b6e2ea47a3a47872808b32a77d94d1189ed985fb"
+    },
+    {
+      "path": "tests/browser_smoke_cdp.py",
+      "bytes": 11084,
+      "sha256": "b2fa6840d3ae24a4cbc8f08358afb8d2c78eef04d3ee274e3eeef64ed1fbfc83"
+    },
+    {
+      "path": "records/arrival-operational-audit.json",
+      "bytes": 1848,
+      "sha256": "a6ffc571a1f11ce4bfc6428d50a7c0729aec350047d96b61deae3c9a611f7104"
+    },
+    {
+      "path": "records/operational-core-test.json",
+      "bytes": 63,
+      "sha256": "d0c55b3d2447abe1938f60e2c9780b618074aab100798999bece64342c66423d"
+    },
+    {
+      "path": "records/browser-smoke.json",
+      "bytes": 279,
+      "sha256": "966baf987345233f83f9ecb6a1d6621d3ce5c346bc9095aaa07d9016c4b78ff5"
+    },
+    {
+      "path": "records/baseline-audit.json",
+      "bytes": 1346,
+      "sha256": "8a199947be1e7d549304a542d0636ec395a94457f408de4feee38df39ec2bed7"
+    },
+    {
+      "path": "records/ui-contract-audit.json",
+      "bytes": 1067,
+      "sha256": "0a93e3f4f1b35b3361eafab14c0a6724ae9dc69df81e6e2903b2e2dcca92e721"
+    },
+    {
+      "path": "records/hero-precision-audit.json",
+      "bytes": 2236,
+      "sha256": "31ddea6753ce015efb37a238422aba8b895d689cf5e15af6b7e7791e62cb963a"
+    }
+  ],
+  "gates": {
+    "canonicalAudit": true,
+    "uiContractAudit": true,
+    "heroPrecisionAudit": true,
+    "arrivalOperationalAudit": true,
+    "operationalTests": "22/22",
+    "browserSmoke": "skipped-environment-blocked"
+  }
+}

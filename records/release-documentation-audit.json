@@ -1,0 +1,23 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 8,
+  "required": [
+    "README.md",
+    "DEPLOYMENT.md",
+    "RELEASE_CHECKLIST.md",
+    "VALIDATION.md",
+    "CHANGELOG.md",
+    "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
+    "data/integration/source-authority-registry.v0.11.json"
+  ],
+  "missing": [],
+  "trackCount": 10,
+  "checks": {
+    "requiredDocumentsPresent": true,
+    "allExpectedTracksRecorded": true,
+    "canonicalPromotionHeld": true,
+    "noSilentPromotionPolicy": true,
+    "overlayFirstPolicy": true
+  },
+  "passed": true
+}

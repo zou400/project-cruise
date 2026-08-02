@@ -1,0 +1,106 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 9,
+  "files": [
+    {
+      "path": "visual-qa.html",
+      "sha256": "0a84f6dbf3a4a19a296227105fce4e335ce8db1978578fd7d15597bc2c25be8b",
+      "bytes": 6719
+    },
+    {
+      "path": "scripts/audit_hero_assets.py",
+      "sha256": "1008ac1160f818c9eddeea05661c9a67ece11a53f30ed6c000b17fe11ca937b8",
+      "bytes": 8302
+    },
+    {
+      "path": "tests/visual_qa_contract.py",
+      "sha256": "09ca6f27fefb8d578a021fd3bb122ab55e2a40ffc15672fa42af19f2231e8b1a",
+      "bytes": 1570
+    },
+    {
+      "path": "scripts/generate_release_qa_report.py",
+      "sha256": "0f1e382236577cd005bf0a04b5190de73a6c6658b71297b8d1cbd6f053fa1e6b",
+      "bytes": 3989
+    },
+    {
+      "path": "scripts/audit_release_candidate.py",
+      "sha256": "c344c2b642b64c2616fdd81b57f13d40a80b9749af578598e2ef977237d3bb8e",
+      "bytes": 5864
+    },
+    {
+      "path": "tests/browser_smoke_cdp.py",
+      "sha256": "0947003afc66e2bf6a9c7538d69e1441f22bcbd3d41604612f84006c69996e38",
+      "bytes": 11296
+    },
+    {
+      "path": "docs/integration/09_VISUAL_QA_ASSET_ACCEPTANCE_AND_FINAL_REPORT.md",
+      "sha256": "3fbc191562854c316365270fa101c9fded4cc621442f743c52e98bda82c1ec19",
+      "bytes": 3179
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "5bc714b5025dc10aec0d5a551bc51aef09437e1a7e1455babf9427fa2ff9c28c",
+      "bytes": 2806
+    },
+    {
+      "path": "package.json",
+      "sha256": "4f2895262a1495a2caf8fa2ae82a6657b1705e09282d0082551dd6aefb3db929",
+      "bytes": 1465
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "sha256": "c5fffa56371391062d205d31e00bc4b1a926167d06121ac2f6207cdbfa80e586",
+      "bytes": 3526
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "sha256": "0ce3b207ae3508bbcab9f3d2925ed590d08e7eb540a1bc110374f3472f4ff2c6",
+      "bytes": 3431
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d7fb71df72fe8f584efac0762ed1eb9caf598e6377196ba88a0ece3af7cf846c",
+      "bytes": 2338
+    },
+    {
+      "path": "integration-manifest.json",
+      "sha256": "2e9edd65d28416a792aaf04f3f3cd692e10734ae856ac67badf0a0660b2b06e1",
+      "bytes": 10962
+    },
+    {
+      "path": "FINAL_QA_REPORT.md",
+      "sha256": "3b64c8b35d37d70be97af335e5974c496b33c1079b1b406cf47bd1f1720bccc6",
+      "bytes": 1393
+    },
+    {
+      "path": "records/hero-asset-acceptance.json",
+      "sha256": "3ca6ef2fc98f2771120b69d4a649de7ff30533995656c5f4e697d54efe2b5ad1",
+      "bytes": 10760
+    },
+    {
+      "path": "records/visual-qa-contract.json",
+      "sha256": "5950fb532e62fc9eab2a397539e4a04cc3666d027eca17b9670e3e2475019290",
+      "bytes": 530
+    },
+    {
+      "path": "records/final-qa-report.json",
+      "sha256": "460720c2111432fbaeca816ce14454f0bff133334e041e3b7e096e12a6c0d3d1",
+      "bytes": 79213
+    },
+    {
+      "path": "records/iphone-safari-qa.template.json",
+      "sha256": "dc7dcceca0c671e894d1e5bf809d35d0bde8c3dae831f6c0c4a120fde9475caa",
+      "bytes": 886
+    },
+    {
+      "path": "records/release-candidate-audit.json",
+      "sha256": "68451778509a741129583a2a6d4d8e10c7ecffd62642ce1883459b6c3d3e8b12",
+      "bytes": 57951
+    },
+    {
+      "path": "records/npm-test.deepening09.log",
+      "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567",
+      "bytes": 16535
+    }
+  ]
+}

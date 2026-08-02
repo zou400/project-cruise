@@ -1,0 +1,8 @@
+{
+  "status": "HOLD",
+  "promotionReady": false,
+  "out": [
+    "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1/records/final-qa-report.json",
+    "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1/FINAL_QA_REPORT.md"
+  ]
+}

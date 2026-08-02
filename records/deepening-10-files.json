@@ -1,0 +1,68 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 10,
+  "completed": true,
+  "generatedAt": "2026-08-02T16:06:00+09:00",
+  "files": [
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "bytes": 1403,
+      "sha256": "14a65d70140b0c23364b90e7af6997fe30f0e1068b1e55616c64655f1209df23"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 12,
+      "sha256": "a56ed4ed0d56e0d5e6ac7535e9bdb2cf5234031fe2ddba1e2f7726d40cccf058"
+    },
+    {
+      "path": "GITHUB_PUBLISH_NOW.md",
+      "bytes": 2095,
+      "sha256": "5f3029d95c8a1453c5291297785657ad582cc6a9fc8caefedbd47d18c07cb06c"
+    },
+    {
+      "path": "ROLLBACK.md",
+      "bytes": 787,
+      "sha256": "9452f61eab3469a682bdf563a9967bc66d22a93b4e26ea958fe67da98ffd05eb"
+    },
+    {
+      "path": "RELEASE_NOTES_v0.11.0-rc1.md",
+      "bytes": 1414,
+      "sha256": "f3e7270ff042be93aafaa0bf8c745755149e73cceb4f76f75fc089d5315d5d5c"
+    },
+    {
+      "path": "docs/integration/10_FINAL_GITHUB_PUBLISH_PACKAGE.md",
+      "bytes": 819,
+      "sha256": "7b90b1fcbfd5bd55b004ee8cf0e2856eb645e84d9f94b002e526fd90b750b3f7"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 11284,
+      "sha256": "90deba99b537850666fd81dc09492e6a12c9228a0f332ee8a23a9d63b7f74dcf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5735,
+      "sha256": "b6c36e9d67f39860f60bd65f90590104605ad7d40ce643c23d4cb34807847374"
+    },
+    {
+      "path": "records/npm-test.deepening10.log",
+      "bytes": 16535,
+      "sha256": "7f0c4674f0a0fbcb8eeaf9b0463d77d117bc52ef4561ae038009da3b5a2d7567"
+    },
+    {
+      "path": "records/release-audit.deepening10.log",
+      "bytes": 436,
+      "sha256": "af852967d242231c5a0164886728dfd012e5b457c1c492bffd64546b8dcaec03"
+    },
+    {
+      "path": "FINAL_QA_REPORT.md",
+      "bytes": 1393,
+      "sha256": "3b64c8b35d37d70be97af335e5974c496b33c1079b1b406cf47bd1f1720bccc6"
+    }
+  ]
+}

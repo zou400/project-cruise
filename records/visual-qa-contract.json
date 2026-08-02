@@ -1,0 +1,18 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 9,
+  "checks": {
+    "visualQaPagePresent": true,
+    "visualQaLoadsCatalog": true,
+    "visualQaHasCategoryFilter": true,
+    "visualQaHasPhaseFilter": true,
+    "visualQaShowsMissingState": true,
+    "visualQaLinksApplicationFixtures": true,
+    "catalogHas30Entries": true,
+    "acceptanceScriptSupportsStrictMode": true,
+    "acceptanceScriptChecksPackageHash": true,
+    "githubWorkflowRunsBrowserSmoke": true,
+    "githubWorkflowUploadsScreenshots": true
+  },
+  "passed": true
+}

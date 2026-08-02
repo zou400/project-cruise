@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "0.11",
+  "generatedAt": "2026-08-02T13:39:00+09:00",
+  "applyMode": "non_destructive_overlay",
+  "baseCanonical": "v0.10.0",
+  "items": [
+    {
+      "destinationId": "D304",
+      "spotEntityKey": "SPOT-D304",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "closed_outside_hours",
+      "anchorIds": [
+        "AA-D304-NEARBY",
+        "AA-D304-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "09:00-16:30",
+        "last_entry=16:00",
+        "closed=12/29-01/03 and temporary closures",
+        "臨時休館"
+      ]
+    },
+    {
+      "destinationId": "D185",
+      "spotEntityKey": "SPOT-D185",
+      "canonicalDecision": "allow_outdoor_partial_before_reopen",
+      "experienceState": "outdoor_partial_until_2026-09-04",
+      "anchorIds": [
+        "AA-D185-PARK",
+        "AA-D185-SEA-PLAZA"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "parking=08:00-22:00",
+        "museum_closed_until=2026-09-04",
+        "reopen=2026-09-05",
+        "sea_plaza=accessible",
+        "roof_plaza=closed_until_reopen",
+        "工事状況",
+        "イベント混雑"
+      ]
+    },
+    {
+      "destinationId": "D204",
+      "spotEntityKey": "SPOT-D204",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "park_and_walk",
+      "anchorIds": [
+        "AA-D204-NEARBY",
+        "AA-D204-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "park_outdoor=always",
+        "castle_facilities=09:00-17:00",
+        "last_entry=16:30",
+        "祭り・花見交通規制",
+        "周辺満車"
+      ]
+    },
+    {
+      "destinationId": "D313",
+      "spotEntityKey": "SPOT-D313",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "facility_hours_only",
+      "anchorIds": [
+        "AA-D313-NEARBY",
+        "AA-D313-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "10:00-18:00",
+        "last_entry=17:30",
+        "closed=Monday; if holiday next day",
+        "closed=year_end_new_year",
+        "企画展混雑",
+        "臨時休館"
+      ]
+    },
+    {
+      "destinationId": "D247",
+      "spotEntityKey": "SPOT-D247",
+      "canonicalDecision": "enable_with_live_parking_and_deck_state",
+      "experienceState": "full_experience_with_indoor_fallback",
+      "anchorIds": [
+        "AA-D247-P3",
+        "AA-D247-P4"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "outdoor_deck=06:30-22:00",
+        "terminal_area=approximately_05:00-24:00",
+        "parking=24h",
+        "悪天候・保安閉鎖",
+        "P3/P4満車",
+        "夏季多客"
+      ]
+    },
+    {
+      "destinationId": "D296",
+      "spotEntityKey": "SPOT-D296",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "facility_hours_only",
+      "anchorIds": [
+        "AA-D296-NEARBY",
+        "AA-D296-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "09:00-22:00",
+        "entry_end=21:00",
+        "temporary inspection closures",
+        "臨時休館"
+      ]
+    },
+    {
+      "destinationId": "D136",
+      "spotEntityKey": "SPOT-D136",
+      "canonicalDecision": "enable_with_live_parking_and_weather_state",
+      "experienceState": "full_experience",
+      "anchorIds": [
+        "AA-D136-P1",
+        "AA-D136-P5"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "04/01-09/30=06:30-21:00",
+        "10/01-03/31=07:00-21:00",
+        "parking=24h",
+        "天候閉鎖",
+        "空港駐車場満車"
+      ]
+    },
+    {
+      "destinationId": "D315",
+      "spotEntityKey": "SPOT-D315",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "facility_hours_only",
+      "anchorIds": [
+        "AA-D315-NEARBY",
+        "AA-D315-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "10:00-21:00",
+        "closed=12/29-01/03",
+        "temporary maintenance closures",
+        "臨時休館"
+      ]
+    },
+    {
+      "destinationId": "D308",
+      "spotEntityKey": "SPOT-D308",
+      "canonicalDecision": "enable_with_dated_override",
+      "experienceState": "full_experience",
+      "anchorIds": [
+        "AA-D308-PARK",
+        "AA-D308-SKY"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "parking=07:00-24:00",
+        "sky_lounge=until_23:30 (operator editorial guide)",
+        "2026-08-08 closure=16:00-event_end; if postponed next day",
+        "イベントによる一時閉鎖",
+        "施設休止"
+      ]
+    },
+    {
+      "destinationId": "D222",
+      "spotEntityKey": "SPOT-D222",
+      "canonicalDecision": "enable_only_with_construction_reroute",
+      "experienceState": "parking_and_walk",
+      "anchorIds": [
+        "AA-D222-TIMES",
+        "AA-D222-WALK"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "park=24h",
+        "rooftop_garden=09:00-21:00",
+        "construction=2026-07_to_2026-10_approx",
+        "中央口閉鎖",
+        "天王洲通り通り抜け不可",
+        "工期変更"
+      ]
+    },
+    {
+      "destinationId": "D023",
+      "spotEntityKey": "SPOT-D023",
+      "canonicalDecision": "enable_after_place_resolution",
+      "experienceState": "full_experience",
+      "anchorIds": [
+        "AA-D023-PARK"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "parking=24h",
+        "park=24h",
+        "満車",
+        "イベント規制"
+      ]
+    },
+    {
+      "destinationId": "D303",
+      "spotEntityKey": "SPOT-D303",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "facility_hours_only",
+      "anchorIds": [
+        "AA-D303-NEARBY",
+        "AA-D303-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "09:00-16:30",
+        "last_entry=16:00",
+        "closed=Monday; if holiday next day",
+        "closed=year_end_new_year",
+        "exhibition_change_closures",
+        "展示替え休館"
+      ]
+    },
+    {
+      "destinationId": "D312",
+      "spotEntityKey": "SPOT-D312",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "exterior_view_only",
+      "anchorIds": [
+        "AA-D312-NEARBY",
+        "AA-D312-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "09:00-16:30",
+        "building_interior_not_enterable",
+        "closed=12/29-01/03",
+        "temporary closures",
+        "臨時休館"
+      ]
+    },
+    {
+      "destinationId": "D314",
+      "spotEntityKey": "SPOT-D314",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "experienceState": "facility_hours_only",
+      "anchorIds": [
+        "AA-D314-NEARBY",
+        "AA-D314-WALK"
+      ],
+      "directMapsAllowed": false,
+      "hardGates": [
+        "Fri_Sat_Sun_holidays=10:00-17:00",
+        "closed=Mon-Thu",
+        "closed=early_September",
+        "closed=year_end_new_year",
+        "熱中症特別警戒情報",
+        "台風・荒天による予告なし休館"
+      ]
+    },
+    {
+      "destinationId": "D208",
+      "spotEntityKey": "SPOT-D208",
+      "canonicalDecision": "enable_with_exit_margin_gate",
+      "experienceState": "parking_and_walk",
+      "anchorIds": [
+        "AA-D208-PARK"
+      ],
+      "directMapsAllowed": true,
+      "hardGates": [
+        "parking=08:30-19:00",
+        "park_center=08:30-17:00",
+        "after_19:00_exit_locked_until_08:30",
+        "イベント時駐車場停止",
+        "工事"
+      ]
+    }
+  ]
+}

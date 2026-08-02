@@ -1,0 +1,25 @@
+{
+  "fullPackage": {
+    "name": "Project_Cruise_Hero_Precision_v0.10.4-rc3.zip",
+    "sha256": "7cd1f52c2641bd23eef6b80a7d59d45c1860546d57fea27707f20602a297e3a0"
+  },
+  "patchPackage": {
+    "name": "Hero_Precision_Patch_v1.zip",
+    "sha256": "4a026b882325eb55dded3869269c1c143110437156b111c34c4abe5878c19ac3"
+  },
+  "reportedValidation": {
+    "version": "hero-precision-v1",
+    "generatedAt": "2026-08-02T15:16:00+09:00",
+    "exactWebpCount": 30,
+    "sourceMapHashMismatches": 0,
+    "destinationProfiles": 320,
+    "routeAffinities": 501,
+    "invalidImageIds": 0,
+    "candidateRange": "4-6",
+    "selectionMatrixCases": 12024,
+    "selectionMatrixFailures": 0,
+    "browserSmoke": "not-run"
+  },
+  "workspaceImportState": "schema-and-selection-contract-integrated; exact external ZIP bytes and WebP binaries are not mounted in this workspace",
+  "assetPolicy": "do-not-regenerate; accept exact upstream WebP files only after SHA/source-map validation"
+}

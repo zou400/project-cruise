@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "0.11",
+  "lanes": {
+    "places_api_executable": [
+      "AA-D003-P5",
+      "AA-D005-NORTH",
+      "AA-D005-SOUTH",
+      "AA-D009-MARIEN",
+      "AA-D146-P1",
+      "AA-D146-P2",
+      "AA-D181-PARK",
+      "AA-D241-PARK",
+      "AA-D245-HIC-P1"
+    ],
+    "entrance_visual_confirmation": [
+      "AA-D001-P1",
+      "AA-D001-P2",
+      "AA-D002-TIMES",
+      "AA-D244-HIC-P1",
+      "AA-D245-HIC-P2"
+    ],
+    "parking_selection": [
+      "AA-D284-NEARBY",
+      "AA-D285-NEARBY",
+      "AA-D305-NEARBY",
+      "AA-D306-NEARBY",
+      "AA-D307-NEARBY"
+    ],
+    "walk_endpoint_confirmation": [
+      "AA-D244-SORAMUNADO-WALK",
+      "AA-D284-WALK",
+      "AA-D285-WALK",
+      "AA-D305-WALK",
+      "AA-D306-WALK",
+      "AA-D307-WALK"
+    ]
+  }
+}

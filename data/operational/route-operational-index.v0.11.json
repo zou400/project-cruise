@@ -1,0 +1,794 @@
+{
+  "schemaVersion": "0.11-result-state-machine",
+  "generatedAt": "2026-08-02T15:43:00+09:00",
+  "baseCanonical": "v0.10.0",
+  "policy": {
+    "evaluationOrder": [
+      "time_bucket",
+      "temporal_gate",
+      "operational_truth",
+      "weighted_selection",
+      "exact_route_estimate",
+      "maps_release"
+    ],
+    "automaticReselectMax": 8,
+    "sessionBlockTtlMinutes": 30,
+    "userPreferencePenaltyOnOperationalSkip": false,
+    "mapsReleaseRule": "only_when_operationally_eligible_and_anchor_resolved"
+  },
+  "summary": {
+    "canonicalRouteCount": 501,
+    "operationalOverlayDestinationCount": 15,
+    "affectedRouteCount": 43,
+    "affectedCanonicalRouteCount": 28,
+    "affectedDirectCandidateCount": 15
+  },
+  "destinations": [
+    {
+      "destinationId": "D304",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R171",
+        "R176",
+        "P-D304"
+      ]
+    },
+    {
+      "destinationId": "D185",
+      "canonicalDecision": "allow_outdoor_partial_before_reopen",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 4,
+      "routeIds": [
+        "R101",
+        "R102",
+        "R108",
+        "P-D185"
+      ]
+    },
+    {
+      "destinationId": "D204",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R110",
+        "R111",
+        "P-D204"
+      ]
+    },
+    {
+      "destinationId": "D313",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R177",
+        "P-D313"
+      ]
+    },
+    {
+      "destinationId": "D247",
+      "canonicalDecision": "enable_with_live_parking_and_deck_state",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R134",
+        "R141",
+        "P-D247"
+      ]
+    },
+    {
+      "destinationId": "D296",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R165",
+        "P-D296"
+      ]
+    },
+    {
+      "destinationId": "D136",
+      "canonicalDecision": "enable_with_live_parking_and_weather_state",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 5,
+      "routeIds": [
+        "R067",
+        "R068",
+        "R072",
+        "R109",
+        "P-D136"
+      ]
+    },
+    {
+      "destinationId": "D315",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R179",
+        "P-D315"
+      ]
+    },
+    {
+      "destinationId": "D308",
+      "canonicalDecision": "enable_with_dated_override",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R174",
+        "R175",
+        "P-D308"
+      ]
+    },
+    {
+      "destinationId": "D222",
+      "canonicalDecision": "enable_only_with_construction_reroute",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R121",
+        "R131",
+        "P-D222"
+      ]
+    },
+    {
+      "destinationId": "D023",
+      "canonicalDecision": "enable_after_place_resolution",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 3,
+      "routeIds": [
+        "R003",
+        "R140",
+        "P-D023"
+      ]
+    },
+    {
+      "destinationId": "D303",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R171",
+        "P-D303"
+      ]
+    },
+    {
+      "destinationId": "D312",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R176",
+        "P-D312"
+      ]
+    },
+    {
+      "destinationId": "D314",
+      "canonicalDecision": "hold_direct_maps_until_parking_selected",
+      "directMapsAllowed": false,
+      "affectedRouteCount": 2,
+      "routeIds": [
+        "R178",
+        "P-D314"
+      ]
+    },
+    {
+      "destinationId": "D208",
+      "canonicalDecision": "enable_with_exit_margin_gate",
+      "directMapsAllowed": true,
+      "affectedRouteCount": 6,
+      "routeIds": [
+        "R050",
+        "R113",
+        "R123",
+        "R161",
+        "R164",
+        "P-D208"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "routeId": "R003",
+      "title": "東京港最奥ナイト",
+      "destination": "暁ふ頭公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D023"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R050",
+      "title": "鶴見から生田へ丘陵公園線",
+      "destination": "生田緑地・枡形山展望台",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R067",
+      "title": "成田B滑走路ナイト",
+      "destination": "成田空港 第1ターミナル展望デッキ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D136"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R068",
+      "title": "成田A滑走路Story",
+      "destination": "成田空港 第1ターミナル展望デッキ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D136"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R072",
+      "title": "東京東部から成田空港へ",
+      "destination": "成田空港 第1ターミナル展望デッキ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D136"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R101",
+      "title": "観音崎アートと灯台",
+      "destination": "燈明堂緑地",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D185"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R102",
+      "title": "浦賀水道・近代化の物語",
+      "destination": "横須賀美術館 海の広場",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D185"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R108",
+      "title": "海辺の建築三連",
+      "destination": "燈明堂緑地",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D185"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R109",
+      "title": "成田A滑走路・低空進入線",
+      "destination": "ひこうきの丘",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D136"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R110",
+      "title": "小田原・魚と花の終着",
+      "destination": "小田原フラワーガーデン",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D204"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R111",
+      "title": "北条氏の城と漁港",
+      "destination": "漁港の駅 TOTOCO小田原",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D204"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R113",
+      "title": "川崎丘陵・古代と現代",
+      "destination": "夢見ヶ崎動物公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R121",
+      "title": "湾岸・干潟から運河へ",
+      "destination": "城南島海浜公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D222"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R123",
+      "title": "横浜西部・大池と丘陵",
+      "destination": "県立東高根森林公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R131",
+      "title": "東京近距離・運河と市場",
+      "destination": "葛西海浜公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D222"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R134",
+      "title": "羽田3ターミナル比較",
+      "destination": "羽田空港 第3ターミナル展望デッキ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D247"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R140",
+      "title": "お台場から豊洲の水際夜景",
+      "destination": "晴海ふ頭公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D023"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R141",
+      "title": "雨天・羽田インドア線",
+      "destination": "羽田空港 第3ターミナル展望デッキ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D247"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R161",
+      "title": "川崎北部・古代林から狛江農村へ",
+      "destination": "狛江市立古民家園 むいから民家園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R164",
+      "title": "宿河原・温室から古代林へ",
+      "destination": "県立東高根森林公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R165",
+      "title": "横浜北部・弥生集落からモダニズム丘陵へ",
+      "destination": "横浜市大倉山記念館",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D296"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R171",
+      "title": "馬込・日本画と文士村アート",
+      "destination": "山王草堂記念館",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D303",
+        "D304"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R174",
+      "title": "代官山・大正邸宅から恵比寿夜景へ",
+      "destination": "恵比寿ガーデンプレイスタワー 38Fスカイラウンジ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D308"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R175",
+      "title": "渋谷・夜の植物園から高層夜景へ",
+      "destination": "恵比寿ガーデンプレイスタワー 38Fスカイラウンジ",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D308"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R176",
+      "title": "馬込・かな書から作家の書斎へ",
+      "destination": "山王草堂記念館",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D312",
+        "D304"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R177",
+      "title": "洗足池・勝海舟と寺町高台",
+      "destination": "池上会館 屋上展望台・庭園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D313"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R178",
+      "title": "昭和の家から多摩川台へ",
+      "destination": "多摩川台公園",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D314"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "R179",
+      "title": "芝浦・木造見番から島旅の港へ",
+      "destination": "竹芝客船ターミナル・ボードウォーク",
+      "candidateSource": "canonical_route",
+      "timeBuckets": [
+        "120"
+      ],
+      "affectedDestinationIds": [
+        "D315"
+      ],
+      "routeRole": "verified_route"
+    },
+    {
+      "routeId": "P-D023",
+      "title": "晴海ふ頭公園へ直行",
+      "destination": "晴海ふ頭公園",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D023"
+      ],
+      "routeRole": "final_destination"
+    },
+    {
+      "routeId": "P-D136",
+      "title": "成田空港 第1ターミナル展望デッキへ直行",
+      "destination": "成田空港 第1ターミナル展望デッキ",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D136"
+      ],
+      "routeRole": "rain_destination"
+    },
+    {
+      "routeId": "P-D185",
+      "title": "横須賀美術館 海の広場へ直行",
+      "destination": "横須賀美術館 海の広場",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D185"
+      ],
+      "routeRole": "final_destination"
+    },
+    {
+      "routeId": "P-D204",
+      "title": "小田原城址公園へ直行",
+      "destination": "小田原城址公園",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D204"
+      ],
+      "routeRole": "waypoint"
+    },
+    {
+      "routeId": "P-D208",
+      "title": "県立東高根森林公園へ直行",
+      "destination": "県立東高根森林公園",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D208"
+      ],
+      "routeRole": "experimental_destination"
+    },
+    {
+      "routeId": "P-D222",
+      "title": "東品川海上公園へ直行",
+      "destination": "東品川海上公園",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D222"
+      ],
+      "routeRole": "final_destination"
+    },
+    {
+      "routeId": "P-D247",
+      "title": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYOへ直行",
+      "destination": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D247"
+      ],
+      "routeRole": "rain_destination"
+    },
+    {
+      "routeId": "P-D296",
+      "title": "横浜市大倉山記念館へ直行",
+      "destination": "横浜市大倉山記念館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D296"
+      ],
+      "routeRole": "rain_destination"
+    },
+    {
+      "routeId": "P-D303",
+      "title": "馬込アートギャラリーへ直行",
+      "destination": "馬込アートギャラリー",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D303"
+      ],
+      "routeRole": "waypoint"
+    },
+    {
+      "routeId": "P-D304",
+      "title": "山王草堂記念館へ直行",
+      "destination": "山王草堂記念館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D304"
+      ],
+      "routeRole": "experimental_destination"
+    },
+    {
+      "routeId": "P-D308",
+      "title": "恵比寿ガーデンプレイスタワー 38Fスカイラウンジへ直行",
+      "destination": "恵比寿ガーデンプレイスタワー 38Fスカイラウンジ",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D308"
+      ],
+      "routeRole": "rain_destination"
+    },
+    {
+      "routeId": "P-D312",
+      "title": "尾崎士郎記念館へ直行",
+      "destination": "尾崎士郎記念館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D312"
+      ],
+      "routeRole": "experimental_destination"
+    },
+    {
+      "routeId": "P-D313",
+      "title": "大田区立勝海舟記念館へ直行",
+      "destination": "大田区立勝海舟記念館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D313"
+      ],
+      "routeRole": "rain_destination"
+    },
+    {
+      "routeId": "P-D314",
+      "title": "昭和のくらし博物館へ直行",
+      "destination": "昭和のくらし博物館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D314"
+      ],
+      "routeRole": "experimental_destination"
+    },
+    {
+      "routeId": "P-D315",
+      "title": "港区立伝統文化交流館へ直行",
+      "destination": "港区立伝統文化交流館",
+      "candidateSource": "destination_direct",
+      "timeBuckets": [
+        "90",
+        "120",
+        "half"
+      ],
+      "affectedDestinationIds": [
+        "D315"
+      ],
+      "routeRole": "rain_destination"
+    }
+  ]
+}

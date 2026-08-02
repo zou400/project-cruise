@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "0.11",
+  "generatedAt": "2026-08-02T13:39:00+09:00",
+  "summary": {
+    "count": 22
+  },
+  "tests": [
+    {
+      "id": "U1B-001",
+      "description": "山王草堂を駐車場未選定で直行しない",
+      "input": {
+        "destinationId": "D304",
+        "anchorResolved": false
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "anchor_unresolved"
+      }
+    },
+    {
+      "id": "U1B-002",
+      "description": "横須賀美術館休館中は海の広場だけ成立",
+      "input": {
+        "destinationId": "D185",
+        "arrival": "2026-08-02T18:30:00+09:00"
+      },
+      "expected": {
+        "eligible": true,
+        "experienceState": "outdoor_partial",
+        "anchorId": "AA-D185-PARK"
+      }
+    },
+    {
+      "id": "U1B-003",
+      "description": "横須賀美術館22時以降は駐車不可",
+      "input": {
+        "destinationId": "D185",
+        "arrival": "2026-08-02T22:10:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "parking_closed"
+      }
+    },
+    {
+      "id": "U1B-004",
+      "description": "小田原城を施設名へ直接drivingしない",
+      "input": {
+        "destinationId": "D204",
+        "anchorResolved": false
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "parking_selection_required"
+      }
+    },
+    {
+      "id": "U1B-005",
+      "description": "勝海舟記念館は月曜休",
+      "input": {
+        "destinationId": "D313",
+        "arrival": "2026-08-03T13:00:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "facility_closed"
+      }
+    },
+    {
+      "id": "U1B-006",
+      "description": "羽田T2は車幅2.05mで通過",
+      "input": {
+        "destinationId": "D247",
+        "vehicleWidthM": 2.05,
+        "parkingLiveOpen": true,
+        "deckOpen": true
+      },
+      "expected": {
+        "eligible": true
+      }
+    },
+    {
+      "id": "U1B-007",
+      "description": "羽田T2は車幅2.11mで除外",
+      "input": {
+        "destinationId": "D247",
+        "vehicleWidthM": 2.11
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "vehicle_width"
+      }
+    },
+    {
+      "id": "U1B-008",
+      "description": "大倉山記念館は周辺駐車場未選定なら保留",
+      "input": {
+        "destinationId": "D296",
+        "anchorResolved": false
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "anchor_unresolved"
+      }
+    },
+    {
+      "id": "U1B-009",
+      "description": "成田T1は夏季06:30前にデッキ不可",
+      "input": {
+        "destinationId": "D136",
+        "arrival": "2026-08-02T06:20:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "experience_closed"
+      }
+    },
+    {
+      "id": "U1B-010",
+      "description": "伝統文化交流館は21時以降不可",
+      "input": {
+        "destinationId": "D315",
+        "arrival": "2026-08-02T21:05:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "facility_closed"
+      }
+    },
+    {
+      "id": "U1B-011",
+      "description": "恵比寿8月8日16時以降はスカイラウンジ閉鎖",
+      "input": {
+        "destinationId": "D308",
+        "arrival": "2026-08-08T18:00:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "dated_override"
+      }
+    },
+    {
+      "id": "U1B-012",
+      "description": "恵比寿は車幅2.05m以下",
+      "input": {
+        "destinationId": "D308",
+        "vehicleWidthM": 2.06
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "vehicle_width"
+      }
+    },
+    {
+      "id": "U1B-013",
+      "description": "東品川は工事中に中央口を使わない",
+      "input": {
+        "destinationId": "D222",
+        "date": "2026-08-02",
+        "requestedWalkAnchor": "central_entrance"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "construction_closure"
+      }
+    },
+    {
+      "id": "U1B-014",
+      "description": "晴海ふ頭は駐車場解決後に利用可能",
+      "input": {
+        "destinationId": "D023",
+        "placeResolved": true,
+        "parkingOpen": true
+      },
+      "expected": {
+        "eligible": true,
+        "anchorId": "AA-D023-PARK"
+      }
+    },
+    {
+      "id": "U1B-015",
+      "description": "馬込アートギャラリー月曜休",
+      "input": {
+        "destinationId": "D303",
+        "arrival": "2026-08-03T10:00:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "facility_closed"
+      }
+    },
+    {
+      "id": "U1B-016",
+      "description": "尾崎士郎記念館は建物内部見学として表示しない",
+      "input": {
+        "destinationId": "D312",
+        "arrival": "2026-08-02T11:00:00+09:00"
+      },
+      "expected": {
+        "eligible": true,
+        "experienceState": "exterior_view_only"
+      }
+    },
+    {
+      "id": "U1B-017",
+      "description": "昭和のくらし博物館は木曜休",
+      "input": {
+        "destinationId": "D314",
+        "arrival": "2026-08-06T11:00:00+09:00"
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "facility_closed"
+      }
+    },
+    {
+      "id": "U1B-018",
+      "description": "東高根は退出余裕込みで19時超なら除外",
+      "input": {
+        "destinationId": "D208",
+        "arrival": "2026-08-02T18:20:00+09:00",
+        "stayMinutes": 30,
+        "exitBufferMinutes": 15
+      },
+      "expected": {
+        "eligible": false,
+        "reason": "exit_lock_risk"
+      }
+    },
+    {
+      "id": "LANE-PLACES_API_EXECUTABLE",
+      "description": "places_api_executableの工程制約",
+      "input": {
+        "anchorIds": [
+          "AA-D003-P5",
+          "AA-D005-NORTH",
+          "AA-D005-SOUTH",
+          "AA-D009-MARIEN",
+          "AA-D146-P1",
+          "AA-D146-P2",
+          "AA-D181-PARK",
+          "AA-D241-PARK",
+          "AA-D245-HIC-P1"
+        ]
+      },
+      "expected": {
+        "count": 9,
+        "lane": "places_api_executable"
+      }
+    },
+    {
+      "id": "LANE-ENTRANCE_VISUAL_CONFIRMATION",
+      "description": "entrance_visual_confirmationの工程制約",
+      "input": {
+        "anchorIds": [
+          "AA-D001-P1",
+          "AA-D001-P2",
+          "AA-D002-TIMES",
+          "AA-D244-HIC-P1",
+          "AA-D245-HIC-P2"
+        ]
+      },
+      "expected": {
+        "count": 5,
+        "lane": "entrance_visual_confirmation"
+      }
+    },
+    {
+      "id": "LANE-PARKING_SELECTION",
+      "description": "parking_selectionの工程制約",
+      "input": {
+        "anchorIds": [
+          "AA-D284-NEARBY",
+          "AA-D285-NEARBY",
+          "AA-D305-NEARBY",
+          "AA-D306-NEARBY",
+          "AA-D307-NEARBY"
+        ]
+      },
+      "expected": {
+        "count": 5,
+        "lane": "parking_selection"
+      }
+    },
+    {
+      "id": "LANE-WALK_ENDPOINT_CONFIRMATION",
+      "description": "walk_endpoint_confirmationの工程制約",
+      "input": {
+        "anchorIds": [
+          "AA-D244-SORAMUNADO-WALK",
+          "AA-D284-WALK",
+          "AA-D285-WALK",
+          "AA-D305-WALK",
+          "AA-D306-WALK",
+          "AA-D307-WALK"
+        ]
+      },
+      "expected": {
+        "count": 6,
+        "lane": "walk_endpoint_confirmation"
+      }
+    }
+  ]
+}

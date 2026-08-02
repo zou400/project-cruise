@@ -1,0 +1,49 @@
+{
+  "server": "python-http.server",
+  "required": 6,
+  "passed": true,
+  "checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 2537335,
+      "contentType": "text/html",
+      "passed": true
+    },
+    {
+      "path": "project-cruise.json",
+      "status": 200,
+      "bytes": 3300395,
+      "contentType": "application/json",
+      "passed": true
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "status": 200,
+      "bytes": 13598,
+      "contentType": "text/css",
+      "passed": true
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "status": 200,
+      "bytes": 12894,
+      "contentType": "text/javascript",
+      "passed": true
+    },
+    {
+      "path": "assets/js/arrival/result-state-machine.js",
+      "status": 200,
+      "bytes": 5950,
+      "contentType": "text/javascript",
+      "passed": true
+    },
+    {
+      "path": "assets/js/weather/weather-runtime.js",
+      "status": 200,
+      "bytes": 10967,
+      "contentType": "text/javascript",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 8,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5262,
+      "sha256": "fb85973b32aba91bf76a3022107c5f467f6f4e8697f5affdd4bb7ff0f21f24f9"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "bytes": 3010,
+      "sha256": "46eae2cef0666d2a98a1a994ffd864d3bac70f79896672ba310a716a34803a43"
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "bytes": 2917,
+      "sha256": "2968336d5a342324842a18332b35f26690dbbe764a56ed1ad120d97c36e90f1f"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3692,
+      "sha256": "f879a34bc27486cab9a101714a571be6977937ec6eec8ab82cd2e7b9b087db8b"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1632,
+      "sha256": "34c59118ca46cf62bbd230814ff3df3787ba18daed586c507bc9edb6f76bd0f2"
+    },
+    {
+      "path": "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
+      "bytes": 2738,
+      "sha256": "1ff24897d742cb8689e0734350dee39403bd70b78f7628a5907fb910c3792c5e"
+    },
+    {
+      "path": "data/integration/source-authority-registry.v0.11.json",
+      "bytes": 6080,
+      "sha256": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4"
+    },
+    {
+      "path": "scripts/audit_release_documentation.py",
+      "bytes": 1805,
+      "sha256": "30d107cf1663f0875c473e87d59108418e787d4c9128dae11c2f66a1580b6737"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1213,
+      "sha256": "1c3856247b8630667dadd80eac1a7c810bb63b6cf42aa7ad69b2b91384d9f002"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 1107,
+      "sha256": "419e4c3e62bfb309d982d6bde9043ce8954eb26c8b525044c8d278f043eed490"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 10873,
+      "sha256": "fa3aa0f385d479643f8be29c2ddfac9d52ca798863f1fcfd4c61410eb5736d5a"
+    },
+    {
+      "path": "records/release-documentation-audit.json",
+      "bytes": 568,
+      "sha256": "ea96bbb221847cfbec158096daec11d768ca19d07a6617852e0411cfd350333f"
+    },
+    {
+      "path": "records/release-candidate-audit.json",
+      "bytes": 30157,
+      "sha256": "2d378cf69914f5f04c8e088d5e68bdf675373fd2c350e14a68a0f94094df6d5c"
+    }
+  ]
+}

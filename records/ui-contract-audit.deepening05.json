@@ -1,0 +1,27 @@
+{
+  "release": "v0.11.0-rc1",
+  "track": "ui-component-and-event-contract",
+  "checks": {
+    "canonical_interaction_ids_preserved": true,
+    "ui_css_loaded_after_canonical_style": true,
+    "ui_script_loaded_after_canonical_engine": true,
+    "route_shown_event_present": true,
+    "route_estimate_event_present": true,
+    "classic_ui_kill_switch_present": true,
+    "visual_kill_switch_present": true,
+    "visual_history_key_preserved": true,
+    "experience_image_disclosure_present": true,
+    "development_result_tags_hidden": true,
+    "responsive_breakpoints_present": true,
+    "reduced_motion_supported": true,
+    "canonical_data_not_externalized": true,
+    "no_remote_new_ui_dependency": true
+  },
+  "missingCanonicalIds": [],
+  "hashes": {
+    "index.html": "fa7459226eb012e18336f92287153d90554b618c28391fae46b1b8cf59175379",
+    "assets/css/cruise-v011.css": "a6893655464f4c1fb0901c772eff6c89b779624acc3619c5efdbdb6be3ced516",
+    "assets/js/cruise-v011.js": "61b989af9ddfa4d6951a7a6f8f7466087792a6c90ed8048a03fec17eddf06bfa"
+  },
+  "passed": true
+}

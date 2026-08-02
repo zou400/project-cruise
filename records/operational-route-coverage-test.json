@@ -1,0 +1,38 @@
+{
+  "total": 6,
+  "pass": 6,
+  "fail": 0,
+  "summary": {
+    "canonicalRouteCount": 501,
+    "operationalOverlayDestinationCount": 15,
+    "affectedRouteCount": 43,
+    "affectedCanonicalRouteCount": 28,
+    "affectedDirectCandidateCount": 15
+  },
+  "checks": [
+    {
+      "name": "all affected routes indexed",
+      "pass": true
+    },
+    {
+      "name": "summary route count",
+      "pass": true
+    },
+    {
+      "name": "all overlay destinations have routes",
+      "pass": true
+    },
+    {
+      "name": "canonical count preserved",
+      "pass": true
+    },
+    {
+      "name": "maps blocked for unresolved anchor",
+      "pass": true
+    },
+    {
+      "name": "verified parking replaces destination query",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "release": "v0.11.0-rc1",
+  "commitSha": "FILL_AFTER_DEPLOYMENT",
+  "testedAt": "YYYY-MM-DDTHH:MM:SS+09:00",
+  "tester": "",
+  "device": {
+    "model": "",
+    "iosVersion": "",
+    "safariVersion": "",
+    "orientation": ["portrait", "landscape"]
+  },
+  "deploymentUrl": "",
+  "checks": {
+    "safeAreaAndDynamicIsland": null,
+    "addressBarResize": null,
+    "locationAllowedFlow": null,
+    "locationDeniedFlow": null,
+    "allThreeTimeBuckets": null,
+    "destinationReveal": null,
+    "heroCropAndTitleLegibility": null,
+    "arrivalParkingAndWalkingEndpoint": null,
+    "weatherFailureDoesNotBlock": null,
+    "googleMapsHandoff": null,
+    "rerollAndLearningState": null,
+    "returnFeedback": null,
+    "issueReport": null,
+    "reducedMotion": null,
+    "lowDataMode": null
+  },
+  "screenshotsOrScreenRecording": [],
+  "issues": [],
+  "passed": false,
+  "signed": false
+}

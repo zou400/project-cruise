@@ -1,0 +1,71 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 7,
+  "generatedAt": "2026-08-02T15:58:00+09:00",
+  "summary": "iPhone Safari, touch targets, keyboard semantics, modal focus, reduced-motion/data, and arrival/weather responsive styling.",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2538331,
+      "sha256": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631"
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "bytes": 23073,
+      "sha256": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e"
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "bytes": 18148,
+      "sha256": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1125,
+      "sha256": "43ad1dd314cdfc275b154192f29f7798162d6f4452b3bbfa3abc50f56e3b00e0"
+    },
+    {
+      "path": "scripts/audit_mobile_accessibility.py",
+      "bytes": 2160,
+      "sha256": "17994b01c5f1c250e1c458eb5419f907de731e9321543eb8cb9f33d6bd5bfed6"
+    },
+    {
+      "path": "scripts/audit_release_candidate.py",
+      "bytes": 4135,
+      "sha256": "73c2b70a864e0607f1eaf4bd78555752c406ab8035474e3a47c24a10c1bbdb13"
+    },
+    {
+      "path": "docs/integration/07_IPHONE_SAFARI_ACCESSIBILITY_PERFORMANCE.md",
+      "bytes": 1922,
+      "sha256": "a27156207c21e8ec286f81f8c07f340eecc1273d8ef2776de28ba7277dffc46b"
+    },
+    {
+      "path": "records/mobile-accessibility-audit.json",
+      "bytes": 694,
+      "sha256": "f7a4a6b0e6fc71802a1dbedaedf77c30a89c614128533206620d03b5e3846bd4"
+    },
+    {
+      "path": "records/release-candidate-audit.json",
+      "bytes": 28039,
+      "sha256": "34d53ea1c2c2bf93cc02846080001c4c06a70071c3ba49887f7dad81c85645aa"
+    },
+    {
+      "path": "records/npm-test.deepening07.log",
+      "bytes": 4424,
+      "sha256": "e4a9278907d89bbf96886adf91b124a57afdbbe6598b6e8abf12362fc982cc05"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 10275,
+      "sha256": "7c7ddc8fe578502b8b63930fc15206055b4a3640bb5cac66580ab16896b66148"
+    }
+  ],
+  "tests": {
+    "npmTest": "passed",
+    "mobileAccessibility": "passed",
+    "releaseCandidateAutomated": "passed",
+    "browserRuntime": "environment-blocked",
+    "iphoneSafariManual": "pending"
+  },
+  "promotionReady": false
+}

@@ -1,0 +1,998 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": 9,
+  "automatedPassed": true,
+  "promotionReady": false,
+  "missingRequiredFiles": [],
+  "automatedChecks": [
+    {
+      "name": "canonical",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_canonical.py",
+        "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1-build\",\n  \"root\": \"/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1\",\n  \"counts\": {\n    \"destinations\": 320,\n    \"canonicalRoutes\": 181,\n    \"directCandidates\": 320,\n    \"selectableResults\": 501\n  },\n  \"checks\": {\n    \"destinations_320\": true,\n    \"canonical_routes_181\": true,\n    \"direct_candidates_320\": true,\n    \"selectable_results_501\": true,\n    \"destination_ids_unique\": true,\n    \"canonical_route_ids_unique\": true,\n    \"candidate_ids_unique\": true,\n    \"master_destinations_match\": true,\n    \"master_routes_match\": true,\n    \"legacy_profile_key_present\": true,\n    \"legacy_route_stats_key_present\": true,\n    \"maps_handoff_present\": true,\n    \"return_feedback_present\": true,\n    \"issue_report_present\": true,\n    \"leaflet_script_present\": true,\n    \"canonical_data_script_present\": true,\n    \"canonical_engine_script_present\": true,\n    \"ui_overlay_script_present\": true\n  },\n  \"hashes\": {\n    \"index.html\": \"a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631\",\n    \"destinations.json\": \"ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d\",\n    \"routes.json\": \"d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098\",\n    \"project-cruise.json\": \"cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b\"\n  },\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1-build",
+        "root": "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1",
+        "counts": {
+          "destinations": 320,
+          "canonicalRoutes": 181,
+          "directCandidates": 320,
+          "selectableResults": 501
+        },
+        "checks": {
+          "destinations_320": true,
+          "canonical_routes_181": true,
+          "direct_candidates_320": true,
+          "selectable_results_501": true,
+          "destination_ids_unique": true,
+          "canonical_route_ids_unique": true,
+          "candidate_ids_unique": true,
+          "master_destinations_match": true,
+          "master_routes_match": true,
+          "legacy_profile_key_present": true,
+          "legacy_route_stats_key_present": true,
+          "maps_handoff_present": true,
+          "return_feedback_present": true,
+          "issue_report_present": true,
+          "leaflet_script_present": true,
+          "canonical_data_script_present": true,
+          "canonical_engine_script_present": true,
+          "ui_overlay_script_present": true
+        },
+        "hashes": {
+          "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
+          "destinations.json": "ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d",
+          "routes.json": "d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098",
+          "project-cruise.json": "cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b"
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "ui_contract",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_ui_contract.py",
+        "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"track\": \"ui-component-and-event-contract\",\n  \"checks\": {\n    \"canonical_interaction_ids_preserved\": true,\n    \"ui_css_loaded_after_canonical_style\": true,\n    \"ui_script_loaded_after_canonical_engine\": true,\n    \"route_shown_event_present\": true,\n    \"route_estimate_event_present\": true,\n    \"classic_ui_kill_switch_present\": true,\n    \"visual_kill_switch_present\": true,\n    \"visual_history_key_preserved\": true,\n    \"experience_image_disclosure_present\": true,\n    \"development_result_tags_hidden\": true,\n    \"responsive_breakpoints_present\": true,\n    \"reduced_motion_supported\": true,\n    \"canonical_data_not_externalized\": true,\n    \"no_remote_new_ui_dependency\": true\n  },\n  \"missingCanonicalIds\": [],\n  \"hashes\": {\n    \"index.html\": \"a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631\",\n    \"assets/css/cruise-v011.css\": \"9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e\",\n    \"assets/js/cruise-v011.js\": \"fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9\"\n  },\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "track": "ui-component-and-event-contract",
+        "checks": {
+          "canonical_interaction_ids_preserved": true,
+          "ui_css_loaded_after_canonical_style": true,
+          "ui_script_loaded_after_canonical_engine": true,
+          "route_shown_event_present": true,
+          "route_estimate_event_present": true,
+          "classic_ui_kill_switch_present": true,
+          "visual_kill_switch_present": true,
+          "visual_history_key_preserved": true,
+          "experience_image_disclosure_present": true,
+          "development_result_tags_hidden": true,
+          "responsive_breakpoints_present": true,
+          "reduced_motion_supported": true,
+          "canonical_data_not_externalized": true,
+          "no_remote_new_ui_dependency": true
+        },
+        "missingCanonicalIds": [],
+        "hashes": {
+          "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
+          "assets/css/cruise-v011.css": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e",
+          "assets/js/cruise-v011.js": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9"
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "hero_precision",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_hero_precision.py",
+        "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"track\": \"hero-precision-v1-compatible-integration\",\n  \"externalPackageStatus\": \"exact ZIP/WebP bytes pending; no replacement images generated\",\n  \"counts\": {\n    \"catalogImages\": 30,\n    \"exactWebpAssetsPresent\": 0,\n    \"destinationProfiles\": 320,\n    \"routeAffinities\": 501,\n    \"candidateMin\": 6,\n    \"candidateMax\": 6,\n    \"selectionMatrixCases\": 12024,\n    \"selectionMatrixFailures\": 0\n  },\n  \"checks\": {\n    \"catalog_30\": true,\n    \"catalog_ids_unique\": true,\n    \"destination_profiles_320\": true,\n    \"destination_profile_ids_match\": true,\n    \"route_affinities_501\": true,\n    \"route_affinity_ids_match\": true,\n    \"candidate_range_4_6\": true,\n    \"candidate_ids_valid\": true,\n    \"candidate_ids_unique_per_route\": true,\n    \"selection_matrix_12024\": true,\n    \"selection_matrix_zero_failures\": true,\n    \"javascript_syntax\": true,\n    \"exact_asset_policy_no_regeneration\": true,\n    \"hero_precision_scripts_loaded\": true,\n    \"visual_kill_switch_preserved\": true,\n    \"visual_history_key_preserved\": true\n  },\n  \"invalidCandidates\": [],\n  \"duplicateCandidateRoutes\": [],\n  \"matrixFailures\": [],\n  \"javascriptSyntax\": {\n    \"assets/js/hero/hero-precision-data.js\": {\n      \"passed\": true,\n      \"stderr\": \"\"\n    },\n    \"assets/js/hero/hero-precision-runtime.js\": {\n      \"passed\": true,\n      \"stderr\": \"\"\n    },\n    \"assets/js/cruise-v011.js\": {\n      \"passed\": true,\n      \"stderr\": \"\"\n    }\n  },\n  \"hashes\": {\n    \"data/hero/hero-image-catalog.v1.json\": \"c1186e686a654aa37829f4e9f3b7fd780407509d7644d6a83cacaf690e57c635\",\n    \"data/hero/destination-visual-profile.v1.json\": \"797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e\",\n    \"data/hero/route-hero-affinity.v1.json\": \"f3ac429522b694ce2237c1e001c68ecf67f8a435179abee9560262a560c00f41\",\n    \"assets/js/hero/hero-precision-data.js\": \"fc08232067cf4a504074c91c56a7aeaa438edb34b4a838417ea3e5578315c04c\",\n    \"assets/js/hero/hero-precision-runtime.js\": \"750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31\",\n    \"assets/js/cruise-v011.js\": \"fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9\",\n    \"index.html\": \"a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631\"\n  },\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "track": "hero-precision-v1-compatible-integration",
+        "externalPackageStatus": "exact ZIP/WebP bytes pending; no replacement images generated",
+        "counts": {
+          "catalogImages": 30,
+          "exactWebpAssetsPresent": 0,
+          "destinationProfiles": 320,
+          "routeAffinities": 501,
+          "candidateMin": 6,
+          "candidateMax": 6,
+          "selectionMatrixCases": 12024,
+          "selectionMatrixFailures": 0
+        },
+        "checks": {
+          "catalog_30": true,
+          "catalog_ids_unique": true,
+          "destination_profiles_320": true,
+          "destination_profile_ids_match": true,
+          "route_affinities_501": true,
+          "route_affinity_ids_match": true,
+          "candidate_range_4_6": true,
+          "candidate_ids_valid": true,
+          "candidate_ids_unique_per_route": true,
+          "selection_matrix_12024": true,
+          "selection_matrix_zero_failures": true,
+          "javascript_syntax": true,
+          "exact_asset_policy_no_regeneration": true,
+          "hero_precision_scripts_loaded": true,
+          "visual_kill_switch_preserved": true,
+          "visual_history_key_preserved": true
+        },
+        "invalidCandidates": [],
+        "duplicateCandidateRoutes": [],
+        "matrixFailures": [],
+        "javascriptSyntax": {
+          "assets/js/hero/hero-precision-data.js": {
+            "passed": true,
+            "stderr": ""
+          },
+          "assets/js/hero/hero-precision-runtime.js": {
+            "passed": true,
+            "stderr": ""
+          },
+          "assets/js/cruise-v011.js": {
+            "passed": true,
+            "stderr": ""
+          }
+        },
+        "hashes": {
+          "data/hero/hero-image-catalog.v1.json": "c1186e686a654aa37829f4e9f3b7fd780407509d7644d6a83cacaf690e57c635",
+          "data/hero/destination-visual-profile.v1.json": "797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e",
+          "data/hero/route-hero-affinity.v1.json": "f3ac429522b694ce2237c1e001c68ecf67f8a435179abee9560262a560c00f41",
+          "assets/js/hero/hero-precision-data.js": "fc08232067cf4a504074c91c56a7aeaa438edb34b4a838417ea3e5578315c04c",
+          "assets/js/hero/hero-precision-runtime.js": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31",
+          "assets/js/cruise-v011.js": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9",
+          "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631"
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "hero_asset_acceptance",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_hero_assets.py"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"deepening\": 9,\n  \"mode\": \"pending-tolerant\",\n  \"status\": \"pending\",\n  \"expectedAssetCount\": 30,\n  \"presentAssetCount\": 0,\n  \"missing\": [\n    \"airport_night_01.webp\",\n    \"airport_twilight_01.webp\",\n    \"airport_twilight_02.webp\",\n    \"airport_twilight_03.webp\",\n    \"city_night_01.webp\",\n    \"city_twilight_01.webp\",\n    \"culture_night_01.webp\",\n    \"industrial_night_01.webp\",\n    \"pa_day_01.webp\",\n    \"pa_day_02.webp\",\n    \"pa_day_03.webp\",\n    \"pa_night_01.webp\",\n    \"pa_night_02.webp\",\n    \"pa_night_03.webp\",\n    \"pa_night_04.webp\",\n    \"pa_twilight_01.webp\",\n    \"pa_twilight_02.webp\",\n    \"pa_twilight_03.webp\",\n    \"park_day_01.webp\",\n    \"park_night_01.webp\",\n    \"park_night_02.webp\",\n    \"park_rain_01.webp\",\n    \"park_rain_02.webp\",\n    \"park_water_01.webp\",\n    \"park_water_02.webp\",\n    \"water_day_01.webp\",\n    \"water_night_01.webp\",\n    \"water_night_02.webp\",\n    \"water_twilight_01.webp\",\n    \"water_twilight_02.webp\"\n  ],\n  \"unexpected\": [],\n  \"invalid\": [],\n  \"duplicateBinaryGroups\": [],\n  \"checks\": {\n    \"catalogHas30Entries\": true,\n    \"catalogImageIdsUnique\": true,\n    \"catalogAssetPathsUnique\": true,\n    \"allCatalogPathsAreWebp\": true,\n    \"allCatalogPathsStayInPrecisionDirectory\": true,\n    \"allExpectedAssetsPresent\": false,\n    \"noUnexpectedWebpAssets\": true,\n    \"allPresentAssetsAreValidWebp\": true,\n    \"noDuplicateBinaries\": true\n  },\n  \"assets\": [\n    {\n      \"imageId\": \"airport_night_01\",\n      \"assetPath\": \"assets/hero/precision/airport_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"airport_twilight_01\",\n      \"assetPath\": \"assets/hero/precision/airport_twilight_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"airport_twilight_02\",\n      \"assetPath\": \"assets/hero/precision/airport_twilight_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"airport_twilight_03\",\n      \"assetPath\": \"assets/hero/precision/airport_twilight_03.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"culture_night_01\",\n      \"assetPath\": \"assets/hero/precision/culture_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"industrial_night_01\",\n      \"assetPath\": \"assets/hero/precision/industrial_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_day_01\",\n      \"assetPath\": \"assets/hero/precision/pa_day_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_day_02\",\n      \"assetPath\": \"assets/hero/precision/pa_day_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_day_03\",\n      \"assetPath\": \"assets/hero/precision/pa_day_03.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_night_01\",\n      \"assetPath\": \"assets/hero/precision/pa_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_night_02\",\n      \"assetPath\": \"assets/hero/precision/pa_night_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_night_03\",\n      \"assetPath\": \"assets/hero/precision/pa_night_03.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_night_04\",\n      \"assetPath\": \"assets/hero/precision/pa_night_04.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_twilight_01\",\n      \"assetPath\": \"assets/hero/precision/pa_twilight_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_twilight_02\",\n      \"assetPath\": \"assets/hero/precision/pa_twilight_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"pa_twilight_03\",\n      \"assetPath\": \"assets/hero/precision/pa_twilight_03.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_day_01\",\n      \"assetPath\": \"assets/hero/precision/park_day_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_night_01\",\n      \"assetPath\": \"assets/hero/precision/park_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_night_02\",\n      \"assetPath\": \"assets/hero/precision/park_night_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_rain_01\",\n      \"assetPath\": \"assets/hero/precision/park_rain_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_rain_02\",\n      \"assetPath\": \"assets/hero/precision/park_rain_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_water_01\",\n      \"assetPath\": \"assets/hero/precision/park_water_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"park_water_02\",\n      \"assetPath\": \"assets/hero/precision/park_water_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"water_day_01\",\n      \"assetPath\": \"assets/hero/precision/water_day_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"water_night_01\",\n      \"assetPath\": \"assets/hero/precision/water_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"water_night_02\",\n      \"assetPath\": \"assets/hero/precision/water_night_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"water_twilight_01\",\n      \"assetPath\": \"assets/hero/precision/water_twilight_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"water_twilight_02\",\n      \"assetPath\": \"assets/hero/precision/water_twilight_02.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"city_night_01\",\n      \"assetPath\": \"assets/hero/precision/city_night_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    },\n    {\n      \"imageId\": \"city_twilight_01\",\n      \"assetPath\": \"assets/hero/precision/city_twilight_01.webp\",\n      \"exists\": false,\n      \"bytes\": null,\n      \"sha256\": null,\n      \"width\": null,\n      \"height\": null,\n      \"aspectRatio\": null,\n      \"webpValid\": false,\n      \"warning\": null\n    }\n  ],\n  \"package\": null,\n  \"hardContractPassed\": true,\n  \"complete\": false,\n  \"passed\": true,\n  \"interpretation\": {\n    \"pending\": \"The exact upstream WebP binaries have not all been imported; CSS fallback remains active.\",\n    \"accepted\": \"All 30 catalog assets are present and structurally valid. Visual/manual review is still required before canonical promotion.\",\n    \"rejected\": \"The mounted asset drop violates the catalog or binary contract and must not be promoted.\"\n  }\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "deepening": 9,
+        "mode": "pending-tolerant",
+        "status": "pending",
+        "expectedAssetCount": 30,
+        "presentAssetCount": 0,
+        "missing": [
+          "airport_night_01.webp",
+          "airport_twilight_01.webp",
+          "airport_twilight_02.webp",
+          "airport_twilight_03.webp",
+          "city_night_01.webp",
+          "city_twilight_01.webp",
+          "culture_night_01.webp",
+          "industrial_night_01.webp",
+          "pa_day_01.webp",
+          "pa_day_02.webp",
+          "pa_day_03.webp",
+          "pa_night_01.webp",
+          "pa_night_02.webp",
+          "pa_night_03.webp",
+          "pa_night_04.webp",
+          "pa_twilight_01.webp",
+          "pa_twilight_02.webp",
+          "pa_twilight_03.webp",
+          "park_day_01.webp",
+          "park_night_01.webp",
+          "park_night_02.webp",
+          "park_rain_01.webp",
+          "park_rain_02.webp",
+          "park_water_01.webp",
+          "park_water_02.webp",
+          "water_day_01.webp",
+          "water_night_01.webp",
+          "water_night_02.webp",
+          "water_twilight_01.webp",
+          "water_twilight_02.webp"
+        ],
+        "unexpected": [],
+        "invalid": [],
+        "duplicateBinaryGroups": [],
+        "checks": {
+          "catalogHas30Entries": true,
+          "catalogImageIdsUnique": true,
+          "catalogAssetPathsUnique": true,
+          "allCatalogPathsAreWebp": true,
+          "allCatalogPathsStayInPrecisionDirectory": true,
+          "allExpectedAssetsPresent": false,
+          "noUnexpectedWebpAssets": true,
+          "allPresentAssetsAreValidWebp": true,
+          "noDuplicateBinaries": true
+        },
+        "assets": [
+          {
+            "imageId": "airport_night_01",
+            "assetPath": "assets/hero/precision/airport_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "airport_twilight_01",
+            "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "airport_twilight_02",
+            "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "airport_twilight_03",
+            "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "culture_night_01",
+            "assetPath": "assets/hero/precision/culture_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "industrial_night_01",
+            "assetPath": "assets/hero/precision/industrial_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_day_01",
+            "assetPath": "assets/hero/precision/pa_day_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_day_02",
+            "assetPath": "assets/hero/precision/pa_day_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_day_03",
+            "assetPath": "assets/hero/precision/pa_day_03.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_night_01",
+            "assetPath": "assets/hero/precision/pa_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_night_02",
+            "assetPath": "assets/hero/precision/pa_night_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_night_03",
+            "assetPath": "assets/hero/precision/pa_night_03.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_night_04",
+            "assetPath": "assets/hero/precision/pa_night_04.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_twilight_01",
+            "assetPath": "assets/hero/precision/pa_twilight_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_twilight_02",
+            "assetPath": "assets/hero/precision/pa_twilight_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "pa_twilight_03",
+            "assetPath": "assets/hero/precision/pa_twilight_03.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_day_01",
+            "assetPath": "assets/hero/precision/park_day_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_night_01",
+            "assetPath": "assets/hero/precision/park_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_night_02",
+            "assetPath": "assets/hero/precision/park_night_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_rain_01",
+            "assetPath": "assets/hero/precision/park_rain_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_rain_02",
+            "assetPath": "assets/hero/precision/park_rain_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_water_01",
+            "assetPath": "assets/hero/precision/park_water_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "park_water_02",
+            "assetPath": "assets/hero/precision/park_water_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "water_day_01",
+            "assetPath": "assets/hero/precision/water_day_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "water_night_01",
+            "assetPath": "assets/hero/precision/water_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "water_night_02",
+            "assetPath": "assets/hero/precision/water_night_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "water_twilight_01",
+            "assetPath": "assets/hero/precision/water_twilight_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "water_twilight_02",
+            "assetPath": "assets/hero/precision/water_twilight_02.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "city_night_01",
+            "assetPath": "assets/hero/precision/city_night_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          },
+          {
+            "imageId": "city_twilight_01",
+            "assetPath": "assets/hero/precision/city_twilight_01.webp",
+            "exists": false,
+            "bytes": null,
+            "sha256": null,
+            "width": null,
+            "height": null,
+            "aspectRatio": null,
+            "webpValid": false,
+            "warning": null
+          }
+        ],
+        "package": null,
+        "hardContractPassed": true,
+        "complete": false,
+        "passed": true,
+        "interpretation": {
+          "pending": "The exact upstream WebP binaries have not all been imported; CSS fallback remains active.",
+          "accepted": "All 30 catalog assets are present and structurally valid. Visual/manual review is still required before canonical promotion.",
+          "rejected": "The mounted asset drop violates the catalog or binary contract and must not be promoted."
+        }
+      }
+    },
+    {
+      "name": "visual_qa_contract",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/visual_qa_contract.py"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"deepening\": 9,\n  \"checks\": {\n    \"visualQaPagePresent\": true,\n    \"visualQaLoadsCatalog\": true,\n    \"visualQaHasCategoryFilter\": true,\n    \"visualQaHasPhaseFilter\": true,\n    \"visualQaShowsMissingState\": true,\n    \"visualQaLinksApplicationFixtures\": true,\n    \"catalogHas30Entries\": true,\n    \"acceptanceScriptSupportsStrictMode\": true,\n    \"acceptanceScriptChecksPackageHash\": true,\n    \"githubWorkflowRunsBrowserSmoke\": true,\n    \"githubWorkflowUploadsScreenshots\": true\n  },\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "deepening": 9,
+        "checks": {
+          "visualQaPagePresent": true,
+          "visualQaLoadsCatalog": true,
+          "visualQaHasCategoryFilter": true,
+          "visualQaHasPhaseFilter": true,
+          "visualQaShowsMissingState": true,
+          "visualQaLinksApplicationFixtures": true,
+          "catalogHas30Entries": true,
+          "acceptanceScriptSupportsStrictMode": true,
+          "acceptanceScriptChecksPackageHash": true,
+          "githubWorkflowRunsBrowserSmoke": true,
+          "githubWorkflowUploadsScreenshots": true
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "arrival_operational",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_arrival_integration.py",
+        "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"deepening\": 5,\n  \"scope\": {\n    \"overlayDecisionCount\": 15,\n    \"registryRows\": 333,\n    \"criticalOperationalAnchors\": 28,\n    \"canonicalDisplayFallbacks\": 305,\n    \"walkEndpoints\": 11,\n    \"unresolvedAnchors\": 8,\n    \"testVectors\": 22\n  },\n  \"violations\": {\n    \"guessedPlaceIds\": [],\n    \"guessedCoordinates\": [],\n    \"walkEndpointsDrivingEligible\": [],\n    \"unresolvedDefaultForMaps\": []\n  },\n  \"checks\": {\n    \"overlay_is_non_destructive\": true,\n    \"overlay_decisions_15\": true,\n    \"critical_operational_anchors_28\": true,\n    \"canonical_display_fallbacks_305\": true,\n    \"no_place_ids_invented\": true,\n    \"no_coordinates_invented\": true,\n    \"walk_endpoints_never_driving\": true,\n    \"unresolved_anchors_not_default_for_maps\": true,\n    \"source_test_vectors_22\": true,\n    \"operational_tests_22_pass\": true,\n    \"hard_gate_hook_runs_before_ranking\": true,\n    \"walk_endpoint_filtered_from_driving_url\": true,\n    \"unresolved_maps_are_blocked\": true,\n    \"operational_kill_switch_present\": true,\n    \"weather_is_display_only_declared\": true,\n    \"weather_kill_switch_present\": true,\n    \"weather_cache_30_minutes\": true,\n    \"open_meteo_endpoint_present\": true,\n    \"open_meteo_attribution_present\": true,\n    \"arrival_area_heading_present\": true,\n    \"normal_ui_has_no_shadow_rank_labels\": true,\n    \"selected_parking_is_primary_heading\": true,\n    \"short_arrival_copy_present\": true,\n    \"weather_visual_selector_fixed\": true,\n    \"result_state_machine_loaded\": true,\n    \"bounded_auto_reselection_8\": true,\n    \"state_machine_tests_pass\": true,\n    \"affected_route_coverage_pass\": true,\n    \"operational_skip_does_not_penalize_preference\": true,\n    \"scripts_loaded_in_safe_order\": true\n  },\n  \"passed\": true,\n  \"boundary\": {\n    \"exactSourceRowsMounted\": 28,\n    \"fullUpstreamRegistryRowsReferenced\": 149,\n    \"remainingRows\": \"canonical display-only fallbacks; no guessed Place ID, coordinates, or driving anchor promotion\",\n    \"browserSmoke\": \"environment-blocked; test retained for GitHub Actions/local execution\"\n  }\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "deepening": 5,
+        "scope": {
+          "overlayDecisionCount": 15,
+          "registryRows": 333,
+          "criticalOperationalAnchors": 28,
+          "canonicalDisplayFallbacks": 305,
+          "walkEndpoints": 11,
+          "unresolvedAnchors": 8,
+          "testVectors": 22
+        },
+        "violations": {
+          "guessedPlaceIds": [],
+          "guessedCoordinates": [],
+          "walkEndpointsDrivingEligible": [],
+          "unresolvedDefaultForMaps": []
+        },
+        "checks": {
+          "overlay_is_non_destructive": true,
+          "overlay_decisions_15": true,
+          "critical_operational_anchors_28": true,
+          "canonical_display_fallbacks_305": true,
+          "no_place_ids_invented": true,
+          "no_coordinates_invented": true,
+          "walk_endpoints_never_driving": true,
+          "unresolved_anchors_not_default_for_maps": true,
+          "source_test_vectors_22": true,
+          "operational_tests_22_pass": true,
+          "hard_gate_hook_runs_before_ranking": true,
+          "walk_endpoint_filtered_from_driving_url": true,
+          "unresolved_maps_are_blocked": true,
+          "operational_kill_switch_present": true,
+          "weather_is_display_only_declared": true,
+          "weather_kill_switch_present": true,
+          "weather_cache_30_minutes": true,
+          "open_meteo_endpoint_present": true,
+          "open_meteo_attribution_present": true,
+          "arrival_area_heading_present": true,
+          "normal_ui_has_no_shadow_rank_labels": true,
+          "selected_parking_is_primary_heading": true,
+          "short_arrival_copy_present": true,
+          "weather_visual_selector_fixed": true,
+          "result_state_machine_loaded": true,
+          "bounded_auto_reselection_8": true,
+          "state_machine_tests_pass": true,
+          "affected_route_coverage_pass": true,
+          "operational_skip_does_not_penalize_preference": true,
+          "scripts_loaded_in_safe_order": true
+        },
+        "passed": true,
+        "boundary": {
+          "exactSourceRowsMounted": 28,
+          "fullUpstreamRegistryRowsReferenced": 149,
+          "remainingRows": "canonical display-only fallbacks; no guessed Place ID, coordinates, or driving anchor promotion",
+          "browserSmoke": "environment-blocked; test retained for GitHub Actions/local execution"
+        }
+      }
+    },
+    {
+      "name": "operational_core",
+      "command": [
+        "node",
+        "tests/operational_core.test.js"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"total\": 22,\n  \"pass\": 22,\n  \"fail\": 0,\n  \"failures\": []\n}",
+      "stderr": "",
+      "parsed": {
+        "total": 22,
+        "pass": 22,
+        "fail": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "result_state_machine",
+      "command": [
+        "node",
+        "tests/result_state_machine.test.js"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"total\": 18,\n  \"pass\": 18,\n  \"fail\": 0\n}",
+      "stderr": "",
+      "parsed": {
+        "total": 18,
+        "pass": 18,
+        "fail": 0
+      }
+    },
+    {
+      "name": "operational_selection",
+      "command": [
+        "node",
+        "tests/operational_selection_integration.test.js"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"totalRoutes\": 501,\n  \"contexts\": [\n    {\n      \"context\": \"weekday-evening\",\n      \"bucket\": \"90\",\n      \"total\": 189,\n      \"ready\": 181,\n      \"blocked\": 8,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"weekday-evening\",\n      \"bucket\": \"120\",\n      \"total\": 282,\n      \"ready\": 262,\n      \"blocked\": 20,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"weekday-evening\",\n      \"bucket\": \"half\",\n      \"total\": 472,\n      \"ready\": 451,\n      \"blocked\": 21,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"late-night\",\n      \"bucket\": \"90\",\n      \"total\": 189,\n      \"ready\": 182,\n      \"blocked\": 7,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"late-night\",\n      \"bucket\": \"120\",\n      \"total\": 282,\n      \"ready\": 266,\n      \"blocked\": 16,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"late-night\",\n      \"bucket\": \"half\",\n      \"total\": 472,\n      \"ready\": 453,\n      \"blocked\": 19,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"holiday-day\",\n      \"bucket\": \"90\",\n      \"total\": 189,\n      \"ready\": 182,\n      \"blocked\": 7,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"holiday-day\",\n      \"bucket\": \"120\",\n      \"total\": 282,\n      \"ready\": 269,\n      \"blocked\": 13,\n      \"pending\": 0\n    },\n    {\n      \"context\": \"holiday-day\",\n      \"bucket\": \"half\",\n      \"total\": 472,\n      \"ready\": 462,\n      \"blocked\": 10,\n      \"pending\": 0\n    }\n  ],\n  \"checks\": {\n    \"allBucketsRetainReadyRoutes\": true,\n    \"readyRoutesHaveMapsUrl\": true,\n    \"walkEndpointsExcludedFromDrivingUrl\": true,\n    \"boundedFallbackAvailable\": true\n  }\n}",
+      "stderr": "",
+      "parsed": {
+        "totalRoutes": 501,
+        "contexts": [
+          {
+            "context": "weekday-evening",
+            "bucket": "90",
+            "total": 189,
+            "ready": 181,
+            "blocked": 8,
+            "pending": 0
+          },
+          {
+            "context": "weekday-evening",
+            "bucket": "120",
+            "total": 282,
+            "ready": 262,
+            "blocked": 20,
+            "pending": 0
+          },
+          {
+            "context": "weekday-evening",
+            "bucket": "half",
+            "total": 472,
+            "ready": 451,
+            "blocked": 21,
+            "pending": 0
+          },
+          {
+            "context": "late-night",
+            "bucket": "90",
+            "total": 189,
+            "ready": 182,
+            "blocked": 7,
+            "pending": 0
+          },
+          {
+            "context": "late-night",
+            "bucket": "120",
+            "total": 282,
+            "ready": 266,
+            "blocked": 16,
+            "pending": 0
+          },
+          {
+            "context": "late-night",
+            "bucket": "half",
+            "total": 472,
+            "ready": 453,
+            "blocked": 19,
+            "pending": 0
+          },
+          {
+            "context": "holiday-day",
+            "bucket": "90",
+            "total": 189,
+            "ready": 182,
+            "blocked": 7,
+            "pending": 0
+          },
+          {
+            "context": "holiday-day",
+            "bucket": "120",
+            "total": 282,
+            "ready": 269,
+            "blocked": 13,
+            "pending": 0
+          },
+          {
+            "context": "holiday-day",
+            "bucket": "half",
+            "total": 472,
+            "ready": 462,
+            "blocked": 10,
+            "pending": 0
+          }
+        ],
+        "checks": {
+          "allBucketsRetainReadyRoutes": true,
+          "readyRoutesHaveMapsUrl": true,
+          "walkEndpointsExcludedFromDrivingUrl": true,
+          "boundedFallbackAvailable": true
+        }
+      }
+    },
+    {
+      "name": "mobile_accessibility",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_mobile_accessibility.py",
+        "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"deepening\": 7,\n  \"target\": [\n    \"iPhone Safari\",\n    \"touch\",\n    \"keyboard\",\n    \"reduced motion\",\n    \"low data\"\n  ],\n  \"checks\": {\n    \"viewport_fit_cover\": true,\n    \"safe_area_css\": true,\n    \"dynamic_viewport_units\": true,\n    \"touch_targets_44px\": true,\n    \"focus_visible\": true,\n    \"skip_link\": true,\n    \"reduced_motion\": true,\n    \"reduced_data\": true,\n    \"radio_semantics\": true,\n    \"dialog_focus_trap\": true,\n    \"dialog_keyboard_safe\": true,\n    \"map_touch_height\": true,\n    \"long_title_wrap\": true,\n    \"no_duplicate_ids\": true,\n    \"about_expanded_state\": true,\n    \"status_live_regions\": true\n  },\n  \"duplicateIds\": [],\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "deepening": 7,
+        "target": [
+          "iPhone Safari",
+          "touch",
+          "keyboard",
+          "reduced motion",
+          "low data"
+        ],
+        "checks": {
+          "viewport_fit_cover": true,
+          "safe_area_css": true,
+          "dynamic_viewport_units": true,
+          "touch_targets_44px": true,
+          "focus_visible": true,
+          "skip_link": true,
+          "reduced_motion": true,
+          "reduced_data": true,
+          "radio_semantics": true,
+          "dialog_focus_trap": true,
+          "dialog_keyboard_safe": true,
+          "map_touch_height": true,
+          "long_title_wrap": true,
+          "no_duplicate_ids": true,
+          "about_expanded_state": true,
+          "status_live_regions": true
+        },
+        "duplicateIds": [],
+        "passed": true
+      }
+    },
+    {
+      "name": "release_documentation",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/audit_release_documentation.py"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"release\": \"v0.11.0-rc1\",\n  \"deepening\": 8,\n  \"required\": [\n    \"README.md\",\n    \"DEPLOYMENT.md\",\n    \"RELEASE_CHECKLIST.md\",\n    \"VALIDATION.md\",\n    \"CHANGELOG.md\",\n    \"docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md\",\n    \"data/integration/source-authority-registry.v0.11.json\"\n  ],\n  \"missing\": [],\n  \"trackCount\": 10,\n  \"checks\": {\n    \"requiredDocumentsPresent\": true,\n    \"allExpectedTracksRecorded\": true,\n    \"canonicalPromotionHeld\": true,\n    \"noSilentPromotionPolicy\": true,\n    \"overlayFirstPolicy\": true\n  },\n  \"passed\": true\n}",
+      "stderr": "",
+      "parsed": {
+        "release": "v0.11.0-rc1",
+        "deepening": 8,
+        "required": [
+          "README.md",
+          "DEPLOYMENT.md",
+          "RELEASE_CHECKLIST.md",
+          "VALIDATION.md",
+          "CHANGELOG.md",
+          "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md",
+          "data/integration/source-authority-registry.v0.11.json"
+        ],
+        "missing": [],
+        "trackCount": 10,
+        "checks": {
+          "requiredDocumentsPresent": true,
+          "allExpectedTracksRecorded": true,
+          "canonicalPromotionHeld": true,
+          "noSilentPromotionPolicy": true,
+          "overlayFirstPolicy": true
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "http_smoke",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/http_smoke.py"
+      ],
+      "returnCode": 0,
+      "stdout": "{\n  \"server\": \"python-http.server\",\n  \"required\": 6,\n  \"passed\": true,\n  \"checks\": [\n    {\n      \"path\": \"index.html\",\n      \"status\": 200,\n      \"bytes\": 2538331,\n      \"contentType\": \"text/html\",\n      \"passed\": true\n    },\n    {\n      \"path\": \"project-cruise.json\",\n      \"status\": 200,\n      \"bytes\": 3300395,\n      \"contentType\": \"application/json\",\n      \"passed\": true\n    },\n    {\n      \"path\": \"assets/css/cruise-v011.css\",\n      \"status\": 200,\n      \"bytes\": 23073,\n      \"contentType\": \"text/css\",\n      \"passed\": true\n    },\n    {\n      \"path\": \"assets/js/cruise-v011.js\",\n      \"status\": 200,\n      \"bytes\": 18148,\n      \"contentType\": \"text/javascript\",\n      \"passed\": true\n    },\n    {\n      \"path\": \"assets/js/arrival/result-state-machine.js\",\n      \"status\": 200,\n      \"bytes\": 5950,\n      \"contentType\": \"text/javascript\",\n      \"passed\": true\n    },\n    {\n      \"path\": \"assets/js/weather/weather-runtime.js\",\n      \"status\": 200,\n      \"bytes\": 10967,\n      \"contentType\": \"text/javascript\",\n      \"passed\": true\n    }\n  ]\n}",
+      "stderr": "",
+      "parsed": {
+        "server": "python-http.server",
+        "required": 6,
+        "passed": true,
+        "checks": [
+          {
+            "path": "index.html",
+            "status": 200,
+            "bytes": 2538331,
+            "contentType": "text/html",
+            "passed": true
+          },
+          {
+            "path": "project-cruise.json",
+            "status": 200,
+            "bytes": 3300395,
+            "contentType": "application/json",
+            "passed": true
+          },
+          {
+            "path": "assets/css/cruise-v011.css",
+            "status": 200,
+            "bytes": 23073,
+            "contentType": "text/css",
+            "passed": true
+          },
+          {
+            "path": "assets/js/cruise-v011.js",
+            "status": 200,
+            "bytes": 18148,
+            "contentType": "text/javascript",
+            "passed": true
+          },
+          {
+            "path": "assets/js/arrival/result-state-machine.js",
+            "status": 200,
+            "bytes": 5950,
+            "contentType": "text/javascript",
+            "passed": true
+          },
+          {
+            "path": "assets/js/weather/weather-runtime.js",
+            "status": 200,
+            "bytes": 10967,
+            "contentType": "text/javascript",
+            "passed": true
+          }
+        ]
+      }
+    }
+  ],
+  "externalPromotionGates": {
+    "exactHeroWebpAssetsImported": false,
+    "githubPagesBrowserSmoke": false,
+    "iphoneSafariManualQA": false
+  },
+  "browserEvidence": {
+    "status": "skipped",
+    "passed": null,
+    "screenshotsPresent": []
+  },
+  "hashes": {
+    "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
+    "visual-qa.html": "0a84f6dbf3a4a19a296227105fce4e335ce8db1978578fd7d15597bc2c25be8b",
+    "project-cruise.json": "cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b",
+    "destinations.json": "ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d",
+    "routes.json": "d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098",
+    "assets/css/cruise-v011.css": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e",
+    "assets/js/cruise-v011.js": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9",
+    "assets/js/arrival/operational-core.js": "0429f220c6f4df4ba33289779412ca29e20dcacd11671b80d0da0675bcf19007",
+    "assets/js/arrival/result-state-machine.js": "0de3dc0de4da412f6d4c1238fde34a084ef4c7fba027e6c3bb7f7c11db936706",
+    "assets/js/arrival/arrival-runtime.js": "e5b4ce368158b2ecb16643fce353bdc9bb439101b70332d9db57f81816a89685",
+    "assets/js/weather/weather-runtime.js": "008b86d6ddc750d5ed6db47aec8368a834c0fc214dfd54af1b79e086869bb378",
+    "integration-manifest.json": "90deba99b537850666fd81dc09492e6a12c9228a0f332ee8a23a9d63b7f74dcf",
+    "package.json": "4f2895262a1495a2caf8fa2ae82a6657b1705e09282d0082551dd6aefb3db929",
+    ".github/workflows/validate.yml": "5bc714b5025dc10aec0d5a551bc51aef09437e1a7e1455babf9427fa2ff9c28c",
+    "scripts/audit_hero_assets.py": "1008ac1160f818c9eddeea05661c9a67ece11a53f30ed6c000b17fe11ca937b8",
+    "scripts/generate_release_qa_report.py": "0f1e382236577cd005bf0a04b5190de73a6c6658b71297b8d1cbd6f053fa1e6b",
+    "tests/visual_qa_contract.py": "09ca6f27fefb8d578a021fd3bb122ab55e2a40ffc15672fa42af19f2231e8b1a",
+    "records/iphone-safari-qa.template.json": "dc7dcceca0c671e894d1e5bf809d35d0bde8c3dae831f6c0c4a120fde9475caa",
+    "docs/integration/06_RELEASE_REPRODUCIBILITY_AND_CI.md": "e008d3a01121e455b7db840f935626dc1830a9770fa21fe3d1a518cf5a200291",
+    "docs/integration/07_IPHONE_SAFARI_ACCESSIBILITY_PERFORMANCE.md": "a27156207c21e8ec286f81f8c07f340eecc1273d8ef2776de28ba7277dffc46b",
+    "docs/integration/08_CROSS_CHAT_RECONCILIATION_AND_RELEASE_HANDOFF.md": "1ff24897d742cb8689e0734350dee39403bd70b78f7628a5907fb910c3792c5e",
+    "docs/integration/09_VISUAL_QA_ASSET_ACCEPTANCE_AND_FINAL_REPORT.md": "3fbc191562854c316365270fa101c9fded4cc621442f743c52e98bda82c1ec19",
+    "DEPLOYMENT.md": "46eae2cef0666d2a98a1a994ffd864d3bac70f79896672ba310a716a34803a43",
+    "RELEASE_CHECKLIST.md": "2968336d5a342324842a18332b35f26690dbbe764a56ed1ad120d97c36e90f1f",
+    "CHANGELOG.md": "34c59118ca46cf62bbd230814ff3df3787ba18daed586c507bc9edb6f76bd0f2",
+    "data/integration/source-authority-registry.v0.11.json": "a8ca663508445374dd2f268bd913ad0327eafd2c2caacf69ea0ecc1bc26cbfd4"
+  },
+  "interpretation": {
+    "automatedPassed": "The repository is internally reproducible and all mounted-data tests pass.",
+    "promotionReady": "False until exact upstream Hero WebP assets, a non-skipped deployed/browser smoke, and signed iPhone Safari manual QA are complete."
+  }
+}

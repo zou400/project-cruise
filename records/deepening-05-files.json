@@ -1,0 +1,55 @@
+{
+  "deepening": 5,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2537335,
+      "sha256": "fa7459226eb012e18336f92287153d90554b618c28391fae46b1b8cf59175379"
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "bytes": 13061,
+      "sha256": "797127b253fb068928ba94245bcc429d515a553da8eedee9efb87685df1dc3c6"
+    },
+    {
+      "path": "assets/js/arrival/result-state-machine.js",
+      "bytes": 5950,
+      "sha256": "0de3dc0de4da412f6d4c1238fde34a084ef4c7fba027e6c3bb7f7c11db936706"
+    },
+    {
+      "path": "assets/js/arrival/arrival-runtime.js",
+      "bytes": 12520,
+      "sha256": "e5b4ce368158b2ecb16643fce353bdc9bb439101b70332d9db57f81816a89685"
+    },
+    {
+      "path": "tests/result_state_machine.test.js",
+      "bytes": 2130,
+      "sha256": "410a6f6c16b214cf722c875651a59a9200d3ab626970307d2a38c0c476414e7c"
+    },
+    {
+      "path": "tests/operational_selection_integration.test.js",
+      "bytes": 3850,
+      "sha256": "aacecdec3c33766b49674c6517fb170c62b3df055d9c483fbd5958e458d4911a"
+    },
+    {
+      "path": "records/result-state-machine-test.json",
+      "bytes": 45,
+      "sha256": "bf603a28458abc8eaf06894e890bcd5306e2a6be94098e230c20bf0f86efde3a"
+    },
+    {
+      "path": "records/operational-selection-matrix.json",
+      "bytes": 1565,
+      "sha256": "4086ced7d95dc38b80fc39bd4f6c973c1695a725b86848fb56d59719ca1c5667"
+    },
+    {
+      "path": "docs/integration/05_OPERATIONAL_RESULT_STATE_MACHINE.md",
+      "bytes": 2239,
+      "sha256": "923d77c78405a68795ef71c15d5f5f73a8c73841ff578fb85d520bdfcb7b5c35"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 8734,
+      "sha256": "a58929ed86a6a66e85180e150701eb8bb50281d778e132851dace5b0b322883c"
+    }
+  ]
+}

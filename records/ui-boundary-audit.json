@@ -1,0 +1,42 @@
+{
+  "release": "v0.11.0-rc1",
+  "deepening": "2/10",
+  "canonicalCore": {
+    "dataOwner": "inline PROJECT_CRUISE_CONFIG / DESTINATIONS / ROUTES",
+    "engineFunctionsObserved": 94,
+    "criticalFunctions": [
+      "eligiblePool",
+      "chooseDestinationCandidate",
+      "chooseRouteVariant",
+      "draw",
+      "show",
+      "buildGoogleMapsUrl",
+      "renderMap",
+      "recordAcceptance",
+      "recordTripOutcome",
+      "saveIssueReport"
+    ],
+    "mustRemainOwnedByCore": [
+      "selection",
+      "learning",
+      "reroll",
+      "Google Maps handoff",
+      "return feedback",
+      "issue reporting"
+    ]
+  },
+  "presentationOverlay": {
+    "css": "assets/css/cruise-v011.css",
+    "javascript": "assets/js/cruise-v011.js",
+    "newEvents": ["pc:route-shown", "pc:route-estimate"],
+    "rollback": "?pcUi=classic",
+    "visualFallback": "CSS cinematic scene"
+  },
+  "decisions": [
+    "Do not rewrite the canonical selection engine for a visual refresh.",
+    "Keep canonical DOM ids stable.",
+    "Use CustomEvents as the integration boundary.",
+    "Visual, weather and operational layers must fail open without blocking Maps handoff.",
+    "Hide development tags instead of deleting their source values."
+  ]
+}

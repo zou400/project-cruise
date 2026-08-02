@@ -1,0 +1,83 @@
+{
+  "totalRoutes": 501,
+  "contexts": [
+    {
+      "context": "weekday-evening",
+      "bucket": "90",
+      "total": 189,
+      "ready": 181,
+      "blocked": 8,
+      "pending": 0
+    },
+    {
+      "context": "weekday-evening",
+      "bucket": "120",
+      "total": 282,
+      "ready": 262,
+      "blocked": 20,
+      "pending": 0
+    },
+    {
+      "context": "weekday-evening",
+      "bucket": "half",
+      "total": 472,
+      "ready": 451,
+      "blocked": 21,
+      "pending": 0
+    },
+    {
+      "context": "late-night",
+      "bucket": "90",
+      "total": 189,
+      "ready": 182,
+      "blocked": 7,
+      "pending": 0
+    },
+    {
+      "context": "late-night",
+      "bucket": "120",
+      "total": 282,
+      "ready": 266,
+      "blocked": 16,
+      "pending": 0
+    },
+    {
+      "context": "late-night",
+      "bucket": "half",
+      "total": 472,
+      "ready": 453,
+      "blocked": 19,
+      "pending": 0
+    },
+    {
+      "context": "holiday-day",
+      "bucket": "90",
+      "total": 189,
+      "ready": 182,
+      "blocked": 7,
+      "pending": 0
+    },
+    {
+      "context": "holiday-day",
+      "bucket": "120",
+      "total": 282,
+      "ready": 269,
+      "blocked": 13,
+      "pending": 0
+    },
+    {
+      "context": "holiday-day",
+      "bucket": "half",
+      "total": 472,
+      "ready": 462,
+      "blocked": 10,
+      "pending": 0
+    }
+  ],
+  "checks": {
+    "allBucketsRetainReadyRoutes": true,
+    "readyRoutesHaveMapsUrl": true,
+    "walkEndpointsExcludedFromDrivingUrl": true,
+    "boundedFallbackAvailable": true
+  }
+}

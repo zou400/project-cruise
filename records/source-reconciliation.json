@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "1.0",
+  "release": "v0.11.0-rc1",
+  "generatedAt": "2026-08-02T16:20:00+09:00",
+  "policy": {
+    "canonicalBaseImmutable": true,
+    "overlayFirst": true,
+    "noSilentPromotion": true,
+    "sourcePriority": [
+      "canonical-bytes",
+      "verified-upstream-bytes",
+      "verified-handoff-contract",
+      "local-implementation-evidence",
+      "design-only-reference"
+    ],
+    "rule": "A cross-chat idea is not production data until its exact bytes, schema, and acceptance evidence are mounted and audited."
+  },
+  "tracks": [
+    {
+      "id": "canonical-v0.10.0",
+      "authority": "canonical-bytes",
+      "status": "adopted-immutable",
+      "basis": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
+      "sha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e",
+      "mounted": true,
+      "scope": [
+        "320 destinations",
+        "181 canonical routes",
+        "320 direct candidates",
+        "501 selectable results",
+        "legacy learning keys"
+      ]
+    },
+    {
+      "id": "cinematic-ui",
+      "authority": "verified-handoff-contract",
+      "status": "adopted-refactored",
+      "basis": [
+        "Cinematic Alpha v0.10.1",
+        "current UI review PDF",
+        "v0.11 local implementation"
+      ],
+      "mounted": true,
+      "scope": [
+        "compressed input panel",
+        "cinematic stage",
+        "destination reveal",
+        "tag removal",
+        "iPhone Safari hardening"
+      ]
+    },
+    {
+      "id": "visual-library-30",
+      "authority": "verified-handoff-contract",
+      "status": "contract-adopted-assets-gated",
+      "basis": "Project Cruise Visual Library 30 RC1",
+      "mounted": false,
+      "expected": {
+        "count": 30,
+        "format": "WebP",
+        "size": "1440x810"
+      },
+      "implemented": [
+        "catalog contract",
+        "category/time selection",
+        "pcHeroHistoryV1",
+        "体験イメージ disclosure",
+        "CSS fallback"
+      ],
+      "blockingGap": "Exact upstream 30 WebP bytes are not mounted in this build."
+    },
+    {
+      "id": "hero-precision-v1",
+      "authority": "verified-upstream-data-contract",
+      "status": "data-runtime-adopted-assets-gated",
+      "basis": "Hero Precision v0.10.4-rc3 / Patch v1",
+      "mounted": true,
+      "sourceHashes": {
+        "fullPackage": "7cd1f52c2641bd23eef6b80a7d59d45c1860546d57fea27707f20602a297e3a0",
+        "patch": "4a026b882325eb55dded3869269c1c143110437156b111c34c4abe5878c19ac3"
+      },
+      "scope": [
+        "320 destination profiles",
+        "501 route affinities",
+        "12,024 selection matrix"
+      ],
+      "blockingGap": "Exact visual asset bytes remain external."
+    },
+    {
+      "id": "weather-arrival-display",
+      "authority": "local-implementation-evidence",
+      "status": "adopted-display-only",
+      "basis": [
+        "Weather Narrative v0.2.0",
+        "Weather source authority policy",
+        "Open-Meteo runtime adapter"
+      ],
+      "mounted": true,
+      "scope": [
+        "arrival-time forecast",
+        "30 minute cache",
+        "source attribution",
+        "deterministic local narrative",
+        "graceful failure"
+      ],
+      "prohibited": [
+        "ranking writes",
+        "learning writes",
+        "official warning blocking",
+        "invented numeric facts"
+      ]
+    },
+    {
+      "id": "official-weather-alerts",
+      "authority": "design-only-reference",
+      "status": "deferred",
+      "basis": "Official Alert Source Authority v0.7.0",
+      "mounted": false,
+      "reason": "Current authority is display_only/advisory_only; official blocking prerequisites and explicit approval are not complete."
+    },
+    {
+      "id": "spot-operational-v0.11-u1b",
+      "authority": "verified-upstream-data-contract",
+      "status": "partially-adopted",
+      "basis": [
+        "IMPLEMENTATION_START_HERE_v0.11",
+        "U1-B overlay/test vectors"
+      ],
+      "mounted": true,
+      "scope": [
+        "15 decisions",
+        "28 critical anchors",
+        "22 acceptance vectors",
+        "hard gates before scoring",
+        "walking endpoint separation"
+      ],
+      "blockingGap": "Full exact 149-anchor upstream registry bytes are not mounted."
+    },
+    {
+      "id": "spot-operational-v0.6-wave2",
+      "authority": "verified-handoff-contract",
+      "status": "deferred-exact-byte-import",
+      "basis": "Spot Work Handoff v0.6",
+      "mounted": false,
+      "scope": [
+        "multi-anchor by spotEntityKey",
+        "D062/D063 expressway topology",
+        "live signal TTL",
+        "57 route URL rebuild"
+      ],
+      "reason": "The handoff contract is known, but its exact listed JSON inputs are not mounted here. No synthetic replacement was created."
+    },
+    {
+      "id": "recommendation-learning-engine",
+      "authority": "canonical-bytes",
+      "status": "preserved-no-newer-byte-promotion",
+      "basis": "v0.10.0 canonical behavior",
+      "mounted": true,
+      "scope": [
+        "Context Engine",
+        "reroll/local learning",
+        "return feedback",
+        "legacy localStorage compatibility"
+      ],
+      "reason": "No exact newer recommendation-engine artifact was found/mounted during this reconciliation; canonical behavior remains authoritative."
+    },
+    {
+      "id": "qa-release-evidence",
+      "authority": "local-implementation-evidence",
+      "status": "automated-pass-manual-gates-open",
+      "mounted": true,
+      "scope": [
+        "canonical audit",
+        "UI contract",
+        "Hero matrix",
+        "operational tests",
+        "selection matrix",
+        "mobile static audit",
+        "HTTP smoke"
+      ],
+      "manualGates": [
+        "GitHub Pages browser smoke",
+        "iPhone Safari real-device QA",
+        "exact Hero asset visual QA"
+      ]
+    }
+  ],
+  "promotionDecision": {
+    "automatedIntegration": "PASS",
+    "canonicalPromotion": "HOLD",
+    "reason": [
+      "exact Hero assets missing",
+      "GitHub Pages browser smoke pending",
+      "iPhone Safari manual QA pending"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "release": "v0.11.0-rc1-build",
+  "root": "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1",
+  "counts": {
+    "destinations": 320,
+    "canonicalRoutes": 181,
+    "directCandidates": 320,
+    "selectableResults": 501
+  },
+  "checks": {
+    "destinations_320": true,
+    "canonical_routes_181": true,
+    "direct_candidates_320": true,
+    "selectable_results_501": true,
+    "destination_ids_unique": true,
+    "canonical_route_ids_unique": true,
+    "candidate_ids_unique": true,
+    "master_destinations_match": true,
+    "master_routes_match": true,
+    "legacy_profile_key_present": true,
+    "legacy_route_stats_key_present": true,
+    "maps_handoff_present": true,
+    "return_feedback_present": true,
+    "issue_report_present": true,
+    "leaflet_script_present": true,
+    "canonical_data_script_present": true,
+    "canonical_engine_script_present": true,
+    "ui_overlay_script_present": true
+  },
+  "hashes": {
+    "index.html": "fa7459226eb012e18336f92287153d90554b618c28391fae46b1b8cf59175379",
+    "destinations.json": "ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d",
+    "routes.json": "d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098",
+    "project-cruise.json": "cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b"
+  },
+  "passed": true
+}
