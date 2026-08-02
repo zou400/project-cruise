@@ -2,7 +2,7 @@
 
 ## 目的
 
-v0.11.0-rc1をiPhone Safariで「10秒で一本を決める」操作に耐えるようにし、Coreの501結果・学習・Maps遷移へ触れずPresentation Overlayだけを硬化する。
+v0.11.0-rc3をiPhone Safariで「10秒で一本を決める」操作に耐えるようにし、Coreの501結果・学習・Maps遷移へ触れずPresentation Overlayだけを硬化する。
 
 ## 実装
 

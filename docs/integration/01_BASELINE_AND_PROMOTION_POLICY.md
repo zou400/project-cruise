@@ -1,8 +1,8 @@
-# Project Cruise v0.11.0-rc1 — Baseline and Promotion Policy
+# Project Cruise v0.11.0-rc3 — Baseline and Promotion Policy
 
 ## Decision
 
-The final GitHub test package will be built as **v0.11.0-rc1**.
+The final GitHub test package will be built as **v0.11.0-rc3**.
 
 This version number intentionally separates the integrated release candidate from the fragmented v0.10.1–v0.10.4 experiments. The canonical data baseline remains v0.10.0 until the RC passes all gates.
 
@@ -27,7 +27,7 @@ This gives the test build two safety switches:
 ## Promotion ladder
 
 1. `canonical-v0.10.0`: trusted data and behavior baseline.
-2. `integration-v0.11.0-rc1`: GitHub Pages test candidate.
+2. `integration-v0.11.0-rc3`: GitHub Pages test candidate.
 3. `integration-v0.11.0`: only after automated regression and iPhone Safari manual QA.
 4. canonical promotion: only after the user accepts the tested build.
 

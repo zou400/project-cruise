@@ -1,13 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "release": {
-    "name": "Project Cruise GitHub Integration",
-    "version": "v0.11.0-rc1",
-    "status": "github-publish-candidate-10-of-10",
-    "generatedAt": "2026-08-02T16:06:00+09:00",
-    "canonicalBase": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
-    "canonicalZipSha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e"
-  },
+  "release": "v0.11.0-rc3",
   "immutableBaseline": {
     "destinations": 320,
     "canonicalRoutes": 181,
@@ -202,7 +195,7 @@
     "githubPagesWorkflow": ".github/workflows/deploy-pages.yml",
     "publishNowGuide": "GITHUB_PUBLISH_NOW.md",
     "rollbackGuide": "ROLLBACK.md",
-    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc1.md"
+    "releaseNotes": "RELEASE_NOTES_v0.11.0-rc3.md"
   },
   "integrationEvents": {
     "pc:route-shown": "route and destination are available before asynchronous map estimation",
@@ -225,5 +218,10 @@
   "deepening": 10,
   "tracks": [
     "final-github-publish-package-handoff"
-  ]
+  ],
+  "exactHeroAssets": {
+    "count": 30,
+    "status": "integrated",
+    "sourcePackageSha256": "99de29368ebe6cdadfccf1bd59592663cfe5ef007b5b44a132884a87913af019"
+  }
 }

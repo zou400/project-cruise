@@ -1,0 +1,100 @@
+name: Validate Project Cruise RC
+
+on:
+  push:
+    branches: [ main, master, "release/**", "feature/**" ]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      require_hero_assets:
+        description: "Fail unless all 30 exact Hero WebP assets are present"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: JavaScript, operational, mobile, docs and visual-contract tests
+        run: npm test
+
+      - name: Strict Hero asset acceptance when requested
+        if: ${{ inputs.require_hero_assets == true }}
+        run: python3 scripts/audit_hero_assets.py --require-complete
+
+      - name: Release-candidate audit
+        run: python3 scripts/audit_release_candidate.py
+
+      - name: Generate final QA report
+        run: python3 scripts/generate_release_qa_report.py
+
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-cruise-validation
+          path: |
+            records/*.json
+            records/*.txt
+            FINAL_QA_REPORT.md
+            DEPLOYMENT.md
+            RELEASE_CHECKLIST.md
+            CHANGELOG.md
+            data/integration/source-authority-registry.v0.11.json
+          if-no-files-found: error
+
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    needs: validate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install CDP client dependencies
+        run: python3 -m pip install --disable-pip-version-check requests websocket-client
+
+      - name: Run real-browser smoke and capture desktop/mobile evidence
+        run: python3 tests/browser_smoke_cdp.py
+
+      - name: Reject skipped browser evidence on GitHub runner
+        run: |
+          python3 - <<'PY'
+          import json
+          r=json.load(open('records/browser-smoke.json',encoding='utf-8'))
+          if r.get('passed') is not True:
+              raise SystemExit('Browser smoke did not pass: '+json.dumps(r,ensure_ascii=False))
+          PY
+
+      - name: Upload browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-cruise-browser-smoke
+          path: |
+            records/browser-smoke.json
+            records/ui-smoke-*.png
+          if-no-files-found: error

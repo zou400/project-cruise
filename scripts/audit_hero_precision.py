@@ -60,15 +60,17 @@ def main():
       'selection_matrix_12024':cases==12024,
       'selection_matrix_zero_failures':not matrix_failures,
       'javascript_syntax':all(x['passed'] for x in syntax.values()),
-      'exact_asset_policy_no_regeneration':len(exact_assets)==0,
+      'exact_assets_30_present':len(exact_assets)==30,
+      'exact_assets_match_catalog':{p.name for p in exact_assets}=={Path(e['assetPath']).name for e in catalog['entries']},
+      'catalog_assets_verified':all(e.get('availability')=='verified' for e in catalog['entries']),
       'hero_precision_scripts_loaded':'assets/js/hero/hero-precision-data.js' in (ROOT/'index.html').read_text(encoding='utf-8') and 'assets/js/hero/hero-precision-runtime.js' in (ROOT/'index.html').read_text(encoding='utf-8'),
       'visual_kill_switch_preserved':'pcVisual' in (ROOT/'assets/js/cruise-v011.js').read_text(encoding='utf-8'),
       'visual_history_key_preserved':'pcHeroHistoryV1' in (ROOT/'assets/js/hero/hero-precision-runtime.js').read_text(encoding='utf-8')
     }
     report={
-      'release':'v0.11.0-rc1',
+      'release':'v0.11.0-rc3',
       'track':'hero-precision-v1-compatible-integration',
-      'externalPackageStatus':'exact ZIP/WebP bytes pending; no replacement images generated',
+      'externalPackageStatus':'exact 30 WebP assets imported and source-map verified; no regeneration performed',
       'counts':{
         'catalogImages':len(catalog['entries']),
         'exactWebpAssetsPresent':len(exact_assets),

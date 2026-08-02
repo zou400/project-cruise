@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc1 — GitHub Integration Candidate
+# Project Cruise v0.11.0-rc3 — GitHub Integration Candidate
 
 ## GitHubへ今すぐ公開する場合
 
@@ -7,7 +7,7 @@
 3. Settings → Pagesで **GitHub Actions** を選ぶ。
 4. Actionsの検証とデプロイ完了後、公開URLをiPhone Safariで確認する。
 
-> この版は公開テスト可能なRCです。正確なHero WebP 30枚と実機QAが未完了のため、v0.10.0に代わる正本昇格はHOLDです。
+> この版は公開テスト可能なRCです。正確なHero WebP 30枚は統合済み。GitHub PagesとiPhone Safariの実機QAが未完了のため、v0.10.0に代わる正本昇格はHOLDです。
 
 > **Status:** automated integration PASS / canonical promotion HOLD.  
 > **Canonical base:** v0.10.0 — 320 destinations, 181 canonical routes, 501 selectable results.
@@ -27,10 +27,10 @@ Then open `http://localhost:8080/`.
 ## GitHub test order
 
 1. Read `DEPLOYMENT.md`.
-2. Push to `release/v0.11.0-rc1`.
+2. Push to `release/v0.11.0-rc3`.
 3. Confirm the GitHub Actions validation passes.
 4. Complete `RELEASE_CHECKLIST.md` on the deployed HTTPS URL and iPhone Safari.
-5. Keep status at **HOLD** until the exact 30 Hero WebP files and both manual browser gates are complete.
+5. Keep status at **HOLD** until the both deployed browser gates are complete.
 
 ## Source and release truth
 

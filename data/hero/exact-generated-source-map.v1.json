@@ -1,0 +1,825 @@
+{
+  "packageVersion": "Project_Cruise_Exact_Generated_Hero_30_v1",
+  "status": "handoff_source_pack_non_canonical",
+  "imageCount": 30,
+  "purpose": "前回生成画像を再生成せず、そのまま正確に引き渡す",
+  "originalsAreIncluded": true,
+  "productionOverlayIncluded": true,
+  "disclosure": "体験イメージ",
+  "images": [
+    {
+      "order": 1,
+      "id": "airport_night_01",
+      "originalStoredAs": "01_original_png/01_airport_night_01__ORIGINAL.png",
+      "originalFilename": "夜空を降下する旅客機と水辺の車.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "162fff8773ba7ee524dc4877ce8e10c555c579c0d572af81bb3f3bed693f42b8",
+      "githubWebp": "02_github_overlay/assets/hero/airport_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "ad4a9c09a908a0679684c22a61e94e81cce27561e8bc197cd2e1314dd282a72a",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 2,
+      "id": "airport_twilight_01",
+      "originalStoredAs": "01_original_png/02_airport_twilight_01__ORIGINAL.png",
+      "originalFilename": "夕暮れの空港と着陸機.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "2286f1ea95fb86a30b37cb2b677d1b59cbd7382ca5e0f0c2428261d3c41384c0",
+      "githubWebp": "02_github_overlay/assets/hero/airport_twilight_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "91ca984f31923e2793e9b9efd77ab3d99ddff722fd0cfceedca6880b833f592e",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 3,
+      "id": "airport_twilight_02",
+      "originalStoredAs": "01_original_png/03_airport_twilight_02__ORIGINAL.png",
+      "originalFilename": "夕暮れの空港と着陸機_海辺のスポーツカー.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "2b98e921323df53e8b3fab21b7d30c98378fdf54dd73ca3296a70bc4e7ff98a5",
+      "githubWebp": "02_github_overlay/assets/hero/airport_twilight_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "f2c0230c60fa590f6a0558c4f64d812684399501dae5623780e44a82be7d8285",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 53%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 4,
+      "id": "airport_twilight_03",
+      "originalStoredAs": "01_original_png/04_airport_twilight_03__ORIGINAL.png",
+      "originalFilename": "夕暮れの港を走る飛行機と車.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "f8f6a200ecaa10e9ad7d8c177d6bf0e3cb07ba40fe0a475dc5baac25998e04f6",
+      "githubWebp": "02_github_overlay/assets/hero/airport_twilight_03.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "67dac5f31bed14c1d9a95fee67f28a87547f21eba6c326d0486ec4871a9d0cfc",
+      "categories": [
+        "airport",
+        "industrial"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 5,
+      "id": "city_night_01",
+      "originalStoredAs": "01_original_png/05_city_night_01__ORIGINAL.png",
+      "originalFilename": "濡れた夜景と輝くタワー.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "3452550f5a2629b43addf3310e5c96ee664cca2e79f80f0dc1a92de246be4239",
+      "githubWebp": "02_github_overlay/assets/hero/city_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "53ffea557569879e81cfd3c73ceb8d88e68adafae96e39220d515eb42178db36",
+      "categories": [
+        "city",
+        "culture"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 6,
+      "id": "culture_night_01",
+      "originalStoredAs": "01_original_png/06_culture_night_01__ORIGINAL.png",
+      "originalFilename": "夜の近代建築と赤いテールライト.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "e769d0adc5a40e4effbe7ef033b253d7bdc31c1c3af73bc78d036ca278d255b6",
+      "githubWebp": "02_github_overlay/assets/hero/culture_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "f3b9dc2575f6c45188dabaeabbe26547192d374a497cc2f56c1150526f7e10be",
+      "categories": [
+        "culture",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 7,
+      "id": "industrial_night_01",
+      "originalStoredAs": "01_original_png/07_industrial_night_01__ORIGINAL.png",
+      "originalFilename": "夜の港湾工業地帯と黒いセダン.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "2212f62bab1ef2f5661c6769469e9840e7c5be7b1316b1a9fd87c853ddd36c62",
+      "githubWebp": "02_github_overlay/assets/hero/industrial_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "d8ca1966747f0bb9f7cd3a5d60ae85c39d5a749a75605ab8bda4eb2f30dcd49d",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 8,
+      "id": "pa_day_01",
+      "originalStoredAs": "01_original_png/08_pa_day_01__ORIGINAL.png",
+      "originalFilename": "都会の高架道路と駐車場.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "1bce73dfde02ba1605b134a4afd8c4c17060b85dbdc70712d0a282cf5087313a",
+      "githubWebp": "02_github_overlay/assets/hero/pa_day_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "59c27a1a0ff0b6359dabdf9c724d4a218e52d1a60500dee3dd0688cbe4121be9",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 55%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 9,
+      "id": "pa_day_02",
+      "originalStoredAs": "01_original_png/09_pa_day_02__ORIGINAL.png",
+      "originalFilename": "高架道路と都市駐車場.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "a5a05007511568053e2baa1cfcf3b1bccfbefa11cab7871fb7c48ed88f12d5ec",
+      "githubWebp": "02_github_overlay/assets/hero/pa_day_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "8f1f799b4b999289f1e5cda6f2ae40c57733dbc913fbd6e967045be7396da3bf",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 53%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 10,
+      "id": "pa_day_03",
+      "originalStoredAs": "01_original_png/10_pa_day_03__ORIGINAL.png",
+      "originalFilename": "高架下から望む都市の車道と高層ビル.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "1989fcf946a454370afdd32b966a10aa7e8951260a022c86c95a1f31f1531b0e",
+      "githubWebp": "02_github_overlay/assets/hero/pa_day_03.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "e1d63503dd639eeed774b9e0d647e67fa815ef317213f9a4db2cae320a798422",
+      "categories": [
+        "pa",
+        "city"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 54%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 11,
+      "id": "pa_night_01",
+      "originalStoredAs": "01_original_png/11_pa_night_01__ORIGINAL.png",
+      "originalFilename": "imagegen.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "4b4083a87029c094446aa6e28de517888ba762be5a8dd201898dd7bc3c4fc7c5",
+      "githubWebp": "02_github_overlay/assets/hero/pa_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "c08142d1cb53025b3112b9710c865f00b5a84e5062e761d857da8c87739ac5e6",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 54%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 12,
+      "id": "pa_night_02",
+      "originalStoredAs": "01_original_png/12_pa_night_02__ORIGINAL.png",
+      "originalFilename": "雨夜高架下の都市駐車場.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "39085ae964c1e372cbd552aa565bf28dcbdcb26ac0bff7c70d3f246731990f79",
+      "githubWebp": "02_github_overlay/assets/hero/pa_night_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "79fc046110a1771320eadc2fd5bcef2a7aa5f9e747bc14d5855d0a01a15f360b",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 56%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 13,
+      "id": "pa_night_03",
+      "originalStoredAs": "01_original_png/13_pa_night_03__ORIGINAL.png",
+      "originalFilename": "高速道路下の雨夜_濡れた路面と赤いテールライト.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "74de78ac4a5df49e2885b9df8ee4443e90bbd48489d1c1f698157d18bc8e9605",
+      "githubWebp": "02_github_overlay/assets/hero/pa_night_03.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "01192314d85d08d5bd11e992835b23fab80c628ffbe2d70469538b7285ce8b48",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 58%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 14,
+      "id": "pa_night_04",
+      "originalStoredAs": "01_original_png/14_pa_night_04__ORIGINAL.png",
+      "originalFilename": "濡れた高架下の夜景.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "f89e769105c65f112362351a1a1ee588a8f01abf5068113678c21ee085ec8e4f",
+      "githubWebp": "02_github_overlay/assets/hero/pa_night_04.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "40b0e2d6741c9effafa084239a1fe1057eb2483e3dfb07997855cad41146b876",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 55%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 15,
+      "id": "pa_twilight_01",
+      "originalStoredAs": "01_original_png/15_pa_twilight_01__ORIGINAL.png",
+      "originalFilename": "夕暮れの都市高架と駐車場.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "5f6b4b46e8dd13f30dabf6502a5d01be56baeba2a3e44f7c2ebf1fc9ddd56d9b",
+      "githubWebp": "02_github_overlay/assets/hero/pa_twilight_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "da22c2f72a7b52c48c1bf840e3d9815c0bac489d04a21ed6fe5432b1145f1a52",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 16,
+      "id": "pa_twilight_02",
+      "originalStoredAs": "01_original_png/16_pa_twilight_02__ORIGINAL.png",
+      "originalFilename": "夕暮れの高架下_静かな駐車場.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "1ef4dabbea1c3754ee1ae38efc5d22ef81d86b0287607f9368c417e23f367e13",
+      "githubWebp": "02_github_overlay/assets/hero/pa_twilight_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "0bdc5125bcf4b0054c1bd7e1d60acc800f219360d559b053a4c1e09258e2c425",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 17,
+      "id": "pa_twilight_03",
+      "originalStoredAs": "01_original_png/17_pa_twilight_03__ORIGINAL.png",
+      "originalFilename": "夕暮れの湾岸高架と街並み.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "2f1934e6053e69e9cdc0a8c52bc6c2bd0ddbf4ab1e708c97c20c13e307bc5226",
+      "githubWebp": "02_github_overlay/assets/hero/pa_twilight_03.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "ff1ebc9619d3df06cf2264e279acaf069a59399e468c635e1ca401ff5446c0d2",
+      "categories": [
+        "pa",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 18,
+      "id": "park_day_01",
+      "originalStoredAs": "01_original_png/18_park_day_01__ORIGINAL.png",
+      "originalFilename": "公園の小道と都会の高層ビル.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "3c9d3f6cf6cdf5150a32ecec83a5de114caad781eaf8dd927df903a565b905b3",
+      "githubWebp": "02_github_overlay/assets/hero/park_day_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "3e2a9cb114849484934a13b00e071c750ccd8f4d145c50ce8d59d85afbd3b32e",
+      "categories": [
+        "park",
+        "city"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 48%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 19,
+      "id": "park_morning_01",
+      "originalStoredAs": "01_original_png/19_park_morning_01__ORIGINAL.png",
+      "originalFilename": "公園の小道と木漏れ日の朝.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "d7b574e1a53b966e8fa2500864261cff170dd197a62727ddfbb0191342afad4e",
+      "githubWebp": "02_github_overlay/assets/hero/park_morning_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "1ba829df0115e3d451a54c9fb5eda24a44a704ffcb99749bfbba62a00545bdc1",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 20,
+      "id": "park_night_01",
+      "originalStoredAs": "01_original_png/20_park_night_01__ORIGINAL.png",
+      "originalFilename": "夜景を望む公園と車.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "422d5151023469c8cdc453ab0ec3f50d81dc1abb18dc387189b6ece5e341a304",
+      "githubWebp": "02_github_overlay/assets/hero/park_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "4ef6cb6a259c15a146169b0292e12bb29d2f6705808ac73c07f033d2ab52124d",
+      "categories": [
+        "park",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 21,
+      "id": "park_night_02",
+      "originalStoredAs": "01_original_png/21_park_night_02__ORIGINAL.png",
+      "originalFilename": "夜景を望む静かな展望テラス.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "53356bd64a295c76e611fbda43aa1bf2eedf62ac4120769c484a504ea2df00bb",
+      "githubWebp": "02_github_overlay/assets/hero/park_night_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "76181ff0db08ec7fb10fd784b3cebf0de6a7e50a15ec1a8f6a69f2e7264546d7",
+      "categories": [
+        "park",
+        "city",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 49%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 22,
+      "id": "park_rain_01",
+      "originalStoredAs": "01_original_png/22_park_rain_01__ORIGINAL.png",
+      "originalFilename": "雨上がりの緑陰に輝く公園の小道.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "6f92d8bdcbb8f2ffbc5364ac9b18da510bb2d176ce513156d9932c04785c4839",
+      "githubWebp": "02_github_overlay/assets/hero/park_rain_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "fc563a79417c366bfcd6646979f2f386c4dfaddd7d3df35a78881dbe08970335",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 53%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 23,
+      "id": "park_rain_02",
+      "originalStoredAs": "01_original_png/23_park_rain_02__ORIGINAL.png",
+      "originalFilename": "雨上がりの静かな公園散歩道.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "c034ac719fb1bb435958b6cdfc47c14da141d26c00868f3673d42fecbf15e79b",
+      "githubWebp": "02_github_overlay/assets/hero/park_rain_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "0c6d77de7b98a42dbd48fcffefc676aa0084c14fc54738570a72b6548ef5271e",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 52%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 24,
+      "id": "park_water_01",
+      "originalStoredAs": "01_original_png/24_park_water_01__ORIGINAL.png",
+      "originalFilename": "水辺の遊歩道と橋のある公園.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "39d6a636f564376515743b0d134efef2ae7ac453397aa4e6fc66cadc1a7e6728",
+      "githubWebp": "02_github_overlay/assets/hero/park_water_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "0f5e9af86448b7a94621950f8dd04160f4808b53daa086e7e3bf855a1c6d498d",
+      "categories": [
+        "park",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 49%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 25,
+      "id": "park_water_02",
+      "originalStoredAs": "01_original_png/25_park_water_02__ORIGINAL.png",
+      "originalFilename": "広々とした水辺公園_橋と都市景観.png",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "0a36a72b2615ae5edf2e1786fd5431d70e2079ae4f9c7c49da9d4741e35f2a5b",
+      "githubWebp": "02_github_overlay/assets/hero/park_water_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "17063e0a9bbaf4924efcec6fdd4c4fee0bab80446c36e40414ae692965a48985",
+      "categories": [
+        "park",
+        "water"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 26,
+      "id": "water_day_01",
+      "originalStoredAs": "01_original_png/26_water_day_01__ORIGINAL.png",
+      "originalFilename": "夕景の水辺と橋を望む遊歩道.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "e9a14ce87e50ec291179cfdf48fba3e2558848881b7c9fa5ca502ce282cef2cf",
+      "githubWebp": "02_github_overlay/assets/hero/water_day_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "ae8dcff1b52ca8ac5ac0d0f42e9dabaa1d4b2a2a7813c3c333624cd49c815ac6",
+      "categories": [
+        "water",
+        "park"
+      ],
+      "times": [
+        "day",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 27,
+      "id": "water_night_01",
+      "originalStoredAs": "01_original_png/27_water_night_01__ORIGINAL.png",
+      "originalFilename": "夜景の港と輝く橋.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "ed0e1ecd7109bf60fcf393c0d999d90d2cc48969131dcd8679adc87c4bd6212c",
+      "githubWebp": "02_github_overlay/assets/hero/water_night_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "274bb200295f743134f31e9b2492c2ce527697e52c7bbb856ee5bfa6584eb731",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 28,
+      "id": "water_night_02",
+      "originalStoredAs": "01_original_png/28_water_night_02__ORIGINAL.png",
+      "originalFilename": "夜の水辺と輝く都市夜景.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "c3523fd5b52787e2a239c9518b590327d4f7d0bb5238c839145632738b52cf0f",
+      "githubWebp": "02_github_overlay/assets/hero/water_night_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "8eed8675f7e06ee88ca1c0d45a50a43f524fb9ca3bf80a45aead404530b4b611",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 29,
+      "id": "water_twilight_01",
+      "originalStoredAs": "01_original_png/29_water_twilight_01__ORIGINAL.png",
+      "originalFilename": "夕暮れの光に浮かぶ大橋.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "7e428a70b752325dfa43b98ad6e573ad6840400f4261209307d99445f13cd1bb",
+      "githubWebp": "02_github_overlay/assets/hero/water_twilight_01.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "fc2f2d16ea5a41049a4b111ff216c76273338a96c3c17491bd876055ccbb7238",
+      "categories": [
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    },
+    {
+      "order": 30,
+      "id": "water_twilight_02",
+      "originalStoredAs": "01_original_png/30_water_twilight_02__ORIGINAL.png",
+      "originalFilename": "夕暮れの橋と水辺の都市景観.png",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "originalSha256": "8dd127641e2f584030010316717019d3f5ab9ef4caa8c66a0b5f75c37c76d493",
+      "githubWebp": "02_github_overlay/assets/hero/water_twilight_02.webp",
+      "githubWebpDimensions": [
+        1440,
+        810
+      ],
+      "githubWebpSha256": "b17864a06d319462b7104b486872d4770b9047f7aee5c6b416cc000253a7b1f5",
+      "categories": [
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "previously_generated_original_png",
+      "productionDerivative": "listed original PNGから作成したGitHub用WebP"
+    }
+  ]
+}

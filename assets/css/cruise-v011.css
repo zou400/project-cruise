@@ -1,4 +1,4 @@
-/* Project Cruise GitHub Integration v0.11.0-rc1
+/* Project Cruise GitHub Integration v0.11.0-rc3
  * Non-destructive cinematic shell over canonical v0.10.0.
  * Disable with ?pcUi=classic.
  */
@@ -312,3 +312,27 @@ body.pc-v011.pc-modal-open{overflow:hidden;touch-action:none}
 }
 html[data-pc-data="low"] .pc-v011 .pc-preview-stage:before{display:none}
 html[data-pc-data="low"] .pc-v011 .pc-scene-media{background-image:linear-gradient(135deg,#25101f,#08080c)!important}
+
+
+/* v0.11.0-rc3 — persistent mobile destination switcher */
+.pc-decision-dock{
+  position:fixed;left:50%;bottom:max(14px,calc(env(safe-area-inset-bottom) + 10px));z-index:85;
+  width:min(760px,calc(100vw - 28px));display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;
+  padding:10px 10px 10px 16px;border:1px solid rgba(255,255,255,.16);border-radius:16px;
+  background:rgba(12,10,17,.92);box-shadow:0 22px 56px rgba(0,0,0,.46);backdrop-filter:blur(18px);
+  transform:translate(-50%,calc(100% + 40px));opacity:0;pointer-events:none;transition:transform .22s ease,opacity .18s ease;
+}
+.pc-decision-dock.is-visible{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.pc-decision-dock-copy{min-width:0}
+.pc-decision-dock-copy span{display:block;color:#ef4f72;font:800 8px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.18em}
+.pc-decision-dock-copy strong{display:block;margin-top:5px;color:#fff;font-size:16px;line-height:1.18;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pc-decision-dock-copy small{display:block;margin-top:4px;color:#a99eaa;font-size:10px}
+#pc-decision-reroll{min-width:118px;min-height:50px;border:0;border-radius:11px;padding:0 18px;background:linear-gradient(110deg,#f03c58,#c72b82);color:#fff;font-weight:900;cursor:pointer}
+body.pc-decision-dock-visible .app{padding-bottom:max(122px,calc(env(safe-area-inset-bottom) + 104px))}
+@media(max-width:560px){
+ .pc-decision-dock{width:calc(100vw - 18px);bottom:max(8px,calc(env(safe-area-inset-bottom) + 6px));gap:8px;padding:9px 9px 9px 12px;border-radius:13px}
+ .pc-decision-dock-copy strong{font-size:15px}
+ .pc-decision-dock-copy small{font-size:9px}
+ #pc-decision-reroll{min-width:104px;min-height:52px;padding-inline:14px;font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.pc-decision-dock{transition:none}}

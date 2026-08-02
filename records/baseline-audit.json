@@ -1,6 +1,6 @@
 {
-  "release": "v0.11.0-rc1-build",
-  "root": "/mnt/data/project_cruise_build_work/Project_Cruise_GitHub_Integration_v0.11.0-rc1",
+  "release": "v0.11.0-rc3-build",
+  "root": "/mnt/data/pc_rc3_exact30",
   "counts": {
     "destinations": 320,
     "canonicalRoutes": 181,
@@ -28,7 +28,7 @@
     "ui_overlay_script_present": true
   },
   "hashes": {
-    "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
+    "index.html": "7f6e96c76f03fc12ba88dc77e978c7e4d7f135cd96ab7a38abbcddd6d06c0756",
     "destinations.json": "ad6fea8b6e323236beef4e64661e3981e66c3d904617b7860b46fea53b6aed2d",
     "routes.json": "d120222a9f2da48a58efc9b656deec564fb3a4146dffc2dce0df2d8d11cc9098",
     "project-cruise.json": "cd4ffd9eba5049d7a1ee2f0c3c3fd35160c260848b5e5cf14fcf3e33347ba73b"

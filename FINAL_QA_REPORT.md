@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc1 — Final QA report
+# Project Cruise v0.11.0-rc3 — Final QA report
 
 **Decision: HOLD**  
 **Deepening: 9/10**
@@ -8,11 +8,11 @@
 - Repository audit: PASS
 - Visual QA contract: PASS
 - Hero asset catalog/binary contract: PASS
-- Exact Hero assets present: HOLD (0/30)
+- Exact Hero assets present: PASS (30/30)
 
 ## External promotion gates
 
-- Exact upstream Hero WebP assets imported: HOLD
+- Exact upstream Hero WebP assets imported: PASS
 - GitHub Pages browser smoke: HOLD
 - iPhone Safari manual QA: HOLD
 

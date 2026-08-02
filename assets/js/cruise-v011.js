@@ -1,4 +1,4 @@
-/* Project Cruise GitHub Integration v0.11.0-rc1
+/* Project Cruise GitHub Integration v0.11.0-rc3
  * UI shell only. Canonical selection, learning, Maps, feedback and issue-report
  * behavior remains owned by the inline v0.10.0 engine.
  */
@@ -13,10 +13,12 @@
     lastDetail: null,
     currentWeatherState: "unknown",
     visualHistoryKey: "pcHeroHistoryV1",
-    build: "v0.11.0-rc1",
+    build: "v0.11.0-rc3",
     activeModal: null,
     modalReturnFocus: null,
-    lowData: params.get("pcData") === "low" || navigator.connection?.saveData === true
+    lowData: params.get("pcData") === "low" || navigator.connection?.saveData === true,
+    sessionDestinations: new Set(),
+    candidateTotal: null
   };
 
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -147,6 +149,62 @@
         first.focus();
       }
     });
+  }
+
+
+  function ensureDecisionDock() {
+    let dock = $("#pc-decision-dock");
+    if (dock) return dock;
+    dock = document.createElement("aside");
+    dock.id = "pc-decision-dock";
+    dock.className = "pc-decision-dock";
+    dock.setAttribute("aria-label", "目的地の再選定");
+    dock.innerHTML = `
+      <div class="pc-decision-dock-copy">
+        <span>NEXT DESTINATION</span>
+        <strong id="pc-decision-destination">今夜の一本</strong>
+        <small id="pc-decision-progress">候補を準備中</small>
+      </div>
+      <button id="pc-decision-reroll" type="button">次の一本</button>`;
+    document.body.append(dock);
+    $("#pc-decision-reroll", dock)?.addEventListener("click", () => {
+      const redraw = $("#redraw");
+      if (redraw && !redraw.disabled) redraw.click();
+    });
+    return dock;
+  }
+
+  function candidateTotalFromStatus() {
+    const match = text($("#pool-status")?.textContent).match(/成立する(\d+)種類/);
+    return match ? Number(match[1]) : null;
+  }
+
+  function syncDecisionDock() {
+    const dock = ensureDecisionDock();
+    const result = $("#result");
+    const destination = text($("#destination")?.textContent);
+    const visible = Boolean(result && !result.classList.contains("hidden") && destination);
+    dock.classList.toggle("is-visible", visible);
+    document.body.classList.toggle("pc-decision-dock-visible", visible);
+    if (!visible) return;
+    state.sessionDestinations.add(destination);
+    state.candidateTotal = candidateTotalFromStatus() || state.candidateTotal;
+    $("#pc-decision-destination", dock).textContent = destination;
+    const progress = $("#pc-decision-progress", dock);
+    if (progress) progress.textContent = state.candidateTotal
+      ? `このセッション ${state.sessionDestinations.size} / ${state.candidateTotal}地点`
+      : `このセッション ${state.sessionDestinations.size}地点`;
+  }
+
+  function installDecisionDockObservers() {
+    ensureDecisionDock();
+    const result = $("#result");
+    const destination = $("#destination");
+    const poolStatus = $("#pool-status");
+    if (result) new MutationObserver(syncDecisionDock).observe(result, { attributes: true, attributeFilter: ["class"] });
+    if (destination) new MutationObserver(syncDecisionDock).observe(destination, { childList: true, characterData: true, subtree: true });
+    if (poolStatus) new MutationObserver(syncDecisionDock).observe(poolStatus, { childList: true, characterData: true, subtree: true });
+    syncDecisionDock();
   }
 
   function enhanceBrand() {
@@ -298,7 +356,7 @@
   function heroCandidates(category, time, seed) {
     const timeIndex = time === "morning" ? [1] : time === "day" ? [2] : [3, 4, 5];
     const ordered = [...timeIndex].sort((a, b) => (hash(seed + a) % 97) - (hash(seed + b) % 97));
-    return ordered.map(index => `assets/hero/${category}-${time}-${String(index).padStart(2, "0")}.webp`);
+    return ordered.map(index => `assets/hero/precision/${category}_${time}_${String(index).padStart(2, "0")}.webp`);
   }
 
   function readVisualHistory() {
@@ -425,6 +483,7 @@
     ensureHero();
     updatePreviewCopy();
     installFallbackObserver();
+    installDecisionDockObservers();
     document.addEventListener("pc:route-shown", event => renderHero(event.detail || {}));
     document.addEventListener("pc:arrival-weather", event => {
       state.currentWeatherState = event.detail?.weatherState || "unknown";

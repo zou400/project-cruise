@@ -1,8 +1,13 @@
 {
-  "version": "route-hero-affinity-v1-compatible",
+  "version": "route-hero-affinity-v1-exact30",
   "sourceRouteCount": 501,
   "sourceImageCount": 30,
-  "provenance": "deterministically regenerated from canonical v0.10.0 using the Hero Precision v1 schema; replace with exact upstream JSON after hash validation when available",
+  "provenance": {
+    "base": "route-hero-affinity-v1-compatible-integration",
+    "exactHeroPack": "Project_Cruise_Exact_Generated_Hero_30_v1",
+    "adapterReferencesRepaired": 47,
+    "policy": "No generated image was regenerated; all runtime assets are exact WebP derivatives listed in SOURCE_MAP_EXACT.json."
+  },
   "entries": [
     {
       "routeId": "R001",
@@ -1654,12 +1659,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリindustrialとの適合"
           ]
         }
       ],
@@ -3273,12 +3277,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 84,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -3690,12 +3693,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -3741,12 +3743,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -5811,12 +5812,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -7773,12 +7773,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリindustrialとの適合"
           ]
         }
       ],
@@ -9061,12 +9060,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_day_01",
+          "semanticScore": 72,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -9795,12 +9793,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -10158,12 +10155,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -10347,12 +10343,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -11568,12 +11563,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -11723,12 +11717,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -11812,12 +11805,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -11935,12 +11927,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_01",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -12680,12 +12671,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -13547,12 +13537,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -13674,12 +13663,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_02",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -13757,12 +13745,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_02",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -15981,12 +15968,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -16383,12 +16369,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_day_01",
+          "semanticScore": 72,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -18366,12 +18351,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリindustrialとの適合"
           ]
         }
       ],
@@ -19199,12 +19183,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_02",
+          "semanticScore": 84,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -20582,12 +20565,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -20986,12 +20968,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 84,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -21444,12 +21425,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_day_01",
+          "semanticScore": 72,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -22094,12 +22074,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -22800,12 +22779,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -25608,12 +25586,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -27404,12 +27381,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリindustrialとの適合"
           ]
         }
       ],
@@ -30288,12 +30264,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -32428,12 +32403,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_day_01",
+          "semanticScore": 72,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -32582,12 +32556,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -32767,12 +32740,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -33849,12 +33821,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_day_01",
+          "semanticScore": 72,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -35044,12 +35015,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "park_night_02",
+          "semanticScore": 70,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -35163,12 +35133,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -35238,12 +35207,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -35319,12 +35287,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -35408,12 +35375,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -35533,12 +35499,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_01",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -35779,12 +35744,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_night_01",
+          "semanticScore": 50,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -36270,12 +36234,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "park_morning_01",
+          "semanticScore": 64,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         },
         {
@@ -36906,12 +36869,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -37702,12 +37664,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -38251,12 +38212,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 53,
+          "imageId": "water_twilight_01",
+          "semanticScore": 60,
           "reasons": [
-            "副カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcultureとの適合"
           ]
         }
       ],
@@ -38378,12 +38338,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_02",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {
@@ -38536,12 +38495,11 @@
           ]
         },
         {
-          "imageId": "city_twilight_01",
-          "semanticScore": 77,
+          "imageId": "water_night_02",
+          "semanticScore": 60,
           "reasons": [
-            "主カテゴリcity一致",
-            "シーン特性一致: urban-night",
-            "時間帯night適合"
+            "正確な30枚セットへ再接続",
+            "主カテゴリcityとの適合"
           ]
         },
         {

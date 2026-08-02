@@ -1,5 +1,5 @@
 {
-  "release": "v0.11.0-rc1",
+  "release": "v0.11.0-rc3",
   "track": "ui-component-and-event-contract",
   "checks": {
     "canonical_interaction_ids_preserved": true,
@@ -19,9 +19,9 @@
   },
   "missingCanonicalIds": [],
   "hashes": {
-    "index.html": "a96c25acccae411dab78c79e408f7cfc53119c065d11919125b9cbbfc5ce7631",
-    "assets/css/cruise-v011.css": "9cc88c24f99a97b65e520f0444c12cff1e4c63a5f0062a565b3bb77b3e23815e",
-    "assets/js/cruise-v011.js": "fc2e322786dd5e83ff84539ce49feb50e907a5ecb135b766e7ba4b3a290dc6b9"
+    "index.html": "7f6e96c76f03fc12ba88dc77e978c7e4d7f135cd96ab7a38abbcddd6d06c0756",
+    "assets/css/cruise-v011.css": "a92de58280cdf558a77fd70c184f276da7eaa1175bb7a18c5719fbfd1577e6d3",
+    "assets/js/cruise-v011.js": "55aee99bb7e7a68a95226c590bcccc42f853f1f88b917ff585a1502a30ca5507"
   },
   "passed": true
 }

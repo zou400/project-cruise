@@ -106,12 +106,17 @@ def main() -> int:
             "aspectRatio": None,
             "webpValid": False,
             "warning": None,
+            "expectedSha256": entry.get("sha256"),
+            "hashMatchesCatalog": None,
+            "dimensionsMatchCatalog": None,
         }
         if path.exists():
             item["bytes"] = path.stat().st_size
             item["sha256"] = sha256(path)
+            item["hashMatchesCatalog"] = item["sha256"] == entry.get("sha256") if entry.get("sha256") else None
             w, h, error = webp_dimensions(path)
             item["width"], item["height"] = w, h
+            item["dimensionsMatchCatalog"] = (w == entry.get("width") and h == entry.get("height")) if entry.get("width") and entry.get("height") else None
             item["webpValid"] = error is None and bool(w and h)
             item["warning"] = error
             if w and h:
@@ -125,6 +130,8 @@ def main() -> int:
     unexpected = sorted(set(actual_webps) - set(expected_names))
     invalid = [a["assetPath"] for a in assets if a["exists"] and not a["webpValid"]]
     duplicate_binary_groups = [names for names in digests.values() if len(names) > 1]
+    hash_mismatches = [a["assetPath"] for a in assets if a["exists"] and a.get("hashMatchesCatalog") is False]
+    dimension_mismatches = [a["assetPath"] for a in assets if a["exists"] and a.get("dimensionsMatchCatalog") is False]
 
     package_report = None
     if args.package:
@@ -141,6 +148,8 @@ def main() -> int:
         "noUnexpectedWebpAssets": len(unexpected) == 0,
         "allPresentAssetsAreValidWebp": len(invalid) == 0,
         "noDuplicateBinaries": len(duplicate_binary_groups) == 0,
+        "allHashesMatchCatalog": len(hash_mismatches) == 0,
+        "allDimensionsMatchCatalog": len(dimension_mismatches) == 0,
     }
     if package_report is not None:
         checks["upstreamPackageHashMatches"] = package_report.get("hashMatches") is True
@@ -156,6 +165,8 @@ def main() -> int:
         checks["noUnexpectedWebpAssets"],
         checks["allPresentAssetsAreValidWebp"],
         checks["noDuplicateBinaries"],
+        checks["allHashesMatchCatalog"],
+        checks["allDimensionsMatchCatalog"],
     ])
     strict_ok = hard_contract_ok and complete
     if package_report is not None:
@@ -164,7 +175,7 @@ def main() -> int:
         ))
 
     report = {
-        "release": "v0.11.0-rc1",
+        "release": "v0.11.0-rc3",
         "deepening": 9,
         "mode": "strict" if args.require_complete else "pending-tolerant",
         "status": "accepted" if strict_ok else ("pending" if hard_contract_ok and not args.require_complete else "rejected"),
@@ -174,6 +185,8 @@ def main() -> int:
         "unexpected": unexpected,
         "invalid": invalid,
         "duplicateBinaryGroups": duplicate_binary_groups,
+        "hashMismatches": hash_mismatches,
+        "dimensionMismatches": dimension_mismatches,
         "checks": checks,
         "assets": assets,
         "package": package_report,

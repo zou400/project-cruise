@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.11.0-rc3 — exact Hero 30 integrated
+
+### Added
+
+- Imported and SHA-256 verified all 30 exact Hero WebP assets.
+- Reconnected the Hero Precision catalog to the exact generated source pack.
+- Added a complete-replacement GitHub upload package.
+
 ## v0.11.0-rc1 — integration candidate
 
 ### Added
@@ -31,7 +39,7 @@
 
 ### External gates
 
-- Exact upstream 30 Hero WebP assets are not yet mounted.
+- Exact upstream 30 Hero WebP assets were pending in rc1; they are integrated in rc3.
 - GitHub Pages deployed-browser smoke is pending.
 - iPhone Safari real-device QA is pending.
 - Full exact 149-anchor registry and Spot v0.6 Wave 2 input set are not silently reconstructed.

@@ -1,25 +1,26 @@
 {
   "fullPackage": {
-    "name": "Project_Cruise_Hero_Precision_v0.10.4-rc3.zip",
-    "sha256": "7cd1f52c2641bd23eef6b80a7d59d45c1860546d57fea27707f20602a297e3a0"
+    "name": "Project_Cruise_Exact_Generated_Hero_30_v1(3).zip",
+    "sha256": "99de29368ebe6cdadfccf1bd59592663cfe5ef007b5b44a132884a87913af019"
   },
-  "patchPackage": {
-    "name": "Hero_Precision_Patch_v1.zip",
-    "sha256": "4a026b882325eb55dded3869269c1c143110437156b111c34c4abe5878c19ac3"
+  "sourceMap": {
+    "name": "SOURCE_MAP_EXACT.json",
+    "sha256": "6b33d5738ce3d65d5025a1dc6b7a0823ca21dedfd26056779af3a17cc39605d8"
+  },
+  "visualLibrary": {
+    "name": "visual-library.json",
+    "sha256": "ea989d3e3cde9acda4a10733fcf434b1b71b757354aa203da9beca2fda2eb2f8"
   },
   "reportedValidation": {
-    "version": "hero-precision-v1",
-    "generatedAt": "2026-08-02T15:16:00+09:00",
+    "version": "Project_Cruise_Exact_Generated_Hero_30_v1",
     "exactWebpCount": 30,
     "sourceMapHashMismatches": 0,
     "destinationProfiles": 320,
     "routeAffinities": 501,
     "invalidImageIds": 0,
     "candidateRange": "4-6",
-    "selectionMatrixCases": 12024,
-    "selectionMatrixFailures": 0,
-    "browserSmoke": "not-run"
+    "browserSmoke": "pending-deployed-check"
   },
-  "workspaceImportState": "schema-and-selection-contract-integrated; exact external ZIP bytes and WebP binaries are not mounted in this workspace",
-  "assetPolicy": "do-not-regenerate; accept exact upstream WebP files only after SHA/source-map validation"
+  "workspaceImportState": "exact source pack mounted; 30/30 WebP assets copied and hash-verified",
+  "assetPolicy": "exact generated WebP derivatives only; no regeneration performed"
 }

@@ -1,10 +1,10 @@
-# Project Cruise v0.11.0-rc1 — GitHub Pages deployment
+# Project Cruise v0.11.0-rc3 — GitHub Pages deployment
 
 ## Recommended branch
 
 Create and test on:
 
-`release/v0.11.0-rc1`
+`release/v0.11.0-rc3`
 
 Do not replace the current production branch during the first test.
 
@@ -18,7 +18,7 @@ Upload the **entire repository root**, not only `index.html`. The runtime also n
 - `destinations.json`
 - `routes.json`
 
-The exact 30 Hero WebP files, when obtained, belong in:
+The exact 30 Hero WebP files are included in:
 
 `assets/hero/precision/`
 
@@ -36,7 +36,7 @@ Open `http://localhost:8080/` and verify the normal flow before pushing.
 
 ## GitHub Pages steps
 
-1. Push this folder to `release/v0.11.0-rc1`.
+1. Push this folder to `release/v0.11.0-rc3`.
 2. Open the repository's **Actions** tab and confirm `Validate Project Cruise RC` passes.
 3. In **Settings → Pages**, publish from the test branch root, or use the repository's existing Pages deployment method.
 4. Open the deployed HTTPS URL on desktop and iPhone Safari.
@@ -97,7 +97,7 @@ Repository rollback: redeploy the previous canonical v0.10.0 commit or branch. C
 
 Promote this RC only when all are true:
 
-- exact 30 Hero WebP files are imported and visually audited;
+- exact 30 Hero WebP files remain hash-valid and are visually audited;
 - GitHub Pages browser smoke passes on the deployed commit;
 - iPhone Safari manual QA passes;
 - `npm test` and the consolidated audit still pass after the asset import.

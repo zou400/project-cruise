@@ -1,4 +1,4 @@
-# Project Cruise v0.11.0-rc1 統合検証サマリー
+# Project Cruise v0.11.0-rc3 統合検証サマリー
 
 検証日: 2026-08-02  
 基礎正本: v0.10.0（データ件数・ID・既存学習キーを維持）
@@ -10,7 +10,7 @@
 - 501結果×3時間条件×3時間枠の統合選定: PASS
 - ローカルHTTP配信: 必須6資産すべて200 OK
 - Release Candidate Audit: `automatedPassed = true`
-- Canonical promotion: HOLD（正確なHero WebP 30枚、GitHub Pages browser smoke、iPhone Safari手動QAが未完了）
+- Canonical promotion: HOLD（Hero WebP 30枚は統合済み。GitHub Pages browser smokeとiPhone Safari手動QAが未完了）
 
 Cross-chat reconciliation: 10 tracks recorded; exact unmounted upstream bytes remain gated.
 

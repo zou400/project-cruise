@@ -1,5 +1,5 @@
 {
-  "release": "v0.11.0-rc1",
+  "release": "v0.11.0-rc3",
   "baseline": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
   "baselineSha256": "2023cd8b0691c628ed617359cc4b785a696b824483b5e4312e3cd99a36a54e3e",
   "apply": "Extract the canonical package, then overwrite it with this patch while preserving paths.",
@@ -76,7 +76,7 @@
       "baselineSha256": null
     },
     {
-      "path": "RELEASE_NOTES_v0.11.0-rc1.md",
+      "path": "RELEASE_NOTES_v0.11.0-rc3.md",
       "state": "added",
       "bytes": 1414,
       "sha256": "f3e7270ff042be93aafaa0bf8c745755149e73cceb4f76f75fc089d5315d5d5c",
