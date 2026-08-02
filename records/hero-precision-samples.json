@@ -1,0 +1,907 @@
+{
+  "diagnostics": {
+    "version": "hero-precision-v1-adapter",
+    "catalog": 30,
+    "destinationProfiles": 320,
+    "routeAffinities": 501,
+    "exactAssetsPresent": 0,
+    "externalImportState": "schema-and-selection-contract-integrated; exact external ZIP bytes and WebP binaries are not mounted in this workspace"
+  },
+  "samples": [
+    {
+      "routeId": "R001",
+      "destinationId": "D002",
+      "imageId": "airport_twilight_03",
+      "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+      "disclosure": "体験イメージ",
+      "phase": "day",
+      "weatherState": "clear",
+      "score": 100,
+      "semanticScore": 84,
+      "reasons": [
+        "主カテゴリairport一致",
+        "シーン特性一致: aircraft-observation,factory-night",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "airport_twilight_03",
+          "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_twilight_02",
+          "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.97
+        },
+        {
+          "imageId": "airport_twilight_01",
+          "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.83
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.53
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 69.33
+        },
+        {
+          "imageId": "industrial_night_01",
+          "assetPath": "assets/hero/precision/industrial_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 69.32
+        }
+      ]
+    },
+    {
+      "routeId": "R001",
+      "destinationId": "D002",
+      "imageId": "airport_twilight_03",
+      "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+      "disclosure": "体験イメージ",
+      "phase": "twilight",
+      "weatherState": "cloudy",
+      "score": 100,
+      "semanticScore": 84,
+      "reasons": [
+        "主カテゴリairport一致",
+        "シーン特性一致: aircraft-observation,factory-night",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "airport_twilight_03",
+          "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_twilight_02",
+          "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_twilight_01",
+          "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "industrial_night_01",
+          "assetPath": "assets/hero/precision/industrial_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 81.83
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 81.41
+        }
+      ]
+    },
+    {
+      "routeId": "R001",
+      "destinationId": "D002",
+      "imageId": "airport_night_01",
+      "assetPath": "assets/hero/precision/airport_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "night",
+      "weatherState": "unknown",
+      "score": 100,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリairport一致",
+        "シーン特性一致: aircraft-observation",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_twilight_03",
+          "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_twilight_02",
+          "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.59
+        },
+        {
+          "imageId": "airport_twilight_01",
+          "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.21
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 93.99
+        },
+        {
+          "imageId": "industrial_night_01",
+          "assetPath": "assets/hero/precision/industrial_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 93.48
+        }
+      ]
+    },
+    {
+      "routeId": "R001",
+      "destinationId": "D002",
+      "imageId": "airport_night_01",
+      "assetPath": "assets/hero/precision/airport_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "rain",
+      "weatherState": "rain",
+      "score": 92.11,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリairport一致",
+        "シーン特性一致: aircraft-observation",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 92.11
+        },
+        {
+          "imageId": "airport_twilight_03",
+          "assetPath": "assets/hero/precision/airport_twilight_03.webp",
+          "disclosure": "体験イメージ",
+          "score": 87.71
+        },
+        {
+          "imageId": "airport_twilight_01",
+          "assetPath": "assets/hero/precision/airport_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.95
+        },
+        {
+          "imageId": "airport_twilight_02",
+          "assetPath": "assets/hero/precision/airport_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.33
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 64.78
+        },
+        {
+          "imageId": "industrial_night_01",
+          "assetPath": "assets/hero/precision/industrial_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 64.46
+        }
+      ]
+    },
+    {
+      "routeId": "P-D001",
+      "destinationId": "D001",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "day",
+      "weatherState": "clear",
+      "score": 97.9,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.9
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.46
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.32
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.28
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 69.75
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 69.42
+        }
+      ]
+    },
+    {
+      "routeId": "P-D001",
+      "destinationId": "D001",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "twilight",
+      "weatherState": "cloudy",
+      "score": 100,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 82
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 81.89
+        }
+      ]
+    },
+    {
+      "routeId": "P-D001",
+      "destinationId": "D001",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "night",
+      "weatherState": "unknown",
+      "score": 100,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.82
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.44
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 93.63
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 93.32
+        }
+      ]
+    },
+    {
+      "routeId": "P-D001",
+      "destinationId": "D001",
+      "imageId": "water_night_02",
+      "assetPath": "assets/hero/precision/water_night_02.webp",
+      "disclosure": "体験イメージ",
+      "phase": "rain",
+      "weatherState": "rain",
+      "score": 92.69,
+      "semanticScore": 89,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 92.69
+        },
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 92.08
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.92
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.54
+        },
+        {
+          "imageId": "airport_night_01",
+          "assetPath": "assets/hero/precision/airport_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 64.6
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 64.28
+        }
+      ]
+    },
+    {
+      "routeId": "R091",
+      "destinationId": "D107",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "day",
+      "weatherState": "clear",
+      "score": 100,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: urban-night,waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.2
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 76.44
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 76.05
+        }
+      ]
+    },
+    {
+      "routeId": "R091",
+      "destinationId": "D107",
+      "imageId": "water_twilight_02",
+      "assetPath": "assets/hero/precision/water_twilight_02.webp",
+      "disclosure": "体験イメージ",
+      "phase": "twilight",
+      "weatherState": "cloudy",
+      "score": 100,
+      "semanticScore": 84,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: urban-night,waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 88.28
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 88.14
+        }
+      ]
+    },
+    {
+      "routeId": "R091",
+      "destinationId": "D107",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "night",
+      "weatherState": "unknown",
+      "score": 100,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: urban-night,waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "routeId": "R091",
+      "destinationId": "D107",
+      "imageId": "water_night_01",
+      "assetPath": "assets/hero/precision/water_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "rain",
+      "weatherState": "rain",
+      "score": 99.59,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリwater一致",
+        "シーン特性一致: urban-night,waterfront",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "water_night_01",
+          "assetPath": "assets/hero/precision/water_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 99.59
+        },
+        {
+          "imageId": "water_night_02",
+          "assetPath": "assets/hero/precision/water_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 92.21
+        },
+        {
+          "imageId": "water_twilight_01",
+          "assetPath": "assets/hero/precision/water_twilight_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 87.4
+        },
+        {
+          "imageId": "water_twilight_02",
+          "assetPath": "assets/hero/precision/water_twilight_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 87.02
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 71.26
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 71.12
+        }
+      ]
+    },
+    {
+      "routeId": "P-D273",
+      "destinationId": "D273",
+      "imageId": "park_night_01",
+      "assetPath": "assets/hero/precision/park_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "day",
+      "weatherState": "clear",
+      "score": 100,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリpark一致",
+        "シーン特性一致: quiet-park,urban-night",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_water_02",
+          "assetPath": "assets/hero/precision/park_water_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.93
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.01
+        },
+        {
+          "imageId": "city_night_01",
+          "assetPath": "assets/hero/precision/city_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 76.4
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 76.21
+        },
+        {
+          "imageId": "park_rain_01",
+          "assetPath": "assets/hero/precision/park_rain_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 62.55
+        }
+      ]
+    },
+    {
+      "routeId": "P-D273",
+      "destinationId": "D273",
+      "imageId": "park_night_01",
+      "assetPath": "assets/hero/precision/park_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "twilight",
+      "weatherState": "cloudy",
+      "score": 100,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリpark一致",
+        "シーン特性一致: quiet-park,urban-night",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_water_02",
+          "assetPath": "assets/hero/precision/park_water_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "city_night_01",
+          "assetPath": "assets/hero/precision/city_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 88.79
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 88.71
+        },
+        {
+          "imageId": "park_rain_01",
+          "assetPath": "assets/hero/precision/park_rain_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 62.41
+        }
+      ]
+    },
+    {
+      "routeId": "P-D273",
+      "destinationId": "D273",
+      "imageId": "park_night_01",
+      "assetPath": "assets/hero/precision/park_night_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "night",
+      "weatherState": "unknown",
+      "score": 100,
+      "semanticScore": 96,
+      "reasons": [
+        "主カテゴリpark一致",
+        "シーン特性一致: quiet-park,urban-night",
+        "時間帯night適合"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "city_night_01",
+          "assetPath": "assets/hero/precision/city_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_water_02",
+          "assetPath": "assets/hero/precision/park_water_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 97.58
+        },
+        {
+          "imageId": "park_rain_01",
+          "assetPath": "assets/hero/precision/park_rain_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.91
+        }
+      ]
+    },
+    {
+      "routeId": "P-D273",
+      "destinationId": "D273",
+      "imageId": "park_rain_01",
+      "assetPath": "assets/hero/precision/park_rain_01.webp",
+      "disclosure": "体験イメージ",
+      "phase": "rain",
+      "weatherState": "rain",
+      "score": 100,
+      "semanticScore": 72,
+      "reasons": [
+        "主カテゴリpark一致",
+        "シーン特性一致: quiet-park,rain-compatible"
+      ],
+      "assignmentConfidence": 0.99,
+      "source": "hero-precision-v1-compatible",
+      "candidates": [
+        {
+          "imageId": "park_rain_01",
+          "assetPath": "assets/hero/precision/park_rain_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 100
+        },
+        {
+          "imageId": "park_night_01",
+          "assetPath": "assets/hero/precision/park_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 99.09
+        },
+        {
+          "imageId": "park_night_02",
+          "assetPath": "assets/hero/precision/park_night_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 92.71
+        },
+        {
+          "imageId": "park_water_02",
+          "assetPath": "assets/hero/precision/park_water_02.webp",
+          "disclosure": "体験イメージ",
+          "score": 80.02
+        },
+        {
+          "imageId": "culture_night_01",
+          "assetPath": "assets/hero/precision/culture_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 71.65
+        },
+        {
+          "imageId": "city_night_01",
+          "assetPath": "assets/hero/precision/city_night_01.webp",
+          "disclosure": "体験イメージ",
+          "score": 71.49
+        }
+      ]
+    }
+  ]
+}

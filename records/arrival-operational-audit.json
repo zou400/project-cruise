@@ -1,0 +1,58 @@
+{
+  "release": "v0.11.0-rc3",
+  "deepening": 5,
+  "scope": {
+    "overlayDecisionCount": 15,
+    "registryRows": 333,
+    "criticalOperationalAnchors": 28,
+    "canonicalDisplayFallbacks": 305,
+    "walkEndpoints": 11,
+    "unresolvedAnchors": 8,
+    "testVectors": 22
+  },
+  "violations": {
+    "guessedPlaceIds": [],
+    "guessedCoordinates": [],
+    "walkEndpointsDrivingEligible": [],
+    "unresolvedDefaultForMaps": []
+  },
+  "checks": {
+    "overlay_is_non_destructive": true,
+    "overlay_decisions_15": true,
+    "critical_operational_anchors_28": true,
+    "canonical_display_fallbacks_305": true,
+    "no_place_ids_invented": true,
+    "no_coordinates_invented": true,
+    "walk_endpoints_never_driving": true,
+    "unresolved_anchors_not_default_for_maps": true,
+    "source_test_vectors_22": true,
+    "operational_tests_22_pass": true,
+    "hard_gate_hook_runs_before_ranking": true,
+    "walk_endpoint_filtered_from_driving_url": true,
+    "unresolved_maps_are_blocked": true,
+    "operational_kill_switch_present": true,
+    "weather_is_display_only_declared": true,
+    "weather_kill_switch_present": true,
+    "weather_cache_30_minutes": true,
+    "open_meteo_endpoint_present": true,
+    "open_meteo_attribution_present": true,
+    "arrival_area_heading_present": true,
+    "normal_ui_has_no_shadow_rank_labels": true,
+    "selected_parking_is_primary_heading": true,
+    "short_arrival_copy_present": true,
+    "weather_visual_selector_fixed": true,
+    "result_state_machine_loaded": true,
+    "bounded_auto_reselection_8": true,
+    "state_machine_tests_pass": true,
+    "affected_route_coverage_pass": true,
+    "operational_skip_does_not_penalize_preference": true,
+    "scripts_loaded_in_safe_order": true
+  },
+  "passed": true,
+  "boundary": {
+    "exactSourceRowsMounted": 28,
+    "fullUpstreamRegistryRowsReferenced": 149,
+    "remainingRows": "canonical display-only fallbacks; no guessed Place ID, coordinates, or driving anchor promotion",
+    "browserSmoke": "environment-blocked; test retained for GitHub Actions/local execution"
+  }
+}

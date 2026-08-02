@@ -1,0 +1,62 @@
+{
+  "release": "v0.11.0-rc3",
+  "track": "hero-precision-v1-compatible-integration",
+  "externalPackageStatus": "exact 30 WebP assets imported and source-map verified; no regeneration performed",
+  "counts": {
+    "catalogImages": 30,
+    "exactWebpAssetsPresent": 30,
+    "destinationProfiles": 320,
+    "routeAffinities": 501,
+    "candidateMin": 6,
+    "candidateMax": 6,
+    "selectionMatrixCases": 12024,
+    "selectionMatrixFailures": 0
+  },
+  "checks": {
+    "catalog_30": true,
+    "catalog_ids_unique": true,
+    "destination_profiles_320": true,
+    "destination_profile_ids_match": true,
+    "route_affinities_501": true,
+    "route_affinity_ids_match": true,
+    "candidate_range_4_6": true,
+    "candidate_ids_valid": true,
+    "candidate_ids_unique_per_route": true,
+    "selection_matrix_12024": true,
+    "selection_matrix_zero_failures": true,
+    "javascript_syntax": true,
+    "exact_assets_30_present": true,
+    "exact_assets_match_catalog": true,
+    "catalog_assets_verified": true,
+    "hero_precision_scripts_loaded": true,
+    "visual_kill_switch_preserved": true,
+    "visual_history_key_preserved": true
+  },
+  "invalidCandidates": [],
+  "duplicateCandidateRoutes": [],
+  "matrixFailures": [],
+  "javascriptSyntax": {
+    "assets/js/hero/hero-precision-data.js": {
+      "passed": true,
+      "stderr": ""
+    },
+    "assets/js/hero/hero-precision-runtime.js": {
+      "passed": true,
+      "stderr": ""
+    },
+    "assets/js/cruise-v011.js": {
+      "passed": true,
+      "stderr": ""
+    }
+  },
+  "hashes": {
+    "data/hero/hero-image-catalog.v1.json": "5929fa51da307b85b290389f46154f9e635795ec1bb5d4cd9e658a0b1a546dca",
+    "data/hero/destination-visual-profile.v1.json": "797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e",
+    "data/hero/route-hero-affinity.v1.json": "bdd9108148f98d17ee00497178446356a5d39f5cc6fa8fd9d314a96a66ae6982",
+    "assets/js/hero/hero-precision-data.js": "9b11f3244fea3eb02d2f6a6c8c9e0953a4665c0748deae87604ff8387fcbd374",
+    "assets/js/hero/hero-precision-runtime.js": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31",
+    "assets/js/cruise-v011.js": "55aee99bb7e7a68a95226c590bcccc42f853f1f88b917ff585a1502a30ca5507",
+    "index.html": "7f6e96c76f03fc12ba88dc77e978c7e4d7f135cd96ab7a38abbcddd6d06c0756"
+  },
+  "passed": true
+}

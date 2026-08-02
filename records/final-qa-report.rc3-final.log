@@ -1,0 +1,8 @@
+{
+  "status": "HOLD",
+  "promotionReady": false,
+  "out": [
+    "/mnt/data/pc_rc3_exact30/records/final-qa-report.json",
+    "/mnt/data/pc_rc3_exact30/FINAL_QA_REPORT.md"
+  ]
+}

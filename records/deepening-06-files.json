@@ -1,0 +1,68 @@
+{
+  "deepening": 6,
+  "generatedAt": "2026-08-02T15:43:00+09:00",
+  "status": "automatedPassed",
+  "promotionReady": false,
+  "files": [
+    {
+      "path": "package.json",
+      "bytes": 1034,
+      "sha256": "ddbee0773a99347da4979df89f267e7cdf767764944dbdf224a04a1e82b3bbc9"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 957,
+      "sha256": "1000189eaeeb4956ae37b0cbcc727dff251a016f74083f9a9ec461d9455f8102"
+    },
+    {
+      "path": "tests/http_smoke.py",
+      "bytes": 2403,
+      "sha256": "76c7408a0b0ead8d2fb8842aec0c0e35057189f6b7198ba970e263d2c655af38"
+    },
+    {
+      "path": "scripts/audit_release_candidate.py",
+      "bytes": 3957,
+      "sha256": "25c7d03b95093a9813ca78123652a221fe141b7bc9f349f0d09a575c59a8bbc2"
+    },
+    {
+      "path": "docs/integration/06_RELEASE_REPRODUCIBILITY_AND_CI.md",
+      "bytes": 2385,
+      "sha256": "ef6970d688c883e7ad6fa8f0409b77607a667d4e5a0c8211f3c2bdb726030e7d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4881,
+      "sha256": "c5aac83c6b256e133079b57e73378daa36e4118a481822249c6e5a061177ed91"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3546,
+      "sha256": "6455bd22578008a6280096adc1d37f86ffb759067e2cc66126bd1283fd38566b"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 9662,
+      "sha256": "cf30fcbd8e8de3710702afc4156ebf3024dae8a6f63e26f14467085f4e93d685"
+    },
+    {
+      "path": "records/http-smoke.json",
+      "bytes": 1047,
+      "sha256": "e35e40eece7fb287b1731f763d653697776317e68ddef41b96ae870ace6c3b2a"
+    },
+    {
+      "path": "records/npm-test.deepening06.log",
+      "bytes": 3617,
+      "sha256": "1640210b118621681fddc1f5442fe5f0907f755aa5735d6ba2ab0c04418b0a1d"
+    },
+    {
+      "path": "records/release-candidate-audit.json",
+      "bytes": 25914,
+      "sha256": "7f4c4d7033eefddc2e61c7814159b2955acae375eb761e5d2404f6355d125d46"
+    },
+    {
+      "path": "records/release-candidate-audit.summary.json",
+      "bytes": 334,
+      "sha256": "6c26ddce744f1cb3dfecfc9707e5b7fa55cc22f7a16417c82ea37591140a89ae"
+    }
+  ]
+}

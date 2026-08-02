@@ -1,0 +1,82 @@
+{
+  "deepening": 3,
+  "total": 10,
+  "generatedAt": "2026-08-02T15:22:00+09:00",
+  "files": [
+    {
+      "path": "index.html",
+      "sizeBytes": 2534126,
+      "sha256": "028eaee304da1e73e31017f461d326db396f06c4069951f922a970c98a90e562"
+    },
+    {
+      "path": "integration-manifest.json",
+      "sizeBytes": 6847,
+      "sha256": "6bbb7100f767deb27a0719bb5244dec882847bd94e936cfdc7ce0a61549cea70"
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "sizeBytes": 12260,
+      "sha256": "e3fc3065a163228ce3ecbf410347b03b7fd08039397b8e1370a1820ad39093d4"
+    },
+    {
+      "path": "assets/js/hero/hero-precision-data.js",
+      "sizeBytes": 751559,
+      "sha256": "fc08232067cf4a504074c91c56a7aeaa438edb34b4a838417ea3e5578315c04c"
+    },
+    {
+      "path": "assets/js/hero/hero-precision-runtime.js",
+      "sizeBytes": 5052,
+      "sha256": "750789cdf4714e8fcc51b9b1415fb4736fcc42639126340a83d248478f7afa31"
+    },
+    {
+      "path": "assets/hero/precision/README.md",
+      "sizeBytes": 600,
+      "sha256": "9c9bb6b7bc1c53b1bce512ee5dfab05832db1e4640b53a0c3aaf14574e344f3c"
+    },
+    {
+      "path": "data/hero/hero-image-catalog.v1.json",
+      "sizeBytes": 12481,
+      "sha256": "c1186e686a654aa37829f4e9f3b7fd780407509d7644d6a83cacaf690e57c635"
+    },
+    {
+      "path": "data/hero/destination-visual-profile.v1.json",
+      "sizeBytes": 183029,
+      "sha256": "797adfa617d80f0946e286871b757c92ef8416857993313c2e997bb57d55c92e"
+    },
+    {
+      "path": "data/hero/route-hero-affinity.v1.json",
+      "sizeBytes": 1042040,
+      "sha256": "f3ac429522b694ce2237c1e001c68ecf67f8a435179abee9560262a560c00f41"
+    },
+    {
+      "path": "docs/integration/03_HERO_PRECISION_INTEGRATION.md",
+      "sizeBytes": 1649,
+      "sha256": "c33049136a3be9f7d3f716944e9518db1203dcd3608a6222af2b4df3aa849739"
+    },
+    {
+      "path": "records/external-hero-package.json",
+      "sizeBytes": 964,
+      "sha256": "41bd2ead8ac4a46b0d1f3b53cf719b8aded571cd620126d5343961376331040a"
+    },
+    {
+      "path": "records/hero-precision-audit.json",
+      "sizeBytes": 2236,
+      "sha256": "20073a952f22957d3794b1fe373d31818776b3c902c0776d7a7327c13b8b31da"
+    },
+    {
+      "path": "records/hero-precision-samples.json",
+      "sizeBytes": 28887,
+      "sha256": "a781ecff2689880bdbbec876a5790f1cb8c0a3f4105525c9651a24d2d4943276"
+    },
+    {
+      "path": "records/reference/hero-precision-cross-chat.png",
+      "sizeBytes": 141585,
+      "sha256": "0c05cd1b68a27b9a760d2b0422cf9412f1e995f89f23938589a7abd074aa43e7"
+    },
+    {
+      "path": "scripts/audit_hero_precision.py",
+      "sizeBytes": 5025,
+      "sha256": "3a33a180b4f67749dc8ba23c8beaf78bd808fa905beed873064e2b05f39d92f5"
+    }
+  ]
+}

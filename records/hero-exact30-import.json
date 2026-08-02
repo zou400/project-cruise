@@ -1,0 +1,113 @@
+{
+  "release": "v0.11.0-rc3",
+  "sourcePackage": "Project_Cruise_Exact_Generated_Hero_30_v1(3).zip",
+  "sourcePackageSha256": "99de29368ebe6cdadfccf1bd59592663cfe5ef007b5b44a132884a87913af019",
+  "sourceContract": "Project_Cruise_Exact_Generated_Hero_30_v1",
+  "importedAssetCount": 30,
+  "runtimeDirectory": "assets/hero/precision",
+  "catalog": "data/hero/hero-image-catalog.v1.json",
+  "adapterReferencesRepaired": 47,
+  "repairSample": [
+    {
+      "routeId": "R021",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R042",
+      "removed": "city_twilight_01",
+      "replacement": "park_night_02"
+    },
+    {
+      "routeId": "R047",
+      "removed": "city_twilight_01",
+      "replacement": "park_morning_01"
+    },
+    {
+      "routeId": "R048",
+      "removed": "city_twilight_01",
+      "replacement": "park_night_02"
+    },
+    {
+      "routeId": "R074",
+      "removed": "city_twilight_01",
+      "replacement": "park_morning_01"
+    },
+    {
+      "routeId": "R099",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R116",
+      "removed": "city_twilight_01",
+      "replacement": "park_day_01"
+    },
+    {
+      "routeId": "R125",
+      "removed": "city_twilight_01",
+      "replacement": "park_morning_01"
+    },
+    {
+      "routeId": "R130",
+      "removed": "city_twilight_01",
+      "replacement": "park_night_02"
+    },
+    {
+      "routeId": "R132",
+      "removed": "city_twilight_01",
+      "replacement": "park_morning_01"
+    },
+    {
+      "routeId": "R147",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R149",
+      "removed": "city_twilight_01",
+      "replacement": "park_morning_01"
+    },
+    {
+      "routeId": "R150",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R152",
+      "removed": "city_twilight_01",
+      "replacement": "water_night_01"
+    },
+    {
+      "routeId": "R161",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R172",
+      "removed": "city_twilight_01",
+      "replacement": "water_twilight_01"
+    },
+    {
+      "routeId": "R174",
+      "removed": "city_twilight_01",
+      "replacement": "water_night_02"
+    },
+    {
+      "routeId": "R175",
+      "removed": "city_twilight_01",
+      "replacement": "water_night_02"
+    },
+    {
+      "routeId": "P-D022",
+      "removed": "city_twilight_01",
+      "replacement": "park_night_02"
+    },
+    {
+      "routeId": "P-D027",
+      "removed": "city_twilight_01",
+      "replacement": "park_day_01"
+    }
+  ],
+  "noRegeneration": true
+}

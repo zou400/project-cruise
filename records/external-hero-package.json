@@ -1,0 +1,26 @@
+{
+  "fullPackage": {
+    "name": "Project_Cruise_Exact_Generated_Hero_30_v1(3).zip",
+    "sha256": "99de29368ebe6cdadfccf1bd59592663cfe5ef007b5b44a132884a87913af019"
+  },
+  "sourceMap": {
+    "name": "SOURCE_MAP_EXACT.json",
+    "sha256": "6b33d5738ce3d65d5025a1dc6b7a0823ca21dedfd26056779af3a17cc39605d8"
+  },
+  "visualLibrary": {
+    "name": "visual-library.json",
+    "sha256": "ea989d3e3cde9acda4a10733fcf434b1b71b757354aa203da9beca2fda2eb2f8"
+  },
+  "reportedValidation": {
+    "version": "Project_Cruise_Exact_Generated_Hero_30_v1",
+    "exactWebpCount": 30,
+    "sourceMapHashMismatches": 0,
+    "destinationProfiles": 320,
+    "routeAffinities": 501,
+    "invalidImageIds": 0,
+    "candidateRange": "4-6",
+    "browserSmoke": "pending-deployed-check"
+  },
+  "workspaceImportState": "exact source pack mounted; 30/30 WebP assets copied and hash-verified",
+  "assetPolicy": "exact generated WebP derivatives only; no regeneration performed"
+}

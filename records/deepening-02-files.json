@@ -1,0 +1,60 @@
+{
+  "deepening": "2/10",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2533999,
+      "sha256": "3769becd1d60c3712a871d3f5611f74535773428f1262aaf43360293d6991c15"
+    },
+    {
+      "path": "assets/css/cruise-v011.css",
+      "bytes": 11194,
+      "sha256": "af41d7f61231945df522634c4137486dcebca732fb485e400990f4d530d34dd2"
+    },
+    {
+      "path": "assets/js/cruise-v011.js",
+      "bytes": 10486,
+      "sha256": "3e0bbca2811350e14c6a966e37d2a82a744e75fd827cd60fa95974afd3905a92"
+    },
+    {
+      "path": "docs/integration/02_UI_COMPONENT_AND_EVENT_CONTRACT.md",
+      "bytes": 6429,
+      "sha256": "89d057457296a2ab0612b978b161c2bf5abdc53f8b72a4179a16172e791bfbf7"
+    },
+    {
+      "path": "records/ui-boundary-audit.json",
+      "bytes": 1231,
+      "sha256": "119613bbf5eea9466b8b3a72f95e119c76eff8c816b71875e2345e404a1995f4"
+    },
+    {
+      "path": "records/ui-contract-audit.json",
+      "bytes": 1067,
+      "sha256": "38cf542e5a300354fe76c757c32ffe6d6a91607cb2a461863ae9693791bfb918"
+    },
+    {
+      "path": "records/browser-smoke.json",
+      "bytes": 279,
+      "sha256": "966baf987345233f83f9ecb6a1d6621d3ce5c346bc9095aaa07d9016c4b78ff5"
+    },
+    {
+      "path": "scripts/audit_ui_contract.py",
+      "bytes": 2969,
+      "sha256": "5738b24d0eb67f72b1e3451e7cbc4203eb96d23735bf81627efe7334dcf7aa2a"
+    },
+    {
+      "path": "scripts/audit_canonical.py",
+      "bytes": 3434,
+      "sha256": "9077a2bd6ea3d25a3c0e8563da1cb3afc5de4ea9576d8d0850882cf131d1d8ab"
+    },
+    {
+      "path": "tests/browser_smoke_cdp.py",
+      "bytes": 9238,
+      "sha256": "b8adbd4db5d0225017c9ea7e50c6b73121dcacf427bf326c72ff2e30a410a502"
+    },
+    {
+      "path": "integration-manifest.json",
+      "bytes": 5022,
+      "sha256": "6f39fede7f4a0ad1fb97de845c5128988436a426eef05c56242880182971e68c"
+    }
+  ]
+}

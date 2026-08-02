@@ -1,0 +1,401 @@
+{
+  "version": "v0.10.4-hero-exact30",
+  "count": 30,
+  "usage": "cinematic experience imagery; exact previously generated source set",
+  "images": [
+    {
+      "id": "airport_night_01",
+      "src": "assets/hero/airport_night_01.webp",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "airport_twilight_01",
+      "src": "assets/hero/airport_twilight_01.webp",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "airport_twilight_02",
+      "src": "assets/hero/airport_twilight_02.webp",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 53%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "airport_twilight_03",
+      "src": "assets/hero/airport_twilight_03.webp",
+      "categories": [
+        "airport",
+        "industrial"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "city_night_01",
+      "src": "assets/hero/city_night_01.webp",
+      "categories": [
+        "city",
+        "culture"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "culture_night_01",
+      "src": "assets/hero/culture_night_01.webp",
+      "categories": [
+        "culture",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "industrial_night_01",
+      "src": "assets/hero/industrial_night_01.webp",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_day_01",
+      "src": "assets/hero/pa_day_01.webp",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 55%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_day_02",
+      "src": "assets/hero/pa_day_02.webp",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 53%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_day_03",
+      "src": "assets/hero/pa_day_03.webp",
+      "categories": [
+        "pa",
+        "city"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 54%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_night_01",
+      "src": "assets/hero/pa_night_01.webp",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 54%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_night_02",
+      "src": "assets/hero/pa_night_02.webp",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 56%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_night_03",
+      "src": "assets/hero/pa_night_03.webp",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 58%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_night_04",
+      "src": "assets/hero/pa_night_04.webp",
+      "categories": [
+        "pa",
+        "industrial"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 55%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_twilight_01",
+      "src": "assets/hero/pa_twilight_01.webp",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_twilight_02",
+      "src": "assets/hero/pa_twilight_02.webp",
+      "categories": [
+        "pa"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "pa_twilight_03",
+      "src": "assets/hero/pa_twilight_03.webp",
+      "categories": [
+        "pa",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_day_01",
+      "src": "assets/hero/park_day_01.webp",
+      "categories": [
+        "park",
+        "city"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 48%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_morning_01",
+      "src": "assets/hero/park_morning_01.webp",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_night_01",
+      "src": "assets/hero/park_night_01.webp",
+      "categories": [
+        "park",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_night_02",
+      "src": "assets/hero/park_night_02.webp",
+      "categories": [
+        "park",
+        "city",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 49%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_rain_01",
+      "src": "assets/hero/park_rain_01.webp",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 53%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_rain_02",
+      "src": "assets/hero/park_rain_02.webp",
+      "categories": [
+        "park"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 52%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_water_01",
+      "src": "assets/hero/park_water_01.webp",
+      "categories": [
+        "park",
+        "water"
+      ],
+      "times": [
+        "morning",
+        "day"
+      ],
+      "position": "center 49%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "park_water_02",
+      "src": "assets/hero/park_water_02.webp",
+      "categories": [
+        "park",
+        "water"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "water_day_01",
+      "src": "assets/hero/water_day_01.webp",
+      "categories": [
+        "water",
+        "park"
+      ],
+      "times": [
+        "day",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "water_night_01",
+      "src": "assets/hero/water_night_01.webp",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "water_night_02",
+      "src": "assets/hero/water_night_02.webp",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "water_twilight_01",
+      "src": "assets/hero/water_twilight_01.webp",
+      "categories": [
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 50%",
+      "sourceType": "ai_generated_experience_visual"
+    },
+    {
+      "id": "water_twilight_02",
+      "src": "assets/hero/water_twilight_02.webp",
+      "categories": [
+        "water"
+      ],
+      "times": [
+        "morning",
+        "night"
+      ],
+      "position": "center 48%",
+      "sourceType": "ai_generated_experience_visual"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "release": "v0.11.0-rc3",
+  "deepening": 7,
+  "target": [
+    "iPhone Safari",
+    "touch",
+    "keyboard",
+    "reduced motion",
+    "low data"
+  ],
+  "checks": {
+    "viewport_fit_cover": true,
+    "safe_area_css": true,
+    "dynamic_viewport_units": true,
+    "touch_targets_44px": true,
+    "focus_visible": true,
+    "skip_link": true,
+    "reduced_motion": true,
+    "reduced_data": true,
+    "radio_semantics": true,
+    "dialog_focus_trap": true,
+    "dialog_keyboard_safe": true,
+    "map_touch_height": true,
+    "long_title_wrap": true,
+    "no_duplicate_ids": true,
+    "about_expanded_state": true,
+    "status_live_regions": true
+  },
+  "duplicateIds": [],
+  "passed": true
+}

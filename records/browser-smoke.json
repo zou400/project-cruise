@@ -1,0 +1,7 @@
+{
+  "release": "v0.11.0-rc1",
+  "status": "skipped",
+  "reason": "The current execution environment blocks Chromium navigation with ERR_BLOCKED_BY_ADMINISTRATOR.",
+  "nextAction": "Run this same test on GitHub Actions or a local browser-enabled environment.",
+  "passed": null
+}

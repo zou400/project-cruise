@@ -1,332 +1,3 @@
-<!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
-<meta name="color-scheme" content="dark">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="format-detection" content="telephone=no">
-<meta name="theme-color" content="#0b0710">
-<title>Project Cruise｜GitHub Integration v0.11.0-rc3</title>
-<link rel="preconnect" href="https://unpkg.com">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<style>
-*{box-sizing:border-box}
-:root{--navy:#071b2c;--blue:#0e7490;--deep:#143d59;--text:#102536;--muted:#667d8b;--paper:#fff;--line:#dce7ed}
-body{margin:0;min-height:100vh;background:radial-gradient(circle at 82% 7%,#236f92 0,#0b2d43 38%,#061725 100%);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif}
-.app{width:min(1220px,100%);margin:auto;padding:30px 20px 48px}
-.brand{text-align:center;padding:10px 0 22px}
-.eyebrow{font-size:11px;letter-spacing:.22em;opacity:.7}
-.brand h1{margin:8px 0 14px;font-size:clamp(42px,8vw,76px);line-height:.95}
-.lead{opacity:.88;margin-bottom:0}
-.selector{width:min(660px,100%);margin:auto;background:rgba(255,255,255,.97);color:var(--text);border-radius:24px;padding:25px;box-shadow:0 20px 60px rgba(0,0,0,.22)}
-.step{text-align:center;margin:0 0 14px;font-weight:800}
-
-.origin-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.origin-btn{display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid #c9d7df;background:#eef3f6;color:#16364a;border-radius:14px;padding:14px 10px;font-size:16px;font-weight:800;cursor:pointer}
-.origin-btn.active{background:var(--deep);color:#fff;border-color:var(--deep)}
-.origin-btn.loading{opacity:.72;cursor:wait}
-.origin-icon{font-size:15px}
-.origin-status{text-align:center;color:#718590;font-size:12px;margin:10px 0 18px}
-.origin-status.error{color:#9a4d39}
-.origin-status.success{color:#24704b}
-.second-step{margin-top:0}
-
-.time-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.time-btn{border:1px solid #c9d7df;background:#eef3f6;color:#16364a;border-radius:14px;padding:14px 8px;font-size:16px;font-weight:800;cursor:pointer}
-.time-btn.active{background:var(--deep);color:white;border-color:var(--deep)}
-.draw-btn{width:100%;margin-top:18px;border:0;border-radius:16px;padding:19px;background:var(--blue);color:#fff;font-size:21px;font-weight:900;cursor:pointer;box-shadow:0 8px 20px rgba(14,116,144,.28)}
-.draw-btn:active,.secondary:active{transform:scale(.99)}
-.hint{text-align:center;color:#718590;font-size:13px;margin:12px 0 0}
-.hidden{display:none!important}
-
-.result-shell{display:grid;grid-template-columns:minmax(350px,.9fr) minmax(420px,1.25fr);gap:18px;margin-top:18px;align-items:stretch}
-.result-card,.map-card{background:rgba(255,255,255,.98);color:var(--text);border-radius:24px;padding:25px;box-shadow:0 20px 60px rgba(0,0,0,.22);min-width:0}
-.result-card{position:relative;overflow:hidden;background:#f4f2eb;border:1px solid rgba(16,37,54,.16);border-radius:10px;box-shadow:0 26px 70px rgba(0,0,0,.24)}
-.result-card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#152f3e}
-.result-card:after{content:"DRIVE NOTE / 01";position:absolute;right:22px;top:18px;font:700 9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.22em;color:rgba(16,37,54,.30)}
-.result-top{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
-.destination-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:end;padding:24px 0 20px;border-bottom:1px solid #243d49}
-.destination-copy{min-width:0}
-.trip-estimate{min-width:136px;background:#152f3e;color:#fff;padding:14px 15px;border-radius:2px;border-left:4px solid #b9463f;box-shadow:none}
-.trip-estimate span,.trip-estimate small{display:block;font-size:10px;letter-spacing:.12em;opacity:.72}
-.trip-estimate strong{display:block;margin:5px 0 3px;font-size:22px;line-height:1.1;white-space:nowrap}
-.trip-estimate small{letter-spacing:.02em;line-height:1.35}
-.pill{font-size:10px;font-weight:800;background:#e6eee7;color:#24523b;border-radius:2px;padding:7px 10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(36,82,59,.10)}
-.pill.muted{background:#e7ebec;color:#425761}
-.label{margin:0 0 7px;color:#16849b;font-size:10px;font-weight:900;letter-spacing:.19em}
-.result-card h2{font-size:clamp(31px,3.55vw,46px);line-height:1.08;margin:0;letter-spacing:-.04em;font-weight:850;white-space:nowrap;max-width:100%;font-feature-settings:"palt" 1}
-.result-card h2.title-long{font-size:clamp(27px,3.05vw,39px);letter-spacing:-.05em}
-.result-card h2.title-xlong{font-size:clamp(23px,2.55vw,33px);letter-spacing:-.055em}
-.route-title{color:#5d6670;font:700 13px/1.5 ui-monospace,SFMono-Regular,Menlo,"Yu Gothic",monospace;letter-spacing:.03em;margin:10px 0 0}
-.route-line{margin:22px 0 18px;background:rgba(255,255,255,.68);border:1px solid #cfd7d7;border-radius:2px;padding:18px;box-shadow:none}
-.route-stop{position:relative;padding:0 0 18px 27px}
-.route-stop:last-child{padding-bottom:0}
-.route-stop:before{content:"";position:absolute;left:4px;top:6px;width:10px;height:10px;border-radius:50%;background:#f2c94c;z-index:2}
-.route-stop.start:before{background:#2474d2}
-.route-stop.goal:before{background:#ef4056}
-.route-stop:not(:last-child):after{content:"";position:absolute;left:8px;top:16px;width:2px;height:calc(100% - 4px);background:#b9ccd6}
-.route-stop span{display:block;font-size:10px;color:#8295a1;letter-spacing:.12em}
-.route-stop strong{font-size:16px}
-.intent{line-height:1.85;margin:18px 0 0;padding:18px 19px;background:rgba(255,255,255,.78);border-left:3px solid #16849b;font-size:14px;letter-spacing:.018em;box-shadow:none;color:#233b48}
-
-.caution{font-size:13px;color:#745b19;background:#fff4ce;border-radius:4px;padding:12px 14px;border-left:4px solid #e0b334}
-.actions{display:grid;gap:10px;margin-top:20px}
-.primary,.secondary{display:block;text-align:center;text-decoration:none;border:0;border-radius:4px;padding:16px;font-size:16px;font-weight:900;cursor:pointer;letter-spacing:.02em}
-.primary{background:var(--deep);color:#fff}
-.secondary{background:#e8eef2;color:var(--deep)}
-.report-link{border:0;background:transparent;color:#607684;text-decoration:underline;text-underline-offset:3px;font-size:12px;cursor:pointer;padding:5px 8px;justify-self:center}
-.report-link:hover{color:#b0443d}
-.report-toast{margin:0;text-align:center;color:#2c6a4c;font-size:12px;font-weight:700}
-.issue-modal{position:fixed;inset:0;z-index:3000;display:grid;place-items:center;padding:20px;background:rgba(3,17,27,.72);backdrop-filter:blur(4px)}
-.issue-panel{width:min(520px,100%);background:#f7f5ef;color:var(--text);border-radius:10px;border-top:4px solid #b9463f;padding:24px;box-shadow:0 30px 90px rgba(0,0,0,.42)}
-.issue-panel h2{margin:0 0 8px;font-size:24px}
-.issue-panel p{font-size:13px;color:#61727c;line-height:1.65}
-.issue-panel label{display:block;font-size:12px;font-weight:800;margin:15px 0 6px}
-.issue-panel select,.issue-panel textarea{width:100%;border:1px solid #cbd6da;background:#fff;color:#17313f;border-radius:4px;padding:11px;font:inherit}
-.issue-panel textarea{min-height:88px;resize:vertical}
-.issue-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:18px}
-.issue-actions button{border:0;border-radius:3px;padding:13px;font-weight:850;cursor:pointer}
-.issue-save{background:#173f55;color:#fff}.issue-close{background:#e5ebed;color:#173f55}
-.issue-export{margin-top:9px;width:100%;border:1px solid #bdcbd0;background:transparent;color:#425d6a;border-radius:3px;padding:10px;font-weight:750;cursor:pointer}
-.issue-count{font-size:11px;color:#7a8e99;text-align:center;margin:10px 0 0}
-
-.map-card{display:flex;flex-direction:column}
-.map-head{display:flex;justify-content:space-between;gap:15px;align-items:end;margin-bottom:13px}
-.map-head>div{display:flex;flex-direction:column}
-.map-label{font-size:18px;letter-spacing:.11em;color:#123f56;font-weight:900}
-.map-head strong{font-size:20px}
-#map-status{font-size:11px;color:#758a97;text-align:right}
-#map-link{position:relative;display:block;min-height:470px;flex:1;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#eaf1f4;text-decoration:none}
-#map{height:100%;min-height:470px;width:100%;cursor:pointer}
-.map-cta{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:500;background:rgba(7,27,44,.9);color:#fff;border-radius:99px;padding:10px 16px;font-size:12px;font-weight:900;white-space:nowrap;pointer-events:none;box-shadow:0 6px 18px rgba(0,0,0,.24)}
-.legend{display:flex;gap:16px;flex-wrap:wrap;margin:14px 3px 0;font-size:12px;color:#617786}
-.legend span{display:flex;align-items:center;gap:6px}
-.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-.dot.blue{background:#4285f4}.dot.yellow{background:#fbbc04}.dot.red{background:#ea4335}
-.map-note{font-size:11px;line-height:1.55;color:#8295a1;margin:10px 3px 0}
-.marker-pin{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid white;box-shadow:0 3px 10px rgba(0,0,0,.3)}
-.marker-pin.blue{background:#4285f4}.marker-pin.yellow{background:#fbbc04}.marker-pin.red{background:#ea4335}
-.marker-pin span{display:block;transform:rotate(45deg);text-align:center;line-height:20px;font-size:10px;font-weight:900;color:#fff}
-.route-animated{filter:drop-shadow(0 1px 1px rgba(0,0,0,.18))}
-footer{text-align:center;padding:24px 12px}
-footer button{border:0;background:transparent;color:#c7d8e3;text-decoration:underline;cursor:pointer}
-.about{font-size:12px;line-height:1.7;color:#c7d8e3}
-
-@media(max-width:900px){
- .app{width:min(720px,100%)}
- .result-shell{grid-template-columns:1fr}
- #map-link,#map{min-height:410px}
-}
-@media(max-width:480px){
- .app{padding:20px 13px 38px}
- .selector,.result-card,.map-card{padding:19px;border-radius:20px}
- .time-btn{font-size:14px}
- .result-shell{gap:13px}
- #map-link,#map{min-height:340px}
- .map-head{align-items:start}
- .map-head strong{font-size:18px}
- .map-cta{font-size:11px;padding:9px 13px}
- .destination-head{grid-template-columns:1fr;gap:15px}
- .trip-estimate{width:100%;min-width:0;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:center}
- .trip-estimate strong{grid-row:1/3;grid-column:2;text-align:right}
- .trip-estimate small{grid-column:1}
- .result-card:after{display:none}
- .result-card h2{font-size:30px}
- .result-card h2.title-long{font-size:26px}
- .result-card h2.title-xlong{font-size:22px}
-}
-.time-rule-note{font-size:12px;color:#617786;line-height:1.6}
-
-.db-details{margin-top:12px;border:1px solid var(--line);border-radius:14px;background:#f7fafb;overflow:hidden}
-.db-details summary{cursor:pointer;padding:13px 15px;font-size:13px;font-weight:900;color:var(--deep);list-style:none}
-.db-details summary::-webkit-details-marker{display:none}
-.db-details summary:after{content:"＋";float:right;color:var(--blue)}
-.db-details[open] summary:after{content:"−"}
-.db-detail-content{border-top:1px solid var(--line);padding:14px 15px;font-size:13px;line-height:1.7;color:#4f6877}
-.db-detail-content h3{font-size:14px;color:var(--text);margin:12px 0 4px}
-.db-detail-content h3:first-child{margin-top:0}
-.db-detail-content p{margin:3px 0 9px}
-.db-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px}
-.db-chip{background:#eaf2f5;border-radius:10px;padding:9px 10px}
-.db-chip span{display:block;font-size:10px;color:#748995}
-.db-chip strong{font-size:13px;color:#17384b}
-.db-alert{background:#fff4ce;color:#745b19;border-radius:10px;padding:10px;margin-top:8px}
-@media(max-width:480px){.db-grid{grid-template-columns:1fr}}
-
-.proposal-character{background:#e7f2f5;color:#0c667e;border:1px solid #b7d6df;font-weight:900}
-.pool-status{margin:8px 0 0;font-size:12px;line-height:1.55;color:#0e7490;font-weight:700;text-align:center}
-
-.db-version{display:inline-block;margin:.45rem auto 0;padding:.35rem .65rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.04em;background:rgba(255,255,255,.08)}
-
-.learning-export{display:inline-block;margin-top:12px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;border-radius:4px;padding:9px 12px;font-size:12px;font-weight:800;cursor:pointer}
-.learning-export:hover{background:rgba(255,255,255,.16)}
-.feedback-choice-grid{display:grid;gap:8px;margin-top:16px}
-.feedback-choice-grid.two{grid-template-columns:1fr 1fr}
-.feedback-choice{border:1px solid #c7d3d8;background:#fff;color:#17313f;border-radius:4px;padding:13px 12px;font:inherit;font-weight:800;cursor:pointer;text-align:left}
-.feedback-choice:hover{border-color:#173f55;background:#edf4f6}
-.feedback-choice.primary-choice{background:#173f55;color:#fff;border-color:#173f55}
-.feedback-choice.danger-choice{color:#8a332e;border-color:#d7aaa6}
-.feedback-sub{font-size:12px;color:#6d808a;margin-top:8px}
-.feedback-route-name{font-size:18px;font-weight:900;color:#17313f;margin:8px 0 0}
-.feedback-skip{border:0;background:transparent;color:#6d808a;text-decoration:underline;text-underline-offset:3px;padding:10px;cursor:pointer;justify-self:center}
-.learning-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:4000;background:#173f55;color:#fff;border-radius:4px;padding:11px 16px;font-size:12px;font-weight:800;box-shadow:0 12px 35px rgba(0,0,0,.3)}
-</style>
-<link rel="stylesheet" href="assets/css/cruise-v011.css?v=0.11.0-rc2">
-</head>
-<body>
-<a class="pc-skip-link" href="#main-content">本文へ移動</a>
-<main id="main-content" class="app" tabindex="-1">
-  <header class="brand">
-    <h1>（仮）サービス名</h1>
-    <p id="db-version" class="db-version">CONTEXT ENGINE v0.10.0 読み込み中</p>
-  </header>
-
-  <section class="selector">
-    <p class="step">1. スタート地点を選ぶ</p>
-    <div class="origin-options" role="radiogroup" aria-label="スタート地点">
-      <button id="origin-current" class="origin-btn" data-origin="current" type="button" role="radio" aria-checked="false">
-        <span class="origin-icon">◎</span>
-        <span>現在地</span>
-      </button>
-      <button id="origin-preset" class="origin-btn active" data-origin="preset" type="button" role="radio" aria-checked="true">
-        <span class="origin-icon">●</span>
-        <span id="preset-origin-label">登録済み起点</span>
-      </button>
-    </div>
-    <p id="origin-status" class="origin-status" role="status" aria-live="polite">登録済み起点を使用します。</p>
-
-    <p class="step second-step">2. 移動に使える時間を選ぶ</p>
-    <div class="time-options" role="radiogroup" aria-label="使える時間">
-      <button class="time-btn active" data-time="90" type="button" role="radio" aria-checked="true">移動90分</button>
-      <button class="time-btn" data-time="120" type="button" role="radio" aria-checked="false">移動2時間</button>
-      <button class="time-btn" data-time="half" type="button" role="radio" aria-checked="false">移動半日</button>
-    </div>
-    <button id="draw" class="draw-btn" type="button">どこにいく？</button>
-    <p class="hint">学習ループテスト版です。場所の価値、いま成立するか、ルートの完成度を分けて評価し、再抽選・出発・帰還評価からこの端末に合う候補へ調整します。</p>
-    <p id="pool-status" class="pool-status" role="status" aria-live="polite">候補数を読み込み中です。</p>
-  </section>
-
-  <section id="result" class="result-shell hidden" aria-live="polite">
-    <article class="result-card">
-      <div class="result-top">
-        <span id="duration" class="pill"></span>
-        <span id="theme" class="pill muted"></span>
-        <span id="proposal-character" class="pill proposal-character"></span>
-      </div>
-
-      <div class="destination-head">
-        <div class="destination-copy">
-          <p class="label">TODAY'S DESTINATION / 今日の行先</p>
-          <h2 id="destination"></h2>
-          <p id="title" class="route-title"></p>
-        </div>
-        <div class="trip-estimate" aria-live="polite">
-          <span>目的地まで</span>
-          <strong id="trip-eta">計算中</strong>
-          <small id="trip-distance">道路ルートの概算</small>
-        </div>
-      </div>
-
-      <div class="route-line">
-        <div class="route-stop start">
-          <span>START</span>
-          <strong id="start-label">登録済み起点</strong>
-        </div>
-        <div id="waypoints"></div>
-        <div class="route-stop goal">
-          <span>GOAL</span>
-          <strong id="goal"></strong>
-        </div>
-      </div>
-
-      <p id="intent" class="intent"></p>
-      <p id="caution" class="caution"></p>
-
-      <div class="actions">
-        <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
-        <button id="redraw" class="secondary" type="button">ほかの行先にする</button>
-        <button id="report-issue" class="report-link" type="button">表示がおかしい？ 不具合を報告</button>
-        <p id="report-toast" class="report-toast hidden" role="status" aria-live="polite">報告をこの端末に保存しました。</p>
-      </div>
-    </article>
-
-    <aside class="map-card">
-      <div class="map-head">
-        <div>
-          <span class="map-label">ROUTE PREVIEW</span>
-        </div>
-        <span id="map-status" role="status" aria-live="polite">地点を読み込み中</span>
-      </div>
-      <a id="map-link" target="_blank" rel="noopener" aria-label="Googleマップでルートを開く" aria-disabled="true">
-        <div id="map"></div>
-        <div class="map-cta">地図を押してGoogleマップへ</div>
-      </a>
-      <div class="legend">
-        <span><i class="dot blue"></i>出発</span>
-        <span><i class="dot yellow"></i>経由地</span>
-        <span><i class="dot red"></i>目的地</span>
-      </div>
-      <p class="map-note">地図はルートの全体像を示すプレビューです。実際の道路・渋滞・規制はGoogleマップで確認してください。</p>
-    </aside>
-  </section>
-
-  <footer>
-    <button id="about-toggle" type="button" aria-expanded="false" aria-controls="about">このサービスについて</button>
-    <p id="about" class="about hidden">320地点・181完成ルート・501結果を、場所価値・現在適合・ルート完成度へ分けて評価します。端末内の採否履歴は個人適合として別に学習します。再抽選理由はときどき任意で確認し、Googleマップ遷移後は次回訪問時に結果を聞きます。位置履歴は取得せず、学習データはこの端末内だけに保存します。同じ場所の再登場は禁止しません。<br><button id="learning-export" class="learning-export" type="button">テスト学習ログをコピー</button></p>
-  </footer>
-</main>
-  <div id="issue-modal" class="issue-modal hidden" role="dialog" aria-modal="true" aria-labelledby="issue-title" aria-describedby="issue-description">
-    <div class="issue-panel" tabindex="-1">
-      <h2 id="issue-title">不具合を報告</h2>
-      <p id="issue-description">現在表示中の目的地・ルート・時間条件と一緒に、この端末へ保存します。位置情報の履歴は保存しません。</p>
-      <label for="issue-type">どこがおかしいですか？</label>
-      <select id="issue-type">
-        <option value="map_wrong">地図の場所が違う</option>
-        <option value="destination_bad">目的地として不適切</option>
-        <option value="time_bad">所要時間が不自然</option>
-        <option value="route_bad">経由地・ルートが不自然</option>
-        <option value="other">その他</option>
-      </select>
-      <label for="issue-note">補足（任意）</label>
-      <textarea id="issue-note" placeholder="例：目的地は豊洲なのに、地図が別の県を表示した"></textarea>
-      <div class="issue-actions">
-        <button id="issue-close" class="issue-close" type="button">閉じる</button>
-        <button id="issue-save" class="issue-save" type="button">報告を保存</button>
-      </div>
-      <button id="issue-export" class="issue-export" type="button">保存済み報告をコピー</button>
-      <p id="issue-count" class="issue-count">保存済み報告 0件</p>
-    </div>
-  </div>
-
-  <div id="reroll-modal" class="issue-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reroll-title">
-    <div class="issue-panel" tabindex="-1">
-      <h2 id="reroll-title">さっきの提案を変えた理由は？</h2>
-      <p id="reroll-route-name" class="feedback-route-name"></p>
-      <p>毎回は聞きません。選ぶと、この端末で次の提案が少し変わります。</p>
-      <div class="feedback-choice-grid two">
-        <button class="feedback-choice" data-reroll-reason="far" type="button">少し遠い</button>
-        <button class="feedback-choice" data-reroll-reason="mood" type="button">今日は気分と違う</button>
-        <button class="feedback-choice" data-reroll-reason="known" type="button">行ったことがある</button>
-        <button class="feedback-choice" data-reroll-reason="weak" type="button">目的地として弱い</button>
-      </div>
-      <button id="reroll-skip" class="feedback-skip" type="button">今回は答えない</button>
-    </div>
-  </div>
-
-  <div id="return-modal" class="issue-modal hidden" role="dialog" aria-modal="true" aria-labelledby="return-title">
-    <div class="issue-panel" tabindex="-1">
-      <h2 id="return-title">このCruise、どうでしたか？</h2>
-      <p id="return-route-name" class="feedback-route-name"></p>
-      <p>位置履歴は使いません。結果だけを選定精度へ反映します。</p>
-      <div class="feedback-choice-grid">
-        <button class="feedback-choice primary-choice" data-trip-outcome="good" type="button">行った・時間内で良かった</button>
-        <button class="feedback-choice" data-trip-outcome="over" type="button">行った・時間を超えた</button>
-        <button class="feedback-choice danger-choice" data-trip-outcome="bad" type="button">行ったが、提案は微妙だった</button>
-        <button class="feedback-choice" data-trip-outcome="not_went" type="button">今回は行かなかった</button>
-      </div>
-      <button id="return-later" class="feedback-skip" type="button">あとで答える</button>
     </div>
   </div>
   <p id="learning-toast" class="learning-toast hidden" role="status" aria-live="polite"></p>
@@ -357,7 +28,6 @@ const destinationCountsByTime={90:new Map(),120:new Map(),half:new Map()};
 const routeCountsByTime={90:new Map(),120:new Map(),half:new Map()};
 const RECENT_DESTINATION_LIMIT=30;
 const RECENT_DIVERSITY_LIMIT=18;
-const SESSION_NO_REPEAT_LIMIT=24;
 const USER_PROFILE_KEY="pcSelectionProfileV1";
 const ROUTE_STATS_KEY="pcRouteStatsV1";
 const EVENT_LOG_KEY="pcLearningEventsV1";
@@ -366,7 +36,6 @@ const REROLL_COUNTER_KEY="pcRerollCounterV1";
 let userProfile=loadUserProfile();
 let routeStats=loadRouteStats();
 let pendingReasonRoute=null;
-let rerollPromptTimer=null;
 let lastAcceptedSelection="";
 let lastSelectionMeta=null;
 let config=null;
@@ -640,7 +309,7 @@ function destinationCandidates(pool){
   return {key,variants,best,score,hidden:numValue(d.hidden,3),category:dna.category,direction:dna.direction,dna,tier:routeTier(best),hasCanonical:variants.some(x=>x.candidateSource==="canonical_route")};
  });
 }
-function selectionLane(){const roll=Math.random();return roll<.52?"quality":roll<.90?"discovery":"wildcard"}
+function selectionLane(){const roll=Math.random();return roll<.70?"quality":roll<.95?"discovery":"wildcard"}
 function getIssuePenaltyForDestination(key){
  let p=1;
  for(const report of getIssueReports())if(normalizeName(report.destination)===key){
@@ -698,14 +367,10 @@ function logLearningEvent(type,r,extra={}){
 function showLearningToast(text){const el=$("#learning-toast");if(!el)return;el.textContent=text;el.classList.remove("hidden");clearTimeout(showLearningToast.timer);showLearningToast.timer=setTimeout(()=>el.classList.add("hidden"),2400)}
 function handleRedraw(){
  window.ProjectCruiseOperational?.resetAutoCycle?.({source:"user_reroll"});
- clearTimeout(rerollPromptTimer);
  const previous=activeRoute;if(previous)recordRejection(previous);
  let count=Number(localStorage.getItem(REROLL_COUNTER_KEY)||0)+1;localStorage.setItem(REROLL_COUNTER_KEY,String(count));
  draw();
- if(previous&&count%8===0){
-  pendingReasonRoute=previous;
-  rerollPromptTimer=setTimeout(openRerollModal,1800);
- }
+ if(previous&&count%5===0){pendingReasonRoute=previous;setTimeout(openRerollModal,320)}
 }
 function openRerollModal(){if(!pendingReasonRoute)return;$("#reroll-route-name").textContent=pendingReasonRoute.destination||pendingReasonRoute.title||"直前の提案";$("#reroll-modal").classList.remove("hidden")}
 function closeRerollModal(){$("#reroll-modal").classList.add("hidden");pendingReasonRoute=null}
@@ -789,33 +454,17 @@ function laneTierWeight(tier,lane){
  return table[lane]?.[tier]||.1;
 }
 function chooseDestinationCandidate(candidates,lane){
- let lanePool=candidates;
- if(lane==="quality"){const p=candidates.filter(x=>["P1","P2"].includes(x.tier)&&x.score>=55);if(p.length)lanePool=p;}
- else if(lane==="discovery"){const p=candidates.filter(x=>x.tier!=="P4"&&x.score>=45);if(p.length)lanePool=p;}
+ let pool=candidates;
+ if(lane==="quality"){const p=candidates.filter(x=>["P1","P2"].includes(x.tier)&&x.score>=55);if(p.length)pool=p;}
+ else if(lane==="discovery"){const p=candidates.filter(x=>x.tier!=="P4"&&x.score>=45);if(p.length)pool=p;}
  const destinationHistory=recentDestinationsByTime[selectedTime],categoryHistory=recentCategoriesByTime[selectedTime],directionHistory=recentDirectionsByTime[selectedTime];
- const currentKey=normalizeName(activeRoute?.destination||"");
- const windows=[SESSION_NO_REPEAT_LIMIT,18,12,8,4,1];
- let pool=lanePool;
- for(const size of windows){
-  const blocked=new Set(destinationHistory.slice(-Math.min(size,destinationHistory.length)));
-  if(currentKey)blocked.add(currentKey);
-  let fresh=lanePool.filter(c=>!blocked.has(c.key));
-  if(fresh.length<8&&lane!=="wildcard"){
-   const supplement=candidates.filter(c=>c.tier!=="P4"&&c.score>=42&&!blocked.has(c.key));
-   const seen=new Set(fresh.map(c=>c.key));
-   for(const candidate of supplement)if(!seen.has(candidate.key)){fresh.push(candidate);seen.add(candidate.key)}
-  }
-  if(fresh.length>=Math.min(8,Math.max(2,Math.ceil(candidates.length*.04)))){pool=fresh;break}
- }
- if(!pool.length)pool=lanePool.filter(c=>c.key!==currentKey);
- if(!pool.length)pool=lanePool;
  return weightedPick(pool,c=>{
-  const destinationRecent=recencyMultiplier(c.key,destinationHistory,[.03,.08,.18,.34,.52,.70,.84,.93,.98]);
+  const destinationRecent=recencyMultiplier(c.key,destinationHistory,[.09,.20,.38,.57,.74,.86,.93,.98]);
   const categoryRecent=recencyMultiplier(c.category,categoryHistory,[.43,.62,.78,.89,.96]);
   const directionRecent=recencyMultiplier(c.direction,directionHistory,[.54,.70,.84,.93,.98]);
   const frequency=longTermFrequencyMultiplier(c.key),score01=Math.max(.10,c.score/100);
-  let base=lane==="quality"?.10+Math.pow(score01,4.0):lane==="discovery"?.16+Math.pow(score01,2.1)*(.58+c.hidden/5):.18+Math.pow(score01,1.3);
-  if(c.hasCanonical)base*=1.08;
+  let base=lane==="quality"?.10+Math.pow(score01,4.4):lane==="discovery"?.16+Math.pow(score01,2.25)*(.58+c.hidden/5):.18+Math.pow(score01,1.35);
+  if(c.hasCanonical)base*=1.10;
   return base*laneTierWeight(c.tier,lane)*destinationRecent*categoryRecent*directionRecent*dnaRecencyMultiplier(c)*frequency*sessionRejectionMultiplier(c)*profileMultiplier(c)*candidateBehaviorMultiplier(c)*getIssuePenaltyForDestination(c.key);
  });
 }
@@ -921,7 +570,7 @@ function updatePoolStatus(){
  const el=$("#pool-status");if(!el||!routes.length)return;
  const pool=eligiblePool(),candidates=destinationCandidates(pool),unique=candidates.length,history=recentDestinationsByTime[selectedTime],recentUnique=new Set(history.slice(-10)).size;
  const verified=pool.filter(r=>routeRole(r)==="verified_route").length,meta=lastSelectionMeta?` 直前は${routeCharacter(activeRoute)}・${lastSelectionMeta.category}・${lastSelectionMeta.direction}。`:"";
- el.textContent=`現在時刻に成立する${unique}種類／${pool.length}通り（検証済みルート${verified}件）。再抽選は直近${Math.min(SESSION_NO_REPEAT_LIMIT,Math.max(1,unique-1))}地点を原則重複させません${history.length?`。直近10件で${recentUnique}種類`:""}。${meta}`;
+ el.textContent=`現在時刻に成立する${unique}種類／${pool.length}通り（検証済みルート${verified}件）。場所価値・現在適合・ルート完成度と端末内の採否履歴を分けて反映します${history.length?`。直近10件で${recentUnique}種類`:""}。${meta}`;
 }
 function show(r){
  $("#duration").textContent=`移動 ${timeLabel(selectedTime)}`;
@@ -950,228 +599,3 @@ function setDestinationTitle(name){
  el.classList.toggle("title-long",length>11&&length<=17);
  el.classList.toggle("title-xlong",length>17);
 }
-function normalizeName(s){return String(s||"").replace(/[\s　]+/g," ").trim().toLowerCase()}
-function isNight(){const h=new Date().getHours();return h>=18||h<5}
-function buildGoogleMapsUrl(r){
- const destination=encodeURIComponent(r.destination||"");
- const origin=encodeURIComponent(activeOrigin.query||activeOrigin.name);
- let url=`https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=driving`;
- const waypoints=(r.waypoints||[]).filter(Boolean);
- if(waypoints.length)url+=`&waypoints=${encodeURIComponent(waypoints.join("|"))}`;
- return url;
-}
-function cleanSourceText(text){
- const value=String(text||"").replace(/Project Cruise/gi,"このドライブ").replace(/\s+/g," ").trim();
- if(!value)return "";
- const parts=value.split(/(?<=[。！？])/).map(x=>x.trim()).filter(Boolean);
- return parts.slice(0,2).join(" ");
-}
-function stablePick(seed,items){
- let h=0;for(const ch of String(seed||""))h=(h*31+ch.charCodeAt(0))>>>0;
- return items[h%items.length];
-}
-function contextualEditorialLine(r,d){
- const name=r.destination||"目的地";
- const text=`${name} ${r.theme||""} ${r.type||""} ${d.category||""} ${d.reason||""}`;
- let lines;
- if(/動物|動物園|水族館|鳥|牧場/.test(text))lines=[
-  "都市のリズムを離れ、生き物の動きと空間のつくられ方をゆっくり観察できます。",
-  "展示だけでなく、園内の高低差や植栽、街との距離感にも注目したい場所です。"
- ];
- else if(/飛行機|空港|滑走路/.test(text))lines=[
-  "滑走路灯火や機体の動きに加え、空港と街が接する境界の景観も見どころです。",
-  "航空機だけでなく、ターミナルや周辺道路がつくる都市インフラのスケールを体感できます。"
- ];
- else if(/工場|工業|コンテナ|港湾/.test(text))lines=[
-  "配管、照明、物流動線がつくる機能美を、街の背景として眺められます。",
-  "観光用に整えられていない都市景観だからこそ、産業のスケールがそのまま伝わります。"
- ];
- else if(/海|湾岸|海浜|運河|河川|川沿い/.test(text))lines=[
-  "水辺へ近づくにつれて変わる空の広さと、街の密度がほどけていく感覚を楽しめます。",
-  "橋、護岸、対岸の街並みまで含めて、都市と水辺の関係を眺めたい場所です。"
- ];
- else if(/夜景|展望|高台|タワー/.test(text))lines=[
-  "建物の高さや道路の流れを俯瞰すると、普段とは異なる都市の輪郭が見えてきます。",
-  "光の量だけでなく、街区や地形の違いを読み取るように眺めると印象が深まります。"
- ];
- else if(/神社|寺|史跡|歴史|庭園|城|博物館|建築/.test(text))lines=[
-  "建物の素材や軸線、周囲の街との距離感まで含めて見ると、この場所の背景が立体的になります。",
-  "現在の景観に残る過去の痕跡を探しながら歩くと、短い滞在でも密度のある体験になります。"
- ];
- else if(/温浴|温泉|銭湯|サウナ/.test(text))lines=[
-  "移動の緊張を解き、帰路まで含めて静かな時間へ切り替えられる目的地です。",
-  "施設だけでなく、到着までの街の変化と帰り道の余韻まで含めて楽しめます。"
- ];
- else if(/食|市場|レストラン|カフェ|パン|ラーメン/.test(text))lines=[
-  "食だけでなく、市場や店舗を支える物流と街の動きにも目を向けたい場所です。",
-  "目的の一皿に加え、周辺の建物や人の流れまで見ると、その土地らしさが伝わります。"
- ];
- else if(/山|峠|丘|ワインディング|湖|ダム/.test(text))lines=[
-  "標高や道路線形の変化を追うことで、都市部とは異なる地形のスケールを感じられます。",
-  "景色だけでなく、道の勾配や水面との高低差まで含めて楽しみたい行き先です。"
- ];
- else lines=[
-  `${name}そのものに加え、そこへ向かう途中で変わる街並みや道路の表情も楽しめます。`,
-  "目的地だけを点で見るのではなく、到着までの景観の変化を一本の体験として捉えたいルートです。"
- ];
- return stablePick(name,lines);
-}
-function cleanContextText(text){
- return cleanSourceText(text)
-  .replace(/基準Ending/gi,"定番の行き先")
-  .replace(/Ending/gi,"終着点")
-  .replace(/Project Cruise/gi,"このドライブ");
-}
-function buildDestinationStory(r,d){
- const base=cleanSourceText(d.story||d.reason||r.intent||`${r.destination}へ向かうドライブです。`);
- const context=cleanContextText(d.reason||r.intent||"");
- const first=`${base}${base&&!/[。！？]$/.test(base)?"。":""}`;
- const second=context&&normalizeName(context)!==normalizeName(base)
-  ?`${context}${!/[。！？]$/.test(context)?"。":""}`
-  :contextualEditorialLine(r,d);
- return `${first} ${second}`.trim();
-}
-function setInitialTripEstimate(r,d){
- const raw=String(d.driveTime||r.duration||"").replace(/^通常/,"").trim();
- $("#trip-eta").textContent=raw||"計算中";
- $("#trip-distance").textContent=raw?"DB所要時間の目安":"道路ルートを計算中";
-}
-function updateTripEstimate(routeData){
- if(!routeData)return;
- const mins=Math.max(1,Math.round(routeData.durationMinutes/5)*5);
- const km=Math.round(routeData.distanceKm*10)/10;
- $("#trip-eta").textContent=`約${mins}分`;
- $("#trip-distance").textContent=`${km} km・渋滞を含まない概算`;
-}
-function updateGoogleLinks(r){const url=buildGoogleMapsUrl(r);$("#gmap").href=url;$("#map-link").href=url}
-function initMap(){
- if(map)return;
- map=L.map("map",{zoomControl:true,attributionControl:true,scrollWheelZoom:false}).setView(activeOrigin.coords,11);
- L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",{maxZoom:20,subdomains:"abcd",attribution:"&copy; OpenStreetMap contributors &copy; CARTO"}).addTo(map);
-}
-function clearMap(){mapLayers.forEach(x=>map.removeLayer(x));mapLayers=[]}
-function setMapStatus(text){lastMapStatus=text;$("#map-status").textContent=text}
-async function renderMap(r){
- initMap();map.invalidateSize();clearMap();setMapStatus("地点を読み込み中");
- const names=[activeOrigin.name,...(r.waypoints||[]),r.destination].filter(Boolean);
- const coords=[activeOrigin.coords];
- for(let i=1;i<names.length;i++){
-  const meta=destinationByName.get(normalizeName(names[i]))||{};
-  const c=await geocode(names[i],meta);
-  coords.push(c||null);
- }
- const valid=coords.map((c,i)=>({c,i})).filter(x=>x.c);
- if(valid.length<2){setMapStatus("地図取得失敗・Googleマップは利用可能");return}
- valid.forEach(({c,i})=>{
-  const isStart=i===0,isGoal=i===names.length-1;
-  const color=isStart?"blue":isGoal?"red":"yellow";
-  const label=isStart?"S":isGoal?"G":String(i);
-  const icon=L.divIcon({className:"",html:`<div class="marker-pin ${color}"><span>${label}</span></div>`,iconSize:[28,28],iconAnchor:[14,28]});
-  const marker=L.marker(c,{icon}).addTo(map).bindTooltip(names[i],{direction:"top",offset:[0,-24]});mapLayers.push(marker);
- });
- const ordered=valid.map(x=>x.c);let routeData=null;
- try{routeData=await roadGeometry(ordered)}catch(e){}
- const geometry=routeData?.geometry||ordered;
- const casing=L.polyline(geometry,{color:"#ffffff",weight:10,opacity:.94}).addTo(map);
- const line=L.polyline(geometry,{color:"#4285f4",weight:6,opacity:.96,className:"route-animated"}).addTo(map);
- mapLayers.push(casing,line);map.fitBounds(line.getBounds(),{padding:[34,34],maxZoom:13});
- updateTripEstimate(routeData);
- document.dispatchEvent(new CustomEvent("pc:route-estimate",{detail:{route:r,routeData,selectedTime,origin:{name:activeOrigin.name,coords:[...(activeOrigin.coords||[])]}}}));
- setMapStatus(routeData?"道路ルートを表示":"地点間を簡易表示");
-}
-function isKantoCoordinate(c){
- return Array.isArray(c)&&c[0]>=34.2&&c[0]<=36.9&&c[1]>=138.2&&c[1]<=141.4;
-}
-async function geocode(name,meta={}){
- const area=String(meta.area||"").replace(/・/g," ");
- const cacheKey=`${name}|${area}`;
- if(geocodeCache[cacheKey]&&isKantoCoordinate(geocodeCache[cacheKey]))return geocodeCache[cacheKey];
- const query=encodeURIComponent(`${name} ${area} 日本`);
- const url=`https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=jp&viewbox=138.2,36.9,141.4,34.2&bounded=1&q=${query}`;
- try{
-  const res=await fetch(url,{headers:{"Accept":"application/json","Accept-Language":"ja"}});
-  const data=await res.json();
-  const hit=data.find(row=>isKantoCoordinate([Number(row.lat),Number(row.lon)]));
-  if(hit){
-   const c=[Number(hit.lat),Number(hit.lon)];
-   geocodeCache[cacheKey]=c;
-   localStorage.setItem(GEOCODE_CACHE_KEY,JSON.stringify(geocodeCache));
-   await sleep(1050);
-   return c;
-  }
- }catch(e){}
- await sleep(1050);return null;
-}
-async function roadGeometry(coords){
- const path=coords.map(c=>`${c[1]},${c[0]}`).join(";");
- const url=`https://router.project-osrm.org/route/v1/driving/${path}?overview=full&geometries=geojson`;
- const res=await fetch(url);if(!res.ok)throw new Error("route");
- const data=await res.json();if(!data.routes||!data.routes[0])throw new Error("route");
- const route=data.routes[0];
- return {
-  geometry:route.geometry.coordinates.map(c=>[c[1],c[0]]),
-  durationMinutes:route.duration/60,
-  distanceKm:route.distance/1000
- };
-}
-function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
-function getIssueReports(){
- try{return JSON.parse(localStorage.getItem(ISSUE_REPORT_KEY)||"[]")}catch(e){return []}
-}
-function updateIssueCount(){
- const el=$("#issue-count");
- if(el)el.textContent=`保存済み報告 ${getIssueReports().length}件`;
-}
-function openIssueModal(){
- $("#issue-note").value="";
- $("#issue-modal").classList.remove("hidden");
- updateIssueCount();
-}
-function closeIssueModal(){$("#issue-modal").classList.add("hidden")}
-function saveIssueReport(){
- if(!activeRoute)return;
- const reports=getIssueReports();
- reports.push({
-  timestamp:new Date().toISOString(),
-  type:$("#issue-type").value,
-  note:$("#issue-note").value.trim(),
-  destination:activeRoute.destination||"",
-  routeId:activeRoute.id||"",
-  routeTitle:activeRoute.title||"",
-  waypoints:activeRoute.waypoints||[],
-  origin:activeOrigin.name,
-  selectedTime,
-  mapStatus:lastMapStatus,
-  pageVersion:"v0.10.0",
-  productTier:routeTier(activeRoute),
-  experienceDNA:routeDNA(activeRoute),
-  selectionMeta:lastSelectionMeta
- });
- localStorage.setItem(ISSUE_REPORT_KEY,JSON.stringify(reports));
- updateIssueCount();
- closeIssueModal();
- const toast=$("#report-toast");
- toast.classList.remove("hidden");
- setTimeout(()=>toast.classList.add("hidden"),2800);
-}
-async function copyIssueReports(){
- const reports=getIssueReports();
- if(!reports.length){alert("保存済みの報告はありません。");return}
- const text=JSON.stringify(reports,null,2);
- try{await navigator.clipboard.writeText(text);alert(`${reports.length}件の報告をコピーしました。`)}
- catch(e){prompt("以下をコピーしてください。",text)}
-}
-function timeLabel(v){return v==="90"?"90分":v==="120"?"2時間":"半日"}
-function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-
-</script>
-<script src="assets/js/hero/hero-precision-data.js"></script>
-<script src="assets/js/hero/hero-precision-runtime.js"></script>
-<script src="assets/js/arrival/arrival-data.js"></script>
-<script src="assets/js/arrival/operational-core.js"></script>
-<script src="assets/js/arrival/result-state-machine.js"></script>
-<script src="assets/js/arrival/arrival-runtime.js"></script>
-<script src="assets/js/weather/weather-runtime.js"></script>
-<script src="assets/js/cruise-v011.js?v=0.11.0-rc3"></script>
-</body>
-</html>
