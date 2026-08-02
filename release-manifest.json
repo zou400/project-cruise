@@ -1,0 +1,25 @@
+{
+  "release": "Project Cruise Integrated RC v0.10.4-rc1",
+  "generatedAt": "2026-08-02T13:49:00+09:00",
+  "canonicalBase": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
+  "counts": {
+    "destinations": 320,
+    "completedRoutes": 181,
+    "selectableResults": 501,
+    "heroImages": 30
+  },
+  "features": [
+    "cinematic-polish",
+    "hero-library-30",
+    "arrival-weather-shadow",
+    "spot-operational-overlay-preview",
+    "parking-anchor-maps",
+    "local-learning-preserved",
+    "return-feedback-preserved",
+    "issue-report-preserved"
+  ],
+  "status": "release-candidate",
+  "canonicalMutation": false,
+  "recommendedBranch": "integration-v0.10.4-rc1",
+  "recommendedCommit": "Integrate cinematic UI, 30 hero visuals, weather shadow, and spot overlay"
+}

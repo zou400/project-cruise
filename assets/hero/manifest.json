@@ -1,0 +1,216 @@
+{
+  "version": "v0.10.4-rc1",
+  "count": 30,
+  "images": [
+    {
+      "id": "airport-01",
+      "category": "airport",
+      "time": "morning",
+      "src": "assets/hero/airport-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "airport-02",
+      "category": "airport",
+      "time": "day",
+      "src": "assets/hero/airport-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "airport-03",
+      "category": "airport",
+      "time": "night",
+      "src": "assets/hero/airport-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "airport-04",
+      "category": "airport",
+      "time": "night",
+      "src": "assets/hero/airport-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "airport-05",
+      "category": "airport",
+      "time": "night",
+      "src": "assets/hero/airport-night-05.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "waterfront-01",
+      "category": "waterfront",
+      "time": "morning",
+      "src": "assets/hero/waterfront-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "waterfront-02",
+      "category": "waterfront",
+      "time": "day",
+      "src": "assets/hero/waterfront-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "waterfront-03",
+      "category": "waterfront",
+      "time": "night",
+      "src": "assets/hero/waterfront-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "waterfront-04",
+      "category": "waterfront",
+      "time": "night",
+      "src": "assets/hero/waterfront-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "waterfront-05",
+      "category": "waterfront",
+      "time": "night",
+      "src": "assets/hero/waterfront-night-05.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "industrial-01",
+      "category": "industrial",
+      "time": "morning",
+      "src": "assets/hero/industrial-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "industrial-02",
+      "category": "industrial",
+      "time": "day",
+      "src": "assets/hero/industrial-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "industrial-03",
+      "category": "industrial",
+      "time": "night",
+      "src": "assets/hero/industrial-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "industrial-04",
+      "category": "industrial",
+      "time": "night",
+      "src": "assets/hero/industrial-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "industrial-05",
+      "category": "industrial",
+      "time": "night",
+      "src": "assets/hero/industrial-night-05.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "park-01",
+      "category": "park",
+      "time": "morning",
+      "src": "assets/hero/park-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "park-02",
+      "category": "park",
+      "time": "day",
+      "src": "assets/hero/park-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "park-03",
+      "category": "park",
+      "time": "night",
+      "src": "assets/hero/park-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "park-04",
+      "category": "park",
+      "time": "night",
+      "src": "assets/hero/park-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "park-05",
+      "category": "park",
+      "time": "night",
+      "src": "assets/hero/park-night-05.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "highway-01",
+      "category": "highway",
+      "time": "morning",
+      "src": "assets/hero/highway-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "highway-02",
+      "category": "highway",
+      "time": "day",
+      "src": "assets/hero/highway-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "highway-03",
+      "category": "highway",
+      "time": "night",
+      "src": "assets/hero/highway-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "highway-04",
+      "category": "highway",
+      "time": "night",
+      "src": "assets/hero/highway-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "highway-05",
+      "category": "highway",
+      "time": "night",
+      "src": "assets/hero/highway-night-05.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "city-01",
+      "category": "city",
+      "time": "morning",
+      "src": "assets/hero/city-morning-01.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "city-02",
+      "category": "city",
+      "time": "day",
+      "src": "assets/hero/city-day-02.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "city-03",
+      "category": "city",
+      "time": "night",
+      "src": "assets/hero/city-night-03.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "city-04",
+      "category": "city",
+      "time": "night",
+      "src": "assets/hero/city-night-04.webp",
+      "disclosure": "体験イメージ"
+    },
+    {
+      "id": "city-05",
+      "category": "city",
+      "time": "night",
+      "src": "assets/hero/city-night-05.webp",
+      "disclosure": "体験イメージ"
+    }
+  ]
+}

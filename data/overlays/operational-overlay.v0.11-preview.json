@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "0.11-preview-runtime",
+  "generatedAt": "2026-08-02T13:49:00+09:00",
+  "canonicalBase": "Project_Cruise_Canonical_v0.10.0_2026-08-01(1).zip",
+  "nonDestructive": true,
+  "policy": {
+    "hardGatesBeforeScoring": true,
+    "placeIdsNotGuessed": true,
+    "multipleAnchorsPerEntity": true,
+    "walkEndpointsNeverDrivingWaypoints": true,
+    "liveSignalsOverrideStaticScores": true,
+    "unknownImportantAccessFailsClosedAtNight": true
+  },
+  "rules": [
+    {
+      "ids": [
+        "D034",
+        "D187"
+      ],
+      "name": "燈明堂緑地",
+      "window": "05:00-21:30",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "燈明堂緑地駐車場"
+    },
+    {
+      "ids": [
+        "D107"
+      ],
+      "name": "海浜大通り展望駐車場",
+      "window": "24h",
+      "gate": "exclude_if_vehicle_too_wide",
+      "maxWidthM": 1.9,
+      "anchor": "海浜大通り展望駐車場"
+    },
+    {
+      "ids": [
+        "D061"
+      ],
+      "name": "大黒PA",
+      "window": "normally_24h",
+      "gate": "live_closure_required",
+      "anchor": "大黒PA"
+    },
+    {
+      "ids": [
+        "D052",
+        "D177"
+      ],
+      "name": "袖ケ浦海浜公園",
+      "window": null,
+      "gate": "exclude_late_night_until_verified",
+      "anchor": "袖ケ浦海浜公園駐車場"
+    },
+    {
+      "ids": [
+        "D033",
+        "D162"
+      ],
+      "name": "荒崎公園",
+      "seasonalWindows": {
+        "01,11,12": "08:00-17:30",
+        "02-04,10": "08:00-18:30",
+        "05-09": "08:00-19:30"
+      },
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "荒崎公園駐車場"
+    },
+    {
+      "ids": [
+        "D073",
+        "D169"
+      ],
+      "name": "昭和の森",
+      "window": "08:30-17:30",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "昭和の森駐車場"
+    },
+    {
+      "ids": [
+        "D029",
+        "D165"
+      ],
+      "name": "海の公園",
+      "window": "04:00-22:00",
+      "exitAfterCloseAllowed": true,
+      "gate": "exclude_if_arrival_outside",
+      "anchor": "海の公園 柴口駐車場"
+    },
+    {
+      "ids": [
+        "D044",
+        "D143"
+      ],
+      "name": "桜ヶ丘公園 ゆうひの丘",
+      "window": "08:45-20:00",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "桜ヶ丘公園 ゆうひの丘駐車場"
+    },
+    {
+      "ids": [
+        "D048"
+      ],
+      "name": "みさと公園",
+      "window": "24h",
+      "gate": "select_anchor_by_time",
+      "anchor": "みさと公園 第2駐車場",
+      "anchorId": "AA-D048-P2"
+    },
+    {
+      "ids": [
+        "D103"
+      ],
+      "name": "市川市動植物園",
+      "window": "09:00-16:30",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "市川市動植物園 駐車場"
+    },
+    {
+      "ids": [
+        "D109"
+      ],
+      "name": "亥鼻公園",
+      "window": "09:00-17:00",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "千葉市立郷土博物館 駐車場"
+    },
+    {
+      "ids": [
+        "D114"
+      ],
+      "name": "まつぶし緑の丘公園",
+      "window": "06:00-21:20",
+      "gate": "select_valid_anchor_or_exclude",
+      "anchor": "まつぶし緑の丘マルシンパーク 南駐車場",
+      "anchorId": "AA-D114-SOUTH"
+    },
+    {
+      "ids": [
+        "D115"
+      ],
+      "name": "県民健康福祉村",
+      "window": "09:00-17:00",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "県民健康福祉村 駐車場"
+    },
+    {
+      "ids": [
+        "D161",
+        "D028"
+      ],
+      "name": "野島公園",
+      "window": "07:00-23:00",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "野島公園 第1駐車場",
+      "anchorId": "AA-D161-P1"
+    },
+    {
+      "ids": [
+        "D191"
+      ],
+      "name": "宮ヶ瀬ダム 水とエネルギー館",
+      "window": "09:00-17:15",
+      "gate": "exclude_if_arrival_or_exit_outside",
+      "anchor": "宮ヶ瀬ダム周辺公式駐車場"
+    },
+    {
+      "ids": [
+        "D068"
+      ],
+      "name": "中の島公園",
+      "window": "walk_extension",
+      "gate": "route_to_parking_then_walk",
+      "anchor": "鳥居崎海浜公園 駐車場",
+      "walkExtensionMinutes": 12
+    },
+    {
+      "ids": [
+        "D081"
+      ],
+      "name": "道の駅 いちかわ",
+      "window": "24h",
+      "facilityWindow": "09:00-22:00",
+      "gate": "experience_state",
+      "afterHoursState": "rest_only",
+      "anchor": "道の駅 いちかわ 小型車駐車場",
+      "liveCongestionRequired": true
+    },
+    {
+      "ids": [
+        "D082"
+      ],
+      "name": "道の駅 しょうなん",
+      "window": "24h except event restrictions",
+      "facilityWindow": "09:00-18:00",
+      "gate": "event_override_then_experience_state",
+      "afterHoursState": "rest_only",
+      "anchor": "道の駅しょうなん 第1駐車場",
+      "liveEventRequired": true
+    },
+    {
+      "ids": [
+        "D062"
+      ],
+      "name": "辰巳第一PA",
+      "window": "dynamic",
+      "gate": "network_topology_and_live_closure_required",
+      "anchor": "辰巳第一PA"
+    },
+    {
+      "ids": [
+        "D063"
+      ],
+      "name": "芝浦PA",
+      "window": "dynamic",
+      "gate": "network_topology_and_live_closure_required",
+      "anchor": "芝浦PA"
+    },
+    {
+      "ids": [
+        "D038"
+      ],
+      "name": "宮川公園",
+      "window": null,
+      "gate": "map_exclude_until_anchor_verified",
+      "anchor": null
+    },
+    {
+      "ids": [
+        "D066",
+        "D021",
+        "D135"
+      ],
+      "name": "hours_unknown_group",
+      "window": null,
+      "gate": "exclude_night_until_verified"
+    },
+    {
+      "ids": [
+        "D070"
+      ],
+      "name": "鹿野山 九十九谷展望公園",
+      "window": null,
+      "gate": "conditional_daybreak_sunset_only",
+      "anchor": "鹿野山九十九谷展望公園"
+    },
+    {
+      "ids": [
+        "D078"
+      ],
+      "name": "狭山公園",
+      "window": "09:00-17:00 provisional",
+      "gate": "daytime_only_until_verified",
+      "anchor": "狭山公園 駐車場"
+    },
+    {
+      "ids": [
+        "D079"
+      ],
+      "name": "野山北・六道山公園",
+      "window": "daytime_area_specific",
+      "gate": "daytime_only_until_valid_anchor",
+      "anchor": "区域別公式駐車場"
+    },
+    {
+      "ids": [
+        "D100"
+      ],
+      "name": "石垣山一夜城歴史公園",
+      "window": "daytime provisional",
+      "gate": "daytime_only_until_verified",
+      "anchor": "石垣山一夜城駐車場"
+    },
+    {
+      "ids": [
+        "D108"
+      ],
+      "name": "千葉公園",
+      "window": "park always / parking separate",
+      "gate": "parking_window_required",
+      "anchor": "千葉公園第2駐車場"
+    },
+    {
+      "ids": [
+        "D118"
+      ],
+      "name": "御幸公園",
+      "window": null,
+      "gate": "downgrade_until_parking_evidence_replaced",
+      "anchor": null
+    },
+    {
+      "ids": [
+        "D201"
+      ],
+      "name": "ひこうきの丘",
+      "window": null,
+      "gate": "exclude_late_night_until_verified",
+      "anchor": "ひこうきの丘 駐車場"
+    }
+  ],
+  "notBundledAsLiveTruth": [
+    "Dynamic closures and event bans require a current official feed; no stale closure is hard-coded.",
+    "Place IDs and coordinates remain null unless independently verified.",
+    "The v0.11 full anchor corpus remains an overlay source of truth; this runtime bundle contains the blocking rules available for safe test deployment."
+  ]
+}
