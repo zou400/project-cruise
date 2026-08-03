@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "total": 21,
+  "selectedExperimental": 19,
+  "reviewOnly": 2,
+  "originalHashMismatches": 0,
+  "productionFileCount": 21,
+  "allProductionImages1440x810": true,
+  "errors": []
+}

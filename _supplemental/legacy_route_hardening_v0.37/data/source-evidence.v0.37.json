@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "policy": "2026-08-03時点の公式管理者・自治体情報を優先。公開寸法がない項目はV0。",
+  "sources": [
+    {
+      "target": "R006 / 東扇島西公園",
+      "facts": [
+        "24時間",
+        "第1 71台・第2 101台（計172、うち車いす7）",
+        "長さ5.0m未満・幅1.9m未満・高さ2.5m未満",
+        "最低地上高15cm以下・改造車等不可"
+      ],
+      "urls": [
+        "https://www.city.kawasaki.jp/580/page/0000001610.html",
+        "https://www.city.kawasaki.jp/580/page/0000001336.html"
+      ]
+    },
+    {
+      "target": "R006 replacement / 羽田T3",
+      "facts": [
+        "第3ターミナル展望デッキ24時間",
+        "P5を含む普通車上限 高さ2.3m・幅2.1m・長さ5.7m",
+        "多客期・一時閉鎖を当日確認"
+      ],
+      "urls": [
+        "https://tokyo-haneda.com/service/facilities/observation_deck.html?tab=terminal3",
+        "https://www.tokyo-haneda.com/access/parking/index.html"
+      ]
+    },
+    {
+      "target": "R007 / 港の見える丘・大さん橋",
+      "facts": [
+        "港の見える丘公園24時間、駐車17台",
+        "大さん橋駐車場24時間・普通車400台・幅1.9m以下"
+      ],
+      "urls": [
+        "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/midori-koen/koen/koen/daihyoteki/kouen007.html",
+        "https://osanbashi.jp/access/parking"
+      ]
+    },
+    {
+      "target": "R008 / 横浜港シンボルタワー",
+      "facts": [
+        "季節別16:00/17:30/20:00",
+        "車両入場は閉場40分前まで",
+        "普通車205台",
+        "2026年点検日あり"
+      ],
+      "urls": [
+        "https://y-stower.com/use.htm"
+      ]
+    },
+    {
+      "target": "R009 / 海の公園・野島公園",
+      "facts": [
+        "海の公園入庫4:00〜22:00・出庫24時間",
+        "普通車基準5m×2m×2.4m",
+        "野島第1 7:00〜23:00 104台、第2 52台",
+        "潮干狩り期は満車時閉鎖・路上待機禁止"
+      ],
+      "urls": [
+        "https://www.hama-midorinokyokai.or.jp/park/uminokouen/faq.php",
+        "https://www.hama-midorinokyokai.or.jp/park/parking/nojima/nojima1/",
+        "https://www.hama-midorinokyokai.or.jp/park/parking/nojima/niojima2/",
+        "https://www.hama-midorinokyokai.or.jp/park/uminokouen/details/post-254.php"
+      ]
+    },
+    {
+      "target": "R010 / 横須賀",
+      "facts": [
+        "ヴェルニー普通車24時間・小規模",
+        "うみかぜ駐車場24時間・普通車高さ2.7m未満",
+        "燈明堂30台・入庫5:00〜21:30・以降出庫のみ"
+      ],
+      "urls": [
+        "https://www.city.yokosuka.kanagawa.jp/5560/sisetu/fc00000056.html",
+        "https://www.city.yokosuka.kanagawa.jp/5820/minato/amenity_kouen/umikaze/index.html",
+        "https://www.city.yokosuka.kanagawa.jp/5560/toumyoudouryokuchi.html"
+      ]
+    }
+  ]
+}

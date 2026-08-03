@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-cruise.local/contracts/proposal.schema.json",
+  "title": "Project Cruise Proposal",
+  "type": "object",
+  "required": [
+    "routeId",
+    "destination",
+    "timeBucket",
+    "mapsUrl",
+    "hero"
+  ],
+  "properties": {
+    "routeId": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "timeBucket": {
+      "enum": [
+        "90",
+        "120",
+        "half"
+      ]
+    },
+    "origin": {
+      "enum": [
+        "current",
+        "kamata"
+      ]
+    },
+    "mapsUrl": {
+      "type": "string"
+    },
+    "hero": {
+      "type": "object",
+      "required": [
+        "src",
+        "mode"
+      ],
+      "properties": {
+        "src": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "destination",
+            "category_fallback"
+          ]
+        },
+        "variant": {
+          "type": "string"
+        }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "now": {
+          "type": "string"
+        },
+        "departure": {
+          "type": "string"
+        },
+        "arrival": {
+          "type": "string"
+        },
+        "driveMinutes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "waypoints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "number"
+        },
+        "sourceRole": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

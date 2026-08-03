@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "legacyRoutesAuditedThisBatch": 5,
+  "legacyRoutesAuditedCumulative": 10,
+  "originalPromotedToEnforceThisBatch": 0,
+  "conditionalV1Replacements": 2,
+  "previewReplacements": 2,
+  "canonicalDestinations": 320,
+  "stagingCandidates": 236,
+  "explorationUniverse": 556,
+  "mainMutation": false,
+  "canonicalMutation": false,
+  "decision": "READY_FOR_SHADOW_PREVIEW_AND_CONDITIONAL_V1_REPLACEMENTS"
+}

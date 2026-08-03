@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "routes": [
+    {
+      "source": "hardening_replacement",
+      "routePackId": "SAFE_T3_HIGASHIOGISHIMA_STD_01",
+      "title": "羽田T3・川崎港海底トンネル・東扇島西公園",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "LEGACY_DEST_HIGASHIOGISHIMA_WEST",
+      "destination": "東扇島西公園",
+      "waypoints": [
+        "羽田空港 第3ターミナル展望デッキ",
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "tollClass": "free",
+      "corridorFamilies": [
+        "airport",
+        "tunnel",
+        "port"
+      ],
+      "baseStrength": 93,
+      "discoveryValue": 86,
+      "schedule": {
+        "t3Deck": "24h",
+        "destinationParking": "24h",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthExclusiveM": 1.9,
+        "maxLengthExclusiveM": 5.0,
+        "maxHeightM": 2.3,
+        "note": "P5は幅2.1m・長さ5.7m・高さ2.3mだが、終点の幅1.9m未満がルート上限"
+      },
+      "parkingStatus": "official_entry_limits_confirmed_but_standard_width_only",
+      "hardGates": [
+        "全寸法がルート上限内",
+        "P5と東扇島西公園の満空",
+        "T3展望デッキ一時閉鎖なし",
+        "強風・高潮・川崎港トンネル規制なし"
+      ],
+      "status": "V1_ENFORCE_STANDARD_WIDTH_ONLY",
+      "replacesLegacyRoutes": [
+        "R006"
+      ],
+      "userWideVehicleEligible": false
+    },
+    {
+      "source": "hardening_replacement",
+      "routePackId": "SAFE_YOKOHAMA_BRIDGES_KARENA_01",
+      "title": "鶴見つばさ橋・横浜ベイブリッジ・Kアリーナ",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N219",
+      "destination": "Kアリーナ横浜・ミュージックテラス到着",
+      "waypoints": [
+        "鶴見つばさ橋",
+        "横浜ベイブリッジ",
+        "大黒大橋"
+      ],
+      "timeFit": [
+        "day",
+        "evening",
+        "night"
+      ],
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "tollClass": "required",
+      "corridorFamilies": [
+        "bridge",
+        "port",
+        "urban_architecture"
+      ],
+      "baseStrength": 98,
+      "discoveryValue": 93,
+      "schedule": {
+        "parkingOpen": "07:00",
+        "parkingClose": "23:00",
+        "eventReservationMayApply": true,
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthM": 2.3,
+        "maxLengthM": 5.0,
+        "maxHeightM": 2.8,
+        "maxWeightT": 4.0,
+        "note": "入庫上限内のみ。公演日は予約制・特定日料金を確認"
+      },
+      "parkingStatus": "official_entry_limits_confirmed_event_gate",
+      "hardGates": [
+        "車両が全寸法・重量上限内",
+        "公演日の予約可否",
+        "23:00までに出庫",
+        "首都高・橋の通行状態",
+        "橋上停車なし"
+      ],
+      "status": "V1_ENFORCE_CONDITIONAL",
+      "replacesLegacyRoutes": [
+        "R007",
+        "R008"
+      ],
+      "userWideVehicleEligible": "width<=2.3_and_other_limits_fit"
+    },
+    {
+      "source": "hardening_replacement",
+      "routePackId": "PREVIEW_SEAPARK_DIRECT_01",
+      "title": "横浜ベイブリッジ・海の公園直行",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "LEGACY_DEST_UMINO_KOEN",
+      "destination": "海の公園",
+      "waypoints": [
+        "横浜ベイブリッジ"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "tollClass": "required",
+      "corridorFamilies": [
+        "bridge",
+        "seaside"
+      ],
+      "baseStrength": 88,
+      "discoveryValue": 78,
+      "schedule": {
+        "parkingEntry": "04:00-22:00",
+        "parkingExit": "24h",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0",
+        "ordinaryThreshold": {
+          "maxLengthM": 5.0,
+          "maxWidthM": 2.0,
+          "maxHeightM": 2.4
+        },
+        "reason": "閾値超過車の大型車区画利用可否と実用性を出発前に確認"
+      },
+      "parkingStatus": "preview_only_vehicle_class_confirmation_required",
+      "status": "PREVIEW_ONLY",
+      "replacesLegacyRoutes": [
+        "R009"
+      ],
+      "userWideVehicleEligible": false
+    },
+    {
+      "source": "hardening_replacement",
+      "routePackId": "PREVIEW_YOKOSUKA_24H_TWO_STOP_01",
+      "title": "ヴェルニー公園・うみかぜ公園ナイト",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "LEGACY_DEST_UMIKAZE",
+      "destination": "うみかぜ公園",
+      "waypoints": [
+        "ヴェルニー公園"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "tollClass": "optional",
+      "corridorFamilies": [
+        "military_harbor",
+        "seaside"
+      ],
+      "baseStrength": 86,
+      "discoveryValue": 82,
+      "schedule": {
+        "vernyParking": "24h",
+        "umikazeParking": "24h",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0",
+        "umikazeMaxHeightM": 2.7,
+        "reason": "両施設の全幅・全長上限が揃わない"
+      },
+      "parkingStatus": "preview_only_dimensions_pending",
+      "status": "PREVIEW_ONLY",
+      "replacesLegacyRoutes": [
+        "R010"
+      ],
+      "userWideVehicleEligible": false
+    }
+  ]
+}

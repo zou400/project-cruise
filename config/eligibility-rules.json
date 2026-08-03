@@ -1,0 +1,20 @@
+{
+  "version": "0.12.2",
+  "finalDestinationRejectPatterns": [
+    "BMW GROUP Tokyo Bay",
+    "正規ディーラー",
+    "カーディーラー",
+    "中古車販売店",
+    "自動車販売店"
+  ],
+  "experienceExceptions": [
+    "博物館",
+    "ミュージアム",
+    "ヘリテージ",
+    "コレクション",
+    "工場見学",
+    "モビリティリゾート",
+    "テーマパーク"
+  ],
+  "feedbackPromptsEnabled": false
+}

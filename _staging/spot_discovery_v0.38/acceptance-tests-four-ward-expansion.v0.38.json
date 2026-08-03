@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "tests": [
+    {
+      "id": "T01",
+      "passed": true,
+      "description": "新規候補24件"
+    },
+    {
+      "id": "T02",
+      "passed": true,
+      "description": "ID N237-N260連番"
+    },
+    {
+      "id": "T03",
+      "passed": true,
+      "description": "4区各6件"
+    },
+    {
+      "id": "T04",
+      "passed": true,
+      "description": "staging260"
+    },
+    {
+      "id": "T05",
+      "passed": true,
+      "description": "universe580"
+    },
+    {
+      "id": "T06",
+      "passed": true,
+      "description": "canonical320維持"
+    },
+    {
+      "id": "T07",
+      "passed": true,
+      "description": "正本未変更"
+    },
+    {
+      "id": "T08",
+      "passed": true,
+      "description": "全候補路上停車禁止"
+    },
+    {
+      "id": "T09",
+      "passed": true,
+      "description": "全候補に情報源"
+    },
+    {
+      "id": "T10",
+      "passed": true,
+      "description": "Google Maps検索URL"
+    },
+    {
+      "id": "T11",
+      "passed": true,
+      "description": "区別ルート16本"
+    },
+    {
+      "id": "T12",
+      "passed": true,
+      "description": "実時間必須"
+    },
+    {
+      "id": "T13",
+      "passed": true,
+      "description": "完全一致重複ゼロ"
+    },
+    {
+      "id": "T14",
+      "passed": true,
+      "description": "五島美術館一時休館"
+    },
+    {
+      "id": "T15",
+      "passed": true,
+      "description": "世田谷美術館将来休館"
+    },
+    {
+      "id": "T16",
+      "passed": true,
+      "description": "歌舞伎町幅上限"
+    },
+    {
+      "id": "T17",
+      "passed": true,
+      "description": "オペラシティ幅上限"
+    },
+    {
+      "id": "T18",
+      "passed": true,
+      "description": "GINZA SIX幅上限"
+    },
+    {
+      "id": "T19",
+      "passed": true,
+      "description": "de aone幅上限"
+    },
+    {
+      "id": "T20",
+      "passed": true,
+      "description": "評価重み合計1"
+    },
+    {
+      "id": "T21",
+      "passed": true,
+      "description": "追加研究キュー12件以上"
+    },
+    {
+      "id": "T22",
+      "passed": true,
+      "description": "V0は自動許可しない表現"
+    },
+    {
+      "id": "T23",
+      "passed": true,
+      "description": "ルート正本未昇格"
+    },
+    {
+      "id": "T24",
+      "passed": true,
+      "description": "候補名重複なし"
+    }
+  ],
+  "summary": {
+    "passed": 24,
+    "failed": 0
+  }
+}

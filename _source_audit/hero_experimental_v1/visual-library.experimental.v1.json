@@ -1,0 +1,550 @@
+{
+  "version": "v0.10.4-hero-experimental-2026-08-03-v1",
+  "count": 21,
+  "selectedExperimentalCount": 19,
+  "reviewOnlyCount": 2,
+  "usage": "new AI-generated experience imagery; separated from immutable exact30",
+  "mergePolicy": {
+    "doNotOverwriteExact30": true,
+    "selectedPath": "assets/hero/experimental/",
+    "reviewOnlyEnabled": false,
+    "featureFlagRecommended": "heroExperimental20260803"
+  },
+  "images": [
+    {
+      "id": "exp_rainbow_bridge_bayside_twilight_01",
+      "src": "assets/hero/experimental/exp_rainbow_bridge_bayside_twilight_01.webp",
+      "titleJa": "薄暮の湾岸道路とレインボーブリッジ",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 50%",
+      "landmarks": [
+        "rainbow_bridge"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_culture_modern_japanese_twilight_01",
+      "src": "assets/hero/experimental/exp_culture_modern_japanese_twilight_01.webp",
+      "titleJa": "夕暮れに佇む静寂の和モダン建築",
+      "categories": [
+        "culture",
+        "park"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 51%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_skytree_riverside_twilight_01",
+      "src": "assets/hero/experimental/exp_skytree_riverside_twilight_01.webp",
+      "titleJa": "夕暮れの川沿いと東京スカイツリー",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight"
+      ],
+      "position": "center 49%",
+      "landmarks": [
+        "tokyo_skytree"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_skytree_riverside_drive_twilight_02",
+      "src": "assets/hero/experimental/exp_skytree_riverside_drive_twilight_02.webp",
+      "titleJa": "夕暮れの川沿い都市ドライブ",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight"
+      ],
+      "position": "center 51%",
+      "landmarks": [
+        "tokyo_skytree"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_azabudai_city_road_twilight_01",
+      "src": "assets/hero/experimental/exp_azabudai_city_road_twilight_01.webp",
+      "titleJa": "夕暮れの摩天楼へ続く都市道路",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 53%",
+      "landmarks": [
+        "azabudai_hills_style"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_skytree_waterfront_road_twilight_01",
+      "src": "assets/hero/experimental/exp_skytree_waterfront_road_twilight_01.webp",
+      "titleJa": "夕暮れの東京スカイツリーと湾岸道路",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight"
+      ],
+      "position": "center 50%",
+      "landmarks": [
+        "tokyo_skytree"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_tokyo_tower_expressway_twilight_01",
+      "src": "assets/hero/experimental/exp_tokyo_tower_expressway_twilight_01.webp",
+      "titleJa": "夕暮れの東京タワーと都市高速道路",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 50%",
+      "landmarks": [
+        "tokyo_tower"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_rainbow_bridge_bayshore_twilight_02",
+      "src": "assets/hero/experimental/exp_rainbow_bridge_bayshore_twilight_02.webp",
+      "titleJa": "夕暮れの湾岸疾走と大橋",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 50%",
+      "landmarks": [
+        "rainbow_bridge"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_airport_coastal_twilight_01",
+      "src": "assets/hero/experimental/exp_airport_coastal_twilight_01.webp",
+      "titleJa": "夕暮れの湾岸空港と曲線道路",
+      "categories": [
+        "airport",
+        "water"
+      ],
+      "times": [
+        "twilight"
+      ],
+      "position": "center 49%",
+      "landmarks": [
+        "airport"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_city_elevated_twilight_01",
+      "src": "assets/hero/experimental/exp_city_elevated_twilight_01.webp",
+      "titleJa": "夕暮れの都市へ続く静かな高架道路",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 52%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_tokyo_tower_expressway_twilight_02",
+      "src": "assets/hero/experimental/exp_tokyo_tower_expressway_twilight_02.webp",
+      "titleJa": "夕暮れの都市高速と輝く塔",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 51%",
+      "landmarks": [
+        "tokyo_tower"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_industrial_harbor_morning_01",
+      "src": "assets/hero/experimental/exp_industrial_harbor_morning_01.webp",
+      "titleJa": "夜明けの静かな工業港湾道路",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "morning"
+      ],
+      "position": "center 53%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_industrial_waterfront_day_01",
+      "src": "assets/hero/experimental/exp_industrial_waterfront_day_01.webp",
+      "titleJa": "水辺を走る工業地帯の湾曲道路",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 53%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_industrial_waterfront_day_02",
+      "src": "assets/hero/experimental/exp_industrial_waterfront_day_02.webp",
+      "titleJa": "水辺を走る工業地帯の道路",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 53%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_bayshore_elevated_day_01",
+      "src": "assets/hero/experimental/exp_bayshore_elevated_day_01.webp",
+      "titleJa": "湾岸道路と高架橋の青空風景",
+      "categories": [
+        "water",
+        "industrial"
+      ],
+      "times": [
+        "day"
+      ],
+      "position": "center 54%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "review_city_neon_rain_night_01",
+      "src": "assets/hero/experimental/review_city_neon_rain_night_01.webp",
+      "titleJa": "雨に濡れたネオン街の交差点",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 51%",
+      "landmarks": [],
+      "weather": [
+        "rain"
+      ],
+      "tier": "experimental",
+      "reviewStatus": "review_only",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": false
+    },
+    {
+      "id": "exp_industrial_waterfront_rain_night_01",
+      "src": "assets/hero/experimental/exp_industrial_waterfront_rain_night_01.webp",
+      "titleJa": "雨上がりの工業港夜景",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "landmarks": [],
+      "weather": [
+        "rain"
+      ],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "review_futuristic_city_rain_night_01",
+      "src": "assets/hero/experimental/review_futuristic_city_rain_night_01.webp",
+      "titleJa": "雨上がりの未来都市夜景",
+      "categories": [
+        "city"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 52%",
+      "landmarks": [],
+      "weather": [
+        "rain"
+      ],
+      "tier": "experimental",
+      "reviewStatus": "review_only",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": false
+    },
+    {
+      "id": "exp_industrial_harbor_rain_night_02",
+      "src": "assets/hero/experimental/exp_industrial_harbor_rain_night_02.webp",
+      "titleJa": "雨夜の工業港湾と濡れた道路",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "night"
+      ],
+      "position": "center 53%",
+      "landmarks": [],
+      "weather": [
+        "rain"
+      ],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_industrial_refinery_twilight_01",
+      "src": "assets/hero/experimental/exp_industrial_refinery_twilight_01.webp",
+      "titleJa": "黄昏の工業港と輝く製油所",
+      "categories": [
+        "industrial",
+        "water"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 51%",
+      "landmarks": [],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exp_rainbow_bridge_expressway_twilight_03",
+      "src": "assets/hero/experimental/exp_rainbow_bridge_expressway_twilight_03.webp",
+      "titleJa": "黄昏の高速道路と輝く吊り橋",
+      "categories": [
+        "water",
+        "city"
+      ],
+      "times": [
+        "twilight",
+        "night"
+      ],
+      "position": "center 51%",
+      "landmarks": [
+        "rainbow_bridge"
+      ],
+      "weather": [],
+      "tier": "experimental",
+      "reviewStatus": "selected_experimental",
+      "sourceType": "ai_generated_experience_visual",
+      "realismPolicy": {
+        "realWorldReference": 0.8,
+        "aiEnhancement": 0.2
+      },
+      "disclosureLabel": "体験イメージ",
+      "enabledByDefault": true
+    }
+  ]
+}

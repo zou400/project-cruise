@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "knownNameCountScanned": 416,
+  "results": [
+    {
+      "candidateId": "N237",
+      "name": "東急歌舞伎町タワー・深夜エンタメ到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N238",
+      "name": "東京オペラシティ・ガレリアとサンクンガーデン",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N239",
+      "name": "新宿パークタワー・OZONEデザイン到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N240",
+      "name": "新宿アイランド・LOVEオブジェとパティオ",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N241",
+      "name": "SOMPO美術館・西新宿アート到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N242",
+      "name": "新宿中央公園 SHUKNOVA・MIHARASHI TERRACE",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N243",
+      "name": "五島美術館・庭園と和建築",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N244",
+      "name": "世田谷美術館・砧公園アート到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N245",
+      "name": "スカイキャロット展望ロビー・三軒茶屋夜景",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N246",
+      "name": "玉川高島屋S.C.・屋上庭園回遊",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N247",
+      "name": "二子玉川ライズ・ルーフガーデン",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N248",
+      "name": "世田谷文学館・本と建築の静かな終点",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N249",
+      "name": "東京ミッドタウン八重洲・地下都市到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N250",
+      "name": "GINZA SIX・屋上ガーデン夜景",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N251",
+      "name": "晴海トリトンスクエア・水のテラス",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N252",
+      "name": "日本橋三井タワー・COREDO室町と福徳の森",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N253",
+      "name": "GINZA KABUKIZA・歌舞伎座タワー地下到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N254",
+      "name": "東京スクエアガーデン・京橋の丘",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N255",
+      "name": "雅叙園東京・アートロビーと庭園到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N256",
+      "name": "東京都写真美術館・恵比寿映像文化到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N257",
+      "name": "日本民藝館・駒場の工藝建築",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N258",
+      "name": "JIYUGAOKA de aone・テラスカルチャー到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N259",
+      "name": "中目黒GT・高架下と駅前都市到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    },
+    {
+      "candidateId": "N260",
+      "name": "目黒区美術館・目黒川文化到着",
+      "exactDuplicate": false,
+      "decision": "new_staging_candidate",
+      "semanticReview": "required_before_promotion"
+    }
+  ]
+}

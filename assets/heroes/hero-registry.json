@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.12.1",
+  "selectionPolicy": [
+    "destination exact match",
+    "destination slug folder",
+    "category fallback",
+    "global fallback"
+  ],
+  "futureUploadConvention": {
+    "root": "assets/heroes",
+    "folder": "<destination-slug>",
+    "preferredFiles": [
+      "hero-night.webp",
+      "hero-evening.webp",
+      "hero-day.webp",
+      "hero-rain.webp",
+      "hero.webp"
+    ],
+    "manifest": "hero-manifest.json"
+  },
+  "destinations": {},
+  "categoryFallbacks": {
+    "airport": "assets/visuals/airport-scene-1-1.webp",
+    "bridge": "assets/visuals/bridge-scene-1-1.webp",
+    "industry": "assets/visuals/industry-scene-1-1.webp",
+    "city": "assets/visuals/city-scene-1-1.webp"
+  }
+}

@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "summary": {
+    "schemaVersion": "0.38",
+    "generatedAt": "2026-08-03T12:34:16+09:00",
+    "batch": "four_ward_dense_discovery_batch21",
+    "targetWards": [
+      "新宿区",
+      "世田谷区",
+      "中央区",
+      "目黒区"
+    ],
+    "canonicalDestinations": 320,
+    "stagingCandidatesBefore": 236,
+    "newPhysicalCandidates": 24,
+    "candidateIdRange": "N237-N260",
+    "wardCounts": {
+      "新宿区": 6,
+      "世田谷区": 6,
+      "中央区": 6,
+      "目黒区": 6
+    },
+    "stagingCandidatesAfter": 260,
+    "explorationUniverseAfter": 580,
+    "newRouteTemplates": 16,
+    "researchQueueCount": 15,
+    "exactDuplicateCount": 0,
+    "canonicalMutation": false
+  },
+  "candidates": [
+    {
+      "candidateId": "N237",
+      "ward": "新宿区",
+      "name": "東急歌舞伎町タワー・深夜エンタメ到着",
+      "area": "歌舞伎町",
+      "primaryCategory": "巨大複合建築・ネオン・食・映画・ホテル",
+      "experience": "西武新宿側から巨大タワーの足元へ入り、地下駐車場からネオンとエンタメ空間へ切り替わる。短時間でも到着シーンが強い。",
+      "roleProposal": "late_night_architecture_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 98,
+      "discoveryValue": 88,
+      "parking": {
+        "anchor": "東急歌舞伎町タワー駐車場",
+        "hours": "24時間",
+        "capacity": null,
+        "limits": {
+          "widthM": 1.95,
+          "lengthM": 5.3,
+          "heightM": 2.0,
+          "weightT": 2.6
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED_NARROW",
+        "notes": [
+          "右折入庫禁止",
+          "公道上で入庫待ちをしない",
+          "一部車種は規格内でも利用不可"
+        ]
+      },
+      "wideVehicleStatus": "EXCLUDE_IF_WIDTH_OVER_1_95",
+      "liveChecks": [
+        "当日の入庫規制",
+        "利用予定店舗の営業時間",
+        "満車"
+      ],
+      "sourceUrls": [
+        "https://www.tokyu-kabukicho-tower.jp/access/",
+        "https://www.tokyu-kabukicho-tower.jp/information/detail/?cd=000109"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%80%A5%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA%E3%82%BF%E3%83%AF%E3%83%BC",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N238",
+      "ward": "新宿区",
+      "name": "東京オペラシティ・ガレリアとサンクンガーデン",
+      "area": "西新宿・初台",
+      "primaryCategory": "巨大ガラス建築・文化施設・地下庭園・食",
+      "experience": "幅広い地下駐車場から、全長約200mのガレリア、アトリウム、サンクンガーデンへ上がる。雨でも建築到着が崩れにくい。",
+      "roleProposal": "rain_architecture_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "destinationStrength": 97,
+      "discoveryValue": 86,
+      "parking": {
+        "anchor": "東京オペラシティB2F駐車場",
+        "hours": "7:00〜23:30",
+        "capacity": 400,
+        "limits": {
+          "widthM": 2.2,
+          "lengthM": 6.0,
+          "heightM": 2.1
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED"
+      },
+      "wideVehicleStatus": "V1_UP_TO_PUBLISHED_LIMITS",
+      "liveChecks": [
+        "公演・催事混雑",
+        "最終出庫時刻"
+      ],
+      "sourceUrls": [
+        "https://www.tokyooperacity.co.jp/shop/access.jsp",
+        "https://www.tokyooperacity.co.jp/shop/page.jsp?id=8"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%9A%E3%83%A9%E3%82%B7%E3%83%86%E3%82%A3",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N239",
+      "ward": "新宿区",
+      "name": "新宿パークタワー・OZONEデザイン到着",
+      "area": "西新宿",
+      "primaryCategory": "高層建築・インテリア・デザイン・雨天",
+      "experience": "三連塔の足元へ入り、地下駐車場から住空間と家具のデザインセンターへ上がる。観光より『未来の暮らしを見る』目的地。",
+      "roleProposal": "design_culture_final",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 92,
+      "parking": {
+        "anchor": "新宿パークタワー地下駐車場",
+        "hours": "7:00〜23:30",
+        "capacity": 800,
+        "limits": {
+          "widthM": 2.1,
+          "lengthM": 5.6,
+          "heightM": 2.1,
+          "weightT": 3.0
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED"
+      },
+      "wideVehicleStatus": "V1_UP_TO_PUBLISHED_LIMITS",
+      "operation": {
+        "facility": "リビングデザインセンターOZONE",
+        "hours": "10:30〜18:30",
+        "closed": "水曜ほか"
+      },
+      "liveChecks": [
+        "OZONE開館日",
+        "展示・店舗の営業状況"
+      ],
+      "sourceUrls": [
+        "https://www.shinjukuparktower.com/",
+        "https://www.ozone.co.jp/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%AE%BF%E3%83%91%E3%83%BC%E3%82%AF%E3%82%BF%E3%83%AF%E3%83%BC%20OZONE",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N240",
+      "ward": "新宿区",
+      "name": "新宿アイランド・LOVEオブジェとパティオ",
+      "area": "西新宿",
+      "primaryCategory": "パブリックアート・都市広場・高層建築",
+      "experience": "地下駐車場から赤いLOVEオブジェと円形パティオへ上がる、2〜15分型の都市マイクロ目的地。",
+      "roleProposal": "urban_art_micro_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "night"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 85,
+      "parking": {
+        "anchor": "新宿アイランド駐車場",
+        "hours": "7:00〜23:00",
+        "capacity": 403,
+        "limits": {
+          "widthM": 2.1,
+          "lengthM": 5.7,
+          "heightM": 2.4,
+          "weightT": 4.0
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED"
+      },
+      "wideVehicleStatus": "V1_UP_TO_PUBLISHED_LIMITS",
+      "liveChecks": [
+        "イベント占用",
+        "駐車場満空"
+      ],
+      "sourceUrls": [
+        "https://www.shinjuku-i-land.jp/art/",
+        "https://www.shinjuku-i-land.com/parking_05.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%AE%BF%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20LOVE%20%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N241",
+      "ward": "新宿区",
+      "name": "SOMPO美術館・西新宿アート到着",
+      "area": "西新宿",
+      "primaryCategory": "美術館・高層街区・雨天",
+      "experience": "西新宿の高層街区へ入り、独立した曲面建築の美術館で短時間でも濃いアート体験を作る。",
+      "roleProposal": "rain_art_museum_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "destinationStrength": 93,
+      "discoveryValue": 88,
+      "parking": {
+        "anchor": "損保ジャパン本社ビル地下駐車場",
+        "hours": "当日確認",
+        "capacity": null,
+        "limits": {
+          "widthM": 2.5,
+          "lengthM": 6.0,
+          "heightM": 2.1
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED_CAPACITY_PENDING",
+        "notes": [
+          "美術館専用駐車場ではない",
+          "台数が限られる"
+        ]
+      },
+      "wideVehicleStatus": "V1_LIMITS_CONFIRMED_CAPACITY_LIVE_CHECK",
+      "operation": {
+        "hours": "10:00〜18:00を基本",
+        "closed": "月曜・展示替等"
+      },
+      "liveChecks": [
+        "展覧会日時指定・開館状況",
+        "駐車場満空"
+      ],
+      "sourceUrls": [
+        "https://www.sompo-museum.org/visit/access/",
+        "https://www.sompo-museum.org/visit/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=SOMPO%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N242",
+      "ward": "新宿区",
+      "name": "新宿中央公園 SHUKNOVA・MIHARASHI TERRACE",
+      "area": "西新宿",
+      "primaryCategory": "公園建築・テラス・カフェ・高層都市",
+      "experience": "高層ビルの谷間にある公園の新しい建築拠点へ到着し、テラスから都市と緑の境界を見る。",
+      "roleProposal": "urban_green_micro_final",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "destinationStrength": 89,
+      "discoveryValue": 91,
+      "parking": {
+        "anchor": "西新宿周辺の合法な時間貸し駐車場",
+        "status": "V0_ANCHOR_PENDING",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "terraceHours": "平日7:00〜21:00、土日祝8:00〜18:00を基本",
+        "weatherClosure": true
+      },
+      "liveChecks": [
+        "テラス開放状況",
+        "駐車アンカー寸法と満空"
+      ],
+      "sourceUrls": [
+        "https://shinjukuchuo-park.jp/facility/shuknova/"
+      ],
+      "sourceStatus": "official_facility_parking_pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=SHUKNOVA%20%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N243",
+      "ward": "世田谷区",
+      "name": "五島美術館・庭園と和建築",
+      "area": "上野毛",
+      "primaryCategory": "美術館・日本庭園・茶道・建築",
+      "experience": "住宅地の坂を抜けて静かな前庭へ入り、日本美術と庭園で都市の速度を切り替える。",
+      "roleProposal": "quiet_art_garden_final",
+      "timeFit": [
+        "day",
+        "rain_partial"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 93,
+      "parking": {
+        "anchor": "五島美術館前庭駐車スペース",
+        "capacity": 10,
+        "status": "V0_SMALL_PARKING_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "notes": [
+          "普通車のみ",
+          "公共交通利用を推奨"
+        ]
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "hours": "10:00〜17:00、最終入館16:30",
+        "temporaryClosureUntil": "2026-09-04",
+        "reopenExpected": "2026-09-05"
+      },
+      "liveChecks": [
+        "休館・展示替",
+        "10台の駐車空き",
+        "車路・区画適合"
+      ],
+      "sourceUrls": [
+        "https://www.gotoh-museum.or.jp/",
+        "https://www.gotoh-museum.or.jp/faq/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N244",
+      "ward": "世田谷区",
+      "name": "世田谷美術館・砧公園アート到着",
+      "area": "砧公園",
+      "primaryCategory": "美術館・公園・建築・雨天",
+      "experience": "環八から公園の奥へ入り、内井昭蔵の建築と緑を一体で体験する。雨の日にも成立しやすい。",
+      "roleProposal": "park_art_museum_final",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "destinationStrength": 95,
+      "discoveryValue": 87,
+      "parking": {
+        "anchor": "世田谷美術館無料駐車場",
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "secondaryAnchor": "砧公園有料駐車場"
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "hours": "10:00〜18:00、最終入場17:30",
+        "futureClosure": "2027-04〜2030-01予定"
+      },
+      "liveChecks": [
+        "展覧会・休館日",
+        "無料駐車場満空",
+        "2027年以降の長期休館"
+      ],
+      "sourceUrls": [
+        "https://www.setagayaartmuseum.or.jp/guide/access/freeparking.php",
+        "https://www.setagayaartmuseum.or.jp/news/entry.php?id=nw00758"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%96%E7%94%B0%E8%B0%B7%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N245",
+      "ward": "世田谷区",
+      "name": "スカイキャロット展望ロビー・三軒茶屋夜景",
+      "area": "三軒茶屋",
+      "primaryCategory": "無料展望・都市夜景・高層建築",
+      "experience": "世田谷の低層住宅地からキャロットタワーへ入り、約120mの高さから都心方向を見返す。",
+      "roleProposal": "free_urban_observation_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 91,
+      "parking": {
+        "anchor": "キャロットタワー周辺の合法な時間貸し駐車場",
+        "status": "V0_GENERAL_PARKING_LIMITS_PENDING",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "hours": "9:30〜22:00を基本",
+        "admission": "無料"
+      },
+      "liveChecks": [
+        "展望ロビー開放",
+        "駐車アンカー寸法・営業時間"
+      ],
+      "sourceUrls": [
+        "https://www.city.setagaya.lg.jp/02072/8528.html"
+      ],
+      "sourceStatus": "official_primary_parking_pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%AD%E3%83%83%E3%83%88%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N246",
+      "ward": "世田谷区",
+      "name": "玉川高島屋S.C.・屋上庭園回遊",
+      "area": "二子玉川",
+      "primaryCategory": "商業建築・庭園・食・全天候",
+      "experience": "多摩川沿いの街へ入り、複数館と庭園を回遊する。食・買物・休憩を確実に成立させやすい。",
+      "roleProposal": "all_weather_commercial_garden_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "destinationStrength": 93,
+      "discoveryValue": 82,
+      "parking": {
+        "anchor": "西館自走式またはマロニエコート駐車場",
+        "status": "V0_PARTIAL_LIMITS_ONLY",
+        "dimensions": null,
+        "notes": [
+          "機械式区画は幅1.89m等の狭い制限あり",
+          "自走式を優先して当日確認"
+        ]
+      },
+      "wideVehicleStatus": "V0_EXACT_SELF_DRIVE_LIMITS_REQUIRED",
+      "liveChecks": [
+        "利用館の営業時間",
+        "自走式区画の全寸法",
+        "休日渋滞"
+      ],
+      "sourceUrls": [
+        "https://www.tamagawa-sc.com/access/"
+      ],
+      "sourceStatus": "official_primary_partial_dimensions",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E7%8E%89%E5%B7%9D%E9%AB%98%E5%B3%B6%E5%B1%8BS.C.",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N247",
+      "ward": "世田谷区",
+      "name": "二子玉川ライズ・ルーフガーデン",
+      "area": "二子玉川",
+      "primaryCategory": "再開発街区・屋上庭園・水辺都市・食",
+      "experience": "多摩川沿いの再開発街区へ入り、複数棟の間を抜けて屋上庭園へ上がる。建築と水辺都市の境界を味わう。",
+      "roleProposal": "river_city_architecture_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain_partial"
+      ],
+      "destinationStrength": 92,
+      "discoveryValue": 89,
+      "parking": {
+        "anchor": "二子玉川ライズ駐車場",
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "liveChecks": [
+        "ルーフガーデン各エリアの開放",
+        "駐車車両寸法",
+        "イベント混雑"
+      ],
+      "sourceUrls": [
+        "https://www.rise.sc/",
+        "https://www.rise.sc/access/"
+      ],
+      "sourceStatus": "official_primary_live_closure_check",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D%E3%83%A9%E3%82%A4%E3%82%BA%20%E3%83%AB%E3%83%BC%E3%83%95%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N248",
+      "ward": "世田谷区",
+      "name": "世田谷文学館・本と建築の静かな終点",
+      "area": "南烏山",
+      "primaryCategory": "文学・建築・ライブラリー・雨天",
+      "experience": "環八から住宅地へ入り、水辺を抱く静かな文化建築で、展示とライブラリーを短時間から楽しむ。",
+      "roleProposal": "rain_literature_culture_final",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "destinationStrength": 90,
+      "discoveryValue": 92,
+      "parking": {
+        "anchor": "世田谷文学館専用無料駐車場",
+        "status": "V0_LIMITED_CAPACITY_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "accessibleSpaceLimits": {
+          "widthM": 2.5,
+          "heightM": 2.2,
+          "weightT": 2.5
+        },
+        "notes": [
+          "一般区画の台数・寸法は未確認",
+          "混雑期は公共交通推奨"
+        ]
+      },
+      "wideVehicleStatus": "V0_GENERAL_SPACE_CONFIRMATION_REQUIRED",
+      "operation": {
+        "hours": "10:00〜18:00、最終入館17:30"
+      },
+      "liveChecks": [
+        "企画展混雑",
+        "一般区画の空き・寸法"
+      ],
+      "sourceUrls": [
+        "https://www.setabun.or.jp/outline/",
+        "https://www.setabun.or.jp/faq/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%96%E7%94%B0%E8%B0%B7%E6%96%87%E5%AD%A6%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N249",
+      "ward": "中央区",
+      "name": "東京ミッドタウン八重洲・地下都市到着",
+      "area": "八重洲",
+      "primaryCategory": "超高層複合建築・地下街・食・バスターミナル",
+      "experience": "東京駅前の地下へ入り、駐車場から国内最大級のバスターミナルと高層複合都市へ切り替わる。",
+      "roleProposal": "underground_city_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 97,
+      "discoveryValue": 88,
+      "parking": {
+        "anchor": "東京ミッドタウン八重洲B3F駐車場",
+        "hours": "24時間を基本",
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "rate": "300円/30分を基本"
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "liveChecks": [
+        "夜間道路工事・入口変更",
+        "駐車車両寸法",
+        "店舗営業時間"
+      ],
+      "sourceUrls": [
+        "https://www.yaesu.tokyo-midtown.com/access",
+        "https://www.yaesu.tokyo-midtown.com/information/detail/666983"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%E5%85%AB%E9%87%8D%E6%B4%B2",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N250",
+      "ward": "中央区",
+      "name": "GINZA SIX・屋上ガーデン夜景",
+      "area": "銀座",
+      "primaryCategory": "商業建築・屋上庭園・アート・夜景",
+      "experience": "銀座中央通りから巨大街区の地下へ入り、吹抜けアートと屋上庭園へ上がる。夜の都市到着が強い。",
+      "roleProposal": "ginza_rooftop_art_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain_partial"
+      ],
+      "destinationStrength": 98,
+      "discoveryValue": 84,
+      "parking": {
+        "anchor": "GINZA SIX駐車場",
+        "hours": "6:00〜26:00",
+        "capacity": 423,
+        "limits": {
+          "widthM": 2.0,
+          "lengthM": 5.3,
+          "heightM": 2.0,
+          "weightT": 2.5,
+          "groundClearanceM": 0.15
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED"
+      },
+      "wideVehicleStatus": "EXCLUDE_IF_WIDTH_OVER_2_0",
+      "operation": {
+        "gardenHours": "7:00〜23:00を基本",
+        "weatherClosure": true
+      },
+      "liveChecks": [
+        "屋上庭園の開放",
+        "車両形状・装備適合",
+        "銀座周辺渋滞"
+      ],
+      "sourceUrls": [
+        "https://ginza6.tokyo/access/",
+        "https://ginza6.tokyo/facilities/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=GINZA%20SIX",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N251",
+      "ward": "中央区",
+      "name": "晴海トリトンスクエア・水のテラス",
+      "area": "晴海",
+      "primaryCategory": "湾岸複合都市・運河・食・夜景",
+      "experience": "築地大橋や晴海大橋から大規模街区へ入り、水辺テラスと高層棟の谷間で湾岸都市を味わう。",
+      "roleProposal": "bay_commercial_waterfront_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 86,
+      "parking": {
+        "anchor": "晴海トリトン駐車場",
+        "hours": "7:00〜23:30",
+        "capacity": 490,
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "liveChecks": [
+        "平面・機械式の利用区分",
+        "車両寸法",
+        "イベント混雑"
+      ],
+      "sourceUrls": [
+        "https://harumi-triton.jp/access/",
+        "https://harumi-triton.jp/guide/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%99%B4%E6%B5%B7%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N252",
+      "ward": "中央区",
+      "name": "日本橋三井タワー・COREDO室町と福徳の森",
+      "area": "日本橋室町",
+      "primaryCategory": "歴史街区・現代建築・神社・食・夜景",
+      "experience": "日本橋の石造街区へ入り、地下駐車場から高層タワー、COREDO、福徳神社と小さな森へ上がる。",
+      "roleProposal": "historic_modern_city_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 97,
+      "discoveryValue": 89,
+      "parking": {
+        "anchor": "福徳の森駐車場またはCOREDO室町駐車場",
+        "status": "V1_DUAL_ANCHOR",
+        "primaryLimits": {
+          "widthM": 2.05,
+          "lengthM": 5.3,
+          "heightM": 2.05,
+          "weightT": 2.6
+        },
+        "secondaryLimits": {
+          "widthM": 1.95,
+          "lengthM": 5.3,
+          "heightM": 2.0,
+          "weightT": 2.3
+        },
+        "notes": [
+          "幅広車は福徳の森側を優先",
+          "小規模区画のため満空確認"
+        ]
+      },
+      "wideVehicleStatus": "V1_UP_TO_2_05_PRIMARY_ONLY",
+      "liveChecks": [
+        "福徳の森側空車",
+        "利用店舗の営業時間",
+        "日本橋イベント規制"
+      ],
+      "sourceUrls": [
+        "https://mitsui-shopping-park.com/urban/muromachi/access/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=COREDO%E5%AE%A4%E7%94%BA%20%E7%A6%8F%E5%BE%B3%E3%81%AE%E6%A3%AE",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N253",
+      "ward": "中央区",
+      "name": "GINZA KABUKIZA・歌舞伎座タワー地下到着",
+      "area": "東銀座",
+      "primaryCategory": "伝統建築・高層複合・文化・食",
+      "experience": "地下駐車場から歌舞伎座の大屋根と高層タワーへ上がり、伝統と現代都市が一枚に重なる。",
+      "roleProposal": "traditional_modern_architecture_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "destinationStrength": 96,
+      "discoveryValue": 90,
+      "parking": {
+        "anchor": "GINZA KABUKIZA駐車場",
+        "hours": "24時間",
+        "status": "V0_DIMENSION_IMAGE_UNPARSED",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "liveChecks": [
+        "公演日混雑",
+        "車両制限",
+        "駐車場満空"
+      ],
+      "sourceUrls": [
+        "https://www.kabuki-za.co.jp/access/parking.html"
+      ],
+      "sourceStatus": "official_primary_dimensions_pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=GINZA%20KABUKIZA",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N254",
+      "ward": "中央区",
+      "name": "東京スクエアガーデン・京橋の丘",
+      "area": "京橋",
+      "primaryCategory": "環境建築・立体緑地・食・都市夜景",
+      "experience": "京橋の高層建築へ入り、低層部を覆う立体緑地『京橋の丘』と飲食フロアを短時間回遊する。",
+      "roleProposal": "green_highrise_micro_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain_partial"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 92,
+      "parking": {
+        "anchor": "東京スクエアガーデン駐車場",
+        "hours": "7:00〜23:00",
+        "capacity": 210,
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "notes": [
+          "23:00〜7:00は入出庫不可"
+        ]
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "liveChecks": [
+        "駐車車両寸法",
+        "京橋の丘の開放",
+        "イベント"
+      ],
+      "sourceUrls": [
+        "https://tokyo-sg.com/access/",
+        "https://tokyo-sg.com/floor-guide/?f=6f"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E4%BA%AC%E6%A9%8B%E3%81%AE%E4%B8%98",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N255",
+      "ward": "目黒区",
+      "name": "雅叙園東京・アートロビーと庭園到着",
+      "area": "下目黒",
+      "primaryCategory": "ホテル・日本美術・庭園・到着ポータル",
+      "experience": "目黒川沿いから曲線的な車寄せへ入り、日本美術に包まれたロビーと庭園へ切り替わる。ユーザー嗜好の『ホテル到着』に強く合う。",
+      "roleProposal": "hotel_art_arrival_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 99,
+      "discoveryValue": 91,
+      "parking": {
+        "anchor": "雅叙園東京セルフパーキング",
+        "rate": "1日2,800円",
+        "status": "V0_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "notes": [
+          "屋根付き",
+          "入出庫自由ではない"
+        ]
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "bookingAvailableFrom": "2026-07-27",
+        "publicUseRule": "レストラン・宿泊・催事等の利用条件を確認"
+      },
+      "liveChecks": [
+        "レストラン等の利用可否",
+        "駐車車両寸法",
+        "館内公開範囲"
+      ],
+      "sourceUrls": [
+        "https://www.hilton.com/ja/hotels/tyoolol-gajoen-tokyo/",
+        "https://www.hilton.com/ja/hotels/tyoolol-gajoen-tokyo/hotel-location/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E9%9B%85%E5%8F%99%E5%9C%92%E6%9D%B1%E4%BA%AC",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N256",
+      "ward": "目黒区",
+      "name": "東京都写真美術館・恵比寿映像文化到着",
+      "area": "三田・恵比寿ガーデンプレイス",
+      "primaryCategory": "写真・映像・レンガ都市・雨天",
+      "experience": "恵比寿ガーデンプレイスのレンガ街区へ入り、写真・映像の専門美術館で雨の日にも濃い文化体験を作る。",
+      "roleProposal": "rain_photography_museum_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "destinationStrength": 95,
+      "discoveryValue": 88,
+      "parking": {
+        "anchor": "恵比寿ガーデンプレイス駐車場",
+        "hours": "7:00〜24:00を基本",
+        "status": "V0_EXTERNAL_ANCHOR_DIMENSIONS_PENDING",
+        "dimensions": null,
+        "notes": [
+          "美術館専用駐車場なし"
+        ]
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "hours": "10:00〜18:00、木・金は20:00までを基本",
+        "closed": "月曜ほか"
+      },
+      "liveChecks": [
+        "展覧会・上映時間",
+        "恵比寿ガーデンプレイス駐車寸法"
+      ],
+      "sourceUrls": [
+        "https://topmuseum.jp/guide/",
+        "https://topmuseum.jp/access/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%86%99%E7%9C%9F%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N257",
+      "ward": "目黒区",
+      "name": "日本民藝館・駒場の工藝建築",
+      "area": "駒場",
+      "primaryCategory": "民藝・歴史建築・工藝・静けさ",
+      "experience": "狭い住宅地の奥に残る1936年の建築へ到着し、手仕事と古い東京の空気へ切り替わる。",
+      "roleProposal": "craft_architecture_final",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 96,
+      "parking": {
+        "anchor": "日本民藝館駐車場",
+        "capacity": 3,
+        "status": "V0_TINY_PARKING_NARROW_ROADS",
+        "dimensions": null,
+        "notes": [
+          "周辺道路は狭く一方通行",
+          "公共交通推奨"
+        ]
+      },
+      "wideVehicleStatus": "V0_WIDE_VEHICLE_HIGH_RISK",
+      "operation": {
+        "hours": "10:00〜17:00、最終入館16:30",
+        "closed": "月曜・展示替等"
+      },
+      "liveChecks": [
+        "3台の空き",
+        "車幅・旋回",
+        "展示替休館"
+      ],
+      "sourceUrls": [
+        "https://mingeikan.or.jp/information/access/",
+        "https://mingeikan.or.jp/information/admission/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E6%9C%AC%E6%B0%91%E8%97%9D%E9%A4%A8",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N258",
+      "ward": "目黒区",
+      "name": "JIYUGAOKA de aone・テラスカルチャー到着",
+      "area": "自由が丘",
+      "primaryCategory": "商業建築・テラス・食・カルチャー",
+      "experience": "自由が丘の密集市街へ入り、立体テラスとカルチャーイベントのある新しい街区へ上がる。",
+      "roleProposal": "neighborhood_commercial_portal",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain_partial"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 90,
+      "parking": {
+        "anchor": "JIYUGAOKA de aone駐車場",
+        "hours": "7:00〜23:30",
+        "capacity": 49,
+        "limits": {
+          "widthM": 1.95,
+          "lengthM": 5.3,
+          "heightM": 2.05,
+          "weightT": 2.6
+        },
+        "status": "V1_ENTRY_LIMIT_CONFIRMED_NARROW",
+        "notes": [
+          "一般車高1.65m未満、ハイルーフ2.05m未満",
+          "ミラー非格納・キャリア装着車等は利用不可の場合あり"
+        ]
+      },
+      "wideVehicleStatus": "EXCLUDE_IF_WIDTH_OVER_1_95",
+      "liveChecks": [
+        "ハイルーフ枠空き",
+        "イベント・店舗営業"
+      ],
+      "sourceUrls": [
+        "https://jiyugaoka-de-aone.aeonmall.com/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=JIYUGAOKA%20de%20aone",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N259",
+      "ward": "目黒区",
+      "name": "中目黒GT・高架下と駅前都市到着",
+      "area": "上目黒",
+      "primaryCategory": "駅前再開発・高架都市・食・目黒川",
+      "experience": "山手通りから駅前再開発の地下へ入り、GTタワー、高架下、目黒川へ歩いて切り替える短時間都市目的地。",
+      "roleProposal": "station_city_micro_final",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "destinationStrength": 90,
+      "discoveryValue": 87,
+      "parking": {
+        "anchor": "中目黒GT駐車場",
+        "hours": "7:00〜24:00",
+        "status": "V0_V1_DUAL_FORMAT",
+        "flatCapacity": 27,
+        "flatLimits": {
+          "heightM": 2.85
+        },
+        "mechanicalCapacity": 42,
+        "mechanicalLimits": {
+          "widthM": 1.85,
+          "lengthM": 5.0,
+          "heightM": 1.55,
+          "weightT": 1.7
+        },
+        "notes": [
+          "平置きの幅・長さは未確認",
+          "機械式は狭い"
+        ]
+      },
+      "wideVehicleStatus": "V0_FLAT_SPACE_EXACT_LIMITS_REQUIRED",
+      "liveChecks": [
+        "平置き車室の全寸法・空き",
+        "駅周辺混雑"
+      ],
+      "sourceUrls": [
+        "https://www.nakamegurogt.jp/access/"
+      ],
+      "sourceStatus": "official_primary_partial_dimensions",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E7%9B%AE%E9%BB%92GT",
+      "directRoadStopAllowed": false
+    },
+    {
+      "candidateId": "N260",
+      "ward": "目黒区",
+      "name": "目黒区美術館・目黒川文化到着",
+      "area": "目黒・中目黒",
+      "primaryCategory": "地域美術館・目黒川・雨天",
+      "experience": "目黒川沿いから区民センター街区へ入り、地域美術館と川沿い散策を組み合わせる。",
+      "roleProposal": "local_art_river_final",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "destinationStrength": 87,
+      "discoveryValue": 93,
+      "parking": {
+        "anchor": "目黒区民センター駐車場",
+        "hours": "8:15〜22:15",
+        "capacity": 40,
+        "status": "V0_DIMENSIONS_PENDING_FACILITY_USERS_ONLY",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_NEVER_AUTO_ALLOW_OVER_2M",
+      "operation": {
+        "hours": "10:00〜18:00を基本",
+        "closed": "月曜・展示替等"
+      },
+      "liveChecks": [
+        "展覧会・休館",
+        "区民センター利用条件",
+        "車両寸法・満空"
+      ],
+      "sourceUrls": [
+        "https://mmat.jp/guide/access/",
+        "https://www.city.meguro.tokyo.jp/shisetsu/shisetsu/bunka/kumincenter.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E7%9B%AE%E9%BB%92%E5%8C%BA%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "directRoadStopAllowed": false
+    }
+  ]
+}

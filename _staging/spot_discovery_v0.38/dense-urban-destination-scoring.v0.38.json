@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "model": "DenseUrbanDestinationScoreV1",
+  "weights": {
+    "arrivalPortalStrength": 0.22,
+    "legalParkingConfidence": 0.2,
+    "architectureOrWorldBuilding": 0.16,
+    "rainOrNightResilience": 0.13,
+    "microStayValue": 0.11,
+    "wideVehiclePotential": 0.1,
+    "noveltyAgainstCanonical": 0.08
+  },
+  "rules": [
+    "施設の知名度より、車から降りた瞬間に世界が切り替わるかを重視",
+    "駐車寸法が不明なV0は全幅2m超へ自動推薦しない",
+    "一般車駐車場がない施設は候補IDを付けず研究キューへ送る",
+    "屋上庭園・テラスは強風、雨、イベントによる閉鎖をHard Gate化",
+    "都心では路上待機・車寄せ見物・短時間路上停車を代替駐車にしない"
+  ]
+}

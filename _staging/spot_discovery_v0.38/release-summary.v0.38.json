@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "batch": "four_ward_dense_discovery_batch21",
+  "targetWards": [
+    "新宿区",
+    "世田谷区",
+    "中央区",
+    "目黒区"
+  ],
+  "canonicalDestinations": 320,
+  "stagingCandidatesBefore": 236,
+  "newPhysicalCandidates": 24,
+  "candidateIdRange": "N237-N260",
+  "wardCounts": {
+    "新宿区": 6,
+    "世田谷区": 6,
+    "中央区": 6,
+    "目黒区": 6
+  },
+  "stagingCandidatesAfter": 260,
+  "explorationUniverseAfter": 580,
+  "newRouteTemplates": 16,
+  "researchQueueCount": 15,
+  "exactDuplicateCount": 0,
+  "canonicalMutation": false
+}

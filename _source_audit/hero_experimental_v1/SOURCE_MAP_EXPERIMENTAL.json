@@ -1,0 +1,422 @@
+[
+  {
+    "id": "exp_rainbow_bridge_bayside_twilight_01",
+    "titleJa": "薄暮の湾岸道路とレインボーブリッジ",
+    "status": "selected_experimental",
+    "sourceFilename": "imagegen.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_rainbow_bridge_bayside_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_rainbow_bridge_bayside_twilight_01.webp",
+    "sourceSha256": "9b5b1c4ad77eb725dc7df93b70dfb1ebc1ea329e14b47642dc607c0dc663a765",
+    "packagedOriginalSha256": "9b5b1c4ad77eb725dc7df93b70dfb1ebc1ea329e14b47642dc607c0dc663a765",
+    "productionWebpSha256": "08480380f8fdd5403cd75097af7195caee66bf8de4a8f78a5d8a882897ffb15c",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_culture_modern_japanese_twilight_01",
+    "titleJa": "夕暮れに佇む静寂の和モダン建築",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れに佇む静寂の和モダン建築.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_culture_modern_japanese_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_culture_modern_japanese_twilight_01.webp",
+    "sourceSha256": "25a4dedd48c40e540e2428c318caac9c0074e77cba91868e20000c166ab99c22",
+    "packagedOriginalSha256": "25a4dedd48c40e540e2428c318caac9c0074e77cba91868e20000c166ab99c22",
+    "productionWebpSha256": "8c0d8a7abec30de141cb4e2dc5bc1824e4029416cc943a0cccd497f1ff0f1b51",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_skytree_riverside_twilight_01",
+    "titleJa": "夕暮れの川沿いと東京スカイツリー",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの川沿いと東京スカイツリー.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_skytree_riverside_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_skytree_riverside_twilight_01.webp",
+    "sourceSha256": "a79b8b8f3aeb671518eed91202e3628e80c180618dac19195d6135141796b403",
+    "packagedOriginalSha256": "a79b8b8f3aeb671518eed91202e3628e80c180618dac19195d6135141796b403",
+    "productionWebpSha256": "2545bf97b6a22ef0b7f7502386a8e3256f5d083d950defacd0f4ffcf074772f6",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_skytree_riverside_drive_twilight_02",
+    "titleJa": "夕暮れの川沿い都市ドライブ",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの川沿い都市ドライブ.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_skytree_riverside_drive_twilight_02__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_skytree_riverside_drive_twilight_02.webp",
+    "sourceSha256": "5b68610d9aa6b00718af1a19297ad0231003e650044ddcbce6272d13a8327bbd",
+    "packagedOriginalSha256": "5b68610d9aa6b00718af1a19297ad0231003e650044ddcbce6272d13a8327bbd",
+    "productionWebpSha256": "d249cc191c5eee00f6c9f4a38b80bf35e10aa7f7ea4463b4b007e0e488665498",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_azabudai_city_road_twilight_01",
+    "titleJa": "夕暮れの摩天楼へ続く都市道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの摩天楼へ続く都市道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_azabudai_city_road_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_azabudai_city_road_twilight_01.webp",
+    "sourceSha256": "33d8031b323143cb7c8082de8167ca6cdab702fbff2505b1719b218c539a3688",
+    "packagedOriginalSha256": "33d8031b323143cb7c8082de8167ca6cdab702fbff2505b1719b218c539a3688",
+    "productionWebpSha256": "b97446328769dd49285b9dfa78272a5f609dc13dcc091df7adcdcf4424e95977",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_skytree_waterfront_road_twilight_01",
+    "titleJa": "夕暮れの東京スカイツリーと湾岸道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの東京スカイツリーと湾岸道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_skytree_waterfront_road_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_skytree_waterfront_road_twilight_01.webp",
+    "sourceSha256": "5396dfd3da9f94cfe2396ee4acd22abfeeb3216607c119ff6ea84364aa19569a",
+    "packagedOriginalSha256": "5396dfd3da9f94cfe2396ee4acd22abfeeb3216607c119ff6ea84364aa19569a",
+    "productionWebpSha256": "c81c29bf7f5a5c02582296d00647aa67b5321a79bb58ec98f346b8ad0c6c7485",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_tokyo_tower_expressway_twilight_01",
+    "titleJa": "夕暮れの東京タワーと都市高速道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの東京タワーと都市高速道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_tokyo_tower_expressway_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_tokyo_tower_expressway_twilight_01.webp",
+    "sourceSha256": "f299953cfcd7b502577a73fb75d08bc5607aa7856ce565af3721e1b5e36e9cc1",
+    "packagedOriginalSha256": "f299953cfcd7b502577a73fb75d08bc5607aa7856ce565af3721e1b5e36e9cc1",
+    "productionWebpSha256": "fd41443bfed97be9bcdf73286a8735f5d62ea90d49cd401a1c6d2e9e4bf78712",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_rainbow_bridge_bayshore_twilight_02",
+    "titleJa": "夕暮れの湾岸疾走と大橋",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの湾岸疾走と大橋.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_rainbow_bridge_bayshore_twilight_02__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_rainbow_bridge_bayshore_twilight_02.webp",
+    "sourceSha256": "912e038e69e175fcb522705cd2186729b87ae2bf262c5de942c48f7ba7f17c0c",
+    "packagedOriginalSha256": "912e038e69e175fcb522705cd2186729b87ae2bf262c5de942c48f7ba7f17c0c",
+    "productionWebpSha256": "8a8be4f424d8b805bd625a5a483ef8386bd927f2f2d78ef54e39b1e46ccea783",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_airport_coastal_twilight_01",
+    "titleJa": "夕暮れの湾岸空港と曲線道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの湾岸空港と曲線道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_airport_coastal_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_airport_coastal_twilight_01.webp",
+    "sourceSha256": "09570750b18b9c039efccb960af6bb136057d9e4fb8004bcdf29361d86674dcb",
+    "packagedOriginalSha256": "09570750b18b9c039efccb960af6bb136057d9e4fb8004bcdf29361d86674dcb",
+    "productionWebpSha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_city_elevated_twilight_01",
+    "titleJa": "夕暮れの都市へ続く静かな高架道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの都市へ続く静かな高架道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_city_elevated_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_city_elevated_twilight_01.webp",
+    "sourceSha256": "57c821a68dca5e84d573146bdd5d23c0fee2f2b329a9067db87631b2cfae0bc0",
+    "packagedOriginalSha256": "57c821a68dca5e84d573146bdd5d23c0fee2f2b329a9067db87631b2cfae0bc0",
+    "productionWebpSha256": "310a088d371a642805fec286124e46fe184c09493fcd3894a7e49249715ca76a",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_tokyo_tower_expressway_twilight_02",
+    "titleJa": "夕暮れの都市高速と輝く塔",
+    "status": "selected_experimental",
+    "sourceFilename": "夕暮れの都市高速と輝く塔.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_tokyo_tower_expressway_twilight_02__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_tokyo_tower_expressway_twilight_02.webp",
+    "sourceSha256": "a6cb507d561e39bba16dd0fef6665a0558b1c8ad30d63a65e1724aa5981f8816",
+    "packagedOriginalSha256": "a6cb507d561e39bba16dd0fef6665a0558b1c8ad30d63a65e1724aa5981f8816",
+    "productionWebpSha256": "4f349388c4154aa54cd67cd3c2c340b1a2c9b449f35ea9dbcbbb19f8a3faf22c",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_industrial_harbor_morning_01",
+    "titleJa": "夜明けの静かな工業港湾道路",
+    "status": "selected_experimental",
+    "sourceFilename": "夜明けの静かな工業港湾道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_harbor_morning_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_harbor_morning_01.webp",
+    "sourceSha256": "fd3ab814376c01bcf3ce12f1f03a0c90ece4decaa4f9d765091ca5071ef34251",
+    "packagedOriginalSha256": "fd3ab814376c01bcf3ce12f1f03a0c90ece4decaa4f9d765091ca5071ef34251",
+    "productionWebpSha256": "93980f6787712f4d7e4365c0dd409cc175adcd6583cb6b39a1ebe3453de6c2e3",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_industrial_waterfront_day_01",
+    "titleJa": "水辺を走る工業地帯の湾曲道路",
+    "status": "selected_experimental",
+    "sourceFilename": "水辺を走る工業地帯の湾曲道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_waterfront_day_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_waterfront_day_01.webp",
+    "sourceSha256": "07cf0dd9fe663f0c6ac5d06a92fc63f2d3b0456471977580ad1241646db00b0a",
+    "packagedOriginalSha256": "07cf0dd9fe663f0c6ac5d06a92fc63f2d3b0456471977580ad1241646db00b0a",
+    "productionWebpSha256": "27457b0f45263dc17565dc95ea447b13c8876cb7aad2ed6192d6e3388431639f",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_industrial_waterfront_day_02",
+    "titleJa": "水辺を走る工業地帯の道路",
+    "status": "selected_experimental",
+    "sourceFilename": "水辺を走る工業地帯の道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_waterfront_day_02__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_waterfront_day_02.webp",
+    "sourceSha256": "929d2c86fca05a9abc57dac6fefed95088145d9e980e303ee38484867c9932c3",
+    "packagedOriginalSha256": "929d2c86fca05a9abc57dac6fefed95088145d9e980e303ee38484867c9932c3",
+    "productionWebpSha256": "3876c6c80a6b1c69ee510a84ee3cbe82102434395a9d297cb3fae8d01832eeb7",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_bayshore_elevated_day_01",
+    "titleJa": "湾岸道路と高架橋の青空風景",
+    "status": "selected_experimental",
+    "sourceFilename": "湾岸道路と高架橋の青空風景.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_bayshore_elevated_day_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_bayshore_elevated_day_01.webp",
+    "sourceSha256": "f9a27ff70477e144caef81cb2b694c83a72fb66ccf9ab1178feb4e4c61fa83de",
+    "packagedOriginalSha256": "f9a27ff70477e144caef81cb2b694c83a72fb66ccf9ab1178feb4e4c61fa83de",
+    "productionWebpSha256": "71e633f12706ffb3b66310bf3e8ec63e7e83ae741d621afbbcf028306f70637c",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "review_city_neon_rain_night_01",
+    "titleJa": "雨に濡れたネオン街の交差点",
+    "status": "review_only",
+    "sourceFilename": "雨に濡れたネオン街の交差点.png",
+    "originalPackagePath": "01_original_png/review_only/review_city_neon_rain_night_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/review_city_neon_rain_night_01.webp",
+    "sourceSha256": "bb01843d7730022bfacedbdde19edc783db4e33b14950d47e8f99b76aa754fc1",
+    "packagedOriginalSha256": "bb01843d7730022bfacedbdde19edc783db4e33b14950d47e8f99b76aa754fc1",
+    "productionWebpSha256": "675eba2c96b9c6b0b99daec9cb11546be673f9f1bf638ecf8fd7cf8382c36c7a",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": "実在地点との整合と広告・看板表現を再確認するまで本番選出禁止"
+  },
+  {
+    "id": "exp_industrial_waterfront_rain_night_01",
+    "titleJa": "雨上がりの工業港夜景",
+    "status": "selected_experimental",
+    "sourceFilename": "雨上がりの工業港夜景.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_waterfront_rain_night_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_waterfront_rain_night_01.webp",
+    "sourceSha256": "b9b67b473174f256e4600ae1e29434c796c5ae1e6e21da22d3a7bf855e8bb56d",
+    "packagedOriginalSha256": "b9b67b473174f256e4600ae1e29434c796c5ae1e6e21da22d3a7bf855e8bb56d",
+    "productionWebpSha256": "5e35d28f950367b01f7ccc9bed4ecc802359c9ac1af9412e7da3fc5c884e9f5e",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "review_futuristic_city_rain_night_01",
+    "titleJa": "雨上がりの未来都市夜景",
+    "status": "review_only",
+    "sourceFilename": "雨上がりの未来都市夜景.png",
+    "originalPackagePath": "01_original_png/review_only/review_futuristic_city_rain_night_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/review_futuristic_city_rain_night_01.webp",
+    "sourceSha256": "1647b94243ca1c640197d7acfa00bea1c13ee575dba81eb5c608fbfd0f25f806",
+    "packagedOriginalSha256": "1647b94243ca1c640197d7acfa00bea1c13ee575dba81eb5c608fbfd0f25f806",
+    "productionWebpSha256": "dbb53e184ffc79f6daf93637914385f38c7394aae2c70380479e16849af4da53",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": "AI誇張と実在感を再評価するまで本番選出禁止"
+  },
+  {
+    "id": "exp_industrial_harbor_rain_night_02",
+    "titleJa": "雨夜の工業港湾と濡れた道路",
+    "status": "selected_experimental",
+    "sourceFilename": "雨夜の工業港湾と濡れた道路.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_harbor_rain_night_02__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_harbor_rain_night_02.webp",
+    "sourceSha256": "bd755bebfcee4d8f9553eb9d1a449ceb0f99e3bd26d4e2c2edff28da6c97ee68",
+    "packagedOriginalSha256": "bd755bebfcee4d8f9553eb9d1a449ceb0f99e3bd26d4e2c2edff28da6c97ee68",
+    "productionWebpSha256": "631992d3f74d4c84e4bfd4a5992ae3c94a688e7a930ef4e7803de54d4586f508",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_industrial_refinery_twilight_01",
+    "titleJa": "黄昏の工業港と輝く製油所",
+    "status": "selected_experimental",
+    "sourceFilename": "黄昏の工業港と輝く製油所.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_industrial_refinery_twilight_01__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_industrial_refinery_twilight_01.webp",
+    "sourceSha256": "a15b1fe66a5e8d2b4fa1e9e57fedf46cd9bb0a7b3ce9c8b2355f685cfa8bf022",
+    "packagedOriginalSha256": "a15b1fe66a5e8d2b4fa1e9e57fedf46cd9bb0a7b3ce9c8b2355f685cfa8bf022",
+    "productionWebpSha256": "b24ac6127c1de3eb0bdabbfa7b0b052dfa8d4cf6e4782e791e89157c5e288f87",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  },
+  {
+    "id": "exp_rainbow_bridge_expressway_twilight_03",
+    "titleJa": "黄昏の高速道路と輝く吊り橋",
+    "status": "selected_experimental",
+    "sourceFilename": "黄昏の高速道路と輝く吊り橋.png",
+    "originalPackagePath": "01_original_png/selected_experimental/exp_rainbow_bridge_expressway_twilight_03__ORIGINAL.png",
+    "productionPackagePath": "02_github_overlay/assets/hero/experimental/exp_rainbow_bridge_expressway_twilight_03.webp",
+    "sourceSha256": "4a81bfc9024b1c59039cd3d3146ee3da64e6cb26e3abb3961a5a1b9fd8bc9a96",
+    "packagedOriginalSha256": "4a81bfc9024b1c59039cd3d3146ee3da64e6cb26e3abb3961a5a1b9fd8bc9a96",
+    "productionWebpSha256": "2d983becb3185c88dad69c6eb08edaf32b12fd2ab1984e730b23b6f0d69ce50f",
+    "sourceDimensions": [
+      1672,
+      941
+    ],
+    "productionDimensions": [
+      1440,
+      810
+    ],
+    "reviewReason": null
+  }
+]

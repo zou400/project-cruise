@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "result": "PASS",
+  "nodeTest": {
+    "passed": true,
+    "audited": 5,
+    "v1Replacements": 2,
+    "previewReplacements": 2
+  },
+  "javascriptSyntax": "PASS",
+  "jsonParse": "PASS",
+  "snapshotCount": 5,
+  "originalEnforcePromotions": 0,
+  "conditionalV1Replacements": 2,
+  "mainMutation": false,
+  "canonicalMutation": false
+}

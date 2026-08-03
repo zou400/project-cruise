@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "summary": {
+    "routeTemplates": 16,
+    "perWard": 4
+  },
+  "routes": [
+    {
+      "routeTemplateId": "WRD-SJK-01",
+      "title": "新宿・ネオンからデザインへ",
+      "destinationId": "N239",
+      "destination": "新宿パークタワー・OZONEデザイン到着",
+      "waypoints": [
+        "東急歌舞伎町タワー",
+        "新宿アイランド LOVEオブジェ"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%96%B0%E5%AE%BF%E3%83%91%E3%83%BC%E3%82%AF%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BBOZONE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E6%9D%B1%E6%80%A5%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA%E3%82%BF%E3%83%AF%E3%83%BC%7C%E6%96%B0%E5%AE%BF%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20LOVE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SJK-02",
+      "title": "西新宿ガラス建築リレー",
+      "destinationId": "N238",
+      "destination": "東京オペラシティ・ガレリアとサンクンガーデン",
+      "waypoints": [
+        "新宿中央公園 SHUKNOVA",
+        "新宿パークタワー"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%9A%E3%83%A9%E3%82%B7%E3%83%86%E3%82%A3%E3%83%BB%E3%82%AC%E3%83%AC%E3%83%AA%E3%82%A2%E3%81%A8%E3%82%B5%E3%83%B3%E3%82%AF%E3%83%B3%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%20SHUKNOVA%7C%E6%96%B0%E5%AE%BF%E3%83%91%E3%83%BC%E3%82%AF%E3%82%BF%E3%83%AF%E3%83%BC",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SJK-03",
+      "title": "西新宿アート・マイクロ",
+      "destinationId": "N241",
+      "destination": "SOMPO美術館・西新宿アート到着",
+      "waypoints": [
+        "新宿アイランド LOVEオブジェ"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=SOMPO%E7%BE%8E%E8%A1%93%E9%A4%A8%E3%83%BB%E8%A5%BF%E6%96%B0%E5%AE%BF%E3%82%A2%E3%83%BC%E3%83%88%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E6%96%B0%E5%AE%BF%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20LOVE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SJK-04",
+      "title": "雨の西新宿デザイン",
+      "destinationId": "N239",
+      "destination": "新宿パークタワー・OZONEデザイン到着",
+      "waypoints": [
+        "東京オペラシティ"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%96%B0%E5%AE%BF%E3%83%91%E3%83%BC%E3%82%AF%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BBOZONE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%9A%E3%83%A9%E3%82%B7%E3%83%86%E3%82%A3",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SET-01",
+      "title": "上野毛・二子玉川文化線",
+      "destinationId": "N246",
+      "destination": "玉川高島屋S.C.・屋上庭園回遊",
+      "waypoints": [
+        "五島美術館"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E7%8E%89%E5%B7%9D%E9%AB%98%E5%B3%B6%E5%B1%8BS.C.%E3%83%BB%E5%B1%8B%E4%B8%8A%E5%BA%AD%E5%9C%92%E5%9B%9E%E9%81%8A&travelmode=driving&waypoints=%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SET-02",
+      "title": "二子玉川再開発回遊",
+      "destinationId": "N247",
+      "destination": "二子玉川ライズ・ルーフガーデン",
+      "waypoints": [
+        "玉川高島屋S.C."
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D%E3%83%A9%E3%82%A4%E3%82%BA%E3%83%BB%E3%83%AB%E3%83%BC%E3%83%95%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3&travelmode=driving&waypoints=%E7%8E%89%E5%B7%9D%E9%AB%98%E5%B3%B6%E5%B1%8BS.C.",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SET-03",
+      "title": "砧アートと文学",
+      "destinationId": "N248",
+      "destination": "世田谷文学館・本と建築の静かな終点",
+      "waypoints": [
+        "世田谷美術館"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E4%B8%96%E7%94%B0%E8%B0%B7%E6%96%87%E5%AD%A6%E9%A4%A8%E3%83%BB%E6%9C%AC%E3%81%A8%E5%BB%BA%E7%AF%89%E3%81%AE%E9%9D%99%E3%81%8B%E3%81%AA%E7%B5%82%E7%82%B9&travelmode=driving&waypoints=%E4%B8%96%E7%94%B0%E8%B0%B7%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-SET-04",
+      "title": "世田谷夜景ショート",
+      "destinationId": "N245",
+      "destination": "スカイキャロット展望ロビー・三軒茶屋夜景",
+      "waypoints": [
+        "二子玉川ライズ"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%AD%E3%83%83%E3%83%88%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC%E3%83%BB%E4%B8%89%E8%BB%92%E8%8C%B6%E5%B1%8B%E5%A4%9C%E6%99%AF&travelmode=driving&waypoints=%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D%E3%83%A9%E3%82%A4%E3%82%BA",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-CHU-01",
+      "title": "八重洲・京橋・銀座高層回廊",
+      "destinationId": "N250",
+      "destination": "GINZA SIX・屋上ガーデン夜景",
+      "waypoints": [
+        "東京ミッドタウン八重洲",
+        "東京スクエアガーデン"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=GINZA%20SIX%E3%83%BB%E5%B1%8B%E4%B8%8A%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E5%A4%9C%E6%99%AF&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%E5%85%AB%E9%87%8D%E6%B4%B2%7C%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-CHU-02",
+      "title": "日本橋と歌舞伎座の新旧都市",
+      "destinationId": "N253",
+      "destination": "GINZA KABUKIZA・歌舞伎座タワー地下到着",
+      "waypoints": [
+        "COREDO室町 福徳の森"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=GINZA%20KABUKIZA%E3%83%BB%E6%AD%8C%E8%88%9E%E4%BC%8E%E5%BA%A7%E3%82%BF%E3%83%AF%E3%83%BC%E5%9C%B0%E4%B8%8B%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=COREDO%E5%AE%A4%E7%94%BA%20%E7%A6%8F%E5%BE%B3%E3%81%AE%E6%A3%AE",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-CHU-03",
+      "title": "湾岸橋から晴海都市へ",
+      "destinationId": "N251",
+      "destination": "晴海トリトンスクエア・水のテラス",
+      "waypoints": [
+        "築地大橋",
+        "晴海大橋"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%99%B4%E6%B5%B7%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%83%BB%E6%B0%B4%E3%81%AE%E3%83%86%E3%83%A9%E3%82%B9&travelmode=driving&waypoints=%E7%AF%89%E5%9C%B0%E5%A4%A7%E6%A9%8B%7C%E6%99%B4%E6%B5%B7%E5%A4%A7%E6%A9%8B",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-CHU-04",
+      "title": "京橋の丘から日本橋へ",
+      "destinationId": "N252",
+      "destination": "日本橋三井タワー・COREDO室町と福徳の森",
+      "waypoints": [
+        "東京スクエアガーデン"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%97%A5%E6%9C%AC%E6%A9%8B%E4%B8%89%E4%BA%95%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BBCOREDO%E5%AE%A4%E7%94%BA%E3%81%A8%E7%A6%8F%E5%BE%B3%E3%81%AE%E6%A3%AE&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-MGR-01",
+      "title": "目黒川・ホテルアート",
+      "destinationId": "N255",
+      "destination": "雅叙園東京・アートロビーと庭園到着",
+      "waypoints": [
+        "目黒区美術館"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E9%9B%85%E5%8F%99%E5%9C%92%E6%9D%B1%E4%BA%AC%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%88%E3%83%AD%E3%83%93%E3%83%BC%E3%81%A8%E5%BA%AD%E5%9C%92%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E7%9B%AE%E9%BB%92%E5%8C%BA%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-MGR-02",
+      "title": "恵比寿写真・雅叙園",
+      "destinationId": "N255",
+      "destination": "雅叙園東京・アートロビーと庭園到着",
+      "waypoints": [
+        "東京都写真美術館"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E9%9B%85%E5%8F%99%E5%9C%92%E6%9D%B1%E4%BA%AC%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%88%E3%83%AD%E3%83%93%E3%83%BC%E3%81%A8%E5%BA%AD%E5%9C%92%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%86%99%E7%9C%9F%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-MGR-03",
+      "title": "駒場民藝から中目黒へ",
+      "destinationId": "N259",
+      "destination": "中目黒GT・高架下と駅前都市到着",
+      "waypoints": [
+        "日本民藝館"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E4%B8%AD%E7%9B%AE%E9%BB%92GT%E3%83%BB%E9%AB%98%E6%9E%B6%E4%B8%8B%E3%81%A8%E9%A7%85%E5%89%8D%E9%83%BD%E5%B8%82%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E6%97%A5%E6%9C%AC%E6%B0%91%E8%97%9D%E9%A4%A8",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    },
+    {
+      "routeTemplateId": "WRD-MGR-04",
+      "title": "自由が丘から中目黒都市線",
+      "destinationId": "N259",
+      "destination": "中目黒GT・高架下と駅前都市到着",
+      "waypoints": [
+        "JIYUGAOKA de aone"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E4%B8%AD%E7%9B%AE%E9%BB%92GT%E3%83%BB%E9%AB%98%E6%9E%B6%E4%B8%8B%E3%81%A8%E9%A7%85%E5%89%8D%E9%83%BD%E5%B8%82%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=JIYUGAOKA%20de%20aone",
+      "liveEtaRequired": true,
+      "parkingGate": true,
+      "wideVehicleGate": true,
+      "status": "staging_template_not_canonical"
+    }
+  ]
+}

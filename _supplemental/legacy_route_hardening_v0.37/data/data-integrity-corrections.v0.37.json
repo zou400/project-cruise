@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "corrections": [
+    {
+      "routeId": "R006",
+      "field": "destinationParkingCapacity",
+      "before": "172 ordinary implied",
+      "after": "165 ordinary + 7 accessible = 172 total",
+      "reason": "公式内訳に合わせる"
+    },
+    {
+      "routeId": "R006",
+      "field": "wideVehicleEligibility",
+      "before": "unspecified",
+      "after": "reject width >=1.9m",
+      "reason": "東扇島西公園の普通車幅上限は1.9m未満"
+    },
+    {
+      "routeId": "R008",
+      "field": "closingTime",
+      "before": "20:00 generic",
+      "after": "seasonal 16:00 / 17:30 / 20:00",
+      "reason": "20:00は7/21〜8/31のみ"
+    },
+    {
+      "routeId": "R009",
+      "field": "latestRecommendedDeparture",
+      "before": "21:45",
+      "after": "19:00 full route",
+      "reason": "23:00閉場 - 220分 - 20分バッファ"
+    },
+    {
+      "routeId": "R010",
+      "field": "latestRecommendedDeparture",
+      "before": null,
+      "after": "17:15 full route",
+      "reason": "21:30入庫締切 - 230分 - 20分バッファを5分単位で保守丸め"
+    }
+  ]
+}

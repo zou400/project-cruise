@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "batch": "legacy_route_hardening_batch2_R006_R010",
+  "policy": {
+    "originalLegacyRoutesPromotedToEnforce": 0,
+    "conditionalV1ReplacementRoutes": 2,
+    "previewReplacementRoutes": 1,
+    "userVehicleRule": "全幅2m超は、公開上限が2m以下またはV0の駐車アンカーへ自動推薦しない",
+    "timeRule": "閉場時刻から元ルート最大時間と20分バッファを引いた時刻を、完全版の保守的な最終推奨出発時刻とする"
+  },
+  "routes": [
+    {
+      "legacyRouteId": "R006",
+      "routePackId": "LEGACY_R006",
+      "title": "京浜島から東扇島西端へ",
+      "decision": "REMOVE_KEIHINJIMA_FROM_LATE_NIGHT_AND_WIDTH_GATE_DESTINATION",
+      "selectableModes": [
+        "off",
+        "shadow",
+        "preview"
+      ],
+      "notSelectableModes": [
+        "enforce"
+      ],
+      "timeRules": {
+        "kawasakiMarienLastEntry": "20:30",
+        "kawasakiMarienClose": "21:00",
+        "higashiOgishimaWestParking": "24h",
+        "lateNightRule": "京浜島を経由しない",
+        "liveClosureAndWindCheckRequired": true
+      },
+      "vehicleFit": {
+        "level": "V1_DESTINATION_LIMIT_BUT_ROUTE_MINIMUM_V0",
+        "destinationLimits": {
+          "maxWidthExclusiveM": 1.9,
+          "maxLengthExclusiveM": 5.0,
+          "maxHeightExclusiveM": 2.5
+        },
+        "destinationOrdinarySpaces": 165,
+        "accessibleSpaces": 7,
+        "totalSpaces": 172,
+        "specialRestrictions": [
+          "最低地上高15cm以下不可",
+          "改造車・エアロパーツ装着車不可"
+        ],
+        "userWideVehicleDecision": "REJECT_IF_WIDTH_GTE_1_9"
+      },
+      "hardReject": [
+        "全幅1.9m以上",
+        "京浜島を夜間経由",
+        "強風・高潮・工事・港湾規制",
+        "駐車場満車で路上待機が必要"
+      ],
+      "replacementRouteIds": [
+        "SAFE_T3_HIGASHIOGISHIMA_STD_01",
+        "SAFE_AIRPORT_LOOP_01"
+      ],
+      "reason": "東扇島西公園は24時間だが普通車上限が幅1.9m未満。全幅2m超ユーザーには成立しない。深夜は京浜島を除外する。"
+    },
+    {
+      "legacyRouteId": "R007",
+      "routePackId": "LEGACY_R007",
+      "title": "横浜高台から港へ",
+      "decision": "HOLD_HIGH_GROUND_PARKING_AND_REJECT_WIDE_AT_OSANBASHI",
+      "selectableModes": [
+        "off",
+        "shadow",
+        "preview"
+      ],
+      "notSelectableModes": [
+        "enforce"
+      ],
+      "timeRules": {
+        "osanbashiParking": "24h",
+        "liveEventRestrictionCheckRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0_ROUTE_MINIMUM",
+        "osanbashiLimits": {
+          "maxWidthM": 1.9,
+          "maxLengthM": 5.5,
+          "maxHeightExclusiveM": 2.5
+        },
+        "userWideVehicleDecision": "REJECT_OSANBASHI_IF_WIDTH_GT_1_9",
+        "reason": "港の見える丘公園は17台で寸法未確認、本牧山頂公園も実用寸法未確認。大さん橋は幅1.9m上限。"
+      },
+      "hardReject": [
+        "全幅1.9m超で大さん橋駐車を使用",
+        "高台2地点の合法駐車アンカー不成立",
+        "イベント・催事による駐車制限",
+        "路上待機"
+      ],
+      "replacementRouteIds": [
+        "SAFE_YOKOHAMA_BRIDGES_KARENA_01"
+      ],
+      "reason": "大さん橋は24時間・400台だが幅1.9m上限。高台側も小規模または寸法不明のため元ルートをEnforceしない。"
+    },
+    {
+      "legacyRouteId": "R008",
+      "routePackId": "LEGACY_R008",
+      "title": "本牧ふ頭の行き止まり",
+      "decision": "SEASONAL_CLOSE_CORRECTION_DESTINATION_V0",
+      "selectableModes": [
+        "off",
+        "shadow",
+        "preview"
+      ],
+      "notSelectableModes": [
+        "enforce"
+      ],
+      "timeRules": {
+        "seasonalHours": {
+          "11-01_to_02-28": "09:30-16:00",
+          "03-01_to_07-20": "09:30-17:30",
+          "07-21_to_08-31": "09:30-20:00",
+          "09-01_to_10-31": "09:30-17:30"
+        },
+        "lastVehicleEntry": "close_minus_40_minutes",
+        "liveMaintenanceCheckRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0",
+        "parkingCapacity": 205,
+        "reason": "シンボルタワー普通車205台は確認できるが車両寸法上限が未確認"
+      },
+      "hardReject": [
+        "季節別最終入場後",
+        "施設点検日・臨時休業",
+        "強風・港湾規制",
+        "車両寸法を確認できない全幅2m超車"
+      ],
+      "replacementRouteIds": [
+        "SAFE_YOKOHAMA_BRIDGES_KARENA_01"
+      ],
+      "reason": "元データの「20:00」は夏季限定。季節別閉場へ修正し、寸法未確認のためPreviewに留める。"
+    },
+    {
+      "legacyRouteId": "R009",
+      "routePackId": "LEGACY_R009",
+      "title": "金沢シーサイド",
+      "decision": "CORRECT_IMPOSSIBLE_LATEST_DEPARTURE_AND_KEEP_V0",
+      "selectableModes": [
+        "off",
+        "shadow",
+        "preview"
+      ],
+      "notSelectableModes": [
+        "enforce"
+      ],
+      "timeRules": {
+        "seaParkEntry": "04:00-22:00",
+        "seaParkExit": "24h",
+        "nojimaParking": "07:00-23:00",
+        "oldLatestRecommendedDeparture": "21:45",
+        "correctedFullRouteLatestRecommendedDeparture": "19:00",
+        "calculation": "23:00 - 220分 - 20分 = 19:00",
+        "shortRouteRequiresLiveEta": true
+      },
+      "vehicleFit": {
+        "level": "V0_ROUTE_MINIMUM",
+        "seaParkOrdinaryThreshold": {
+          "maxLengthM": 5.0,
+          "maxWidthM": 2.0,
+          "maxHeightM": 2.4
+        },
+        "nojimaDimensions": "unknown",
+        "userWideVehicleDecision": "DO_NOT_AUTO_RECOMMEND_UNTIL_NOJIMA_AND_LARGE_SPACE_RULE_CONFIRMED"
+      },
+      "hardReject": [
+        "19:00より後に完全版を出発",
+        "野島公園23:00退出に間に合わない",
+        "潮干狩り期の満車・入庫待ち",
+        "全幅2m超で駐車区分不明"
+      ],
+      "replacementRouteIds": [
+        "PREVIEW_SEAPARK_DIRECT_01"
+      ],
+      "reason": "21:45出発では170〜220分のルートと23:00閉場が両立しない。完全版の最終推奨出発を19:00へ修正。"
+    },
+    {
+      "legacyRouteId": "R010",
+      "routePackId": "LEGACY_R010",
+      "title": "横須賀・軍港から入り江へ",
+      "decision": "CORRECT_LATEST_DEPARTURE_AND_KEEP_V0",
+      "selectableModes": [
+        "off",
+        "shadow",
+        "preview"
+      ],
+      "notSelectableModes": [
+        "enforce"
+      ],
+      "timeRules": {
+        "vernyOrdinaryParking": "24h",
+        "umikazeParking": "24h",
+        "tomyojiEntry": "05:00-21:30",
+        "tomyojiExitOnlyAfter": "21:30",
+        "correctedFullRouteLatestRecommendedDeparture": "17:20",
+        "calculation": "21:30 - 230分 - 20分 = 17:20",
+        "recommendedRoundedTime": "17:15"
+      },
+      "vehicleFit": {
+        "level": "V0_ROUTE_MINIMUM",
+        "vernyCapacity": "small_and_current_pages_differ_on_total",
+        "umikazeHeightLimitM": 2.7,
+        "tomyojiCapacity": 30,
+        "reason": "全幅・全長の公開上限が揃っていない"
+      },
+      "hardReject": [
+        "17:15より後に完全版を出発",
+        "21:30までに燈明堂へ入庫できない",
+        "全幅2m超で終点寸法不明",
+        "イベント・満車・海況悪化"
+      ],
+      "replacementRouteIds": [
+        "PREVIEW_YOKOSUKA_24H_TWO_STOP_01"
+      ],
+      "reason": "元ルート最大230分に対し入庫締切21:30。完全版の出発推奨は17:15以前。寸法不足でEnforceしない。"
+    }
+  ]
+}

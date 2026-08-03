@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "algorithm": "SHA-256",
+  "files": {
+    "SPOT_CHAT_DEEPENING_v0.38.md": "f4ca6c6bf3681922f1584ed293a6c4924104de8c4f842906353fa646e9701679",
+    "acceptance-tests-four-ward-expansion.v0.38.json": "d7fdcad468ad1370b7f700060e7eac4ef36f70fa26383949c148fd6e0a8fbe17",
+    "candidate-duplicate-screen.v0.38.json": "b365d7f2b90a87222a11d6e7e4b810883e865b13335993a3a9a97c84d010e0b4",
+    "dense-urban-destination-scoring.v0.38.json": "ce4cf2e7ad95bc2172f9a2d26d7ee7651b424cf8119f9bf279a4291610e75782",
+    "dry-run-validation.v0.38.json": "fdc08ba14dacb5bfbb28d3b2c61de71e6983aca4d17a0fbfb80ea7c99c98fb30",
+    "four-ward-micro-route-templates.v0.38.json": "aafd840476e4c3b107da448285f19823d8b59b499026c19c8cd0311be3fe7ca5",
+    "new-destination-candidates-four-wards-batch21.v0.38.json": "b8553ffe5bc1819d926b48bd94c93ec05dc2cce09c38f1a498565e2939bc499e",
+    "release-summary.v0.38.json": "16438b52c2ba1cf0d8bcfcfde63d3e1a76aa839dff5db19aa79fd0df7bb5661f",
+    "research-queue-four-wards.v0.38.json": "aa0692ea35784e678c50ecd697e70e79638b6e251c684a90b9619488a109d3f8"
+  }
+}

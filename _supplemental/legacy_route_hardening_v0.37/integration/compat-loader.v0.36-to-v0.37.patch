@@ -1,0 +1,11 @@
+--- a/runtime/compat-loader.js
++++ b/runtime/compat-loader.js
+@@
+- const hardeningResponse = await fetch('../../data/legacy-route-hardening-overlay.v0.36.json');
++ const hardeningResponses = await Promise.all([
++   fetch('../../data/legacy-route-hardening-overlay.v0.36.json'),
++   fetch('../../data/legacy-route-hardening-overlay-batch2.v0.37.json')
++ ]);
++ const hardeningPayloads = await Promise.all(hardeningResponses.filter(r=>r.ok).map(r=>r.json()));
++ const mergedHardening = globalThis.ProjectCruiseHardeningMerge.mergeOverlays(hardeningPayloads);
++ legacy = globalThis.ProjectCruiseLegacyHardening.apply(legacy, mergedHardening);

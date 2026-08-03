@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "items": [
+    {
+      "ward": "新宿区",
+      "name": "消防博物館",
+      "decision": "HOLD_NO_GENERAL_PARKING",
+      "reason": "公式案内で駐車場なし。車ネイティブ化には合法駐車＋徒歩アンカーが必要。",
+      "sourceUrls": [
+        "https://www.tfd.metro.tokyo.lg.jp/hp-hkkan/"
+      ]
+    },
+    {
+      "ward": "新宿区",
+      "name": "漱石山房記念館",
+      "decision": "HOLD_ACCESSIBLE_SPACE_ONLY",
+      "reason": "一般車向け駐車アンカーが不足。",
+      "sourceUrls": [
+        "https://soseki-museum.jp/"
+      ]
+    },
+    {
+      "ward": "新宿区",
+      "name": "新宿歴史博物館",
+      "decision": "HOLD_PARKING_DIMENSIONS_PENDING",
+      "reason": "文化目的地として強いが一般車の到着条件を追加確認。",
+      "sourceUrls": [
+        "https://www.regasu-shinjuku.or.jp/rekihaku/"
+      ]
+    },
+    {
+      "ward": "新宿区",
+      "name": "東京おもちゃ美術館",
+      "decision": "HOLD_NEIGHBORHOOD_PARKING_REQUIRED",
+      "reason": "住宅地内で駐車アンカーと車路負荷を確認するまで保留。",
+      "sourceUrls": [
+        "https://art-play.or.jp/ttm/"
+      ]
+    },
+    {
+      "ward": "世田谷区",
+      "name": "長谷川町子美術館",
+      "decision": "RESEARCH_PARKING_ANCHOR",
+      "reason": "建築・漫画文化候補。一般車駐車の公式条件を追加確認。",
+      "sourceUrls": [
+        "https://www.hasegawamachiko.jp/"
+      ]
+    },
+    {
+      "ward": "世田谷区",
+      "name": "食と農の博物館",
+      "decision": "RESEARCH_CAMPUS_ACCESS",
+      "reason": "展示は強いが大学構内の一般車入構条件を確認。",
+      "sourceUrls": [
+        "https://www.nodai.ac.jp/campus/facilities/syokutonou/"
+      ]
+    },
+    {
+      "ward": "世田谷区",
+      "name": "向井潤吉アトリエ館",
+      "decision": "RESEARCH_SMALL_PARKING",
+      "reason": "住宅地アトリエ型。車幅・駐車アンカー確認が必要。",
+      "sourceUrls": [
+        "https://www.mukaijunkichi-annex.jp/"
+      ]
+    },
+    {
+      "ward": "中央区",
+      "name": "アーティゾン美術館",
+      "decision": "RESEARCH_EXTERNAL_PARKING",
+      "reason": "雨天アートとして強いが専用駐車場に依存しない到着設計が必要。",
+      "sourceUrls": [
+        "https://www.artizon.museum/"
+      ]
+    },
+    {
+      "ward": "中央区",
+      "name": "築地本願寺",
+      "decision": "RESEARCH_VISITOR_PARKING",
+      "reason": "独特な建築到着候補。一般参拝者の駐車条件と混雑を確認。",
+      "sourceUrls": [
+        "https://tsukijihongwanji.jp/"
+      ]
+    },
+    {
+      "ward": "中央区",
+      "name": "日本橋高島屋S.C.",
+      "decision": "RESEARCH_WIDE_VEHICLE_ANCHOR",
+      "reason": "歴史百貨店と新館の到着価値は高い。自走式区画の全寸法を確認。",
+      "sourceUrls": [
+        "https://www.takashimaya.co.jp/nihombashi/access/"
+      ]
+    },
+    {
+      "ward": "中央区",
+      "name": "勝鬨橋の資料館",
+      "decision": "RESEARCH_HOURS_AND_PARKING",
+      "reason": "橋レイヤーとの親和性が高い。開館日と合法駐車アンカーを確認。",
+      "sourceUrls": [
+        "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/tokyo/kachidoki"
+      ]
+    },
+    {
+      "ward": "目黒区",
+      "name": "目黒不動尊 瀧泉寺",
+      "decision": "RESEARCH_VISITOR_PARKING",
+      "reason": "夜の門前・歴史建築候補。参拝者駐車の公式条件を確認。",
+      "sourceUrls": [
+        "https://www.tendaitokyo.jp/jiinmei/ryusenji/"
+      ]
+    },
+    {
+      "ward": "目黒区",
+      "name": "郷さくら美術館",
+      "decision": "RESEARCH_EXTERNAL_PARKING",
+      "reason": "中目黒の雨天文化候補。専用駐車なしの場合の合法アンカーを確認。",
+      "sourceUrls": [
+        "https://www.satosakura.jp/"
+      ]
+    },
+    {
+      "ward": "目黒区",
+      "name": "アクセサリーミュージアム",
+      "decision": "RESEARCH_RESERVATION_AND_PARKING",
+      "reason": "住宅街の異色目的地。営業・予約・駐車を追加確認。",
+      "sourceUrls": [
+        "https://acce-museum.main.jp/"
+      ]
+    },
+    {
+      "ward": "目黒区",
+      "name": "目黒天空庭園周辺の別駐車アンカー",
+      "decision": "DUPLICATE_ADJACENCY_RESEARCH",
+      "reason": "既存D284を重複追加せず、幅広車向け到着アンカーだけを探索。",
+      "sourceUrls": [
+        "https://www.city.meguro.tokyo.jp/douro/shisetsu/sports/tenkuuteien.html"
+      ]
+    }
+  ]
+}

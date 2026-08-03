@@ -1,0 +1,28 @@
+{
+  "package": "Project_Cruise_Hero_Experimental_2026-08-03_v1",
+  "createdAt": "2026-08-03T11:55:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "sourceImageCount": 21,
+  "selectedExperimentalCount": 19,
+  "reviewOnlyCount": 2,
+  "excludedFromPackage": [
+    "progress dashboards",
+    "gallery boards",
+    "contact-sheet generations produced instead of standalone hero images",
+    "the user-supplied reference screenshot"
+  ],
+  "policy": {
+    "existingExact30Immutable": true,
+    "realWorldAppearanceTarget": 0.8,
+    "aiEnhancementTarget": 0.2,
+    "productionLabel": "体験イメージ",
+    "notEvidencePhotography": true,
+    "reviewOnlyMustNotShip": true
+  },
+  "validation": {
+    "missingSourceFiles": 0,
+    "sourceHashCopyMismatch": 0,
+    "productionDimensions": "1440x810",
+    "productionFormat": "WebP"
+  }
+}

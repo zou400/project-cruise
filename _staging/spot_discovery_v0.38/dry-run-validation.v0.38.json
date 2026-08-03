@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.38",
+  "generatedAt": "2026-08-03T12:34:16+09:00",
+  "result": "PASS",
+  "checksPassed": 24,
+  "checksFailed": 0,
+  "canonicalMutation": false,
+  "notes": [
+    "24 candidate IDs are continuous and unique",
+    "Six candidates were added per target ward",
+    "All candidates forbid direct road stopping",
+    "Unknown parking dimensions remain V0",
+    "Canonical 320 destinations remain unchanged"
+  ]
+}

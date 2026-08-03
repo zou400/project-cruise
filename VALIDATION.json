@@ -1,0 +1,62 @@
+{
+  "version": "v0.12.2",
+  "generatedAt": "2026-08-03T12:40:47+09:00",
+  "result": "PASS",
+  "counts": {
+    "destinations": 366,
+    "selectableResults": 546,
+    "canonicalRoutes": 181
+  },
+  "mobileFirst": {
+    "iphoneFirstViewportHero": true,
+    "horizontalConditionControls": true,
+    "bottomDualActionDock": true,
+    "driveNoteCollapsible": true,
+    "cruiseMapCollapsedInitially": true,
+    "safeAreaInsets": true,
+    "heroCopyThreeLineClamp": true
+  },
+  "appReady": {
+    "pwaManifest": true,
+    "serviceWorker": true,
+    "appleTouchIcon": true,
+    "standaloneDisplay": true,
+    "portraitPrimary": true,
+    "proposalJsonSchema": true,
+    "nativeCustomEvents": [
+      "pc:proposal",
+      "pc:reroll",
+      "pc:maps"
+    ],
+    "standaloneHeroRegistry": true
+  },
+  "preserved": {
+    "dealerDestinationGate": true,
+    "feedbackPromptsDisabled": true,
+    "sameDestinationSameHero": true,
+    "localLearning": true,
+    "googleMaps": true
+  },
+  "syntax": [
+    {
+      "file": "app.js",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "file": "data.js",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "file": "hero-registry.js",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "file": "service-worker.js",
+      "passed": true,
+      "stderr": ""
+    }
+  ]
+}

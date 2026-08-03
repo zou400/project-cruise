@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.37",
+  "generatedAt": "2026-08-03T12:13:49+09:00",
+  "algorithm": "SHA-256",
+  "files": {
+    "README.md": "ae9c1bc0425db46ee28e4b592a9c22820bc401505f1943e29af8b5e442124b83",
+    "VALIDATION_v0.37.json": "afce5773e53a592bb8158cb640f50956c87d93d27dbb0ba6d0bba5fa85425cb7",
+    "data/data-integrity-corrections.v0.37.json": "e9820ac85c438f4c8eb84162c78e31cb1f8726a1aa78c5a1d12b910b0c54a79f",
+    "data/legacy-route-hardening-overlay-batch2.v0.37.json": "cfb699c7d23ae7b0ef2098630a7affe7fe90bb8384f23fd9b4008e9f3c900526",
+    "data/legacy-route-snapshot-R006-R010.v0.37.json": "1096d3fc7d0981520e30622040f0979c5271a88ccc713487f34e446892324201",
+    "data/release-summary.v0.37.json": "be7b94959d7878bc8a98b3485497cfec4782fb5758b0f9dc11f1be17c67a9e1b",
+    "data/replacement-route-packs-batch2.v0.37.json": "b49dd2fa2645e8c9ab11b58113eee779c93782e9f9438e3558025bd6075273b3",
+    "data/source-evidence.v0.37.json": "5d64ecc4fb9951c278add9e5d28828c79275139de524ecd670e9c9987249ee75",
+    "docs/LEGACY_ROUTE_HARDENING_v0.37.md": "ae9c1bc0425db46ee28e4b592a9c22820bc401505f1943e29af8b5e442124b83",
+    "integration/compat-loader.v0.36-to-v0.37.patch": "6ad7522afe15fc1d515a494c689b724729aeafe1f75de77c487d707c35ecc5fa",
+    "runtime/legacy-hardening-merge.js": "045c78bfed1d311855e7f162cb72e7f2595f78ab0dd0e0f3290dbeb1204ea5ad",
+    "tests/hardening-batch2.test.js": "7247b5a6430fe7497b1921f5d410068a27c499d25f7451f6d3b33324952a1623"
+  }
+}
