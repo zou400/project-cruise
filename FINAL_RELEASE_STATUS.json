@@ -1,0 +1,26 @@
+{
+  "version": "v0.12.3",
+  "status": "final_canonical_candidate",
+  "runtimeCounts": {
+    "destinations": 366,
+    "selectableResults": 546,
+    "canonicalRoutes": 181
+  },
+  "integrated": {
+    "iphoneFirstUI": "v0.12.2 base",
+    "selectedExperimentalHeroImages": 19,
+    "exactDestinationHeroMappings": 10,
+    "dealerDestinationGate": true,
+    "feedbackPromptsEnabled": false,
+    "pwaAndNativeBridgePreparation": true
+  },
+  "includedButNotAutoPromoted": {
+    "spotDiscovery": "v0.38 staging layer",
+    "legacyRouteHardening": "v0.37 supplemental overlay"
+  },
+  "important": [
+    "Spot Discovery v0.38 is included for review but does not silently increase runtime destination counts.",
+    "Legacy route hardening v0.37 is included as an overlay and does not overwrite the 181 canonical routes automatically.",
+    "19 selected experimental Hero images are physically included; review-only images are excluded from runtime."
+  ]
+}

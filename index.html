@@ -2,93 +2,144 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071b2c">
-<title>Project Cruise</title>
-<link rel="preconnect" href="https://unpkg.com">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100b12">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CRUISE">
+
+<title>PROJECT CRUISE v0.12.3</title>
+<meta name="description" content="10秒で今夜の行き先を決める、東京発のシネマティック・ドライブ提案。">
+<link rel="preload" href="assets/visuals/industrial-night-v3.webp" as="image">
+<link rel="stylesheet" href="styles.css?v=01203">
 </head>
 <body>
-<main class="app">
-  <header class="brand">
-    <p class="eyebrow">OTA, TOKYO / DRIVE DISCOVERY</p>
-    <h1>Project Cruise</h1>
-    <p class="lead">行先が決まらない夜に、行先を決める。</p>
-  </header>
+<div class="ambient" aria-hidden="true"></div>
+<header class="site-header shell">
+  <a class="brand" href="#top" aria-label="PROJECT CRUISE ホーム">
+    <span class="brand-project">PROJECT</span>
+    <strong>CRUISE</strong>
+    <span class="brand-system">TOKYO DRIVE SYSTEM</span>
+  </a>
+  <div class="header-copy">
+    <p>今夜の一本を、10秒で。</p>
+    <span id="release-count">PROJECT CRUISE v0.12.3.0</span>
+  </div>
+  <div class="header-tools">
+    <button id="history-button" class="icon-button" type="button">履歴</button>
+    <button id="reset-button" class="icon-button" type="button">学習を初期化</button>
+  </div>
+</header>
 
-  <section class="selector">
-    <p class="step">1. 使える時間を選ぶ</p>
-    <div class="time-options" role="radiogroup" aria-label="使える時間">
-      <button class="time-btn active" data-time="90">90分</button>
-      <button class="time-btn" data-time="120">2時間</button>
-      <button class="time-btn" data-time="half">半日</button>
+<main id="top" class="shell">
+  <section class="control-deck" aria-label="行き先の条件">
+    <div class="control-group origin-group">
+      <p class="control-label"><span>1.</span> スタート地点を選ぶ</p>
+      <div class="segmented two">
+        <button class="segment" data-origin="current" type="button">◎ 現在地</button>
+        <button class="segment active" data-origin="kamata" type="button">● 蒲田駅</button>
+      </div>
+      <small id="origin-note">蒲田駅をスタート地点に設定しました。</small>
     </div>
-    <button id="draw" class="draw-btn">どこにいく？</button>
-    <p class="hint">押すたびに、別のルートが出ます。</p>
+    <div class="control-group time-group">
+      <p class="control-label"><span>2.</span> 移動に使える時間を選ぶ</p>
+      <div class="segmented three">
+        <button class="segment active" data-time="90" type="button">移動90分</button>
+        <button class="segment" data-time="120" type="button">移動2時間</button>
+        <button class="segment" data-time="half" type="button">移動半日</button>
+      </div>
+      <small>場所価値・現在適合・ルート完成度を分けて選定します。</small>
+    </div>
+    <div class="launch-group">
+      <button id="launch-button" class="launch-button" type="button"><span>今夜の一本を開く</span><b>→</b></button>
+      <small id="pool-status">候補を読み込んでいます。</small>
+    </div>
   </section>
 
-  <section id="result" class="result-shell hidden" aria-live="polite">
-    <article class="result-card">
-      <div class="result-top">
-        <span id="duration" class="pill"></span>
-        <span id="theme" class="pill muted"></span>
+  <section id="mission" class="mission hidden" aria-live="polite">
+    <img id="hero-image" class="mission-image" alt="目的地の世界観を表現したシネマティックビジュアル">
+    <div class="mission-shade"></div>
+    <div class="mission-line" aria-hidden="true"></div>
+    <div class="mission-content">
+      <p class="mission-kicker">MISSION UNLOCKED <span>/ 今夜の一本</span></p>
+      <p id="hero-copy" class="mission-copy"></p>
+      <h1 id="destination-name"></h1>
+      <div id="hero-tags" class="hero-tags"></div>
+      <div class="mission-actions">
+        <a id="maps-primary" class="primary-action" target="_blank" rel="noopener">このCruiseを受ける <b>→</b></a>
+        <button id="hero-reroll" class="secondary-action" type="button">もう一本探す <b>↻</b></button>
       </div>
+    </div>
 
-      <p class="label">今日の行先</p>
-      <h2 id="destination"></h2>
-      <p id="title" class="route-title"></p>
+      <aside class="hero-time-panel" aria-label="出発と到着の予定時刻">
+        <div><small>NOW</small><strong id="hero-now">--:--</strong></div>
+        <span class="time-divider"></span>
+        <div><small>DEPART</small><strong id="hero-departure">--:--</strong></div>
+        <div><small>ARRIVE</small><strong id="hero-arrival">--:--</strong></div>
+        <p id="hero-drive-minutes">約--分</p>
+      </aside>
 
-      <div class="route-line">
-        <div class="route-stop start">
-          <span>START</span>
-          <strong>大田区・蒲田</strong>
-        </div>
-        <div id="waypoints"></div>
-        <div class="route-stop goal">
-          <span>GOAL</span>
-          <strong id="goal"></strong>
-        </div>
+    <p class="visual-caption">ORIGINAL CINEMATIC VISUAL / DESTINATION DATA LINKED</p>
+  </section>
+
+  <section id="details" class="details-grid hidden">
+    <article class="panel drive-note mobile-collapsible" data-collapsible="drive">
+  <button class="mobile-panel-toggle" type="button" aria-expanded="true" data-toggle-panel="drive"><span>DRIVE NOTE</span><b>−</b></button>
+  <div class="mobile-panel-body" data-panel-body="drive">
+      <div class="panel-topline"><span>DRIVE NOTE</span><b id="route-role">ROUTE</b></div>
+      <div id="detail-tags" class="detail-tags"></div>
+      <h2 id="route-title"></h2>
+      <p id="route-intent" class="route-intent"></p>
+      <ol id="waypoint-list" class="waypoint-list"></ol>
+      <div class="facts">
+        <div><span>移動枠</span><b id="fact-time">—</b></div>
+        <div><span>立寄り</span><b id="fact-stops">—</b></div>
+        <div><span>完成度</span><b id="fact-score">—</b></div>
       </div>
-
-      <p id="intent" class="intent"></p>
-      <p id="dwell" class="dwell"></p>
-      <p id="caution" class="caution"></p>
-
-      <div class="actions">
-        <a id="gmap" class="primary" target="_blank" rel="noopener">Googleマップで出発</a>
-        <button id="redraw" class="secondary">ほかの行先にする</button>
-      </div>
+      <div id="caution-box" class="caution-box"></div>
+  </div>
     </article>
 
-    <aside class="map-card">
-      <div class="map-head">
-        <div>
-          <span class="map-label">ROUTE PREVIEW</span>
-          <strong>今日はこう走る</strong>
-        </div>
-        <span id="map-status">地点を読み込み中</span>
+    <article class="panel atlas mobile-collapsible" data-collapsible="map">
+  <button class="mobile-panel-toggle" type="button" aria-expanded="false" data-toggle-panel="map"><span>CRUISE MAP</span><b>＋</b></button>
+  <div class="mobile-panel-body mobile-collapsed" data-panel-body="map">
+      <div class="atlas-header">
+        <div><p>CRUISE ATLAS</p><span>ROUTE STORY</span></div>
+        <a id="maps-atlas" target="_blank" rel="noopener">Google Mapsで開く ↗</a>
       </div>
-      <a id="map-link" target="_blank" rel="noopener" aria-label="Googleマップでルートを開く">
-        <div id="map"></div>
-        <div class="map-cta">地図を押してGoogleマップへ</div>
-      </a>
-      <div class="legend">
-        <span><i class="dot blue"></i>出発</span>
-        <span><i class="dot yellow"></i>経由地</span>
-        <span><i class="dot red"></i>目的地</span>
+      <div class="atlas-visual">
+        <div class="atlas-grid"></div>
+        <svg viewBox="0 0 800 420" aria-hidden="true">
+          <path class="route-shadow" d="M70 320 C180 275, 225 135, 360 205 S570 345, 735 92"/>
+          <path class="route-line" d="M70 320 C180 275, 225 135, 360 205 S570 345, 735 92"/>
+          <circle cx="70" cy="320" r="9" class="start-dot"/>
+          <circle cx="735" cy="92" r="13" class="end-dot"/>
+        </svg>
+        <div class="atlas-start"><small>START</small><strong id="atlas-origin">蒲田駅</strong></div>
+        <div class="atlas-end"><small>DESTINATION</small><strong id="atlas-destination">—</strong></div>
+        <div class="atlas-watermark">TOKYO DRIVE WORLD / ROUTE VIEW</div>
       </div>
-      <p class="map-note">地図はルートの全体像を示すプレビューです。実際の道路・渋滞・規制はGoogleマップで確認してください。</p>
-    </aside>
+      <div id="atlas-stops" class="atlas-stops"></div>
+  </div>
+    </article>
   </section>
 
-  <footer>
-    <button id="about-toggle">このサービスについて</button>
-    <p id="about" class="about hidden">Project Cruiseは、大田区発着で無理なく戻れる近距離ルートを提案します。営業時間や駐車条件は出発前に公式情報と現地表示を確認してください。</p>
-  </footer>
+  <section id="history-panel" class="history-panel hidden">
+    <div><h2>最近の提案</h2><button id="history-close" type="button">閉じる</button></div>
+    <div id="history-list"></div>
+  </section>
 </main>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js"></script>
+<div id="mobile-action-dock" class="mobile-action-dock hidden">
+  <a id="mobile-maps-primary" class="dock-accept" target="_blank" rel="noopener">このCruiseを受ける <b>→</b></a>
+  <button id="sticky-reroll" class="dock-reroll" type="button">もう一本探す <b>↻</b></button>
+</div>
+<button id="desktop-reroll" class="sticky-reroll desktop-only hidden" type="button">もう一本探す <b>↻</b></button>
+<div id="toast" class="toast" role="status"></div>
+<script src="data.js?v=01203"></script>
+<script src="hero-registry.js?v=01203"></script>
+<script src="app.js?v=01203"></script>
 </body>
 </html>

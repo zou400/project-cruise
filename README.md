@@ -1,36 +1,39 @@
-# Project Cruise GitHub Pages Prototype
+# PROJECT CRUISE v0.12.3
 
-大田区・蒲田周辺を起点にした「近くて濃い」ドライブ候補検索の静的プロトタイプです。
+iPhone実利用を最優先にしつつ、将来のSwiftUI / React Native移植に備えた版です。
+
+## iPhone改善
+
+- Heroを最初の画面の主役にするレイアウト
+- 条件ボタンを横並び・横スクロール化
+- Hero文章を3行に制限
+- 画面下部に「このCruiseを受ける」「もう一本探す」を常設
+- Drive Noteは展開状態
+- CRUISE MAPは初期状態で折りたたみ
+- iPhoneのSafe Areaに対応
+
+## アプリ化準備
+
+- PWA manifest
+- Service Worker
+- Apple Touch Icon
+- ホーム画面追加・standalone表示
+- 目的地Heroの独立レジストリ
+- Proposal JSON Schema
+- ネイティブ連携イベント
+  - pc:proposal
+  - pc:reroll
+  - pc:maps
 
 ## データ
-- 近距離コア地点: 93件
-- 用途別近距離ルート: 45件
-- 合法な路上短時間アクセス: 10件
-- Excel正本: `Project_Cruise_合法路上駐車統合版.xlsx`
 
-## GitHub Pages公開手順
-1. ZIPを展開
-2. 展開した中身をGitHubリポジトリ直下へアップロード
-3. Settings → Pages
-4. Source: Deploy from a branch
-5. Branch: main / Folder: /(root)
-6. Save
+- 地点: 366
+- 選択結果: 546
+- 完成ルート: 181
+- 評価質問: 未実装
+- カーディーラー最終目的地ゲート: 維持
 
-公開URL例:
-`https://zou400.github.io/project-cruise/`
+GitHub公開ルートへZIPの中身を全上書きしてください。
 
-## 注意
-`index.html`をPCで直接開くとJSONを読み込めない場合があります。GitHub Pages上では動作します。
-
-
-## UI 0.3
-一覧表示を廃止し、時間選択→ルートガチャ→Googleマップ起動の単一導線に変更。
-
-## UI 0.4
-- 行先カードとルート地図を同時表示
-- OpenStreetMap + Leafletによるルートプレビュー
-- 出発・経由地・目的地を色分け
-- OSRMで道路ルートを取得し、線をアニメーション表示
-- 地図クリックでGoogleマップへ移動
-- スマホではカード→地図の縦並び
-- 外部地図取得に失敗してもGoogleマップリンクは利用可能
+確認URL:
+https://zou400.github.io/project-cruise/?v=01203

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.2.0",
+  "project": "Project Cruise",
+  "release": {
+    "version": "v0.12.0",
+    "releaseDate": "2026-08-03",
+    "status": "rebuild-test"
+  },
+  "counts": {
+    "destinations": 366,
+    "canonicalRoutes": 181,
+    "selectableResults": 547
+  },
+  "architecture": {
+    "ui": "clean-room rebuild",
+    "legacyHtmlInherited": false,
+    "dataSource": [
+      "destinations.json",
+      "routes.json",
+      "data.js"
+    ],
+    "learningStorage": "localStorage pc_v012_profile"
+  },
+  "visuals": {
+    "sourceAssets": 8,
+    "derivedVariants": 32,
+    "note": "No claim that derived variants are destination-specific photographs."
+  }
+}
