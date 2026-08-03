@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#07070b">
-<title>Project Cruise — Annotated Layout</title>
+<title>Project Cruise — Cinematic Polish</title>
 <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
 <style>
 *{box-sizing:border-box}
@@ -307,7 +307,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mission-visual,.selector,.draw-btn,.origin-btn,.time-btn{transition:none!important}.mission-visual{transform:none!important}}
 
-/* v0.11.0-test.3.1 UI regression hotfix */
+/* v0.11.0-test.4.1 UI regression hotfix */
 .brand-lockup{
   display:inline-grid;
   grid-template-columns:auto auto;
@@ -381,231 +381,127 @@ body{padding-bottom:calc(92px + env(safe-area-inset-bottom));}
 }
 
 
-
-/* v0.11.0-test.3 — annotated PDF layout revision */
-.app{
-  width:min(1240px,100%);
-  padding:22px 20px 104px;
-}
-.brand{
-  width:min(1080px,100%);
-  margin:0 auto;
-  padding:4px 0 14px;
-  text-align:left;
-}
-.brand-lockup{
-  display:inline-grid;
-  grid-template-columns:auto auto;
-  grid-template-areas:"project cruise" "system system";
-  align-items:end;
-  column-gap:9px;
-  margin:0 0 5px;
-}
-.brand-lockup strong{
-  font-size:clamp(42px,5.2vw,62px);
-  line-height:.82;
-}
-.brand-line{
-  margin:8px 0 0;
-  font-size:12px;
-}
-.db-version{
-  display:inline-block;
-  margin:11px 0 0;
-  padding:7px 10px;
-  font-size:9px;
-  letter-spacing:.08em;
-}
-
-/* The launch area is deliberately one column.
-   The selector is a thin horizontal band, and the hero sits immediately below. */
+/* v0.11.0-test.4 — layout/data regression repair */
 .launch-grid{
   display:grid;
-  grid-template-columns:1fr;
-  gap:12px;
-  width:min(1080px,100%);
-  margin:0 auto;
+  grid-template-columns:minmax(360px,.9fr) minmax(520px,1.35fr);
+  gap:18px;
+  align-items:stretch;
+  margin-top:18px;
 }
 .launch-grid .selector{
-  width:100%;
   margin:0;
-  min-height:0;
-  padding:14px 16px 13px;
-  display:grid;
-  grid-template-columns:minmax(260px,1.1fr) minmax(340px,1.35fr) minmax(210px,.75fr);
-  grid-template-areas:
-    "step-origin step-time action"
-    "origins times action"
-    "origin-status hint pool";
-  column-gap:12px;
-  row-gap:7px;
-  align-items:center;
-  border-radius:8px;
-}
-.selector:after{display:none}
-.selector .step{
-  margin:0;
-  text-align:left;
-  font-size:10px;
-  letter-spacing:.05em;
-  opacity:.78;
-}
-.selector .step:first-of-type{grid-area:step-origin}
-.selector .second-step{grid-area:step-time}
-.selector .origin-options{grid-area:origins;gap:7px}
-.selector .time-options{grid-area:times;gap:7px}
-.selector .origin-status{
-  grid-area:origin-status;
-  margin:0;
-  text-align:left;
-  min-height:15px;
-  font-size:10px;
-}
-.selector .draw-btn{
-  grid-area:action;
   height:100%;
-  min-height:70px;
-  margin:0;
-  padding:13px 16px;
-  border-radius:6px;
-  font-size:16px;
 }
-.selector .hint{
-  grid-area:hint;
-  margin:0;
-  text-align:left;
-  font-size:9px;
-  line-height:1.4;
-  opacity:.72;
-}
-.selector .pool-status{
-  grid-area:pool;
-  margin:0;
-  text-align:right;
-  font-size:9px;
-  line-height:1.4;
-}
-.selector .origin-btn,
-.selector .time-btn{
-  min-height:42px;
-  padding:9px 8px;
-  border-radius:5px;
-  font-size:13px;
-}
-
-/* Wide, shallow cinematic reveal as marked in the PDF. */
 .launch-grid .mission-reveal{
-  width:100%;
+  grid-column:auto;
+  min-height:440px;
+  height:100%;
   margin:0;
-  min-height:0;
-  height:auto;
-  aspect-ratio:16 / 7.1;
-  border-radius:8px;
 }
-.launch-grid .mission-overlay{
-  width:min(66%,690px);
-  min-height:100%;
-  padding:clamp(25px,4vw,52px);
-}
-.launch-grid .mission-copyline{
-  max-width:590px;
-  margin-bottom:10px;
-  font-size:clamp(17px,2vw,27px);
-  line-height:1.34;
-}
-.launch-grid .mission-destination{
-  max-width:700px;
-  font-size:clamp(40px,5.8vw,76px);
-}
-.launch-grid .mission-destination.long{
-  font-size:clamp(34px,4.9vw,62px);
-}
-.launch-grid .mission-destination.xlong{
-  font-size:clamp(29px,4.2vw,52px);
-}
-.launch-grid .mission-meta{margin-top:15px}
-.launch-grid .mission-meta span{padding:6px 9px;font-size:9px}
-.launch-grid .reveal-primary{margin-top:15px;padding:12px 17px}
-.launch-grid .visual-note{right:17px;bottom:13px}
-
-/* Details remain below the hero. */
 .result-shell{
-  width:min(1080px,100%);
-  margin:14px auto 0;
-  grid-template-columns:minmax(360px,.92fr) minmax(460px,1.18fr);
-  gap:14px;
+  display:grid;
+  grid-template-columns:minmax(390px,.92fr) minmax(480px,1.18fr);
+  gap:18px;
+  margin-top:18px;
+  align-items:stretch;
 }
 .result-card{grid-column:1}
 .map-card{grid-column:2}
-
-/* Full-width reroll bar, matching the PDF annotation. */
 .quick-reroll{
-  left:50%;
-  right:auto;
-  bottom:calc(12px + env(safe-area-inset-bottom));
-  transform:translateX(-50%);
-  width:min(1080px,calc(100% - 28px));
-  max-width:none;
-  min-width:0;
-  min-height:64px;
+  left:auto;
+  right:24px;
+  bottom:calc(18px + env(safe-area-inset-bottom));
+  transform:none;
+  width:auto;
+  min-width:330px;
+  max-width:calc(100% - 48px);
   padding:0 28px;
-  border-radius:12px;
-  font-size:16px;
-  opacity:.97;
+  opacity:.96;
 }
-.quick-reroll:hover{
-  opacity:1;
-  transform:translateX(-50%) translateY(-1px);
-}
-
-@media(max-width:900px){
-  .brand,.launch-grid,.result-shell{width:100%}
-  .launch-grid .selector{
-    grid-template-columns:1fr 1fr;
-    grid-template-areas:
-      "step-origin step-time"
-      "origins times"
-      "action action"
-      "origin-status origin-status"
-      "hint pool";
-  }
-  .selector .draw-btn{min-height:54px}
-  .launch-grid .mission-reveal{aspect-ratio:16 / 9}
-  .launch-grid .mission-overlay{width:76%}
+.quick-reroll:hover{opacity:1;transform:translateY(-1px)}
+@media(max-width:980px){
+  .launch-grid{grid-template-columns:1fr}
+  .launch-grid .mission-reveal{min-height:540px}
   .result-shell{grid-template-columns:1fr}
   .result-card,.map-card{grid-column:1}
 }
 @media(max-width:640px){
-  .app{padding:14px 12px 96px}
-  .brand{padding-bottom:10px}
-  .brand-lockup strong{font-size:44px}
-  .launch-grid .selector{
+  .launch-grid{display:block;margin-top:14px}
+  .launch-grid .selector{margin-bottom:14px}
+  .launch-grid .mission-reveal{min-height:520px}
+  .quick-reroll{
+    left:14px;
+    right:14px;
+    width:auto;
+    min-width:0;
+    max-width:none;
+    padding:0 18px;
+  }
+}
+
+
+/* v0.11.0-test.4 — hero inline reroll */
+.mission-actions{
+  display:flex;
+  align-items:stretch;
+  gap:10px;
+  margin-top:2px;
+  flex-wrap:wrap;
+}
+.mission-actions .reveal-primary{
+  margin:0;
+  flex:0 1 270px;
+}
+.reveal-reroll{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  min-width:220px;
+  min-height:56px;
+  padding:15px 18px;
+  border:1px solid rgba(255,255,255,.32);
+  border-radius:2px;
+  background:rgba(7,8,12,.68);
+  color:#fff;
+  font:800 14px/1 system-ui,-apple-system,"Segoe UI",sans-serif;
+  letter-spacing:.02em;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  box-shadow:0 12px 32px rgba(0,0,0,.24);
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+.reveal-reroll:hover{
+  background:rgba(31,18,32,.88);
+  border-color:rgba(255,100,116,.72);
+  transform:translateY(-1px);
+}
+.reveal-reroll b{
+  font-size:20px;
+  font-weight:600;
+}
+@media(max-width:640px){
+  .mission-actions{
     display:grid;
     grid-template-columns:1fr;
-    grid-template-areas:
-      "step-origin"
-      "origins"
-      "origin-status"
-      "step-time"
-      "times"
-      "action"
-      "hint"
-      "pool";
-    padding:13px;
+    width:min(100%,320px);
   }
-  .selector .pool-status{text-align:left}
-  .launch-grid .mission-reveal{
-    aspect-ratio:auto;
-    min-height:520px;
-  }
-  .launch-grid .mission-overlay{
+  .mission-actions .reveal-primary,
+  .reveal-reroll{
     width:100%;
-    padding:25px 20px 31px;
+    min-width:0;
   }
-  .quick-reroll{
-    width:calc(100% - 20px);
-    min-height:60px;
-    border-radius:10px;
+}
+
+
+/* v0.11.0-test.4 — reveal scroll target */
+#mission-reveal{
+  scroll-margin-top:18px;
+}
+@media(max-width:640px){
+  #mission-reveal{
+    scroll-margin-top:10px;
   }
 }
 
@@ -651,7 +547,7 @@ body{padding-bottom:calc(92px + env(safe-area-inset-bottom));}
         <p id="mission-copyline" class="mission-copyline"></p>
         <h2 id="mission-destination" class="mission-destination"></h2>
         <div class="mission-meta"><span id="mission-duration"></span><span id="mission-theme"></span><span id="mission-route"></span><span id="mission-scene">AUTO / TRACE</span></div>
-        <a id="reveal-gmap" class="reveal-primary" target="_blank" rel="noopener"><span>このCruiseを受ける</span><b aria-hidden="true">→</b></a>
+        <div class="mission-actions"><a id="reveal-gmap" class="reveal-primary" target="_blank" rel="noopener"><span>このCruiseを受ける</span><b aria-hidden="true">→</b></a><button id="mission-reroll" class="reveal-reroll" type="button" aria-label="別の行き先を探す"><span>別の行き先を探す</span><b aria-hidden="true">↻</b></button></div>
       </div>
       <p class="visual-note">ORIGINAL CINEMATIC VISUAL / DESTINATION DATA LINKED</p>
     </article>
@@ -872,7 +768,7 @@ setOriginMode(originMode,false);
 updatePoolStatus();
 updateStoryControls();
 const versionEl=document.querySelector("#db-version");
-if(versionEl)versionEl.textContent=`PROJECT CRUISE v0.11.0-test.3｜${destinations.length}地点・${routes.length}結果を読込済み`;
+if(versionEl)versionEl.textContent=`PROJECT CRUISE v0.11.0-test.4｜${destinations.length}地点・${routes.length}結果を読込済み`;
 
 document.querySelectorAll(".time-btn").forEach(btn=>{
  btn.addEventListener("click",()=>{
@@ -1365,7 +1261,7 @@ function show(r){
  $("#mobile-actions").classList.remove("hidden");
  $(".selector").classList.add("compact");
  const reveal=$("#mission-reveal");reveal.classList.remove("is-revealing");requestAnimationFrame(()=>reveal.classList.add("is-revealing"));
- $("#result").scrollIntoView({behavior:"smooth",block:"start"});
+ setTimeout(()=>{const missionReveal=document.querySelector("#mission-reveal");if(missionReveal){missionReveal.scrollIntoView({behavior:"smooth",block:"start"});}else{$("#result").scrollIntoView({behavior:"smooth",block:"start"});}},80);
  setTimeout(()=>renderMap(r),100);
 }
 const VISUAL_ASSETS={"airport":["assets/visuals/airport-scene-1-1.webp","assets/visuals/airport-scene-1-2.webp","assets/visuals/airport-scene-1-3.webp","assets/visuals/airport-scene-1-4.webp","assets/visuals/airport-scene-2-1.webp","assets/visuals/airport-scene-2-2.webp","assets/visuals/airport-scene-2-3.webp","assets/visuals/airport-scene-2-4.webp"],"bridge":["assets/visuals/bridge-scene-1-1.webp","assets/visuals/bridge-scene-1-2.webp","assets/visuals/bridge-scene-1-3.webp","assets/visuals/bridge-scene-1-4.webp","assets/visuals/bridge-scene-2-1.webp","assets/visuals/bridge-scene-2-2.webp","assets/visuals/bridge-scene-2-3.webp","assets/visuals/bridge-scene-2-4.webp"],"industry":["assets/visuals/industry-scene-1-1.webp","assets/visuals/industry-scene-1-2.webp","assets/visuals/industry-scene-1-3.webp","assets/visuals/industry-scene-1-4.webp","assets/visuals/industry-scene-2-1.webp","assets/visuals/industry-scene-2-2.webp","assets/visuals/industry-scene-2-3.webp","assets/visuals/industry-scene-2-4.webp"],"city":["assets/visuals/city-scene-1-1.webp","assets/visuals/city-scene-1-2.webp","assets/visuals/city-scene-1-3.webp","assets/visuals/city-scene-1-4.webp","assets/visuals/city-scene-2-1.webp","assets/visuals/city-scene-2-2.webp","assets/visuals/city-scene-2-3.webp","assets/visuals/city-scene-2-4.webp"]};
@@ -1727,6 +1623,19 @@ function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;",
 const quickRerollButton=document.querySelector("#quick-reroll");
 if(quickRerollButton){
   quickRerollButton.addEventListener("click",()=>{
+    const redrawButton=document.querySelector("#redraw");
+    if(redrawButton) redrawButton.click();
+    else {
+      const drawButton=document.querySelector("#draw");
+      if(drawButton) drawButton.click();
+    }
+  });
+}
+
+
+const missionRerollButton=document.querySelector("#mission-reroll");
+if(missionRerollButton){
+  missionRerollButton.addEventListener("click",()=>{
     const redrawButton=document.querySelector("#redraw");
     if(redrawButton) redrawButton.click();
     else {

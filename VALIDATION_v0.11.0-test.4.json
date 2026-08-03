@@ -1,0 +1,18 @@
+{
+  "version": "v0.11.0-test.4",
+  "result": "PASS",
+  "counts": {
+    "destinations": 366,
+    "selectableResults": 547,
+    "canonicalRoutes": 181
+  },
+  "uiChanges": {
+    "drawScrollTarget": "mission-reveal",
+    "rerollScrollTarget": "mission-reveal",
+    "smoothScroll": true,
+    "fallbackTarget": "result",
+    "scrollMarginDesktopPx": 18,
+    "scrollMarginMobilePx": 10
+  },
+  "dataPreserved": true
+}

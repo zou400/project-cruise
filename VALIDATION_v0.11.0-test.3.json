@@ -1,38 +1,17 @@
 {
   "version": "v0.11.0-test.3",
   "result": "PASS",
-  "source": "annotated screenshot PDF 2026-08-03 11:34",
   "counts": {
     "destinations": 366,
     "selectableResults": 547,
-    "canonicalRoutes": 181,
-    "heroDisplayVariants": 32
+    "canonicalRoutes": 181
   },
-  "layout": {
-    "compactBrandAtTop": true,
-    "thinHorizontalSelectorBelowBrand": true,
-    "landscapeHeroBelowSelector": true,
-    "detailsAndMapBelowHero": true,
-    "fullWidthBottomReroll": true,
-    "mobileSingleColumn": true
+  "uiChanges": {
+    "heroInlineRerollButtonAdded": true,
+    "heroPrimaryCTAKept": true,
+    "fixedBottomRerollKept": true,
+    "desktopPlacement": "to the right of the primary hero CTA",
+    "mobilePlacement": "stacked below the primary hero CTA"
   },
-  "dataPreserved": {
-    "destinations": true,
-    "routes": true,
-    "learningLoop": true,
-    "googleMaps": true,
-    "heroAssets": true
-  },
-  "javascriptSyntax": [
-    {
-      "block": 1,
-      "passed": true,
-      "stderr": ""
-    },
-    {
-      "block": 3,
-      "passed": true,
-      "stderr": ""
-    }
-  ]
+  "dataPreserved": true
 }
