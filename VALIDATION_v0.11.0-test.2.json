@@ -1,0 +1,25 @@
+{
+  "version": "v0.11.0-test.2",
+  "result": "PASS",
+  "counts": {
+    "destinations": 366,
+    "selectableResults": 547,
+    "canonicalRoutes": 181,
+    "heroSourceAssets": 8,
+    "heroDisplayVariants": 32
+  },
+  "layout": {
+    "selectorLeftHeroRightDesktop": true,
+    "detailsAndMapBelow": true,
+    "mobileSingleColumn": true,
+    "rerollBottomRightDesktop": true,
+    "rerollFullWidthMobile": true
+  },
+  "dataChecks": {
+    "externalDestinationsMatchesEmbedded": true,
+    "externalRoutesMatchesEmbedded": true,
+    "old501ResultLabelRemoved": true,
+    "destinationIdsUnique": true,
+    "routeIdsUnique": true
+  }
+}

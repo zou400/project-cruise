@@ -1,46 +1,48 @@
 {
-  "version": "v0.11.0-test",
-  "policy": "Original AI-generated Project Cruise category visuals. They establish mood and do not claim to depict an exact destination. Replace or override with owned or licensed destination photography when available.",
-  "dimensions": "1672x941",
-  "assets": {
-    "airport": "airport-bluehour-v3.webp",
-    "bridge": "bay-bridge-dusk-v3.webp",
-    "industry": "industrial-night-v3.webp",
-    "city": "urban-architecture-v3.webp"
-  },
-  "legacyAssets": {
-    "airport": "airport-bluehour.webp",
-    "bridge": "bay-bridge-dusk.webp",
-    "industry": "industrial-night.webp",
-    "city": "urban-architecture.webp"
-  },
-  "destinationOverrides": {},
-  "nextPriorityDestinations": [
-    "HANEDA INNOVATION CITY 足湯スカイデッキ",
-    "京浜島つばさ公園",
-    "城南島海浜公園",
-    "若洲海浜公園",
-    "東京ゲートブリッジ",
-    "川崎マリエン",
-    "東京タワー"
-  ],
-  "variantPolicy": "Two owned/generated variants per category, deterministically selected by destination name.",
+  "version": "v0.11.0-test.2",
+  "policy": "Project Cruiseが保有する8枚の元画像から、構図・クロップ・反転・夜間調整を施した32個の表示バリエーションを生成。実在地点の正確な写真とは主張しない。",
+  "sourceAssets": 8,
+  "displayVariants": 32,
   "assetVariants": {
     "airport": [
-      "airport-bluehour-v3.webp",
-      "airport-bluehour.webp"
+      "airport-scene-1-1.webp",
+      "airport-scene-1-2.webp",
+      "airport-scene-1-3.webp",
+      "airport-scene-1-4.webp",
+      "airport-scene-2-1.webp",
+      "airport-scene-2-2.webp",
+      "airport-scene-2-3.webp",
+      "airport-scene-2-4.webp"
     ],
     "bridge": [
-      "bay-bridge-dusk-v3.webp",
-      "bay-bridge-dusk.webp"
+      "bridge-scene-1-1.webp",
+      "bridge-scene-1-2.webp",
+      "bridge-scene-1-3.webp",
+      "bridge-scene-1-4.webp",
+      "bridge-scene-2-1.webp",
+      "bridge-scene-2-2.webp",
+      "bridge-scene-2-3.webp",
+      "bridge-scene-2-4.webp"
     ],
     "industry": [
-      "industrial-night-v3.webp",
-      "industrial-night.webp"
+      "industry-scene-1-1.webp",
+      "industry-scene-1-2.webp",
+      "industry-scene-1-3.webp",
+      "industry-scene-1-4.webp",
+      "industry-scene-2-1.webp",
+      "industry-scene-2-2.webp",
+      "industry-scene-2-3.webp",
+      "industry-scene-2-4.webp"
     ],
     "city": [
-      "urban-architecture-v3.webp",
-      "urban-architecture.webp"
+      "city-scene-1-1.webp",
+      "city-scene-1-2.webp",
+      "city-scene-1-3.webp",
+      "city-scene-1-4.webp",
+      "city-scene-2-1.webp",
+      "city-scene-2-2.webp",
+      "city-scene-2-3.webp",
+      "city-scene-2-4.webp"
     ]
   }
 }
