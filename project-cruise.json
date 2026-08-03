@@ -76543,5 +76543,16 @@
         }
       }
     ]
+  },
+  "releaseVersion": "v0.11.0-test",
+  "integrationTest": {
+    "canonicalDestinations": 320,
+    "addedStagingDestinations": 46,
+    "totalDestinations": 366,
+    "canonicalSelectableResults": 501,
+    "addedStagingResults": 46,
+    "totalSelectableResults": 547,
+    "heroVariants": 8,
+    "generatedAt": "2026-08-03T11:00:00+09:00"
   }
 }

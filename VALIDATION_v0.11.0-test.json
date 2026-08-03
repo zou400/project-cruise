@@ -1,0 +1,23 @@
+{
+  "version": "v0.11.0-test",
+  "result": "PASS",
+  "counts": {
+    "canonicalDestinations": 320,
+    "addedStagingDestinations": 46,
+    "totalDestinations": 366,
+    "canonicalRoutes": 181,
+    "canonicalSelectableResults": 501,
+    "addedStagingResults": 46,
+    "totalSelectableResults": 547,
+    "heroVariants": 8
+  },
+  "checks": {
+    "jsonDestinationsMatch": true,
+    "jsonRoutesMatch": true,
+    "embeddedDestinationCount": true,
+    "heroVariantPickerPresent": true,
+    "canonicalPreserved": true,
+    "candidateIdsUnique": true,
+    "routeIdsUnique": true
+  }
+}

@@ -1,0 +1,1819 @@
+{
+  "routePacks": [
+    {
+      "routePackId": "KP090-01",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "川崎・海底トンネル展望",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "港湾世界へ一度潜ってから展望室で回収",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-02",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "多摩川ブリッジ＆市庁舎",
+      "destinationId": "N231",
+      "destination": "川崎市役所本庁舎・展望ロビー",
+      "waypoints": [
+        "大師橋",
+        "六郷橋"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "河川橋から都市展望へ短く切替",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%E6%9C%AC%E5%BA%81%E8%88%8E%E3%83%BB%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC&travelmode=driving&waypoints=%E5%A4%A7%E5%B8%AB%E6%A9%8B%7C%E5%85%AD%E9%83%B7%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-03",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "羽田未来都市ショート",
+      "destinationId": "N225",
+      "destination": "羽田イノベーションシティ・足湯スカイデッキ",
+      "waypoints": [
+        "多摩川スカイブリッジ"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "橋を渡った直後に空港未来都市へ入る",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%83%BB%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-04",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "レインボー港湾建築",
+      "destinationId": "N234",
+      "destination": "東京国際クルーズターミナル・送迎デッキ",
+      "waypoints": [
+        "レインボーブリッジ下層"
+      ],
+      "timeFit": [
+        "day"
+      ],
+      "experienceIntent": "象徴橋のあとに港の玄関建築へ到着",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E5%9B%BD%E9%9A%9B%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%BB%E9%80%81%E8%BF%8E%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-05",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "東京港トンネル・ミナトリエ",
+      "destinationId": "N233",
+      "destination": "TOKYOミナトリエ・東京港100m展望",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "海底道路を展示と高層眺望で回収",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=TOKYO%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%E3%83%BB%E6%9D%B1%E4%BA%AC%E6%B8%AF100m%E5%B1%95%E6%9C%9B&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-06",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "橋3本・閉館前ガス科学館",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "築地大橋",
+        "晴海大橋",
+        "豊洲大橋"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "橋の連続と都市エネルギーを短時間で体験",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E7%AF%89%E5%9C%B0%E5%A4%A7%E6%A9%8B%7C%E6%99%B4%E6%B5%B7%E5%A4%A7%E6%A9%8B%7C%E8%B1%8A%E6%B4%B2%E5%A4%A7%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-01",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "羽田から川崎港の夜",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "多摩川スカイブリッジ",
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "experienceIntent": "空港河口から物流島へ世界を切替",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-02",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "レインボー＆東京港アンダーシー",
+      "destinationId": "N233",
+      "destination": "TOKYOミナトリエ・東京港100m展望",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "experienceIntent": "橋の開放と海底の圧縮を対比",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=TOKYO%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%E3%83%BB%E6%9D%B1%E4%BA%AC%E6%B8%AF100m%E5%B1%95%E6%9C%9B&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4%7C%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-03",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "東京ゲート・クルーズターミナル",
+      "destinationId": "N234",
+      "destination": "東京国際クルーズターミナル・送迎デッキ",
+      "waypoints": [
+        "東京港臨海トンネル",
+        "東京ゲートブリッジ",
+        "海の森大橋"
+      ],
+      "timeFit": [
+        "day"
+      ],
+      "experienceIntent": "コンテナ港から巨大橋、客船ターミナルへ",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E5%9B%BD%E9%9A%9B%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%BB%E9%80%81%E8%BF%8E%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E8%87%A8%E6%B5%B7%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%88%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E6%B5%B7%E3%81%AE%E6%A3%AE%E5%A4%A7%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-04",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "工業道路から川崎スカイデッキ",
+      "destinationId": "N231",
+      "destination": "川崎市役所本庁舎・展望ロビー",
+      "waypoints": [
+        "川崎港海底トンネル",
+        "大師橋"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "工業島から市街の高層建築へ戻る",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%E6%9C%AC%E5%BA%81%E8%88%8E%E3%83%BB%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E5%A4%A7%E5%B8%AB%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-05",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "東京湾橋梁・エネルギー終点",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "晴海大橋",
+        "豊洲大橋"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "湾岸橋を都市インフラ展示で意味回収",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4%7C%E6%99%B4%E6%B5%B7%E5%A4%A7%E6%A9%8B%7C%E8%B1%8A%E6%B4%B2%E5%A4%A7%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-06",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "首都高トンネル・MMパーク",
+      "destinationId": "N224",
+      "destination": "首都高MMパーク",
+      "waypoints": [
+        "首都高・大師トンネル",
+        "生麦JCT",
+        "横浜北トンネル"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "走った首都高を展示で回収",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E9%A6%96%E9%83%BD%E9%AB%98MM%E3%83%91%E3%83%BC%E3%82%AF&travelmode=driving&waypoints=%E9%A6%96%E9%83%BD%E9%AB%98%E3%83%BB%E5%A4%A7%E5%B8%AB%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E7%94%9F%E9%BA%A6JCT%7C%E6%A8%AA%E6%B5%9C%E5%8C%97%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-01",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "東京港インフラ・二館",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部",
+        "TOKYO ミナトリエ",
+        "レインボーブリッジ下層"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "港展示とエネルギー展示を連続体験",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8%7CTOKYO%20%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%7C%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-02",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "川崎港・展望二層",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "大師橋",
+        "川崎市役所 本庁舎",
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "市街展望から港湾展望へスケールを拡大",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%A4%A7%E5%B8%AB%E6%A9%8B%7C%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%20%E6%9C%AC%E5%BA%81%E8%88%8E%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-03",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "東京湾東進・千葉ポートタワー",
+      "destinationId": "N235",
+      "destination": "千葉ポートタワー・湾岸ロング終点",
+      "waypoints": [
+        "荒川河口橋",
+        "舞浜大橋"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "国道357号の河口橋を連ねて千葉港へ",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%8D%83%E8%91%89%E3%83%9D%E3%83%BC%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E6%B9%BE%E5%B2%B8%E3%83%AD%E3%83%B3%E3%82%B0%E7%B5%82%E7%82%B9&travelmode=driving&waypoints=%E8%8D%92%E5%B7%9D%E6%B2%B3%E5%8F%A3%E6%A9%8B%7C%E8%88%9E%E6%B5%9C%E5%A4%A7%E6%A9%8B",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-04",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "アクアライン・千葉港大回廊",
+      "destinationId": "N235",
+      "destination": "千葉ポートタワー・湾岸ロング終点",
+      "waypoints": [
+        "東京湾アクアトンネル",
+        "海ほたるPA"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "海底から海上へ現れ、千葉港の高塔で終える",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E5%8D%83%E8%91%89%E3%83%9D%E3%83%BC%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E6%B9%BE%E5%B2%B8%E3%83%AD%E3%83%B3%E3%82%B0%E7%B5%82%E7%82%B9&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B9%BE%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%B5%B7%E3%81%BB%E3%81%9F%E3%82%8BPA",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-05",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "横浜工業・日産エンジン",
+      "destinationId": "N228",
+      "destination": "日産エンジンミュージアム・横浜工場ゲストホール",
+      "waypoints": [
+        "川崎港海底トンネル",
+        "大黒JCT",
+        "生麦JCT"
+      ],
+      "timeFit": [
+        "weekday_day",
+        "rain"
+      ],
+      "experienceIntent": "港湾構造を自動車産業遺産で回収",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%97%A5%E7%94%A3%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B7%A5%E5%A0%B4%E3%82%B2%E3%82%B9%E3%83%88%E3%83%9B%E3%83%BC%E3%83%AB&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E5%A4%A7%E9%BB%92JCT%7C%E7%94%9F%E9%BA%A6JCT",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-06",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "durationPolicy": "nominal_outing_band_not_live_eta",
+      "title": "橋・トンネル・港の灯台",
+      "destinationId": "N229",
+      "destination": "横浜マリンタワー・夜の港到着",
+      "waypoints": [
+        "多摩川スカイブリッジ",
+        "川崎港海底トンネル",
+        "横浜ベイブリッジ"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "experienceIntent": "河口、海底、巨大橋を横浜港の展望で締める",
+      "liveEtaRequired": true,
+      "returnTripIncludedOnlyAfterLiveCheck": true,
+      "hardGates": [
+        "Google Mapsの実時間と帰路を含めて所要時間帯に収まる",
+        "経由地が意図した道路区間を通る",
+        "目的地の営業時間・駐車条件が成立",
+        "事故・通行止め・強い渋滞がない"
+      ],
+      "googleMapsTemplate": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E5%A4%9C%E3%81%AE%E6%B8%AF%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%A8%AA%E6%B5%9C%E3%83%99%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP090-07",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "90min",
+      "title": "東京港トンネル・99m展望",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "tollRequired": false,
+      "wideVehiclePolicy": "V0 parking dimensions pending; do not auto-recommend over 1.9m",
+      "liveEtaRequired": true,
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KP120-07",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "120min",
+      "title": "レインボー・海底・湾岸展望",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "tollRequired": false,
+      "wideVehiclePolicy": "V0 parking dimensions pending; do not auto-recommend over 1.9m",
+      "liveEtaRequired": true,
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-07",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "title": "東京港インフラ・二展望",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "東京港臨海トンネル",
+        "東京ゲートブリッジ",
+        "海の森大橋",
+        "TOKYOミナトリエ"
+      ],
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "tollRequired": false,
+      "wideVehiclePolicy": "V0 parking dimensions pending; do not auto-recommend over 1.9m",
+      "liveEtaRequired": true,
+      "status": "staging_duration_pack_not_canonical"
+    },
+    {
+      "routePackId": "YKHIST-09",
+      "origin": "東京都大田区・蒲田",
+      "durationBand": "half_day",
+      "title": "浦賀水道・東京湾要塞線",
+      "destinationId": "N238",
+      "destination": "千代ヶ崎砲台跡",
+      "waypoints": [
+        "横浜横須賀道路",
+        "浦賀港周辺",
+        "燈明堂緑地"
+      ],
+      "timeFit": [
+        "weekend_day",
+        "holiday_day"
+      ],
+      "tollRequired": true,
+      "hardGates": [
+        "土曜・日曜・祝日の公開日に限定",
+        "最終入場時刻を厳守",
+        "警報・台風・降雪・熱中症特別警戒アラート時は推薦停止",
+        "専用16台が満車なら路上待機せず燈明堂緑地へ切替",
+        "周辺道路が狭いため全幅2m超車両を自動推薦しない",
+        "史跡内への車両進入・路側帯・私有地への駐停車禁止"
+      ],
+      "status": "staging_route_template_not_canonical"
+    },
+    {
+      "routePackId": "KP090-01",
+      "title": "川崎・海底トンネル展望",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "港湾世界へ一度潜ってから展望室で回収",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "tunnel"
+      ],
+      "baseStrength": 98,
+      "discoveryValue": 96,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "20:30",
+        "close": "21:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_large_parking_exact_dimensions_pending",
+      "liveChecks": [
+        "最新の施設案内",
+        "イベント・貸切",
+        "展望室利用制限",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-02",
+      "title": "多摩川ブリッジ＆市庁舎",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N231",
+      "destination": "川崎市役所本庁舎・展望ロビー",
+      "waypoints": [
+        "大師橋",
+        "六郷橋"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "河川橋から都市展望へ短く切替",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%E6%9C%AC%E5%BA%81%E8%88%8E%E3%83%BB%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC&travelmode=driving&waypoints=%E5%A4%A7%E5%B8%AB%E6%A9%8B%7C%E5%85%AD%E9%83%B7%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 91,
+      "discoveryValue": 89,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "20:30",
+        "close": "21:00",
+        "liveStateRequired": false
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthM": 1.9,
+        "maxLengthM": 5.0,
+        "maxHeightM": 2.1,
+        "maxWeightT": 2.5
+      },
+      "parkingStatus": "official_confirmed_narrow",
+      "liveChecks": [
+        "周辺イベントによる見学制限",
+        "荒天時のスカイデッキ閉鎖",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-03",
+      "title": "羽田未来都市ショート",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N225",
+      "destination": "羽田イノベーションシティ・足湯スカイデッキ",
+      "waypoints": [
+        "多摩川スカイブリッジ"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "橋を渡った直後に空港未来都市へ入る",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E7%BE%BD%E7%94%B0%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%83%BB%E8%B6%B3%E6%B9%AF%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 91,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "00:00",
+        "lastEntry": "23:59",
+        "close": "23:59",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_current_primary_capacity",
+      "liveChecks": [
+        "足湯スカイデッキの当日利用状況",
+        "イベントによる駐車制限",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-04",
+      "title": "レインボー港湾建築",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N234",
+      "destination": "東京国際クルーズターミナル・送迎デッキ",
+      "waypoints": [
+        "レインボーブリッジ下層"
+      ],
+      "timeFit": [
+        "day"
+      ],
+      "experienceIntent": "象徴橋のあとに港の玄関建築へ到着",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E5%9B%BD%E9%9A%9B%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%BB%E9%80%81%E8%BF%8E%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 95,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "16:30",
+        "close": "17:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthM": 2.3,
+        "maxLengthM": 5.0,
+        "maxHeightM": 2.5
+      },
+      "parkingStatus": "official_confirmed_but_ship_priority",
+      "liveChecks": [
+        "客船入出港予定",
+        "一般開放フロア",
+        "駐車場利用制限",
+        "イベント",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-05",
+      "title": "東京港トンネル・ミナトリエ",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N233",
+      "destination": "TOKYOミナトリエ・東京港100m展望",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "海底道路を展示と高層眺望で回収",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=TOKYO%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%E3%83%BB%E6%9D%B1%E4%BA%AC%E6%B8%AF100m%E5%B1%95%E6%9C%9B&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "tunnel"
+      ],
+      "baseStrength": 95,
+      "discoveryValue": 94,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "10:00",
+        "lastEntry": "17:30",
+        "close": "18:00",
+        "fridaySaturdayLastEntry": "20:30",
+        "fridaySaturdayClose": "21:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "dedicated_parking_not_confirmed",
+      "liveChecks": [
+        "公式サイトの最新開室情報",
+        "イベント・臨時休室",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-06",
+      "title": "橋3本・閉館前ガス科学館",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "築地大橋",
+        "晴海大橋",
+        "豊洲大橋"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "橋の連続と都市エネルギーを短時間で体験",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E7%AF%89%E5%9C%B0%E5%A4%A7%E6%A9%8B%7C%E6%99%B4%E6%B5%B7%E5%A4%A7%E6%A9%8B%7C%E8%B1%8A%E6%B4%B2%E5%A4%A7%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 97,
+      "discoveryValue": 98,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:30",
+        "lastEntry": "16:30",
+        "close": "17:00",
+        "expiry": "2026-09-23T17:00:00+09:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_confirmed_capacity_dimensions_pending",
+      "liveChecks": [
+        "臨時休館",
+        "閉館関連イベント・混雑",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-01",
+      "title": "羽田から川崎港の夜",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "多摩川スカイブリッジ",
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "experienceIntent": "空港河口から物流島へ世界を切替",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 98,
+      "discoveryValue": 96,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "20:30",
+        "close": "21:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_large_parking_exact_dimensions_pending",
+      "liveChecks": [
+        "最新の施設案内",
+        "イベント・貸切",
+        "展望室利用制限",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-02",
+      "title": "レインボー＆東京港アンダーシー",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N233",
+      "destination": "TOKYOミナトリエ・東京港100m展望",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "experienceIntent": "橋の開放と海底の圧縮を対比",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=TOKYO%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%E3%83%BB%E6%9D%B1%E4%BA%AC%E6%B8%AF100m%E5%B1%95%E6%9C%9B&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4%7C%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 95,
+      "discoveryValue": 94,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "10:00",
+        "lastEntry": "17:30",
+        "close": "18:00",
+        "fridaySaturdayLastEntry": "20:30",
+        "fridaySaturdayClose": "21:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "dedicated_parking_not_confirmed",
+      "liveChecks": [
+        "公式サイトの最新開室情報",
+        "イベント・臨時休室",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-03",
+      "title": "東京ゲート・クルーズターミナル",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N234",
+      "destination": "東京国際クルーズターミナル・送迎デッキ",
+      "waypoints": [
+        "東京港臨海トンネル",
+        "東京ゲートブリッジ",
+        "海の森大橋"
+      ],
+      "timeFit": [
+        "day"
+      ],
+      "experienceIntent": "コンテナ港から巨大橋、客船ターミナルへ",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%9D%B1%E4%BA%AC%E5%9B%BD%E9%9A%9B%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%BB%E9%80%81%E8%BF%8E%E3%83%87%E3%83%83%E3%82%AD&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E8%87%A8%E6%B5%B7%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%88%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E6%B5%B7%E3%81%AE%E6%A3%AE%E5%A4%A7%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 95,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "16:30",
+        "close": "17:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthM": 2.3,
+        "maxLengthM": 5.0,
+        "maxHeightM": 2.5
+      },
+      "parkingStatus": "official_confirmed_but_ship_priority",
+      "liveChecks": [
+        "客船入出港予定",
+        "一般開放フロア",
+        "駐車場利用制限",
+        "イベント",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-04",
+      "title": "工業道路から川崎スカイデッキ",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N231",
+      "destination": "川崎市役所本庁舎・展望ロビー",
+      "waypoints": [
+        "川崎港海底トンネル",
+        "大師橋"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "工業島から市街の高層建築へ戻る",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%E6%9C%AC%E5%BA%81%E8%88%8E%E3%83%BB%E5%B1%95%E6%9C%9B%E3%83%AD%E3%83%93%E3%83%BC&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E5%A4%A7%E5%B8%AB%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 91,
+      "discoveryValue": 89,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "20:30",
+        "close": "21:00",
+        "liveStateRequired": false
+      },
+      "vehicleFit": {
+        "level": "V1",
+        "maxWidthM": 1.9,
+        "maxLengthM": 5.0,
+        "maxHeightM": 2.1,
+        "maxWeightT": 2.5
+      },
+      "parkingStatus": "official_confirmed_narrow",
+      "liveChecks": [
+        "周辺イベントによる見学制限",
+        "荒天時のスカイデッキ閉鎖",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-05",
+      "title": "東京湾橋梁・エネルギー終点",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "晴海大橋",
+        "豊洲大橋"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "湾岸橋を都市インフラ展示で意味回収",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4%7C%E6%99%B4%E6%B5%B7%E5%A4%A7%E6%A9%8B%7C%E8%B1%8A%E6%B4%B2%E5%A4%A7%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 97,
+      "discoveryValue": 98,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:30",
+        "lastEntry": "16:30",
+        "close": "17:00",
+        "expiry": "2026-09-23T17:00:00+09:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_confirmed_capacity_dimensions_pending",
+      "liveChecks": [
+        "臨時休館",
+        "閉館関連イベント・混雑",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-06",
+      "title": "首都高トンネル・MMパーク",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N224",
+      "destination": "首都高MMパーク",
+      "waypoints": [
+        "首都高・大師トンネル",
+        "生麦JCT",
+        "横浜北トンネル"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "走った首都高を展示で回収",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E9%A6%96%E9%83%BD%E9%AB%98MM%E3%83%91%E3%83%BC%E3%82%AF&travelmode=driving&waypoints=%E9%A6%96%E9%83%BD%E9%AB%98%E3%83%BB%E5%A4%A7%E5%B8%AB%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E7%94%9F%E9%BA%A6JCT%7C%E6%A8%AA%E6%B5%9C%E5%8C%97%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "tollClass": "required",
+      "corridorFamilies": [
+        "junction",
+        "tunnel"
+      ],
+      "baseStrength": 93,
+      "discoveryValue": 94,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "10:00",
+        "lastEntry": "16:00",
+        "close": "16:30",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "exact_primary_anchor_pending",
+      "liveChecks": [
+        "開館カレンダー",
+        "混雑・イベント",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-01",
+      "title": "東京港インフラ・二館",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N232",
+      "destination": "がすてなーに ガスの科学館・閉館前限定",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部",
+        "TOKYO ミナトリエ",
+        "レインボーブリッジ下層"
+      ],
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "experienceIntent": "港展示とエネルギー展示を連続体験",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E3%81%8C%E3%81%99%E3%81%A6%E3%81%AA%E3%83%BC%E3%81%AB%20%E3%82%AC%E3%82%B9%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%E3%83%BB%E9%96%89%E9%A4%A8%E5%89%8D%E9%99%90%E5%AE%9A&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B8%AF%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E5%9B%BD%E9%81%93357%E5%8F%B7%E4%B8%80%E8%88%AC%E9%83%A8%7CTOKYO%20%E3%83%9F%E3%83%8A%E3%83%88%E3%83%AA%E3%82%A8%7C%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E4%B8%8B%E5%B1%A4",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "intermediate_destination",
+        "tunnel"
+      ],
+      "baseStrength": 97,
+      "discoveryValue": 98,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:30",
+        "lastEntry": "16:30",
+        "close": "17:00",
+        "expiry": "2026-09-23T17:00:00+09:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_confirmed_capacity_dimensions_pending",
+      "liveChecks": [
+        "臨時休館",
+        "閉館関連イベント・混雑",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-02",
+      "title": "川崎港・展望二層",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N230",
+      "destination": "川崎マリエン・港湾展望室",
+      "waypoints": [
+        "大師橋",
+        "川崎市役所 本庁舎",
+        "川崎港海底トンネル"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "市街展望から港湾展望へスケールを拡大",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%B7%9D%E5%B4%8E%E3%83%9E%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%BB%E6%B8%AF%E6%B9%BE%E5%B1%95%E6%9C%9B%E5%AE%A4&travelmode=driving&waypoints=%E5%A4%A7%E5%B8%AB%E6%A9%8B%7C%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80%20%E6%9C%AC%E5%BA%81%E8%88%8E%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "intermediate_destination",
+        "tunnel"
+      ],
+      "baseStrength": 98,
+      "discoveryValue": 96,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "20:30",
+        "close": "21:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_large_parking_exact_dimensions_pending",
+      "liveChecks": [
+        "最新の施設案内",
+        "イベント・貸切",
+        "展望室利用制限",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-03",
+      "title": "東京湾東進・千葉ポートタワー",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N235",
+      "destination": "千葉ポートタワー・湾岸ロング終点",
+      "waypoints": [
+        "荒川河口橋",
+        "舞浜大橋"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "国道357号の河口橋を連ねて千葉港へ",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%8D%83%E8%91%89%E3%83%9D%E3%83%BC%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E6%B9%BE%E5%B2%B8%E3%83%AD%E3%83%B3%E3%82%B0%E7%B5%82%E7%82%B9&travelmode=driving&waypoints=%E8%8D%92%E5%B7%9D%E6%B2%B3%E5%8F%A3%E6%A9%8B%7C%E8%88%9E%E6%B5%9C%E5%A4%A7%E6%A9%8B",
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge"
+      ],
+      "baseStrength": 94,
+      "discoveryValue": 92,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "18:30",
+        "close": "19:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_tourism_current_dimensions_pending",
+      "liveChecks": [
+        "強風・臨時休館",
+        "季節営業時間",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-04",
+      "title": "アクアライン・千葉港大回廊",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N235",
+      "destination": "千葉ポートタワー・湾岸ロング終点",
+      "waypoints": [
+        "東京湾アクアトンネル",
+        "海ほたるPA"
+      ],
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "experienceIntent": "海底から海上へ現れ、千葉港の高塔で終える",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E5%8D%83%E8%91%89%E3%83%9D%E3%83%BC%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E6%B9%BE%E5%B2%B8%E3%83%AD%E3%83%B3%E3%82%B0%E7%B5%82%E7%82%B9&travelmode=driving&waypoints=%E6%9D%B1%E4%BA%AC%E6%B9%BE%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%B5%B7%E3%81%BB%E3%81%9F%E3%82%8BPA",
+      "tollClass": "required",
+      "corridorFamilies": [
+        "tunnel",
+        "urban"
+      ],
+      "baseStrength": 94,
+      "discoveryValue": 92,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "lastEntry": "18:30",
+        "close": "19:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_tourism_current_dimensions_pending",
+      "liveChecks": [
+        "強風・臨時休館",
+        "季節営業時間",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-05",
+      "title": "横浜工業・日産エンジン",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N228",
+      "destination": "日産エンジンミュージアム・横浜工場ゲストホール",
+      "waypoints": [
+        "川崎港海底トンネル",
+        "大黒JCT",
+        "生麦JCT"
+      ],
+      "timeFit": [
+        "weekday_day",
+        "rain"
+      ],
+      "experienceIntent": "港湾構造を自動車産業遺産で回収",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%97%A5%E7%94%A3%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B7%A5%E5%A0%B4%E3%82%B2%E3%82%B9%E3%83%88%E3%83%9B%E3%83%BC%E3%83%AB&travelmode=driving&waypoints=%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E5%A4%A7%E9%BB%92JCT%7C%E7%94%9F%E9%BA%A6JCT",
+      "tollClass": "required",
+      "corridorFamilies": [
+        "junction",
+        "tunnel"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 96,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "open": "10:00",
+        "lastEntry": "15:30",
+        "close": "16:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_vehicle_access_but_public_bay_conditions_pending",
+      "liveChecks": [
+        "当日の工場稼働・休館情報",
+        "夏季休暇・特別企画",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-06",
+      "title": "橋・トンネル・港の灯台",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N229",
+      "destination": "横浜マリンタワー・夜の港到着",
+      "waypoints": [
+        "多摩川スカイブリッジ",
+        "川崎港海底トンネル",
+        "横浜ベイブリッジ"
+      ],
+      "timeFit": [
+        "evening",
+        "night"
+      ],
+      "experienceIntent": "河口、海底、巨大橋を横浜港の展望で締める",
+      "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=%E6%A8%AA%E6%B5%9C%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%BB%E5%A4%9C%E3%81%AE%E6%B8%AF%E5%88%B0%E7%9D%80&travelmode=driving&waypoints=%E5%A4%9A%E6%91%A9%E5%B7%9D%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%7C%E5%B7%9D%E5%B4%8E%E6%B8%AF%E6%B5%B7%E5%BA%95%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%7C%E6%A8%AA%E6%B5%9C%E3%83%99%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8",
+      "tollClass": "required",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 94,
+      "discoveryValue": 87,
+      "weatherTags": [
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "10:00",
+        "lastEntry": "21:30",
+        "close": "22:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "facility_dedicated_anchor_not_confirmed",
+      "liveChecks": [
+        "強風・天候による展望フロア休止",
+        "メンテナンス休館日",
+        "特定日料金",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP090-07",
+      "title": "東京港トンネル・99m展望",
+      "durationBand": "90min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "橋・トンネル・都市の切替を味わう",
+      "googleMaps": null,
+      "tollClass": "free",
+      "corridorFamilies": [
+        "tunnel"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 91,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "15:00",
+        "lastEntry": "19:30",
+        "close": "20:00",
+        "fridaySaturdayOpen": "11:00",
+        "fridaySaturdayLastEntry": "20:30",
+        "fridaySaturdayClose": "21:00",
+        "sundayOpen": "11:00",
+        "sundayLastEntry": "19:30",
+        "sundayClose": "20:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_parking_exists_dimensions_pending",
+      "liveChecks": [
+        "当日の展望室営業時間",
+        "ビル休館・貸切・イベント",
+        "駐車場営業と満空",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KP120-07",
+      "title": "レインボー・海底・湾岸展望",
+      "durationBand": "120min",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "レインボーブリッジ下層",
+        "東京港トンネル・国道357号一般部"
+      ],
+      "timeFit": [
+        "evening",
+        "night",
+        "rain"
+      ],
+      "experienceIntent": "橋・トンネル・都市の切替を味わう",
+      "googleMaps": null,
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "tunnel"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 91,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "15:00",
+        "lastEntry": "19:30",
+        "close": "20:00",
+        "fridaySaturdayOpen": "11:00",
+        "fridaySaturdayLastEntry": "20:30",
+        "fridaySaturdayClose": "21:00",
+        "sundayOpen": "11:00",
+        "sundayLastEntry": "19:30",
+        "sundayClose": "20:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_parking_exists_dimensions_pending",
+      "liveChecks": [
+        "当日の展望室営業時間",
+        "ビル休館・貸切・イベント",
+        "駐車場営業と満空",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    },
+    {
+      "routePackId": "KPHALF-07",
+      "title": "東京港インフラ・二展望",
+      "durationBand": "half_day",
+      "origin": "東京都大田区・蒲田",
+      "destinationId": "N236",
+      "destination": "テレコムセンター展望室・99m湾岸夜景",
+      "waypoints": [
+        "東京港臨海トンネル",
+        "東京ゲートブリッジ",
+        "海の森大橋",
+        "TOKYOミナトリエ"
+      ],
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "experienceIntent": "橋・トンネル・都市の切替を味わう",
+      "googleMaps": null,
+      "tollClass": "free",
+      "corridorFamilies": [
+        "bridge",
+        "intermediate_destination",
+        "tunnel"
+      ],
+      "baseStrength": 96,
+      "discoveryValue": 91,
+      "weatherTags": [
+        "rain",
+        "clear",
+        "cloudy"
+      ],
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "15:00",
+        "lastEntry": "19:30",
+        "close": "20:00",
+        "fridaySaturdayOpen": "11:00",
+        "fridaySaturdayLastEntry": "20:30",
+        "fridaySaturdayClose": "21:00",
+        "sundayOpen": "11:00",
+        "sundayLastEntry": "19:30",
+        "sundayClose": "20:00",
+        "liveStateRequired": true
+      },
+      "vehicleFit": {
+        "level": "V0"
+      },
+      "parkingStatus": "official_parking_exists_dimensions_pending",
+      "liveChecks": [
+        "当日の展望室営業時間",
+        "ビル休館・貸切・イベント",
+        "駐車場営業と満空",
+        "Google Mapsで往復所要時間を確認",
+        "事故・通行止め・満空を確認"
+      ],
+      "status": "staging_not_canonical"
+    }
+  ]
+}

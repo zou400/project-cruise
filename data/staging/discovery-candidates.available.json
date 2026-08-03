@@ -1,0 +1,1941 @@
+{
+  "generatedAt": "2026-08-03T11:00:00+09:00",
+  "coverageNote": "Available batch artifacts only; IDs may have gaps.",
+  "candidates": [
+    {
+      "candidateId": "N176",
+      "name": "神宮軟式球場噴水・外苑到着",
+      "aliases": [
+        "神宮軟式球場噴水",
+        "外苑噴水"
+      ],
+      "area": "東京都新宿区・明治神宮外苑",
+      "coordinates": {
+        "lat": 35.6753745,
+        "lng": 139.7192852
+      },
+      "googlePlaceToken": "0x60188c9af4de4745:0xcfbc6be022417404",
+      "userProvidedGoogleMapsUrl": "https://maps.app.goo.gl/dT3aXuMF5DAUhNCk8",
+      "primaryCategory": "都市景観・スポーツ文化・マイクロ目的地",
+      "roleProposal": "urban_micro_final_destination",
+      "promotionLane": "conditional_same_day",
+      "destinationStrength": 82,
+      "discoveryValue": 88,
+      "experience": "外苑のスポーツ施設群と噴水を短時間で味わう都市到着。試合やイベントの前後、夜の外苑を2〜15分だけ感じる。",
+      "directRoadStopAllowed": false,
+      "parkingAnchors": [
+        {
+          "name": "明治神宮外苑 絵画館駐車場",
+          "hours": "5:30〜21:00。ナイター開催日は試合終了後1時間まで延長",
+          "capacity": 396,
+          "limits": {
+            "widthM": 1.79,
+            "lengthM": 4.99
+          },
+          "notes": [
+            "日曜・祝日は交通規制の場合あり",
+            "イベント時の休業確認必須",
+            "寸法超過料金の記載はあるが最大許容寸法が未公表のため、全幅1.79m超を自動許可しない"
+          ]
+        }
+      ],
+      "wideVehicleStatus": "unverified_exclude",
+      "sourceUrls": [
+        "https://www.meijijingugaien.jp/parking/",
+        "https://www.meijijingugaien.jp/sports/baseball-ground/access.html"
+      ]
+    },
+    {
+      "candidateId": "N177",
+      "name": "表参道駅・青山通り到着",
+      "aliases": [
+        "表参道駅",
+        "表参道駅前",
+        "青山通り・表参道到着"
+      ],
+      "area": "東京都港区・北青山／南青山",
+      "coordinates": {
+        "lat": 35.6652511,
+        "lng": 139.7120921
+      },
+      "googlePlaceToken": "0x60188c9fee70f285:0x4054b8b23563631c",
+      "userProvidedGoogleMapsUrl": "https://maps.app.goo.gl/TP9XGbGkqMm2VGrs6",
+      "primaryCategory": "駅前都市景観・建築・マイクロ目的地",
+      "roleProposal": "urban_micro_final_destination",
+      "promotionLane": "conditional_same_day",
+      "destinationStrength": 87,
+      "discoveryValue": 85,
+      "experience": "駅やロータリーへ停車するのではなく、合法駐車場へ入り、表参道交差点・青山通り・建築と人の流れを短時間で味わう。",
+      "directRoadStopAllowed": false,
+      "parkingAnchors": [
+        {
+          "name": "表参道ヒルズ 本館B4F駐車場",
+          "hours": "10:00〜24:00、最終入庫23:00",
+          "capacity": 182,
+          "limits": {
+            "widthM": 1.9,
+            "lengthM": 5.3,
+            "heightM": 2.1,
+            "weightT": 2.3
+          },
+          "entryRule": "左折入庫のみ",
+          "notes": [
+            "全館休館日は駐車場も休業",
+            "交通規制時は利用不可"
+          ]
+        }
+      ],
+      "wideVehicleStatus": "over_1_90_exclude",
+      "sourceUrls": [
+        "https://www.omotesandohills.com/access/car.html"
+      ]
+    },
+    {
+      "candidateId": "N178",
+      "name": "キラナガーデン豊洲",
+      "aliases": [
+        "KIRANAH GARDEN TOYOSU"
+      ],
+      "area": "東京都江東区・豊洲六丁目",
+      "coordinates": {
+        "lat": 35.6425023,
+        "lng": 139.7775056
+      },
+      "googlePlaceToken": "0x60188941a61aa8e9:0xa0121ec76ecd4205",
+      "userProvidedGoogleMapsUrl": "https://maps.app.goo.gl/mczj1Epo6W7japgz5",
+      "primaryCategory": "湾岸食体験・BBQ・アーバンリゾート",
+      "roleProposal": "reservation_or_availability_gated_final_destination",
+      "promotionLane": "conditional_booking_or_same_day_availability",
+      "destinationStrength": 93,
+      "discoveryValue": 91,
+      "experience": "豊洲の湾岸景観と食事を、リゾート感のある屋外・半屋外空間で体験する。時間枠・予約・天候を含めた状態判定が必要。",
+      "parkingAnchors": [
+        {
+          "name": "併設駐車場",
+          "capacity": 64,
+          "affiliation": "施設との提携なし",
+          "availability": "先着順",
+          "limits": null,
+          "notes": [
+            "満車時は公式案内の近隣駐車場へ切替",
+            "車両寸法は現地確認まで幅広車を許可しない"
+          ]
+        }
+      ],
+      "wideVehicleStatus": "unverified_exclude",
+      "sourceUrls": [
+        "https://www.kiranahresort-toyosu.com/",
+        "https://www.kiranahresort-toyosu.com/access/"
+      ]
+    },
+    {
+      "candidateId": "N179",
+      "name": "トイ・ストーリーホテル エントランスサイン",
+      "aliases": [
+        "東京ディズニーリゾート・トイ・ストーリーホテル",
+        "トイストーリーホテル入口"
+      ],
+      "area": "千葉県浦安市・舞浜",
+      "coordinates": {
+        "lat": 35.6276947,
+        "lng": 139.8759337
+      },
+      "googlePlaceToken": "0x60187d8918b0ca43:0x5b0a86841161df92",
+      "userProvidedGoogleMapsUrl": "https://maps.app.goo.gl/cmGbGuNvb63JaA2v7",
+      "primaryCategory": "ホテル建築・予約済み特別目的地",
+      "roleProposal": "guest_only_special_destination",
+      "promotionLane": "active_lodging_booking_only",
+      "destinationStrength": 95,
+      "discoveryValue": 90,
+      "experience": "宿泊予約があるときだけ現れる、世界観に入るためのホテル到着体験。入口サインと立体駐車場へのアプローチ自体を目的地化する。",
+      "eligibility": {
+        "requiresActiveHotelStay": true,
+        "generalPublicRecommendation": false
+      },
+      "parkingAnchors": [
+        {
+          "name": "トイ・ストーリーホテル・パーキング",
+          "eligibility": "宿泊ゲスト",
+          "accessRule": "海側道路から入場不可。ベイサイド・ステーション前道路から入場",
+          "validWindow": "チェックイン日0:00〜チェックアウト日24:00"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.tokyodisneyresort.jp/hotel/tsh/access/car.html",
+        "https://faq.tokyodisneyresort.jp/answer/67eaa66580af6b848d3bd222/"
+      ]
+    },
+    {
+      "candidateId": "N180",
+      "name": "ホープ軒 千駄ヶ谷店",
+      "aliases": [
+        "ホープ軒",
+        "ホープケン 千駄ヶ谷"
+      ],
+      "area": "東京都渋谷区・千駄ヶ谷",
+      "coordinates": {
+        "lat": 35.6765896,
+        "lng": 139.7124517
+      },
+      "googlePlaceToken": "0x60188c9630a405d9:0xf9c58f5f85f90312",
+      "userProvidedGoogleMapsUrl": "https://maps.app.goo.gl/2quV4yE5zsWrgrmeA",
+      "primaryCategory": "24時間食・深夜ドライブ文化",
+      "roleProposal": "late_night_food_final_destination",
+      "promotionLane": "instant_after_parking_availability_gate",
+      "destinationStrength": 94,
+      "discoveryValue": 93,
+      "experience": "24時間営業の歴史あるラーメン店へ、外苑・国立競技場周辺の夜道を経て到着する。深夜でも明確な出発理由になる。",
+      "store": {
+        "hours": "24時間",
+        "closedDays": "年中無休"
+      },
+      "directRoadStopAllowed": false,
+      "parkingAnchors": [
+        {
+          "name": "タイムズ千駄ヶ谷",
+          "distance": "店舗から徒歩約1分",
+          "hours": "24時間入出庫可",
+          "availability": "出発直前に満空確認",
+          "notes": [
+            "店舗専用駐車場ではない",
+            "店舗前の路上停車を前提にしない"
+          ]
+        },
+        {
+          "name": "タイムズ千駄ヶ谷2丁目",
+          "distance": "店舗周辺",
+          "hours": "24時間入出庫可",
+          "availability": "代替アンカー"
+        }
+      ],
+      "wideVehicleStatus": "exact_anchor_dimensions_required_before_over_1_90_enable",
+      "sourceUrls": [
+        "https://www.hopeken.co.jp/",
+        "https://times-info.net/P13-tokyo/C113/F679f46fd9016581ba4b8785ce378efe1ab38d089_4f20d833838a6e5eb70e55811ae36a2f/"
+      ]
+    },
+    {
+      "candidateId": "N181",
+      "name": "BLUE FRONT SHIBAURA・GREEN WALK",
+      "area": "東京都港区・芝浦",
+      "primaryCategory": "湾岸再開発・巨大建築・都市回遊",
+      "matchedUserSeeds": [
+        "N085",
+        "N177",
+        "N178"
+      ],
+      "similarityScore": 90,
+      "whySimilar": "森JPタワーの巨大建築、表参道の都市ゲート、豊洲の水辺性を一つの到着に重ねられる。駐車場からGREEN WALKへ抜ける切替が強い。",
+      "experience": "高層複合施設の地下へ入り、運河沿いの緑道と巨大建築の足元へ出る。短時間でも『新しい芝浦へ入った』感覚が成立。",
+      "roleProposal": "urban_architecture_micro_final",
+      "promotionLane": "conditional_same_day",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "BLUE FRONT SHIBAURA PARKING",
+        "hours": "7:00〜23:00（最終入庫20:00・最終出庫22:30）",
+        "capacity": 320,
+        "dimensions": "機械式のため車室別確認",
+        "status": "official_confirmed_but_vehicle_specific"
+      },
+      "wideVehicleStatus": "exact_bay_check_required",
+      "directRoadStopAllowed": false,
+      "mapQuery": "BLUE FRONT SHIBAURA GREEN WALK",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=BLUE%20FRONT%20SHIBAURA%20GREEN%20WALK",
+      "sourceUrls": [
+        "https://www.bluefrontshibaura.com/access/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N182",
+      "name": "TAKANAWA GATEWAY CITY・53 Playable Park",
+      "area": "東京都港区・高輪",
+      "primaryCategory": "都市ゲート・再開発・建築・公園",
+      "matchedUserSeeds": [
+        "N085",
+        "N177"
+      ],
+      "similarityScore": 89,
+      "whySimilar": "駅名ではなく、駐車場から新しい街へ入る『都市の入口』として扱う点が表参道到着と麻布台ヒルズに近い。",
+      "experience": "線路沿いに約1km続く新街区へ入り、建築・広場・植栽を短時間で切り取る。駅前観光ではなく、再開発都市の初見体験。",
+      "roleProposal": "city_gateway_micro_final",
+      "promotionLane": "conditional_same_day",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "TAKANAWA GATEWAY CITY P1",
+        "hours": "北棟24時間／南棟6:30〜23:00",
+        "capacity": null,
+        "status": "official_confirmed"
+      },
+      "wideVehicleStatus": "official_dimensions_recheck",
+      "directRoadStopAllowed": false,
+      "mapQuery": "TAKANAWA GATEWAY CITY 53 Playable Park",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=TAKANAWA%20GATEWAY%20CITY%2053%20Playable%20Park",
+      "sourceUrls": [
+        "https://www.takanawagateway-city.com/en/access/",
+        "https://www.takanawagateway-city.com/en/facilities/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N183",
+      "name": "Shibuya Sakura Stage・BLOOM GATE",
+      "area": "東京都渋谷区・桜丘",
+      "primaryCategory": "都市ゲート・デジタル建築・再開発",
+      "matchedUserSeeds": [
+        "N177",
+        "N176"
+      ],
+      "similarityScore": 88,
+      "whySimilar": "表参道の街到着と外苑の短時間マイクロ体験を、巨大アトリウムとLED演出のある渋谷の入口へ展開。",
+      "experience": "地下駐車場から桜丘のアトリウム、広場、連絡動線へ上がる。目的は買い物ではなく、渋谷の新しい地形に入ること。",
+      "roleProposal": "urban_digital_gateway_final",
+      "promotionLane": "conditional_same_day",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "Shibuya Sakura Stage 駐車場",
+        "hours": "7:00〜24:00（最終入庫23:30）",
+        "capacity": null,
+        "dimensions": "普通車区画 幅2.0m等・区画別確認",
+        "status": "official_confirmed"
+      },
+      "wideVehicleStatus": "bay_type_check_required",
+      "directRoadStopAllowed": false,
+      "mapQuery": "Shibuya Sakura Stage BLOOM GATE",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya%20Sakura%20Stage%20BLOOM%20GATE",
+      "sourceUrls": [
+        "https://www.shibuya-sakura-stage.com/",
+        "https://www.shibuya-sakura-stage.com/access/",
+        "https://www.shibuya-sakura-stage.com/about/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N184",
+      "name": "新宿住友ビル 三角広場",
+      "area": "東京都新宿区・西新宿",
+      "primaryCategory": "巨大アトリウム・雨天・都市建築",
+      "matchedUserSeeds": [
+        "N177",
+        "N176"
+      ],
+      "similarityScore": 82,
+      "whySimilar": "都市の一部分だけを短時間で味わうマイクロ目的地。全天候型の巨大空間なので雨の日にも世界が切り替わる。",
+      "experience": "西新宿の高層街を走り、巨大なガラス屋根の三角広場へ。イベントがなくてもスケール感が終点になる。",
+      "roleProposal": "rainproof_atrium_micro_final",
+      "promotionLane": "conditional_same_day",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "新宿住友ビル駐車場",
+        "hours": "入庫7:00〜23:00・出庫7:00〜24:00",
+        "capacity": 325,
+        "dimensions": "高さ2.1m・幅2.5m・長さ6.0m・重量3t（S-Park掲載）",
+        "status": "public_authority_listing"
+      },
+      "wideVehicleStatus": "dimensions_likely_fit_reconfirm_entry",
+      "directRoadStopAllowed": false,
+      "mapQuery": "新宿住友ビル 三角広場",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%AE%BF%E4%BD%8F%E5%8F%8B%E3%83%93%E3%83%AB%20%E4%B8%89%E8%A7%92%E5%BA%83%E5%A0%B4",
+      "sourceUrls": [
+        "https://www.sumitomo-sankakuhiroba.jp/",
+        "https://www.s-park.jp/map/504038"
+      ],
+      "sourceStatus": "official_plus_public_parking_registry",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N185",
+      "name": "BMW GROUP Tokyo Bay",
+      "area": "東京都江東区・青海",
+      "primaryCategory": "自動車文化・ブランド拠点・試乗",
+      "matchedUserSeeds": [
+        "N020"
+      ],
+      "similarityScore": 93,
+      "whySimilar": "A PIT東雲で示された『車そのものを目的地にする』嗜好の最も直接的な兄弟候補。湾岸道路とブランド体験が連続する。",
+      "experience": "多数のBMW/MINIを眺め、予約可能なら湾岸を短時間試乗する。車好きが車で向かう必然性が強い。",
+      "roleProposal": "automotive_culture_final",
+      "promotionLane": "live_business_hours_and_program_gate",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "施設駐車場または青海周辺時間貸し",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_detail_pending"
+      },
+      "wideVehicleStatus": "unverified_exclude",
+      "directRoadStopAllowed": false,
+      "mapQuery": "BMW GROUP Tokyo Bay",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=BMW%20GROUP%20Tokyo%20Bay",
+      "sourceUrls": [
+        "https://www.bmw.co.jp/ja/more-bmw/bmw-experience/bmw-group-tokyo-bay.html"
+      ],
+      "sourceStatus": "official_experience_parking_pending",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N186",
+      "name": "TREX KAWASAKI RIVER CAFE",
+      "area": "神奈川県川崎市川崎区・殿町",
+      "primaryCategory": "河川・空港景観・ガレージカフェ",
+      "matchedUserSeeds": [
+        "N020",
+        "N178"
+      ],
+      "similarityScore": 88,
+      "whySimilar": "A PITの車文化とキラナガーデンの屋外食を、多摩川・羽田空港の景観へ接続する。",
+      "experience": "キングスカイフロントを走り、芝生と多摩川越しの空港景観があるカフェへ。昼から夜まで、短い食事でも遠出感が出る。",
+      "roleProposal": "riverfront_food_final",
+      "promotionLane": "live_hours_and_parking_gate",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "ホテル・施設周辺コインパーキング",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_terms_pending"
+      },
+      "wideVehicleStatus": "unverified_exclude",
+      "directRoadStopAllowed": false,
+      "mapQuery": "TREX KAWASAKI RIVER CAFE",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=TREX%20KAWASAKI%20RIVER%20CAFE",
+      "sourceUrls": [
+        "https://www.trex.style/cafe/"
+      ],
+      "sourceStatus": "official_experience_parking_pending",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N187",
+      "name": "WILD MAGIC The Rainbow Farm",
+      "area": "東京都江東区・豊洲",
+      "primaryCategory": "湾岸BBQ・都市アウトドア・予約体験",
+      "matchedUserSeeds": [
+        "N178"
+      ],
+      "similarityScore": 96,
+      "whySimilar": "キラナガーデン豊洲と最も近い体験DNA。湾岸の夜、予約、食、屋外空間、グループ利用を別の世界観で提供。",
+      "experience": "豊洲の高層街の足元で、照明とテントに囲まれた都市アウトドアへ入る。予約が取れた夜だけ強い目的地になる。",
+      "roleProposal": "reserved_waterfront_food_final",
+      "promotionLane": "active_reservation_only",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "予約区画・近隣駐車場",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "booth_dependent_official_recheck"
+      },
+      "eligibility": {
+        "requiresActiveReservation": true,
+        "generalPublicRecommendation": false
+      },
+      "wideVehicleStatus": "unverified_exclude",
+      "directRoadStopAllowed": false,
+      "mapQuery": "WILD MAGIC The Rainbow Farm",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=WILD%20MAGIC%20The%20Rainbow%20Farm",
+      "sourceUrls": [
+        "https://wildmagic.jp/",
+        "https://wildmagic.jp/faq"
+      ],
+      "sourceStatus": "official_primary_operational_detail_recheck",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N188",
+      "name": "DREAM DOOR YOKOHAMA HAMMERHEAD",
+      "area": "神奈川県横浜市中区・新港",
+      "primaryCategory": "港湾BBQ・都市アウトドア・予約体験",
+      "matchedUserSeeds": [
+        "N178"
+      ],
+      "similarityScore": 87,
+      "whySimilar": "キラナガーデンの湾岸食体験を横浜港へ拡張。海・観覧車・倉庫街の夜景が到着背景になる。",
+      "experience": "みなとみらいを抜け、港の公園内にあるアウトドア空間へ。予約枠と天候が合う日だけ、強い食の終点になる。",
+      "roleProposal": "reserved_harbor_food_final",
+      "promotionLane": "active_reservation_weather_gate",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "横浜ハンマーヘッド周辺駐車場",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_anchor_recheck_required"
+      },
+      "eligibility": {
+        "requiresActiveReservation": true,
+        "generalPublicRecommendation": false
+      },
+      "wideVehicleStatus": "unverified_exclude",
+      "directRoadStopAllowed": false,
+      "mapQuery": "DREAM DOOR YOKOHAMA HAMMERHEAD",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=DREAM%20DOOR%20YOKOHAMA%20HAMMERHEAD",
+      "sourceUrls": [
+        "https://yokohama.dreamdoor.jp/",
+        "https://yokohama.dreamdoor.jp/space_wf"
+      ],
+      "sourceStatus": "official_primary_parking_pending",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N189",
+      "name": "The Okura Tokyo・到着ロビー",
+      "area": "東京都港区・虎ノ門",
+      "primaryCategory": "ホテル建築・ロビー・食・到着体験",
+      "matchedUserSeeds": [
+        "N085",
+        "N179"
+      ],
+      "similarityScore": 86,
+      "whySimilar": "麻布台ヒルズの建築性とトイ・ストーリーホテルの『入口から世界が始まる』感覚を、静かな高級ホテル到着へ変換。",
+      "experience": "坂と石垣を上がり、車寄せからロビーの意匠へ。レストランやバー利用と組み合わせ、到着そのものを夜の一区切りにする。",
+      "roleProposal": "hotel_architecture_food_final",
+      "promotionLane": "active_restaurant_bar_or_stay_intent",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "The Okura Tokyo 駐車場",
+        "hours": "施設利用時間に連動",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_discount_confirmed_dimensions_pending"
+      },
+      "eligibility": {
+        "requiresFacilityUseIntent": true,
+        "generalPublicDriveThrough": false
+      },
+      "wideVehicleStatus": "entry_dimensions_recheck",
+      "directRoadStopAllowed": false,
+      "mapQuery": "The Okura Tokyo",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=The%20Okura%20Tokyo",
+      "sourceUrls": [
+        "https://theokuratokyo.jp/en/hotel-location/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N190",
+      "name": "ホテルニューグランド・正面到着",
+      "area": "神奈川県横浜市中区・山下町",
+      "primaryCategory": "歴史的ホテル・建築・食・港",
+      "matchedUserSeeds": [
+        "N179",
+        "N178"
+      ],
+      "similarityScore": 85,
+      "whySimilar": "ホテルの入口で世界観が切り替わる点と、湾岸・食の文脈を兼ねる。近代建築を『泊まらずとも利用目的を持って到着する』候補。",
+      "experience": "山下公園沿いを走り、歴史的な正面玄関と本館ロビーへ。食事・喫茶と組み合わせると短時間でも旅の終点になる。",
+      "roleProposal": "historic_hotel_food_final",
+      "promotionLane": "active_restaurant_cafe_or_stay_intent",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "ホテルニューグランド駐車場",
+        "hours": "施設利用時間に連動",
+        "capacity": 118,
+        "dimensions": null,
+        "status": "official_confirmed"
+      },
+      "eligibility": {
+        "requiresFacilityUseIntent": true,
+        "generalPublicDriveThrough": false
+      },
+      "wideVehicleStatus": "dimensions_recheck",
+      "directRoadStopAllowed": false,
+      "mapQuery": "ホテルニューグランド",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89",
+      "sourceUrls": [
+        "https://www.hotel-newgrand.co.jp/access/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N191",
+      "name": "東京ディズニーランドホテル・エントランス到着",
+      "area": "千葉県浦安市・舞浜",
+      "primaryCategory": "ホテル建築・世界観・条件付き到着",
+      "matchedUserSeeds": [
+        "N179"
+      ],
+      "similarityScore": 94,
+      "whySimilar": "トイ・ストーリーホテルの入口サイン嗜好を、ヴィクトリア朝の正面ファサードと車寄せへ拡張。",
+      "experience": "舞浜の環状道路からホテル正面へ入り、建築とロビーでテーマパーク外の世界観を味わう。宿泊やレストラン等の明確な利用目的がある時だけ表示。",
+      "roleProposal": "hotel_world_portal_final",
+      "promotionLane": "active_stay_or_confirmed_facility_use_only",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "東京ディズニーランドホテル駐車場",
+        "hours": "宿泊者はチェックイン日0:00から利用可・ホテル入館は6:00以降",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_guest_rules_confirmed"
+      },
+      "eligibility": {
+        "requiresActiveHotelStayOrConfirmedFacilityUse": true,
+        "generalPublicRecommendation": false
+      },
+      "wideVehicleStatus": "official_dimensions_recheck",
+      "directRoadStopAllowed": false,
+      "mapQuery": "東京ディズニーランドホテル",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%9B%E3%83%86%E3%83%AB",
+      "sourceUrls": [
+        "https://www.tokyodisneyresort.jp/hotel/tdh/access/car.html",
+        "https://faq.tokyodisneyresort.jp/"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N192",
+      "name": "東京ディズニーシー・ファンタジースプリングスホテル到着",
+      "area": "千葉県浦安市・舞浜",
+      "primaryCategory": "ホテル建築・世界観・宿泊者限定",
+      "matchedUserSeeds": [
+        "N179"
+      ],
+      "similarityScore": 95,
+      "whySimilar": "宿泊日の入口体験を目的地化するというN179の設計を、そのまま別の世界観へ広げる最重要兄弟候補。",
+      "experience": "一般のパーク駐車場とは別のホテル専用動線へ入り、宿泊者だけが到達できるファンタジー世界の玄関を体験。",
+      "roleProposal": "guest_only_world_portal_final",
+      "promotionLane": "active_hotel_booking_only",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "ファンタジースプリングスホテル宿泊者専用駐車場",
+        "hours": "宿泊規約に連動",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_guest_only"
+      },
+      "eligibility": {
+        "requiresActiveHotelStay": true,
+        "generalPublicRecommendation": false
+      },
+      "wideVehicleStatus": "official_dimensions_recheck",
+      "directRoadStopAllowed": false,
+      "mapQuery": "東京ディズニーシー ファンタジースプリングスホテル",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%82%B7%E3%83%BC%20%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB",
+      "sourceUrls": [
+        "https://www.tokyodisneyresort.jp/hotel/fsh/access/car.html"
+      ],
+      "sourceStatus": "official_primary",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N193",
+      "name": "ラーメン道楽 鮫洲店",
+      "area": "東京都品川区・東大井",
+      "primaryCategory": "24時間食・第一京浜・深夜ドライブ",
+      "matchedUserSeeds": [
+        "N180"
+      ],
+      "similarityScore": 93,
+      "whySimilar": "ホープ軒の『24時間ラーメンが出発理由になる』DNAを、第一京浜の走行文脈へ移す。蒲田から近く短時間でも成立。",
+      "experience": "第一京浜を北上し、24時間営業のラーメンへ。観光感は薄いが、深夜の道路と食が一つの体験になる。",
+      "roleProposal": "late_night_food_final",
+      "promotionLane": "instant_after_live_parking_gate",
+      "timeFit": [
+        "late_night",
+        "early_morning"
+      ],
+      "store": {
+        "hours": "24時間（5:30〜6:00メンテナンス休止）",
+        "closedDays": "年中無休"
+      },
+      "parking": {
+        "anchor": "鮫洲駅周辺時間貸し駐車場",
+        "hours": "24時間アンカーを出発前検索",
+        "capacity": null,
+        "dimensions": null,
+        "status": "no_dedicated_parking_live_check_required"
+      },
+      "wideVehicleStatus": "exact_anchor_required",
+      "directRoadStopAllowed": false,
+      "mapQuery": "ラーメン道楽 鮫洲店",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E9%81%93%E6%A5%BD%20%E9%AE%AB%E6%B4%B2%E5%BA%97",
+      "sourceUrls": [
+        "https://dr-t.co.jp/tenpo/ramen_samezu/"
+      ],
+      "sourceStatus": "official_store_parking_pending",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N194",
+      "name": "らーめん弁慶 門前仲町店",
+      "area": "東京都江東区・深川",
+      "primaryCategory": "深夜食・下町・運河ドライブ",
+      "matchedUserSeeds": [
+        "N180"
+      ],
+      "similarityScore": 91,
+      "whySimilar": "ホープ軒と同じ『古い東京の深夜ラーメン』だが、外苑ではなく隅田川・門前仲町・下町の夜道へ方向を変えられる。",
+      "experience": "橋と運河を渡って門前仲町へ入り、明け方前まで営業する背脂ラーメンを終点にする。",
+      "roleProposal": "late_night_food_final",
+      "promotionLane": "instant_after_live_parking_gate",
+      "timeFit": [
+        "late_night"
+      ],
+      "store": {
+        "hours": "11:00〜翌4:00",
+        "closedDays": "年中無休（臨時変更確認）"
+      },
+      "parking": {
+        "anchor": "門前仲町周辺時間貸し駐車場",
+        "hours": "出発直前に24時間・満空を確認",
+        "capacity": null,
+        "dimensions": null,
+        "status": "no_dedicated_parking_live_check_required"
+      },
+      "wideVehicleStatus": "exact_anchor_required",
+      "directRoadStopAllowed": false,
+      "mapQuery": "らーめん弁慶 門前仲町店",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%BC%81%E6%85%B6%20%E9%96%80%E5%89%8D%E4%BB%B2%E7%94%BA%E5%BA%97",
+      "sourceUrls": [
+        "https://www.ramenbenkei.com/",
+        "https://www.ramenbenkei.com/branch/"
+      ],
+      "sourceStatus": "official_store_parking_pending",
+      "canonicalExactDuplicate": null
+    },
+    {
+      "candidateId": "N211",
+      "name": "横浜ベイブリッジスカイウォーク",
+      "area": "神奈川県横浜市鶴見区・大黒ふ頭",
+      "branch": "bridge_destination",
+      "primaryCategory": "橋梁建築・港湾物流・展望",
+      "matchedWaypoints": [
+        "BW004",
+        "BW005"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 96,
+      "experience": "鶴見つばさ橋と横浜ベイブリッジを連続通過し、最後はベイブリッジ構造内部の展望施設へ入る。走る橋と歩く橋が一つの旅になる。",
+      "roleProposal": "calendar_gated_bridge_final",
+      "promotionLane": "opening_calendar_and_weather_gate",
+      "timeFit": [
+        "day",
+        "holiday"
+      ],
+      "parking": {
+        "anchor": "スカイウォーク隣接臨時駐車スペース",
+        "hours": "開館時間中のみ",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_usage_confirmed_dimensions_pending"
+      },
+      "eligibility": {
+        "requiresSkywalkUse": true,
+        "parkingAfterClosingProhibited": true
+      },
+      "wideVehicleStatus": "V0_dimensions_pending_exclude_over_1_90",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/kengaku/sw201905.html",
+        "https://www.city.yokohama.lg.jp/kanko-bunka/minato/kyakusen/sw201905-2.html"
+      ],
+      "sourceStatus": "official_primary_calendar_dynamic",
+      "mapQuery": "横浜ベイブリッジスカイウォーク",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A8%AA%E6%B5%9C%E3%83%99%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N212",
+      "name": "レインボーブリッジ遊歩道・お台場口",
+      "area": "東京都港区／江東区・レインボーブリッジ",
+      "branch": "bridge_destination",
+      "primaryCategory": "吊橋・遊歩道・都市展望",
+      "matchedWaypoints": [
+        "BW002",
+        "BW003"
+      ],
+      "destinationStrength": 88,
+      "discoveryValue": 91,
+      "experience": "一般道の下層を車で渡った後、合法駐車場から遊歩道へ入り、自分が通過した橋を歩いて味わう短時間の反転体験。",
+      "roleProposal": "daytime_walk_bridge_final",
+      "promotionLane": "walkway_hours_weather_and_parking_gate",
+      "timeFit": [
+        "day",
+        "sunset"
+      ],
+      "parking": {
+        "anchor": "お台場側の公共駐車場候補",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "anchor_selection_pending"
+      },
+      "eligibility": {
+        "walkwayHoursCheck": true,
+        "weatherGate": true
+      },
+      "wideVehicleStatus": "V0_anchor_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.kouwan.metro.tokyo.lg.jp/kanko/road/rainbowbridge",
+        "https://www.kouwan.metro.tokyo.lg.jp/data/pamphlet/rainbow"
+      ],
+      "sourceStatus": "official_bridge_parking_pending",
+      "mapQuery": "レインボーブリッジ遊歩道 お台場口",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E9%81%8A%E6%AD%A9%E9%81%93%20%E3%81%8A%E5%8F%B0%E5%A0%B4%E5%8F%A3",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N213",
+      "name": "豊洲 千客万来・江戸前夜食到着",
+      "area": "東京都江東区・豊洲六丁目",
+      "branch": "bridge_linked_waterfront_food",
+      "primaryCategory": "湾岸食・温浴・都市テーマ空間",
+      "matchedWaypoints": [
+        "BW007",
+        "BW008",
+        "BW012"
+      ],
+      "destinationStrength": 93,
+      "discoveryValue": 90,
+      "experience": "築地大橋・豊洲大橋で運河を連続して越え、江戸の市場街を再現した食空間へ入る。深夜は24時間温浴施設を別モードで扱う。",
+      "roleProposal": "waterfront_food_and_spa_final",
+      "promotionLane": "live_hours_parking_and_facility_mode_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "late_night_spa"
+      ],
+      "parking": {
+        "anchor": "豊洲 千客万来 専用駐車場",
+        "hours": "施設運用に連動",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_rate_confirmed_dimensions_pending"
+      },
+      "eligibility": {
+        "marketAndSpaModesSeparate": true
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.toyosu-senkyakubanrai.jp/",
+        "https://www.toyosu-senkyakubanrai.jp/faq",
+        "https://www.toyosu-market.or.jp/access/"
+      ],
+      "sourceStatus": "official_primary",
+      "mapQuery": "豊洲 千客万来",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E8%B1%8A%E6%B4%B2%20%E5%8D%83%E5%AE%A2%E4%B8%87%E6%9D%A5",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N214",
+      "name": "有明ガーデン・湾岸温浴と夜食",
+      "area": "東京都江東区・有明",
+      "branch": "bridge_linked_urban_resort",
+      "primaryCategory": "湾岸複合施設・温浴・食・雨天",
+      "matchedWaypoints": [
+        "BW002",
+        "BW008",
+        "BW012"
+      ],
+      "destinationStrength": 89,
+      "discoveryValue": 84,
+      "experience": "レインボーブリッジか豊洲大橋を経て、24時間駐車場を持つ巨大複合施設へ。雨天や深夜前の休憩目的に強い。",
+      "roleProposal": "rain_and_evening_resort_final",
+      "promotionLane": "live_facility_hours_and_event_congestion_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "有明ガーデン駐車場",
+        "hours": "24時間",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_hours_and_rates_confirmed_dimensions_pending"
+      },
+      "eligibility": {
+        "eventCongestionGate": true
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.shopping-sumitomo-rd.com/ariake/gaikumap/parking/"
+      ],
+      "sourceStatus": "official_primary",
+      "mapQuery": "有明ガーデン",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%89%E6%98%8E%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N215",
+      "name": "木更津かんらんしゃパーク キサラピア",
+      "area": "千葉県木更津市・金田東",
+      "branch": "bridge_linked_world_portal",
+      "primaryCategory": "観覧車・湾岸レジャー・アクアライン到着",
+      "matchedWaypoints": [
+        "BW006"
+      ],
+      "destinationStrength": 86,
+      "discoveryValue": 88,
+      "experience": "アクアラインの海底トンネルと海上橋を越えた先で、巨大観覧車が到着サインになる。短時間乗車でも『海を越えた』終点が成立。",
+      "roleProposal": "daytime_landmark_final",
+      "promotionLane": "business_hours_weather_and_adjacent_parking_gate",
+      "timeFit": [
+        "day",
+        "sunset"
+      ],
+      "parking": {
+        "anchor": "隣接WILD BEACH駐車場",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "adjacent_use_confirmed_detail_pending"
+      },
+      "eligibility": {
+        "attractionWeatherGate": true,
+        "adjacentParkingTermsCheck": true
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://kisarapia.com/",
+        "https://maruchiba.jp/spot/detail_10320.html"
+      ],
+      "sourceStatus": "official_plus_prefecture_tourism",
+      "mapQuery": "木更津かんらんしゃパーク キサラピア",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%A8%E6%9B%B4%E6%B4%A5%E3%81%8B%E3%82%93%E3%82%89%E3%82%93%E3%81%97%E3%82%83%E3%83%91%E3%83%BC%E3%82%AF%20%E3%82%AD%E3%82%B5%E3%83%A9%E3%83%94%E3%82%A2",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N216",
+      "name": "三井アウトレットパーク 木更津・アクアライン到着",
+      "area": "千葉県木更津市・金田東",
+      "branch": "bridge_linked_large_parking_destination",
+      "primaryCategory": "大型商業・食・車で成立する休憩終点",
+      "matchedWaypoints": [
+        "BW006"
+      ],
+      "destinationStrength": 84,
+      "discoveryValue": 74,
+      "experience": "アクアライン後に駐車導線が明確な大型施設へ入り、食事・買い物・休憩を確実に成立させる。未知性より運用安定性を担う。",
+      "roleProposal": "reliable_long_drive_final",
+      "promotionLane": "business_hours_and_live_parking_gate",
+      "timeFit": [
+        "day",
+        "evening"
+      ],
+      "parking": {
+        "anchor": "三井アウトレットパーク木更津 駐車場",
+        "hours": "施設営業時間に連動",
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_live_availability_map_dimensions_pending"
+      },
+      "eligibility": {
+        "facilityUseIntent": true
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://mitsui-shopping-park.com/mop/kisarazu/access/",
+        "https://mitsui-shopping-park.com/mop/kisarazu/info/pdf/map.pdf"
+      ],
+      "sourceStatus": "official_primary",
+      "mapQuery": "三井アウトレットパーク 木更津",
+      "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E4%BA%95%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%E3%83%91%E3%83%BC%E3%82%AF%20%E6%9C%A8%E6%9B%B4%E6%B4%A5",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N217",
+      "name": "羽田エアポートガーデン・空港温浴と夜食",
+      "area": "東京都大田区・羽田空港第3ターミナル隣接",
+      "branch": "bridge_linked_airport_resort",
+      "primaryCategory": "空港複合施設・温浴・食・雨天",
+      "matchedWaypoints": [
+        "BW013",
+        "BW014"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 88,
+      "experience": "大師橋または多摩川スカイブリッジで羽田へ入り、空港直結の食・温浴・ホテル街へ着く。飛行機に乗らない夜でも空港世界へ入れる。",
+      "roleProposal": "airport_resort_food_spa_final",
+      "promotionLane": "live_parking_and_facility_hours_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "late_night_spa",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "羽田エアポートガーデン A/B駐車場",
+        "hours": "24時間",
+        "capacity": 443,
+        "dimensions": {
+          "heightM": 2.3,
+          "widthM": 2.1,
+          "lengthM": 5.5
+        },
+        "status": "official_capacity_and_reservation_dimensions_confirmed"
+      },
+      "wideVehicleStatus": "V1_entry_limit_confirmed_V2_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.shopping-sumitomo-rd.com/haneda/parkingsite/howto/",
+        "https://www.tokyo-haneda.com/access/parking/index.html"
+      ],
+      "sourceStatus": "official_primary",
+      "mapQuery": "羽田エアポートガーデン",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N218",
+      "name": "横浜ハンマーヘッド・港の食と客船ターミナル",
+      "area": "神奈川県横浜市中区・新港",
+      "branch": "bridge_linked_harbor_food",
+      "primaryCategory": "港湾建築・食・客船・夜景",
+      "matchedWaypoints": [
+        "BW004",
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 93,
+      "discoveryValue": 91,
+      "experience": "鶴見つばさ橋、横浜ベイブリッジ、大黒大橋から横浜港へ入り、海へ突き出す客船ターミナルと食の施設へ着く。",
+      "roleProposal": "harbor_architecture_food_final",
+      "promotionLane": "live_parking_congestion_and_vehicle_fit_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "横浜ハンマーヘッド第1〜第3駐車場",
+        "hours": "24時間",
+        "capacity": 350,
+        "dimensions": {
+          "heightM": 2.1,
+          "widthM": 1.9,
+          "lengthM": 5.0,
+          "weightT": 2.5
+        },
+        "status": "official_confirmed"
+      },
+      "wideVehicleStatus": "over_1_90_exclude_primary_anchor",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.hammerhead.co.jp/access/"
+      ],
+      "sourceStatus": "official_primary_dynamic_congestion",
+      "mapQuery": "横浜ハンマーヘッド",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N219",
+      "name": "Kアリーナ横浜・ミュージックテラス到着",
+      "area": "神奈川県横浜市西区・みなとみらい",
+      "branch": "bridge_linked_music_architecture",
+      "primaryCategory": "巨大音楽建築・飲食・夜景",
+      "matchedWaypoints": [
+        "BW004",
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 90,
+      "experience": "港湾橋を連続して横浜へ入り、巨大な音楽アリーナと水際の高層街へ着く。公演がない日も建築と飲食を目的化し、公演日は予約制駐車を別モードにする。",
+      "roleProposal": "music_architecture_and_event_final",
+      "promotionLane": "event_calendar_parking_reservation_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "event"
+      ],
+      "parking": {
+        "anchor": "ミュージックテラス駐車場P1",
+        "hours": "7:00〜23:00（23:00〜7:00出庫不可）",
+        "capacity": null,
+        "dimensions": {
+          "heightM": 2.8,
+          "widthM": 2.3,
+          "lengthM": 5.0,
+          "weightT": 4.0
+        },
+        "status": "official_confirmed_event_dynamic"
+      },
+      "wideVehicleStatus": "V1_entry_limit_confirmed_V2_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://k-arena.com/access/"
+      ],
+      "sourceStatus": "official_primary_event_dynamic",
+      "mapQuery": "Kアリーナ横浜 ミュージックテラス",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N220",
+      "name": "横浜シンフォステージ・新高島都市ゲート",
+      "area": "神奈川県横浜市西区・新高島",
+      "branch": "bridge_linked_urban_gateway",
+      "primaryCategory": "再開発・音楽・巨大建築・都市到着",
+      "matchedWaypoints": [
+        "BW004",
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 86,
+      "discoveryValue": 88,
+      "experience": "港湾橋を抜けた後、新高島の新しい複合街区へ入る。駐車場から建築・音楽・ホテルの共用空間へ上がる短時間の都市到着。",
+      "roleProposal": "urban_music_gateway_final",
+      "promotionLane": "parking_details_and_business_hours_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "横浜シンフォステージ駐車場",
+        "hours": null,
+        "capacity": null,
+        "dimensions": null,
+        "status": "official_access_exists_details_pending"
+      },
+      "wideVehicleStatus": "V0_details_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.yokohama-symphostage.com/access"
+      ],
+      "sourceStatus": "official_access_parking_detail_pending",
+      "mapQuery": "横浜シンフォステージ",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N221",
+      "name": "横浜赤レンガ倉庫・港湾歴史到着",
+      "area": "神奈川県横浜市中区・新港",
+      "branch": "bridge_linked_harbor_history",
+      "primaryCategory": "港湾歴史・煉瓦建築・食・イベント",
+      "matchedWaypoints": [
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 92,
+      "discoveryValue": 85,
+      "experience": "横浜港の橋とコンテナ街を抜け、煉瓦倉庫と海辺の広場へ到着する。夜は建物の照明が明確な終点になる。",
+      "roleProposal": "harbor_history_food_final",
+      "promotionLane": "live_parking_event_congestion_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "event"
+      ],
+      "parking": {
+        "anchor": "横浜赤レンガ倉庫P1・P2",
+        "hours": "24時間",
+        "capacity": 179,
+        "dimensions": null,
+        "status": "official_capacity_hours_confirmed_dimensions_pending"
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.yokohama-akarenga.jp/access/index.html"
+      ],
+      "sourceStatus": "official_primary_event_dynamic",
+      "mapQuery": "横浜赤レンガ倉庫",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N222",
+      "name": "横浜美術館・大空間アート到着",
+      "area": "神奈川県横浜市西区・みなとみらい",
+      "branch": "bridge_linked_rain_architecture",
+      "primaryCategory": "美術館・巨大建築・雨天・カフェ",
+      "matchedWaypoints": [
+        "BW004",
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 89,
+      "discoveryValue": 86,
+      "experience": "港の橋を経て、みなとみらいの軸線上にある大きな美術館へ入る。雨天でも駐車から建築・展示・カフェまで体験が崩れにくい。",
+      "roleProposal": "museum_architecture_rain_final",
+      "promotionLane": "exhibition_calendar_and_parking_hours_gate",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "横浜美術館駐車場",
+        "hours": "10:00〜21:00（21:00完全閉鎖）",
+        "capacity": null,
+        "dimensions": {
+          "heightM": 2.6,
+          "widthM": 2.5,
+          "indoorHeightM": 2.1
+        },
+        "status": "official_dimensions_and_hours_confirmed"
+      },
+      "wideVehicleStatus": "V1_entry_limit_confirmed_V2_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://yokohama.art.museum/visit/access/"
+      ],
+      "sourceStatus": "official_primary_exhibition_dynamic",
+      "mapQuery": "横浜美術館",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N223",
+      "name": "横浜ワールドポーターズ・運河夜景と映画",
+      "area": "神奈川県横浜市中区・新港",
+      "branch": "bridge_linked_all_weather_entertainment",
+      "primaryCategory": "映画・食・買物・運河・雨天",
+      "matchedWaypoints": [
+        "BW005",
+        "BW021"
+      ],
+      "destinationStrength": 85,
+      "discoveryValue": 78,
+      "experience": "橋を渡るドライブの後に、運河沿いの大型複合施設で映画・食・休憩を確実に成立させる安定型終点。",
+      "roleProposal": "all_weather_entertainment_final",
+      "promotionLane": "live_parking_specific_day_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "parking": {
+        "anchor": "横浜ワールドポーターズ駐車場",
+        "hours": "7:00〜24:00（最終出庫25:00、留め置き不可）",
+        "capacity": 800,
+        "dimensions": {
+          "heightM": 2.2
+        },
+        "status": "official_capacity_hours_confirmed_width_pending"
+      },
+      "wideVehicleStatus": "V0_width_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.yim.co.jp/static-pages/access"
+      ],
+      "sourceStatus": "official_primary_specific_day_dynamic",
+      "mapQuery": "横浜ワールドポーターズ",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N224",
+      "name": "首都高MMパーク",
+      "area": "神奈川県横浜市西区・みなとみらい",
+      "branch": "road_infrastructure_culture",
+      "primaryCategory": "首都高・道路技術・インフラ展示",
+      "matchedCorridors": [
+        "IC002",
+        "IC003",
+        "IC010",
+        "IC011"
+      ],
+      "destinationStrength": 93,
+      "discoveryValue": 94,
+      "experience": "横浜北線や大黒JCTを実際に走ったあと、その道路の防災・標識・パトロール・建設技術を展示で回収する。",
+      "roleProposal": "road_infrastructure_museum_final",
+      "promotionLane": "live_opening_calendar_gate",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "operation": {
+        "hours": "10:00〜16:30",
+        "closed": "月曜（祝日の場合は翌平日）ほか公式カレンダー",
+        "admission": "公式案内上は来場案内を確認",
+        "liveChecks": [
+          "開館カレンダー",
+          "混雑・イベント"
+        ]
+      },
+      "parking": {
+        "anchor": "みなとみらい周辺の合法な時間貸し駐車場",
+        "status": "exact_primary_anchor_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_anchor_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.shutoko.jp/fun/sisetsu_goannai/mm_park/"
+      ],
+      "sourceStatus": "official_primary",
+      "mapQuery": "首都高MMパーク",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N225",
+      "name": "羽田イノベーションシティ・足湯スカイデッキ",
+      "area": "東京都大田区・天空橋",
+      "branch": "airport_future_city",
+      "primaryCategory": "空港都市・先端技術・飛行機・足湯",
+      "matchedCorridors": [
+        "IC004",
+        "IC006"
+      ],
+      "destinationStrength": 96,
+      "discoveryValue": 91,
+      "experience": "大師トンネルや川崎港の工業道路から羽田へ戻り、未来都市の歩行者デッキと飛行機の見える足湯へ上がる。",
+      "roleProposal": "airport_future_city_micro_final",
+      "promotionLane": "live_parking_and_facility_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain_partial"
+      ],
+      "operation": {
+        "hours": "施設・店舗・足湯は個別営業時間",
+        "liveChecks": [
+          "足湯スカイデッキの当日利用状況",
+          "イベントによる駐車制限"
+        ]
+      },
+      "parking": {
+        "anchor": "HICity P1東側平面駐車場",
+        "hours": "24時間",
+        "capacity": 190,
+        "secondaryAnchor": "P2機械式駐車場（7:00〜23:00、工事・利用停止を当日確認）",
+        "status": "official_current_primary_capacity",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending_use_P1_only",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://haneda-innovation-city.com/access/",
+        "https://haneda-innovation-city.com/facility/",
+        "https://haneda-innovation-city.com/news/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "HANEDA INNOVATION CITY",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N226",
+      "name": "海の森水上競技場",
+      "area": "東京都江東区・海の森",
+      "branch": "port_infrastructure_destination",
+      "primaryCategory": "巨大スポーツインフラ・埋立地・水面",
+      "matchedCorridors": [
+        "IC005",
+        "IC007"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 95,
+      "experience": "東京港臨海トンネルやゲートブリッジを経て、都市の端にある巨大な水上競技場へ到着する。道路・埋立地・水面のスケールが揃う。",
+      "roleProposal": "daytime_infrastructure_final",
+      "promotionLane": "calendar_access_and_event_gate",
+      "timeFit": [
+        "day"
+      ],
+      "operation": {
+        "hours": "9:00〜17:00",
+        "closed": "年末年始、イベント貸切・利用規制あり",
+        "liveChecks": [
+          "当日の施設利用可否",
+          "イベント・駐車場規制",
+          "中防内6号線の22:00〜翌5:00通行止め",
+          "ゲートブリッジ側臨時ルート開放日"
+        ]
+      },
+      "parking": {
+        "anchor": "海の森水上競技場 有料駐車場",
+        "hours": "9:00〜17:00",
+        "price": "普通車500円/日（イベント時変更あり）",
+        "status": "official_confirmed",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.uminomori.tokyo/access/",
+        "https://www.uminomori.tokyo/about/",
+        "https://www.uminomori.tokyo/category/news/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "海の森水上競技場",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N227",
+      "name": "三菱みなとみらい技術館",
+      "area": "神奈川県横浜市西区・みなとみらい",
+      "branch": "industrial_technology_museum",
+      "primaryCategory": "陸海空宇宙・重工業・技術展示",
+      "matchedCorridors": [
+        "IC002",
+        "IC003",
+        "IC010",
+        "IC011"
+      ],
+      "destinationStrength": 92,
+      "discoveryValue": 93,
+      "experience": "港湾トンネルと立体JCTを走った後、船・航空・宇宙・エネルギーの巨大技術を実機や大型模型で見る。",
+      "roleProposal": "industrial_technology_museum_final",
+      "promotionLane": "live_opening_calendar_gate",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "operation": {
+        "hours": "平日10:00〜15:00、土日祝10:00〜16:00",
+        "closed": "火曜・水曜（祝日の場合は翌日）、年末年始・特定休館日",
+        "admission": "大人500円",
+        "liveChecks": [
+          "開館カレンダー",
+          "入館者数制限・混雑"
+        ]
+      },
+      "parking": {
+        "anchor": "KDX横浜みなとみらいタワー地下駐車場",
+        "capacity": 463,
+        "discount": "館との割引提携なし",
+        "status": "official_capacity_confirmed_dimensions_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.mhi.com/jp/company/overview/museum/minatomirai/about_museum/opening_day.html",
+        "https://www.mhi.com/jp/company/overview/museum/minatomirai/about_museum/faq.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "三菱みなとみらい技術館",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N228",
+      "name": "日産エンジンミュージアム・横浜工場ゲストホール",
+      "area": "神奈川県横浜市神奈川区・宝町",
+      "branch": "automotive_industrial_heritage",
+      "primaryCategory": "自動車産業・歴史建築・エンジン",
+      "matchedCorridors": [
+        "IC002",
+        "IC010",
+        "IC011"
+      ],
+      "destinationStrength": 96,
+      "discoveryValue": 96,
+      "experience": "生麦JCTや横浜北トンネルを抜け、日産発祥の工場に残る歴史的建造物と歴代エンジンへ到着する。車で行く必然性が非常に強い。",
+      "roleProposal": "automotive_industrial_heritage_final",
+      "promotionLane": "weekday_factory_calendar_gate",
+      "timeFit": [
+        "weekday_day",
+        "rain"
+      ],
+      "operation": {
+        "hours": "10:00〜16:00、最終入館15:30",
+        "admission": "無料",
+        "reservation": "ゲストホール自由見学。工場見学は予約制",
+        "closed": "土日、工場非稼働日、GW・夏季・年末年始",
+        "liveChecks": [
+          "当日の工場稼働・休館情報",
+          "夏季休暇・特別企画"
+        ]
+      },
+      "parking": {
+        "anchor": "来場者用駐車条件を事前にゲストホールへ確認",
+        "status": "official_vehicle_access_but_public_bay_conditions_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_phone_check_required",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.nissan-global.com/JP/PLANT/YOKOHAMA/",
+        "https://www.nissan-global.com/JP/PLANT/TOUR/VISIT/YOKOHAMA/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "日産自動車 横浜工場 ゲストホール",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N229",
+      "name": "横浜マリンタワー・夜の港到着",
+      "area": "神奈川県横浜市中区・山下町",
+      "branch": "night_harbor_landmark",
+      "primaryCategory": "港湾ランドマーク・展望・夜景・食",
+      "matchedCorridors": [
+        "IC006",
+        "IC008",
+        "IC010"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 87,
+      "experience": "川崎港海底トンネルや大黒JCTを抜け、横浜港を360度見渡す灯台型ランドマークで走行を回収する。",
+      "roleProposal": "night_harbor_landmark_final",
+      "promotionLane": "live_weather_ticket_and_parking_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "night"
+      ],
+      "operation": {
+        "hours": "10:00〜22:00、最終入場は時間帯別",
+        "liveChecks": [
+          "強風・天候による展望フロア休止",
+          "メンテナンス休館日",
+          "特定日料金"
+        ]
+      },
+      "parking": {
+        "anchor": "山下公園・中華街周辺の合法な時間貸し駐車場",
+        "status": "facility_dedicated_anchor_not_confirmed",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_anchor_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://marinetower.yokohama/price-hours/",
+        "https://marinetower.yokohama/faq/",
+        "https://marinetower.yokohama/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "横浜マリンタワー",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N230",
+      "name": "川崎マリエン・港湾展望室",
+      "area": "神奈川県川崎市川崎区・東扇島",
+      "branch": "industrial_port_observation",
+      "primaryCategory": "港湾・物流島・展望・飛行機・船舶",
+      "matchedWaypoints": [
+        "川崎港海底トンネル",
+        "大師橋",
+        "多摩川スカイブリッジ"
+      ],
+      "destinationStrength": 98,
+      "discoveryValue": 96,
+      "experience": "川崎港海底トンネルで物流島へ入り、地上51mの展望室から川崎港、船舶、羽田発着機を見渡す。走行した港湾世界を最も素直に回収できる。",
+      "roleProposal": "industrial_port_observation_final",
+      "promotionLane": "live_access_and_parking_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "operation": {
+        "hours": "9:00〜21:00（入館20:30まで）",
+        "closed": "年末年始",
+        "admission": "無料",
+        "liveChecks": [
+          "最新の施設案内",
+          "イベント・貸切",
+          "展望室利用制限"
+        ]
+      },
+      "parking": {
+        "anchor": "川崎マリエン駐車場",
+        "status": "official_large_parking_exact_dimensions_pending",
+        "nightRestriction": "22:30〜6:00は入出場に一部制限あり",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.city.kawasaki.jp/880/page/0000047241.html",
+        "https://www.city.kawasaki.jp/580/page/0000041705.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "川崎マリエン",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N231",
+      "name": "川崎市役所本庁舎・展望ロビー",
+      "area": "神奈川県川崎市川崎区・宮本町",
+      "branch": "urban_civic_observation",
+      "primaryCategory": "都市建築・市庁舎・展望・歴史展示",
+      "matchedWaypoints": [
+        "大師橋",
+        "六郷橋",
+        "川崎港海底トンネル"
+      ],
+      "destinationStrength": 91,
+      "discoveryValue": 89,
+      "experience": "川崎の工業道路や多摩川の橋を走った後、新庁舎25階から市街地・東京・横浜方面を見渡す。雨天時は屋内展望ロビーだけでも成立する。",
+      "roleProposal": "urban_civic_micro_final",
+      "promotionLane": "parking_vehicle_width_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "operation": {
+        "hours": "9:00〜21:00、年末年始を除く",
+        "admission": "無料",
+        "liveChecks": [
+          "周辺イベントによる見学制限",
+          "荒天時のスカイデッキ閉鎖"
+        ]
+      },
+      "parking": {
+        "anchor": "川崎市役所本庁舎駐車場",
+        "hours": "24時間",
+        "capacity": 140,
+        "limits": {
+          "widthM": 1.9,
+          "lengthM": 5.0,
+          "heightM": 2.1,
+          "weightT": 2.5
+        },
+        "discountRule": "展望ロビー等の見学のみは1時間無料措置の対象外",
+        "status": "official_confirmed_narrow"
+      },
+      "wideVehicleStatus": "V1_EXCLUDE_IF_WIDTH_OVER_1_9",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.city.kawasaki.jp/170/page/0000153797.html",
+        "https://www.city.kawasaki.jp/templates/faq/230/0000011929.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "川崎市役所 本庁舎",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N232",
+      "name": "がすてなーに ガスの科学館・閉館前限定",
+      "area": "東京都江東区・豊洲",
+      "branch": "time_limited_infrastructure_museum",
+      "primaryCategory": "エネルギー・都市インフラ・湾岸建築・期間限定",
+      "matchedWaypoints": [
+        "レインボーブリッジ下層",
+        "豊洲大橋",
+        "晴海大橋",
+        "築地大橋"
+      ],
+      "destinationStrength": 97,
+      "discoveryValue": 98,
+      "experience": "複数の湾岸橋を渡った後、都市を動かすガスとエネルギーの展示へ入る。2026年9月23日の閉館前だけ成立する、期限付きの優先候補。",
+      "roleProposal": "urgent_time_limited_infrastructure_final",
+      "promotionLane": "active_until_closure_date",
+      "timeFit": [
+        "day",
+        "rain"
+      ],
+      "operation": {
+        "hours": "9:30〜17:00（入館16:30まで）",
+        "closed": "月曜（祝日の場合は翌日）・年末年始・施設点検日",
+        "admission": "無料",
+        "expiryDate": "2026-09-23",
+        "liveChecks": [
+          "臨時休館",
+          "閉館関連イベント・混雑"
+        ]
+      },
+      "parking": {
+        "anchor": "施設無料駐車場",
+        "hours": "9:30〜17:00",
+        "capacity": 40,
+        "useRestriction": "施設見学者専用",
+        "status": "official_confirmed_capacity_dimensions_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.gas-kagakukan.com/",
+        "https://www.gas-kagakukan.com/access/index.html"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "がすてなーに ガスの科学館",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N233",
+      "name": "TOKYOミナトリエ・東京港100m展望",
+      "area": "東京都江東区・青海",
+      "branch": "port_city_exhibition",
+      "primaryCategory": "東京港・都市模型・高層展望・雨天",
+      "matchedWaypoints": [
+        "東京港トンネル・国道357号一般部",
+        "レインボーブリッジ下層",
+        "海の森大橋"
+      ],
+      "destinationStrength": 95,
+      "discoveryValue": 94,
+      "experience": "東京港トンネルや臨海部を走った後、地上約100mから港を眺め、大型模型と展示で東京港の過去・現在・未来を回収する。",
+      "roleProposal": "port_city_exhibition_final",
+      "promotionLane": "live_hours_and_parking_anchor_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "rain"
+      ],
+      "operation": {
+        "hours": "火〜木・日10:00〜18:00、金土・祝前日10:00〜21:00（最終入室30分前）",
+        "closed": "月曜・年末年始",
+        "admission": "無料",
+        "liveChecks": [
+          "公式サイトの最新開室情報",
+          "イベント・臨時休室"
+        ]
+      },
+      "parking": {
+        "anchor": "青海・テレコムセンター周辺の合法な時間貸し駐車場",
+        "status": "dedicated_parking_not_confirmed",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_anchor_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "http://www.tokyoport.or.jp/minatorie/",
+        "https://www.twr.co.jp/Default.aspx?TabId=162",
+        "https://www.yurikamome.co.jp/sightseeing/facility/000646.html"
+      ],
+      "sourceStatus": "facility_operator_and_transit_operator_current",
+      "mapQuery": "TOKYO ミナトリエ",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N234",
+      "name": "東京国際クルーズターミナル・送迎デッキ",
+      "area": "東京都江東区・青海",
+      "branch": "port_architecture_arrival",
+      "primaryCategory": "港湾建築・大型客船・送迎デッキ・到着演出",
+      "matchedWaypoints": [
+        "東京港トンネル・国道357号一般部",
+        "レインボーブリッジ下層",
+        "海の森大橋"
+      ],
+      "destinationStrength": 96,
+      "discoveryValue": 95,
+      "experience": "海底トンネルやレインボーブリッジを抜け、巨大客船を受け入れる港の玄関口へ到着する。船がいない日でも建築と送迎デッキが短時間目的地になる。",
+      "roleProposal": "port_architecture_micro_final",
+      "promotionLane": "ship_calendar_and_parking_gate",
+      "timeFit": [
+        "day",
+        "rain_partial"
+      ],
+      "operation": {
+        "hours": "通常9:00〜17:00、客船寄港時は変動",
+        "closed": "12/29〜1/3を基本とし寄港時例外あり",
+        "liveChecks": [
+          "客船入出港予定",
+          "一般開放フロア",
+          "駐車場利用制限",
+          "イベント"
+        ]
+      },
+      "parking": {
+        "anchor": "ターミナル内普通駐車場",
+        "hours": "一般開放時9:00〜17:15",
+        "capacity": 25,
+        "limits": {
+          "widthM": 2.3,
+          "lengthM": 5.0,
+          "heightM": 2.5
+        },
+        "status": "official_confirmed_but_ship_priority",
+        "notes": [
+          "留め置き不可",
+          "満車・寄港・催事で入出庫規制あり"
+        ]
+      },
+      "wideVehicleStatus": "V1_ENTRY_LIMIT_CONFIRMED_PRACTICAL_SPACE_PENDING",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.tptc.co.jp/terminal/guide/cruise",
+        "https://www.tptc.co.jp/terminal/guide/cruise/parking"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "東京国際クルーズターミナル",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N235",
+      "name": "千葉ポートタワー・湾岸ロング終点",
+      "area": "千葉県千葉市中央区・中央港",
+      "branch": "long_bay_observation",
+      "primaryCategory": "港湾展望・夜景・長距離湾岸・無料駐車",
+      "matchedWaypoints": [
+        "荒川河口橋",
+        "舞浜大橋",
+        "東京湾アクアライン"
+      ],
+      "destinationStrength": 94,
+      "discoveryValue": 92,
+      "experience": "東京湾岸の橋を東へ連ねた先で、高層展望塔から千葉港と東京湾を見渡す。短距離候補ではなく、半日走行の明確な終点。",
+      "roleProposal": "half_day_bay_observation_final",
+      "promotionLane": "live_hours_weather_and_distance_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "night"
+      ],
+      "operation": {
+        "hours": "6〜9月は9:00〜21:00、10〜5月は平日9:00〜19:00・土日祝9:00〜20:00（最終入館30分前）",
+        "closed": "偶数月第4月曜・年末年始",
+        "admission": "大人420円",
+        "liveChecks": [
+          "強風・臨時休館",
+          "季節営業時間"
+        ]
+      },
+      "parking": {
+        "anchor": "千葉ポートパーク駐車場",
+        "capacity": 245,
+        "price": "無料",
+        "status": "official_tourism_current_dimensions_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.chibacity-ta.or.jp/spots/chiba-porttower"
+      ],
+      "sourceStatus": "official_tourism_current",
+      "mapQuery": "千葉ポートタワー",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N236",
+      "name": "テレコムセンター展望室・99m湾岸夜景",
+      "area": "東京都江東区・青海",
+      "branch": "bay_observation_architecture",
+      "primaryCategory": "高層展望・湾岸夜景・巨大アトリウム・雨天",
+      "matchedWaypoints": [
+        "東京港トンネル・国道357号一般部",
+        "レインボーブリッジ下層",
+        "東京ゲートブリッジ",
+        "海の森大橋"
+      ],
+      "destinationStrength": 96,
+      "discoveryValue": 91,
+      "experience": "東京港トンネルやレインボーブリッジを走った後、地上約99mの展望室から東京港・都心・埠頭を見渡す。37m吹抜けのアトリウムも到着演出になる。",
+      "roleProposal": "bay_observation_evening_final",
+      "promotionLane": "live_hours_and_parking_dimensions_gate",
+      "timeFit": [
+        "day",
+        "evening",
+        "night",
+        "rain"
+      ],
+      "operation": {
+        "hours": {
+          "mon_thu": "15:00〜20:00",
+          "fri_sat_holiday_eve": "11:00〜21:00",
+          "sun_holiday": "11:00〜20:00"
+        },
+        "closed": "12月29日〜1月3日、ビル休館日など",
+        "admission": "大人500円",
+        "liveChecks": [
+          "当日の展望室営業時間",
+          "ビル休館・貸切・イベント",
+          "駐車場営業と満空"
+        ]
+      },
+      "parking": {
+        "anchor": "テレコムセンタービル地下駐車場",
+        "status": "official_parking_exists_dimensions_pending",
+        "dimensions": null
+      },
+      "wideVehicleStatus": "V0_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "sourceUrls": [
+        "https://www.tokyo-teleport.co.jp/b/tel/detail.php/ariake/pdf/aomi/daiba/img/south/"
+      ],
+      "sourceStatus": "official_primary_current",
+      "mapQuery": "テレコムセンター展望室",
+      "canonicalExactDuplicate": false
+    },
+    {
+      "candidateId": "N238",
+      "name": "千代ヶ崎砲台跡",
+      "area": "神奈川県横須賀市・浦賀",
+      "branch": "military_infrastructure_landscape",
+      "primaryCategory": "近代要塞・地下構造・浦賀水道展望",
+      "experience": "浦賀の狭い生活道路と急坂を上り、地上から見えにくい明治期の砲台遺構へ到着する。砲座、弾薬庫、地下施設、標高約65mからの浦賀水道が一体となり、単なる公園ではない『封印されていた巨大インフラ』の到着体験が成立する。",
+      "timeFit": [
+        "weekend_day",
+        "holiday_day"
+      ],
+      "deepNightFit": false,
+      "rainFit": "conditional",
+      "destinationStrength": 94,
+      "discoveryValue": 97,
+      "parking": {
+        "primaryAnchor": "千代ヶ崎砲台跡専用駐車スペース",
+        "primaryCapacity": 16,
+        "primaryFee": "無料",
+        "overflowAnchor": "燈明堂緑地駐車場",
+        "overflowCapacity": 30,
+        "overflowHours": "05:00-21:30（21:30-05:00は出庫のみ）",
+        "overflowFee": {
+          "jan_apr_oct_dec": "30分150円、上限1,000円",
+          "may_sep": "30分250円、上限なし"
+        },
+        "dimensions": null,
+        "status": "official_capacity_hours_and_price_confirmed_dimensions_pending"
+      },
+      "opening": {
+        "days": "土曜・日曜・祝日（12月29日〜1月3日を除く）",
+        "mar_sep": "09:30-16:00（閉園16:30）",
+        "oct_feb": "09:30-15:00（閉園15:30）",
+        "temporaryClosure": [
+          "大雨・洪水・暴風警報",
+          "台風接近・降雪等の悪天候",
+          "神奈川県内の熱中症特別警戒アラート期間"
+        ]
+      },
+      "wideVehicleStatus": "V0_narrow_approach_and_dimensions_pending",
+      "directRoadStopAllowed": false,
+      "walkingRequired": true,
+      "undergroundTour": "ガイド同行のみ・45〜60分・予約不要",
+      "promotionLane": "weekend_story_destination",
+      "canonicalExactDuplicate": false,
+      "sourceUrls": [
+        "https://www.city.yokosuka.kanagawa.jp/8120/bunkazai/chiyogasaki-koukai.html",
+        "https://www.city.yokosuka.kanagawa.jp/8120/bunkazai/documents/map.pdf",
+        "https://www.city.yokosuka.kanagawa.jp/5560/toumyoudouryokuchi.html"
+      ]
+    }
+  ],
+  "duplicatesSkipped": []
+}
