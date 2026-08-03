@@ -1,0 +1,19 @@
+{
+  "version": "v0.11.0-test.1",
+  "status": "ui_hotfix",
+  "result": "PASS",
+  "counts": {
+    "destinations": 366,
+    "selectableResults": 547,
+    "canonicalRoutes": 181
+  },
+  "fixes": {
+    "missionRevealFullWidth": "grid-column 1 / -1",
+    "detailsAndMapSecondRow": true,
+    "persistentQuickReroll": true,
+    "compactProjectCruiseBrandLockup": true,
+    "candidateDataPreserved": true,
+    "heroVisualsPreserved": true
+  },
+  "regressionCause": "mission-reveal was treated as the first cell of a two-column result grid; integration also inherited an older oversized CRUISE wordmark and omitted the persistent reroll control."
+}

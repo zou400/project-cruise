@@ -1,0 +1,97 @@
+{
+  "release": "Project Cruise Cinematic Polish v0.10.3",
+  "generatedAt": "2026-08-01T13:26:02.543Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "destinations_count",
+      "passed": true,
+      "detail": "320"
+    },
+    {
+      "name": "results_count",
+      "passed": true,
+      "detail": "501"
+    },
+    {
+      "name": "canonical_routes_count",
+      "passed": true,
+      "detail": "181"
+    },
+    {
+      "name": "direct_results_count",
+      "passed": true,
+      "detail": "320"
+    },
+    {
+      "name": "destination_ids_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "result_ids_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release_version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual_reveal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "learning_schema_v5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "midnight_noir",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "maps3d_on_demand",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "runtime_key_not_embedded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate_html_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "javascript_dom_targets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual_airport",
+      "passed": true,
+      "detail": "airport-bluehour-v3.webp"
+    },
+    {
+      "name": "visual_bridge",
+      "passed": true,
+      "detail": "bay-bridge-dusk-v3.webp"
+    },
+    {
+      "name": "visual_industry",
+      "passed": true,
+      "detail": "industrial-night-v3.webp"
+    },
+    {
+      "name": "visual_city",
+      "passed": true,
+      "detail": "urban-architecture-v3.webp"
+    }
+  ]
+}

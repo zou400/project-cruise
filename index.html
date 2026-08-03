@@ -306,14 +306,86 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
  .learning-toast{bottom:calc(82px + env(safe-area-inset-bottom));max-width:calc(100% - 30px);text-align:center}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mission-visual,.selector,.draw-btn,.origin-btn,.time-btn{transition:none!important}.mission-visual{transform:none!important}}
+
+/* v0.11.0-test.1.1 UI regression hotfix */
+.brand-lockup{
+  display:inline-grid;
+  grid-template-columns:auto auto;
+  grid-template-areas:"project cruise" "system system";
+  align-items:end;
+  column-gap:10px;
+  margin:0 0 7px;
+  text-align:left;
+}
+.brand-lockup .brand-project{
+  grid-area:project;
+  align-self:center;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.26em;
+  color:var(--accent,#e43b34);
+}
+.brand-lockup strong{
+  grid-area:cruise;
+  font-size:clamp(38px,6vw,64px);
+  line-height:.82;
+  letter-spacing:-.055em;
+  color:#fff;
+}
+.brand-lockup .brand-system{
+  grid-area:system;
+  margin-top:8px;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.22em;
+  color:rgba(255,255,255,.58);
+}
+.result-shell{
+  grid-template-columns:minmax(340px,.9fr) minmax(420px,1.25fr);
+}
+.mission-reveal{
+  grid-column:1 / -1;
+  width:100%;
+}
+.result-card{grid-column:1;}
+.map-card{grid-column:2;}
+body{padding-bottom:calc(92px + env(safe-area-inset-bottom));}
+.quick-reroll{
+  position:fixed;
+  left:50%;
+  bottom:calc(14px + env(safe-area-inset-bottom));
+  transform:translateX(-50%);
+  z-index:2200;
+  width:min(620px,calc(100% - 28px));
+  min-height:58px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:linear-gradient(100deg,#d93832,#b81863);
+  color:#fff;
+  font:900 15px/1 system-ui,-apple-system,"Segoe UI",sans-serif;
+  letter-spacing:.04em;
+  box-shadow:0 18px 50px rgba(0,0,0,.38);
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+.quick-reroll b{font-size:19px}
+.quick-reroll.hidden{display:none!important}
+@media(max-width:860px){
+  .result-shell{display:block}
+  .mission-reveal,.result-card,.map-card{width:100%;margin-bottom:16px}
+  .map-card{min-height:500px}
+  .brand-lockup strong{font-size:44px}
+}
+
 </style>
 </head>
 <body>
 <main class="app">
   <header class="brand">
-    <p class="eyebrow">PROJECT CRUISE / TOKYO DRIVE SYSTEM</p>
-    <h1>CRUISE</h1>
-    <p class="brand-line">今夜の一本を、10秒で。</p>
+    <div class="brand-lockup" aria-label="PROJECT CRUISE"><span class="brand-project">PROJECT</span><strong>CRUISE</strong><span class="brand-system">TOKYO DRIVE SYSTEM</span></div><p class="brand-line">今夜の一本を、10秒で。</p>
     <p id="db-version" class="db-version">CINEMATIC POLISH v0.10.3 読み込み中</p>
   </header>
 
@@ -442,6 +514,11 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
     <p id="about" class="about hidden">320地点・181完成ルート・501結果を、場所価値・現在適合・ルート完成度へ分けて評価します。端末内の採否履歴は個人適合として別に学習します。再抽選理由はときどき任意で確認し、Googleマップ遷移後は次回訪問時に結果を聞きます。位置履歴は取得せず、学習データはこの端末内だけに保存します。同じ場所の再登場は禁止しません。<br><button id="learning-export" class="learning-export" type="button">テスト学習ログをコピー</button></p>
   </footer>
 </main>
+  
+<button id="quick-reroll" class="quick-reroll hidden" type="button" aria-label="すぐに別の行き先を抽選">
+  <span>すぐに別の行き先を抽選</span><b aria-hidden="true">↻</b>
+</button>
+
   <div id="issue-modal" class="issue-modal hidden" role="dialog" aria-modal="true" aria-labelledby="issue-title">
     <div class="issue-panel">
       <h2 id="issue-title">不具合を報告</h2>
@@ -1051,6 +1128,7 @@ function show(r){
  $("#waypoints").innerHTML=(r.waypoints||[]).map((x,i)=>`<div class="route-stop"><span>STOP ${i+1}</span><strong>${escapeHtml(x)}</strong></div>`).join("");
  updateGoogleLinks(r);
  $("#result").classList.remove("hidden");
+  const quickReroll=document.querySelector("#quick-reroll");if(quickReroll)quickReroll.classList.remove("hidden");
  $("#mobile-actions").classList.remove("hidden");
  $(".selector").classList.add("compact");
  const reveal=$("#mission-reveal");reveal.classList.remove("is-revealing");requestAnimationFrame(()=>reveal.classList.add("is-revealing"));
@@ -1416,6 +1494,19 @@ async function copyIssueReports(){
 }
 function timeLabel(v){return v==="90"?"90分":v==="120"?"2時間":"半日"}
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
+
+const quickRerollButton=document.querySelector("#quick-reroll");
+if(quickRerollButton){
+  quickRerollButton.addEventListener("click",()=>{
+    const redrawButton=document.querySelector("#redraw");
+    if(redrawButton) redrawButton.click();
+    else {
+      const drawButton=document.querySelector("#draw");
+      if(drawButton) drawButton.click();
+    }
+  });
+}
 
 </script>
 </body>
