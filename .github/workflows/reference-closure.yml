@@ -1,0 +1,24 @@
+name: Reference Closure
+on:
+  pull_request:
+    paths:
+      - 'data/routes.public.json'
+      - 'data/reference-registry.public.json'
+      - 'tools/validate_reference_closure.py'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate public closure
+        if: ${{ hashFiles('data/reference-registry.public.json') != '' }}
+        run: python tools/validate_reference_closure.py --public-root . --report reference-closure-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reference-closure-report
+          path: reference-closure-report.json

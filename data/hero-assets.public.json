@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0",
+  "published": [
+    {
+      "destination": "お台場海浜公園",
+      "heroId": "HERO-0007",
+      "alt": "お台場海浜公園のシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0007/default.webp",
+          "sha256": "8a8be4f424d8b805bd625a5a483ef8386bd927f2f2d78ef54e39b1e46ccea783",
+          "bytes": 127720
+        }
+      ]
+    },
+    {
+      "destination": "レインボーブリッジ遊歩道・お台場口",
+      "heroId": "HERO-0005",
+      "alt": "レインボーブリッジ遊歩道・お台場口のシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0005/default.webp",
+          "sha256": "08480380f8fdd5403cd75097af7195caee66bf8de4a8f78a5d8a882897ffb15c",
+          "bytes": 105418
+        },
+        {
+          "variant": "evening",
+          "path": "assets/heroes/by-id/HERO-0005/evening.webp",
+          "sha256": "8a8be4f424d8b805bd625a5a483ef8386bd927f2f2d78ef54e39b1e46ccea783",
+          "bytes": 127720
+        },
+        {
+          "variant": "night",
+          "path": "assets/heroes/by-id/HERO-0005/night.webp",
+          "sha256": "2d983becb3185c88dad69c6eb08edaf32b12fd2ab1984e730b23b6f0d69ce50f",
+          "bytes": 89884
+        }
+      ]
+    },
+    {
+      "destination": "京浜島つばさ公園",
+      "heroId": "HERO-0001",
+      "alt": "京浜島つばさ公園のシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0001/default.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        },
+        {
+          "variant": "evening",
+          "path": "assets/heroes/by-id/HERO-0001/evening.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        },
+        {
+          "variant": "night",
+          "path": "assets/heroes/by-id/HERO-0001/night.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        }
+      ]
+    },
+    {
+      "destination": "川崎マリエン",
+      "heroId": "HERO-0010",
+      "alt": "川崎マリエンのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0010/default.webp",
+          "sha256": "b24ac6127c1de3eb0bdabbfa7b0b052dfa8d4cf6e4782e791e89157c5e288f87",
+          "bytes": 123138
+        },
+        {
+          "variant": "night",
+          "path": "assets/heroes/by-id/HERO-0010/night.webp",
+          "sha256": "631992d3f74d4c84e4bfd4a5992ae3c94a688e7a930ef4e7803de54d4586f508",
+          "bytes": 109260
+        }
+      ]
+    },
+    {
+      "destination": "東京タワー",
+      "heroId": "HERO-0006",
+      "alt": "東京タワーのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0006/default.webp",
+          "sha256": "fd41443bfed97be9bcdf73286a8735f5d62ea90d49cd401a1c6d2e9e4bf78712",
+          "bytes": 94906
+        },
+        {
+          "variant": "evening",
+          "path": "assets/heroes/by-id/HERO-0006/evening.webp",
+          "sha256": "4f349388c4154aa54cd67cd3c2c340b1a2c9b449f35ea9dbcbbb19f8a3faf22c",
+          "bytes": 118726
+        }
+      ]
+    },
+    {
+      "destination": "横浜港シンボルタワー",
+      "heroId": "HERO-0008",
+      "alt": "横浜港シンボルタワーのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0008/default.webp",
+          "sha256": "27457b0f45263dc17565dc95ea447b13c8876cb7aad2ed6192d6e3388431639f",
+          "bytes": 178924
+        },
+        {
+          "variant": "night",
+          "path": "assets/heroes/by-id/HERO-0008/night.webp",
+          "sha256": "5e35d28f950367b01f7ccc9bed4ecc802359c9ac1af9412e7da3fc5c884e9f5e",
+          "bytes": 170492
+        }
+      ]
+    },
+    {
+      "destination": "横浜港大さん橋",
+      "heroId": "HERO-0009",
+      "alt": "横浜港大さん橋のシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0009/default.webp",
+          "sha256": "3876c6c80a6b1c69ee510a84ee3cbe82102434395a9d297cb3fae8d01832eeb7",
+          "bytes": 168866
+        },
+        {
+          "variant": "night",
+          "path": "assets/heroes/by-id/HERO-0009/night.webp",
+          "sha256": "631992d3f74d4c84e4bfd4a5992ae3c94a688e7a930ef4e7803de54d4586f508",
+          "bytes": 109260
+        }
+      ]
+    },
+    {
+      "destination": "羽田空港 第1ターミナル展望デッキ",
+      "heroId": "HERO-0002",
+      "alt": "羽田空港 第1ターミナル展望デッキのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0002/default.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        }
+      ]
+    },
+    {
+      "destination": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYO",
+      "heroId": "HERO-0003",
+      "alt": "羽田空港 第2ターミナル展望デッキ／FLIGHT DECK TOKYOのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0003/default.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        }
+      ]
+    },
+    {
+      "destination": "羽田空港 第3ターミナル展望デッキ",
+      "heroId": "HERO-0004",
+      "alt": "羽田空港 第3ターミナル展望デッキのシネマティックHero",
+      "variants": [
+        {
+          "variant": "default",
+          "path": "assets/heroes/by-id/HERO-0004/default.webp",
+          "sha256": "a254d864d29ac44564b72f58c031350d4d21b0cbd9698447ccb0a4cad8dd0345",
+          "bytes": 114498
+        }
+      ]
+    }
+  ]
+}

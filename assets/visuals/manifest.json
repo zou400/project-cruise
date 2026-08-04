@@ -1,0 +1,48 @@
+{
+  "version": "v0.11.0-test.2",
+  "policy": "Project Cruiseが保有する8枚の元画像から、構図・クロップ・反転・夜間調整を施した32個の表示バリエーションを生成。実在地点の正確な写真とは主張しない。",
+  "sourceAssets": 8,
+  "displayVariants": 32,
+  "assetVariants": {
+    "airport": [
+      "airport-scene-1-1.webp",
+      "airport-scene-1-2.webp",
+      "airport-scene-1-3.webp",
+      "airport-scene-1-4.webp",
+      "airport-scene-2-1.webp",
+      "airport-scene-2-2.webp",
+      "airport-scene-2-3.webp",
+      "airport-scene-2-4.webp"
+    ],
+    "bridge": [
+      "bridge-scene-1-1.webp",
+      "bridge-scene-1-2.webp",
+      "bridge-scene-1-3.webp",
+      "bridge-scene-1-4.webp",
+      "bridge-scene-2-1.webp",
+      "bridge-scene-2-2.webp",
+      "bridge-scene-2-3.webp",
+      "bridge-scene-2-4.webp"
+    ],
+    "industry": [
+      "industry-scene-1-1.webp",
+      "industry-scene-1-2.webp",
+      "industry-scene-1-3.webp",
+      "industry-scene-1-4.webp",
+      "industry-scene-2-1.webp",
+      "industry-scene-2-2.webp",
+      "industry-scene-2-3.webp",
+      "industry-scene-2-4.webp"
+    ],
+    "city": [
+      "city-scene-1-1.webp",
+      "city-scene-1-2.webp",
+      "city-scene-1-3.webp",
+      "city-scene-1-4.webp",
+      "city-scene-2-1.webp",
+      "city-scene-2-2.webp",
+      "city-scene-2-3.webp",
+      "city-scene-2-4.webp"
+    ]
+  }
+}

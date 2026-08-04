@@ -1,36 +1,24 @@
-# Project Cruise GitHub Pages Prototype
+# Project Cruise Public Runtime
 
-大田区・蒲田周辺を起点にした「近くて濃い」ドライブ候補検索の静的プロトタイプです。
+Release: `PC-PUBLIC-20260804-RC4`  
+Version: `3.6.0`
 
-## データ
-- 近距離コア地点: 93件
-- 用途別近距離ルート: 45件
-- 合法な路上短時間アクセス: 10件
-- Excel正本: `Project_Cruise_合法路上駐車統合版.xlsx`
+This is the first formal public release candidate generated from a fully converged active canonical.
 
-## GitHub Pages公開手順
-1. ZIPを展開
-2. 展開した中身をGitHubリポジトリ直下へアップロード
-3. Settings → Pages
-4. Source: Deploy from a branch
-5. Branch: main / Folder: /(root)
-6. Save
+- 377 destinations
+- 558 route results
+- 18 published Hero asset files
+- 0 public-only destinations
+- 0 public-only routes
+- 0 unresolved route references
+- Canonical release: `PC-CANONICAL-BATCH-BC-20260804-RC1`
+- Canonical tree SHA256: `7ffb126036090aec9a6de9874f31c9cc00edbb0ae3da0a01864d06777eb487c9`
 
-公開URL例:
-`https://zou400.github.io/project-cruise/`
+## Deploy
+1. Upload this package to a feature branch of the public repository.
+2. Confirm `Public Boundary CI` and `Reference Closure` pass.
+3. Deploy to staging or merge to `main`.
+4. Run post-deploy verification against `data/release-attestation.json`.
+5. Keep the previous public ZIP available until verification and rollback rehearsal pass.
 
-## 注意
-`index.html`をPCで直接開くとJSONを読み込めない場合があります。GitHub Pages上では動作します。
-
-
-## UI 0.3
-一覧表示を廃止し、時間選択→ルートガチャ→Googleマップ起動の単一導線に変更。
-
-## UI 0.4
-- 行先カードとルート地図を同時表示
-- OpenStreetMap + Leafletによるルートプレビュー
-- 出発・経由地・目的地を色分け
-- OSRMで道路ルートを取得し、線をアニメーション表示
-- 地図クリックでGoogleマップへ移動
-- スマホではカード→地図の縦並び
-- 外部地図取得に失敗してもGoogleマップリンクは利用可能
+Never add canonical, discovery, review, audit, prompt, raw field-test, rejected Hero, or generation-history files here.

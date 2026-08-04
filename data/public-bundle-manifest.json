@@ -1,0 +1,31 @@
+{
+  "version": "3.6.0",
+  "releaseId": "PC-PUBLIC-20260804-RC4",
+  "generatedAt": "2026-08-04T18:07:00+09:00",
+  "policy": "allowlist_projection",
+  "mode": "active_canonical_converged",
+  "counts": {
+    "destinations": 377,
+    "routes": 558
+  },
+  "canonicalBase": {
+    "destinations": 377,
+    "routes": 558,
+    "treeSha256": "7ffb126036090aec9a6de9874f31c9cc00edbb0ae3da0a01864d06777eb487c9",
+    "releaseId": "PC-CANONICAL-BATCH-BC-20260804-RC1"
+  },
+  "publicCarryForward": {
+    "destinations": 0,
+    "routes": 0,
+    "policy": "none_canonical_converged"
+  },
+  "containsCanonicalSource": false,
+  "containsAuditData": false,
+  "containsPrompts": false,
+  "containsSecrets": false,
+  "referenceClosure": {
+    "registryEntries": 37,
+    "resolvedLegacyReferences": 39,
+    "unresolvedReferences": 0
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "PC-MIGRATION-BRIDGE-20260804-RC4-PREVIEW",
+  "generatedAt": "2026-08-04T17:45:00+09:00",
+  "references": [
+    {
+      "referenceId": "DST-JP-000039",
+      "name": "三崎港 うらり",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-JP-000039",
+      "canonicalName": "三崎港 うらり駐車場周辺"
+    },
+    {
+      "referenceId": "DST-JP-000049",
+      "name": "県営権現堂公園",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-JP-000049",
+      "canonicalName": "県営権現堂公園・権現堂桜堤"
+    },
+    {
+      "referenceId": "DST-JP-000274",
+      "name": "神宮外苑",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-JP-000274",
+      "canonicalName": "明治神宮外苑 聖徳記念絵画館"
+    },
+    {
+      "referenceId": "DST-JP-000302",
+      "name": "大田区立龍子記念館",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-JP-000302",
+      "canonicalName": "龍子記念館・龍子公園"
+    },
+    {
+      "referenceId": "DST-TYO-000406",
+      "name": "新宿NSビル",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-TYO-000406",
+      "canonicalName": "新宿NSビル・巨大吹抜け都市到着"
+    },
+    {
+      "referenceId": "DST-TYO-000407",
+      "name": "日本橋高島屋S.C.",
+      "referenceType": "alias",
+      "status": "active",
+      "targetEntityId": "DST-TYO-000407",
+      "canonicalName": "日本橋高島屋S.C.・歴史百貨店と新館到着"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000001",
+      "name": "立石公園",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000002",
+      "name": "横浜・八景島シーパラダイス",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000003",
+      "name": "葉山港",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000004",
+      "name": "臨港パーク",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000005",
+      "name": "辻堂海浜公園",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-KNG-CAND-000006",
+      "name": "小柴自然公園",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-TYO-CAND-000001",
+      "name": "洗足池公園",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "DST-TYO-CAND-000002",
+      "name": "多摩川台公園",
+      "referenceType": "destination_candidate",
+      "status": "review"
+    },
+    {
+      "referenceId": "ANC-TYO-ROAD-000001",
+      "name": "東京ゲートブリッジ",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-AREA-000001",
+      "name": "小田原漁港",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARK-000001",
+      "name": "代々木公園",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-PARK-000001",
+      "name": "ペリー公園",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-PARK-000002",
+      "name": "県立葉山公園",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-CHB-PARK-000001",
+      "name": "手賀沼親水広場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-PARKING-000001",
+      "name": "小田原市栄町駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-PARKING-000002",
+      "name": "二宮町営第1駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000001",
+      "name": "HANEDA INNOVATION CITY P1東側平面駐車場",
+      "referenceType": "route_anchor",
+      "status": "active",
+      "relatedDestinationId": "DST-JP-000245"
+    },
+    {
+      "referenceId": "ANC-TYO-ROAD-000002",
+      "name": "大橋ジャンクション",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000002",
+      "name": "オーパス目黒大橋駐車場",
+      "referenceType": "route_anchor",
+      "status": "active",
+      "relatedDestinationId": "DST-JP-000284"
+    },
+    {
+      "referenceId": "ANC-TYO-BUILDING-000001",
+      "name": "大田文化の森",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000003",
+      "name": "虎ノ門ヒルズ 森タワー駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-BUILDING-000002",
+      "name": "東京ポートシティ竹芝",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000004",
+      "name": "代官山T-SITE駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000005",
+      "name": "汐留駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-ROAD-000001",
+      "name": "鶴見つばさ橋",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-ROAD-000002",
+      "name": "横浜ベイブリッジ",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-KNG-ROAD-000003",
+      "name": "大黒大橋",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-ROAD-000003",
+      "name": "飯倉交差点",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000006",
+      "name": "GINZA SIX駐車場",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-BUILDING-000003",
+      "name": "目黒区総合庁舎",
+      "referenceType": "route_anchor",
+      "status": "active"
+    },
+    {
+      "referenceId": "ANC-TYO-PARKING-000007",
+      "name": "西銀座駐車場",
+      "referenceType": "route_anchor",
+      "classification": "parking",
+      "relatedDestinationId": "DST-TYO-000410"
+    }
+  ]
+}
