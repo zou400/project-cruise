@@ -1,0 +1,38 @@
+name: Public Boundary CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-boundary-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-public-boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate public repository
+        run: python tools/validate_public_repo.py --root . --report validation-report.json
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-boundary-validation
+          path: validation-report.json
+          if-no-files-found: error

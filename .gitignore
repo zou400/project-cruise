@@ -1,0 +1,15 @@
+# Private/internal Project Cruise assets must never enter this repository
+canonical/
+discovery/
+review/
+audit/
+field-tests/
+prompts/
+registries/
+private-*/
+phase*/
+*.private.json
+*.secret.*
+.env
+.env.*
+validation-report.json

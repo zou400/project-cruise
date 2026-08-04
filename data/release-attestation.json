@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "PC-PUBLIC-20260804-RC4",
+  "version": "3.6.0",
+  "generatedAt": "2026-08-04T18:07:00+09:00",
+  "canonicalBaseSha256": "7ffb126036090aec9a6de9874f31c9cc00edbb0ae3da0a01864d06777eb487c9",
+  "publicContentSha256": "309b8abcdc0c1b9d5e33deec8e32cd8b9e000290fed1f30e1511e8b770d23401",
+  "counts": {
+    "destinations": 377,
+    "routes": 558
+  },
+  "migrationBridge": false,
+  "carryForwardCounts": {
+    "destinations": 0,
+    "routes": 0,
+    "policy": "canonical_converged"
+  },
+  "canonicalPromotion": {
+    "sourceReleaseId": "PC-CANONICAL-BATCH-BC-20260804-RC1",
+    "promotionId": "PROMOTION-PC-CANONICAL-BATCH-BC-20260804-RC1",
+    "promotionApplied": true,
+    "promotedDestinations": 3,
+    "promotedRoutes": 4
+  },
+  "referenceRegistrySha256": "da99da2d9a8f97bfd006c3c58d3f7b5c89eb34508b6096c5d131e84e5bc9bf52",
+  "referenceClosure": {
+    "resolved": 39,
+    "unresolved": 0
+  },
+  "releaseChannel": "production-candidate"
+}
