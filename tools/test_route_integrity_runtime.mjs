@@ -22,7 +22,7 @@ class ClassList{
 class Element{
   constructor(id,dataset={}){this.id=id;this.dataset={...dataset};this.classList=new ClassList();this.listeners={};this.textContent='';this.innerHTML='';this.href='';this.disabled=false;this.attributes={};this.children={b:{textContent:''}}}
   addEventListener(name,fn){(this.listeners[name]??=[]).push(fn)}
-  click(){for(const fn of this.listeners.click||[])fn({currentTarget:this,preventDefault(){}})}
+  click(){for(const fn of this.listeners.click||[])fn({currentTarget:this,target:this,preventDefault(){},stopPropagation(){}})}
   setAttribute(k,v){this.attributes[k]=String(v)}
   getAttribute(k){return this.attributes[k]}
   querySelector(s){return s==='b'?this.children.b:new Element('child')}

@@ -249,3 +249,33 @@ button:disabled{cursor:wait;opacity:.68}
 #mission[aria-busy="true"] .mission-content{pointer-events:none}
 .mission-image[data-hero-loading="true"]{filter:saturate(.88) brightness(.92)}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.mission-image{transition:none!important}}
+
+
+/* Reroll Hotfix v1.0.1: keep action taps responsive without disabling pinch zoom */
+#hero-reroll,#sticky-reroll,#desktop-reroll,.dock-reroll,.secondary-action,.mobile-action-dock{
+  touch-action:manipulation;
+}
+#hero-reroll,#sticky-reroll,#desktop-reroll,.dock-reroll,.secondary-action{
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
+#hero-reroll.is-busy,#sticky-reroll.is-busy,#desktop-reroll.is-busy,.dock-reroll.is-busy{
+  opacity:.82;
+}
+@media(max-width:760px){
+  .mobile-action-dock{
+    z-index:2147483000;
+    isolation:isolate;
+    pointer-events:auto;
+    contain:layout paint;
+  }
+  .dock-accept,.dock-reroll{
+    position:relative;
+    z-index:2;
+    pointer-events:auto;
+  }
+  .mobile-action-dock.is-busy{
+    pointer-events:auto;
+  }
+}
