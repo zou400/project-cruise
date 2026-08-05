@@ -53,7 +53,7 @@ context.globalThis=context;
 vm.createContext(context);
 vm.runInContext(app,context,{filename:'app.js'});
 
-const expectations={90:{min:70,max:100,stops:2},120:{min:100,max:140,stops:3},half:{min:180,max:300,stops:4}};
+const expectations={90:{min:70,max:100,waypointMin:1},120:{min:100,max:140,waypointMin:2},half:{min:180,max:300,waypointMin:3}};
 const results=[];
 for(const bucket of ['90','120','half']){
   timeButtons.find(x=>x.dataset.time===bucket).click();
@@ -65,14 +65,20 @@ for(const bucket of ['90','120','half']){
   const destination=url.searchParams.get('destination');
   const waypoints=(url.searchParams.get('waypoints')||'').split('|').filter(Boolean);
   const expected=expectations[bucket];
+  const destinationMeta=destinations.find(d=>String(d.name||'').replace(/[\s　]+/g,' ').trim().toLowerCase()===String(snapshot.destination||'').replace(/[\s　]+/g,' ').trim().toLowerCase())||{};
+  const expectedDestination=Number.isFinite(Number(destinationMeta.lat??destinationMeta.coordinates?.lat))&&Number.isFinite(Number(destinationMeta.lng??destinationMeta.coordinates?.lng))
+    ?`${Number(destinationMeta.lat??destinationMeta.coordinates?.lat).toFixed(6)},${Number(destinationMeta.lng??destinationMeta.coordinates?.lng).toFixed(6)}`
+    :snapshot.destination;
   assert.equal(url.pathname,'/maps/dir/');
-  assert.equal(origin,destination,'round-trip URL must return to origin');
-  assert.ok(waypoints.length>=expected.stops,`${bucket}: insufficient route stops`);
+  assert.notEqual(origin,destination,'navigation endpoint must not return to origin');
+  assert.equal(destination,expectedDestination,'Google Maps endpoint must be the selected final destination');
+  assert.ok(waypoints.length>=expected.waypointMin,`${bucket}: insufficient outbound waypoints`);
+  assert.ok(!waypoints.includes(destination),`${bucket}: final destination must not be duplicated as a waypoint`);
   assert.ok(snapshot.totalMinutes>=expected.min&&snapshot.totalMinutes<=expected.max,`${bucket}: total out of range`);
   assert.equal(snapshot.integrity,'route_integrity_v1');
   assert.match(elements['hero-drive-minutes'].textContent,/帰着まで約/);
   assert.match(elements['caution-box'].textContent,/リアルタイム渋滞はGoogle Mapsで最終確認/);
-  results.push({bucket,routeId:snapshot.routeId,destination:snapshot.destination,totalMinutes:snapshot.totalMinutes,waypointCount:waypoints.length});
+  results.push({bucket,routeId:snapshot.routeId,destination:snapshot.destination,totalMinutes:snapshot.totalMinutes,outboundWaypointCount:waypoints.length});
   await new Promise(r=>setTimeout(r,430));
 }
 console.log(JSON.stringify({status:'PASS',results},null,2));
