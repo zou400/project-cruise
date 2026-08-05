@@ -198,8 +198,9 @@ function story(r,d){const base=d.reason||r.intent||`${r.destination}へ向かう
 function pointValue(point){return finite(point?.lat)&&finite(point?.lng)?`${Number(point.lat).toFixed(6)},${Number(point.lng).toFixed(6)}`:point?.label||''}
 function mapsUrl(r){
   const origin=originPoint();
-  const stops=[...routeWaypoints(r),r.destination].map(pointForDestination);
-  const params=new URLSearchParams({api:'1',origin:pointValue(origin),destination:pointValue(origin),travelmode:'driving'});
+  const destination=pointForDestination(r.destination);
+  const stops=routeWaypoints(r).map(pointForDestination);
+  const params=new URLSearchParams({api:'1',origin:pointValue(origin),destination:pointValue(destination),travelmode:'driving'});
   if(stops.length)params.set('waypoints',stops.slice(0,8).map(pointValue).join('|'));
   return`https://www.google.com/maps/dir/?${params.toString()}`;
 }

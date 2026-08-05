@@ -67,7 +67,9 @@ def validate(root: Path) -> dict:
         "route_integrity_v1",
         "https://www.google.com/maps/dir/?",
         "params.set('waypoints'",
-        "destination:pointValue(origin)",
+        "destination:pointValue(destination)",
+        "const destination=pointForDestination(r.destination)",
+        "const stops=routeWaypoints(r).map(pointForDestination)",
         "リアルタイム渋滞はGoogle Mapsで最終確認",
     ]
     for token in required_app_tokens:
@@ -76,7 +78,8 @@ def validate(root: Path) -> dict:
 
     forbidden_app_patterns = {
         "trust_legacy_route_url": r"return\s+r\.googleMaps",
-        "one_way_default_url": r"destination=\$\{encodeURIComponent\(r\.destination\)\}",
+        "legacy_querystring_destination": r"destination=\$\{encodeURIComponent\(r\.destination\)\}",
+        "round_trip_navigation_endpoint": r"destination:pointValue\(origin\)",
     }
     for name, pattern in forbidden_app_patterns.items():
         if re.search(pattern, app):
