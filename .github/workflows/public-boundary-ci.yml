@@ -29,10 +29,18 @@ jobs:
           node-version: '22'
       - name: Validate public repository
         run: python tools/validate_public_repo.py --root . --report validation-report.json
+      - name: Validate route integrity
+        run: python tools/validate_route_integrity.py --root . --report route-integrity-report.json
+      - name: Smoke test route integrity runtime
+        env:
+          TZ: Asia/Tokyo
+        run: node tools/test_route_integrity_runtime.mjs
       - name: Upload validation report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: public-boundary-validation
-          path: validation-report.json
+          path: |
+            validation-report.json
+            route-integrity-report.json
           if-no-files-found: error

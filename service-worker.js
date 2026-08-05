@@ -1,4 +1,4 @@
-const CACHE='project-cruise-03600rc4';
+const CACHE='project-cruise-03600-route-integrity-1';
 const APP_SHELL=["./", "./index.html", "./styles.css", "./release.js", "./app.js", "./bootstrap.js", "./hero-registry.js", "./manifest.webmanifest", "./data/public-bundle-manifest.json", "./data/release-attestation.json", "./data/reference-registry.public.json", "./data/destinations.public.json", "./data/routes.public.json", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener('install',event=>{
