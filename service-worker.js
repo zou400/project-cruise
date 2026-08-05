@@ -1,5 +1,5 @@
-const CACHE='project-cruise-03600-navigation-endpoint-hotfix-102';
-const APP_SHELL=["./", "./index.html", "./styles.css", "./release.js", "./app.js", "./bootstrap.js", "./hero-registry.js", "./manifest.webmanifest", "./data/public-bundle-manifest.json", "./data/release-attestation.json", "./data/reference-registry.public.json", "./data/destinations.public.json", "./data/routes.public.json", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
+const CACHE='project-cruise-03600-cruise-decision-ui-100';
+const APP_SHELL=["./", "./index.html", "./styles.css", "./decision-ui.css", "./release.js", "./app.js", "./bootstrap.js", "./hero-registry.js", "./manifest.webmanifest", "./data/public-bundle-manifest.json", "./data/release-attestation.json", "./data/reference-registry.public.json", "./data/destinations.public.json", "./data/routes.public.json", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_SHELL)));
