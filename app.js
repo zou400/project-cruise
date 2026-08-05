@@ -11,7 +11,7 @@ const TIME_PROFILES={
   '120':{label:'往復2時間',min:100,max:140,target:120,waypointMin:2,waypointMax:3,safetyRate:.12},
   'half':{label:'半日（帰宅まで）',min:180,max:300,target:240,waypointMin:3,waypointMax:5,safetyRate:.12}
 };
-const state={origin:'kamata',originCoords:{...KAMATA},time:'90',active:null,activePlan:null,draws:0,sessionRejected:new Set(),heroTimer:null,drawBusy:false,heroRequestToken:0,scrollTimer:null,heroLoadTimer:null,geolocationAttempted:false};
+const state={origin:'kamata',originCoords:{...KAMATA},time:'90',active:null,activePlan:null,draws:0,sessionRejected:new Set(),heroTimer:null,drawBusy:false,heroRequestToken:0,scrollTimer:null,heroLoadTimer:null,heroPreload:null,heroFallbackLoader:null,geolocationAttempted:false,candidateCacheKey:null,candidateCache:[],candidateRebuilds:0,heroLoadsCancelled:0,lastDrawMs:0,storageTimers:{}};
 const STORAGE='pc_v013_profile';
 const HISTORY='pc_v013_history';
 const VISUALS={
@@ -20,8 +20,15 @@ const VISUALS={
  industry:['industry-scene-1-1.webp','industry-scene-1-2.webp','industry-scene-1-3.webp','industry-scene-1-4.webp','industry-scene-2-1.webp','industry-scene-2-2.webp','industry-scene-2-3.webp','industry-scene-2-4.webp'],
  city:['city-scene-1-1.webp','city-scene-1-2.webp','city-scene-1-3.webp','city-scene-1-4.webp','city-scene-2-1.webp','city-scene-2-2.webp','city-scene-2-3.webp','city-scene-2-4.webp']};
 const profile=load(STORAGE,{routeStats:{},recent:[],accepted:[],version:RELEASE.version});
+const historyCache=load(HISTORY,[]);
 function load(k,f){try{return JSON.parse(localStorage.getItem(k))||f}catch{return f}}
 function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}
+function saveDeferred(k,v){
+  let payload;
+  try{payload=JSON.stringify(v)}catch{return}
+  if(state.storageTimers[k])clearTimeout(state.storageTimers[k]);
+  state.storageTimers[k]=setTimeout(()=>{try{localStorage.setItem(k,payload)}catch{}delete state.storageTimers[k]},40);
+}
 function normalize(s){return String(s||'').replace(/[\s　]+/g,' ').trim().toLowerCase()}
 function destMeta(routeOrName){const name=typeof routeOrName==='string'?routeOrName:routeOrName?.destination;return D.find(d=>normalize(d.name)===normalize(name))||{}}
 function sourceRole(r){return r.candidateSource==='canonical_route'?'検証済みルート':r.generatedFromDestination?'目的地直行':'探索候補'}
@@ -120,7 +127,7 @@ function routeRiskPenalty(r){
   return penalty;
 }
 function integrityAssessment(r){
-  if(state.sessionRejected.has(routeId(r))||isOrdinaryCarDealerDestination(r))return{ok:false,reason:'session'};
+  if(isOrdinaryCarDealerDestination(r))return{ok:false,reason:'dealer'};
   const p=timeProfile(),wps=routeWaypoints(r),plan=buildTimePlan(r);
   if(!plan)return{ok:false,reason:'time-window'};
   if(!(r.timeBuckets||[r.timeBucket]).includes(state.time))return{ok:false,reason:'bucket'};
@@ -156,7 +163,22 @@ function isOrdinaryCarDealerDestination(r){
   const experience=/(博物館|ミュージアム|ヘリテージ|コレクション|工場見学|モビリティリゾート|テーマパーク)/i.test(t);
   return dealer&&!experience;
 }
-function eligible(){return R.map(r=>({r,a:integrityAssessment(r)})).filter(x=>x.a.ok)}
+function candidateContextKey(){
+  const origin=originPoint();
+  const originKey=finite(origin.lat)&&finite(origin.lng)?`${Number(origin.lat).toFixed(3)},${Number(origin.lng).toFixed(3)}`:String(origin.label||state.origin);
+  return`${state.time}|${originKey}|${Math.floor(Date.now()/300000)}`;
+}
+function invalidateCandidateCache(){state.candidateCacheKey=null;state.candidateCache=[]}
+function baseEligible(){
+  const key=candidateContextKey();
+  if(state.candidateCacheKey!==key){
+    state.candidateCache=R.map(r=>({r,a:integrityAssessment(r)})).filter(x=>x.a.ok);
+    state.candidateCacheKey=key;
+    state.candidateRebuilds++;
+  }
+  return state.candidateCache;
+}
+function eligible(){return baseEligible().filter(x=>!state.sessionRejected.has(routeId(x.r)))}
 function score(r,a=integrityAssessment(r)){
   const stat=profile.routeStats[routeId(r)]||{},p=timeProfile();
   let s=Number(r.routeAssessment?.overallScore??r.quality??r.evaluation?.routeReadiness??58);
@@ -171,7 +193,7 @@ function score(r,a=integrityAssessment(r)){
   if(a.directMinutes!==null&&a.directMinutes<=20)s-=5;
   return Math.max(1,s);
 }
-function rankedEligible(){return eligible().sort((x,y)=>score(y.r,y.a)-score(x.r,x.a)||routeId(x.r).localeCompare(routeId(y.r),'ja'))}
+function rankedEligible(){return eligible().slice().sort((x,y)=>score(y.r,y.a)-score(x.r,x.a)||routeId(x.r).localeCompare(routeId(y.r),'ja'))}
 function story(r,d){const base=d.reason||r.intent||`${r.destination}へ向かうドライブ。`;const categoryText=category(r,d);const tails={airport:'滑走路の灯りが、まだ夜の続きを残している。',bridge:'道路の高さが変わるたび、街の輪郭も少しずつ変わる。',industry:'役目のある光には、飾りとは違う温度がある。',city:'建物の灯りを追ううちに、自分の速度だけが静かに整っていく。'};return`${tails[categoryText]} ${base} 速さではなく、いま走りたい距離を選ぶ。`}
 function pointValue(point){return finite(point?.lat)&&finite(point?.lng)?`${Number(point.lat).toFixed(6)},${Number(point.lng).toFixed(6)}`:point?.label||''}
 function mapsUrl(r){
@@ -195,15 +217,31 @@ function atlasPointsFor(r){const nodes=[...routeWaypoints(r),r.destination].filt
 function atlasPath(points){if(points.length<2)return'';let d=`M${points[0].x} ${points[0].y}`;for(let i=1;i<points.length;i++){const p0=points[i-1],p=points[i],mx=Math.round((p0.x+p.x)/2);d+=` C${mx} ${p0.y}, ${mx} ${p.y}, ${p.x} ${p.y}`}return d}
 function renderAtlasRoute(r){const points=atlasPointsFor(r),d=atlasPath(points);$('#atlas-route-shadow').setAttribute('d',d);$('#atlas-route-line').setAttribute('d',d);$('#atlas-route-dots').innerHTML=points.map((p,i)=>`<circle cx="${p.x}" cy="${p.y}" r="${i===0?9:i===points.length-1?13:6}" class="${i===0?'start-dot':i===points.length-1?'end-dot':'stop-dot'}"/>`).join('')}
 function categoryFallbackVisual(r){const d=destMeta(r),cat=category(r,d),a=VISUALS[cat]||VISUALS.city;return'assets/visuals/'+a[hash(normalize(r.destination))%a.length]}
+function cancelImageLoader(loader){
+  if(!loader)return;
+  loader.onload=null;loader.onerror=null;
+  try{loader.src=''}catch{}
+}
+function cancelHeroLoads(){
+  state.heroRequestToken++;
+  if(state.heroLoadTimer){clearTimeout(state.heroLoadTimer);state.heroLoadTimer=null}
+  if(state.heroPreload||state.heroFallbackLoader)state.heroLoadsCancelled++;
+  cancelImageLoader(state.heroPreload);cancelImageLoader(state.heroFallbackLoader);
+  state.heroPreload=null;state.heroFallbackLoader=null;
+}
 function applyHeroImage(r){
-  const image=$('#hero-image'),primary=visualFor(r),fallback=categoryFallbackVisual(r),token=++state.heroRequestToken;
-  if(state.heroLoadTimer)clearTimeout(state.heroLoadTimer);
+  cancelHeroLoads();
+  const image=$('#hero-image'),primary=visualFor(r),fallback=categoryFallbackVisual(r),token=state.heroRequestToken;
   image.dataset.primarySrc=primary;image.dataset.heroLoading='true';
-  const finishTimer=()=>{if(state.heroLoadTimer){clearTimeout(state.heroLoadTimer);state.heroLoadTimer=null}};
-  const commit=(src,mode)=>{if(token!==state.heroRequestToken)return;finishTimer();image.src=src;image.alt=heroAltFor(r.destination);image.dataset.heroMode=mode;image.dataset.heroLoading='false'};
-  const fail=()=>{if(token!==state.heroRequestToken)return;finishTimer();image.dataset.heroLoading='failed';image.dataset.heroMode='previous_preserved'};
-  const loadFallback=(mode)=>{if(token!==state.heroRequestToken)return;const retry=new Image();retry.decoding='async';retry.onload=()=>commit(fallback,mode);retry.onerror=fail;state.heroLoadTimer=setTimeout(fail,3500);retry.src=fallback};
-  const preload=new Image();preload.decoding='async';preload.onload=()=>commit(primary,heroRecordFor(r.destination)?'destination':'category_fallback');preload.onerror=()=>loadFallback('asset_error_fallback');state.heroLoadTimer=setTimeout(()=>loadFallback('asset_timeout_fallback'),3500);preload.src=primary;
+  const finish=()=>{if(state.heroLoadTimer){clearTimeout(state.heroLoadTimer);state.heroLoadTimer=null}state.heroPreload=null;state.heroFallbackLoader=null};
+  const commit=(src,mode)=>{if(token!==state.heroRequestToken)return;finish();image.src=src;image.alt=heroAltFor(r.destination);image.dataset.heroMode=mode;image.dataset.heroLoading='false'};
+  const fail=()=>{if(token!==state.heroRequestToken)return;finish();image.dataset.heroLoading='failed';image.dataset.heroMode='previous_preserved'};
+  const loadFallback=(mode)=>{
+    if(token!==state.heroRequestToken)return;
+    cancelImageLoader(state.heroPreload);state.heroPreload=null;
+    const retry=new Image();state.heroFallbackLoader=retry;retry.decoding='async';retry.onload=()=>commit(fallback,mode);retry.onerror=fail;state.heroLoadTimer=setTimeout(fail,3500);retry.src=fallback;
+  };
+  const preload=new Image();state.heroPreload=preload;preload.decoding='async';preload.onload=()=>commit(primary,heroRecordFor(r.destination)?'destination':'category_fallback');preload.onerror=()=>loadFallback('asset_error_fallback');state.heroLoadTimer=setTimeout(()=>loadFallback('asset_timeout_fallback'),3500);preload.src=primary;
 }
 function heroModeFor(r){return heroRecordFor(r.destination)?'destination':'category_fallback'}
 function buildProposalPayload(r){
@@ -216,7 +254,7 @@ function routeCaution(r,a){
   const availability=a?.availability?.verified?'到着予定時刻で営業時間を確認済み。':'営業時間は公開情報で判定できないため最終確認が必要です。';
   return`${base} ${availability} 所要時間は12%の余裕込み。リアルタイム渋滞はGoogle Mapsで最終確認してください。`;
 }
-function render(r,a){
+function render(r,a,{scroll=true}={}){
   state.active=r;state.activePlan=a.plan;state.draws++;const d=destMeta(r);startHeroClock(r);applyHeroImage(r);
   $('#hero-copy').textContent=story(r,d);$('#destination-name').textContent=r.destination;$('#hero-tags').innerHTML=tags(r,d).map(x=>`<span>${esc(x)}</span>`).join('');
   const url=mapsUrl(r);$('#maps-primary').href=url;$('#maps-atlas').href=url;$('#mobile-maps-primary').href=url;
@@ -225,15 +263,23 @@ function render(r,a){
   const wp=[...routeWaypoints(r),r.destination];$('#waypoint-list').innerHTML=wp.map((x,i)=>`<li><small>${i===wp.length-1?'DESTINATION':'STOP '+(i+1)}</small><br>${esc(x)}</li>`).join('');
   $('#fact-time').textContent=`約${a.plan.totalMinutes}分`;$('#fact-stops').textContent=`${routeWaypoints(r).length}か所＋目的地`;$('#fact-score').textContent=`${Math.round(score(r,a))}%`;$('#caution-box').textContent=routeCaution(r,a);
   $('#atlas-origin').textContent=state.origin==='kamata'?'蒲田駅':'現在地';$('#atlas-destination').textContent=`${r.destination} → 帰着`;$('#atlas-stops').innerHTML=[...wp,state.origin==='kamata'?'蒲田駅へ帰着':'出発地点へ帰着'].map(x=>`<span>${esc(x)}</span>`).join('');renderAtlasRoute(r);
-  $('#mission').classList.remove('hidden');$('#details').classList.remove('hidden');$('#mobile-action-dock').classList.remove('hidden');$('#desktop-reroll').classList.remove('hidden');remember(r);emitNativeEvent('pc:proposal',buildProposalPayload(r));if(state.scrollTimer)clearTimeout(state.scrollTimer);state.scrollTimer=setTimeout(()=>$('#mission').scrollIntoView({behavior:'smooth',block:'start'}),80);
+  $('#mission').classList.remove('hidden');$('#details').classList.remove('hidden');$('#mobile-action-dock').classList.remove('hidden');$('#desktop-reroll').classList.remove('hidden');remember(r);emitNativeEvent('pc:proposal',buildProposalPayload(r));
+  if(state.scrollTimer){clearTimeout(state.scrollTimer);state.scrollTimer=null}
+  if(scroll)state.scrollTimer=setTimeout(()=>{$('#mission').scrollIntoView({behavior:'smooth',block:'start'});state.scrollTimer=null},80);
 }
-function setDrawBusy(busy){state.drawBusy=busy;['launch-button','hero-reroll','sticky-reroll','desktop-reroll'].forEach(id=>{const el=$('#'+id);if(el)el.disabled=busy});$('#mission').setAttribute('aria-busy',String(busy))}
+function setDrawBusy(busy){
+  state.drawBusy=busy;
+  const launch=$('#launch-button');if(launch)launch.disabled=busy;
+  ['hero-reroll','sticky-reroll','desktop-reroll'].forEach(id=>{const el=$('#'+id);if(!el)return;el.setAttribute('aria-disabled',String(busy));el.classList.toggle('is-busy',busy)});
+  const dock=$('#mobile-action-dock');if(dock)dock.classList.toggle('is-busy',busy);
+  $('#mission').setAttribute('aria-busy',String(busy));
+}
 function resolveOriginCoordinates(){
   if(state.origin==='kamata'){state.originCoords={...KAMATA};return Promise.resolve(state.originCoords)}
   if(state.originCoords&&finite(state.originCoords.lat)&&finite(state.originCoords.lng))return Promise.resolve(state.originCoords);
   if(!navigator.geolocation)return Promise.resolve(null);
   state.geolocationAttempted=true;
-  return new Promise(resolve=>navigator.geolocation.getCurrentPosition(pos=>{state.originCoords={label:'現在地',lat:pos.coords.latitude,lng:pos.coords.longitude};resolve(state.originCoords)},()=>resolve(null),{enableHighAccuracy:false,timeout:5000,maximumAge:120000}));
+  return new Promise(resolve=>navigator.geolocation.getCurrentPosition(pos=>{state.originCoords={label:'現在地',lat:pos.coords.latitude,lng:pos.coords.longitude};invalidateCandidateCache();resolve(state.originCoords)},()=>resolve(null),{enableHighAccuracy:false,timeout:5000,maximumAge:120000}));
 }
 function noQualityRoute(){
   state.active=null;state.activePlan=null;
@@ -243,30 +289,57 @@ function noQualityRoute(){
   emitNativeEvent('pc:no-quality-route',{timeBucket:state.time,origin:state.origin});
 }
 async function draw({rejectCurrent=false}={}){
-  if(state.drawBusy)return false;setDrawBusy(true);
+  if(state.drawBusy)return false;
+  const started=typeof performance!=='undefined'&&performance.now?performance.now():Date.now(),shouldScroll=!rejectCurrent&&!state.active;
+  setDrawBusy(true);
   try{
     await resolveOriginCoordinates();
     if(rejectCurrent)emitNativeEvent('pc:reroll',{previousRouteId:routeId(state.active)||null});
     if(rejectCurrent&&state.active){state.sessionRejected.add(routeId(state.active));bump(routeId(state.active),'rejected')}
     let pool=rankedEligible();
     if(!pool.length&&state.sessionRejected.size){state.sessionRejected.clear();pool=rankedEligible()}
-    const best=pool[0];if(best)render(best.r,best.a);else noQualityRoute();updatePool();return Boolean(best);
-  }finally{setTimeout(()=>setDrawBusy(false),420)}
+    const best=pool[0];if(best)render(best.r,best.a,{scroll:shouldScroll});else noQualityRoute();updatePool();return Boolean(best);
+  }finally{
+    const ended=typeof performance!=='undefined'&&performance.now?performance.now():Date.now();
+    state.lastDrawMs=Math.max(0,ended-started);
+    setDrawBusy(false);
+  }
 }
-function bump(id,key){profile.routeStats[id]??={};profile.routeStats[id][key]=(profile.routeStats[id][key]||0)+1;save(STORAGE,profile)}
-function remember(r){profile.recent.push(r.destination);if(profile.recent.length>40)profile.recent.splice(0,profile.recent.length-40);bump(routeId(r),'impressions');const history=load(HISTORY,[]);history.unshift({id:routeId(r),destination:r.destination,title:r.title,at:new Date().toISOString(),time:state.time,totalMinutes:state.activePlan?.totalMinutes||null});save(HISTORY,history.slice(0,20))}
+function bump(id,key){profile.routeStats[id]??={};profile.routeStats[id][key]=(profile.routeStats[id][key]||0)+1;saveDeferred(STORAGE,profile)}
+function remember(r){profile.recent.push(r.destination);if(profile.recent.length>40)profile.recent.splice(0,profile.recent.length-40);bump(routeId(r),'impressions');historyCache.unshift({id:routeId(r),destination:r.destination,title:r.title,at:new Date().toISOString(),time:state.time,totalMinutes:state.activePlan?.totalMinutes||null});if(historyCache.length>20)historyCache.splice(20);saveDeferred(HISTORY,historyCache)}
 function updatePool(){const p=rankedEligible(),unique=new Set(p.map(x=>x.r.destination)).size,verified=p.filter(x=>x.r.candidateSource==='canonical_route').length;$('#pool-status').textContent=p.length?`帰着時間・経由地・営業時間を満たす${unique}種類／${p.length}通り（検証済み${verified}件）。`:'現在の条件では品質基準を満たす候補がありません。'}
 function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function toast(s){const e=$('#toast');e.textContent=s;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1700)}
-function history(){const h=load(HISTORY,[]);$('#history-list').innerHTML=h.length?h.map(x=>`<div class="history-entry"><b>${esc(x.destination)}</b><small>${esc(x.title||'')} / ${x.totalMinutes?`往復約${x.totalMinutes}分 / `:''}${new Date(x.at).toLocaleString('ja-JP')}</small></div>`).join(''):'<p>まだ履歴はありません。</p>';$('#history-panel').classList.remove('hidden')}
-$$('[data-origin]').forEach(b=>b.addEventListener('click',()=>{$$('[data-origin]').forEach(x=>x.classList.toggle('active',x===b));state.origin=b.dataset.origin;state.originCoords=state.origin==='kamata'?{...KAMATA}:null;state.sessionRejected.clear();$('#origin-note').textContent=state.origin==='kamata'?'蒲田駅をスタート・帰着地点に設定しました。':'現在地をスタート・帰着地点に設定します。';updatePool()}));
-$$('[data-time]').forEach(b=>b.addEventListener('click',()=>{$$('[data-time]').forEach(x=>x.classList.toggle('active',x===b));state.time=b.dataset.time;state.sessionRejected.clear();updatePool()}));
-$('#launch-button').addEventListener('click',()=>draw());$('#hero-reroll').addEventListener('click',()=>draw({rejectCurrent:true}));$('#sticky-reroll').addEventListener('click',()=>draw({rejectCurrent:true}));$('#desktop-reroll').addEventListener('click',()=>draw({rejectCurrent:true}));
+function history(){const h=historyCache;$('#history-list').innerHTML=h.length?h.map(x=>`<div class="history-entry"><b>${esc(x.destination)}</b><small>${esc(x.title||'')} / ${x.totalMinutes?`往復約${x.totalMinutes}分 / `:''}${new Date(x.at).toLocaleString('ja-JP')}</small></div>`).join(''):'<p>まだ履歴はありません。</p>';$('#history-panel').classList.remove('hidden')}
+$$('[data-origin]').forEach(b=>b.addEventListener('click',()=>{$$('[data-origin]').forEach(x=>x.classList.toggle('active',x===b));state.origin=b.dataset.origin;state.originCoords=state.origin==='kamata'?{...KAMATA}:null;state.sessionRejected.clear();invalidateCandidateCache();$('#origin-note').textContent=state.origin==='kamata'?'蒲田駅をスタート・帰着地点に設定しました。':'現在地をスタート・帰着地点に設定します。';updatePool()}));
+$$('[data-time]').forEach(b=>b.addEventListener('click',()=>{$$('[data-time]').forEach(x=>x.classList.toggle('active',x===b));state.time=b.dataset.time;state.sessionRejected.clear();invalidateCandidateCache();updatePool()}));
+function bindRerollButton(id){
+  const el=$('#'+id);if(!el)return;
+  let lastTouchEnd=0,suppressClickUntil=0;
+  el.addEventListener('click',event=>{
+    event.preventDefault();event.stopPropagation();
+    if(Date.now()<suppressClickUntil)return;
+    draw({rejectCurrent:true});
+  });
+  el.addEventListener('dblclick',event=>{event.preventDefault();event.stopPropagation()});
+  el.addEventListener('touchend',event=>{
+    if((event.touches&&event.touches.length)>0||(event.changedTouches&&event.changedTouches.length!==1))return;
+    const now=Date.now();
+    if(now-lastTouchEnd<350){
+      suppressClickUntil=now+450;
+      event.preventDefault();event.stopPropagation();
+      draw({rejectCurrent:true});
+    }
+    lastTouchEnd=now;
+  },{passive:false});
+}
+$('#launch-button').addEventListener('click',event=>{event.preventDefault();event.stopPropagation();draw()});
+['hero-reroll','sticky-reroll','desktop-reroll'].forEach(bindRerollButton);
 function onMapsOpen(){if(state.active){bump(routeId(state.active),'maps');emitNativeEvent('pc:maps',buildProposalPayload(state.active))}}
 $('#maps-primary').addEventListener('click',onMapsOpen);$('#maps-atlas').addEventListener('click',onMapsOpen);$('#mobile-maps-primary').addEventListener('click',onMapsOpen);
 $('#history-button').addEventListener('click',history);$('#history-close').addEventListener('click',()=>$('#history-panel').classList.add('hidden'));$('#reset-button').addEventListener('click',()=>{localStorage.removeItem(STORAGE);localStorage.removeItem(HISTORY);toast('端末内の学習履歴を初期化しました');setTimeout(()=>location.reload(),500)});
 $$('[data-toggle-panel]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.togglePanel,body=$(`[data-panel-body="${key}"]`),collapsed=body.classList.toggle('mobile-collapsed');button.setAttribute('aria-expanded',String(!collapsed));button.querySelector('b').textContent=collapsed?'＋':'−'}));
-window.PC_RUNTIME=Object.freeze({draw:()=>draw(),reroll:()=>draw({rejectCurrent:true}),snapshot:()=>({routeId:routeId(state.active)||null,destination:state.active?.destination||null,draws:state.draws,time:state.time,origin:state.origin,totalMinutes:state.activePlan?.totalMinutes||null,integrity:'route_integrity_v1'})});
+window.PC_RUNTIME=Object.freeze({draw:()=>draw(),reroll:()=>draw({rejectCurrent:true}),snapshot:()=>({routeId:routeId(state.active)||null,destination:state.active?.destination||null,draws:state.draws,time:state.time,origin:state.origin,totalMinutes:state.activePlan?.totalMinutes||null,integrity:'route_integrity_v1',hotfix:'reroll_v1_0_1',performance:{candidateRebuilds:state.candidateRebuilds,cacheSize:state.candidateCache.length,heroLoadsCancelled:state.heroLoadsCancelled,lastDrawMs:Number(state.lastDrawMs.toFixed?.(2)??state.lastDrawMs)}})});
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 $('#release-count').textContent=`PROJECT CRUISE v${RELEASE.version}｜${D.length}地点・${R.length}結果を読込済み`;updatePool();
 })();

@@ -35,6 +35,10 @@ jobs:
         env:
           TZ: Asia/Tokyo
         run: node tools/test_route_integrity_runtime.mjs
+      - name: Stress test reroll hotfix runtime
+        env:
+          TZ: Asia/Tokyo
+        run: node tools/test_reroll_hotfix_runtime.mjs
       - name: Upload validation report
         if: always()
         uses: actions/upload-artifact@v4
