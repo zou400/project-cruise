@@ -27,10 +27,18 @@ jobs:
           node-version: '22'
       - name: Validate public boundary
         run: python tools/validate_public_repo.py --root . --report validation-report.json
+      - name: Validate route integrity
+        run: python tools/validate_route_integrity.py --root . --report route-integrity-report.json
+      - name: Smoke test route integrity runtime
+        env:
+          TZ: Asia/Tokyo
+        run: node tools/test_route_integrity_runtime.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: pages-validation-report
-          path: validation-report.json
+          path: |
+            validation-report.json
+            route-integrity-report.json
 
   deploy:
     needs: validate

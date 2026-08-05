@@ -41,16 +41,16 @@
         <button class="segment" data-origin="current" type="button">◎ 現在地</button>
         <button class="segment active" data-origin="kamata" type="button">● 蒲田駅</button>
       </div>
-      <small id="origin-note">蒲田駅をスタート地点に設定しました。</small>
+      <small id="origin-note">蒲田駅をスタート・帰着地点に設定しました。</small>
     </div>
     <div class="control-group time-group">
-      <p class="control-label"><span>2.</span> 移動に使える時間を選ぶ</p>
+      <p class="control-label"><span>2.</span> 帰宅までに使える時間を選ぶ</p>
       <div class="segmented three">
-        <button class="segment active" data-time="90" type="button">移動90分</button>
-        <button class="segment" data-time="120" type="button">移動2時間</button>
-        <button class="segment" data-time="half" type="button">移動半日</button>
+        <button class="segment active" data-time="90" type="button">往復90分</button>
+        <button class="segment" data-time="120" type="button">往復2時間</button>
+        <button class="segment" data-time="half" type="button">半日（帰宅まで）</button>
       </div>
-      <small>場所価値・現在適合・ルート完成度を分けて選定します。</small>
+      <small>往路・立ち寄り・目的地・帰路までを時間内に構成します。</small>
     </div>
     <div class="launch-group">
       <button id="launch-button" class="launch-button" type="button"><span>一本を開く</span><b>→</b></button>
@@ -94,7 +94,7 @@
       <p id="route-intent" class="route-intent"></p>
       <ol id="waypoint-list" class="waypoint-list"></ol>
       <div class="facts">
-        <div><span>移動枠</span><b id="fact-time">—</b></div>
+        <div><span>往復時間</span><b id="fact-time">—</b></div>
         <div><span>立寄り</span><b id="fact-stops">—</b></div>
         <div><span>完成度</span><b id="fact-score">—</b></div>
       </div>
