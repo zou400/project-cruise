@@ -11,7 +11,7 @@ const TIME_PROFILES={
   '120':{label:'往復2時間',min:100,max:140,target:120,waypointMin:2,waypointMax:3,safetyRate:.12},
   'half':{label:'半日（帰宅まで）',min:180,max:300,target:240,waypointMin:3,waypointMax:5,safetyRate:.12}
 };
-const state={origin:'kamata',originCoords:{...KAMATA},time:'90',active:null,activePlan:null,draws:0,sessionRejected:new Set(),heroTimer:null,drawBusy:false,heroRequestToken:0,scrollTimer:null,heroLoadTimer:null,heroPreload:null,heroFallbackLoader:null,geolocationAttempted:false,candidateCacheKey:null,candidateCache:[],candidateRebuilds:0,heroLoadsCancelled:0,lastDrawMs:0,storageTimers:{}};
+const state={origin:'kamata',originCoords:{...KAMATA},time:'90',driveStyle:'auto',active:null,activePlan:null,draws:0,sessionRejected:new Set(),heroTimer:null,drawBusy:false,heroRequestToken:0,scrollTimer:null,heroLoadTimer:null,heroPreload:null,heroFallbackLoader:null,geolocationAttempted:false,candidateCacheKey:null,candidateCache:[],candidateRebuilds:0,heroLoadsCancelled:0,lastDrawMs:0,storageTimers:{}};
 const STORAGE='pc_v013_profile';
 const HISTORY='pc_v013_history';
 const VISUALS={
@@ -179,6 +179,39 @@ function baseEligible(){
   return state.candidateCache;
 }
 function eligible(){return baseEligible().filter(x=>!state.sessionRejected.has(routeId(x.r)))}
+const DRIVE_STYLE_LABELS=Object.freeze({auto:'おまかせ',local:'下道の景色',highway:'高速の流れ'});
+function driveStyleLabel(style=state.driveStyle){return DRIVE_STYLE_LABELS[style]||DRIVE_STYLE_LABELS.auto}
+function routeDriveSignals(r){
+  const d=destMeta(r);
+  const text=[r.title,r.theme,r.family,r.intent,r.type,r.destination,d.category,d.useCase,(r.waypoints||[]).join(' '),r.operations?.timeConditions?.shortPattern,r.operations?.timeConditions?.directionConstraint].filter(Boolean).join(' ');
+  const highway=/(首都高|高速道路|高速|JCT|ジャンクション|湾岸線|中央環状|アクアライン|料金所|ETC|ランプ|インターチェンジ)/i.test(text);
+  const local=/(下道|一般道|海沿い|海岸|橋|トンネル|工業地帯|街路|夜景|埠頭|大通り|国道|都道)/i.test(text)||!highway;
+  return{highway,local,text};
+}
+function driveStyleAdjustment(r){
+  const signal=routeDriveSignals(r);
+  if(state.driveStyle==='local')return(signal.local?12:-7)+(signal.highway?-14:3)-routeRiskPenalty(r)*.12;
+  if(state.driveStyle==='highway')return(signal.highway?16:-8)+(routeWaypoints(r).length>=2?2:0);
+  return signal.highway?1:0;
+}
+function tollEstimate(r){
+  const signal=routeDriveSignals(r);
+  const explicit=Number(r.etcEstimateYen??r.tollEstimateYen??r.operations?.etcEstimateYen??r.operations?.tollEstimateYen);
+  if(Number.isFinite(explicit)&&explicit>=0)return{label:`約¥${Math.round(explicit).toLocaleString('ja-JP')}`,note:'登録済み参考値です。実料金はGoogle Mapsで確認してください。',usesHighway:explicit>0};
+  if(!signal.highway)return{label:'原則0円',note:'下道中心の想定です。Google Mapsの経路提案により有料道路を使う場合があります。',usesHighway:false};
+  const ranges={90:[300,900],120:[500,1300],half:[800,2000]},range=ranges[state.time]||ranges[90];
+  return{label:`¥${range[0].toLocaleString('ja-JP')}〜¥${range[1].toLocaleString('ja-JP')}`,note:'ETC普通車の参考レンジです。入口・出口・交通状況で変動するためGoogle Mapsで確定してください。',usesHighway:true};
+}
+function decisionReasons(r,a,d){
+  const signal=routeDriveSignals(r),count=routeWaypoints(r).length,reasons=[];
+  reasons.push(`${timeLabel()}の帰着枠に約${a.plan.totalMinutes}分で収まる`);
+  reasons.push(state.driveStyle==='local'?'下道の景色と流れを優先':state.driveStyle==='highway'?'高速道路の連続した流れを優先':signal.highway?'ルート品質を優先し高速区間も活用':'ルート品質を優先し下道中心で構成');
+  reasons.push(`${count}か所の経由地を通り、${r.destination}を終点にする`);
+  if(a.availability?.verified)reasons.push('到着予定時刻で利用条件を確認済み');
+  else if(r.candidateSource==='canonical_route')reasons.push('検証済みルートを優先');
+  else reasons.push(d.reason||r.intent||'現在の条件に最も合う候補');
+  return[...new Set(reasons)].slice(0,4);
+}
 function score(r,a=integrityAssessment(r)){
   const stat=profile.routeStats[routeId(r)]||{},p=timeProfile();
   let s=Number(r.routeAssessment?.overallScore??r.quality??r.evaluation?.routeReadiness??58);
@@ -191,6 +224,7 @@ function score(r,a=integrityAssessment(r)){
   s-=Number(a.riskPenalty||0);
   s+=Math.min(8,routeWaypoints(r).length*2);
   if(a.directMinutes!==null&&a.directMinutes<=20)s-=5;
+  s+=driveStyleAdjustment(r);
   return Math.max(1,s);
 }
 function rankedEligible(){return eligible().slice().sort((x,y)=>score(y.r,y.a)-score(x.r,x.a)||routeId(x.r).localeCompare(routeId(y.r),'ja'))}
@@ -205,7 +239,10 @@ function mapsUrl(r){
   return`https://www.google.com/maps/dir/?${params.toString()}`;
 }
 function timeLabel(){return timeProfile().label}
-function tags(r,d){return[timeLabel(),r.family||d.category||'東京発',sourceRole(r),'NOIR / DEEP']}
+function tags(r,d){
+  const signal=routeDriveSignals(r),roadTag=signal.highway?'高速候補':'下道中心';
+  return[timeLabel(),driveStyleLabel(),roadTag,r.family||d.category||'東京発',sourceRole(r)];
+}
 function routeMinutes(r){return(routeId(state.active)===routeId(r)&&state.activePlan?.totalMinutes)||integrityAssessment(r).plan?.totalMinutes||timeProfile().target}
 function formatClock(date){return new Intl.DateTimeFormat('ja-JP',{hour:'2-digit',minute:'2-digit',hour12:false}).format(date)}
 function updateHeroTimes(r){
@@ -246,8 +283,8 @@ function applyHeroImage(r){
 }
 function heroModeFor(r){return heroRecordFor(r.destination)?'destination':'category_fallback'}
 function buildProposalPayload(r){
-  const now=new Date(),departure=new Date(now.getTime()+3*60000),driveMinutes=routeMinutes(r),arrival=new Date(departure.getTime()+driveMinutes*60000);
-  return{routeId:routeId(r),destination:String(r.destination||''),title:String(r.title||''),timeBucket:state.time,origin:state.origin,mapsUrl:mapsUrl(r),hero:{src:visualFor(r),mode:heroModeFor(r),variant:preferredHeroVariant()},timing:{now:formatClock(now),departure:formatClock(departure),return:formatClock(arrival),totalMinutes:driveMinutes,safetyMinutes:state.activePlan?.safetyMinutes||null},waypoints:[...routeWaypoints(r),r.destination].filter(Boolean),selection:{score:Math.round(score(r,state.activePlan?{...integrityAssessment(r),plan:state.activePlan}:integrityAssessment(r))),sourceRole:sourceRole(r),integrity:'route_integrity_v1'}};
+  const now=new Date(),departure=new Date(now.getTime()+3*60000),driveMinutes=routeMinutes(r),arrival=new Date(departure.getTime()+driveMinutes*60000),toll=tollEstimate(r);
+  return{routeId:routeId(r),destination:String(r.destination||''),title:String(r.title||''),timeBucket:state.time,origin:state.origin,driveStyle:state.driveStyle,mapsUrl:mapsUrl(r),hero:{src:visualFor(r),mode:heroModeFor(r),variant:preferredHeroVariant()},timing:{now:formatClock(now),departure:formatClock(departure),return:formatClock(arrival),totalMinutes:driveMinutes,safetyMinutes:state.activePlan?.safetyMinutes||null},tollReference:toll,waypoints:[...routeWaypoints(r),r.destination].filter(Boolean),selection:{score:Math.round(score(r,state.activePlan?{...integrityAssessment(r),plan:state.activePlan}:integrityAssessment(r))),sourceRole:sourceRole(r),integrity:'route_integrity_v1',decisionUi:'decision_ui_v1'}};
 }
 function emitNativeEvent(name,detail){window.dispatchEvent(new CustomEvent(name,{detail}))}
 function routeCaution(r,a){
@@ -258,12 +295,14 @@ function routeCaution(r,a){
 function render(r,a,{scroll=true}={}){
   state.active=r;state.activePlan=a.plan;state.draws++;const d=destMeta(r);startHeroClock(r);applyHeroImage(r);
   $('#hero-copy').textContent=story(r,d);$('#destination-name').textContent=r.destination;$('#hero-tags').innerHTML=tags(r,d).map(x=>`<span>${esc(x)}</span>`).join('');
+  const toll=tollEstimate(r),reasons=decisionReasons(r,a,d),match=Math.round(clamp(score(r,a),1,99));
+  $('#decision-time').textContent=`約${a.plan.totalMinutes}分`;$('#decision-waypoints').textContent=`${routeWaypoints(r).length}経由`;$('#decision-style').textContent=driveStyleLabel();$('#decision-toll').textContent=toll.label;$('#decision-reasons').innerHTML=reasons.map(x=>`<li>${esc(x)}</li>`).join('');$('#decision-highway-note').textContent=toll.note;$('#decision-confidence').textContent=`MATCH ${match}`;
   const url=mapsUrl(r);$('#maps-primary').href=url;$('#maps-atlas').href=url;$('#mobile-maps-primary').href=url;
-  $('#route-role').textContent=sourceRole(r).toUpperCase();$('#detail-tags').innerHTML=tags(r,d).slice(0,3).map(x=>`<span>${esc(x)}</span>`).join('');$('#route-title').textContent=r.title||`${r.destination}を含む周遊`;
+  $('#route-role').textContent=sourceRole(r).toUpperCase();$('#detail-tags').innerHTML=tags(r,d).slice(0,3).map(x=>`<span>${esc(x)}</span>`).join('');$('#route-title').textContent=r.title||`${r.destination}へ向かうCruise`;
   $('#route-intent').textContent=r.intent||d.reason||'往路・立ち寄り・目的地・帰路を一つの体験として楽しむ。';
   const wp=[...routeWaypoints(r),r.destination];$('#waypoint-list').innerHTML=wp.map((x,i)=>`<li><small>${i===wp.length-1?'DESTINATION':'STOP '+(i+1)}</small><br>${esc(x)}</li>`).join('');
-  $('#fact-time').textContent=`約${a.plan.totalMinutes}分`;$('#fact-stops').textContent=`${routeWaypoints(r).length}か所＋目的地`;$('#fact-score').textContent=`${Math.round(score(r,a))}%`;$('#caution-box').textContent=routeCaution(r,a);
-  $('#atlas-origin').textContent=state.origin==='kamata'?'蒲田駅':'現在地';$('#atlas-destination').textContent=`${r.destination} → 帰着`;$('#atlas-stops').innerHTML=[...wp,state.origin==='kamata'?'蒲田駅へ帰着':'出発地点へ帰着'].map(x=>`<span>${esc(x)}</span>`).join('');renderAtlasRoute(r);
+  $('#fact-time').textContent=`約${a.plan.totalMinutes}分`;$('#fact-stops').textContent=`${routeWaypoints(r).length}か所＋目的地`;$('#fact-score').textContent=`${Math.round(clamp(score(r,a),1,99))}%`;$('#caution-box').textContent=routeCaution(r,a);
+  $('#atlas-origin').textContent=state.origin==='kamata'?'蒲田駅':'現在地';$('#atlas-destination').textContent=r.destination;$('#atlas-stops').innerHTML=wp.map(x=>`<span>${esc(x)}</span>`).join('');renderAtlasRoute(r);
   $('#mission').classList.remove('hidden');$('#details').classList.remove('hidden');$('#mobile-action-dock').classList.remove('hidden');$('#desktop-reroll').classList.remove('hidden');remember(r);emitNativeEvent('pc:proposal',buildProposalPayload(r));
   if(state.scrollTimer){clearTimeout(state.scrollTimer);state.scrollTimer=null}
   if(scroll)state.scrollTimer=setTimeout(()=>{$('#mission').scrollIntoView({behavior:'smooth',block:'start'});state.scrollTimer=null},80);
@@ -314,6 +353,7 @@ function toast(s){const e=$('#toast');e.textContent=s;e.classList.add('show');se
 function history(){const h=historyCache;$('#history-list').innerHTML=h.length?h.map(x=>`<div class="history-entry"><b>${esc(x.destination)}</b><small>${esc(x.title||'')} / ${x.totalMinutes?`往復約${x.totalMinutes}分 / `:''}${new Date(x.at).toLocaleString('ja-JP')}</small></div>`).join(''):'<p>まだ履歴はありません。</p>';$('#history-panel').classList.remove('hidden')}
 $$('[data-origin]').forEach(b=>b.addEventListener('click',()=>{$$('[data-origin]').forEach(x=>x.classList.toggle('active',x===b));state.origin=b.dataset.origin;state.originCoords=state.origin==='kamata'?{...KAMATA}:null;state.sessionRejected.clear();invalidateCandidateCache();$('#origin-note').textContent=state.origin==='kamata'?'蒲田駅をスタート・帰着地点に設定しました。':'現在地をスタート・帰着地点に設定します。';updatePool()}));
 $$('[data-time]').forEach(b=>b.addEventListener('click',()=>{$$('[data-time]').forEach(x=>x.classList.toggle('active',x===b));state.time=b.dataset.time;state.sessionRejected.clear();invalidateCandidateCache();updatePool()}));
+$$('[data-drive-style]').forEach(b=>b.addEventListener('click',()=>{$$('[data-drive-style]').forEach(x=>x.classList.toggle('active',x===b));state.driveStyle=b.dataset.driveStyle||'auto';state.sessionRejected.clear();const notes={auto:'ルート品質を優先し、下道と高速を自動で選びます。',local:'一般道・海沿い・街の景色を優先します。',highway:'高速道路の流れと連続性を優先します。'};$('#drive-style-note').textContent=notes[state.driveStyle];if(state.active)draw();else updatePool()}));
 function bindRerollButton(id){
   const el=$('#'+id);if(!el)return;
   let lastTouchEnd=0,suppressClickUntil=0;
@@ -340,7 +380,7 @@ function onMapsOpen(){if(state.active){bump(routeId(state.active),'maps');emitNa
 $('#maps-primary').addEventListener('click',onMapsOpen);$('#maps-atlas').addEventListener('click',onMapsOpen);$('#mobile-maps-primary').addEventListener('click',onMapsOpen);
 $('#history-button').addEventListener('click',history);$('#history-close').addEventListener('click',()=>$('#history-panel').classList.add('hidden'));$('#reset-button').addEventListener('click',()=>{localStorage.removeItem(STORAGE);localStorage.removeItem(HISTORY);toast('端末内の学習履歴を初期化しました');setTimeout(()=>location.reload(),500)});
 $$('[data-toggle-panel]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.togglePanel,body=$(`[data-panel-body="${key}"]`),collapsed=body.classList.toggle('mobile-collapsed');button.setAttribute('aria-expanded',String(!collapsed));button.querySelector('b').textContent=collapsed?'＋':'−'}));
-window.PC_RUNTIME=Object.freeze({draw:()=>draw(),reroll:()=>draw({rejectCurrent:true}),snapshot:()=>({routeId:routeId(state.active)||null,destination:state.active?.destination||null,draws:state.draws,time:state.time,origin:state.origin,totalMinutes:state.activePlan?.totalMinutes||null,integrity:'route_integrity_v1',hotfix:'reroll_v1_0_1',performance:{candidateRebuilds:state.candidateRebuilds,cacheSize:state.candidateCache.length,heroLoadsCancelled:state.heroLoadsCancelled,lastDrawMs:Number(state.lastDrawMs.toFixed?.(2)??state.lastDrawMs)}})});
+window.PC_RUNTIME=Object.freeze({draw:()=>draw(),reroll:()=>draw({rejectCurrent:true}),snapshot:()=>({routeId:routeId(state.active)||null,destination:state.active?.destination||null,draws:state.draws,time:state.time,origin:state.origin,driveStyle:state.driveStyle,totalMinutes:state.activePlan?.totalMinutes||null,integrity:'route_integrity_v1',hotfix:'reroll_v1_0_1',decisionUi:'decision_ui_v1',performance:{candidateRebuilds:state.candidateRebuilds,cacheSize:state.candidateCache.length,heroLoadsCancelled:state.heroLoadsCancelled,lastDrawMs:Number(state.lastDrawMs.toFixed?.(2)??state.lastDrawMs)}})});
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 $('#release-count').textContent=`PROJECT CRUISE v${RELEASE.version}｜${D.length}地点・${R.length}結果を読込済み`;updatePool();
 })();

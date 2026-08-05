@@ -10,10 +10,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="CRUISE">
 
-<title>PROJECT CRUISE v0.14.0</title>
+<title>PROJECT CRUISE v0.15.0</title>
 <meta name="description" content="10秒で今回の行き先を決める、東京発のシネマティック・ドライブ提案。">
 <link rel="preload" href="assets/visuals/industrial-night-v3.webp" as="image">
-<link rel="stylesheet" href="styles.css?v=01400">
+<link rel="stylesheet" href="styles.css?v=01500">
+<link rel="stylesheet" href="decision-ui.css?v=01500">
 </head>
 <body>
 <div class="ambient" aria-hidden="true"></div>
@@ -24,8 +25,8 @@
     <span class="brand-system">TOKYO DRIVE SYSTEM</span>
   </a>
   <div class="header-copy">
-    <p>今回の一本を、10秒で。</p>
-    <span id="release-count">PROJECT CRUISE v0.14.0</span>
+    <p>行き先ではなく、今夜の一本を決める。</p>
+    <span id="release-count">PROJECT CRUISE UI v0.15.0</span>
   </div>
   <div class="header-tools">
     <button id="history-button" class="icon-button" type="button">履歴</button>
@@ -52,8 +53,17 @@
       </div>
       <small>往路・立ち寄り・目的地・帰路までを時間内に構成します。</small>
     </div>
+    <div class="control-group drive-style-group">
+      <p class="control-label"><span>3.</span> 走り方を選ぶ</p>
+      <div class="segmented three drive-style-selector">
+        <button class="segment active" data-drive-style="auto" type="button">おまかせ</button>
+        <button class="segment" data-drive-style="local" type="button">下道の景色</button>
+        <button class="segment" data-drive-style="highway" type="button">高速の流れ</button>
+      </div>
+      <small id="drive-style-note">ルート品質を優先し、下道と高速を自動で選びます。</small>
+    </div>
     <div class="launch-group">
-      <button id="launch-button" class="launch-button" type="button"><span>一本を開く</span><b>→</b></button>
+      <button id="launch-button" class="launch-button" type="button"><span>今夜のCruiseを決める</span><b>→</b></button>
       <small id="pool-status">候補を読み込んでいます。</small>
     </div>
   </section>
@@ -67,8 +77,22 @@
       <p id="hero-copy" class="mission-copy"></p>
       <h1 id="destination-name"></h1>
       <div id="hero-tags" class="hero-tags"></div>
+      <div class="decision-summary" aria-label="今回のCruiseの判断材料">
+        <div class="decision-summary-head">
+          <p><span>WHY THIS CRUISE</span>今回これを選んだ理由</p>
+          <strong id="decision-confidence">MATCH --</strong>
+        </div>
+        <div class="decision-metrics">
+          <div class="decision-metric"><small>RETURN</small><b id="decision-time">約--分</b></div>
+          <div class="decision-metric"><small>WAYPOINTS</small><b id="decision-waypoints">--経由</b></div>
+          <div class="decision-metric"><small>DRIVE STYLE</small><b id="decision-style">おまかせ</b></div>
+          <div class="decision-metric"><small>ETC REFERENCE</small><b id="decision-toll">確認中</b></div>
+        </div>
+        <ul id="decision-reasons" class="decision-reasons"></ul>
+        <p id="decision-highway-note" class="decision-highway-note"></p>
+      </div>
       <div class="mission-actions">
-        <a id="maps-primary" class="primary-action" target="_blank" rel="noopener">このCruiseを受ける <b>→</b></a>
+        <a id="maps-primary" class="primary-action" target="_blank" rel="noopener">Google Mapsで出発する <b>→</b></a>
         <button id="hero-reroll" class="secondary-action" type="button">もう一本探す <b>↻</b></button>
       </div>
     </div>
@@ -95,7 +119,7 @@
       <ol id="waypoint-list" class="waypoint-list"></ol>
       <div class="facts">
         <div><span>往復時間</span><b id="fact-time">—</b></div>
-        <div><span>立寄り</span><b id="fact-stops">—</b></div>
+        <div><span>経由地</span><b id="fact-stops">—</b></div>
         <div><span>完成度</span><b id="fact-score">—</b></div>
       </div>
       <div id="caution-box" class="caution-box"></div>
@@ -106,7 +130,7 @@
   <button class="mobile-panel-toggle" type="button" aria-expanded="false" data-toggle-panel="map"><span>CRUISE MAP</span><b>＋</b></button>
   <div class="mobile-panel-body mobile-collapsed" data-panel-body="map">
       <div class="atlas-header">
-        <div><p>CRUISE ATLAS</p><span>ROUTE STORY</span></div>
+        <div><p>CRUISE ATLAS</p><span>OUTBOUND ROUTE</span></div>
         <a id="maps-atlas" target="_blank" rel="noopener">Google Mapsで開く ↗</a>
       </div>
       <div class="atlas-visual">
@@ -132,7 +156,7 @@
 </main>
 
 <div id="mobile-action-dock" class="mobile-action-dock hidden">
-  <a id="mobile-maps-primary" class="dock-accept" target="_blank" rel="noopener">このCruiseを受ける <b>→</b></a>
+  <a id="mobile-maps-primary" class="dock-accept" target="_blank" rel="noopener">Google Mapsで出発する <b>→</b></a>
   <button id="sticky-reroll" class="dock-reroll" type="button">もう一本探す <b>↻</b></button>
 </div>
 <button id="desktop-reroll" class="sticky-reroll desktop-only hidden" type="button">もう一本探す <b>↻</b></button>

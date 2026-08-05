@@ -37,6 +37,10 @@ jobs:
         env:
           TZ: Asia/Tokyo
         run: node tools/test_reroll_hotfix_runtime.mjs
+      - name: Test Cruise Decision UI runtime
+        env:
+          TZ: Asia/Tokyo
+        run: node tools/test_cruise_decision_ui_runtime.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: pages-validation-report
